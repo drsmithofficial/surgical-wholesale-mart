@@ -1,0 +1,2 @@
+const fs=require('fs');const d=require('../data/drsmith-live-product-explorer.json');(async()=>{await Promise.all(d.products.filter(p=>/autoclave/i.test(p.name)).map(async p=>{try{const url='https://www.drsmith.co.in'+p.image;const r=await fetch(url);if(!r.ok)throw Error(r.status);const local='assets/products/researched/drsmith-autoclave-'+p.id+'.webp';fs.writeFileSync(local,Buffer.from(await r.arrayBuffer()));console.log(p.id,p.name); }catch(e){console.log(p.id,e.message)}}));})();
+

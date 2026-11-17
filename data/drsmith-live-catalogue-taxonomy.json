@@ -1,0 +1,3979 @@
+{
+  "sources": [
+    "Dr_Smith_Shop_by_Product_Family.pdf",
+    "Dr_Smith_Shop_by_Department.pdf"
+  ],
+  "families": [
+    {
+      "code": "MO",
+      "name": "MGPS & Modular OT",
+      "slug": "mgps-modular-ot",
+      "description": "Modular operating theatre systems, medical gas infrastructure, service panels and nurse call systems.",
+      "image": "assets/img/optimized/01-mgps-and-modular-ot.e5b21199250c.webp",
+      "width": 1448,
+      "height": 1086,
+      "subcategories": [
+        {
+          "code": "MO01",
+          "name": "Complete Modular OT Systems",
+          "slug": "mo01-complete-modular-ot-systems",
+          "products": [],
+          "image": "/assets/img/optimized/014-complete-modular-ot-systems.9f690709744c.webp"
+        },
+        {
+          "code": "MO03",
+          "name": "Laminar Airflow & Air Filtration Systems",
+          "slug": "mo03-laminar-airflow-air-filtration-systems",
+          "products": [
+            "catalogue/modular-ot/cat-pressure-relief-damper.html"
+          ],
+          "image": "/assets/img/optimized/047-laminar-airflow-air-filtration-systems.8bfffc5df59d.webp"
+        },
+        {
+          "code": "MO04",
+          "name": "OT Doors & Windows",
+          "slug": "mo04-ot-doors-windows",
+          "products": [
+            "catalogue/modular-ot/cat-ot-windows.html"
+          ],
+          "image": "/assets/img/optimized/074-ot-doors-windows.e1952d7cc2c5.webp"
+        },
+        {
+          "code": "MO05",
+          "name": "OT Flooring",
+          "slug": "mo05-ot-flooring",
+          "products": [
+            "catalogue/modular-ot/cat-ot-flooring.html"
+          ],
+          "image": "/assets/img/optimized/075-ot-flooring.b0618e8754f0.webp"
+        },
+        {
+          "code": "MO06",
+          "name": "Surgeon Control Panels",
+          "slug": "mo06-surgeon-control-panels",
+          "products": [
+            "catalogue/modular-ot/cat-21-inch-touch-screen-monitor.html",
+            "catalogue/modular-ot/cat-10-inch-industrial-touch-screen.html",
+            "catalogue/modular-ot/cat-touch-glass.html",
+            "catalogue/modular-ot/cat-membrane-control-panel.html"
+          ],
+          "image": "/assets/img/optimized/092-surgeon-control-panels.e461d3d49004.webp"
+        },
+        {
+          "code": "MO07",
+          "name": "OT Lighting & X-Ray Viewers",
+          "slug": "mo07-ot-lighting-x-ray-viewers",
+          "products": [
+            "catalogue/modular-ot/cat-led-x-ray-view-box-high-end-version.html",
+            "catalogue/modular-ot/flush-mounted-led-x-ray-viewer.html"
+          ],
+          "image": "/assets/img/optimized/076-ot-lighting-x-ray-viewers.863ed1f5a010.webp"
+        },
+        {
+          "code": "MO09",
+          "name": "Scrub Stations",
+          "slug": "mo09-scrub-stations",
+          "products": [
+            "catalogue/scrub-station/surgical-scrub-station-sensor-manual-swm-11045.html",
+            "catalogue/modular-ot/cat-scrub-sink.html",
+            "catalogue/icu-products/scrub-station.html"
+          ],
+          "image": "/assets/img/optimized/014-complete-modular-ot-systems.9f690709744c.webp"
+        },
+        {
+          "code": "MO10",
+          "name": "Integrated OT Storage & Accessories",
+          "slug": "mo10-integrated-ot-storage-accessories",
+          "products": [
+            "catalogue/modular-ot/cat-sensors.html",
+            "catalogue/modular-ot/cat-magnetic-writing-board.html",
+            "catalogue/modular-ot/cat-storage-system.html"
+          ],
+          "image": "/assets/img/optimized/043-integrated-ot-storage-accessories.74db600e0d5f.webp"
+        },
+        {
+          "code": "MO11",
+          "name": "Medical Gas Outlets & Probes",
+          "slug": "mo11-medical-gas-outlets-probes",
+          "products": [
+            "catalogue/modular-ot/medical-gas-outlet-bs-standard-model-amber.html",
+            "catalogue/modular-ot/medical-gas-outlet-pb-standard-model-sapphire.html",
+            "catalogue/modular-ot/medical-gas-outlet-parkodex-with-probe.html",
+            "catalogue/modular-ot/medical-gas-outlet-din-standard-model-jasper.html"
+          ],
+          "image": "/assets/img/optimized/056-medical-gas-outlets-probes.a033ea6c2efe.webp"
+        },
+        {
+          "code": "MO12",
+          "name": "Flowmeters & Oxygen Therapy Accessories",
+          "slug": "mo12-flowmeters-oxygen-therapy-accessories",
+          "products": [
+            "catalogue/modular-ot/cat-bpc-flow-meter.html"
+          ],
+          "image": "/assets/img/optimized/030-flowmeters-oxygen-therapy-accessories.ed06778dd4b7.webp"
+        },
+        {
+          "code": "MO13",
+          "name": "Vacuum Regulators & Suction Assemblies",
+          "slug": "mo13-vacuum-regulators-suction-assemblies",
+          "products": [
+            "catalogue/modular-ot/cat-theatre-suction-trolley.html",
+            "catalogue/modular-ot/cat-vacuum-regulator.html",
+            "catalogue/modular-ot/cat-vacuum-jar.html"
+          ],
+          "image": "/assets/img/optimized/100-vacuum-regulators-suction-assemblies.e1207cf515df.webp"
+        },
+        {
+          "code": "MO14",
+          "name": "Bedhead Panels & Service Columns",
+          "slug": "mo14-bedhead-panels-service-columns",
+          "products": [
+            "catalogue/modular-ot/cat-power-column.html",
+            "catalogue/modular-ot/cat-bed-head-panel-lumipan.html",
+            "catalogue/modular-ot/cat-bed-head-panel-silk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-d.html",
+            "catalogue/modular-ot/cat-bed-head-panel-robustrunk-starlite-h.html",
+            "catalogue/modular-ot/cat-silk-smart-v.html",
+            "catalogue/modular-ot/cat-spinel-v.html",
+            "catalogue/modular-ot/cat-critrunk-v.html",
+            "catalogue/modular-ot/cat-limupan-v.html"
+          ],
+          "image": "/assets/img/optimized/007-bedhead-panels-service-columns.ae7afb3791c8.webp"
+        },
+        {
+          "code": "MO15",
+          "name": "Medical Pendants & Ceiling Bridges",
+          "slug": "mo15-medical-pendants-ceiling-bridges",
+          "products": [
+            "catalogue/modular-ot/cat-s-2-v-pendant.html",
+            "catalogue/modular-ot/cat-s-4-v-800-pendant.html",
+            "catalogue/modular-ot/cat-s-3-v-800-pendant.html",
+            "catalogue/modular-ot/cat-s-3-h-pendant.html",
+            "catalogue/modular-ot/cat-s-1-v-1000-pendant.html",
+            "catalogue/modular-ot/cat-movable-s-4-v-600-pendant.html",
+            "catalogue/modular-ot/cat-laparoscopic-movable-s-5-h-pendant.html",
+            "catalogue/modular-ot/cat-motorized-pendant.html",
+            "catalogue/modular-ot/cat-laparoscopic-motorized-pendant-single-arm-s-5-h.html",
+            "catalogue/modular-ot/cat-motorized-pendant-double-arm-s-4-v-800.html",
+            "catalogue/modular-ot/cat-pendants.html"
+          ],
+          "image": "/assets/img/optimized/059-medical-pendants-ceiling-bridges.008a170b50c7.webp"
+        },
+        {
+          "code": "MO16",
+          "name": "Gas Manifolds & Control Panels",
+          "slug": "mo16-gas-manifolds-control-panels",
+          "products": [
+            "catalogue/modular-ot/cat-manifold-system-oxygen-n2o.html"
+          ],
+          "image": "/assets/img/optimized/032-gas-manifolds-control-panels.8f9810284ca1.webp"
+        },
+        {
+          "code": "MO17",
+          "name": "Medical Gas Alarms",
+          "slug": "mo17-medical-gas-alarms",
+          "products": [
+            "catalogue/modular-ot/cat-medical-gas-alarm-digital.html",
+            "catalogue/modular-ot/cat-medical-gas-alarm-analog.html",
+            "catalogue/modular-ot/cat-master-alarm.html"
+          ],
+          "image": "/assets/img/optimized/055-medical-gas-alarms.790d0f28ee75.webp"
+        },
+        {
+          "code": "MO18",
+          "name": "Zone Valve Boxes & Isolation Valves",
+          "slug": "mo18-zone-valve-boxes-isolation-valves",
+          "products": [
+            "catalogue/modular-ot/cat-avsu-zonal-valve-box.html"
+          ],
+          "image": "/assets/img/optimized/032-gas-manifolds-control-panels.8f9810284ca1.webp"
+        },
+        {
+          "code": "MO19",
+          "name": "Medical Gas Pipes, Fittings & Accessories",
+          "slug": "mo19-medical-gas-pipes-fittings-accessories",
+          "products": [
+            "catalogue/modular-ot/medical-gas-pipeline-saddle.html",
+            "catalogue/modular-ot/medical-gas-copper-fittings.html",
+            "catalogue/modular-ot/medical-gas-pressure-regulator.html",
+            "catalogue/modular-ot/medical-gas-high-pressure-hose.html"
+          ],
+          "image": "/assets/img/optimized/057-medical-gas-pipes-fittings-accessories.e36c73b1c7cf.webp"
+        },
+        {
+          "code": "MO20",
+          "name": "Medical Gas Source Systems",
+          "slug": "mo20-medical-gas-source-systems",
+          "products": [
+            "catalogue/modular-ot/cat-oxygen-semi-automatic-supply-system.html",
+            "catalogue/icu-products/cylinder.html"
+          ],
+          "image": "/assets/img/optimized/058-medical-gas-source-systems.9df389b2871c.webp"
+        },
+        {
+          "code": "MO21",
+          "name": "Nurse Call Systems",
+          "slug": "mo21-nurse-call-systems",
+          "products": [
+            "catalogue/modular-ot/cat-nurse-call-system-e-fl07.html"
+          ],
+          "image": "/assets/img/optimized/067-nurse-call-systems.0dfa5686931b.webp"
+        }
+      ]
+    },
+    {
+      "code": "HF",
+      "name": "Hospital Furniture",
+      "slug": "furniture",
+      "description": "Hospital beds, tables, trolleys, storage, seating and patient-care furniture.",
+      "image": "assets/img/optimized/02-hospital-furniture-latest.5820a0652f24.webp",
+      "width": 1448,
+      "height": 1086,
+      "subcategories": [
+        {
+          "code": "HF01",
+          "name": "Hospital Beds",
+          "slug": "hf01-hospital-beds",
+          "products": [
+            "catalogue/beds/i-c-u-bed-five-functional-electric-imported-swm-11000.html",
+            "catalogue/beds/i-c-u-bed-five-functional-electric-deluxe-swm-11001.html",
+            "catalogue/beds/i-c-u-bed-five-functional-electric-eco-model-swm-11002.html",
+            "catalogue/beds/i-c-u-bed-five-functional-manual-deluxe-swm-11003.html",
+            "catalogue/beds/i-c-u-bed-five-functional-manual-eco-model-swm-11004.html",
+            "catalogue/beds/i-c-u-bed-three-functional-electric-deluxe-swm-11005.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11006.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-deluxe-swm-11007.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11008.html",
+            "catalogue/beds/fowler-bed-electric-deluxe-swm-11009.html",
+            "catalogue/beds/fowler-bed-manual-super-deluxe-swm-11010.html",
+            "catalogue/beds/fowler-bed-manual-deluxe-full-ss-panels-swm-11011.html",
+            "catalogue/beds/fowler-bed-manual-eco-model-swm-11012.html",
+            "catalogue/beds/semi-fowler-bed-manual-eco-model-swm-11013.html",
+            "catalogue/beds/semi-fowler-bed-electric-deluxe-swm-11014.html",
+            "catalogue/beds/semi-fowler-bed-manual-super-deluxe-swm-11015.html",
+            "catalogue/beds/semi-fowler-bed-deluxe-ss-cum-sunmica-swm-11016.html",
+            "catalogue/beds/plain-bed-super-deluxe-abs-panels-swm-11017.html",
+            "catalogue/beds/plain-bed-deluxe-full-ss-bows-swm-11018.html",
+            "catalogue/beds/plain-bed-eco-model-powder-coated-bows-swm-11019.html",
+            "catalogue/baby-products/pediatric-bed-with-drop-down-railings-swm-11020.html",
+            "catalogue/icu-products/5-function-electric-bed.html",
+            "catalogue/icu-products/attendent-bed.html"
+          ],
+          "image": "/assets/img/optimized/037-hospital-beds.666891ef60f3.webp"
+        },
+        {
+          "code": "HF02",
+          "name": "Operation Theatre Tables",
+          "slug": "hf02-operation-theatre-tables",
+          "products": [
+            "catalogue/ot-tables/ot-table-semi-electric-c-arm-swm-11031.html",
+            "catalogue/ot-tables/ot-table-general-hydraulic-swm-11033.html"
+          ],
+          "image": "/assets/img/optimized/070-operation-theatre-tables.8c8ac87ede13.webp"
+        },
+        {
+          "code": "HF03",
+          "name": "Delivery Tables & Beds",
+          "slug": "hf03-delivery-tables-beds",
+          "products": [
+            "catalogue/delivery-table/examination-delivery-table-swm-11034.html",
+            "catalogue/delivery-table/delivery-table-three-fold-swm-11035.html",
+            "catalogue/delivery-table/telescopic-table-ms-ss-swm-11036.html",
+            "catalogue/delivery-table/delivery-table-electric-manual-swm-11037.html",
+            "catalogue/delivery-table/delivery-table-hydraulic-deluxe-swm-11038.html",
+            "catalogue/delivery-table/delivery-bed-electric-manual-swm-11039.html"
+          ],
+          "image": "/assets/img/optimized/016-delivery-tables-beds.921c17a9882c.webp"
+        },
+        {
+          "code": "HF04",
+          "name": "Examination Tables & Couches",
+          "slug": "hf04-examination-tables-couches",
+          "products": [
+            "catalogue/hospital-furniture/examination-table-plain-swm-11047.html",
+            "catalogue/examination-gynecology/examination-couch-deluxe-swm-11054.html"
+          ],
+          "image": "/assets/img/optimized/029-examination-tables-couches.b36545d274fd.webp"
+        },
+        {
+          "code": "HF05",
+          "name": "Stretchers & Patient Transfer Trolleys",
+          "slug": "hf05-stretchers-patient-transfer-trolleys",
+          "products": [
+            "catalogue/stretcher-trolley/stretcher-trolley-ms-ss-swm-11040.html",
+            "catalogue/stretcher-trolley/stretcher-trolley-deluxe-manual-swm-11041.html",
+            "catalogue/stretcher-trolley/emergency-patient-trolley-hydraulic-swm-11042.html",
+            "catalogue/stretcher-trolley/stretcher-trolley-cum-chair-swm-11043.html",
+            "catalogue/stretcher-trolley/ambulance-stretcher-auto-loading-swm-11044.html",
+            "catalogue/rescue-equipment/spine-board-immobilizer.html",
+            "catalogue/rescue-equipment/scoop-stretcher-split-type.html",
+            "catalogue/rescue-equipment/two-fold-emergency-stretcher.html",
+            "catalogue/rescue-equipment/four-fold-compact-emergency-stretcher.html",
+            "catalogue/icu-products/emergency-recovery.html"
+          ],
+          "image": "/assets/img/optimized/061-medical-trolleys-carts.9888b3def80e.webp"
+        },
+        {
+          "code": "HF06",
+          "name": "Wheelchairs & Mobility Aids",
+          "slug": "hf06-wheelchairs-mobility-aids",
+          "products": [
+            "catalogue/wheelchairs/wheel-chair-indian-imported-swm-11063.html"
+          ],
+          "image": "/assets/img/optimized/054-medical-chairs-stools.46fbeeca0545.webp"
+        },
+        {
+          "code": "HF07",
+          "name": "Medical Trolleys & Carts",
+          "slug": "hf07-medical-trolleys-carts",
+          "products": [
+            "catalogue/hospital-trolley/crash-cart-with-abs-drawers-swm-11049.html",
+            "catalogue/hospital-trolley/crash-cart-with-s-s-drawers-swm-11050.html",
+            "catalogue/hospital-trolley/cylinder-trolley-small-jumbo-swm-11055.html",
+            "catalogue/hospital-trolley/abs-anesthetic-cart-swm-11062.html",
+            "catalogue/hospital-trolley/instrument-trolley-box-type-ms-swm-11064.html",
+            "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html",
+            "catalogue/hospital-trolley/instrument-trolley-three-shelf-ss-swm-11066.html",
+            "catalogue/hospital-trolley/instrument-trolley-box-type-ss-swm-11067.html",
+            "catalogue/hospital-trolley/dressing-trolley-all-ss-swm-11068.html",
+            "catalogue/hospital-trolley/e-c-g-trolley-swm-11069.html",
+            "catalogue/hospital-trolley/linen-trolley-with-canvas-bag-swm-11070.html",
+            "catalogue/lapro-tower-equipment/laparoscopy-trolley-ms-ss-swm-11071.html",
+            "catalogue/biobin-cleaning/dr-smith-3-bin-bio-waste-trolley-swm-11076.html",
+            "catalogue/hospital-trolley/mayo-trolley-swm-11077.html",
+            "catalogue/icu-products/bio-waste-trolley.html",
+            "catalogue/icu-products/crash-cart.html",
+            "catalogue/icu-products/cylinder-trolley.html"
+          ],
+          "image": "/assets/img/optimized/061-medical-trolleys-carts.9888b3def80e.webp"
+        },
+        {
+          "code": "HF08",
+          "name": "Bedside Lockers & Overbed Tables",
+          "slug": "hf08-bedside-lockers-overbed-tables",
+          "products": [
+            "catalogue/bed-side-locker/bed-side-locker-semi-deluxe-swm-11058.html",
+            "catalogue/bed-side-locker/bed-side-locker-ms-ss-swm-11059.html",
+            "catalogue/bed-side-locker/bed-side-locker-deluxe-swm-11060.html",
+            "catalogue/bed-side-locker/bed-side-locker-abs-type-swm-11061.html",
+            "catalogue/over-bed-table/over-bed-food-table-u-type-swm-11072.html",
+            "catalogue/over-bed-table/over-bed-food-table-knob-type-swm-11073.html",
+            "catalogue/over-bed-table/over-bed-food-table-gear-type-swm-11074.html",
+            "catalogue/over-bed-table/over-bed-food-table-hydraulic-swm-11075.html",
+            "catalogue/icu-products/bed-side-locker.html",
+            "catalogue/icu-products/food-table.html"
+          ],
+          "image": "/assets/img/optimized/009-bedside-lockers-overbed-tables.f809fc3d9e1a.webp"
+        },
+        {
+          "code": "HF09",
+          "name": "Medical Cabinets & Storage",
+          "slug": "hf09-medical-cabinets-storage",
+          "products": [
+            "catalogue/cabinets/hospital-instrument-cabinet-double-glass-door-swm-11078.html"
+          ],
+          "image": "/assets/img/optimized/053-medical-cabinets-storage.a2b1eb4d5ddd.webp"
+        },
+        {
+          "code": "HF10",
+          "name": "Medical Chairs & Stools",
+          "slug": "hf10-medical-chairs-stools",
+          "products": [
+            "catalogue/hospital-furniture/attendant-bed-cum-chair-swm-11046.html",
+            "catalogue/special-category-chair/blood-donating-chair-swm-11048.html",
+            "catalogue/revolving-stool/revolving-stool-swm-11056.html",
+            "catalogue/revolving-stool/stool-deluxe-swm-11057.html"
+          ],
+          "image": "/assets/img/optimized/054-medical-chairs-stools.46fbeeca0545.webp"
+        },
+        {
+          "code": "HF11",
+          "name": "Baby Bassinets & Cradles",
+          "slug": "hf11-baby-bassinets-cradles",
+          "products": [
+            "catalogue/baby-products/baby-bassinet-acrylic-trolley-swm-11021.html",
+            "catalogue/baby-products/baby-cradle-wire-mesh-swm-11022.html"
+          ],
+          "image": "/assets/img/optimized/006-baby-bassinets-cradles.581ebe2f1356.webp"
+        },
+        {
+          "code": "HF12",
+          "name": "Hospital Screens & Ward Accessories",
+          "slug": "hf12-hospital-screens-ward-accessories",
+          "products": [
+            "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html",
+            "catalogue/rescue-equipment/mobile-bowl-basin-stand-ms-ss.html",
+            "catalogue/hollowares-items/kick-bucket-m-s-s-s-with-basin-swm-11084.html",
+            "catalogue/icu-products/4-fold-screen.html",
+            "catalogue/icu-products/iv-stand.html"
+          ],
+          "image": "/assets/img/optimized/039-hospital-screens-ward-accessories.1e48d7625153.webp"
+        },
+        {
+          "code": "HF13",
+          "name": "Hospital Seating & Office Furniture",
+          "slug": "hf13-hospital-seating-office-furniture",
+          "products": [
+            "catalogue/three-seater/three-seater-waiting-chair-chrome-swm-11052.html",
+            "catalogue/three-seater/three-seater-waiting-chair-with-cushion-swm-11053.html",
+            "catalogue/office-furniture/office-desk-model-11115-swm-11115.html",
+            "catalogue/office-furniture/office-desk-model-11116-swm-11116.html",
+            "catalogue/office-furniture/office-desk-model-11117-swm-11117.html",
+            "catalogue/office-furniture/office-desk-model-11118-swm-11118.html",
+            "catalogue/office-furniture/office-desk-model-11119-swm-11119.html",
+            "catalogue/office-furniture/office-desk-model-11120-swm-11120.html",
+            "catalogue/boss-chairs/boss-chair-model-11121-swm-11121.html",
+            "catalogue/boss-chairs/boss-chair-model-11122-swm-11122.html",
+            "catalogue/boss-chairs/boss-chair-model-11123-swm-11123.html",
+            "catalogue/boss-chairs/boss-chair-model-11124-swm-11124.html",
+            "catalogue/boss-chairs/office-chair-model-11125-swm-11125.html",
+            "catalogue/boss-chairs/office-chair-model-11126-swm-11126.html",
+            "catalogue/boss-chairs/office-chair-model-11127-swm-11127.html",
+            "catalogue/boss-chairs/office-chair-model-11128-swm-11128.html"
+          ],
+          "image": "/assets/img/optimized/040-hospital-seating-office-furniture.252acc6ab84d.webp"
+        },
+        {
+          "code": "HF14",
+          "name": "Furniture Accessories & Attachments",
+          "slug": "hf14-furniture-accessories-attachments",
+          "products": [],
+          "image": "/assets/img/optimized/031-furniture-accessories-attachments.f1d9c0ae38d4.webp"
+        }
+      ]
+    },
+    {
+      "code": "ME",
+      "name": "Medical Equipment",
+      "slug": "medical-equipment",
+      "description": "Monitoring, respiratory care, operating theatre, diagnostic, neonatal and other clinical equipment.",
+      "image": "assets/img/optimized/03-medical-equipment.d30f41f7b42e.webp",
+      "width": 613,
+      "height": 493,
+      "subcategories": [
+        {
+          "code": "ME01",
+          "name": "Patient Monitors",
+          "slug": "me01-patient-monitors",
+          "products": [
+            "catalogue/icu-products/7-para-monitor.html"
+          ],
+          "image": "/assets/img/optimized/050-maternal-foetal-monitoring.71d5a705629a.webp"
+        },
+        {
+          "code": "ME02",
+          "name": "ECG Machines",
+          "slug": "me02-ecg-machines",
+          "products": [
+            "catalogue/ecg-machine/ecg-machine-swm-11088.html"
+          ],
+          "image": "/assets/img/optimized/025-ecg-machines.f1e83c8ce1ef.webp"
+        },
+        {
+          "code": "ME03",
+          "name": "Defibrillators & AEDs",
+          "slug": "me03-defibrillators-aeds",
+          "products": [
+            "catalogue/defibrillator-aed/automatic-external-defibrillator-aed-swm-11089.html",
+            "catalogue/defibrillator-aed/defibrillator-new-pre-owned-swm-11090.html",
+            "catalogue/defibrillator-aed/defibrillator-swm-11136.html"
+          ],
+          "image": "/assets/img/optimized/015-defibrillators-aeds.d2009e1594f6.webp"
+        },
+        {
+          "code": "ME04",
+          "name": "Ventilators",
+          "slug": "me04-ventilators",
+          "products": [
+            "catalogue/ventilators/icu-ventilator-new-pre-owned-swm-11129.html",
+            "catalogue/icu-products/ventillator-machine.html"
+          ],
+          "image": "/assets/img/optimized/101-ventilators.29cf4eae8f5a.webp"
+        },
+        {
+          "code": "ME05",
+          "name": "Non-Invasive Respiratory Care",
+          "slug": "me05-non-invasive-respiratory-care",
+          "products": [
+            "catalogue/bipap-cpap/hfnc-machine-high-flow-oxygen-swm-11130.html"
+          ],
+          "image": "/assets/img/optimized/066-non-invasive-respiratory-care.33f2db9da6f3.webp"
+        },
+        {
+          "code": "ME06",
+          "name": "Oxygen Therapy Equipment",
+          "slug": "me06-oxygen-therapy-equipment",
+          "products": [
+            "catalogue/small-general-equipment/oxygen-concentrator-swm-11095.html"
+          ],
+          "image": "/assets/img/optimized/078-oxygen-therapy-equipment.cc791751bbbb.webp"
+        },
+        {
+          "code": "ME07",
+          "name": "Syringe & Infusion Pumps",
+          "slug": "me07-syringe-infusion-pumps",
+          "products": [
+            "catalogue/syringe-infusion/syringe-pump-swm-11092.html",
+            "catalogue/icu-products/infusion-pump.html"
+          ],
+          "image": "/assets/img/optimized/095-syringe-infusion-pumps.b5347f5447fe.webp"
+        },
+        {
+          "code": "ME08",
+          "name": "Suction Machines",
+          "slug": "me08-suction-machines",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html",
+            "catalogue/icu-products/half-suction-machine.html"
+          ],
+          "image": "/assets/img/optimized/091-suction-machines.20b762387cff.webp"
+        },
+        {
+          "code": "ME09",
+          "name": "Anaesthesia Machines & Workstations",
+          "slug": "me09-anaesthesia-machines-workstations",
+          "products": [
+            "catalogue/anesthesia-workstation/cat-top-tech-circle-absorber.html",
+            "catalogue/anesthesia-workstation/cat-circle-co2-absorber.html",
+            "catalogue/anesthesia-workstation/cat-vaporizer.html",
+            "catalogue/anesthesia-workstation/anesthesia-machine-minor-ms.html",
+            "catalogue/anesthesia-workstation/anesthesia-machine-minor-ss.html"
+          ],
+          "image": "/assets/img/optimized/004-anaesthesia-machines-workstations.fcbbc72e78cc.webp"
+        },
+        {
+          "code": "ME10",
+          "name": "OT & Examination Lights",
+          "slug": "me10-ot-examination-lights",
+          "products": [
+            "catalogue/ot-lights/ot-light-premium-with-camera-hd-swm-11023.html",
+            "catalogue/ot-lights/ot-light-premium-globus-dome-swm-11024.html",
+            "catalogue/ot-lights/ot-light-four-reflector-economical-swm-11025.html",
+            "catalogue/ot-lights/ot-light-standor-4-reflector-mobile-swm-11026.html",
+            "catalogue/ot-lights/ot-light-five-six-reflector-swm-11027.html",
+            "catalogue/ot-lights/ot-examination-light-swm-11028.html"
+          ],
+          "image": "/assets/img/optimized/073-ot-examination-lights.d6496d9abb45.webp"
+        },
+        {
+          "code": "ME11",
+          "name": "Electrosurgical Units & Vessel Sealers",
+          "slug": "me11-electrosurgical-units-vessel-sealers",
+          "products": [
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html"
+          ],
+          "image": "/assets/img/optimized/026-electrosurgical-units-vessel-sealers.883fb7e9bbff.webp"
+        },
+        {
+          "code": "ME12",
+          "name": "Laparoscopy & Endoscopy Systems",
+          "slug": "me12-laparoscopy-endoscopy-systems",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html",
+            "catalogue/lapro-tower-equipment/gastroscopy-units-new-pre-owned-swm-11105.html"
+          ],
+          "image": "/assets/img/optimized/049-laparoscopy-endoscopy-systems.74f2d19af314.webp"
+        },
+        {
+          "code": "ME14",
+          "name": "Maternal & Foetal Monitoring",
+          "slug": "me14-maternal-foetal-monitoring",
+          "products": [
+            "catalogue/patient-monitor/dr-smith-fetal-monitor-ctg-machine-swm-11093.html"
+          ],
+          "image": "/assets/img/optimized/050-maternal-foetal-monitoring.71d5a705629a.webp"
+        },
+        {
+          "code": "ME15",
+          "name": "Neonatal Care Equipment",
+          "slug": "me15-neonatal-care-equipment",
+          "products": [
+            "catalogue/baby-warmer/neonatal-infant-incubator-swm-11114.html",
+            "catalogue/baby-warmer/cat-baby-warmer-regular.html",
+            "catalogue/baby-warmer/cat-baby-warmer-deluxe.html",
+            "catalogue/baby-warmer/cat-baby-warmer-super-deluxe.html",
+            "catalogue/baby-warmer/premium-infant-radiant-warmer-n-102.html",
+            "catalogue/baby-warmer/premium-infant-radiant-warmer-n-103.html",
+            "catalogue/baby-warmer/cat-premium-baby-warmer-n-400.html"
+          ],
+          "image": "/assets/img/optimized/064-neonatal-care-equipment.b80199756333.webp"
+        },
+        {
+          "code": "ME16",
+          "name": "Diagnostic Imaging Equipment",
+          "slug": "me16-diagnostic-imaging-equipment",
+          "products": [
+            "catalogue/small-general-equipment/c-t-scan-machine-new-pre-owned-swm-11096.html",
+            "catalogue/small-general-equipment/m-r-i-scan-machine-new-pre-owned-swm-11097.html",
+            "catalogue/small-general-equipment/x-ray-scan-system-new-pre-owned-swm-11098.html",
+            "catalogue/small-general-equipment/c-r-system-new-pre-owned-swm-11099.html",
+            "catalogue/c-arm-machine/surgical-c-arm-machine-swm-11100.html",
+            "catalogue/ultrasound/diagnostic-ultrasound-scanners-swm-11101.html"
+          ],
+          "image": "/assets/img/optimized/020-diagnostic-imaging-equipment.3ef8e0d34b24.webp"
+        },
+        {
+          "code": "ME17",
+          "name": "Laboratory Equipment & Analysers",
+          "slug": "me17-laboratory-equipment-analysers",
+          "products": [
+            "catalogue/ivd-products/automated-electrolyte-analyzer-swm-11110.html",
+            "catalogue/ivd-products/arterial-blood-gas-machine-swm-11111.html",
+            "catalogue/ivd-products/elisa-reader-and-washer-swm-11113.html"
+          ],
+          "image": "/assets/img/optimized/046-laboratory-equipment-analysers.29aa9f11f1c4.webp"
+        },
+        {
+          "code": "ME18",
+          "name": "Sterilisation & Disinfection Equipment",
+          "slug": "me18-sterilisation-disinfection-equipment",
+          "products": [
+            "catalogue/autoclaves/cat-portable-aluminium-six-wing-nut-autoclave.html",
+            "catalogue/autoclaves/cat-portable-aluminium-p-type-autoclave.html",
+            "catalogue/autoclaves/cat-portable-stainless-steel-digital-p-type-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-stainless-steel-nut-locking-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-stainless-steel-and-aluminium-combined-nut-locking-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-radial-locking-double-wall-autoclave.html",
+            "catalogue/autoclaves/cat-horizontal-triple-wall-autoclave.html",
+            "catalogue/icu-products/autoclave.html"
+          ],
+          "image": "/assets/img/optimized/042-instrument-care-sterilisation-trays.749f671bc515.webp"
+        },
+        {
+          "code": "ME19",
+          "name": "Dialysis Equipment",
+          "slug": "me19-dialysis-equipment",
+          "products": [],
+          "image": "/assets/img/optimized/022-dialysis-equipment.346c42aeb940.webp"
+        },
+        {
+          "code": "ME20",
+          "name": "Surgical Microscopes",
+          "slug": "me20-surgical-microscopes",
+          "products": [
+            "catalogue/small-general-equipment/e-n-t-neuro-operating-microscope-swm-11139.html"
+          ],
+          "image": "/assets/img/optimized/094-surgical-microscopes.ca76204cdb4c.webp"
+        },
+        {
+          "code": "ME22",
+          "name": "Physiotherapy & Rehabilitation Equipment",
+          "slug": "me22-physiotherapy-rehabilitation-equipment",
+          "products": [
+            "catalogue/goods/physiotherapy-rehabilitation-goods.html"
+          ],
+          "image": "/assets/img/optimized/034-general-diagnostic-equipment.4c9dea24169d.webp"
+        },
+        {
+          "code": "ME24",
+          "name": "Medical Training & Simulation Equipment",
+          "slug": "me24-medical-training-simulation-equipment",
+          "products": [
+            "catalogue/goods/medical-simulation-mannequins-training-dummies.html"
+          ],
+          "image": "/assets/img/optimized/060-medical-training-simulation-equipment.801440a46aeb.webp"
+        },
+        {
+          "code": "ME25",
+          "name": "Equipment Accessories & Spares",
+          "slug": "me25-equipment-accessories-spares",
+          "products": [],
+          "image": "/assets/img/optimized/028-equipment-accessories-spares.6b6494c547ba.webp"
+        }
+      ]
+    },
+    {
+      "code": "SI",
+      "name": "Surgical Instruments",
+      "slug": "surgical-instruments-family",
+      "description": "Individual instruments and complete sets organised by surgical specialty.",
+      "image": "assets/img/optimized/04-surgical-instruments.d7e390308c1f.webp",
+      "width": 620,
+      "height": 507,
+      "subcategories": [
+        {
+          "code": "SI02",
+          "name": "Obstetrics & Gynaecology Instruments",
+          "slug": "si02-obstetrics-gynaecology-instruments",
+          "products": [
+            "catalogue/surgical-instruments/cat-gynaecology-instrument-set.html"
+          ],
+          "image": "/assets/img/optimized/069-obstetrics-gynaecology-instruments.9e5699509dfa.webp"
+        },
+        {
+          "code": "SI04",
+          "name": "ENT Instruments",
+          "slug": "si04-ent-instruments",
+          "products": [
+            "catalogue/surgical-instruments/cat-ent-instrument-set.html"
+          ],
+          "image": "/assets/img/optimized/027-ent-instruments.97648b794887.webp"
+        },
+        {
+          "code": "SI05",
+          "name": "Laparoscopic Instruments",
+          "slug": "si05-laparoscopic-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/048-laparoscopic-instruments.4409e43ca420.webp"
+        },
+        {
+          "code": "SI06",
+          "name": "Urology Instruments",
+          "slug": "si06-urology-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/099-urology-instruments.2409e45ebace.webp"
+        },
+        {
+          "code": "SI07",
+          "name": "Hysteroscopy Instruments",
+          "slug": "si07-hysteroscopy-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/041-hysteroscopy-instruments.af33a5447976.webp"
+        },
+        {
+          "code": "SI08",
+          "name": "Arthroscopy Instruments",
+          "slug": "si08-arthroscopy-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/005-arthroscopy-instruments.cb1ea6928db3.webp"
+        },
+        {
+          "code": "SI10",
+          "name": "Ophthalmic Instruments",
+          "slug": "si10-ophthalmic-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/071-ophthalmic-instruments.f092923c2b0c.webp"
+        },
+        {
+          "code": "SI11",
+          "name": "Dental & Oral Surgery Instruments",
+          "slug": "si11-dental-oral-surgery-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/017-dental-oral-surgery-instruments.044cd770ba41.webp"
+        },
+        {
+          "code": "SI12",
+          "name": "Cardiovascular & Thoracic Instruments",
+          "slug": "si12-cardiovascular-thoracic-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/012-cardiovascular-thoracic-instruments.093ab589c474.webp"
+        },
+        {
+          "code": "SI13",
+          "name": "Plastic & Reconstructive Surgery Instruments",
+          "slug": "si13-plastic-reconstructive-surgery-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/035-general-surgical-instruments.6d98b50348d8.webp"
+        },
+        {
+          "code": "SI14",
+          "name": "Microsurgical Instruments",
+          "slug": "si14-microsurgical-instruments",
+          "products": [],
+          "image": "/assets/img/optimized/062-microsurgical-instruments.f5d109f2468e.webp"
+        },
+        {
+          "code": "SI15",
+          "name": "Instrument Care & Sterilisation Trays",
+          "slug": "si15-instrument-care-sterilisation-trays",
+          "products": [],
+          "image": "/assets/img/optimized/042-instrument-care-sterilisation-trays.749f671bc515.webp"
+        }
+      ]
+    },
+    {
+      "code": "HL",
+      "name": "Hospital Linen",
+      "slug": "hospital-linen-family",
+      "description": "Staff clothing, patient linen, reusable OT textiles, hospital curtains and protective covers.",
+      "image": "assets/img/optimized/07_hospital_linen.1fafb4b16859.webp",
+      "width": 1536,
+      "height": 768,
+      "subcategories": [
+        {
+          "code": "HL01",
+          "name": "Scrub Suits & Staff Uniforms",
+          "slug": "hl01-scrub-suits-staff-uniforms",
+          "products": [
+            "catalogue/disposables/medical-dresses-ot-uniforms-swm-11137.html"
+          ],
+          "image": "/assets/img/optimized/080-patient-gowns-clothing.62bcabd8f6c0.webp"
+        },
+        {
+          "code": "HL02",
+          "name": "Reusable Surgical Gowns",
+          "slug": "hl02-reusable-surgical-gowns",
+          "products": [],
+          "image": "/assets/img/optimized/023-disposable-gowns-drapes-procedure-packs.89999a07cac6.webp"
+        },
+        {
+          "code": "HL03",
+          "name": "Patient Gowns & Clothing",
+          "slug": "hl03-patient-gowns-clothing",
+          "products": [],
+          "image": "/assets/img/optimized/080-patient-gowns-clothing.62bcabd8f6c0.webp"
+        },
+        {
+          "code": "HL04",
+          "name": "Bedsheets & Pillow Covers",
+          "slug": "hl04-bedsheets-pillow-covers",
+          "products": [],
+          "image": "/assets/img/optimized/008-bedsheets-pillow-covers.719816501ca5.webp"
+        },
+        {
+          "code": "HL05",
+          "name": "Blankets & Patient Covers",
+          "slug": "hl05-blankets-patient-covers",
+          "products": [],
+          "image": "/assets/img/optimized/011-blankets-patient-covers.901565e4d9a6.webp"
+        },
+        {
+          "code": "HL06",
+          "name": "Reusable Surgical Drapes & OT Linen",
+          "slug": "hl06-reusable-surgical-drapes-ot-linen",
+          "products": [],
+          "image": "/assets/img/optimized/023-disposable-gowns-drapes-procedure-packs.89999a07cac6.webp"
+        },
+        {
+          "code": "HL07",
+          "name": "Hospital Curtains",
+          "slug": "hl07-hospital-curtains",
+          "products": [
+            "catalogue/hospital-linen/i-c-u-ward-curtaining-swm-11138.html"
+          ],
+          "image": "/assets/img/optimized/038-hospital-curtains.b85dc12eb812.webp"
+        },
+        {
+          "code": "HL08",
+          "name": "Maternity & Neonatal Linen",
+          "slug": "hl08-maternity-neonatal-linen",
+          "products": [],
+          "image": "/assets/img/optimized/051-maternity-neonatal-linen.46d817f4fefb.webp"
+        },
+        {
+          "code": "HL09",
+          "name": "Towels & Utility Linen",
+          "slug": "hl09-towels-utility-linen",
+          "products": [],
+          "image": "/assets/img/optimized/097-towels-utility-linen.57310aa457a4.webp"
+        },
+        {
+          "code": "HL10",
+          "name": "Mattresses & Protective Covers",
+          "slug": "hl10-mattresses-protective-covers",
+          "products": [],
+          "image": "/assets/img/optimized/052-mattresses-protective-covers.27a2cfc3a446.webp"
+        }
+      ]
+    },
+    {
+      "code": "MC",
+      "name": "Medical Consumables",
+      "slug": "medical-consumables",
+      "description": "Discuss procedure-specific consumables, quantities, compatibility and documentation with our team.",
+      "image": "assets/img/optimized/08_medical_consumables.a5191d883b8c.webp",
+      "width": 1536,
+      "height": 768,
+      "subcategories": [
+        {
+          "code": "MC01",
+          "name": "Syringes & Needles",
+          "slug": "mc01-syringes-needles",
+          "products": [],
+          "image": "/assets/img/optimized/096-syringes-needles.eb741df59bc2.webp"
+        },
+        {
+          "code": "MC02",
+          "name": "IV Access & Infusion Consumables",
+          "slug": "mc02-iv-access-infusion-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/044-iv-access-infusion-consumables.b68d35d82b3d.webp"
+        },
+        {
+          "code": "MC03",
+          "name": "Airway & Respiratory Consumables",
+          "slug": "mc03-airway-respiratory-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/001-airway-respiratory-consumables.a872aad3df6a.webp"
+        },
+        {
+          "code": "MC04",
+          "name": "Anaesthesia Consumables",
+          "slug": "mc04-anaesthesia-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/003-anaesthesia-consumables.fdaf44e1632e.webp"
+        },
+        {
+          "code": "MC05",
+          "name": "Surgical Blades, Sutures & Wound Closure",
+          "slug": "mc05-surgical-blades-sutures-wound-closure",
+          "products": [],
+          "image": "/assets/img/optimized/093-surgical-blades-sutures-wound-closure.d6e41f35ff63.webp"
+        },
+        {
+          "code": "MC06",
+          "name": "Dressings, Bandages & Medical Tapes",
+          "slug": "mc06-dressings-bandages-medical-tapes",
+          "products": [],
+          "image": "/assets/img/optimized/024-dressings-bandages-medical-tapes.6585235daef1.webp"
+        },
+        {
+          "code": "MC07",
+          "name": "Gloves & Personal Protective Equipment",
+          "slug": "mc07-gloves-personal-protective-equipment",
+          "products": [],
+          "image": "/assets/img/optimized/036-gloves-personal-protective-equipment.82612a9009ec.webp"
+        },
+        {
+          "code": "MC08",
+          "name": "Disposable Gowns, Drapes & Procedure Packs",
+          "slug": "mc08-disposable-gowns-drapes-procedure-packs",
+          "products": [],
+          "image": "/assets/img/optimized/023-disposable-gowns-drapes-procedure-packs.89999a07cac6.webp"
+        },
+        {
+          "code": "MC09",
+          "name": "Urology & Drainage Consumables",
+          "slug": "mc09-urology-drainage-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/098-urology-drainage-consumables.2d30467fbc8f.webp"
+        },
+        {
+          "code": "MC10",
+          "name": "Gastroenterology & Feeding Consumables",
+          "slug": "mc10-gastroenterology-feeding-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/033-gastroenterology-feeding-consumables.345c16e9c4ef.webp"
+        },
+        {
+          "code": "MC11",
+          "name": "Monitoring & Diagnostic Consumables",
+          "slug": "mc11-monitoring-diagnostic-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/063-monitoring-diagnostic-consumables.eca798690473.webp"
+        },
+        {
+          "code": "MC12",
+          "name": "Laboratory Consumables & Reagents",
+          "slug": "mc12-laboratory-consumables-reagents",
+          "products": [],
+          "image": "/assets/img/optimized/045-laboratory-consumables-reagents.f9fb16ddcec7.webp"
+        },
+        {
+          "code": "MC13",
+          "name": "Dialysis Consumables",
+          "slug": "mc13-dialysis-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/021-dialysis-consumables.af0538c2d861.webp"
+        },
+        {
+          "code": "MC14",
+          "name": "Obstetric & Neonatal Consumables",
+          "slug": "mc14-obstetric-neonatal-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/068-obstetric-neonatal-consumables.add508c87519.webp"
+        },
+        {
+          "code": "MC15",
+          "name": "Sterilisation Consumables",
+          "slug": "mc15-sterilisation-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/042-instrument-care-sterilisation-trays.749f671bc515.webp"
+        },
+        {
+          "code": "MC16",
+          "name": "Cleaning & Disinfection Products",
+          "slug": "mc16-cleaning-disinfection-products",
+          "products": [],
+          "image": "/assets/img/optimized/013-cleaning-disinfection-products.1e30f52217ab.webp"
+        },
+        {
+          "code": "MC17",
+          "name": "Biomedical Waste Disposal Supplies",
+          "slug": "mc17-biomedical-waste-disposal-supplies",
+          "products": [],
+          "image": "/assets/img/optimized/010-biomedical-waste-disposal-supplies.b2f16593f23b.webp"
+        },
+        {
+          "code": "MC18",
+          "name": "Dental Consumables",
+          "slug": "mc18-dental-consumables",
+          "products": [],
+          "image": "/assets/img/optimized/018-dental-consumables.f651d8726c14.webp"
+        }
+      ]
+    }
+  ],
+  "departments": [
+    {
+      "code": "DP01",
+      "name": "ICU & Critical Care",
+      "slug": "department-icu-critical-care",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "ICU Beds",
+          "slug": "icu-beds",
+          "products": [
+            "catalogue/icu-products/5-function-electric-bed.html",
+            "catalogue/icu-products/attendent-bed.html"
+          ]
+        },
+        {
+          "name": "Patient Monitors",
+          "slug": "patient-monitors",
+          "products": [
+            "catalogue/icu-products/7-para-monitor.html"
+          ]
+        },
+        {
+          "name": "Ventilators",
+          "slug": "ventilators",
+          "products": [
+            "catalogue/icu-products/ventillator-machine.html"
+          ]
+        },
+        {
+          "name": "Syringe & Infusion Pumps",
+          "slug": "syringe-infusion-pumps",
+          "products": [
+            "catalogue/icu-products/infusion-pump.html",
+            "catalogue/syringe-infusion/syringe-pump-swm-11092.html"
+          ]
+        },
+        {
+          "name": "Defibrillators",
+          "slug": "defibrillators",
+          "products": [
+            "catalogue/defibrillator-aed/defibrillator-swm-11136.html"
+          ]
+        },
+        {
+          "name": "Suction Machines",
+          "slug": "suction-machines",
+          "products": [
+            "catalogue/icu-products/half-suction-machine.html"
+          ]
+        },
+        {
+          "name": "ICU Pendants & Bedhead Panels",
+          "slug": "icu-pendants-bedhead-panels",
+          "products": []
+        },
+        {
+          "name": "Critical Care Consumables",
+          "slug": "critical-care-consumables",
+          "products": []
+        },
+        {
+          "name": "ICU Equipment & Support",
+          "slug": "icu-equipment-support",
+          "products": [
+            "catalogue/icu-products/4-fold-screen.html",
+            "catalogue/ecg-machine/ecg-machine-swm-11088.html",
+            "catalogue/icu-products/iv-stand.html",
+            "catalogue/icu-products/autoclave.html",
+            "catalogue/icu-products/bed-side-locker.html",
+            "catalogue/icu-products/bio-waste-trolley.html",
+            "catalogue/icu-products/crash-cart.html",
+            "catalogue/icu-products/cylinder-trolley.html",
+            "catalogue/icu-products/cylinder.html",
+            "catalogue/icu-products/emergency-recovery.html",
+            "catalogue/icu-products/food-table.html",
+            "catalogue/small-general-equipment/oxygen-concentrator-swm-11095.html",
+            "catalogue/icu-products/scrub-station.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp01-icu-critical-care.webp"
+    },
+    {
+      "code": "DP02",
+      "name": "Operation Theatre & Anaesthesia",
+      "slug": "department-operation-theatre-anaesthesia",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "OT Tables & Attachments",
+          "slug": "ot-tables-attachments",
+          "products": [
+            "catalogue/ot-tables/ot-table-semi-electric-c-arm-swm-11031.html",
+            "catalogue/ot-tables/ot-table-general-hydraulic-swm-11033.html"
+          ]
+        },
+        {
+          "name": "OT Lights",
+          "slug": "ot-lights",
+          "products": [
+            "catalogue/ot-lights/ot-light-premium-with-camera-hd-swm-11023.html",
+            "catalogue/ot-lights/ot-light-premium-globus-dome-swm-11024.html",
+            "catalogue/ot-lights/ot-light-four-reflector-economical-swm-11025.html",
+            "catalogue/ot-lights/ot-light-standor-4-reflector-mobile-swm-11026.html",
+            "catalogue/ot-lights/ot-light-five-six-reflector-swm-11027.html"
+          ]
+        },
+        {
+          "name": "Anaesthesia Machines & Workstations",
+          "slug": "anaesthesia-machines-workstations",
+          "products": [
+            "catalogue/anesthesia-workstation/anesthesia-machine-minor-ms.html",
+            "catalogue/anesthesia-workstation/anesthesia-machine-minor-ss.html",
+            "catalogue/anesthesia-workstation/cat-top-tech-circle-absorber.html",
+            "catalogue/anesthesia-workstation/cat-circle-co2-absorber.html",
+            "catalogue/anesthesia-workstation/cat-vaporizer.html"
+          ]
+        },
+        {
+          "name": "Electrosurgery & Vessel Sealers",
+          "slug": "electrosurgery-vessel-sealers",
+          "products": [
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html"
+          ]
+        },
+        {
+          "name": "Surgical Instruments",
+          "slug": "surgical-instruments",
+          "products": [
+            "catalogue/surgical-instruments/cat-gynaecology-instrument-set.html",
+            "catalogue/surgical-instruments/cat-ent-instrument-set.html"
+          ]
+        },
+        {
+          "name": "OT Trolleys",
+          "slug": "ot-trolleys",
+          "products": [
+            "catalogue/hospital-trolley/abs-anesthetic-cart-swm-11062.html",
+            "catalogue/hospital-trolley/instrument-trolley-box-type-ms-swm-11064.html",
+            "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html",
+            "catalogue/hospital-trolley/instrument-trolley-three-shelf-ss-swm-11066.html",
+            "catalogue/hospital-trolley/instrument-trolley-box-type-ss-swm-11067.html",
+            "catalogue/lapro-tower-equipment/laparoscopy-trolley-ms-ss-swm-11071.html",
+            "catalogue/hospital-trolley/mayo-trolley-swm-11077.html"
+          ]
+        },
+        {
+          "name": "Modular OT Systems",
+          "slug": "modular-ot-systems",
+          "products": [
+            "catalogue/scrub-station/surgical-scrub-station-sensor-manual-swm-11045.html",
+            "catalogue/modular-ot/flush-mounted-led-x-ray-viewer.html",
+            "catalogue/modular-ot/cat-ot-windows.html",
+            "catalogue/modular-ot/cat-ot-flooring.html",
+            "catalogue/modular-ot/cat-21-inch-touch-screen-monitor.html",
+            "catalogue/modular-ot/cat-sensors.html",
+            "catalogue/modular-ot/cat-10-inch-industrial-touch-screen.html",
+            "catalogue/modular-ot/cat-touch-glass.html",
+            "catalogue/modular-ot/cat-membrane-control-panel.html",
+            "catalogue/modular-ot/cat-magnetic-writing-board.html",
+            "catalogue/modular-ot/cat-scrub-sink.html",
+            "catalogue/modular-ot/cat-pressure-relief-damper.html",
+            "catalogue/modular-ot/cat-storage-system.html",
+            "catalogue/modular-ot/cat-led-x-ray-view-box-high-end-version.html"
+          ]
+        },
+        {
+          "name": "Pendants & MGPS",
+          "slug": "pendants-mgps",
+          "products": [
+            "catalogue/modular-ot/medical-gas-outlet-bs-standard-model-amber.html",
+            "catalogue/modular-ot/medical-gas-outlet-din-standard-model-jasper.html",
+            "catalogue/modular-ot/medical-gas-outlet-parkodex-with-probe.html",
+            "catalogue/modular-ot/medical-gas-outlet-pb-standard-model-sapphire.html",
+            "catalogue/modular-ot/cat-power-column.html",
+            "catalogue/modular-ot/cat-bed-head-panel-lumipan.html",
+            "catalogue/modular-ot/cat-bed-head-panel-silk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-d.html",
+            "catalogue/modular-ot/cat-bed-head-panel-robustrunk-starlite-h.html",
+            "catalogue/modular-ot/cat-silk-smart-v.html",
+            "catalogue/modular-ot/cat-spinel-v.html",
+            "catalogue/modular-ot/cat-critrunk-v.html",
+            "catalogue/modular-ot/cat-limupan-v.html",
+            "catalogue/modular-ot/cat-s-2-v-pendant.html",
+            "catalogue/modular-ot/cat-s-4-v-800-pendant.html",
+            "catalogue/modular-ot/cat-s-3-v-800-pendant.html",
+            "catalogue/modular-ot/cat-s-3-h-pendant.html",
+            "catalogue/modular-ot/cat-s-1-v-1000-pendant.html",
+            "catalogue/modular-ot/cat-movable-s-4-v-600-pendant.html",
+            "catalogue/modular-ot/cat-laparoscopic-movable-s-5-h-pendant.html",
+            "catalogue/modular-ot/cat-motorized-pendant.html",
+            "catalogue/modular-ot/cat-laparoscopic-motorized-pendant-single-arm-s-5-h.html",
+            "catalogue/modular-ot/cat-motorized-pendant-double-arm-s-4-v-800.html",
+            "catalogue/modular-ot/cat-pendants.html"
+          ]
+        },
+        {
+          "name": "OT Linen & Consumables",
+          "slug": "ot-linen-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp02-operation-theatre-anaesthesia.webp",
+      "productPhotos": {
+        "c42d0c599c9a": "/assets/img/optimized/ot-table-semi-electric-c-arm-transparent-1899a8a7d4.8056a22e36fe.webp",
+        "85a0f61938c9": "/assets/img/optimized/ot-table-general-hydraulic-transparent-a294890426.788311ba4c22.webp",
+        "5c2c900357aa": "/assets/img/optimized/ot-light-premium-with-camera-hd-transparent-8946a8dfed.06fa88abda03.webp",
+        "2309963f11be": "/assets/img/optimized/ot-light-premium-globus-dome-transparent-e5aef92087.3093dc9103df.webp",
+        "9ac32218cbc1": "/assets/img/optimized/ot-light-four-reflector-economical-transparent-1f3d9188b2.72ab98693f83.webp",
+        "8c209d3b7c0f": "/assets/img/optimized/ot-light-standor-four-reflector-with-battery-backup-transparent-501a8e1f8d.9056bfc2e79d.webp",
+        "3c67d665e207": "/assets/img/optimized/ot-light-five-reflector-six-reflector-transparent-442354c263.09a16f3abb9d.webp",
+        "f00da03d122e": "/assets/img/optimized/anaesthesia-machine-minor-ms-transparent-b7000019d1.c18fa11bea0a.webp",
+        "05f00acff4c3": "/assets/img/optimized/anaesthesia-machine-minor-ss-transparent-b7000019d1.c18fa11bea0a.webp",
+        "795eb99ea09c": "/assets/img/optimized/top-tech-circle-absorber-transparent-6b4e56c73a.49fe8f9b46b8.webp",
+        "23f39fbf5cd3": "/assets/img/optimized/circle-co2-absorber-transparent-6b4e56c73a.49fe8f9b46b8.webp",
+        "e7970f0ed592": "/assets/img/optimized/vaporizer-transparent-fe59f4e28e.2da63ff6b426.webp",
+        "e03f9f6456f0": "/assets/img/optimized/smart-4-cautery-machine-300w-400w-sealer-transparent-16f26b478f.e999124cef61.webp",
+        "7d2283ddcf2d": "/assets/img/optimized/gynaecology-instrument-set-transparent-a011c1e979.8fa31230137e.webp",
+        "e7aeaa5c16e9": "/assets/img/optimized/ent-instrument-set-transparent-eb49e5ebb5.2ce77c095dae.webp",
+        "8c64ecd8e300": "/assets/img/optimized/abs-anaesthetic-cart-transparent-672498fdcf.e48cd474bfe0.webp",
+        "3487da19d79f": "/assets/img/optimized/instrument-trolley-box-type-ms-transparent-40e943d3c6.65bd004793ac.webp",
+        "8b87cda9e5e6": "/assets/img/optimized/instrument-trolley-all-ss-transparent-849e11a9ec.93c826137205.webp",
+        "3b79a0e3e66a": "/assets/img/optimized/instrument-trolley-three-shelf-ss-transparent-dbba4a97e6.890e652f4708.webp",
+        "df9ba672564c": "/assets/img/optimized/instrument-trolley-box-type-ss-transparent-9664215724.1aa710d6dc4c.webp",
+        "60ce36233888": "/assets/img/optimized/laparoscopy-trolley-ms-ss-transparent-683be1d660.af86f54e39b7.webp",
+        "dc986f88d532": "/assets/img/optimized/mayo-trolley-transparent-5f0fb2e3ec.3830d065b68e.webp",
+        "10104bc42f5c": "/assets/img/optimized/flush-mounted-led-x-ray-viewer-transparent-774987871f.e9370380cfa2.webp",
+        "3a5699963eca": "/assets/operation%20theatre%20%26%20anaesthesia/ot-windows-48314cb278.avif",
+        "08eb2efedb5c": "/assets/img/optimized/ot-flooring-transparent-835c17d586.49efa9736bb7.webp",
+        "6c13670bb7ab": "/assets/img/optimized/21-inch-touch-screen-monitor-transparent-12361ae23a.38d59d156ae5.webp",
+        "e22dfb01a00b": "/assets/img/optimized/sensors-transparent-12361ae23a.38d59d156ae5.webp",
+        "c4073acf642b": "/assets/img/optimized/10-inch-industrial-touch-screen-transparent-12361ae23a.38d59d156ae5.webp",
+        "a89b6a6ee7fc": "/assets/img/optimized/touch-glass-transparent-12361ae23a.38d59d156ae5.webp",
+        "0684d0d67c64": "/assets/img/optimized/membrane-control-panel-transparent-12361ae23a.38d59d156ae5.webp",
+        "1639bba9b605": "/assets/img/optimized/magnetic-writing-board-transparent-68975bf2ac.4b31a4874df7.webp",
+        "3c0a7df1cd6b": "/assets/img/optimized/pressure-relief-damper-transparent-ded7c9c011.04283bb22cdc.webp",
+        "93594ef06c6e": "/assets/img/optimized/storage-system-transparent-6be1ce4499.663b8dfd90a9.webp",
+        "e2e58192e3c1": "/assets/img/optimized/led-x-ray-view-box-high-end-version-transparent-774987871f.e9370380cfa2.webp",
+        "057e8eb90883": "/assets/img/optimized/medical-gas-outlet-bs-standard-amber-transparent-7f784ba97a.cf17c5e024cc.webp",
+        "df706fadd542": "/assets/img/optimized/medical-gas-outlet-din-standard-jasper-transparent-a75fe9605b.1b8aef1d8fab.webp",
+        "777a9241209a": "/assets/img/optimized/medical-gas-outlet-parkodex-with-probe-transparent-e45314db06.de296687399a.webp",
+        "ba16e0a18eca": "/assets/img/optimized/medical-gas-outlet-pb-standard-sapphire-transparent-ba2bc64ec2.4a8c55368b37.webp",
+        "13cb6a9b64d8": "/assets/img/optimized/power-column-transparent-98f7fa2dc2.e88344629049.webp",
+        "1237f954406a": "/assets/img/optimized/bed-head-panel-lumipan-transparent-6b8b845eed.a81538ae783e.webp",
+        "edd3ff3777ea": "/assets/img/optimized/bed-head-panel-silk-h-transparent-6b8b845eed.a81538ae783e.webp",
+        "b2aba9988d11": "/assets/img/optimized/bed-head-panel-critrunk-h-transparent-0d42d67f6c.026a7ce49649.webp",
+        "7f45bffc8808": "/assets/img/optimized/bed-head-panel-critrunk-d-transparent-96342a7eab.ab3dc18dc924.webp",
+        "3c24471d5466": "/assets/img/optimized/bed-head-panel-robustrunk-starlite-h-transparent-0e1d43ce5c.c604f23d6dc4.webp",
+        "33ed1bf85519": "/assets/img/optimized/silk-smart-v-transparent-457683cafb.7dc5211d7b6a.webp",
+        "e24aaaf32191": "/assets/img/optimized/spinel-v-transparent-61128cfe74.54eaddcbef04.webp",
+        "97f5514bf743": "/assets/img/optimized/critrunk-v-transparent-9bf846edc5.d1171d6c5982.webp",
+        "aa970a45a599": "/assets/img/optimized/limupan-v-transparent-9bf846edc5.d1171d6c5982.webp",
+        "3f18a848ff71": "/assets/img/optimized/s-2-v-pendant-transparent-c7d490ddd2.99bcc4c37357.webp",
+        "6a72e423f0b1": "/assets/img/optimized/s-4-v-800-pendant-transparent-b28af0fde7.f2891b068074.webp",
+        "0313e93ca13a": "/assets/img/optimized/s-3-v-800-pendant-transparent-c6467ad9cf.7252ca462545.webp",
+        "6ea6ece219be": "/assets/img/optimized/s-3-h-pendant-transparent-7e1791c208.66f970d37f1a.webp",
+        "d48a4cde4aa7": "/assets/img/optimized/s-1-v-1000-pendant-transparent-714f6c3e3d.4eea1d662943.webp",
+        "bf0ef313f598": "/assets/img/optimized/movable-s-4-v-600-pendant-transparent-b28af0fde7.f2891b068074.webp",
+        "804a0b184ad5": "/assets/img/optimized/laparoscopic-movable-s-5-h-pendant-transparent-475c6f72e9.da3b12fa0331.webp",
+        "ac8b840446f1": "/assets/img/optimized/motorized-pendant-transparent-df11114ecf.c75eae1f1aa6.webp",
+        "fd9212cea0b3": "/assets/img/optimized/laparoscopic-motorized-pendant-single-arm-s-5-h-transparent-475c6f72e9.da3b12fa0331.webp",
+        "ec9ea8e18390": "/assets/img/optimized/motorized-pendant-double-arm-s-4-v-800-transparent-df11114ecf.c75eae1f1aa6.webp",
+        "d5b1fb24f414": "/assets/img/optimized/pendants-transparent-b28af0fde7.f2891b068074.webp"
+      }
+    },
+    {
+      "code": "DP03",
+      "name": "Emergency & Trauma",
+      "slug": "department-emergency-trauma",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Emergency Trolleys",
+          "slug": "emergency-trolleys",
+          "products": [
+            "catalogue/stretcher-trolley/emergency-patient-trolley-hydraulic-swm-11042.html",
+            "catalogue/stretcher-trolley/ambulance-stretcher-auto-loading-swm-11044.html",
+            "catalogue/hospital-trolley/crash-cart-with-abs-drawers-swm-11049.html",
+            "catalogue/hospital-trolley/crash-cart-with-s-s-drawers-swm-11050.html",
+            "catalogue/rescue-equipment/two-fold-emergency-stretcher.html",
+            "catalogue/rescue-equipment/four-fold-compact-emergency-stretcher.html"
+          ]
+        },
+        {
+          "name": "Stretchers & Spine Boards",
+          "slug": "stretchers-spine-boards",
+          "products": [
+            "catalogue/stretcher-trolley/stretcher-trolley-ms-ss-swm-11040.html",
+            "catalogue/stretcher-trolley/stretcher-trolley-deluxe-manual-swm-11041.html",
+            "catalogue/stretcher-trolley/emergency-patient-trolley-hydraulic-swm-11042.html",
+            "catalogue/stretcher-trolley/stretcher-trolley-cum-chair-swm-11043.html",
+            "catalogue/stretcher-trolley/ambulance-stretcher-auto-loading-swm-11044.html",
+            "catalogue/rescue-equipment/spine-board-immobilizer.html",
+            "catalogue/rescue-equipment/scoop-stretcher-split-type.html",
+            "catalogue/rescue-equipment/two-fold-emergency-stretcher.html",
+            "catalogue/rescue-equipment/four-fold-compact-emergency-stretcher.html"
+          ]
+        },
+        {
+          "name": "Defibrillators & AEDs",
+          "slug": "defibrillators-aeds",
+          "products": [
+            "catalogue/defibrillator-aed/automatic-external-defibrillator-aed-swm-11089.html",
+            "catalogue/defibrillator-aed/defibrillator-new-pre-owned-swm-11090.html",
+            "catalogue/defibrillator-aed/defibrillator-swm-11136.html"
+          ]
+        },
+        {
+          "name": "Ventilators",
+          "slug": "ventilators",
+          "products": [
+            "catalogue/ventilators/icu-ventilator-new-pre-owned-swm-11129.html"
+          ]
+        },
+        {
+          "name": "Suction Machines",
+          "slug": "suction-machines",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html"
+          ]
+        },
+        {
+          "name": "Emergency Instruments & Consumables",
+          "slug": "emergency-instruments-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp03-emergency-trauma.webp",
+      "productPhotos": {
+        "d1d7247e1be0": "/assets/img/optimized/emergency-patient-trolley-hydraulic-transparent-f7f8d84a12.f788ee4409b7.webp",
+        "ffe867dd07ab": "/assets/img/optimized/ambulance-stretcher-auto-loading-transparent-e45d4e2c86.8a2d3d2a4c2e.webp",
+        "ef0089c84442": "/assets/img/optimized/crash-cart-with-abs-drawers-transparent-f70e3d8671.3f7145c9be2d.webp",
+        "55d7edea030c": "/assets/img/optimized/crash-cart-with-s-s-drawers-transparent-e363d71a25.6795d9c52f5d.webp",
+        "88dcc537ae64": "/assets/img/optimized/two-fold-emergency-stretcher-transparent-811b06c182.bcf2759f2d1c.webp",
+        "1aa84ab0eb48": "/assets/img/optimized/four-fold-compact-emergency-stretcher-transparent-0a9748e5c1.570cc8a048e8.webp",
+        "0518d5115355": "/assets/img/optimized/stretcher-trolley-ms-ss-transparent-cd50017a43.35b3efaad83b.webp",
+        "156b2ee58341": "/assets/img/optimized/stretcher-trolley-deluxe-manual-transparent-f9ba02c182.6ef5e042582f.webp",
+        "34f93230ea19": "/assets/img/optimized/stretcher-trolley-cum-chair-transparent-6fd463c5a5.fa0ae5f5b144.webp",
+        "d9c9726e671e": "/assets/img/optimized/spine-board-immobilizer-transparent-63fa0de83e.0a325d48196e.webp",
+        "41101c770b88": "/assets/emergency%20%26%20trauma/scoop-stretcher-split-type-transparent-3508d13a4e.png",
+        "e1b75b2f1f85": "/assets/img/optimized/automatic-external-defibrillator-transparent-06ea5f9d58.7880c7bb8c6d.webp"
+      }
+    },
+    {
+      "code": "DP04",
+      "name": "General Wards & Patient Rooms",
+      "slug": "department-general-wards-patient-rooms",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Hospital Beds",
+          "slug": "hospital-beds",
+          "products": [
+            "catalogue/beds/i-c-u-bed-five-functional-electric-imported-swm-11000.html",
+            "catalogue/beds/i-c-u-bed-five-functional-electric-deluxe-swm-11001.html",
+            "catalogue/beds/i-c-u-bed-five-functional-electric-eco-model-swm-11002.html",
+            "catalogue/beds/i-c-u-bed-five-functional-manual-deluxe-swm-11003.html",
+            "catalogue/beds/i-c-u-bed-five-functional-manual-eco-model-swm-11004.html",
+            "catalogue/beds/i-c-u-bed-three-functional-electric-deluxe-swm-11005.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11006.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-deluxe-swm-11007.html",
+            "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11008.html",
+            "catalogue/beds/fowler-bed-electric-deluxe-swm-11009.html",
+            "catalogue/beds/fowler-bed-manual-super-deluxe-swm-11010.html",
+            "catalogue/beds/fowler-bed-manual-deluxe-full-ss-panels-swm-11011.html",
+            "catalogue/beds/fowler-bed-manual-eco-model-swm-11012.html",
+            "catalogue/beds/semi-fowler-bed-manual-eco-model-swm-11013.html",
+            "catalogue/beds/semi-fowler-bed-electric-deluxe-swm-11014.html",
+            "catalogue/beds/semi-fowler-bed-manual-super-deluxe-swm-11015.html",
+            "catalogue/beds/semi-fowler-bed-deluxe-ss-cum-sunmica-swm-11016.html",
+            "catalogue/beds/plain-bed-super-deluxe-abs-panels-swm-11017.html",
+            "catalogue/beds/plain-bed-deluxe-full-ss-bows-swm-11018.html",
+            "catalogue/beds/plain-bed-eco-model-powder-coated-bows-swm-11019.html",
+            "catalogue/baby-products/pediatric-bed-with-drop-down-railings-swm-11020.html"
+          ]
+        },
+        {
+          "name": "Bedside Lockers",
+          "slug": "bedside-lockers",
+          "products": [
+            "catalogue/bed-side-locker/bed-side-locker-semi-deluxe-swm-11058.html",
+            "catalogue/bed-side-locker/bed-side-locker-ms-ss-swm-11059.html",
+            "catalogue/bed-side-locker/bed-side-locker-deluxe-swm-11060.html",
+            "catalogue/bed-side-locker/bed-side-locker-abs-type-swm-11061.html"
+          ]
+        },
+        {
+          "name": "Overbed Tables",
+          "slug": "overbed-tables",
+          "products": [
+            "catalogue/over-bed-table/over-bed-food-table-u-type-swm-11072.html",
+            "catalogue/over-bed-table/over-bed-food-table-knob-type-swm-11073.html",
+            "catalogue/over-bed-table/over-bed-food-table-gear-type-swm-11074.html",
+            "catalogue/over-bed-table/over-bed-food-table-hydraulic-swm-11075.html"
+          ]
+        },
+        {
+          "name": "IV Stands",
+          "slug": "iv-stands",
+          "products": [
+            "catalogue/rescue-equipment/mobile-bowl-basin-stand-ms-ss.html"
+          ]
+        },
+        {
+          "name": "Wheelchairs",
+          "slug": "wheelchairs",
+          "products": [
+            "catalogue/wheelchairs/wheel-chair-indian-imported-swm-11063.html"
+          ]
+        },
+        {
+          "name": "Attendant Furniture",
+          "slug": "attendant-furniture",
+          "products": [
+            "catalogue/hospital-furniture/attendant-bed-cum-chair-swm-11046.html"
+          ]
+        },
+        {
+          "name": "Privacy Screens & Curtains",
+          "slug": "privacy-screens-curtains",
+          "products": [
+            "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html",
+            "catalogue/hospital-linen/i-c-u-ward-curtaining-swm-11138.html"
+          ]
+        },
+        {
+          "name": "Bedhead Panels",
+          "slug": "bedhead-panels",
+          "products": [
+            "catalogue/modular-ot/cat-power-column.html",
+            "catalogue/modular-ot/cat-bed-head-panel-lumipan.html",
+            "catalogue/modular-ot/cat-bed-head-panel-silk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-h.html",
+            "catalogue/modular-ot/cat-bed-head-panel-critrunk-d.html",
+            "catalogue/modular-ot/cat-bed-head-panel-robustrunk-starlite-h.html",
+            "catalogue/modular-ot/cat-silk-smart-v.html",
+            "catalogue/modular-ot/cat-spinel-v.html",
+            "catalogue/modular-ot/cat-critrunk-v.html",
+            "catalogue/modular-ot/cat-limupan-v.html"
+          ]
+        },
+        {
+          "name": "Hospital Linen",
+          "slug": "hospital-linen",
+          "products": [
+            "catalogue/hospital-linen/i-c-u-ward-curtaining-swm-11138.html"
+          ]
+        },
+        {
+          "name": "Nursing Consumables",
+          "slug": "nursing-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp04-general-wards-patient-rooms.webp",
+      "productPhotos": {
+        "02bb6538d195": "/assets/img/optimized/i-c-u-bed-five-functional-electric-imported-transparent-77e72a5738.c718e59dfc2f.webp",
+        "76ca667c2354": "/assets/img/optimized/i-c-u-bed-five-functional-electric-deluxe-7021ab4288.ace41fd9acdc.webp",
+        "6b2db3b3514f": "/assets/img/optimized/i-c-u-bed-five-functional-electric-eco-model-c54e109c77.ef483c17759b.webp",
+        "a32d90e046af": "/assets/img/optimized/i-c-u-bed-five-functional-manual-deluxe-transparent-8f43bb3ddf.5d19f4fcffb6.webp",
+        "4da46fe94f39": "/assets/img/optimized/i-c-u-bed-five-functional-manual-eco-model-transparent-0faca20e01.2cf6dfb0fd7c.webp",
+        "816db8b8304f": "/assets/img/optimized/i-c-u-bed-three-functional-electric-deluxe-66bbe7b54f.b8c4b4c17042.webp",
+        "e25b88051e9a": "/assets/img/optimized/i-c-u-bed-three-functional-manual-eco-model-transparent-0faca20e01.2cf6dfb0fd7c.webp",
+        "ea9bfd1c2318": "/assets/img/optimized/i-c-u-bed-three-functional-manual-deluxe-transparent-8f43bb3ddf.5d19f4fcffb6.webp",
+        "8f312af01ba3": "/assets/img/optimized/i-c-u-bed-three-functional-manual-eco-model-transparent-d7f3c80911.e408d411f1e8.webp",
+        "8e4971a9d00c": "/assets/img/optimized/fowler-bed-electric-deluxe-2ae2b25268.9163c6b7c633.webp",
+        "6b851eb7a7a3": "/assets/img/optimized/fowler-bed-manual-super-deluxe-transparent-baac8b098f.c281b521838f.webp",
+        "9b79fcbcbbb2": "/assets/img/optimized/fowler-bed-manual-deluxe-full-ss-panels-transparent-062ecb14b4.11d20c5aa480.webp",
+        "694d815595ab": "/assets/img/optimized/fowler-bed-manual-eco-model-transparent-86eef9b674.0b0c319a5a12.webp",
+        "6c4d2b0d8f57": "/assets/img/optimized/semi-fowler-bed-manual-eco-model-transparent-99779396af.4506b97d24fa.webp",
+        "197da1d5874d": "/assets/img/optimized/semi-fowler-bed-electric-deluxe-transparent-c47b6b3ea7.57bcb71ac4ce.webp",
+        "c7d5c7f42f2d": "/assets/img/optimized/semi-fowler-bed-manual-super-deluxe-transparent-58dc98645c.2e54a1d90d72.webp",
+        "5aad704415f1": "/assets/img/optimized/semi-fowler-bed-deluxe-ss-cum-sunmica-transparent-bf55329131.209cce54e526.webp",
+        "2fba6ef5c15a": "/assets/img/optimized/plain-bed-super-deluxe-abs-panels-transparent-880fcab5e5.54deeea229eb.webp",
+        "ab0ba1fccc93": "/assets/img/optimized/plain-bed-deluxe-full-ss-bows-transparent-a6c4dec54f.3debcde6ec2b.webp",
+        "9535b73c5e3d": "/assets/img/optimized/plain-bed-eco-model-transparent-334d1e8d68.36a2944d6723.webp",
+        "2cfe84714171": "/assets/img/optimized/pediatric-bed-with-drop-down-railings-transparent-f80e956759.e5c0783065b5.webp",
+        "baef06543b05": "/assets/img/optimized/bed-side-locker-semi-deluxe-transparent-f0d3747c88.09054a8f80e7.webp",
+        "ef7e6f57ca9b": "/assets/img/optimized/bed-side-locker-ms-ss-transparent-f5b061f857.ee02fe6e94bf.webp",
+        "9229f9a2de97": "/assets/img/optimized/bed-side-locker-deluxe-transparent-b888450605.70705751ff6a.webp",
+        "499dc31aa817": "/assets/img/optimized/bed-side-locker-abs-type-transparent-a565a2cc1e.aa062f720429.webp",
+        "dcdbee0950a4": "/assets/img/optimized/over-bed-food-table-u-type-transparent-3b8e192d57.dae423bd5d86.webp",
+        "8862920fd9a6": "/assets/img/optimized/over-bed-food-table-gear-type-transparent-d593907460.3c3e3da1229e.webp",
+        "14bdb0e44acb": "/assets/img/optimized/over-bed-food-table-hydraulic-transparent-2dd700b05a.01342c78e069.webp",
+        "dfbeedd8e7c1": "/assets/img/optimized/mobile-bowl-basin-stand-ms-ss-transparent-9f7ec76f0e.701609822951.webp",
+        "046172436ac2": "/assets/img/optimized/wheel-chair-indian-imported-transparent-d3e76915ae.3634cd3dec77.webp",
+        "ec4b5a0bb3c7": "/assets/img/optimized/attendant-bed-cum-chair-transparent-0eed51bfed.4b1c8df8a368.webp",
+        "541685af7f1c": "/assets/img/optimized/icu-ward-curtaining-transparent-f6d0d9e456.7b1a009725c3.webp",
+        "13cb6a9b64d8": "/assets/img/optimized/power-column-transparent-98f7fa2dc2.e88344629049.webp",
+        "1237f954406a": "/assets/img/optimized/bed-head-panel-lumipan-transparent-6b8b845eed.a81538ae783e.webp",
+        "edd3ff3777ea": "/assets/img/optimized/bed-head-panel-silk-h-transparent-6b8b845eed.a81538ae783e.webp",
+        "b2aba9988d11": "/assets/img/optimized/bed-head-panel-critrunk-h-transparent-0d42d67f6c.026a7ce49649.webp",
+        "7f45bffc8808": "/assets/img/optimized/bed-head-panel-critrunk-d-transparent-96342a7eab.ab3dc18dc924.webp",
+        "3c24471d5466": "/assets/img/optimized/bed-head-panel-robustrunk-starlite-h-transparent-0e1d43ce5c.c604f23d6dc4.webp",
+        "33ed1bf85519": "/assets/img/optimized/silk-smart-v-transparent-457683cafb.7dc5211d7b6a.webp",
+        "e24aaaf32191": "/assets/img/optimized/spinel-v-transparent-61128cfe74.54eaddcbef04.webp",
+        "97f5514bf743": "/assets/img/optimized/critrunk-v-transparent-9bf846edc5.d1171d6c5982.webp",
+        "aa970a45a599": "/assets/img/optimized/limupan-v-transparent-9bf846edc5.d1171d6c5982.webp"
+      }
+    },
+    {
+      "code": "DP05",
+      "name": "OPD & Examination Rooms",
+      "slug": "department-opd-examination-rooms",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Examination Tables & Couches",
+          "slug": "examination-tables-couches",
+          "products": [
+            "catalogue/hospital-furniture/examination-table-plain-swm-11047.html",
+            "catalogue/examination-gynecology/examination-couch-deluxe-swm-11054.html"
+          ]
+        },
+        {
+          "name": "Examination Lights",
+          "slug": "examination-lights",
+          "products": [
+            "catalogue/ot-lights/ot-examination-light-swm-11028.html"
+          ]
+        },
+        {
+          "name": "Dressing Trolleys",
+          "slug": "dressing-trolleys",
+          "products": [
+            "catalogue/hospital-trolley/dressing-trolley-all-ss-swm-11068.html"
+          ]
+        },
+        {
+          "name": "Medical Stools",
+          "slug": "medical-stools",
+          "products": [
+            "catalogue/revolving-stool/revolving-stool-swm-11056.html",
+            "catalogue/revolving-stool/stool-deluxe-swm-11057.html"
+          ]
+        },
+        {
+          "name": "Privacy Screens",
+          "slug": "privacy-screens",
+          "products": [
+            "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html"
+          ]
+        },
+        {
+          "name": "Examination Instruments",
+          "slug": "examination-instruments",
+          "products": []
+        },
+        {
+          "name": "Dressing & Examination Consumables",
+          "slug": "dressing-examination-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp05-opd-examination-rooms.webp",
+      "productPhotos": {
+        "f721dda065d3": "/assets/img/optimized/examination-table-plain-transparent-5296de74d2.307a58c48861.webp",
+        "9065d7fe01a7": "/assets/img/optimized/examination-couch-deluxe-transparent-f55d7539bc.a080208944b0.webp",
+        "4faf3d170da3": "/assets/img/optimized/ot-examination-light-transparent-2571573afb.36a389bd333b.webp",
+        "be50dfb0fcc5": "/assets/img/optimized/dressing-trolley-all-ss-transparent-da30e4713e.157faca4f3de.webp",
+        "e0d7eee71b9d": "/assets/img/optimized/revolving-stool-transparent-b3661feab1.f89be0bf530e.webp",
+        "5097054202fa": "/assets/img/optimized/stool-deluxe-transparent-404305931b.fedb4cca5631.webp"
+      }
+    },
+    {
+      "code": "DP06",
+      "name": "Obstetrics & Gynaecology",
+      "slug": "department-obstetrics-gynaecology",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Delivery Tables & Beds",
+          "slug": "delivery-tables-beds",
+          "products": [
+            "catalogue/delivery-table/examination-delivery-table-swm-11034.html",
+            "catalogue/delivery-table/delivery-table-three-fold-swm-11035.html",
+            "catalogue/delivery-table/telescopic-table-ms-ss-swm-11036.html",
+            "catalogue/delivery-table/delivery-table-electric-manual-swm-11037.html",
+            "catalogue/delivery-table/delivery-table-hydraulic-deluxe-swm-11038.html",
+            "catalogue/delivery-table/delivery-bed-electric-manual-swm-11039.html"
+          ]
+        },
+        {
+          "name": "Foetal Monitors & CTG",
+          "slug": "foetal-monitors-ctg",
+          "products": [
+            "catalogue/patient-monitor/dr-smith-fetal-monitor-ctg-machine-swm-11093.html"
+          ]
+        },
+        {
+          "name": "Gynaecological Instruments",
+          "slug": "gynaecological-instruments",
+          "products": [
+            "catalogue/surgical-instruments/cat-gynaecology-instrument-set.html"
+          ]
+        },
+        {
+          "name": "Hysteroscopy Systems & Instruments",
+          "slug": "hysteroscopy-systems-instruments",
+          "products": []
+        },
+        {
+          "name": "Maternity Linen",
+          "slug": "maternity-linen",
+          "products": []
+        },
+        {
+          "name": "Delivery Consumables",
+          "slug": "delivery-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp06-obstetrics-gynaecology.webp",
+      "productPhotos": {
+        "e19d567b3a67": "/assets/img/optimized/examination-delivery-table-transparent-38afa1bda0.bb4f200ba267.webp",
+        "2826cb8caef3": "/assets/img/optimized/delivery-table-three-fold-transparent-de9ac627f9.d15b9c451a1d.webp",
+        "66297e11683f": "/assets/img/optimized/telescopic-table-ms-ss-transparent-bcbbb1f066.8282e1255fd3.webp",
+        "8dc2eb665ef1": "/assets/img/optimized/delivery-table-electric-manual-transparent-38c2d70488.793fe290cd18.webp",
+        "fcddbe15d43f": "/assets/img/optimized/delivery-table-hydraulic-deluxe-transparent-2a02ef137a.349de2f0165a.webp",
+        "8bef84641adc": "/assets/obstetrics%20%26%20gynaecology/delivery-bed-electric-manual-transparent-554e1563f9.png",
+        "b73ebdeb295e": "/assets/img/optimized/dr-smith-fetal-monitor-ctg-machine-transparent-7ab1e5ce06.33d50b10c1ff.webp",
+        "7d2283ddcf2d": "/assets/img/optimized/gynaecology-instrument-set-transparent-a011c1e979.8fa31230137e.webp"
+      }
+    },
+    {
+      "code": "DP07",
+      "name": "Neonatology & Paediatrics",
+      "slug": "department-neonatology-paediatrics",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Infant Warmers",
+          "slug": "infant-warmers",
+          "products": [
+            "catalogue/baby-warmer/premium-infant-radiant-warmer-n-102.html",
+            "catalogue/baby-warmer/premium-infant-radiant-warmer-n-103.html",
+            "catalogue/baby-warmer/cat-baby-warmer-regular.html",
+            "catalogue/baby-warmer/cat-baby-warmer-deluxe.html",
+            "catalogue/baby-warmer/cat-baby-warmer-super-deluxe.html",
+            "catalogue/baby-warmer/cat-premium-baby-warmer-n-400.html"
+          ]
+        },
+        {
+          "name": "Baby Incubators",
+          "slug": "baby-incubators",
+          "products": [
+            "catalogue/baby-warmer/neonatal-infant-incubator-swm-11114.html"
+          ]
+        },
+        {
+          "name": "Phototherapy Equipment",
+          "slug": "phototherapy-equipment",
+          "products": []
+        },
+        {
+          "name": "Neonatal & Paediatric Monitors",
+          "slug": "neonatal-paediatric-monitors",
+          "products": []
+        },
+        {
+          "name": "Paediatric Beds",
+          "slug": "paediatric-beds",
+          "products": [
+            "catalogue/baby-products/pediatric-bed-with-drop-down-railings-swm-11020.html"
+          ]
+        },
+        {
+          "name": "Bassinets & Cradles",
+          "slug": "bassinets-cradles",
+          "products": [
+            "catalogue/baby-products/baby-bassinet-acrylic-trolley-swm-11021.html",
+            "catalogue/baby-products/baby-cradle-wire-mesh-swm-11022.html"
+          ]
+        },
+        {
+          "name": "Neonatal Linen & Consumables",
+          "slug": "neonatal-linen-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp07-neonatology-paediatrics.webp",
+      "productPhotos": {
+        "85d6e5d47c30": "/assets/img/optimized/premium-baby-warmer-n-102-transparent-de68cd1bca.73341c9a6341.webp",
+        "7c94456c81f9": "/assets/img/optimized/premium-baby-warmer-n-103-transparent-de68cd1bca.73341c9a6341.webp",
+        "02bc60eb621e": "/assets/img/optimized/baby-warmer-regular-transparent-de68cd1bca.73341c9a6341.webp",
+        "82e290aef577": "/assets/img/optimized/baby-warmer-deluxe-transparent-de68cd1bca.73341c9a6341.webp",
+        "6dda579d4887": "/assets/img/optimized/baby-warmer-super-deluxe-transparent-de68cd1bca.73341c9a6341.webp",
+        "bc02ef1682c2": "/assets/img/optimized/premium-baby-warmer-n-400-transparent-de68cd1bca.73341c9a6341.webp",
+        "57391466055c": "/assets/img/optimized/baby-incubator-transparent-41f1e587d8.598eac7d9d14.webp",
+        "2cfe84714171": "/assets/img/optimized/pediatric-bed-with-drop-down-railings-transparent-f80e956759.e5c0783065b5.webp",
+        "88e6ca94a481": "/assets/img/optimized/baby-bassinet-imported-indian-transparent-a09a213e49.1639ba88a2e9.webp",
+        "61195025a6b1": "/assets/img/optimized/baby-cradle-transparent-4740e507b5.b12cd4eb0946.webp"
+      }
+    },
+    {
+      "code": "DP08",
+      "name": "Cardiology",
+      "slug": "department-cardiology",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "ECG Machines",
+          "slug": "ecg-machines",
+          "products": [
+            "catalogue/ecg-machine/ecg-machine-swm-11088.html"
+          ]
+        },
+        {
+          "name": "Defibrillators",
+          "slug": "defibrillators",
+          "products": [
+            "catalogue/defibrillator-aed/automatic-external-defibrillator-aed-swm-11089.html",
+            "catalogue/defibrillator-aed/defibrillator-new-pre-owned-swm-11090.html",
+            "catalogue/defibrillator-aed/defibrillator-swm-11136.html"
+          ]
+        },
+        {
+          "name": "Cardiac Diagnostic Equipment",
+          "slug": "cardiac-diagnostic-equipment",
+          "products": []
+        },
+        {
+          "name": "Cardiac Monitoring Accessories & Consumables",
+          "slug": "cardiac-monitoring-accessories-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp08-cardiology.webp",
+      "productPhotos": {
+        "e1b75b2f1f85": "/assets/img/optimized/automatic-external-defibrillator-transparent-06ea5f9d58.7880c7bb8c6d.webp"
+      }
+    },
+    {
+      "code": "DP09",
+      "name": "Respiratory & Pulmonology",
+      "slug": "department-respiratory-pulmonology",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Ventilators",
+          "slug": "ventilators",
+          "products": [
+            "catalogue/ventilators/icu-ventilator-new-pre-owned-swm-11129.html"
+          ]
+        },
+        {
+          "name": "HFNC Systems",
+          "slug": "hfnc-systems",
+          "products": [
+            "catalogue/bipap-cpap/hfnc-machine-high-flow-oxygen-swm-11130.html"
+          ]
+        },
+        {
+          "name": "Oxygen Concentrators",
+          "slug": "oxygen-concentrators",
+          "products": [
+            "catalogue/small-general-equipment/oxygen-concentrator-swm-11095.html"
+          ]
+        },
+        {
+          "name": "Oxygen Delivery Accessories",
+          "slug": "oxygen-delivery-accessories",
+          "products": [
+            "catalogue/modular-ot/cat-bpc-flow-meter.html"
+          ]
+        },
+        {
+          "name": "Suction Machines",
+          "slug": "suction-machines",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html"
+          ]
+        },
+        {
+          "name": "Respiratory Consumables",
+          "slug": "respiratory-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp09-respiratory-pulmonology.webp",
+      "productPhotos": {
+        "4ea3d0514cdf": "/assets/img/optimized/hfnc-machine-high-flow-oxygen-transparent-105460458e.b9658a0961a6.webp",
+        "a38fe7705468": "/assets/img/optimized/bpc-flow-meter-transparent-379d910017.2b88501f8421.webp"
+      }
+    },
+    {
+      "code": "DP10",
+      "name": "Radiology & Imaging",
+      "slug": "department-radiology-imaging",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "X-Ray Systems",
+          "slug": "x-ray-systems",
+          "products": [
+            "catalogue/small-general-equipment/x-ray-scan-system-new-pre-owned-swm-11098.html"
+          ]
+        },
+        {
+          "name": "Ultrasound Systems",
+          "slug": "ultrasound-systems",
+          "products": [
+            "catalogue/ultrasound/diagnostic-ultrasound-scanners-swm-11101.html"
+          ]
+        },
+        {
+          "name": "C-Arm Systems",
+          "slug": "c-arm-systems",
+          "products": [
+            "catalogue/c-arm-machine/surgical-c-arm-machine-swm-11100.html"
+          ]
+        },
+        {
+          "name": "CT Scanners",
+          "slug": "ct-scanners",
+          "products": [
+            "catalogue/small-general-equipment/c-t-scan-machine-new-pre-owned-swm-11096.html"
+          ]
+        },
+        {
+          "name": "MRI Scanners",
+          "slug": "mri-scanners",
+          "products": [
+            "catalogue/small-general-equipment/m-r-i-scan-machine-new-pre-owned-swm-11097.html"
+          ]
+        },
+        {
+          "name": "CR & DR Systems",
+          "slug": "cr-dr-systems",
+          "products": [
+            "catalogue/small-general-equipment/c-r-system-new-pre-owned-swm-11099.html"
+          ]
+        },
+        {
+          "name": "X-Ray Viewers",
+          "slug": "x-ray-viewers",
+          "products": [
+            "catalogue/modular-ot/flush-mounted-led-x-ray-viewer.html",
+            "catalogue/modular-ot/cat-led-x-ray-view-box-high-end-version.html"
+          ]
+        },
+        {
+          "name": "Imaging Accessories",
+          "slug": "imaging-accessories",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp10-radiology-imaging.webp",
+      "productPhotos": {
+        "6f088162ff86": "/assets/img/optimized/x-ray-scan-system-new-pre-owned-6185c72b1f.f282030fca7d.webp",
+        "ce4254dedf53": "/assets/img/optimized/diagnostic-ultrasound-scanners-transparent-539f5eaee3.3eddf794059d.webp",
+        "a2514931763b": "/assets/img/optimized/surgical-c-arm-machine-transparent-1e8bf7c762.7c5fad85a24d.webp",
+        "c2370e5fabac": "/assets/img/optimized/c-t-scan-machine-new-pre-owned-transparent-8e1f99df24.a1538d866078.webp",
+        "ce1e1a31ee60": "/assets/img/optimized/m-r-i-scan-machine-new-pre-owned-transparent-bcd1589def.9f785558683a.webp",
+        "a7efc05fd589": "/assets/radiology%20%26%20imaging/cr-system-new-pre-owned-a2843f39a3.png",
+        "10104bc42f5c": "/assets/img/optimized/flush-mounted-led-x-ray-viewer-transparent-774987871f.e9370380cfa2.webp",
+        "e2e58192e3c1": "/assets/img/optimized/led-x-ray-view-box-high-end-version-transparent-774987871f.e9370380cfa2.webp"
+      }
+    },
+    {
+      "code": "DP11",
+      "name": "Pathology & Laboratory",
+      "slug": "department-pathology-laboratory",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Electrolyte & Blood-Gas Analysers",
+          "slug": "electrolyte-blood-gas-analysers",
+          "products": [
+            "catalogue/ivd-products/automated-electrolyte-analyzer-swm-11110.html",
+            "catalogue/ivd-products/arterial-blood-gas-machine-swm-11111.html"
+          ]
+        },
+        {
+          "name": "ELISA Systems",
+          "slug": "elisa-systems",
+          "products": [
+            "catalogue/ivd-products/elisa-reader-and-washer-swm-11113.html"
+          ]
+        },
+        {
+          "name": "Laboratory Consumables & Reagents",
+          "slug": "laboratory-consumables-reagents",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp11-pathology-laboratory.webp",
+      "productPhotos": {
+        "2f00762ea13c": "/assets/img/optimized/automated-electrolyte-analyzer-transparent-93abc772ed.b1ea75d28a00.webp",
+        "34db6349d009": "/assets/img/optimized/arterial-blood-gas-machine-transparent-b4d8943772.a334f547356f.webp",
+        "c41f88a73a0b": "/assets/img/optimized/elisa-reader-and-washer-transparent-daf9b19e28.08060a5c247e.webp"
+      }
+    },
+    {
+      "code": "DP12",
+      "name": "CSSD & Infection Control",
+      "slug": "department-cssd-infection-control",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Steam Sterilisers & Autoclaves",
+          "slug": "steam-sterilisers-autoclaves",
+          "products": [
+            "catalogue/autoclaves/cat-portable-aluminium-six-wing-nut-autoclave.html",
+            "catalogue/autoclaves/cat-portable-aluminium-p-type-autoclave.html",
+            "catalogue/autoclaves/cat-portable-stainless-steel-digital-p-type-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-stainless-steel-nut-locking-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-stainless-steel-and-aluminium-combined-nut-locking-autoclave.html",
+            "catalogue/autoclaves/cat-vertical-radial-locking-double-wall-autoclave.html",
+            "catalogue/autoclaves/cat-horizontal-triple-wall-autoclave.html"
+          ]
+        },
+        {
+          "name": "Instrument Cleaning Equipment",
+          "slug": "instrument-cleaning-equipment",
+          "products": []
+        },
+        {
+          "name": "Sterilisation Trays & Containers",
+          "slug": "sterilisation-trays-containers",
+          "products": []
+        },
+        {
+          "name": "CSSD Furniture",
+          "slug": "cssd-furniture",
+          "products": [
+            "catalogue/scrub-station/surgical-scrub-station-sensor-manual-swm-11045.html",
+            "catalogue/cabinets/hospital-instrument-cabinet-double-glass-door-swm-11078.html"
+          ]
+        },
+        {
+          "name": "Sterilisation Indicators & Packaging",
+          "slug": "sterilisation-indicators-packaging",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp12-cssd-infection-control.webp",
+      "productPhotos": {
+        "7da6ca965797": "/assets/img/optimized/portable-aluminium-six-wing-nut-autoclave-transparent-e96cdff95f.1462ebf586c8.webp",
+        "1ea29899f671": "/assets/img/optimized/portable-aluminium-p-type-autoclave-transparent-10fe830b20.a34a3956b459.webp",
+        "1e9031f72e72": "/assets/img/optimized/portable-stainless-steel-digital-p-type-autoclave-transparent-704d65cbb5.158120aad36c.webp",
+        "cf2666b45268": "/assets/img/optimized/vertical-stainless-steel-nut-locking-autoclave-transparent-292bc52122.2f14095b6928.webp",
+        "031cba6fb570": "/assets/img/optimized/vertical-stainless-steel-and-aluminium-combined-nut-locking-autoclave-transparent-292bc52122.2f14095b6928.webp",
+        "2e7498824f05": "/assets/img/optimized/vertical-radial-locking-double-wall-autoclave-transparent-292bc52122.2f14095b6928.webp",
+        "b0946419ef18": "/assets/img/optimized/horizontal-triple-wall-autoclave-transparent-de7a83150b.766cc4af1968.webp",
+        "8bfff7d9416e": "/assets/img/optimized/hospital-instrument-cabinet-double-glass-door-transparent-d67a7be35f.9ccc704dc65e.webp"
+      }
+    },
+    {
+      "code": "DP13",
+      "name": "General & Laparoscopic Surgery",
+      "slug": "department-general-laparoscopic-surgery",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Laparoscopic Instruments",
+          "slug": "laparoscopic-instruments",
+          "products": []
+        },
+        {
+          "name": "Laparoscopy Camera Systems & Towers",
+          "slug": "laparoscopy-camera-systems-towers",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html"
+          ]
+        },
+        {
+          "name": "Insufflators & Light Sources",
+          "slug": "insufflators-light-sources",
+          "products": []
+        },
+        {
+          "name": "Electrosurgery",
+          "slug": "electrosurgery",
+          "products": [
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html"
+          ]
+        },
+        {
+          "name": "Surgical Consumables",
+          "slug": "surgical-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp13-general-laparoscopic-surgery.webp",
+      "productPhotos": {
+        "86b7ed548287": "/assets/img/optimized/laparoscopy-endoscopy-equipments-instruments-transparent-05a6ab1825.307fb071d902.webp",
+        "2d1feeae83e0": "/assets/img/optimized/endoscopy-laparoscopy-camera-units-transparent-05a6ab1825.f565e78637d0.webp",
+        "e03f9f6456f0": "/assets/img/optimized/smart-4-cautery-machine-300w-400w-sealer-transparent-16f26b478f.e999124cef61.webp"
+      }
+    },
+    {
+      "code": "DP14",
+      "name": "Gastroenterology & Endoscopy",
+      "slug": "department-gastroenterology-endoscopy",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Endoscopy Systems",
+          "slug": "endoscopy-systems",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html"
+          ]
+        },
+        {
+          "name": "Gastroscopy Systems",
+          "slug": "gastroscopy-systems",
+          "products": [
+            "catalogue/lapro-tower-equipment/gastroscopy-units-new-pre-owned-swm-11105.html"
+          ]
+        },
+        {
+          "name": "Endoscopy Instruments & Accessories",
+          "slug": "endoscopy-instruments-accessories",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html"
+          ]
+        },
+        {
+          "name": "Procedure Trolleys",
+          "slug": "procedure-trolleys",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-trolley-ms-ss-swm-11071.html"
+          ]
+        },
+        {
+          "name": "Endoscopy Cleaning Supplies",
+          "slug": "endoscopy-cleaning-supplies",
+          "products": []
+        },
+        {
+          "name": "Endoscopy Consumables",
+          "slug": "endoscopy-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp14-gastroenterology-endoscopy.webp",
+      "productPhotos": {
+        "86b7ed548287": "/assets/img/optimized/laparoscopy-endoscopy-equipments-instruments-transparent-05a6ab1825.307fb071d902.webp",
+        "2d1feeae83e0": "/assets/img/optimized/endoscopy-laparoscopy-camera-units-transparent-05a6ab1825.f565e78637d0.webp",
+        "b577287c41c8": "/assets/img/optimized/gastroscopy-units-new-pre-owned-transparent-78de52a110.5d726be3b2ff.webp",
+        "60ce36233888": "/assets/img/optimized/laparoscopy-trolley-ms-ss-transparent-683be1d660.af86f54e39b7.webp"
+      }
+    },
+    {
+      "code": "DP15",
+      "name": "Orthopaedics & Arthroscopy",
+      "slug": "department-orthopaedics-arthroscopy",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Arthroscopy Systems & Instruments",
+          "slug": "arthroscopy-systems-instruments",
+          "products": []
+        },
+        {
+          "name": "Traction & OT Table Attachments",
+          "slug": "traction-ot-table-attachments",
+          "products": []
+        },
+        {
+          "name": "C-Arm Systems",
+          "slug": "c-arm-systems",
+          "products": [
+            "catalogue/c-arm-machine/surgical-c-arm-machine-swm-11100.html"
+          ]
+        },
+        {
+          "name": "Orthopaedic Consumables",
+          "slug": "orthopaedic-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp15-orthopaedics-arthroscopy.webp",
+      "productPhotos": {
+        "a2514931763b": "/assets/img/optimized/surgical-c-arm-machine-transparent-1e8bf7c762.7c5fad85a24d.webp"
+      }
+    },
+    {
+      "code": "DP16",
+      "name": "Urology",
+      "slug": "department-urology",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Cystoscopy Systems & Instruments",
+          "slug": "cystoscopy-systems-instruments",
+          "products": []
+        },
+        {
+          "name": "TURP Instruments",
+          "slug": "turp-instruments",
+          "products": []
+        },
+        {
+          "name": "Ureteroscopy Instruments",
+          "slug": "ureteroscopy-instruments",
+          "products": []
+        },
+        {
+          "name": "PCNL Instruments",
+          "slug": "pcnl-instruments",
+          "products": []
+        },
+        {
+          "name": "Urology Procedure Equipment",
+          "slug": "urology-procedure-equipment",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html",
+            "catalogue/c-arm-machine/surgical-c-arm-machine-swm-11100.html",
+            "catalogue/ultrasound/diagnostic-ultrasound-scanners-swm-11101.html",
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html",
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html"
+          ]
+        },
+        {
+          "name": "Catheters & Drainage Consumables",
+          "slug": "catheters-drainage-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp16-urology.webp"
+    },
+    {
+      "code": "DP17",
+      "name": "Nephrology & Dialysis",
+      "slug": "department-nephrology-dialysis",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Dialysis Machines",
+          "slug": "dialysis-machines",
+          "products": []
+        },
+        {
+          "name": "Dialysis Chairs & Beds",
+          "slug": "dialysis-chairs-beds",
+          "products": []
+        },
+        {
+          "name": "Dialysis Water Treatment Systems",
+          "slug": "dialysis-water-treatment-systems",
+          "products": []
+        },
+        {
+          "name": "Dialysis Consumables & Concentrates",
+          "slug": "dialysis-consumables-concentrates",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp17-nephrology-dialysis.webp"
+    },
+    {
+      "code": "DP18",
+      "name": "ENT",
+      "slug": "department-ent",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "ENT Instruments",
+          "slug": "ent-instruments",
+          "products": [
+            "catalogue/surgical-instruments/cat-ent-instrument-set.html"
+          ]
+        },
+        {
+          "name": "ENT Examination Equipment",
+          "slug": "ent-examination-equipment",
+          "products": [
+            "catalogue/small-general-equipment/e-n-t-neuro-operating-microscope-swm-11139.html"
+          ]
+        },
+        {
+          "name": "Surgical Microscopes",
+          "slug": "surgical-microscopes",
+          "products": [
+            "catalogue/small-general-equipment/e-n-t-neuro-operating-microscope-swm-11139.html"
+          ]
+        },
+        {
+          "name": "Endoscopy Systems",
+          "slug": "endoscopy-systems",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html"
+          ]
+        },
+        {
+          "name": "Suction Machines",
+          "slug": "suction-machines",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html"
+          ]
+        },
+        {
+          "name": "ENT Consumables",
+          "slug": "ent-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp18-ent.webp",
+      "productPhotos": {
+        "e7aeaa5c16e9": "/assets/img/optimized/ent-instrument-set-transparent-eb49e5ebb5.2ce77c095dae.webp",
+        "1d3f06bc7d71": "/assets/img/optimized/e-n-t-neuro-operating-microscope-transparent-01b5620bdf.168feb919ec6.webp",
+        "86b7ed548287": "/assets/img/optimized/laparoscopy-endoscopy-equipments-instruments-transparent-05a6ab1825.307fb071d902.webp",
+        "2d1feeae83e0": "/assets/img/optimized/endoscopy-laparoscopy-camera-units-transparent-05a6ab1825.f565e78637d0.webp"
+      }
+    },
+    {
+      "code": "DP19",
+      "name": "Ophthalmology",
+      "slug": "department-ophthalmology",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Ophthalmic Instruments",
+          "slug": "ophthalmic-instruments",
+          "products": []
+        },
+        {
+          "name": "Examination Equipment",
+          "slug": "examination-equipment",
+          "products": [
+            "catalogue/ot-lights/ot-examination-light-swm-11028.html",
+            "catalogue/ultrasound/diagnostic-ultrasound-scanners-swm-11101.html"
+          ]
+        },
+        {
+          "name": "Surgical Microscopes",
+          "slug": "surgical-microscopes",
+          "products": []
+        },
+        {
+          "name": "Ophthalmic Procedure Equipment",
+          "slug": "ophthalmic-procedure-equipment",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html",
+            "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html",
+            "catalogue/revolving-stool/revolving-stool-swm-11056.html"
+          ]
+        },
+        {
+          "name": "Ophthalmic Consumables",
+          "slug": "ophthalmic-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp19-ophthalmology.webp"
+    },
+    {
+      "code": "DP20",
+      "name": "Neurosurgery",
+      "slug": "department-neurosurgery",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Surgical Microscopes",
+          "slug": "surgical-microscopes",
+          "products": [
+            "catalogue/small-general-equipment/e-n-t-neuro-operating-microscope-swm-11139.html"
+          ]
+        },
+        {
+          "name": "Neurosurgical OT Table Attachments",
+          "slug": "neurosurgical-ot-table-attachments",
+          "products": []
+        },
+        {
+          "name": "Electrosurgical Equipment",
+          "slug": "electrosurgical-equipment",
+          "products": [
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html"
+          ]
+        },
+        {
+          "name": "Neurosurgical Consumables",
+          "slug": "neurosurgical-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp20-neurosurgery.webp",
+      "productPhotos": {
+        "1d3f06bc7d71": "/assets/img/optimized/e-n-t-neuro-operating-microscope-transparent-01b5620bdf.168feb919ec6.webp",
+        "e03f9f6456f0": "/assets/img/optimized/smart-4-cautery-machine-300w-400w-sealer-transparent-16f26b478f.e999124cef61.webp"
+      }
+    },
+    {
+      "code": "DP21",
+      "name": "Dental & Oral Surgery",
+      "slug": "department-dental-oral-surgery",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Dental Instruments",
+          "slug": "dental-instruments",
+          "products": [
+            "catalogue/ot-lights/ot-examination-light-swm-11028.html",
+            "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html",
+            "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html",
+            "catalogue/hospital-trolley/mayo-trolley-swm-11077.html"
+          ]
+        },
+        {
+          "name": "Dental Imaging",
+          "slug": "dental-imaging",
+          "products": []
+        },
+        {
+          "name": "Dental Suction",
+          "slug": "dental-suction",
+          "products": [
+            "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html"
+          ]
+        },
+        {
+          "name": "Dental Consumables",
+          "slug": "dental-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp21-dental-oral-surgery.webp",
+      "productPhotos": {}
+    },
+    {
+      "code": "DP22",
+      "name": "Physiotherapy & Rehabilitation",
+      "slug": "department-physiotherapy-rehabilitation",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Electrotherapy Equipment",
+          "slug": "electrotherapy-equipment",
+          "products": []
+        },
+        {
+          "name": "Exercise & Rehabilitation Equipment",
+          "slug": "exercise-rehabilitation-equipment",
+          "products": [
+            "catalogue/goods/physiotherapy-rehabilitation-goods.html"
+          ]
+        },
+        {
+          "name": "Treatment Couches",
+          "slug": "treatment-couches",
+          "products": [
+            "catalogue/examination-gynecology/examination-couch-deluxe-swm-11054.html"
+          ]
+        },
+        {
+          "name": "Walking & Mobility Aids",
+          "slug": "walking-mobility-aids",
+          "products": [
+            "catalogue/wheelchairs/wheel-chair-indian-imported-swm-11063.html"
+          ]
+        },
+        {
+          "name": "Rehabilitation Accessories",
+          "slug": "rehabilitation-accessories",
+          "products": [
+            "catalogue/goods/physiotherapy-rehabilitation-goods.html",
+            "catalogue/hospital-furniture/attendant-bed-cum-chair-swm-11046.html",
+            "catalogue/revolving-stool/revolving-stool-swm-11056.html",
+            "catalogue/revolving-stool/stool-deluxe-swm-11057.html",
+            "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp22-physiotherapy-rehabilitation.webp",
+      "productPhotos": {
+        "63f4a7bd6028": "/assets/img/optimized/physiotherapy-rehabilitation-goods-transparent-fbab54372c.64c01169bec2.webp",
+        "046172436ac2": "/assets/img/optimized/wheel-chair-indian-imported-transparent-d3e76915ae.3634cd3dec77.webp"
+      }
+    },
+    {
+      "code": "DP23",
+      "name": "Blood Bank & Transfusion",
+      "slug": "department-blood-bank-transfusion",
+      "kind": "clinical",
+      "groups": [
+        {
+          "name": "Blood-Donation Chairs",
+          "slug": "blood-donation-chairs",
+          "products": [
+            "catalogue/special-category-chair/blood-donating-chair-swm-11048.html"
+          ]
+        },
+        {
+          "name": "Blood Collection Equipment",
+          "slug": "blood-collection-equipment",
+          "products": [
+            "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html",
+            "catalogue/icu-products/iv-stand.html"
+          ]
+        },
+        {
+          "name": "Blood Storage Equipment",
+          "slug": "blood-storage-equipment",
+          "products": [
+            "catalogue/cabinets/hospital-instrument-cabinet-double-glass-door-swm-11078.html"
+          ]
+        },
+        {
+          "name": "Blood Bank Laboratory Equipment",
+          "slug": "blood-bank-laboratory-equipment",
+          "products": [
+            "catalogue/ivd-products/elisa-reader-and-washer-swm-11113.html"
+          ]
+        },
+        {
+          "name": "Blood Collection & Transfusion Consumables",
+          "slug": "blood-collection-transfusion-consumables",
+          "products": []
+        }
+      ],
+      "image": "/assets/img/departments/dp23-blood-bank-transfusion.webp",
+      "productPhotos": {
+        "43c9ae32b697": "/assets/img/optimized/blood-donating-chair-transparent-0929d07b94.9c9245a5b21e.webp"
+      }
+    },
+    {
+      "code": "DP24",
+      "name": "Hospital Infrastructure & Engineering",
+      "slug": "department-hospital-infrastructure-engineering",
+      "kind": "supporting",
+      "groups": [
+        {
+          "name": "Central MGPS",
+          "slug": "central-mgps",
+          "products": [
+            "catalogue/modular-ot/medical-gas-outlet-bs-standard-model-amber.html",
+            "catalogue/modular-ot/medical-gas-outlet-din-standard-model-jasper.html",
+            "catalogue/modular-ot/medical-gas-outlet-parkodex-with-probe.html",
+            "catalogue/modular-ot/medical-gas-outlet-pb-standard-model-sapphire.html",
+            "catalogue/modular-ot/cat-bpc-flow-meter.html",
+            "catalogue/modular-ot/cat-theatre-suction-trolley.html",
+            "catalogue/modular-ot/cat-vacuum-regulator.html",
+            "catalogue/modular-ot/cat-vacuum-jar.html",
+            "catalogue/modular-ot/cat-manifold-system-oxygen-n2o.html",
+            "catalogue/modular-ot/cat-oxygen-semi-automatic-supply-system.html"
+          ]
+        },
+        {
+          "name": "Gas Source Systems",
+          "slug": "gas-source-systems",
+          "products": [
+            "catalogue/modular-ot/cat-manifold-system-oxygen-n2o.html",
+            "catalogue/modular-ot/cat-oxygen-semi-automatic-supply-system.html"
+          ]
+        },
+        {
+          "name": "Manifolds & Control Panels",
+          "slug": "manifolds-control-panels",
+          "products": [
+            "catalogue/modular-ot/cat-manifold-system-oxygen-n2o.html",
+            "catalogue/modular-ot/cat-oxygen-semi-automatic-supply-system.html"
+          ]
+        },
+        {
+          "name": "Pipeline Accessories",
+          "slug": "pipeline-accessories",
+          "products": [
+            "catalogue/modular-ot/medical-gas-outlet-bs-standard-model-amber.html",
+            "catalogue/modular-ot/medical-gas-outlet-pb-standard-model-sapphire.html",
+            "catalogue/modular-ot/medical-gas-outlet-parkodex-with-probe.html",
+            "catalogue/modular-ot/medical-gas-outlet-din-standard-model-jasper.html",
+            "catalogue/modular-ot/cat-bpc-flow-meter.html",
+            "catalogue/modular-ot/cat-theatre-suction-trolley.html",
+            "catalogue/modular-ot/cat-vacuum-regulator.html",
+            "catalogue/modular-ot/cat-vacuum-jar.html"
+          ]
+        },
+        {
+          "name": "Gas Alarms & Zone Valves",
+          "slug": "gas-alarms-zone-valves",
+          "products": [
+            "catalogue/modular-ot/cat-avsu-zonal-valve-box.html",
+            "catalogue/modular-ot/cat-medical-gas-alarm-digital.html",
+            "catalogue/modular-ot/cat-medical-gas-alarm-analog.html",
+            "catalogue/modular-ot/cat-master-alarm.html"
+          ]
+        },
+        {
+          "name": "Nurse Call Systems",
+          "slug": "nurse-call-systems",
+          "products": [
+            "catalogue/modular-ot/cat-nurse-call-system-e-fl07.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp24-hospital-infrastructure-engineering.webp",
+      "productPhotos": {
+        "057e8eb90883": "/assets/img/optimized/medical-gas-outlet-bs-standard-amber-transparent-7f784ba97a.cf17c5e024cc.webp",
+        "df706fadd542": "/assets/img/optimized/medical-gas-outlet-din-standard-jasper-transparent-a75fe9605b.1b8aef1d8fab.webp",
+        "777a9241209a": "/assets/img/optimized/medical-gas-outlet-parkodex-with-probe-transparent-e45314db06.de296687399a.webp",
+        "ba16e0a18eca": "/assets/img/optimized/medical-gas-outlet-pb-standard-sapphire-transparent-ba2bc64ec2.4a8c55368b37.webp",
+        "a38fe7705468": "/assets/img/optimized/bpc-flow-meter-transparent-379d910017.2b88501f8421.webp",
+        "3e091ac250fa": "/assets/img/optimized/theatre-suction-trolley-transparent-5ecdf28298.adfd9d2cfd2e.webp",
+        "f9aef60a8016": "/assets/img/optimized/vacuum-regulator-transparent-ef99e07294.f63f59bffec0.webp",
+        "9118d4f0a40e": "/assets/img/optimized/vacuum-jar-transparent-bebcece3c1.f6f0f1927853.webp",
+        "b5dd08dc46d0": "/assets/img/optimized/manifold-system-oxygen-n2o-transparent-e16d9a9d12.5ab5f06597b1.webp",
+        "17b4a89c2658": "/assets/img/optimized/oxygen-semi-automatic-supply-system-transparent-3bab168964.c4d61f0bd4de.webp",
+        "649f42c82723": "/assets/img/optimized/avsu-zonal-valve-box-transparent-ab6184d022.2e961a4c2176.webp",
+        "884313c3226a": "/assets/img/optimized/medical-gas-alarm-digital-transparent-85708876c0.4e007f29b717.webp",
+        "77455a610c6c": "/assets/img/optimized/medical-gas-alarm-analog-transparent-a8b130646b.eecdfeb1fa50.webp",
+        "cf83649b0bc6": "/assets/img/optimized/master-alarm-transparent-c7ec2ad96d.99623fb3d6d2.webp",
+        "ae7050c0b609": "/assets/img/optimized/nurse-call-system-e-fl07-transparent-be0a9f224c.cbcce58a8d05.webp"
+      }
+    },
+    {
+      "code": "DP25",
+      "name": "Housekeeping & Waste Management",
+      "slug": "department-housekeeping-waste-management",
+      "kind": "supporting",
+      "groups": [
+        {
+          "name": "Biomedical-Waste Trolleys",
+          "slug": "biomedical-waste-trolleys",
+          "products": [
+            "catalogue/biobin-cleaning/dr-smith-3-bin-bio-waste-trolley-swm-11076.html"
+          ]
+        },
+        {
+          "name": "Waste Bins & Bags",
+          "slug": "waste-bins-bags",
+          "products": [
+            "catalogue/hollowares-items/kick-bucket-m-s-s-s-with-basin-swm-11084.html"
+          ]
+        },
+        {
+          "name": "Linen Trolleys",
+          "slug": "linen-trolleys",
+          "products": [
+            "catalogue/hospital-trolley/linen-trolley-with-canvas-bag-swm-11070.html"
+          ]
+        },
+        {
+          "name": "Cleaning Equipment",
+          "slug": "cleaning-equipment",
+          "products": [
+            "catalogue/scrub-station/surgical-scrub-station-sensor-manual-swm-11045.html"
+          ]
+        },
+        {
+          "name": "Disinfection Supplies",
+          "slug": "disinfection-supplies",
+          "products": [
+            "catalogue/hospital-linen/i-c-u-ward-curtaining-swm-11138.html",
+            "catalogue/disposables/medical-dresses-ot-uniforms-swm-11137.html",
+            "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp25-housekeeping-waste-management.webp",
+      "productPhotos": {
+        "ac1f06a9128a": "/assets/img/optimized/linen-trolley-with-canvas-bag-transparent-eb86bf0d4c.f9869347b3b6.webp"
+      }
+    },
+    {
+      "code": "DP26",
+      "name": "Medical Education & Training",
+      "slug": "department-medical-education-training",
+      "kind": "supporting",
+      "groups": [
+        {
+          "name": "CPR Mannequins",
+          "slug": "cpr-mannequins",
+          "products": []
+        },
+        {
+          "name": "Procedure Simulators",
+          "slug": "procedure-simulators",
+          "products": [
+            "catalogue/goods/medical-simulation-mannequins-training-dummies.html"
+          ]
+        },
+        {
+          "name": "Anatomical Models",
+          "slug": "anatomical-models",
+          "products": [
+            "catalogue/goods/medical-simulation-mannequins-training-dummies.html"
+          ]
+        },
+        {
+          "name": "Training Accessories",
+          "slug": "training-accessories",
+          "products": [
+            "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html",
+            "catalogue/surgical-instruments/cat-gynaecology-instrument-set.html",
+            "catalogue/surgical-instruments/cat-ent-instrument-set.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp26-medical-education-training.webp",
+      "productPhotos": {
+        "05dda77e432f": "/assets/img/optimized/mannequins-training-dummies-84c7342439.343fdcdb131d.webp"
+      }
+    },
+    {
+      "code": "DP27",
+      "name": "Reception & Administration",
+      "slug": "department-reception-administration",
+      "kind": "supporting",
+      "groups": [
+        {
+          "name": "Waiting-Area Seating",
+          "slug": "waiting-area-seating",
+          "products": [
+            "catalogue/three-seater/three-seater-waiting-chair-chrome-swm-11052.html",
+            "catalogue/three-seater/three-seater-waiting-chair-with-cushion-swm-11053.html"
+          ]
+        },
+        {
+          "name": "Reception Furniture",
+          "slug": "reception-furniture",
+          "products": []
+        },
+        {
+          "name": "Office Desks",
+          "slug": "office-desks",
+          "products": [
+            "catalogue/office-furniture/office-desk-model-11115-swm-11115.html",
+            "catalogue/office-furniture/office-desk-model-11116-swm-11116.html",
+            "catalogue/office-furniture/office-desk-model-11117-swm-11117.html",
+            "catalogue/office-furniture/office-desk-model-11118-swm-11118.html",
+            "catalogue/office-furniture/office-desk-model-11119-swm-11119.html",
+            "catalogue/office-furniture/office-desk-model-11120-swm-11120.html"
+          ]
+        },
+        {
+          "name": "Office Chairs",
+          "slug": "office-chairs",
+          "products": [
+            "catalogue/boss-chairs/boss-chair-model-11121-swm-11121.html",
+            "catalogue/boss-chairs/boss-chair-model-11122-swm-11122.html",
+            "catalogue/boss-chairs/boss-chair-model-11123-swm-11123.html",
+            "catalogue/boss-chairs/boss-chair-model-11124-swm-11124.html",
+            "catalogue/boss-chairs/office-chair-model-11125-swm-11125.html",
+            "catalogue/boss-chairs/office-chair-model-11126-swm-11126.html",
+            "catalogue/boss-chairs/office-chair-model-11127-swm-11127.html",
+            "catalogue/boss-chairs/office-chair-model-11128-swm-11128.html"
+          ]
+        },
+        {
+          "name": "Storage Furniture",
+          "slug": "storage-furniture",
+          "products": [
+            "catalogue/cabinets/hospital-instrument-cabinet-double-glass-door-swm-11078.html"
+          ]
+        }
+      ],
+      "image": "/assets/img/departments/dp27-reception-administration.webp",
+      "productPhotos": {
+        "63cd73496dcf": "/assets/img/optimized/three-seater-waiting-chair-chrome-transparent-3010685242.f0a76bcb3256.webp",
+        "591b37d783eb": "/assets/img/optimized/three-seater-waiting-chair-with-cushion-transparent-6b3f39d9e2.154c92fcb66d.webp",
+        "97549ac80292": "/assets/img/optimized/office-desk-transparent-1754e6d85e.c8d19e261edc.webp",
+        "e78e52d608a4": "/assets/img/optimized/office-desk-transparent-0085492826.38897aadf3fa.webp",
+        "52175db4bc2c": "/assets/img/optimized/office-desk-transparent-1754e6d85e.c8d19e261edc.webp",
+        "a6db64bebf99": "/assets/img/optimized/office-desk-transparent-0085492826.38897aadf3fa.webp",
+        "e8ff1515254c": "/assets/img/optimized/office-desk-transparent-1754e6d85e.c8d19e261edc.webp",
+        "1ceb4c5f8489": "/assets/img/optimized/office-desk-transparent-0085492826.38897aadf3fa.webp",
+        "f18c8a56f04f": "/assets/img/optimized/boss-chair-transparent-cc38cf3b3e.057dfeea9929.webp",
+        "2c8715be03d0": "/assets/img/optimized/boss-chair-transparent-cc38cf3b3e.057dfeea9929.webp",
+        "c066a2d6188f": "/assets/img/optimized/boss-chair-transparent-8be60bd433.b4e2a7c04694.webp",
+        "e6bc03507820": "/assets/img/optimized/boss-chair-transparent-cc38cf3b3e.057dfeea9929.webp",
+        "e14928f03a30": "/assets/img/optimized/office-chair-transparent-c7ad0e62f8.f3d656ecb6dc.webp",
+        "592c4294fc3a": "/assets/img/optimized/office-chair-transparent-b9078357f4.3b0806b55899.webp",
+        "dbe94fc995d5": "/assets/img/optimized/office-chair-transparent-ae04aecdac.6a22d609aa41.webp",
+        "9bc6195dc7c7": "/assets/img/optimized/office-chair-transparent-8be60bd433.b4e2a7c04694.webp",
+        "8bfff7d9416e": "/assets/img/optimized/hospital-instrument-cabinet-double-glass-door-transparent-d67a7be35f.9ccc704dc65e.webp"
+      }
+    }
+  ],
+  "productMembership": {
+    "catalogue/beds/i-c-u-bed-five-functional-electric-imported-swm-11000.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-five-functional-electric-deluxe-swm-11001.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-five-functional-electric-eco-model-swm-11002.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-five-functional-manual-deluxe-swm-11003.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-five-functional-manual-eco-model-swm-11004.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-three-functional-electric-deluxe-swm-11005.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11006.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-three-functional-manual-deluxe-swm-11007.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/i-c-u-bed-three-functional-manual-eco-model-swm-11008.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/fowler-bed-electric-deluxe-swm-11009.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/fowler-bed-manual-super-deluxe-swm-11010.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/fowler-bed-manual-deluxe-full-ss-panels-swm-11011.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/fowler-bed-manual-eco-model-swm-11012.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/semi-fowler-bed-manual-eco-model-swm-11013.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/semi-fowler-bed-electric-deluxe-swm-11014.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/semi-fowler-bed-manual-super-deluxe-swm-11015.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/semi-fowler-bed-deluxe-ss-cum-sunmica-swm-11016.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/plain-bed-super-deluxe-abs-panels-swm-11017.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/plain-bed-deluxe-full-ss-bows-swm-11018.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/beds/plain-bed-eco-model-powder-coated-bows-swm-11019.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/baby-products/pediatric-bed-with-drop-down-railings-swm-11020.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/baby-products/baby-bassinet-acrylic-trolley-swm-11021.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF11"
+      ]
+    },
+    "catalogue/baby-products/baby-cradle-wire-mesh-swm-11022.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF11"
+      ]
+    },
+    "catalogue/ot-lights/ot-light-premium-with-camera-hd-swm-11023.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-lights/ot-light-premium-globus-dome-swm-11024.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-lights/ot-light-four-reflector-economical-swm-11025.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-lights/ot-light-standor-4-reflector-mobile-swm-11026.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-lights/ot-light-five-six-reflector-swm-11027.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-lights/ot-examination-light-swm-11028.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME10"
+      ]
+    },
+    "catalogue/ot-tables/ot-table-semi-electric-c-arm-swm-11031.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF02"
+      ]
+    },
+    "catalogue/ot-tables/ot-table-general-hydraulic-swm-11033.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF02"
+      ]
+    },
+    "catalogue/delivery-table/examination-delivery-table-swm-11034.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/delivery-table/delivery-table-three-fold-swm-11035.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/delivery-table/telescopic-table-ms-ss-swm-11036.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/delivery-table/delivery-table-electric-manual-swm-11037.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/delivery-table/delivery-table-hydraulic-deluxe-swm-11038.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/delivery-table/delivery-bed-electric-manual-swm-11039.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF03"
+      ]
+    },
+    "catalogue/stretcher-trolley/stretcher-trolley-ms-ss-swm-11040.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/stretcher-trolley/stretcher-trolley-deluxe-manual-swm-11041.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/stretcher-trolley/emergency-patient-trolley-hydraulic-swm-11042.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/stretcher-trolley/stretcher-trolley-cum-chair-swm-11043.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/stretcher-trolley/ambulance-stretcher-auto-loading-swm-11044.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/scrub-station/surgical-scrub-station-sensor-manual-swm-11045.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO09"
+      ]
+    },
+    "catalogue/hospital-furniture/attendant-bed-cum-chair-swm-11046.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF10"
+      ]
+    },
+    "catalogue/hospital-furniture/examination-table-plain-swm-11047.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF04"
+      ]
+    },
+    "catalogue/special-category-chair/blood-donating-chair-swm-11048.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF10"
+      ]
+    },
+    "catalogue/hospital-trolley/crash-cart-with-abs-drawers-swm-11049.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/crash-cart-with-s-s-drawers-swm-11050.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/ward-furniture/hospital-three-four-fold-screen-swm-11051.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF12"
+      ]
+    },
+    "catalogue/three-seater/three-seater-waiting-chair-chrome-swm-11052.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/three-seater/three-seater-waiting-chair-with-cushion-swm-11053.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/examination-gynecology/examination-couch-deluxe-swm-11054.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF04"
+      ]
+    },
+    "catalogue/hospital-trolley/cylinder-trolley-small-jumbo-swm-11055.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/revolving-stool/revolving-stool-swm-11056.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF10"
+      ]
+    },
+    "catalogue/revolving-stool/stool-deluxe-swm-11057.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF10"
+      ]
+    },
+    "catalogue/bed-side-locker/bed-side-locker-semi-deluxe-swm-11058.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/bed-side-locker/bed-side-locker-ms-ss-swm-11059.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/bed-side-locker/bed-side-locker-deluxe-swm-11060.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/bed-side-locker/bed-side-locker-abs-type-swm-11061.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/hospital-trolley/abs-anesthetic-cart-swm-11062.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/wheelchairs/wheel-chair-indian-imported-swm-11063.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF06"
+      ]
+    },
+    "catalogue/hospital-trolley/instrument-trolley-box-type-ms-swm-11064.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/instrument-trolley-all-ss-swm-11065.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/instrument-trolley-three-shelf-ss-swm-11066.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/instrument-trolley-box-type-ss-swm-11067.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/dressing-trolley-all-ss-swm-11068.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/e-c-g-trolley-swm-11069.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/linen-trolley-with-canvas-bag-swm-11070.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/lapro-tower-equipment/laparoscopy-trolley-ms-ss-swm-11071.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/over-bed-table/over-bed-food-table-u-type-swm-11072.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/over-bed-table/over-bed-food-table-knob-type-swm-11073.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/over-bed-table/over-bed-food-table-gear-type-swm-11074.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/over-bed-table/over-bed-food-table-hydraulic-swm-11075.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/biobin-cleaning/dr-smith-3-bin-bio-waste-trolley-swm-11076.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/hospital-trolley/mayo-trolley-swm-11077.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/cabinets/hospital-instrument-cabinet-double-glass-door-swm-11078.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF09"
+      ]
+    },
+    "catalogue/rescue-equipment/spine-board-immobilizer.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/rescue-equipment/scoop-stretcher-split-type.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/rescue-equipment/two-fold-emergency-stretcher.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/rescue-equipment/four-fold-compact-emergency-stretcher.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/rescue-equipment/mobile-bowl-basin-stand-ms-ss.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF12"
+      ]
+    },
+    "catalogue/hollowares-items/kick-bucket-m-s-s-s-with-basin-swm-11084.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF12"
+      ]
+    },
+    "catalogue/ecg-machine/ecg-machine-swm-11088.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME02"
+      ]
+    },
+    "catalogue/defibrillator-aed/automatic-external-defibrillator-aed-swm-11089.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME03"
+      ]
+    },
+    "catalogue/defibrillator-aed/defibrillator-new-pre-owned-swm-11090.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME03"
+      ]
+    },
+    "catalogue/cautery-machine/smart-4-cautery-machine-300w-400w-sealer-swm-11091.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME11"
+      ]
+    },
+    "catalogue/syringe-infusion/syringe-pump-swm-11092.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME07"
+      ]
+    },
+    "catalogue/patient-monitor/dr-smith-fetal-monitor-ctg-machine-swm-11093.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME14"
+      ]
+    },
+    "catalogue/small-general-equipment/oxygen-concentrator-swm-11095.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME06"
+      ]
+    },
+    "catalogue/small-general-equipment/c-t-scan-machine-new-pre-owned-swm-11096.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/small-general-equipment/m-r-i-scan-machine-new-pre-owned-swm-11097.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/small-general-equipment/x-ray-scan-system-new-pre-owned-swm-11098.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/small-general-equipment/c-r-system-new-pre-owned-swm-11099.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/c-arm-machine/surgical-c-arm-machine-swm-11100.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/ultrasound/diagnostic-ultrasound-scanners-swm-11101.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME16"
+      ]
+    },
+    "catalogue/lapro-tower-equipment/laparoscopy-endoscopy-equipments-instruments-swm-11103.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME12"
+      ]
+    },
+    "catalogue/lapro-tower-equipment/endoscopy-laparoscopy-camera-units-swm-11104.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME12"
+      ]
+    },
+    "catalogue/lapro-tower-equipment/gastroscopy-units-new-pre-owned-swm-11105.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME12"
+      ]
+    },
+    "catalogue/ivd-products/automated-electrolyte-analyzer-swm-11110.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME17"
+      ]
+    },
+    "catalogue/ivd-products/arterial-blood-gas-machine-swm-11111.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME17"
+      ]
+    },
+    "catalogue/ivd-products/elisa-reader-and-washer-swm-11113.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME17"
+      ]
+    },
+    "catalogue/baby-warmer/neonatal-infant-incubator-swm-11114.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11115-swm-11115.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11116-swm-11116.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11117-swm-11117.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11118-swm-11118.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11119-swm-11119.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/office-furniture/office-desk-model-11120-swm-11120.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/boss-chair-model-11121-swm-11121.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/boss-chair-model-11122-swm-11122.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/boss-chair-model-11123-swm-11123.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/boss-chair-model-11124-swm-11124.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/office-chair-model-11125-swm-11125.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/office-chair-model-11126-swm-11126.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/office-chair-model-11127-swm-11127.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/boss-chairs/office-chair-model-11128-swm-11128.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF13"
+      ]
+    },
+    "catalogue/ventilators/icu-ventilator-new-pre-owned-swm-11129.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME04"
+      ]
+    },
+    "catalogue/bipap-cpap/hfnc-machine-high-flow-oxygen-swm-11130.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME05"
+      ]
+    },
+    "catalogue/suction-machine/suction-machine-fiber-ms-swm-11133.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME08"
+      ]
+    },
+    "catalogue/defibrillator-aed/defibrillator-swm-11136.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME03"
+      ]
+    },
+    "catalogue/disposables/medical-dresses-ot-uniforms-swm-11137.html": {
+      "family": "HL",
+      "subcategories": [
+        "HL01"
+      ]
+    },
+    "catalogue/hospital-linen/i-c-u-ward-curtaining-swm-11138.html": {
+      "family": "HL",
+      "subcategories": [
+        "HL07"
+      ]
+    },
+    "catalogue/small-general-equipment/e-n-t-neuro-operating-microscope-swm-11139.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME20"
+      ]
+    },
+    "catalogue/goods/physiotherapy-rehabilitation-goods.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME22"
+      ]
+    },
+    "catalogue/goods/medical-simulation-mannequins-training-dummies.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME24"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-outlet-bs-standard-model-amber.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO11"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-outlet-pb-standard-model-sapphire.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO11"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-outlet-parkodex-with-probe.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO11"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-outlet-din-standard-model-jasper.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO11"
+      ]
+    },
+    "catalogue/modular-ot/cat-bpc-flow-meter.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO12"
+      ]
+    },
+    "catalogue/modular-ot/cat-theatre-suction-trolley.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO13"
+      ]
+    },
+    "catalogue/modular-ot/cat-vacuum-regulator.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO13"
+      ]
+    },
+    "catalogue/modular-ot/cat-vacuum-jar.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO13"
+      ]
+    },
+    "catalogue/modular-ot/cat-avsu-zonal-valve-box.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO18"
+      ]
+    },
+    "catalogue/modular-ot/cat-manifold-system-oxygen-n2o.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO16"
+      ]
+    },
+    "catalogue/modular-ot/cat-oxygen-semi-automatic-supply-system.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO20"
+      ]
+    },
+    "catalogue/modular-ot/cat-power-column.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-bed-head-panel-lumipan.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-bed-head-panel-silk-h.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-bed-head-panel-critrunk-h.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-bed-head-panel-critrunk-d.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-bed-head-panel-robustrunk-starlite-h.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-silk-smart-v.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-spinel-v.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-critrunk-v.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-limupan-v.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO14"
+      ]
+    },
+    "catalogue/modular-ot/cat-s-2-v-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-s-4-v-800-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-s-3-v-800-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-s-3-h-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-s-1-v-1000-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-movable-s-4-v-600-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-laparoscopic-movable-s-5-h-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-motorized-pendant.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-laparoscopic-motorized-pendant-single-arm-s-5-h.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-motorized-pendant-double-arm-s-4-v-800.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-medical-gas-alarm-digital.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO17"
+      ]
+    },
+    "catalogue/modular-ot/cat-medical-gas-alarm-analog.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO17"
+      ]
+    },
+    "catalogue/modular-ot/cat-master-alarm.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO17"
+      ]
+    },
+    "catalogue/modular-ot/cat-nurse-call-system-e-fl07.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO21"
+      ]
+    },
+    "catalogue/anesthesia-workstation/cat-top-tech-circle-absorber.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME09"
+      ]
+    },
+    "catalogue/anesthesia-workstation/cat-circle-co2-absorber.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME09"
+      ]
+    },
+    "catalogue/anesthesia-workstation/cat-vaporizer.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME09"
+      ]
+    },
+    "catalogue/modular-ot/cat-ot-windows.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO04"
+      ]
+    },
+    "catalogue/modular-ot/cat-ot-flooring.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO05"
+      ]
+    },
+    "catalogue/modular-ot/cat-21-inch-touch-screen-monitor.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO06"
+      ]
+    },
+    "catalogue/modular-ot/cat-sensors.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO10"
+      ]
+    },
+    "catalogue/modular-ot/cat-10-inch-industrial-touch-screen.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO06"
+      ]
+    },
+    "catalogue/modular-ot/cat-touch-glass.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO06"
+      ]
+    },
+    "catalogue/modular-ot/cat-membrane-control-panel.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO06"
+      ]
+    },
+    "catalogue/modular-ot/cat-pendants.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO15"
+      ]
+    },
+    "catalogue/modular-ot/cat-magnetic-writing-board.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO10"
+      ]
+    },
+    "catalogue/modular-ot/cat-scrub-sink.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO09"
+      ]
+    },
+    "catalogue/modular-ot/cat-pressure-relief-damper.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO03"
+      ]
+    },
+    "catalogue/modular-ot/cat-storage-system.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO10"
+      ]
+    },
+    "catalogue/modular-ot/cat-led-x-ray-view-box-high-end-version.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO07"
+      ]
+    },
+    "catalogue/modular-ot/flush-mounted-led-x-ray-viewer.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO07"
+      ]
+    },
+    "catalogue/surgical-instruments/cat-gynaecology-instrument-set.html": {
+      "family": "SI",
+      "subcategories": [
+        "SI02"
+      ]
+    },
+    "catalogue/surgical-instruments/cat-ent-instrument-set.html": {
+      "family": "SI",
+      "subcategories": [
+        "SI04"
+      ]
+    },
+    "catalogue/autoclaves/cat-portable-aluminium-six-wing-nut-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-portable-aluminium-p-type-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-portable-stainless-steel-digital-p-type-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-vertical-stainless-steel-nut-locking-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-vertical-stainless-steel-and-aluminium-combined-nut-locking-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-vertical-radial-locking-double-wall-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/autoclaves/cat-horizontal-triple-wall-autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/baby-warmer/cat-baby-warmer-regular.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/baby-warmer/cat-baby-warmer-deluxe.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/baby-warmer/cat-baby-warmer-super-deluxe.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/baby-warmer/premium-infant-radiant-warmer-n-102.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/baby-warmer/premium-infant-radiant-warmer-n-103.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/baby-warmer/cat-premium-baby-warmer-n-400.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME15"
+      ]
+    },
+    "catalogue/anesthesia-workstation/anesthesia-machine-minor-ms.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME09"
+      ]
+    },
+    "catalogue/anesthesia-workstation/anesthesia-machine-minor-ss.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME09"
+      ]
+    },
+    "catalogue/icu-products/4-fold-screen.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF12"
+      ]
+    },
+    "catalogue/icu-products/5-function-electric-bed.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/icu-products/7-para-monitor.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME01"
+      ]
+    },
+    "catalogue/icu-products/iv-stand.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF12"
+      ]
+    },
+    "catalogue/icu-products/attendent-bed.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF01"
+      ]
+    },
+    "catalogue/icu-products/autoclave.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME18"
+      ]
+    },
+    "catalogue/icu-products/bed-side-locker.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/icu-products/bio-waste-trolley.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/icu-products/crash-cart.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/icu-products/cylinder-trolley.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF07"
+      ]
+    },
+    "catalogue/icu-products/cylinder.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO20"
+      ]
+    },
+    "catalogue/icu-products/emergency-recovery.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF05"
+      ]
+    },
+    "catalogue/icu-products/food-table.html": {
+      "family": "HF",
+      "subcategories": [
+        "HF08"
+      ]
+    },
+    "catalogue/icu-products/half-suction-machine.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME08"
+      ]
+    },
+    "catalogue/icu-products/infusion-pump.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME07"
+      ]
+    },
+    "catalogue/icu-products/scrub-station.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO09"
+      ]
+    },
+    "catalogue/icu-products/ventillator-machine.html": {
+      "family": "ME",
+      "subcategories": [
+        "ME04"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-pipeline-saddle.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO19"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-copper-fittings.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO19"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-pressure-regulator.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO19"
+      ]
+    },
+    "catalogue/modular-ot/medical-gas-high-pressure-hose.html": {
+      "family": "MO",
+      "subcategories": [
+        "MO19"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "mri1",
+    "url": "https://www.pangasinan.gov.ph/wp-content/uploads/2025/05/2e15050c10148207228484d9bed89e76.jpeg",
+    "local": "assets/products/researched/imaging-mri1.jpg",
+    "width": 1280,
+    "height": 853
+  },
+  {
+    "name": "mri2",
+    "url": "https://southlandind.com/sites/default/files/styles/carousel_images/public/media/images/Proj_Fed_CDarnall_ImRot1.jpg?itok=eOAboFje",
+    "local": "assets/products/researched/imaging-mri2.jpg",
+    "width": 1200,
+    "height": 700
+  },
+  {
+    "name": "ct1",
+    "url": "https://portalimages.blob.core.windows.net/thumbnails/images/4252_4252-700x700-state_cat-rfq-thumbnail-test01.png",
+    "local": "assets/products/researched/imaging-ct1.jpg",
+    "width": 700,
+    "height": 700
+  },
+  {
+    "name": "ct2",
+    "url": "https://www.idetec-medical-imaging.com/images/32_SLICE_CT-12.png",
+    "local": "assets/products/researched/imaging-ct2.jpg",
+    "width": 4600,
+    "height": 2600
+  },
+  {
+    "name": "abg1",
+    "url": "https://www.red-dot.org/fileadmin/_processed_/4/a/csm_35-00143-2019-3_d1d1f7d730.jpg",
+    "local": "assets/products/researched/imaging-abg1.jpg",
+    "width": 840,
+    "height": 1080
+  },
+  {
+    "name": "abg2",
+    "url": "https://catalogomedicomx.s3.amazonaws.com/produccion/img/p/4/0/7/0/0/40700.jpg",
+    "local": "assets/products/researched/imaging-abg2.jpg",
+    "width": 1080,
+    "height": 1080
+  }
+]

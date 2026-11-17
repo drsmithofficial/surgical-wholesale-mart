@@ -1,0 +1,32 @@
+[
+  {
+    "id": "swm-5352110c9b18",
+    "url": "assets/products/researched/imaging-abggallery0.jpg",
+    "downloadUrl": "https://cdn.shopify.com/s/files/1/0822/1291/3441/files/1000-blood_gas_analyzer_6_11d8d002-b1b7-44c0-bc0e-6039bfc0e079.jpg?v=1748239676",
+    "sourcePage": "https://convmed.com/products/arterial-electrolyte-blood-gas-analyzer-machine",
+    "notes": "Visually inspected original 1000px supplier product visual: no logo, manufacturer name or watermark on housing or display; display contains test parameters only. Clear supplier-rendered arterial blood-gas analyzer reference image, not confirmation of exact supplied model.",
+    "kind": "representative",
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "id": "swm-4a9c63243ef4",
+    "url": "assets/products/researched/imaging-ct2.jpg",
+    "downloadUrl": "https://www.idetec-medical-imaging.com/images/32_SLICE_CT-12.png",
+    "sourcePage": "https://www.idetec-medical-imaging.com/en/products/ct-scanner/item/ct-scanner",
+    "notes": "Original high-resolution supplier CT product visual inspected at full size: no visible manufacturer name, brand label or watermark. Representative CT scanner; slice count, configuration and exact model require confirmation.",
+    "kind": "representative",
+    "width": 4600,
+    "height": 2600
+  },
+  {
+    "id": "swm-04f92e246ff5",
+    "url": "assets/products/researched/imaging-mri6.jpg",
+    "downloadUrl": "https://image.made-in-china.com/2f0j00GUEBrOYMavbV/Hospital-Medical-1-5t-Helium-Free-MRI-System-Magnetic-Resonance-Imaging-System-MRI-Scanner-Machine.jpg",
+    "sourcePage": "https://medunion.en.made-in-china.com/product/dtarzNEjnXco/China-Hospital-Medical-1-5t-Helium-Free-MRI-System-Magnetic-Resonance-Imaging-System-MRI-Scanner-Machine.html",
+    "notes": "Original 1000px supplier MRI product visual inspected: no visible logo, manufacturer name or watermark. Generic MRI scanner reference only; does not identify a Siemens model or imply the pictured unit is Siemens. Exact Siemens model and configuration must be confirmed.",
+    "kind": "representative",
+    "width": 1000,
+    "height": 1000
+  }
+]
