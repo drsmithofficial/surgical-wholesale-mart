@@ -599,6 +599,12 @@
   }
   function initAssistant() {
     if ($('.swm-assistant-toggle')) return;
+    const categoryDirectoryHTML = categories.map(c => {
+      const catProducts = products.filter(p => p.category === c.id);
+      const sampleProducts = catProducts.slice(0, 10);
+      return `<div class="ai-cat-block"><a class="ai-cat-link" href="products.html?category=${encodeURIComponent(c.id)}"><strong>${e(c.name)}</strong><span>View all ${catProducts.length} →</span></a><div class="ai-cat-product-line">${sampleProducts.map(p => `<a class="ai-prod-pill" href="${link(p)}" title="${e(p.name)}">${e(p.name)}</a>`).join('')}</div></div>`;
+    }).join('');
+    const assistantBodyHTML = `<div class="swm-assistant-body"><div class="ai-coming-soon-box"><span class="ai-soon-badge">AI ASSISTANT · COMING SOON</span><p class="ai-soon-lead">AI is coming soon. Use our ready-made links below to find what you need:</p><ul class="ai-guide-points"><li><strong>Categories:</strong> Click a category to view all items.</li><li><strong>Products:</strong> Click any product pill to open it directly.</li><li><strong>Search:</strong> Use the finder below for quick lookup.</li></ul></div><div class="ai-category-directory">${categoryDirectoryHTML}</div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" class="assist-search-field" type="search" placeholder="Search ready-made products (e.g. ICU Bed, OT Light)…" style="flex:1;padding:7px 10px;font-size:11.5px"><button type="button" class="pbar-mini-btn" data-assist-search>Search</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="products.html" style="font-size:11px">All products →</a><a class="text-link" href="cart.html" style="font-size:11px">Quote basket →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
     const toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'swm-assistant-toggle';
@@ -609,15 +615,30 @@
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
-    panel.innerHTML = `<div class="swm-assistant-head"><span style="display:inline-flex;align-items:center;gap:8px"><img src="assets/ai-assistant-robot.png" width="28" height="42" alt="" style="width:24px;height:36px;object-fit:contain"><span>Surgical Mart AI Assistant</span></span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div><div class="swm-assistant-body"><p style="margin:0;color:var(--muted)">Select a procurement tool or clinical department:</p><div class="swm-assistant-chips"><button type="button" data-open-setup-planner>Hospital Setup Planner</button><button type="button" data-open-bulk-rfq>Paste Equipment List</button><button type="button" data-open-finance>EMI &amp; Finance Calc</button><button type="button" data-open-amc>AMC / CMC Plans</button><button type="button" data-open-tracker>Track / Reorder</button><button type="button" data-assist-dept="icu">ICU &amp; Critical Care</button><button type="button" data-assist-dept="ot">Operation Theatre</button><button type="button" data-assist-dept="ward">Wards &amp; Rooms</button></div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" type="search" placeholder="e.g. Autoclave, OT Light, ICU Bed" style="flex:1;padding:6px 9px;font-size:11px"><button type="button" class="pbar-mini-btn" data-assist-search>Find</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="cart.html" style="font-size:11px">Quote basket →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
+    panel.innerHTML = `<div class="swm-assistant-head"><span style="display:inline-flex;align-items:center;gap:8px"><img src="assets/ai-assistant-robot.png" width="28" height="42" alt="" style="width:24px;height:36px;object-fit:contain"><span>Surgical Mart AI Assistant</span></span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div>${assistantBodyHTML}`;
     document.body.append(toggle, panel);
     toggle.addEventListener('click', () => {
       const open = panel.hidden;
       panel.hidden = !open;
       toggle.setAttribute('aria-expanded', String(open));
     });
+    if (document.body?.dataset?.page === 'contact' && !$('.mobile-contact-assistant')) {
+      const contactTarget = $('.contact-layout') || $('#main');
+      if (contactTarget) {
+        const inlineSection = document.createElement('section');
+        inlineSection.className = 'section mobile-contact-assistant';
+        inlineSection.setAttribute('aria-label', 'AI Procurement Assistant');
+        inlineSection.innerHTML = `<div class="mobile-assistant-card"><div class="mobile-assistant-hero"><img src="assets/ai-assistant-robot.png" width="675" height="1024" alt="Surgical Mart AI Procurement Robot"><div><span class="eyebrow">AI ASSISTANT · COMING SOON</span><h2>Ready-Made Product Explorer</h2><p>AI is coming soon—tap any category or product below.</p></div></div>${assistantBodyHTML.replace('id="assist-search-input"', 'id="assist-search-input-mobile"')}</div>`;
+        contactTarget.before(inlineSection);
+      }
+    }
   }
   document.addEventListener('click',event=>{
+    const assistPanel=$('.swm-assistant-panel'),assistToggle=$('.swm-assistant-toggle');
+    if(assistPanel&&!assistPanel.hidden&&!assistPanel.contains(event.target)&&!assistToggle?.contains(event.target)){
+      assistPanel.hidden=true;
+      assistToggle?.setAttribute('aria-expanded','false');
+    }
     if(event.target.id==='swm-modal-backdrop'){closeModal();return;}
     const button=event.target.closest('button');if(!button)return;
     if(button.hasAttribute('data-close-modal')){closeModal();return;}
@@ -666,7 +687,7 @@
       state.subcategory=button.dataset.subcatChip;limit=24;renderCatalog();return;
     }
     if(button.dataset.assistDept){location.href='products.html?department='+encodeURIComponent(button.dataset.assistDept);return;}
-    if(button.hasAttribute('data-assist-search')){const q=$('#assist-search-input')?.value.trim();if(q)location.href='products.html?q='+encodeURIComponent(q);return;}
+    if(button.hasAttribute('data-assist-search')){const q=(button.parentElement?.querySelector('.assist-search-field')?.value||$('#assist-search-input')?.value||'').trim();if(q)location.href='products.html?q='+encodeURIComponent(q);return;}
     if(button.dataset.quickview){openQuickView(button.dataset.quickview);return;}
     if(button.hasAttribute('data-open-bulk-rfq')){openBulkModal();return;}
     if(button.hasAttribute('data-bulk-sample')){const ta=$('#bulk-list-input');if(ta){ta.value='5 x Five-Function Electric ICU Bed\n4 x Seven-Parameter Patient Monitor\n2 x Semi-Electric C-Arm OT Table\n6 x Patient Wheelchair\n3 x Suction Machine';}return;}
@@ -768,7 +789,7 @@
     if(input.dataset.compare){const id=input.dataset.compare;if(input.checked&&compare.length===3){input.checked=false;toast('Compare up to three products at a time.');return;}compare=input.checked?[...compare,id]:compare.filter(x=>x!==id);comparison();if(input.checked)toast(`Comparing ${compare.length} of 3 products.`,{href:'#comparison',label:'Jump to comparison ↓'});}
   });
   const menu=$('.mobile-menu');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');$('#store-nav').classList.toggle('is-open',open);});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeModal();if(menu){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');$('#store-nav').classList.remove('is-open');}}});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeModal();const ap=$('.swm-assistant-panel'),at=$('.swm-assistant-toggle');if(ap&&!ap.hidden){ap.hidden=true;at?.setAttribute('aria-expanded','false');}if(menu){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');$('#store-nav').classList.remove('is-open');}}});
   enhanceStaticCards();
   const featuredSection=$('#featured-products');
   const marquee=featuredSection?.querySelector('.product-marquee');
