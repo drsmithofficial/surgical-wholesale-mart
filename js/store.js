@@ -173,6 +173,7 @@
       details.append(list);
       host.querySelector('.detail-description').insertAdjacentElement('afterend', details);
     }
+    sync();
   }
   let state,limit=24;
   function renderCatalog(updateURL=true) {
@@ -365,6 +366,7 @@
     backdrop.className = 'swm-modal-backdrop';
     backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="${e(p.name)} quick view"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><div class="quickview-layout"><div class="quickview-visual">${photo(p, 'eager')}</div><div><span class="eyebrow">${e(category(p.category)?.name || '')} · ${e(p.subcategory)}</span><h2 style="margin-bottom:10px">${e(p.name)}</h2><p class="muted" style="font-size:13px">${e(p.description)}</p><ul class="feature-list">${p.features.map(x => `<li><span>✓</span>${e(x)}</li>`).join('')}</ul>${specs.length ? `<div class="product-specifications"><dl>${specs.map(s => `<div><dt>${e(s.label)}</dt><dd>${e(s.value)}</dd></div>`).join('')}</dl></div>` : ''}<div class="detail-qty-row" style="margin:14px 0"><label class="micro-label" for="qv-qty-input">Quantity</label><div class="quantity"><button type="button" data-qv-delta="-1">−</button><input id="qv-qty-input" type="number" min="1" max="9999" value="1"><button type="button" data-qv-delta="1">+</button></div></div><div class="detail-actions"><button type="button" class="button" data-add-qv="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save</button><button type="button" class="save-detail" data-spec-sheet="${p.id}">Spec sheet</button></div><a class="text-link" href="${link(p)}">Open full product page →</a></div></div></div>`;
     document.body.appendChild(backdrop);
+    sync();
   }
   const CLINICAL_SPECIALTIES = [
     {title:'ICU & Critical Care',desc:'Electric ICU beds, multipara monitors, ventilators, syringe & infusion pumps',href:'products.html?department=icu'},
@@ -816,7 +818,6 @@
         const copy=item.cloneNode(true);
         copy.dataset.carouselCopy='';
         copy.setAttribute('aria-hidden','true');
-        copy.inert=true;
         copy.querySelectorAll('a,button,input').forEach(el=>el.tabIndex=-1);
         copy.querySelectorAll('img').forEach(image=>{image.loading='lazy';});
         fragment.appendChild(copy);
@@ -838,6 +839,7 @@
       track.insertBefore(makeCopySet(),track.firstChild);
       const extraSets=Math.ceil(viewportWidth/cycleWidth)+1;
       for(let set=0;set<extraSets;set++)track.appendChild(makeCopySet());
+      sync();
       writePosition(cycleWidth*(1+progress));
       syncPlayback();
     }
