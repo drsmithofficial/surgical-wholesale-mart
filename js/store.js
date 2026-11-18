@@ -610,12 +610,12 @@
     toggle.className = 'swm-assistant-toggle';
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Open AI Procurement Assistant');
-    toggle.innerHTML = `<img src="assets/ai-assistant-robot.png" width="675" height="1024" alt="AI Procurement Assistant">`;
+    toggle.innerHTML = `<img src="assets/ai-assistant-robot.png" width="547" height="836" alt="AI Procurement Assistant">`;
     const panel = document.createElement('aside');
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
-    panel.innerHTML = `<div class="swm-assistant-head"><span style="display:inline-flex;align-items:center;gap:8px"><img src="assets/ai-assistant-robot.png" width="28" height="42" alt="" style="width:24px;height:36px;object-fit:contain"><span>Surgical Mart AI Assistant</span></span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div>${assistantBodyHTML}`;
+    panel.innerHTML = `<div class="swm-assistant-head"><span style="display:inline-flex;align-items:center;gap:8px"><img src="assets/ai-assistant-robot.png" width="24" height="36" alt="" style="width:24px;height:36px;object-fit:contain"><span>Surgical Mart AI Assistant</span></span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div>${assistantBodyHTML}`;
     document.body.append(toggle, panel);
     toggle.addEventListener('click', () => {
       const open = panel.hidden;
@@ -628,7 +628,7 @@
         const inlineSection = document.createElement('section');
         inlineSection.className = 'section mobile-contact-assistant';
         inlineSection.setAttribute('aria-label', 'AI Procurement Assistant');
-        inlineSection.innerHTML = `<div class="mobile-assistant-card"><div class="mobile-assistant-hero"><img src="assets/ai-assistant-robot.png" width="675" height="1024" alt="Surgical Mart AI Procurement Robot"><div><span class="eyebrow">AI ASSISTANT · COMING SOON</span><h2>Ready-Made Product Explorer</h2><p>AI is coming soon—tap any category or product below.</p></div></div>${assistantBodyHTML.replace('id="assist-search-input"', 'id="assist-search-input-mobile"')}</div>`;
+        inlineSection.innerHTML = `<div class="mobile-assistant-card"><div class="mobile-assistant-hero"><img src="assets/ai-assistant-robot.png" width="547" height="836" alt="Surgical Mart AI Procurement Robot"><div><span class="eyebrow">AI ASSISTANT · COMING SOON</span><h2>Ready-Made Product Explorer</h2><p>AI is coming soon—tap any category or product below.</p></div></div>${assistantBodyHTML.replace('id="assist-search-input"', 'id="assist-search-input-mobile"')}</div>`;
         contactTarget.before(inlineSection);
       }
     }
