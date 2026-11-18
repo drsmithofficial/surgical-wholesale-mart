@@ -359,10 +359,10 @@
 }
 
 .hero-theme-sandstone {
-  --hero-surface: #00313b;
+  --hero-surface: #003b2e;
   --hero-accent: #82ddef;
   --hero-hover: #a5e9f7;
-  --hero-button-ink: #00313b;
+  --hero-button-ink: #003b2e;
 }
 
 .hero-theme-forest {
@@ -408,8 +408,8 @@
   --hero-line: #05ffff; --hero-light: #007e82;
 }
 .hero-theme-sandstone {
-  --hero-surface: #00313b; --hero-end: #005566; --hero-glow: #009ebe;
-  --hero-line: #83eaff; --hero-light: #007289;
+  --hero-surface: #003b2e; --hero-end: #00664d; --hero-glow: #00be88;
+  --hero-line: #83ffce; --hero-light: #00896a;
 }
 .hero-theme-forest {
   --hero-surface: #202020; --hero-end: #2d2822; --hero-glow: #9c641b;
