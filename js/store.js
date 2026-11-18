@@ -8,7 +8,7 @@
   }
   function selectProducts(products, state) {
     const query = (state.query || '').trim().toLowerCase();
-    let list = products.filter(p => (state.category === 'all' || !state.category || p.category === state.category) && (state.department === 'all' || !state.department || p.department === state.department) && (!state.savedOnly || state.saved.includes(p.id)) && (!query || [p.name,p.sourceName,p.subcategory,p.description,...p.features,...(Array.isArray(p.specifications) ? p.specifications.flatMap(spec => [spec.label,spec.value]) : [])].join(' ').toLowerCase().includes(query)));
+    let list = products.filter(p => (state.category === 'all' || !state.category || p.category === state.category) && (state.department === 'all' || !state.department || p.department === state.department) && (state.subcategory === 'all' || !state.subcategory || p.subcategory === state.subcategory) && (!state.savedOnly || state.saved.includes(p.id)) && (!query || [p.name,p.sourceName,p.subcategory,p.description,...p.features,...(Array.isArray(p.specifications) ? p.specifications.flatMap(spec => [spec.label,spec.value]) : [])].join(' ').toLowerCase().includes(query)));
     if (state.sort === 'az') list.sort((a,b) => a.name.localeCompare(b.name));
     if (state.sort === 'za') list.sort((a,b) => b.name.localeCompare(a.name));
     return list;
@@ -27,11 +27,42 @@
   let basket = cleanBasket(read(local,'swm-basket',{}),products);
   let saved = read(local,'swm-saved',[]);
   saved=Array.isArray(saved)?saved.filter(id=>byId(id)):[];
+  let recent = read(local,'swm-recent',[]);
+  recent=Array.isArray(recent)?recent.filter(id=>byId(id)).slice(0,8):[];
+  let savedPincode = String(read(local,'swm-pincode','') || '');
   let compare=[];
   const heart='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
   const photo = (p,loading='lazy') => p.image?`<img src="${e(p.image)}" referrerpolicy="no-referrer" alt="${e(p.name)}" loading="${loading}" width="600" height="420">`:'<div class="photo-request"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="10" y="16" width="44" height="34" rx="5"/><path d="m10 40 13-12 11 10 7-6 13 12"/><circle cx="41" cy="26" r="4"/></svg><span>Product photograph<br>available on enquiry</span></div>';
   const link = p => 'product.html?id='+encodeURIComponent(p.id);
-  function card(p) { return `<article class="product-card" data-product="${p.id}"><div class="product-visual"><a href="${link(p)}" tabindex="-1" aria-hidden="true">${photo(p)}</a>${p.imageKind==='representative'?'<span class="photo-caption">Reference image</span>':''}<button type="button" class="save-button" data-save="${p.id}" aria-label="Save ${e(p.name)}" aria-pressed="${saved.includes(p.id)}">${heart}</button></div><div class="product-info"><span class="micro-label">${e(p.subcategory)}</span><h3><a href="${link(p)}">${e(p.name)}</a></h3><p>${e(p.features[0])}</p><div class="product-bottom"><span>Price on request</span><button type="button" class="add-button" data-add="${p.id}" aria-label="Add ${e(p.name)} to quote basket">+</button></div><label class="compare-check"><input type="checkbox" data-compare="${p.id}" ${compare.includes(p.id)?'checked':''}> Compare</label></div></article>`; }
+  function card(p) { return `<article class="product-card" data-product="${p.id}"><div class="product-visual"><a href="${link(p)}" tabindex="-1" aria-hidden="true">${photo(p)}</a>${p.imageKind==='representative'?'<span class="photo-caption">Reference image</span>':''}<button type="button" class="save-button" data-save="${p.id}" aria-label="Save ${e(p.name)}" aria-pressed="${saved.includes(p.id)}">${heart}</button></div><div class="product-info"><span class="micro-label">${e(p.subcategory)}</span><h3><a href="${link(p)}">${e(p.name)}</a></h3><p>${e(p.features[0])}</p><div class="product-bottom"><span>Price on request</span><button type="button" class="add-button" data-add="${p.id}" aria-label="Add ${e(p.name)} to quote basket">+</button></div><div class="card-aux-row"><label class="compare-check"><input type="checkbox" data-compare="${p.id}" ${compare.includes(p.id)?'checked':''}> Compare</label><button type="button" class="quickview-btn" data-quickview="${p.id}">Quick view</button></div></div></article>`; }
+  function evaluatePincode(raw) {
+    const val = String(raw || '').trim().toUpperCase();
+    if (!val) return null;
+    if (val === 'UAE' || val.includes('SHARJAH') || val.includes('DUBAI')) {
+      return {ok:true, hub:'Sharjah Experience Centre (UAE)', timeline:'International dispatch & export documentation supported', install:'Project & installation coordination available'};
+    }
+    if (!/^[1-8][0-9]{5}$/.test(val)) {
+      return {ok:false, message:'Enter a valid 6-digit Indian pincode (e.g. 110037) or UAE.'};
+    }
+    const p2 = val.slice(0,2);
+    let hub = 'New Delhi (Kapashera & Daryaganj) / Jhajjar Manufacturing Hub';
+    if (['20','21','22','23','24','25','26','27','28'].includes(p2)) hub = 'Varanasi Experience Centre & North Hub';
+    else if (['40','41','42','43','44'].includes(p2)) hub = 'Nagpur (Maharashtra) Experience Centre';
+    else if (['70','71','72','73','74'].includes(p2)) hub = 'Kolkata Experience Centre';
+    else if (['78'].includes(p2)) hub = 'Guwahati Experience Centre';
+    else if (['80','81','82','83','84','85'].includes(p2)) hub = 'Patna Experience Centre';
+    return {ok:true, pin:val, hub, timeline:'Standard dispatch readiness: 3–7 business days (confirmed on quotation)', install:'On-site installation & clinical training available on eligible equipment'};
+  }
+  function trackRecent(id) {
+    if (!byId(id)) return;
+    recent = [id, ...recent.filter(x => x !== id)].slice(0, 8);
+    save(local, 'swm-recent', recent);
+  }
+  function renderRecentSection(excludeId = null) {
+    const items = recent.filter(id => id !== excludeId && byId(id)).slice(0, 4).map(byId);
+    if (!items.length) return '';
+    return `<section class="recent-section"><div class="section-heading"><div><span class="eyebrow">RECENTLY VIEWED</span><h2>Continue where you left off.</h2></div><button type="button" class="text-button" data-clear-recent>Clear history</button></div><div class="product-grid related-grid">${items.map(card).join('')}</div></section>`;
+  }
   const homeCategoryProducts=$('#home-category-products');
   if(homeCategoryProducts){
     const productsByCategory=new Map(categories.map(item=>[item.id,products.filter(product=>product.category===item.id)]));
@@ -69,6 +100,7 @@
     const totalQty=Object.values(basket).reduce((a,b)=>a+b,0);
     $$('[data-cart-count]').forEach(el=>el.textContent=totalQty);
     $$('[data-saved-count]').forEach(el=>el.textContent=saved.length);
+    $$('[data-compare-count]').forEach(el=>el.textContent=compare.length);
     $$('[data-save]').forEach(el=>el.setAttribute('aria-pressed',saved.includes(el.dataset.save)));
     const page=document.body?.dataset?.page;
     let fab=$('#floating-basket');
@@ -93,15 +125,27 @@
   function empty(title,desc) {return `<div class="empty-state"><span class="empty-symbol">＋</span><h2>${title}</h2><p>${desc}</p><a class="button" href="products.html">Explore products →</a></div>`;}
   function renderBasket() {
     const host=$('#basket-page');if(!host)return;
-    if(!Object.keys(basket).length){host.innerHTML=empty('Your quote basket is empty.','Find the products for your facility and add them to your selection.');return;}
-    host.innerHTML=`<div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price on request</span><button type="button" class="text-button remove-button" data-remove="${id}">Remove</button></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue browsing</a></div><aside class="summary-card">${basketSummary()}<a class="button button-block" href="checkout.html">Request a quote →</a><span class="form-note">No payment is required to request a quotation.</span></aside></div>`;
+    if(!Object.keys(basket).length){host.innerHTML=empty('Your quote basket is empty.','Find the products for your facility and add them to your selection.')+renderRecentSection();return;}
+    host.innerHTML=`<div class="basket-tools-bar"><div class="basket-quick-add"><input id="basket-quick-input" type="search" placeholder="Quick add product by name or subcategory…"><div id="basket-quick-results" class="pbar-results" hidden></div></div><div class="basket-export-actions"><button type="button" data-open-bulk-rfq>Paste bulk list</button><button type="button" data-export-csv>Export CSV</button><button type="button" data-print-basket>Print quote sheet</button><button type="button" data-clear-basket>Clear basket</button></div></div><div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)} · ${e(p.subcategory)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price on request</span><button type="button" class="text-button remove-button" data-remove="${id}">Remove</button></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue browsing</a></div><aside class="summary-card">${basketSummary()}<a class="button button-block" href="checkout.html">Request a quote →</a><span class="form-note">No payment is required to request a quotation.</span></aside></div>${renderRecentSection()}`;
+    const qInput=$('#basket-quick-input'),qBox=$('#basket-quick-results');
+    if(qInput&&qBox){
+      qInput.addEventListener('input',()=>{
+        const q=qInput.value.trim().toLowerCase();
+        if(!q){qBox.hidden=true;return;}
+        const matches=selectProducts(products,{query:q,category:'all',department:'all'}).slice(0,5);
+        qBox.hidden=!matches.length;
+        qBox.innerHTML=matches.map(p=>`<div class="pbar-item"><div class="pbar-thumb">${photo(p)}</div><div class="pbar-meta"><strong><a href="${link(p)}">${e(p.name)}</a></strong><small>${e(p.subcategory)}</small></div><div class="pbar-item-actions"><button type="button" class="pbar-mini-btn" data-add="${p.id}">+ Add</button></div></div>`).join('');
+      });
+    }
   }
   function renderDetail() {
     const host=$('#product-detail');if(!host)return;
     const p=byId(new URLSearchParams(location.search).get('id'));
     if(!p){host.innerHTML=empty('Product not found.','This link may be incomplete. Browse the catalogue to find your product.');return;}
+    trackRecent(p.id);
     document.title=p.name+' | Surgical Wholesale Mart';
-    host.innerHTML=`<div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="products.html">Products</a><span>/</span><a href="products.html?category=${p.category}">${e(category(p.category).name)}</a></div><div class="detail-layout"><div class="detail-image">${photo(p,'eager')}</div><div class="detail-copy"><span class="eyebrow">${e(p.subcategory)}</span><h1>${e(p.name)}</h1><p class="detail-description">${e(p.description)}</p><ul class="feature-list">${p.features.map(x=>`<li><span>✓</span>${e(x)}</li>`).join('')}</ul><div class="detail-price">Price on request<small>Confirm the configuration and quantity for your quotation.</small></div><div class="detail-actions"><button type="button" class="button" data-add="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save product</button></div><a class="text-link" href="contact.html?subject=${encodeURIComponent(p.name)}">Ask a product question →</a><div class="detail-note">${p.imageKind==='representative'?'This is a representative range photo, not confirmation of the exact model or configuration. ':''}Availability, specifications, included accessories, warranty and delivery are confirmed with your quotation.</div></div></div><div class="detail-tabs"><h2>Before you order</h2><details open><summary>Product configuration</summary><p>Tell us your preferred size, configuration and quantity. Request a current specification sheet and a photograph of the configuration being quoted.</p></details><details><summary>Delivery & installation</summary><p>Share your delivery city and site access requirements. Ask the team to include transport, installation and training scope in your quotation where applicable.</p></details><details><summary>Warranty & returns</summary><p>Ask for product-specific warranty coverage, service arrangements and return terms in writing before confirming your order.</p></details></div><div class="section-heading"><h2>Explore similar requirements</h2><a class="text-link" href="products.html?category=${p.category}">View category →</a></div><div class="product-grid related-grid">${products.filter(x=>x.category===p.category&&x.id!==p.id).slice(0,4).map(card).join('')}</div>`;
+    const pinInfo=evaluatePincode(savedPincode);
+    host.innerHTML=`<div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="products.html">Products</a><span>/</span><a href="products.html?category=${p.category}">${e(category(p.category).name)}</a></div><div class="detail-layout"><div class="detail-image">${photo(p,'eager')}</div><div class="detail-copy"><span class="eyebrow">${e(p.subcategory)}</span><h1>${e(p.name)}</h1><p class="detail-description">${e(p.description)}</p><ul class="feature-list">${p.features.map(x=>`<li><span>✓</span>${e(x)}</li>`).join('')}</ul><div class="detail-price">Price on request<small>Confirm the configuration and quantity for your quotation.</small></div><div class="detail-b2b-box"><div class="detail-qty-row"><label class="micro-label" for="detail-qty-input">Required quantity</label><div class="quantity"><button type="button" data-detail-delta="-1" aria-label="Decrease quantity">−</button><input id="detail-qty-input" type="number" min="1" max="9999" value="1"><button type="button" data-detail-delta="1" aria-label="Increase quantity">+</button></div><div class="detail-tier-chips"><button type="button" class="tier-chip is-active" data-tier-qty="1">1 Unit</button><button type="button" class="tier-chip" data-tier-qty="5">5 · Ward</button><button type="button" class="tier-chip" data-tier-qty="10">10 · Dept</button><button type="button" class="tier-chip" data-tier-qty="25">25+ · Project</button></div></div><div class="detail-pin-row"><input id="detail-pincode-input" type="text" maxlength="12" placeholder="Enter pincode or UAE" value="${e(savedPincode)}"><button type="button" data-check-detail-pin>Check delivery & hub</button></div><div id="detail-pin-result" class="detail-pin-result">${pinInfo?(pinInfo.ok?`✓ Deliverable · Nearest hub: <strong>${e(pinInfo.hub)}</strong> · ${e(pinInfo.timeline)}`:e(pinInfo.message)):'Enter your hospital pincode to check dispatch hub and installation coverage.'}</div><div class="detail-service-addons"><label><input type="checkbox" data-detail-addon="On-site installation & clinical training" checked> On-site installation &amp; training</label><label><input type="checkbox" data-detail-addon="Comprehensive AMC / CMC quotation"> Include AMC / CMC quote</label><label><input type="checkbox" data-detail-addon="Institutional EMI / equipment financing"> EMI / leasing option</label><label><input type="checkbox" data-detail-addon="Experience centre live demonstration"> Request live demo</label></div></div><div class="detail-actions"><button type="button" class="button" data-add-detail="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save product</button><button type="button" class="save-detail" data-spec-sheet="${p.id}">Download spec sheet</button><button type="button" class="save-detail" data-open-finance>EMI &amp; Finance</button></div><div class="detail-utility-actions"><a class="text-link" href="contact.html?subject=${encodeURIComponent(p.name)}">Ask a product question →</a><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://wa.me/919289976683?text=${encodeURIComponent('Hello Surgical Wholesale Mart, I would like a quotation and specification details for: '+p.name+' ('+p.subcategory+').')}">Enquire on WhatsApp ↗</a></div><div class="detail-note">${p.imageKind==='representative'?'This is a representative range photo, not confirmation of the exact model or configuration. ':''}Availability, specifications, included accessories, warranty and delivery are confirmed with your quotation.</div></div></div><div class="detail-tabs"><h2>Before you order</h2><details open><summary>Product configuration</summary><p>Tell us your preferred size, configuration and quantity. Request a current specification sheet and a photograph of the configuration being quoted.</p></details><details><summary>Delivery & installation</summary><p>Share your delivery city and site access requirements. Ask the team to include transport, installation and training scope in your quotation where applicable.</p></details><details><summary>Warranty & returns</summary><p>Ask for product-specific warranty coverage, service arrangements and return terms in writing before confirming your order.</p></details></div><div class="section-heading"><h2>Explore similar requirements</h2><a class="text-link" href="products.html?category=${p.category}">View category →</a></div><div class="product-grid related-grid">${products.filter(x=>x.category===p.category&&x.id!==p.id).slice(0,4).map(card).join('')}</div>${renderRecentSection(p.id)}`;
     const specifications = Array.isArray(p.specifications) ? p.specifications.filter(spec => spec && spec.label && spec.value) : [];
     if (specifications.length) {
       const details = document.createElement('section');
@@ -124,37 +168,68 @@
   let state,limit=24;
   function renderCatalog(updateURL=true) {
     if(!$('#catalog-grid'))return;
+    const subSelect=$('#subcategory-filter');
+    if(subSelect){
+      const pool=products.filter(p=>(state.category==='all'||p.category===state.category)&&(state.department==='all'||p.department===state.department));
+      const subs=Array.from(new Set(pool.map(p=>p.subcategory).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+      if(state.subcategory!=='all'&&!subs.includes(state.subcategory))state.subcategory='all';
+      subSelect.innerHTML=`<option value="all">All subcategories (${subs.length})</option>`+subs.map(s=>`<option value="${e(s)}">${e(s)}</option>`).join('');
+      subSelect.value=state.subcategory||'all';
+    }
     const list=selectProducts(products,state),cat=category(state.category);
     $('#catalog-title').textContent=state.savedOnly?'Saved products':cat?.name||'All products';
     $('#result-count').textContent=`${list.length} ${list.length===1?'product':'products'}${state.query?' matching your search':''}`;
+    $('#catalog-grid').classList.toggle('is-list-view',state.view==='list');
+    $$('[data-view-mode]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.viewMode===(state.view||'grid')));
     $('#catalog-grid').innerHTML=list.slice(0,limit).map(card).join('')||empty('No products match your selection.','Try another search or reset the filters. You can also share your requirement with our team.');
     let more=$('#load-more');if(!more){more=document.createElement('button');more.type='button';more.id='load-more';more.className='button load-more';$('#catalog-grid').after(more);more.addEventListener('click',()=>{limit+=24;renderCatalog(false);});}
     more.hidden=list.length<=limit;more.textContent=`Show more products (${Math.min(limit,list.length)} of ${list.length})`;
-    $('#catalog-enquiry').innerHTML=cat?.requests?`<div class="category-enquiry"><h2>Need something else in ${e(cat.name.toLowerCase())}?</h2><p>Share your preferred type, size and quantity with our team.</p><div>${cat.requests.map(x=>`<a href="contact.html?subject=${encodeURIComponent(x)}">${e(x)} →</a>`).join('')}</div></div>`:'';
-    const activeTags=[cat?{key:'category',label:cat.name}:null,state.department!=='all'?{key:'department',label:departments.find(d=>d.id===state.department)?.name}:null,state.query?{key:'query',label:`“${state.query}”`}:null,state.savedOnly?{key:'savedOnly',label:'Saved only'}:null].filter(x=>x&&x.label);
+    $('#catalog-enquiry').innerHTML=(cat?.requests?`<div class="category-enquiry"><h2>Need something else in ${e(cat.name.toLowerCase())}?</h2><p>Share your preferred type, size and quantity with our team.</p><div>${cat.requests.map(x=>`<a href="contact.html?subject=${encodeURIComponent(x)}">${e(x)} →</a>`).join('')}</div></div>`:'')+renderRecentSection();
+    const activeTags=[cat?{key:'category',label:cat.name}:null,state.department!=='all'?{key:'department',label:departments.find(d=>d.id===state.department)?.name}:null,state.subcategory&&state.subcategory!=='all'?{key:'subcategory',label:state.subcategory}:null,state.query?{key:'query',label:`“${state.query}”`}:null,state.savedOnly?{key:'savedOnly',label:'Saved only'}:null].filter(x=>x&&x.label);
     $('#active-filters').innerHTML=activeTags.map(t=>`<button type="button" data-clear-filter="${t.key}" aria-label="Remove filter ${e(t.label)}">${e(t.label)} <span aria-hidden="true">×</span></button>`).join('');
     $$('input[name="category"]').forEach(x=>x.checked=x.value===state.category);
     $('#department-filter').value=state.department;$('#saved-filter').setAttribute('aria-pressed',state.savedOnly);
-    if(updateURL){const q=new URLSearchParams();if(state.category!=='all')q.set('category',state.category);if(state.department!=='all')q.set('department',state.department);if(state.query)q.set('q',state.query);if(state.savedOnly)q.set('saved','1');if(state.sort!=='featured')q.set('sort',state.sort);history.replaceState(null,'',location.pathname+(q.size?'?'+q:''));}
+    if(updateURL){const q=new URLSearchParams();if(state.category!=='all')q.set('category',state.category);if(state.department!=='all')q.set('department',state.department);if(state.subcategory&&state.subcategory!=='all')q.set('subcategory',state.subcategory);if(state.query)q.set('q',state.query);if(state.savedOnly)q.set('saved','1');if(state.sort!=='featured')q.set('sort',state.sort);history.replaceState(null,'',location.pathname+(q.size?'?'+q:''));}
     sync();
   }
   function initCatalog() {
     if(!$('#catalog-grid'))return;
     const q=new URLSearchParams(location.search);
-    state={category:category(q.get('category'))?q.get('category'):'all',department:departments.some(d=>d.id===q.get('department'))?q.get('department'):'all',query:q.get('q')||'',savedOnly:q.get('saved')==='1',saved,sort:['az','za'].includes(q.get('sort'))?q.get('sort'):'featured'};
+    state={category:category(q.get('category'))?q.get('category'):'all',department:departments.some(d=>d.id===q.get('department'))?q.get('department'):'all',subcategory:q.get('subcategory')||'all',query:q.get('q')||'',savedOnly:q.get('saved')==='1',saved,sort:['az','za'].includes(q.get('sort'))?q.get('sort'):'featured',view:'grid'};
+    const deptSelect=$('#department-filter');
+    if(deptSelect&&!$('#subcategory-filter')){
+      const subLabel=document.createElement('label');
+      subLabel.className='field-label';
+      subLabel.setAttribute('for','subcategory-filter');
+      subLabel.style.marginTop='18px';
+      subLabel.textContent='Equipment subcategory';
+      const subSelect=document.createElement('select');
+      subSelect.id='subcategory-filter';
+      deptSelect.after(subLabel,subSelect);
+      subSelect.addEventListener('change',event=>{state.subcategory=event.target.value;limit=24;renderCatalog();});
+    }
+    const searchBar=$('.catalog-search');
+    if(searchBar&&!$('.catalog-extra-controls')){
+      const extra=document.createElement('div');
+      extra.className='catalog-extra-controls';
+      extra.innerHTML=`<div class="view-toggle" role="group" aria-label="Catalogue view mode"><button type="button" data-view-mode="grid" aria-pressed="true">Grid view</button><button type="button" data-view-mode="list" aria-pressed="false">B2B list view</button></div><button type="button" class="text-button" data-open-bulk-rfq>Paste hospital equipment list →</button>`;
+      searchBar.after(extra);
+    }
     $('#catalog-query').value=state.query;const siteSearch=$('#site-search');if(siteSearch)siteSearch.value=state.query;$('#sort-products').value=state.sort;
     $$('input[name="category"]').forEach(x=>x.addEventListener('change',()=>{state.category=x.value;limit=24;renderCatalog();}));
     $('#department-filter').addEventListener('change',event=>{state.department=event.target.value;limit=24;renderCatalog();});
     $('#sort-products').addEventListener('change',event=>{state.sort=event.target.value;renderCatalog();});
     $('#catalog-query').addEventListener('input',event=>{state.query=event.target.value;limit=24;renderCatalog();});
     $('#saved-filter').addEventListener('click',()=>{state.savedOnly=!state.savedOnly;limit=24;renderCatalog();});
-    $('#reset-filters').addEventListener('click',()=>{state={category:'all',department:'all',query:'',savedOnly:false,saved,sort:'featured'};$('#catalog-query').value='';$('#sort-products').value='featured';limit=24;renderCatalog();});
+    $('#reset-filters').addEventListener('click',()=>{state={category:'all',department:'all',subcategory:'all',query:'',savedOnly:false,saved,sort:'featured',view:state.view||'grid'};$('#catalog-query').value='';$('#sort-products').value='featured';limit=24;renderCatalog();});
     renderCatalog(false);
   }
   function comparison() {
     let host=$('#comparison');if(!host){host=document.createElement('section');host.id='comparison';host.className='comparison';$('#main').appendChild(host);}
     host.hidden=!compare.length;
-    host.innerHTML=`<div class="comparison-heading"><strong>Compare ${compare.length} of 3 products</strong><button type="button" class="text-button" data-clear-compare>Clear comparison</button></div><div class="comparison-table"><table><caption class="sr-only">Selected product comparison</caption><thead><tr><th>Product</th>${compare.map(id=>`<th><a href="${link(byId(id))}">${e(byId(id).name)}</a></th>`).join('')}</tr></thead><tbody><tr><th>Family</th>${compare.map(id=>`<td>${e(category(byId(id).category).name)}</td>`).join('')}</tr><tr><th>Listed features</th>${compare.map(id=>`<td>${byId(id).features.map(e).join('<br>')}</td>`).join('')}</tr><tr><th>Quotation</th>${compare.map(id=>`<td><button type="button" class="text-button" data-add="${id}">Add to quote +</button></td>`).join('')}</tr></tbody></table></div>`;
+    if(!compare.length){sync();return;}
+    host.innerHTML=`<div class="comparison-heading"><strong>Compare ${compare.length} of 3 products</strong><div><button type="button" class="text-button" data-add-all-compare style="margin-right:14px">Add all to quote basket +</button><button type="button" class="text-button" data-clear-compare>Clear comparison</button></div></div><div class="comparison-table"><table><caption class="sr-only">Selected product comparison</caption><thead><tr><th>Product</th>${compare.map(id=>`<th><div class="product-visual" style="max-width:140px;margin-bottom:8px"><a href="${link(byId(id))}">${photo(byId(id))}</a></div><a href="${link(byId(id))}">${e(byId(id).name)}</a></th>`).join('')}</tr></thead><tbody><tr><th>Family &amp; Subcategory</th>${compare.map(id=>`<td>${e(category(byId(id).category).name)} · ${e(byId(id).subcategory)}</td>`).join('')}</tr><tr><th>Clinical department</th>${compare.map(id=>`<td>${e(departments.find(d=>d.id===byId(id).department)?.name||'General hospital')}</td>`).join('')}</tr><tr><th>Listed features</th>${compare.map(id=>`<td>${byId(id).features.map(e).join('<br>')}</td>`).join('')}</tr><tr><th>Quotation</th>${compare.map(id=>`<td><button type="button" class="text-button" data-add="${id}">Add to quote +</button></td>`).join('')}</tr></tbody></table></div>`;
+    sync();
   }
   function enquiryText(details,items) {
     const productLines=items.length?['','PRODUCT SELECTION',...items.map(({id,qty})=>`${qty} × ${byId(id)?.name||id}`)]:[];
@@ -182,13 +257,271 @@
     }
     const contact=$('#contact-form');if(contact){const params=new URLSearchParams(location.search);const chosenLocation=params.get('location');if(chosenLocation&&contact.elements.location){const choice=Array.from(contact.elements.location.options).find(x=>x.dataset.locationId===chosenLocation);if(choice)contact.elements.location.value=choice.value;}const subject=params.get('subject');if(subject)$('#contact-message').value='I would like to enquire about '+subject+'.\n';contact.addEventListener('submit',event=>{event.preventDefault();if(!contact.reportValidity())return;currentEnquiry=enquiryText(Object.fromEntries(new FormData(contact)),[]);$('#contact-review').innerHTML=`<h3>Review before sharing</h3><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}`;$('#contact-review').scrollIntoView({behavior:'smooth',block:'nearest'});});}
   }
+  function downloadSpecSheet(p) {
+    const specs = Array.isArray(p.specifications) ? p.specifications.filter(s => s && s.label && s.value) : [];
+    const lines = [
+      'SURGICAL WHOLESALE MART · DR. SMITH PRODUCT SPECIFICATION SHEET',
+      '================================================================',
+      `Product Name: ${p.name}`,
+      `Product ID: ${p.id}`,
+      `Category: ${category(p.category)?.name || p.category}`,
+      `Subcategory: ${p.subcategory}`,
+      `Clinical Department: ${departments.find(d => d.id === p.department)?.name || 'General Hospital'}`,
+      '',
+      'DESCRIPTION',
+      p.description || p.name,
+      '',
+      'KEY FEATURES',
+      ...p.features.map(f => `• ${f}`),
+      ...(specs.length ? ['', 'TECHNICAL SPECIFICATIONS', ...specs.map(s => `• ${s.label}: ${s.value}`)] : []),
+      '',
+      'PROCUREMENT & QUOTATION CONTACT',
+      'Surgical Wholesale Mart Pvt. Ltd. · Dr. Smith',
+      'Toll-Free: 1800 8917466 | Phone/WhatsApp: +91 9289976683 | Email: info@drsmith.co.in',
+      `Product Link: ${location.origin && location.origin !== 'null' ? location.origin + '/' : ''}${link(p)}`
+    ].join('\n');
+    const blob = new Blob([lines], {type: 'text/plain;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${p.id}-specification-sheet.txt`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast('Specification sheet downloaded.');
+  }
+  function exportBasketCSV() {
+    const rows = [['Product ID', 'Product Name', 'Category', 'Subcategory', 'Quantity', 'Pricing']];
+    Object.entries(basket).forEach(([id, qty]) => {
+      const p = byId(id);
+      if (!p) return;
+      rows.push([p.id, p.name, category(p.category)?.name || p.category, p.subcategory, String(qty), 'On quotation']);
+    });
+    const csv = rows.map(r => r.map(v => `"${String(v ?? '').replace(/"/g, '""')}"`).join(',')).join('\r\n');
+    const blob = new Blob([csv], {type: 'text/csv;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'surgical-wholesale-mart-quote-basket.csv';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast('Quote basket exported to CSV.');
+  }
+  function closeModal() {
+    $('#swm-modal-backdrop')?.remove();
+  }
+  function openQuickView(id) {
+    const p = byId(id);
+    if (!p) return;
+    trackRecent(p.id);
+    closeModal();
+    const specs = Array.isArray(p.specifications) ? p.specifications.filter(s => s && s.label && s.value).slice(0, 6) : [];
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="${e(p.name)} quick view"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><div class="quickview-layout"><div class="quickview-visual">${photo(p, 'eager')}</div><div><span class="eyebrow">${e(category(p.category)?.name || '')} · ${e(p.subcategory)}</span><h2 style="margin-bottom:10px">${e(p.name)}</h2><p class="muted" style="font-size:13px">${e(p.description)}</p><ul class="feature-list">${p.features.map(x => `<li><span>✓</span>${e(x)}</li>`).join('')}</ul>${specs.length ? `<div class="product-specifications"><dl>${specs.map(s => `<div><dt>${e(s.label)}</dt><dd>${e(s.value)}</dd></div>`).join('')}</dl></div>` : ''}<div class="detail-qty-row" style="margin:14px 0"><label class="micro-label" for="qv-qty-input">Quantity</label><div class="quantity"><button type="button" data-qv-delta="-1">−</button><input id="qv-qty-input" type="number" min="1" max="9999" value="1"><button type="button" data-qv-delta="1">+</button></div></div><div class="detail-actions"><button type="button" class="button" data-add-qv="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save</button><button type="button" class="save-detail" data-spec-sheet="${p.id}">Spec sheet</button></div><a class="text-link" href="${link(p)}">Open full product page →</a></div></div></div>`;
+    document.body.appendChild(backdrop);
+  }
+  let bulkMatches = [];
+  function parseBulkLines(rawText) {
+    const lines = String(rawText || '').split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+    const results = [];
+    lines.forEach(line => {
+      const m = line.match(/^(?:(\d+)\s*(?:x|×|units?|nos?|pcs?|-)?\s+)?(.+?)(?:\s*[,|-]\s*(\d+))?$/i);
+      if (!m) return;
+      const qty = Math.min(9999, Math.max(1, parseInt(m[1] || m[3] || '1', 10) || 1));
+      const term = (m[2] || line).trim().toLowerCase();
+      if (!term) return;
+      const tokens = term.split(/[^a-z0-9]+/).filter(t => t.length > 1);
+      let best = null, bestScore = 0;
+      products.forEach(p => {
+        const hay = `${p.name} ${p.subcategory} ${p.sourceName || ''} ${p.features.join(' ')}`.toLowerCase();
+        let score = hay.includes(term) ? 10 : 0;
+        tokens.forEach(tk => { if (hay.includes(tk)) score += (p.name.toLowerCase().includes(tk) ? 3 : 1); });
+        if (score > bestScore) { bestScore = score; best = p; }
+      });
+      if (best && bestScore > 0) results.push({product: best, qty, query: line});
+    });
+    return results;
+  }
+  function openBulkModal() {
+    closeModal();
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Bulk equipment list matcher"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">B2B BULK PROCUREMENT TOOL</span><h2 style="margin-bottom:8px">Paste or upload your hospital equipment list</h2><p class="muted" style="font-size:13px">Enter one requirement per line (e.g. <code>5 x Five-Function Electric ICU Bed</code>, <code>3 x Patient Monitor</code>, <code>10 x Wheelchair</code>) to auto-match against our 372 catalogue products.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"><button type="button" class="pbar-pill" data-bulk-sample>Load sample ICU &amp; Ward list</button><label class="pbar-pill" style="cursor:pointer">Upload .txt / .csv file<input id="bulk-file-input" type="file" accept=".txt,.csv" hidden></label></div><textarea id="bulk-list-input" rows="5" style="width:100%;font-size:13px" placeholder="5 x Five-Function Electric ICU Bed&#10;4 x Seven-Parameter Patient Monitor&#10;2 x Semi-Electric C-Arm OT Table&#10;6 x Patient Wheelchair&#10;3 x Suction Machine"></textarea><div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button type="button" class="button" data-run-bulk-match>Match products →</button><button type="button" class="button button-outline" id="bulk-add-all-btn" data-add-bulk-matches hidden>Add all matched to quote basket +</button></div><div id="bulk-match-output" class="bulk-match-list"></div></div>`;
+    document.body.appendChild(backdrop);
+    const fileInput = $('#bulk-file-input');
+    fileInput?.addEventListener('change', e => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        $('#bulk-list-input').value = String(reader.result || '');
+      };
+      reader.readAsText(file);
+    });
+  }
+  function initProcurementBar() {
+    const header = $('.store-header');
+    if (!header || $('.procurement-bar')) return;
+    const bar = document.createElement('div');
+    bar.className = 'procurement-bar';
+    const pinInfo = evaluatePincode(savedPincode);
+    bar.innerHTML = `<div class="pbar-search-wrap"><div class="pbar-search" role="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="global-search-input" type="search" placeholder="Search 372+ hospital equipment, instruments, beds, monitors…" aria-label="Search all products"><kbd>Ctrl K</kbd></div><div id="global-search-results" class="pbar-results" hidden></div></div><div class="pbar-tools"><div class="pbar-pincode"><input id="global-pincode-input" type="text" maxlength="12" placeholder="Delivery pincode" value="${e(savedPincode)}" aria-label="Delivery pincode"><button type="button" data-check-global-pin>Check</button></div><span id="global-pin-status" class="pbar-pin-status">${pinInfo && pinInfo.ok ? `✓ ${e(pinInfo.hub.split(' ')[0])} hub` : ''}</span><button type="button" class="pbar-pill" data-open-bulk-rfq>Bulk RFQ / Paste List</button><a class="pbar-pill" href="products.html?saved=1">Saved <b data-saved-count>${saved.length}</b></a><button type="button" class="pbar-pill" data-jump-compare>Compare <b data-compare-count>${compare.length}</b></button><a class="pbar-pill" href="cart.html">Quote Basket <b data-cart-count>${Object.values(basket).reduce((a,b)=>a+b,0)}</b></a></div>`;
+    header.after(bar);
+    const input = $('#global-search-input'), results = $('#global-search-results');
+    function updateGlobalSearch() {
+      const q = input.value.trim();
+      if (!q) { results.hidden = true; return; }
+      const matches = selectProducts(products, {query: q, category: 'all', department: 'all'});
+      const top = matches.slice(0, 6);
+      results.hidden = false;
+      results.innerHTML = (top.length ? top.map(p => `<div class="pbar-item"><div class="pbar-thumb"><a href="${link(p)}">${photo(p)}</a></div><div class="pbar-meta"><strong><a href="${link(p)}">${e(p.name)}</a></strong><small>${e(category(p.category)?.name || '')} · ${e(p.subcategory)}</small></div><div class="pbar-item-actions"><button type="button" class="pbar-mini-btn" data-quickview="${p.id}">Quick view</button><button type="button" class="pbar-mini-btn" data-add="${p.id}">+ Quote</button></div></div>`).join('') + `<div style="padding:8px;text-align:center"><a class="text-link" href="products.html?q=${encodeURIComponent(q)}">View all ${matches.length} matching products →</a></div>` : `<div style="padding:12px;font-size:12px;color:var(--muted)">No exact match for “${e(q)}”. <a class="text-link" href="contact.html?subject=${encodeURIComponent(q)}">Enquire for custom sourcing →</a></div>`);
+    }
+    input.addEventListener('input', updateGlobalSearch);
+    input.addEventListener('keydown', event => {
+      if (event.key === 'Enter' && input.value.trim()) {
+        location.href = 'products.html?q=' + encodeURIComponent(input.value.trim());
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.pbar-search-wrap')) results.hidden = true;
+      const bq = $('#basket-quick-results');
+      if (bq && !event.target.closest('.basket-quick-add')) bq.hidden = true;
+    });
+    document.addEventListener('keydown', event => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        input.focus();
+      }
+    });
+  }
+  function enhanceStaticCards() {
+    $$('.product-card[data-product]').forEach(cardEl => {
+      const id = cardEl.dataset.product;
+      const info = cardEl.querySelector('.product-info');
+      if (!id || !info || info.querySelector('.card-aux-row')) return;
+      cardEl.querySelector('.Compare, .compare-check')?.remove();
+      const row = document.createElement('div');
+      row.className = 'card-aux-row';
+      row.innerHTML = `<label class="compare-check"><input type="checkbox" data-compare="${e(id)}" ${compare.includes(id)?'checked':''}> Compare</label><button type="button" class="quickview-btn" data-quickview="${e(id)}">Quick view</button>`;
+      info.appendChild(row);
+    });
+  }
+  function initAssistant() {
+    if ($('.swm-assistant-toggle')) return;
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'swm-assistant-toggle';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML = `<span>Procurement Assistant</span>`;
+    const panel = document.createElement('aside');
+    panel.className = 'swm-assistant-panel';
+    panel.hidden = true;
+    panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
+    panel.innerHTML = `<div class="swm-assistant-head"><span>Surgical Mart B2B Assistant</span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div><div class="swm-assistant-body"><p style="margin:0;color:var(--muted)">How can we help equip your facility today?</p><div class="swm-assistant-chips"><button type="button" data-open-bulk-rfq>Paste equipment list</button><button type="button" data-assist-dept="icu">ICU &amp; Critical Care</button><button type="button" data-assist-dept="ot">Operation Theatre</button><button type="button" data-assist-dept="ward">Wards &amp; Rooms</button><button type="button" data-assist-dept="opd">OPD &amp; Exam</button><button type="button" data-assist-dept="emergency">Emergency</button></div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" type="search" placeholder="e.g. Autoclave, OT Light, ICU Bed" style="flex:1;padding:6px 9px;font-size:11px"><button type="button" class="pbar-mini-btn" data-assist-search>Find</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="cart.html" style="font-size:11px">Quote basket →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
+    document.body.append(toggle, panel);
+    toggle.addEventListener('click', () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
   document.addEventListener('click',event=>{
+    if(event.target.id==='swm-modal-backdrop'){closeModal();return;}
     const button=event.target.closest('button');if(!button)return;
+    if(button.hasAttribute('data-close-modal')){closeModal();return;}
+    if(button.hasAttribute('data-close-assistant')){const p=$('.swm-assistant-panel'),t=$('.swm-assistant-toggle');if(p)p.hidden=true;if(t)t.setAttribute('aria-expanded','false');return;}
+    if(button.dataset.assistDept){location.href='products.html?department='+encodeURIComponent(button.dataset.assistDept);return;}
+    if(button.hasAttribute('data-assist-search')){const q=$('#assist-search-input')?.value.trim();if(q)location.href='products.html?q='+encodeURIComponent(q);return;}
+    if(button.dataset.quickview){openQuickView(button.dataset.quickview);return;}
+    if(button.hasAttribute('data-open-bulk-rfq')){openBulkModal();return;}
+    if(button.hasAttribute('data-bulk-sample')){const ta=$('#bulk-list-input');if(ta){ta.value='5 x Five-Function Electric ICU Bed\n4 x Seven-Parameter Patient Monitor\n2 x Semi-Electric C-Arm OT Table\n6 x Patient Wheelchair\n3 x Suction Machine';}return;}
+    if(button.hasAttribute('data-run-bulk-match')){
+      bulkMatches=parseBulkLines($('#bulk-list-input')?.value);
+      const out=$('#bulk-match-output'),addBtn=$('#bulk-add-all-btn');
+      if(!out)return;
+      if(!bulkMatches.length){out.innerHTML='<p class="muted">No matching products found. Try entering product names like "ICU Bed", "Patient Monitor", or "OT Light".</p>';if(addBtn)addBtn.hidden=true;return;}
+      if(addBtn){addBtn.hidden=false;addBtn.textContent=`Add ${bulkMatches.length} matched items to quote basket +`;}
+      out.innerHTML=bulkMatches.map((m,idx)=>`<div class="bulk-match-row"><div class="pbar-thumb">${photo(m.product)}</div><div class="pbar-meta"><strong>${e(m.product.name)}</strong><small>Matched from: “${e(m.query)}” · ${e(m.product.subcategory)}</small></div><input type="number" min="1" max="9999" value="${m.qty}" data-bulk-qty-idx="${idx}" style="width:76px;padding:6px 8px;font-size:12px"></div>`).join('');
+      return;
+    }
+    if(button.hasAttribute('data-add-bulk-matches')){
+      $$('[data-bulk-qty-idx]').forEach(inp=>{const idx=Number(inp.dataset.bulkQtyIdx);if(bulkMatches[idx])bulkMatches[idx].qty=Math.min(9999,Math.max(1,parseInt(inp.value,10)||1));});
+      bulkMatches.forEach(({product,qty})=>{basket[product.id]=Math.min(9999,(basket[product.id]||0)+qty);});
+      persistBasket();renderBasket();closeModal();
+      toast(`Added ${bulkMatches.length} product lines to your quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      return;
+    }
+    if(button.dataset.viewMode&&state){state.view=button.dataset.viewMode;renderCatalog(false);return;}
+    if(button.hasAttribute('data-check-global-pin')){
+      const val=$('#global-pincode-input')?.value.trim()||'';
+      const res=evaluatePincode(val);
+      if(!res){toast('Enter a 6-digit pincode or UAE to check serviceability.');return;}
+      if(res.ok){savedPincode=val;save(local,'swm-pincode',val);const st=$('#global-pin-status');if(st)st.textContent=`✓ ${res.hub.split(' ')[0]} hub`;toast(`Deliverable via ${res.hub}. ${res.timeline}`);}
+      else toast(res.message);
+      return;
+    }
+    if(button.hasAttribute('data-check-detail-pin')){
+      const val=$('#detail-pincode-input')?.value.trim()||'';
+      const res=evaluatePincode(val),out=$('#detail-pin-result');
+      if(!res||!out)return;
+      if(res.ok){savedPincode=val;save(local,'swm-pincode',val);out.innerHTML=`✓ Deliverable · Nearest hub: <strong>${e(res.hub)}</strong> · ${e(res.timeline)}`;}
+      else out.textContent=res.message;
+      return;
+    }
+    if(button.dataset.tierQty){
+      const inp=$('#detail-qty-input');if(inp)inp.value=button.dataset.tierQty;
+      $$('.tier-chip').forEach(c=>c.classList.toggle('is-active',c===button));
+      return;
+    }
+    if(button.dataset.detailDelta){
+      const inp=$('#detail-qty-input');if(!inp)return;
+      inp.value=Math.min(9999,Math.max(1,(parseInt(inp.value,10)||1)+Number(button.dataset.detailDelta)));
+      return;
+    }
+    if(button.dataset.qvDelta){
+      const inp=$('#qv-qty-input');if(!inp)return;
+      inp.value=Math.min(9999,Math.max(1,(parseInt(inp.value,10)||1)+Number(button.dataset.qvDelta)));
+      return;
+    }
+    if(button.dataset.addDetail){
+      const id=button.dataset.addDetail;if(!byId(id))return;
+      const qty=Math.min(9999,Math.max(1,parseInt($('#detail-qty-input')?.value||'1',10)||1));
+      basket[id]=Math.min(9999,(basket[id]||0)+qty);
+      persistBasket();toast(`Added ${qty} × ${byId(id).name} to your quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      return;
+    }
+    if(button.dataset.addQv){
+      const id=button.dataset.addQv;if(!byId(id))return;
+      const qty=Math.min(9999,Math.max(1,parseInt($('#qv-qty-input')?.value||'1',10)||1));
+      basket[id]=Math.min(9999,(basket[id]||0)+qty);
+      persistBasket();renderBasket();closeModal();
+      toast(`Added ${qty} × ${byId(id).name} to your quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      return;
+    }
+    if(button.dataset.specSheet){const p=byId(button.dataset.specSheet);if(p)downloadSpecSheet(p);return;}
+    if(button.hasAttribute('data-export-csv')){exportBasketCSV();return;}
+    if(button.hasAttribute('data-print-basket')){window.print();return;}
+    if(button.hasAttribute('data-clear-basket')){basket={};persistBasket();renderBasket();toast('Quote basket cleared.');return;}
+    if(button.hasAttribute('data-clear-recent')){recent=[];save(local,'swm-recent',[]);renderDetail();renderCatalog(false);renderBasket();toast('Recently viewed history cleared.');return;}
+    if(button.hasAttribute('data-jump-compare')){
+      if(!compare.length){toast('Select "Compare" on up to 3 product cards to compare specifications side by side.');return;}
+      comparison();
+      $('#comparison')?.scrollIntoView({behavior:'smooth',block:'nearest'});
+      return;
+    }
+    if(button.hasAttribute('data-add-all-compare')){
+      compare.forEach(id=>{if(byId(id))basket[id]=Math.min(9999,(basket[id]||0)+1);});
+      persistBasket();renderBasket();toast(`Added ${compare.length} compared products to quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      return;
+    }
     if(button.dataset.navigate){event.preventDefault();location.href=button.dataset.navigate;return;}
     if(button.dataset.clearFilter&&state){
       const key=button.dataset.clearFilter;
       if(key==='category')state.category='all';
       if(key==='department')state.department='all';
+      if(key==='subcategory')state.subcategory='all';
       if(key==='query'){state.query='';if($('#catalog-query'))$('#catalog-query').value='';}
       if(key==='savedOnly')state.savedOnly=false;
       limit=24;renderCatalog();return;
@@ -206,8 +539,9 @@
     if(input.dataset.quantityInput){const qty=Number(input.value);if(!Number.isInteger(qty)||qty<1||qty>9999){input.value=basket[input.dataset.quantityInput];toast('Choose a whole quantity between 1 and 9999.');return;}basket[input.dataset.quantityInput]=qty;persistBasket();renderBasket();}
     if(input.dataset.compare){const id=input.dataset.compare;if(input.checked&&compare.length===3){input.checked=false;toast('Compare up to three products at a time.');return;}compare=input.checked?[...compare,id]:compare.filter(x=>x!==id);comparison();if(input.checked)toast(`Comparing ${compare.length} of 3 products.`,{href:'#comparison',label:'Jump to comparison ↓'});}
   });
-  const menu=$('.mobile-menu');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',open);$('#store-nav').classList.toggle('is-open',open);});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu){menu.setAttribute('aria-expanded','false');$('#store-nav').classList.remove('is-open');}});
+  const menu=$('.mobile-menu');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');$('#store-nav').classList.toggle('is-open',open);});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeModal();if(menu){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');$('#store-nav').classList.remove('is-open');}}});
+  enhanceStaticCards();
   const featuredSection=$('#featured-products');
   const marquee=featuredSection?.querySelector('.product-marquee');
   const track=marquee?.querySelector('.product-marquee-track');
@@ -347,7 +681,7 @@
     measureCarousel();
   }
   // External hosts can change or reject hotlinks; never leave a broken image icon.
-  const ZOOM_BOX_SELECTOR = '.product-visual,.detail-image,.basket-photo,.category-visual,.procurement-visual,.editorial-image';
+  const ZOOM_BOX_SELECTOR = '.product-visual,.detail-image,.basket-photo,.category-visual,.procurement-visual,.editorial-image,.quickview-visual,.pbar-thumb';
   function setZoomOrigin(box, event) {
     if (!event || (!event.clientX && !event.clientY)) return;
     const rect = box.getBoundingClientRect();
@@ -428,6 +762,6 @@
     fallback.innerHTML = '<span>Product photograph<br>available on enquiry</span>';
     img.replaceWith(fallback);
   }, true);
-  renderDetail();initCatalog();renderBasket();initForms();renderReview();sync();
+  initProcurementBar();initAssistant();renderDetail();initCatalog();renderBasket();initForms();renderReview();sync();
   root.addEventListener('storage',event=>{if(event.key==='swm-basket'){basket=cleanBasket(read(local,'swm-basket',{}),products);sync();renderBasket();}if(event.key==='swm-saved'){const value=read(local,'swm-saved',[]);saved=Array.isArray(value)?value.filter(id=>byId(id)):[];sync();if(state){state.saved=saved;renderCatalog(false);}}});
 })(typeof window !== 'undefined' ? window : globalThis);
