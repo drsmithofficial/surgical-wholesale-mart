@@ -157,8 +157,8 @@ img{height:auto}
 .home-page .product-marquee::-webkit-scrollbar{display:none}
 .home-page .product-marquee-track>[data-carousel-copy]{display:block}
 @media(max-width:700px){
- .home-page .product-carousel-controls{display:none}
- .home-page .selection-actions{gap:0}
+ .home-page .selection-actions{width:100%;justify-content:space-between;gap:12px}
+ .home-page .product-carousel-button{width:38px;height:38px}
 }
 .home-all-products{padding-top:48px;padding-bottom:48px}
 .home-all-products .section-heading>.text-link{max-width:none;margin:0 0 4px;white-space:nowrap}
@@ -540,3 +540,9 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .company-gallery figure:not(.is-zoomed):hover img{transform:scale(1.08);filter:drop-shadow(0 10px 20px rgba(6,59,60,.12))}
 .company-gallery figure.is-zoomed{cursor:zoom-out;box-shadow:inset 0 0 0 2px rgba(7,91,82,.28)}
 .company-gallery figure:active img,.company-gallery figure.is-zoomed img{transform:scale(1.38);filter:drop-shadow(0 14px 26px rgba(6,59,60,.18))}
+
+/* Liked / Saved heart button stays bright red across all product boxes and webpages until purposely unliked */
+.save-button,.save-detail{transition:transform .2s cubic-bezier(.22,1,.36,1),background-color .2s ease,border-color .2s ease,color .2s ease}
+.save-button:active,.save-detail:active{transform:scale(.9)}
+.save-button[aria-pressed=true],.save-button.is-liked,.save-detail[aria-pressed=true],.save-detail.is-liked{color:#e11d48!important;background:#ffe4e6!important;border-color:#fda4af!important}
+.save-button[aria-pressed=true] svg,.save-button.is-liked svg,.save-detail[aria-pressed=true] svg,.save-detail.is-liked svg{fill:#e11d48!important;stroke:#e11d48!important;color:#e11d48!important}

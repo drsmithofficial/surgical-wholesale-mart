@@ -1,0 +1,592 @@
+[
+  {
+    "id": "mb-langenbeck-handheld-retractor",
+    "name": "Langenbeck Handheld Retractor",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/ref-langenbeck.jpg",
+    "features": [
+      "Angled retraction blade",
+      "Hand-held loop handle",
+      "Stainless-steel reference specification"
+    ],
+    "description": "A hand-held Langenbeck retractor for holding back soft tissue and improving access to the surgical field. The angled blade and loop-style handle suit controlled retraction during general surgical procedures. Ask for the required blade dimensions and overall length. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593",
+    "sourceName": "Vaishnav Surgicals Retractor Lengan Beck",
+    "imageSource": "https://www.cavashsupplies.co.ke/product/langenbeck-retractor-21-cm-30-x-16-mm-202410220856",
+    "imageOriginal": "https://ucarecdn.com/f4ed78f6-3d01-469a-a3a5-6e140adedaa5/",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Langenbeck Retractor"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless Steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1946,
+    "imageHeight": 1297
+  },
+  {
+    "id": "mb-backhaus-towel-clamp",
+    "name": "Backhaus Towel Clamp",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-1.jpg",
+    "features": [
+      "Curved pointed jaws",
+      "Ring handles with ratchet lock",
+      "Stainless-steel construction"
+    ],
+    "description": "A Backhaus-pattern towel clamp used to secure surgical towels and drapes. The ring handles and locking ratchet support a maintained grip, while curved pointed jaws engage the drape. Confirm the required length and reprocessing instructions before ordering. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+    "sourceName": "Vaishanav Surgicals Backhaus Towel Forcep",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/25e17474edf845189_1_Vaishnav_Surgicals_Towel_Forcep_Backhus.jpg",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Towel Forcep"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 384,
+    "imageHeight": 384
+  },
+  {
+    "id": "mb-reusable-ear-speculum-set",
+    "name": "Reusable Ear Speculum Set",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/ref-ear.jpg",
+    "features": [
+      "Tapered ear examination profiles",
+      "Reusable stainless-steel range",
+      "Multiple size options to confirm"
+    ],
+    "description": "A reusable metal ear-speculum set for visual examination of the external ear canal. The tapered profiles provide access in different canal sizes. Specify the required sizes and compatible examination equipment when requesting a quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533",
+    "sourceName": "Vaishnav Surgicals Ear Speculum Set",
+    "imageSource": "https://www.ubuy.co.in/product/8161VE7GO-aaprotools-set-of-4-pcs-ear-specula-speculum-stainless-steel-ent-instruments",
+    "imageOriginal": "https://image-cdn.ubuy.com/set-of-4-pcs-ear-specula-speculum/400_400_100/694b3580b032b47ebf062780.jpg",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Ear Speculam"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 400,
+    "imageHeight": 400
+  },
+  {
+    "id": "mb-digital-blood-glucose-meter",
+    "name": "Digital Blood Glucose Meter",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-glucose-clean.jpg",
+    "features": [
+      "Digital glucose-result display",
+      "Compatible test strips required",
+      "Portable handheld format"
+    ],
+    "description": "A handheld digital meter for measuring blood glucose using compatible disposable test strips. Its portable format and clear numeric display suit routine glucose checks under the device instructions. Confirm strip compatibility, sample requirements and the supplied accessories for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/dr-morepen-glucometer-mbpgrn1dtdoto14082",
+    "sourceName": "Dr. Morepen Glucometer",
+    "imageSource": "https://www.alibaba.com/product-introduction/Blood-Glucose-Meter-Manufacturing-Line-Set_1600525480626.html",
+    "imageOriginal": "https://sc04.alicdn.com/kf/Hc9e77af69a074dc7bbc407da05f4b80ay.jpg",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 800
+  },
+  {
+    "id": "mb-benchtop-laboratory-centrifuge",
+    "name": "Benchtop Laboratory Centrifuge",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-centrifuge.jpg",
+    "features": [
+      "Benchtop sample-separation equipment",
+      "Speed and timer controls by configuration",
+      "Rotor and tube capacity on quotation"
+    ],
+    "description": "A benchtop laboratory centrifuge for separating components of prepared samples by controlled spinning. The source range includes an LED-display laboratory model rated up to 6000 rpm. Confirm rotor type, tube capacity, speed range and balancing requirements for your intended workflow. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/remi-laboratory-centrifuge-mbpgiiimmeppnm12008",
+    "sourceName": "Remi Laboratory Centrifuge",
+    "imageSource": "https://labequipmentcn.asia/1-3-digital-lab-centrifuge.html",
+    "imageOriginal": "https://labequipmentcn.asia/products/1-3-digital-lab-centrifuge_03.jpg",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 600
+  },
+  {
+    "id": "mb-non-contact-infrared-thermometer",
+    "name": "Non-Contact Infrared Thermometer",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/equipinst-5.jpg",
+    "features": [
+      "Infrared temperature measurement",
+      "Digital result display",
+      "Automatic shut-off in source configuration"
+    ],
+    "description": "A non-contact infrared thermometer for temperature measurement without direct skin contact. The source listing describes a digital display and automatic shut-off. Confirm body/object modes, measurement distance, accuracy range and included batteries for the quoted configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+    "sourceName": "MCP Infrared Thermometer",
+    "imageSource": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/mcp-infrared-thermometer-17_02_2025-28cc6d29.jpg",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Outer Material",
+        "value": "Plastic"
+      },
+      {
+        "label": "Display Type",
+        "value": "Digital"
+      },
+      {
+        "label": "Connectivity Technology",
+        "value": "Infrared"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1084,
+    "imageHeight": 2000
+  },
+  {
+    "id": "mb-handheld-vein-finder",
+    "name": "Handheld Vein Finder",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/equipinst-6.webp",
+    "features": [
+      "Portable vein-visualisation format",
+      "Infant-use configuration listed",
+      "Charger configuration to confirm"
+    ],
+    "description": "A handheld vein-visualisation device for assisting identification of superficial veins. The source range includes an infant-use version supplied with a charger. Confirm the intended patient group, illumination method, accessories and applicable operating instructions with your quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+    "sourceName": "Doctroid Vein Finder",
+    "imageSource": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-vein-finder-infant-with-charger-07_04_2026-048e47ec.webp",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-automatic-upper-arm-blood-pressure-monitor",
+    "name": "Automatic Upper-Arm Blood Pressure Monitor",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-bp.jpg",
+    "features": [
+      "Automatic upper-arm measurement",
+      "Digital blood-pressure and pulse readings",
+      "Cuff size and power options to confirm"
+    ],
+    "description": "An automatic upper-arm digital monitor for blood-pressure and pulse measurements. A cuff connects to the compact display unit for routine readings in clinical or home-care settings according to the device instructions. Confirm cuff size, power options and validation documentation for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/rossmax-automatic-bp-monitor-mbpgsarrx1eatm54864",
+    "sourceName": "Rossmax Automatic BP Monitor",
+    "imageSource": "https://gzmaya.en.made-in-china.com/product/vEBYkDjdATVg/China-2021-New-Design-U81e-Smart-Digital-Arm-Blood-Pressure-Monitor-Health-Care-OEM-Service-Medical-Home-Used-Automatic-Machine.html",
+    "imageOriginal": "https://image.made-in-china.com/2f0j00UGjqKEulbcoN/2021-New-Design-U81e-Smart-Digital-Arm-Blood-Pressure-Monitor-Health-Care-OEM-Service-Medical-Home-Used-Automatic-Machine.jpg",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 2266,
+    "imageHeight": 2266
+  },
+  {
+    "id": "mb-dual-head-clinical-stethoscope",
+    "name": "Dual-Head Clinical Stethoscope",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-stethoscope.jpg",
+    "features": [
+      "Clinical auscultation instrument",
+      "Dual-head reference design",
+      "Flexible tubing and ear tubes"
+    ],
+    "description": "A dual-head clinical stethoscope for listening to body sounds during examination. Flexible tubing connects the chestpiece to the ear tubes for bedside auscultation. Confirm chestpiece type, patient group, materials and supplied ear tips for the required configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/accusure-stethoscope-mbpgauess1ai1l18798",
+    "sourceName": "Accusure Stethoscope",
+    "imageSource": "https://www.ccms.ie/products/dual-head-stethoscope",
+    "imageOriginal": "https://www.ccms.ie/cdn/shop/products/ke-0505_1_520x.jpg?v=1594034159",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Chest Piece Material",
+        "value": "Aluminium Chrome Plated"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 520,
+    "imageHeight": 520
+  },
+  {
+    "id": "mb-straight-mosquito-artery-forceps",
+    "name": "Straight Mosquito Artery Forceps",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-9.webp",
+    "features": [
+      "Straight fine-jaw pattern",
+      "Ring handles with ratchet",
+      "Stainless-steel reference specification"
+    ],
+    "description": "Straight mosquito-pattern artery forceps for controlled grasping and clamping during surgical procedures. The fine jaws, finger-ring handles and ratchet allow a maintained grip. Confirm length, jaw pattern and reprocessing requirements for the supplied instrument. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+    "sourceName": "Vaishanav Surgicals Mosquito Artery Forceps Straight",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-mosquito-artery-forcep-6inch-04_05_2026-b26283c0.webp",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Artery Forcep"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-binocular-compound-microscope",
+    "name": "Binocular Compound Microscope",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-microscope.jpg",
+    "features": [
+      "Binocular viewing head",
+      "Selectable objective lenses",
+      "Laboratory specimen observation"
+    ],
+    "description": "A binocular compound microscope for viewing prepared specimens in laboratory and teaching settings. The two-eyepiece format supports comfortable observation through selectable objective lenses. Confirm magnification range, objectives, illumination and stage configuration for your application. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/esaw-binocular-compound-microscope",
+    "sourceName": "ESAW Binocular Compound Microscope",
+    "imageSource": "https://www.jcinstruments.com.au/products/40x-1600x-binocular-compound-microscope-professional-lab-biological-microscope",
+    "imageOriginal": "https://www.jcinstruments.com.au/cdn/shop/files/s-l1600_1_08798406-421b-4ee8-b5be-913f41b2fc09.jpg?v=1724059341&width=600",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 600,
+    "imageHeight": 600
+  },
+  {
+    "id": "mb-thudichum-nasal-speculum",
+    "name": "Thudichum Nasal Speculum",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-11.jpg",
+    "features": [
+      "ENT examination instrument",
+      "Two-blade opening profile",
+      "Stainless-steel reference specification"
+    ],
+    "description": "A Thudichum-pattern nasal speculum for access and visual examination of the nasal cavity. The spring-style handle separates the two blades during controlled examination. Specify the required blade size, material finish and reprocessing method when enquiring. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+    "sourceName": "Vaishnav Surgicals Nasal Speculum Thudichum Set",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/f577e544979a4895b_1_Vaishanav_Surgical_Nasal_speculum_thudichum.jpg",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Thudicgum Nasal Speculum"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 666
+  },
+  {
+    "id": "mb-urine-test-strip-analyzer",
+    "name": "Urine Test Strip Analyzer",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-urine.jpg",
+    "features": [
+      "Electronic urine-strip reading",
+      "Compact benchtop format",
+      "Compatible reagent strips to confirm"
+    ],
+    "description": "A compact urine test-strip analyzer for reading compatible reagent strips in clinical and pathology workflows. It reduces reliance on manual visual colour comparison by displaying test results electronically. Confirm the validated strip types, parameters, throughput and printer or connectivity options for the quoted unit. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/mission-urine-analyzer-mbpgissssnoohc29724",
+    "sourceName": "Mission Urine Analyzer",
+    "imageSource": "https://fr.made-in-china.com/co_soymed/product_Medical-Laboratory-Equipment-Fully-Automated-Biochemistry-Urine-Analyzer-Chemistry_uohohusnny.html",
+    "imageOriginal": "https://image.made-in-china.com/2f0j00NnLiVlkGkSgd/Medical-Laboratory-Equipment-Fully-Automated-Biochemistry-Urine-Analyzer-Chemistry.jpg",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 2144,
+    "imageHeight": 2140
+  },
+  {
+    "id": "mb-pneumatic-surgical-tourniquet-system",
+    "name": "Pneumatic Surgical Tourniquet System",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-tourniquet.jpg",
+    "features": [
+      "Pneumatic cuff-control system",
+      "Two-cuff source configuration",
+      "Pressure, timer and alarm options to confirm"
+    ],
+    "description": "A pneumatic surgical tourniquet system for controlled cuff inflation during procedures by trained clinical users. The source listing includes a two-cuff configuration. Confirm channel count, cuff sizes, pressure limits, alarms and accessories against the required clinical protocol. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/doctroid-tourniquet-machine-mbpgdoiodci1ua16926",
+    "sourceName": "Doctroid Tourniquet Machine",
+    "imageSource": "https://fsconcern.en.made-in-china.com/product/hGRpzJExBXVr/China-Medical-Double-Channel-Electric-Pneumatic-Tourniquet-System-Machine-Hemostatic-Automatic-Tourniquet-System.html",
+    "imageOriginal": "https://image.made-in-china.com/203f0j00RYfensFdLKkE/Medical-Double-Channel-Electric-Pneumatic-Tourniquet-System-Machine-Hemostatic-Automatic-Tourniquet-System.webp",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 960,
+    "imageHeight": 911
+  },
+  {
+    "id": "mb-portable-hemoglobin-meter",
+    "name": "Portable Hemoglobin Meter",
+    "category": "equipment",
+    "subcategory": "Clinical & Laboratory Diagnostics",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/ref-hemoglobin-clean.png",
+    "features": [
+      "Handheld digital hemoglobin testing",
+      "Device-specific sampling consumables",
+      "One-unit source listing"
+    ],
+    "description": "A portable digital hemoglobin meter for point-of-care measurement using its specified blood-sampling consumables. The handheld format supports testing where a compact analyzer is required. Confirm sample type, measuring range, compatible consumables and quality-control procedures for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488",
+    "sourceName": "TrueHb Hb Hemoglobin Meter",
+    "imageSource": "https://www.wedocareu.com/product/Anemia-test-kit-Portable-Home-Hemoglobin-Meter-With-Strips-and-lancets",
+    "imageOriginal": "https://www.wedocareu.com/images/hemoglobin_meters/_copied_598a341b20240711164343917-Hemoglobin-Meter--a99be73c.png",
+    "imageKind": "representative",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 500,
+    "imageHeight": 500
+  },
+  {
+    "id": "mb-laryngeal-mirror-with-handle",
+    "name": "Laryngeal Mirror with Handle",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-15.png",
+    "features": [
+      "Mirror head with handle",
+      "ENT examination instrument",
+      "Stainless-steel source material"
+    ],
+    "description": "A laryngeal examination mirror supplied with a handle for indirect visual examination by trained users. The compact mirror head supports viewing in areas that are difficult to inspect directly. Specify mirror diameter, handle configuration and reprocessing requirements when requesting a quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+    "sourceName": "Vaishnav Surgicals Larngeal Mirror with Handle",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/1a5ac2daca69440fb_image.png",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Larngeal Mirror"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 500,
+    "imageHeight": 375
+  },
+  {
+    "id": "mb-metzenbaum-dissecting-scissors",
+    "name": "Metzenbaum Dissecting Scissors",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-16.png",
+    "features": [
+      "Slender dissecting-scissor profile",
+      "Ring-handle control",
+      "Straight and curved patterns to confirm"
+    ],
+    "description": "Metzenbaum-pattern dissecting scissors for controlled cutting and dissection of soft tissue. The slender shanks and fine blades distinguish this instrument from heavier general surgical scissors. Confirm straight or curved pattern, length and supplied material finish. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+    "sourceName": "Reviti Metzenbaum Scissors",
+    "imageSource": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/9c7a772954d948ae8_image.png",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 2560,
+    "imageHeight": 2560
+  },
+  {
+    "id": "mb-mayo-surgical-scissors",
+    "name": "Mayo Surgical Scissors",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-17.png",
+    "features": [
+      "General surgical scissor pattern",
+      "Heavier blade profile",
+      "Straight and curved options to confirm"
+    ],
+    "description": "Mayo-pattern surgical scissors for general surgical cutting tasks appropriate to the selected instrument. The heavier blade profile differs from fine dissecting scissors. Specify overall length, straight or curved pattern and reprocessing requirements for the required configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+    "sourceName": "Reviti Mayo Scissors",
+    "imageSource": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/5-x-reviti-mayo-scissors-55inch-straight-13_11_2026-b5dc5b83.png",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 645,
+    "imageHeight": 1303
+  },
+  {
+    "id": "mb-allis-tissue-forceps",
+    "name": "Allis Tissue Forceps",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-18.webp",
+    "features": [
+      "Toothed tissue-grasping jaws",
+      "Ring handles with ratchet",
+      "Stainless-steel reference specification"
+    ],
+    "description": "Allis-pattern tissue forceps for grasping tissue during surgical procedures. The toothed jaw pattern and locking ring handles provide controlled retention. Confirm jaw-tooth pattern, overall length and the intended tissue application with the supplying team. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+    "sourceName": "Vaishanav Surgicals Allice Tissue Forcep",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-allice-tissue-forcep-5inch-04_05_2026-873594ea.webp",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Allice Forcep"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-cusco-vaginal-speculum",
+    "name": "Cusco Vaginal Speculum",
+    "category": "instruments",
+    "subcategory": "Reusable Surgical Instruments",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/equipinst-19.webp",
+    "features": [
+      "Bivalve examination profile",
+      "Self-retaining adjustment screw",
+      "Stainless-steel source material"
+    ],
+    "description": "A Cusco-pattern bivalve vaginal speculum for gynaecological examination by trained clinical users. The self-retaining screw mechanism holds the blades at the selected opening. Specify the required size, finish and reprocessing instructions before ordering. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+    "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+    "sourceName": "Vaishnav Surgicals Vaginal Specullum Cusco",
+    "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-vaginal-speculum-cusco-small-04_05_2026-99477315.webp",
+    "imageKind": "exact",
+    "origin": "medikabazaar",
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Cusco Speculum"
+      },
+      {
+        "label": "Material",
+        "value": "Stainless steel"
+      }
+    ],
+    "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  }
+]

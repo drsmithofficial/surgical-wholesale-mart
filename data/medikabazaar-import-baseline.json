@@ -1,0 +1,2803 @@
+{
+  "captured": "2026-11-18",
+  "products": [
+    {
+      "id": "02bb6538d195",
+      "name": "Five-Function Electric ICU Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "d1d7247e1be0",
+      "name": "Hydraulic Emergency Patient Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "046172436ac2",
+      "name": "Patient Wheelchair",
+      "category": "furniture"
+    },
+    {
+      "id": "499dc31aa817",
+      "name": "ABS Bedside Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "9065d7fe01a7",
+      "name": "Deluxe Examination Couch",
+      "category": "furniture"
+    },
+    {
+      "id": "c42d0c599c9a",
+      "name": "Semi-Electric C-Arm OT Table",
+      "category": "furniture"
+    },
+    {
+      "id": "2309963f11be",
+      "name": "Globus Dome OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "4faf3d170da3",
+      "name": "OT Examination Light",
+      "category": "equipment"
+    },
+    {
+      "id": "754d8a1e3199",
+      "name": "Suction Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "808afd3730d4",
+      "name": "Seven-Parameter Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "a19726a622b7",
+      "name": "Surgical Scrub Station",
+      "category": "mgps"
+    },
+    {
+      "id": "a38fe7705468",
+      "name": "BPC Oxygen Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "9118d4f0a40e",
+      "name": "Medical Vacuum Jar",
+      "category": "mgps"
+    },
+    {
+      "id": "13cb6a9b64d8",
+      "name": "Medical Power Column",
+      "category": "mgps"
+    },
+    {
+      "id": "541685af7f1c",
+      "name": "ICU & Ward Privacy Curtaining",
+      "category": "linen"
+    },
+    {
+      "id": "swm-96ab5311a16a",
+      "name": "Hospital Semi Fowler Electrical Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-3b091738406f",
+      "name": "Super Deluxe Semi Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-6ebf33b4442d",
+      "name": "PLAIN BED SUPER DELUXE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-5888c16393af",
+      "name": "ANESTHESIA WORKSTATION GOLD",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-09f9e046e900",
+      "name": "ANESTHESIA WORKSTATION DIAMOND",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-474fba3d233d",
+      "name": "Single Dome LED OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-942a97451235",
+      "name": "LED OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-84a78667f327",
+      "name": "Mobile OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-708b89892c8a",
+      "name": "ABS Anesthetic Cart",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-8ac49b7c9a4a",
+      "name": "Emergency Patient Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-20200b803672",
+      "name": "Deluxe Stretcher Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-424126b84564",
+      "name": "Attendant Bed Cum Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-9628300da9cb",
+      "name": "FOWLER BED DELUXE A",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-511a4f979502",
+      "name": "Super Deluxe Hospital Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-f519817236b9",
+      "name": "ICU Beds SEMI ELECTRIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-3d97f0f968f7",
+      "name": "ICU Beds FIVE FUNCTIONAL ELECTRIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2d06d1676549",
+      "name": "ICU Beds FIVE FUNCTIONAL ELECTRIC (ECO MODEL)",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-39a0b8f6cc86",
+      "name": "Medical Surgical Instrument",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-c10c22bdebe2",
+      "name": "General Surgical Goods",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-76fba02b5bf5",
+      "name": "Hernia Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-03e3e937945a",
+      "name": "Five Para Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1921cbdaeaa0",
+      "name": "CMS-7000 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f15883815dc2",
+      "name": "Contec CMS 5100 3 Para Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-48e8e3bae893",
+      "name": "Hospital Electric Fowler Bed",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-73ded3e57ed6",
+      "name": "Crash Cart With ABS Drawers",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-774138254a05",
+      "name": "SS Crash Cart",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c3ec540c1b57",
+      "name": "Three Channel Ecg Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ec372dc565f4",
+      "name": "CMS-5100 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-56ee9a7d7bc2",
+      "name": "Dr. Smith -121 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-698f3573e478",
+      "name": "Anaesthesia Machine Diamond Economy",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-9b79283536db",
+      "name": "ANAESTHESIA MACHINE GOLD",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7688fe8760b4",
+      "name": "ANESTHESIA WORKSTATION SILVER",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2df2d470d1f1",
+      "name": "Electric Cum Manual C Arm Operation Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-5865e318d71b",
+      "name": "C Arm Operation Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-5976fde18d2c",
+      "name": "Delivery Table Hydraulic Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-acd1619b9c6e",
+      "name": "Dr. Smith Xeron I-Vent Plus ICU Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-cfdc27be8412",
+      "name": "Xeron I-Vent Mini Plus ICU Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-dab0c29ef93e",
+      "name": "VG70 Aeonmed Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-dfed9b8df651",
+      "name": "O.T TABLE C-ARM ELECTRIC + MANUAL",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-cb9a76a5de83",
+      "name": "ELECTRIC C-ARM TABLE WITHOUT TOP SLIDE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2571bdb0f6da",
+      "name": "Electric Manual C Arm OT Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-4888c72e4074",
+      "name": "Mannequins For Medical",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f34181937485",
+      "name": "Adult Cpr Training Manikin",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e9b502ba3747",
+      "name": "Female Nursing Manikin, Human Shape",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d15492707b70",
+      "name": "Modular Operation Theater",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-a1ee21d72fe3",
+      "name": "Autoclave Pressure Cooker",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4b7316d5e79b",
+      "name": "Vertical Cylindrical Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-bf2b8442acc3",
+      "name": "Semi Automatic Laboratory Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-9c3661612cf2",
+      "name": "Surgi HUB-124 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5a43418000ac",
+      "name": "Three Para Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-dd11917f7c20",
+      "name": "CMS-9200 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-cf2858408a42",
+      "name": "Bubble Humidifier Bottle",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-cfe6812a7727",
+      "name": "Modular OT Medical Gas Pipeline",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-948cbbe8feeb",
+      "name": "Medical Oxygen Pipeline",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-fc4437e58a9e",
+      "name": "SS Bedside Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-36d5c8fb6204",
+      "name": "Hospital Bed Side Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-3d7621799fbb",
+      "name": "Breast Reduction Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-5c2a7a1e813e",
+      "name": "Blepharoplasty Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-d4e2e0f65fb6",
+      "name": "Cesarean Section Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-0d110cd5eb78",
+      "name": "Surgical Disposable Face Mask",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-33b77a5c8fca",
+      "name": "Surgical Face Mask",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-952a13bc1a34",
+      "name": "Bipap Face Mask",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-823c8fe20740",
+      "name": "400 W Surgical Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f7df05d72dbe",
+      "name": "300W Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-af19e952834e",
+      "name": "Analog Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-bdc58927748c",
+      "name": "Portable Oxygen Concentrator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1f23e2085f4e",
+      "name": "Oxygen Concentrator Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-dba08baa884d",
+      "name": "Jay-10 Daul Flow Oxygen Concentrator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-a83968d5138f",
+      "name": "CMS-50D Fingertrip Pulse Oximeter",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-a42b068a1977",
+      "name": "CMS-60C Hand Held Pulse Oximeter",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-18f09ff74ef8",
+      "name": "Simple manikin Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-a1e59443acfb",
+      "name": "ANAESTHESIA MACHINE DIAMOND DELUXE",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-823c60f3bc11",
+      "name": "Anesthesia Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e71aa65420a3",
+      "name": "Surgihub Skin color Anesthesiology Lab Kit",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-6a9f6ca7bdd4",
+      "name": "Mindray Anesthesia Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-03841457ecba",
+      "name": "Diagnostic Ultrasound Scanners",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e2713e68041a",
+      "name": "Dr. Smith F31 Aloka Ultrasound Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4fbbc7741c03",
+      "name": "Medical Hospital Furniture",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-202ebef9a340",
+      "name": "Ortho Neuro Attachments",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-225b312dc9cb",
+      "name": "Stretcher Trolley Cum Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-65e437c49292",
+      "name": "MICROPROCESSOR CONTROLLED OPERATING TABLE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-f3a6953345b2",
+      "name": "ELECTRIC ANIMAL OPERATING TABLE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-56375a91a895",
+      "name": "ELECTRO MECHANICAL OPERATION TABLE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-275660de0bf1",
+      "name": "O.T TABLE C-ARM HYDRAULIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-0f12107ddc6e",
+      "name": "Hydraulic Ot Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e25da5f1cfbf",
+      "name": "O.T TABLE HYDRAULIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-d6d98fcf0e84",
+      "name": "Plain Examination Couch Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-bb492ef066b0",
+      "name": "MANUAL DELIVERY TABLE 3 SECTION",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-666294785fce",
+      "name": "Four Fold Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-4e3e4462d2b2",
+      "name": "Two Fold Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-bbe5310ca904",
+      "name": "Plastic Scoop Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-01b6c9a158b3",
+      "name": "Infra Red Radiant Baby Warmer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4f1f83919885",
+      "name": "Baby Incubator Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-96a19f421be5",
+      "name": "Medical Baby Incubator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-8e94782580ca",
+      "name": "Bubble Cpap Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7277927a8298",
+      "name": "Bubble C Pap",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f29b2fbe3601",
+      "name": "G-II Auto C-Pap",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7aea4f5a3f29",
+      "name": "Bed Head Pendants Flow Meters",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-8db53e87bd33",
+      "name": "FA Valve With Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-d2be6ba193b0",
+      "name": "MOX Regulator With Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-5ad287da7fa8",
+      "name": "Three Seater Hospital Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-9a1bca4fb589",
+      "name": "Three Seater Waiting Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-cae3c296ac4b",
+      "name": "Newborn Baby Intubation Models",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1b0af14a2e27",
+      "name": "Gallbladder Manikins Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f16d70bb14a2",
+      "name": "Electrical Dental Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-c1076985233a",
+      "name": "Blood Donating Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-672a43381e70",
+      "name": "Dr. Smith Fetal Doppler",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-68c0e566c192",
+      "name": "Digital Fetal Doppler",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-32ef89b66f90",
+      "name": "Modular Ot Operation Theater",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-96c8ba831e2e",
+      "name": "Hospital Delivery Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-05f6ea488d5f",
+      "name": "Delivery Bed Hydraulic",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-9eca14c7c275",
+      "name": "Forehead Frame Nasal Mask",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-72bd683e753d",
+      "name": "Full Face Mask",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-fda6be880740",
+      "name": "Dental X Ray Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c75ae6720d25",
+      "name": "DS-1O2 MOBILE HF X RAY",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-432e5a616d0f",
+      "name": "SS Revolving Stool",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-59f1755f1846",
+      "name": "Deluxe Revolving Stool",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-65c651c9c91d",
+      "name": "Jay-5 Single Flow Oxygen Concentrator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5f0bdc8ff698",
+      "name": "Oxygen Concentrator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-33058391ea04",
+      "name": "X Ray Film",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2db6f988c170",
+      "name": "LED X Ray View Box",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4bed8ab213cc",
+      "name": "Neonatal Compressed Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-9d83c821cc15",
+      "name": "Back Pressure Compressed Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-c03db0d05eb2",
+      "name": "Maquet Servo Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ec7a95fc1704",
+      "name": "Hamilton Medical Ventilators",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ebb18bab94f1",
+      "name": "Hospital Bed ABS Panel",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-13eb556fc76c",
+      "name": "Hydraulic Dental Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a29c9162c221",
+      "name": "Surgi HUB-128 Syringe Pump",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-58acfccdeebf",
+      "name": "Aspiret Niscomed Portable Suction",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7f32d99e2555",
+      "name": "SEMI ELECTRIC OT TABLE GENERAL",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0a1ceec8fa90",
+      "name": "SS Vertical Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e9dc8fdbfe3b",
+      "name": "Electric Delivery Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-228a3f7a9ea7",
+      "name": "Bed Headed Panels",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-4f6b0dfb0478",
+      "name": "C Arm Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-b8f27bc77eb3",
+      "name": "Gray Slide Modular Ot Doors For Hospital",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-c732d3087cd4",
+      "name": "Full Functional Child CPR Material - PVC, Rubber",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-240c1fcce593",
+      "name": "Oxygen Flow Meter",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-08d52c1569fc",
+      "name": "Newborn Baby Advanced Care Manikin",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-04f92e246ff5",
+      "name": "Siemens MRI Scan Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5352110c9b18",
+      "name": "Arterial Blood Gas Machine",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-4a9c63243ef4",
+      "name": "C T Scan Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-a4c6cff0ddd5",
+      "name": "Resmed Astral 150 Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ef1d89efcff7",
+      "name": "Refurbished Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ed830cb60d3d",
+      "name": "Folding Manual Wheelchair",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-3b1e144161bf",
+      "name": "Endoscopy Camera",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2d1c45aa7631",
+      "name": "Manual Needle Destroyer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-710cc1e1645b",
+      "name": "Cricotracheotomy Trainer Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7518f86a439b",
+      "name": "Bi Pap C Pap Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-89ed7ca20e0f",
+      "name": "Aluminum Laboratory Rectangular Hot Plate",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-173ed329f1fe",
+      "name": "CMS-70A Table Top Pulse Oximeter",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1441c82a18ff",
+      "name": "30L Digital CO2 Insufflator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d4ceebaa1e8d",
+      "name": "Hospital Instrument Cabinet",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-16d8d8725a41",
+      "name": "Spine Board Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-81829a3c49e0",
+      "name": "Gas Cum Electric Autoclaves",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-63edfc6d20c1",
+      "name": "Horizontal Cylindrical Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-cdfd957fe1e6",
+      "name": "Portable Autoclave Single Drum",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0f8e16454909",
+      "name": "Hematology Analyser",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-fd618ac28484",
+      "name": "Dispoable PPE Kit",
+      "category": "consumables"
+    },
+    {
+      "id": "swm-82593bd96553",
+      "name": "Digital Gas Alarm System",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-11af0f1a1a20",
+      "name": "Intro to Obstetrics Manikins",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-338f25ad78e7",
+      "name": "Industrial Oxygen Cylinder",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-466681e66d4f",
+      "name": "Oil Free Air Compressor",
+      "category": "equipment"
+    },
+    {
+      "id": "012575599b83",
+      "name": "I.C.U Bed Five Functional Electric Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "7dcdaca1b945",
+      "name": "I.C.U Bed Five Functional Electric Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "32b50dd029fb",
+      "name": "I.C.U Bed Five Functional Manual Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "e9d18a3de752",
+      "name": "I.C.U Bed Five Functional Manual Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "4ed72caea040",
+      "name": "I.C.U Bed Three Functional Electric Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "88b0028f8610",
+      "name": "I.C.U Bed Three Functional Manual Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "63ee17ff5963",
+      "name": "I.C.U Bed Three Functional Manual Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "9ff80a6f0ddd",
+      "name": "Fowler Bed Electric Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "a965eb734c9f",
+      "name": "Fowler Bed Manual Super Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "bbeea858dead",
+      "name": "Fowler Bed Manual Deluxe Full SS Panels",
+      "category": "furniture"
+    },
+    {
+      "id": "270e0814b56a",
+      "name": "Fowler Bed Manual Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "70a519c0ae66",
+      "name": "Semi Fowler Bed Manual Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "40f0cfae072b",
+      "name": "Semi Fowler Bed Electric Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "b4608eaa42a7",
+      "name": "Semi Fowler Bed Manual Super Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "69651828f71f",
+      "name": "Semi Fowler Bed Deluxe SS cum Sunmica",
+      "category": "furniture"
+    },
+    {
+      "id": "c62e49e330fa",
+      "name": "Plain Bed Super Deluxe ABS Panels",
+      "category": "furniture"
+    },
+    {
+      "id": "cb78fdeca96a",
+      "name": "Plain Bed Deluxe Full SS Bows",
+      "category": "furniture"
+    },
+    {
+      "id": "ff23e2a35a95",
+      "name": "Plain Bed Eco Model",
+      "category": "furniture"
+    },
+    {
+      "id": "12a6593719bb",
+      "name": "Pediatric Bed with Drop-Down Railings",
+      "category": "furniture"
+    },
+    {
+      "id": "c9cbe7fba7ea",
+      "name": "Baby Bassinet (Imported / Indian)",
+      "category": "furniture"
+    },
+    {
+      "id": "374a314b8ba7",
+      "name": "Baby Cradle",
+      "category": "furniture"
+    },
+    {
+      "id": "1b8e4eda9e6b",
+      "name": "OT Light Premium with Camera HD",
+      "category": "equipment"
+    },
+    {
+      "id": "1c0332a526d3",
+      "name": "OT Light Four Reflector Economical",
+      "category": "equipment"
+    },
+    {
+      "id": "78a14747f7e8",
+      "name": "OT Light Standor Four Reflector with Battery Backup",
+      "category": "equipment"
+    },
+    {
+      "id": "7e83b4d08fd0",
+      "name": "OT Light Five Reflector / Six Reflector",
+      "category": "equipment"
+    },
+    {
+      "id": "7759859ff743",
+      "name": "OT Table General Hydraulic",
+      "category": "furniture"
+    },
+    {
+      "id": "ef1718ca4731",
+      "name": "Examination Delivery Table",
+      "category": "furniture"
+    },
+    {
+      "id": "fc4bacef9fca",
+      "name": "Delivery Table Three Fold",
+      "category": "furniture"
+    },
+    {
+      "id": "14455e3bb3b8",
+      "name": "Telescopic Table MS & SS",
+      "category": "furniture"
+    },
+    {
+      "id": "6283be2e9a22",
+      "name": "Delivery Table Electric + Manual",
+      "category": "furniture"
+    },
+    {
+      "id": "3d02592666c7",
+      "name": "Delivery Bed Electric & Manual",
+      "category": "furniture"
+    },
+    {
+      "id": "44fd288403c7",
+      "name": "Stretcher Trolley MS & SS",
+      "category": "furniture"
+    },
+    {
+      "id": "5871ac2277e2",
+      "name": "Stretcher Trolley Deluxe Manual",
+      "category": "furniture"
+    },
+    {
+      "id": "6483e63fc1ab",
+      "name": "Ambulance Stretcher Auto-Loading",
+      "category": "furniture"
+    },
+    {
+      "id": "dd50b10bdea0",
+      "name": "Examination Table Plain",
+      "category": "furniture"
+    },
+    {
+      "id": "7769f6fc37c5",
+      "name": "Crash Cart with S.S Drawers",
+      "category": "furniture"
+    },
+    {
+      "id": "f983ece1cbeb",
+      "name": "Hospital Three & Four Fold Screen",
+      "category": "furniture"
+    },
+    {
+      "id": "c643450f0c42",
+      "name": "Three Seater Waiting Chair Chrome",
+      "category": "furniture"
+    },
+    {
+      "id": "ddf00e995351",
+      "name": "Three Seater Waiting Chair with Cushion",
+      "category": "furniture"
+    },
+    {
+      "id": "6f172b5870a2",
+      "name": "Cylinder Trolley Small & Jumbo",
+      "category": "furniture"
+    },
+    {
+      "id": "8d6d4e831e32",
+      "name": "Revolving Stool",
+      "category": "furniture"
+    },
+    {
+      "id": "78d8bd1e32ad",
+      "name": "Stool Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "c8f507a498ef",
+      "name": "Bed Side Locker Semi Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "eb29803bc33e",
+      "name": "Bed Side Locker MS & SS",
+      "category": "furniture"
+    },
+    {
+      "id": "05f78e4929b2",
+      "name": "Bed Side Locker Deluxe",
+      "category": "furniture"
+    },
+    {
+      "id": "9279d4dc6c61",
+      "name": "ABS Anaesthetic Cart",
+      "category": "furniture"
+    },
+    {
+      "id": "1df932b31a5c",
+      "name": "Instrument Trolley Box Type MS",
+      "category": "furniture"
+    },
+    {
+      "id": "97710f4b811f",
+      "name": "Instrument Trolley All SS",
+      "category": "furniture"
+    },
+    {
+      "id": "cb0d335a7769",
+      "name": "Instrument Trolley Three Shelf SS",
+      "category": "furniture"
+    },
+    {
+      "id": "296ebf9b261b",
+      "name": "Instrument Trolley Box Type SS",
+      "category": "furniture"
+    },
+    {
+      "id": "a47eb18274c9",
+      "name": "Dressing Trolley All SS",
+      "category": "furniture"
+    },
+    {
+      "id": "d9fb784afebf",
+      "name": "E.C.G Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "a14d91eb8367",
+      "name": "Linen Trolley with Canvas Bag",
+      "category": "furniture"
+    },
+    {
+      "id": "df3789296f64",
+      "name": "Laparoscopy Trolley MS & SS",
+      "category": "furniture"
+    },
+    {
+      "id": "8a91da343c05",
+      "name": "Over Bed Food Table U Type",
+      "category": "furniture"
+    },
+    {
+      "id": "f25f83dcbd94",
+      "name": "Over Bed Food Table Knob Type",
+      "category": "furniture"
+    },
+    {
+      "id": "89abbf294d13",
+      "name": "Over Bed Food Table Gear Type",
+      "category": "furniture"
+    },
+    {
+      "id": "677fa8dc554c",
+      "name": "Over Bed Food Table Hydraulic",
+      "category": "furniture"
+    },
+    {
+      "id": "2889938924c3",
+      "name": "Dr. Smith 3-Bin Bio-Waste Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "3f9c861549e6",
+      "name": "Mayo Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "95f14dd9f2c5",
+      "name": "Hospital Instrument Cabinet (Double Glass Door)",
+      "category": "furniture"
+    },
+    {
+      "id": "6f42fb6f24a7",
+      "name": "Spine Board Immobilizer",
+      "category": "furniture"
+    },
+    {
+      "id": "a98a5d2d636e",
+      "name": "Scoop Stretcher (Split Type)",
+      "category": "furniture"
+    },
+    {
+      "id": "80e8183a4c8e",
+      "name": "Two Fold Emergency Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "710a6f7deff9",
+      "name": "Four Fold Compact Emergency Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "6a9839d6965b",
+      "name": "Mobile Bowl Basin Stand (MS & SS)",
+      "category": "furniture"
+    },
+    {
+      "id": "296c73a6c175",
+      "name": "Kick Bucket (M.S & S.S) with Basin",
+      "category": "furniture"
+    },
+    {
+      "id": "0a4ab0c61716",
+      "name": "ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "fc39b32f371f",
+      "name": "Automatic External Defibrillator",
+      "category": "equipment"
+    },
+    {
+      "id": "274436fde90b",
+      "name": "Defibrillator (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "10fa6b8effd8",
+      "name": "Smart 4 Cautery Machine — 300W / 400W / Sealer",
+      "category": "equipment"
+    },
+    {
+      "id": "cfdb5735a765",
+      "name": "Syringe Pump",
+      "category": "equipment"
+    },
+    {
+      "id": "0c4974b15bbd",
+      "name": "Dr. Smith Fetal Monitor & CTG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "525fb61f4181",
+      "name": "C.T Scan Machine (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "ee3124370751",
+      "name": "M.R.I. Scan Machine (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "c37bbde397d0",
+      "name": "X-Ray Scan System (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "b7cde624d1b6",
+      "name": "CR System (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "4c96e441fbf9",
+      "name": "Surgical C-Arm Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "5ae7d224f1ef",
+      "name": "Laparoscopy & Endoscopy Equipments & Instruments",
+      "category": "equipment"
+    },
+    {
+      "id": "2d967a625e33",
+      "name": "Endoscopy & Laparoscopy Camera Units",
+      "category": "equipment"
+    },
+    {
+      "id": "c3bcac4729e3",
+      "name": "Gastroscopy Units (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "61be2c78aa7a",
+      "name": "Automated Electrolyte Analyzer",
+      "category": "equipment"
+    },
+    {
+      "id": "6335db27bd20",
+      "name": "ELISA Reader and Washer",
+      "category": "equipment"
+    },
+    {
+      "id": "c11433219e70",
+      "name": "Baby Incubator",
+      "category": "equipment"
+    },
+    {
+      "id": "db7cf6e110ad",
+      "name": "Office Desk",
+      "category": "furniture"
+    },
+    {
+      "id": "32bb7d49463c",
+      "name": "Boss Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "299e112308f0",
+      "name": "Office Chair",
+      "category": "furniture"
+    },
+    {
+      "id": "18fb0303fce5",
+      "name": "ICU Ventilator (New & Pre-Owned)",
+      "category": "equipment"
+    },
+    {
+      "id": "9faf319c8b59",
+      "name": "HFNC Machine High Flow Oxygen",
+      "category": "equipment"
+    },
+    {
+      "id": "bd21709c345b",
+      "name": "Defibrillator",
+      "category": "equipment"
+    },
+    {
+      "id": "35371cdb0ac9",
+      "name": "Medical Dresses",
+      "category": "linen"
+    },
+    {
+      "id": "bd4b13d78507",
+      "name": "E.N.T & Neuro Operating Microscope",
+      "category": "equipment"
+    },
+    {
+      "id": "9a87ce9c110a",
+      "name": "Therapeutic Ultrasound Unit",
+      "category": "equipment"
+    },
+    {
+      "id": "8018df315188",
+      "name": "Mannequins & Training Dummies",
+      "category": "equipment"
+    },
+    {
+      "id": "057e8eb90883",
+      "name": "Medical Gas Outlet BS Standard - Amber",
+      "category": "mgps"
+    },
+    {
+      "id": "ba16e0a18eca",
+      "name": "Medical Gas Outlet PB Standard - Sapphire",
+      "category": "mgps"
+    },
+    {
+      "id": "777a9241209a",
+      "name": "Medical Gas Outlet Parkodex with Probe",
+      "category": "mgps"
+    },
+    {
+      "id": "df706fadd542",
+      "name": "Medical Gas Outlet DIN Standard - Jasper",
+      "category": "mgps"
+    },
+    {
+      "id": "3e091ac250fa",
+      "name": "Theatre Suction Trolley",
+      "category": "mgps"
+    },
+    {
+      "id": "f9aef60a8016",
+      "name": "Vacuum Regulator",
+      "category": "mgps"
+    },
+    {
+      "id": "649f42c82723",
+      "name": "AVSU Zonal Valve Box",
+      "category": "mgps"
+    },
+    {
+      "id": "b5dd08dc46d0",
+      "name": "Manifold System (Oxygen / N2O)",
+      "category": "mgps"
+    },
+    {
+      "id": "17b4a89c2658",
+      "name": "Oxygen Semi-Automatic Supply System",
+      "category": "mgps"
+    },
+    {
+      "id": "1237f954406a",
+      "name": "Bed Head Panel Lumipan",
+      "category": "mgps"
+    },
+    {
+      "id": "edd3ff3777ea",
+      "name": "Bed Head Panel Silk-H",
+      "category": "mgps"
+    },
+    {
+      "id": "b2aba9988d11",
+      "name": "Bed Head Panel Critrunk-H",
+      "category": "mgps"
+    },
+    {
+      "id": "7f45bffc8808",
+      "name": "Bed Head Panel Critrunk-D",
+      "category": "mgps"
+    },
+    {
+      "id": "3c24471d5466",
+      "name": "Bed Head Panel Robustrunk / Starlite-H",
+      "category": "mgps"
+    },
+    {
+      "id": "33ed1bf85519",
+      "name": "Silk Smart V",
+      "category": "mgps"
+    },
+    {
+      "id": "e24aaaf32191",
+      "name": "Spinel V",
+      "category": "mgps"
+    },
+    {
+      "id": "97f5514bf743",
+      "name": "Critrunk V",
+      "category": "mgps"
+    },
+    {
+      "id": "aa970a45a599",
+      "name": "Limupan V",
+      "category": "mgps"
+    },
+    {
+      "id": "3f18a848ff71",
+      "name": "S-2 (V) Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "6a72e423f0b1",
+      "name": "S-4 (V) 800 Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "0313e93ca13a",
+      "name": "S-3 (V) 800 Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "6ea6ece219be",
+      "name": "S-3 (H) Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "d48a4cde4aa7",
+      "name": "S-1 (V) 1000 Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "bf0ef313f598",
+      "name": "Movable S-4 (V) 600 Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "804a0b184ad5",
+      "name": "Laparoscopic Movable S-5 (H) Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "ac8b840446f1",
+      "name": "Motorized Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "fd9212cea0b3",
+      "name": "Laparoscopic Motorized Pendant Single Arm S-5 (H)",
+      "category": "mgps"
+    },
+    {
+      "id": "ec9ea8e18390",
+      "name": "Motorized Pendant Double Arm S-4 (V) 800",
+      "category": "mgps"
+    },
+    {
+      "id": "884313c3226a",
+      "name": "Medical Gas Alarm Digital",
+      "category": "mgps"
+    },
+    {
+      "id": "77455a610c6c",
+      "name": "Medical Gas Alarm Analog",
+      "category": "mgps"
+    },
+    {
+      "id": "cf83649b0bc6",
+      "name": "Master Alarm",
+      "category": "mgps"
+    },
+    {
+      "id": "ae7050c0b609",
+      "name": "Nurse Call System E-FL07",
+      "category": "mgps"
+    },
+    {
+      "id": "795eb99ea09c",
+      "name": "Top Tech Circle Absorber",
+      "category": "equipment"
+    },
+    {
+      "id": "23f39fbf5cd3",
+      "name": "Circle CO2 Absorber",
+      "category": "equipment"
+    },
+    {
+      "id": "e7970f0ed592",
+      "name": "Vaporizer",
+      "category": "equipment"
+    },
+    {
+      "id": "3a5699963eca",
+      "name": "OT Windows",
+      "category": "mgps"
+    },
+    {
+      "id": "08eb2efedb5c",
+      "name": "OT Flooring",
+      "category": "mgps"
+    },
+    {
+      "id": "6c13670bb7ab",
+      "name": "21-inch Touch Screen Monitor",
+      "category": "mgps"
+    },
+    {
+      "id": "e22dfb01a00b",
+      "name": "Sensors",
+      "category": "mgps"
+    },
+    {
+      "id": "c4073acf642b",
+      "name": "10-inch Industrial Touch Screen",
+      "category": "mgps"
+    },
+    {
+      "id": "a89b6a6ee7fc",
+      "name": "Touch Glass",
+      "category": "mgps"
+    },
+    {
+      "id": "0684d0d67c64",
+      "name": "Membrane Control Panel",
+      "category": "mgps"
+    },
+    {
+      "id": "d5b1fb24f414",
+      "name": "Pendants",
+      "category": "mgps"
+    },
+    {
+      "id": "1639bba9b605",
+      "name": "Magnetic Writing Board",
+      "category": "mgps"
+    },
+    {
+      "id": "6e4740368241",
+      "name": "Scrub Sink",
+      "category": "mgps"
+    },
+    {
+      "id": "3c0a7df1cd6b",
+      "name": "Pressure Relief Damper",
+      "category": "mgps"
+    },
+    {
+      "id": "93594ef06c6e",
+      "name": "Storage System",
+      "category": "mgps"
+    },
+    {
+      "id": "e2e58192e3c1",
+      "name": "LED X-Ray View Box High End Version",
+      "category": "mgps"
+    },
+    {
+      "id": "10104bc42f5c",
+      "name": "Flush Mounted LED X-Ray Viewer",
+      "category": "mgps"
+    },
+    {
+      "id": "7d2283ddcf2d",
+      "name": "Gynaecology Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "e7aeaa5c16e9",
+      "name": "ENT Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "7da6ca965797",
+      "name": "Portable Aluminium Six Wing Nut Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "1ea29899f671",
+      "name": "Portable Aluminium P-Type Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "1e9031f72e72",
+      "name": "Portable Stainless Steel Digital P-Type Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "cf2666b45268",
+      "name": "Vertical Stainless Steel Nut-Locking Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "031cba6fb570",
+      "name": "Vertical Stainless Steel and Aluminium Combined Nut-Locking Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "2e7498824f05",
+      "name": "Vertical Radial-Locking Double-Wall Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "b0946419ef18",
+      "name": "Horizontal Triple-Wall Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "02bc60eb621e",
+      "name": "Baby Warmer Regular",
+      "category": "equipment"
+    },
+    {
+      "id": "82e290aef577",
+      "name": "Baby Warmer Deluxe",
+      "category": "equipment"
+    },
+    {
+      "id": "6dda579d4887",
+      "name": "Baby Warmer Super Deluxe",
+      "category": "equipment"
+    },
+    {
+      "id": "85d6e5d47c30",
+      "name": "Premium Baby Warmer N-102",
+      "category": "equipment"
+    },
+    {
+      "id": "7c94456c81f9",
+      "name": "Premium Baby Warmer N-103",
+      "category": "equipment"
+    },
+    {
+      "id": "bc02ef1682c2",
+      "name": "Premium Baby Warmer N-400",
+      "category": "equipment"
+    },
+    {
+      "id": "f00da03d122e",
+      "name": "Anaesthesia Machine Minor MS",
+      "category": "equipment"
+    },
+    {
+      "id": "05f00acff4c3",
+      "name": "Anaesthesia Machine Minor SS",
+      "category": "equipment"
+    },
+    {
+      "id": "ddaaf891f4a5",
+      "name": "4 Fold Screen",
+      "category": "furniture"
+    },
+    {
+      "id": "c48fff84d009",
+      "name": "5 Function Electric Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "f30534d4d2b5",
+      "name": "IV Stand",
+      "category": "furniture"
+    },
+    {
+      "id": "9dc33056c612",
+      "name": "Attendent Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "ace0770e5caf",
+      "name": "Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "d996df8bb9a2",
+      "name": "Bed Side Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "a2c59d4aea7b",
+      "name": "Bio Waste Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "0c2f22666017",
+      "name": "Crash Cart",
+      "category": "furniture"
+    },
+    {
+      "id": "11bb80ee7bae",
+      "name": "Cylinder Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "05fa0965c7c3",
+      "name": "Cylinder",
+      "category": "mgps"
+    },
+    {
+      "id": "366b3d3bca85",
+      "name": "Emergency Recovery",
+      "category": "furniture"
+    },
+    {
+      "id": "383a0afaa980",
+      "name": "Food Table",
+      "category": "furniture"
+    },
+    {
+      "id": "526126a972de",
+      "name": "Half Suction Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "005f7720b722",
+      "name": "Infusion Pump",
+      "category": "equipment"
+    },
+    {
+      "id": "31bd958710e9",
+      "name": "Scrub Station",
+      "category": "mgps"
+    },
+    {
+      "id": "48b7e96fbc19",
+      "name": "Ventillator Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "87a956e48e48",
+      "name": "Air Handling Unit",
+      "category": "mgps"
+    },
+    {
+      "id": "a264660c9a6e",
+      "name": "Aluminium Ducting",
+      "category": "mgps"
+    },
+    {
+      "id": "6d8a69347d61",
+      "name": "Laminar Air Flow",
+      "category": "mgps"
+    },
+    {
+      "id": "8c7c75d8977d",
+      "name": "Hospital Outdoor Unit",
+      "category": "mgps"
+    },
+    {
+      "id": "65769c9a5f90",
+      "name": "HPL Sliding Door",
+      "category": "mgps"
+    },
+    {
+      "id": "eb424f75367f",
+      "name": "Wall & Ceiling Panel",
+      "category": "mgps"
+    },
+    {
+      "id": "8526bc3bea9f",
+      "name": "Hatch Box",
+      "category": "mgps"
+    },
+    {
+      "id": "50888b126669",
+      "name": "Antibacterial Paint",
+      "category": "mgps"
+    },
+    {
+      "id": "539e72310883",
+      "name": "Peripheral Light",
+      "category": "mgps"
+    },
+    {
+      "id": "f0b27d66cb75",
+      "name": "Vinyl Flooring",
+      "category": "mgps"
+    },
+    {
+      "id": "e806431ac102",
+      "name": "Hospital Storage Unit",
+      "category": "mgps"
+    },
+    {
+      "id": "953f23ce70d5",
+      "name": "Hospital Writing Board",
+      "category": "mgps"
+    },
+    {
+      "id": "5939e66dca86",
+      "name": "X-Ray Viewer",
+      "category": "mgps"
+    },
+    {
+      "id": "7a665737b341",
+      "name": "OT Control Panel",
+      "category": "mgps"
+    },
+    {
+      "id": "5beec2817873",
+      "name": "Single-Arm OT Pendant",
+      "category": "mgps"
+    },
+    {
+      "id": "5a0e446b3157",
+      "name": "Medical Gas Pipeline Saddle",
+      "category": "mgps"
+    },
+    {
+      "id": "8b13b9803e26",
+      "name": "Medical Gas Copper Fittings",
+      "category": "mgps"
+    },
+    {
+      "id": "c2b3e63a07dd",
+      "name": "Medical Gas Pressure Regulator",
+      "category": "mgps"
+    },
+    {
+      "id": "9b3453c972a2",
+      "name": "Medical Gas High-Pressure Hose",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-0730f55db3d9",
+      "name": "Plain Hospital Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a4c4d27de1cc",
+      "name": "Deluxe Plain Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-7af6e690af56",
+      "name": "PLAIN BED DELUXE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-679ed2f65542",
+      "name": "Deluxe Plain Hospital Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-7bab80eba03d",
+      "name": "Super Deluxe Plain Hospital Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-81f898b4ccae",
+      "name": "SEMI FOWLER BED ELECTRIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-aa5107053b59",
+      "name": "Fowler Bed Eco",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-d3fbd5d53385",
+      "name": "SEMI FOWLER BED WITH RATCHET & WHEELS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2ded6ccd9123",
+      "name": "Super Deluxe Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-322c5dae20c7",
+      "name": "SEMI FOWLER BED ELECTRIC ABS TOP",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-b64763c366f1",
+      "name": "Deluxe Semi Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-1075e3640344",
+      "name": "Semi Fowler Hospital Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e6e4a76149c4",
+      "name": "SEMI FOWLER BED ABS PANELS WITH WHEELS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-62a7e5beb916",
+      "name": "Manual Fowler Hospital Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a29aa5be0234",
+      "name": "Hospital Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-7492f27118ea",
+      "name": "FOWLER BED ELECTRICAL",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-54efaaa7a16d",
+      "name": "FOWLER BED SUPER DELUXE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-8f0b69012ae8",
+      "name": "SEMI FOWLER BED STANDARD WITH WHEELS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-8378c3e55498",
+      "name": "SEMI FOWLER BED WIRE MESH TOP WITH WHEELS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-11787d9f5b02",
+      "name": "Abs Panel Hospital Semi Fowler Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-bbdd163998f3",
+      "name": "Adjustable Hospital Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-c88b4c4d039e",
+      "name": "MS Delivery Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-61173b4011f9",
+      "name": "A.v. Fistula Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-5a5bde40550e",
+      "name": "Colposcopy Surgical Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4d6ef6dd13ab",
+      "name": "Ear Microsurgery Mastoidectomy Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c943e7c399e8",
+      "name": "SP-10 Electronic Handheld Spirometer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5625e3205324",
+      "name": "Medical Equipments",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1f8cf33fe58b",
+      "name": "Horizontal Cylindrical Double Door Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-abe7515000b6",
+      "name": "Medical Fogger Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e1503fd38a57",
+      "name": "Dr. Smith Semi Automatic Defibrillator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e0f1177eeea1",
+      "name": "Suction Machines Ms",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-6e772520808c",
+      "name": "SR-DP01 DVT Pump",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-b30ac3064b41",
+      "name": "X Ray Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2fb7684f3514",
+      "name": "Double Surface Photo Therapy Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-880e6bb13497",
+      "name": "Fetal Monitor CTG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-4b590bfb4578",
+      "name": "BT-350 Bistos Fetal Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-9fd05d566cdf",
+      "name": "Digital Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-aec1b8e335da",
+      "name": "Electrosurgical Cautery Machine 400 w",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ee96487b521d",
+      "name": "LED White OT EXAMINATION LIGHT CHROME BASE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-596cb2c80272",
+      "name": "Surgical Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-69c783189b40",
+      "name": "Ceiling Mounted Single Dome Ot Light For Operation Theater",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-63a9aa2f11ea",
+      "name": "Led O.t Twin Light, For Operation Theater",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-bab478f5f4f7",
+      "name": "Double Dome Ceiling Ot Light, For Operation Theater",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-b38f6898e380",
+      "name": "OT Light Mobile, For Operation Theater, LED",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7fe2bbdf7cba",
+      "name": "Ot Halogen Examination Light Wall mounted",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-cd7128d3065e",
+      "name": "Surgical Ot Pendants",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-27396950a95f",
+      "name": "Mobile Led Ot Light For Hospital",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ddf72b6b1e06",
+      "name": "Light Ceiling Halogen Twin For Operation Theater",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0e2d6b4e2920",
+      "name": "HALOGEN MOBILE OT LIGHT SINGLE DOME 4 REFLECTOR",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d2457fa787f6",
+      "name": "O.T Light Halogen Single Dome",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-09f1f2b479df",
+      "name": "Ceiling Mounted O. T Light Single Dome Halogen For Operation Theater",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ab150aed4022",
+      "name": "Halogen Ceiling OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2e9f9c6d8517",
+      "name": "Halogen OT Light",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-fb0174e84cc2",
+      "name": "OT Twin Light Halogen",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-96386379c9c6",
+      "name": "Led White Ot Halogen Examination Light Wall Mounted, For Hospital",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-88bc1f8e970b",
+      "name": "ICU Beds ELECTRIC ABS PANELS & ABS RAILINGS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-35ffc9e51c3f",
+      "name": "Five Functional Electrical ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-6d9bd04c5bfc",
+      "name": "PEDIATRIC ELECTRIC WITH RAILINGS ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e66b897f9db2",
+      "name": "Electical With Centre Locking ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-693a5723c5fc",
+      "name": "Automatic Five Functional Electric ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-29d1803885a2",
+      "name": "ICU Beds MECHANICAL ABS PANELS & COLLAPSIBLE RAILINGS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-22a1648576ff",
+      "name": "ICU Beds ELECTRIC WITH ABS TOP",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-770361c98137",
+      "name": "ICU Beds ELECTRIC SS PANELS & COLLAPSIBLE RAILINGS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a5be14e99a90",
+      "name": "SEMI FOWLER BED SUPER DELUXE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-7b60b671b06c",
+      "name": "Five Functional Manual ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-061b20322f1e",
+      "name": "ICU Beds FIVE FUNCTIONAL MANUAL(ECO MODEL)",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-63a56b354b18",
+      "name": "Five Function Manual ICU Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-bb05f91f9d27",
+      "name": "SS Cylinder Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-80b7eff46e1b",
+      "name": "Surgical Instrument Trolley",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-7fd3a8623423",
+      "name": "ECG Machine Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-96cb4e290f16",
+      "name": "Bio Medical Waste Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a5c10eeea695",
+      "name": "SS Hospital Dressing Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-0bb2c950c775",
+      "name": "Patient Stretcher Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-f408fc8d3df4",
+      "name": "SS Surgical Instrument Trolley",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-a7b17a1bc11c",
+      "name": "Semi Deluxe Bed Side Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2db5facd235f",
+      "name": "Deluxe Bed Side Locker",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e36bdd39ae72",
+      "name": "Autoloader Collapsible Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-0cb1918db452",
+      "name": "Laparoscopic Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-80fff1ebf508",
+      "name": "Ambulance Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-874c473f011c",
+      "name": "SS Instrument Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-670efaaeb31b",
+      "name": "Soiled Linen Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-d3427cafb56b",
+      "name": "Box Type Instrument Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-3f805aa49409",
+      "name": "Anesthesia Workstation and Trolleys",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-34df5be91c31",
+      "name": "Three Shelf Instrument Trolley",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-a95690c6c688",
+      "name": "Fowler Bed Delux",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-f4b1e875af89",
+      "name": "SEMI FOWLER BED SS PANELS WITH WHEELS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-0b360e3355c9",
+      "name": "Modular Operation Theatre Modular Ot",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-985598268429",
+      "name": "Modular Operation Theater Modular Ot",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-a24583fd3596",
+      "name": "Birthright Delivery Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-626c8802fd30",
+      "name": "TELESCOPIC DELIVERY OBSTETRIC BED",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-5340c10a92a6",
+      "name": "Semi-Electric Delivery Beds",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2bca55ee8be0",
+      "name": "Motorized Birthing DeliveryBed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-505c983a9139",
+      "name": "Automatic Obstetric Electric Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-6bd1e344b422",
+      "name": "HYDRAULIC OT TABLE WITH SIDE END CONTROL",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-6ab7e2f845af",
+      "name": "TELESCOPIC LABOUR TABLE FIXED HEIGHT",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-d44dfa3e2628",
+      "name": "Hospital Delivery Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e75d1fb96068",
+      "name": "TELESCOPIC LABOUR TABLE ADJUSTABLE HEIGHT",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-522aef8a8a5f",
+      "name": "Pediatric Bed",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-702a8457a563",
+      "name": "Ss And Ms Hospital Bench",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-299d8c607a4b",
+      "name": "Abdominoplasty Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-23813620442e",
+      "name": "Knee Surgery Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-4dc8482d007b",
+      "name": "Minor Micro Surgery Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-8d3a088392eb",
+      "name": "Craniotomy Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-49e535198680",
+      "name": "Chalazion Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-594a594f1db1",
+      "name": "Stainless Steel D C Instruments Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-9d1fb6142fd8",
+      "name": "ENT Surgical Instruments",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-ae27c9031735",
+      "name": "Surgical Instruments Tray",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-33440bc213c1",
+      "name": "Hospital Instrument Sterilizer",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-58bb4511d2fb",
+      "name": "Abdominal Hysterectomy Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-277aee8f0292",
+      "name": "Dressing Drum Stainless Steel",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-2576ab967760",
+      "name": "Kidney Tray Ss",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-1fd075a7d1d8",
+      "name": "TC General Instruments",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-431255b41f0e",
+      "name": "Yonker E15 Modular Patient Monitor Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2a9cebd67492",
+      "name": "Sinnor 6 Parameter Semi Modular Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-656b2579131a",
+      "name": "MDK Patient Multi-para Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e38a806bdefe",
+      "name": "Sinnor Snp9000n Cardiac Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0a4bcff72ded",
+      "name": "Cardiac Monitor Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-b53a8af702c4",
+      "name": "TS13 Modular Patient Monitor, Display",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-162c18f9a5de",
+      "name": "Modular Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-8ce89a7f2794",
+      "name": "E4 Portable Vital Sign Monitors",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-ae68b6c9d700",
+      "name": "Bedside Cardiac Monitor YK-8000CS",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-da82ca04020f",
+      "name": "Patient Multipara Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-240b10e53114",
+      "name": "Contec Multipara Monitor CMS8000",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-a1fcec3b7053",
+      "name": "BPL Magna 3 Para Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-21f2fe45a8b1",
+      "name": "Portable Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-54c190261550",
+      "name": "Baby Cradle And Bassinet",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5588d8190cb8",
+      "name": "Physiotherapy Electrotherapy Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-6172badac77e",
+      "name": "Surgi HUB-129 Infusion Pump",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-98b19707e847",
+      "name": "Baby Radiant Warmer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-69c2e8a9171c",
+      "name": "Endoscopy Laparoscopy Camera",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-3413bfa5da63",
+      "name": "ENT And Neuro Microscopes",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-97902ef3d4a1",
+      "name": "Hospital Three Fold Screen",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-126afb81a0bd",
+      "name": "Cardiac Overbed Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-957c994b18c9",
+      "name": "ETO Sterilizer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-050b37ada947",
+      "name": "Surgical Scrub Sink Station",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-448f2c24c45d",
+      "name": "Hospital Kick Bucket",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0fcfb31544b0",
+      "name": "C R Systems",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2f21dd39feaa",
+      "name": "Dr. Smith-123 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-bfd4f61a2775",
+      "name": "Surgi HUB-125 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c97a69b82bb5",
+      "name": "ECG-100G Single Channel ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c757c0d674a4",
+      "name": "Six Channel Ecg Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-e1abeb322ed4",
+      "name": "3 Channel ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-0e6dfef9d27f",
+      "name": "12 Channel ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5f10763fa0b4",
+      "name": "ECG-1200G Twelve Channel ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f6242c74fb34",
+      "name": "ANAESTHESIA MACHINE SILVER",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f9dab95ad762",
+      "name": "ANAESTHESIA MACHINE DIAMOND STANDARD",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-33551f2c95ea",
+      "name": "Mri Compatible Anaesthesia Machines",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5a43b8ace3b3",
+      "name": "Anaesthesia Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-3443cbebba47",
+      "name": "ORTHOPEDIC OT TABLE ELECTRIC",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-0fbc6cf6af74",
+      "name": "OPTHALMIC OT TABLE MANUAL",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-6bf6ed23c7dc",
+      "name": "C Arm Hydraulic OT Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-cc9fb9d44336",
+      "name": "ELECTRO HYDRAULIC OT TABLE",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-2c6d7f88bd75",
+      "name": "Electric OT Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-aeb52a9040fb",
+      "name": "Versamed I-VENT ICU Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-39ac31495ebf",
+      "name": "Drager Evita Xl ICU Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-12345d52cf93",
+      "name": "Icu Ventilator Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-50a515c6853a",
+      "name": "Mindray Icu Ventilator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-2026b8fe0bfd",
+      "name": "Hydraulic Operation Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-52f28458a3f4",
+      "name": "Three Fold Delivery Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-1f03c6d37c49",
+      "name": "Hydraulic Delivery Table",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-62a27b960991",
+      "name": "Surgi Hub-122 Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d5d312f8c744",
+      "name": "Philips Patient Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-46b55f6bdd01",
+      "name": "Dr. Smith Fetal Monitor",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-626aa7a7e65d",
+      "name": "BPL ECG Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-1d7bc46693db",
+      "name": "Semi Automatic Portable Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-aa13c358c07a",
+      "name": "Horizontal Autoclave",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-00eaee90bf38",
+      "name": "Stainless Steel Horizontal Front Loading Flash Sterilizers, 22 L",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d17ec014ca2b",
+      "name": "Stainless Steel Vertical Pressure Steam Sterilizer",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-f6afb0223b13",
+      "name": "Multi Functional Patient Care Nursing Manikin (Female)",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-98802a426abb",
+      "name": "CPR CHEST Manikin MALE",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-5648928b8304",
+      "name": "PVC Medical Mannequin",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-7674abb37227",
+      "name": "Medical Gas Pipeline",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-a1e19cdcc6ff",
+      "name": "Medical Gas Pipeline System",
+      "category": "mgps"
+    },
+    {
+      "id": "swm-3e7a5c40890d",
+      "name": "Bladder Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-876f3a265827",
+      "name": "Delivery Surgical Instrument Set",
+      "category": "instruments"
+    },
+    {
+      "id": "swm-6c4a77183fe9",
+      "name": "AGFA CR-10-X CR Machine",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-82f2ac4baf12",
+      "name": "400 Watt Digital Cautery Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c5bf1b148e6f",
+      "name": "Cautery Machine Electrosurgical Unit",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-119de47f2f82",
+      "name": "Natural Medical Mannequin Set",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-d8f10bfe285c",
+      "name": "BPL Oxy 5 Neo Dual Oxygen Concentrator",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-c7f4fb50823f",
+      "name": "Surgi HUB-126 Meter",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-331e84e7b569",
+      "name": "Stainless Steel Stool",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-e1a56a65cb45",
+      "name": "Aluminum Folding Stretcher",
+      "category": "furniture"
+    },
+    {
+      "id": "swm-d3c469eae936",
+      "name": "Allied Medical Anaesthesia Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-820f96d4ab16",
+      "name": "Bmc Bipap Machine",
+      "category": "equipment"
+    },
+    {
+      "id": "swm-6903b1343b1a",
+      "name": "Manual Wheel Chair",
+      "category": "furniture"
+    }
+  ],
+  "categoryCounts": {
+    "furniture": 209,
+    "equipment": 225,
+    "instruments": 26,
+    "mgps": 90,
+    "linen": 2,
+    "consumables": 6
+  }
+}

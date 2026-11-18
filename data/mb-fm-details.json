@@ -1,0 +1,3168 @@
+[
+  {
+    "term": "tynor-invalid-s-reciprocating-walker",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Tynor Invalid's Reciprocating Walker",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-invalids-reciprocating-walker-all-pods-al-l-20-11_06_2026-16955390.webp?tr=w-800,q-65,f-avif",
+            "description": "Tynor Invalid's Reciprocating Walker — All Pods-AL L 20. Supports and braces for ortho OPDs, physio clinics and retail. Order online for your facility.",
+            "category": "Physiotherapy",
+            "sku": "MBPGORNTNDAWKK13544",
+            "brand": {
+              "@type": "Brand",
+              "name": "Tynor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 1914.15,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 24
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Tynor Invalid's Reciprocating Walker - All Pods-AL L 20",
+            "description": "Tynor Invalid's Reciprocating Walker — All Pods-AL L 20. Supports and braces for ortho OPDs, physio clinics and retail. Order online for your facility.",
+            "url": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walker",
+            "item": "https://www.medikabazaar.com/physiotherapy/walker"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Tynor Invalid's Reciprocating Walker",
+            "item": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What weight capacity does this walker support, and is it suitable for bariatric patients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Tynor Invalid's Reciprocating Walker has a weight bearing capacity of 110 kg, making it appropriate for standard adult patients. For patients exceeding this capacity, a bariatric-rated walker would be required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the adjustable height range, and how does it accommodate different patient statures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The walker height adjusts from 75.8 cm to 93.5 cm, accommodating users between 152 cm and 190.5 cm (approximately 5 to 6 feet 3 inches). This range covers most adult patient populations in institutional settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the key structural features that provide stability and durability in clinical use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The walker features strong riveted joints with durable riveted construction, an aluminum alloy frame, and high-performance TPE pods with excellent traction. The anodized finish provides long-lasting corrosion resistance, ensuring reliability across repeated institutional use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this walker offer both reciprocating and conventional walking modes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the walker supports both reciprocating action (where legs move alternately) and conventional action (where all legs move together), allowing clinicians to select the mode best suited to the patient's gait pattern and rehabilitation stage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the portability and storage advantages for institutional settings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The walker is lightweight at 2.6 kg and features easy folding capability, allowing it to be transported in a car boot or stored compactly under a bed. This makes it practical for multi-patient facilities and home-based physiotherapy services."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What ergonomic features reduce patient fatigue during ambulation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The walker includes foam hand grips that ensure less fatigue during extended use, combined with high resilience and stability features that reduce the physical effort required to maintain balance while walking."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "arrex-marathon-series-premium-rollator-walker",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Arrex Marathon Series Premium Rollator Walker",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-marathon-series-premium-rollator-walker-mc50-22_06_2026-04cd0528.webp?tr=w-800,q-65,f-avif",
+            "description": "Get Arrex Marathon Series Premium Rollator Walker at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "category": "Physiotherapy",
+            "sku": "MBPGAXRAEDAWKK47886",
+            "brand": {
+              "@type": "Brand",
+              "name": "Arrex"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 2194.5,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Arrex Marathon Series Premium Rollator Walker",
+            "description": "Get Arrex Marathon Series Premium Rollator Walker at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "url": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walker",
+            "item": "https://www.medikabazaar.com/physiotherapy/walker"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Arrex Marathon Series Premium Rollator Walker",
+            "item": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "arrex-marathon-series-light-weight-walkers",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/arrex-marathon-series-light-weight-walkers",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Arrex Marathon Series Light Weight Walker",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-marathon-series-light-weight-walker-m130-20_06_2026-2b0bd3fb.webp?tr=w-800,q-65,f-avif",
+            "description": "Arrex Marathon Series Light Weight Walker — M130. Orthopaedic support for injury recovery, posture and pain management. See full details on the product page.",
+            "category": "Physiotherapy",
+            "sku": "MBPGAXRAEDAWKK47870",
+            "brand": {
+              "@type": "Brand",
+              "name": "Arrex"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 1433.25,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Arrex Marathon Series Light Weight Walker - M130",
+            "description": "Arrex Marathon Series Light Weight Walker — M130. Orthopaedic support for injury recovery, posture and pain management. See full details on the product page.",
+            "url": "https://www.medikabazaar.com/products/arrex-marathon-series-light-weight-walkers",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walker",
+            "item": "https://www.medikabazaar.com/physiotherapy/walker"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Arrex Marathon Series Light Weight Walker",
+            "item": "https://www.medikabazaar.com/products/arrex-marathon-series-light-weight-walkers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "arrex-marathon-child-series-walkers-for-kids",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Arrex Marathon Child Series Walker",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-marathon-child-series-walker-mc50-19_06_2026-4aba7b66.webp?tr=w-800,q-65,f-avif",
+            "description": "Arrex Marathon Child Series Walker — MC50. Orthopaedic support for injury recovery, posture and pain management. Tiered pricing for larger orders.",
+            "category": "Physiotherapy",
+            "sku": "MBPGAXRAEDAWKK47871",
+            "brand": {
+              "@type": "Brand",
+              "name": "Arrex"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 2194.5,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Arrex Marathon Child Series Walker - MC50",
+            "description": "Arrex Marathon Child Series Walker — MC50. Orthopaedic support for injury recovery, posture and pain management. Tiered pricing for larger orders.",
+            "url": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walker",
+            "item": "https://www.medikabazaar.com/physiotherapy/walker"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Arrex Marathon Child Series Walker",
+            "item": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "tynor-quadripod-walking-stick",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Tynor Quadripod Walking Stick",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-quadripod-walking-stick-universal-l12-11_06_2026-bc134b0c.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Tynor Quadripod Walking Stick, Universal L12. Orthopaedic and physiotherapy supplies for clinics and retail. Compare options and order in bulk.",
+            "category": "Physiotherapy",
+            "sku": "MBPGORNTNDAWKK13309",
+            "brand": {
+              "@type": "Brand",
+              "name": "Tynor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 586.95,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.4,
+              "bestRating": 5,
+              "ratingCount": 1204
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Tynor Quadripod Walking Stick - Universal L12",
+            "description": "Buy Tynor Quadripod Walking Stick, Universal L12. Orthopaedic and physiotherapy supplies for clinics and retail. Compare options and order in bulk.",
+            "url": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walking Stick",
+            "item": "https://www.medikabazaar.com/physiotherapy/walking-stick"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Tynor Quadripod Walking Stick",
+            "item": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the weight bearing capacity of the Tynor Quadripod Walking Stick L12?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Tynor Quadripod Walking Stick L12 has a maximum weight bearing capacity of 110 kg, making it suitable for a wide range of patient populations in physiotherapy and post-operative settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the adjustable height feature benefit different patient populations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The height adjustment range of 742–780 mm (±5 mm) accommodates users between 4'10\" and 6'0\" (147–183 cm), ensuring proper load bearing, comfort, and correct posture across diverse patient heights. This adjustability is critical for maintaining biomechanical alignment during gait training and rehabilitation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What material is used in the construction and why is it significant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Tynor Quadripod Walking Stick is constructed from special-grade aluminum, which provides strength and durability while maintaining a lightweight profile. This material choice reduces fatigue during prolonged use while ensuring the device can reliably support the maximum weight bearing capacity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the broad base design improve stability and patient confidence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The quadripod base design with broad footprint increases the base of support, providing enhanced stability and load distribution. This design feature is particularly beneficial for very weak, elderly, or physically challenged individuals, and helps improve balance confidence during ambulation and post-operative recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Tynor Quadripod Walking Stick suitable for post-operative patients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Tynor Quadripod Walking Stick L12 is specifically designed for post-operative use. The anatomical handle with soft grip, anti-slip surface, and broad base provide secure support and confidence during the early mobilization phase of post-surgical rehabilitation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the walking stick be used by both left and right-handed users?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Tynor Quadripod Walking Stick L12 is ambidextrous and can be used by either left or right-handed users, making it a versatile solution for institutional procurement without the need for separate left and right variants."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "bfn-build-for-nurture-elbow-crutch",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/bfn-build-for-nurture-elbow-crutch",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "BFN Build For Nurture Elbow Crutch",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/bfn-build-for-nurture-elbow-crutch-adult-29_06_2026-5941e8aa.webp?tr=w-800,q-65,f-avif",
+            "description": "Get BFN Build For Nurture Elbow Crutch at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "category": "Physiotherapy",
+            "sku": "MBPGCGOQVHCTSR49974",
+            "brand": {
+              "@type": "Brand",
+              "name": "BFN Build For Nurture"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 519.75,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "BFN Build For Nurture Elbow Crutch",
+            "description": "Get BFN Build For Nurture Elbow Crutch at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "url": "https://www.medikabazaar.com/products/bfn-build-for-nurture-elbow-crutch",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Elbow Crutch",
+            "item": "https://www.medikabazaar.com/physiotherapy/elbow-crutch"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "BFN Build For Nurture Elbow Crutch",
+            "item": "https://www.medikabazaar.com/products/bfn-build-for-nurture-elbow-crutch"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the adjustable height feature accommodate different patient body types?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The crutch features a telescoping design that allows height adjustment to suit individual needs and different body types. This adjustability ensures a proper fit across adult patients of varying heights, promoting correct posture and optimal support during rehabilitation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What clinical conditions is this elbow crutch suitable for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The BFN Elbow Crutch is designed for individuals recovering from leg injuries, surgeries, or conditions affecting mobility. By redistributing weight from the legs to the arms and upper body, it helps alleviate pain and pressure on the affected leg, making it suitable for post-surgical rehabilitation and injury recovery in physiotherapy practice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What safety features does the crutch provide for indoor and outdoor use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The crutch includes an anti-slip rubber tip at the base to provide additional grip and prevent slipping on various surfaces, ensuring safe use both indoors and outdoors. The ergonomic elbow cuff with padding also enhances stability and reduces the risk of falls during use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the crutch portable and easy to transport between clinical settings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The lightweight aluminum construction allows for easy maneuverability and portability. Its compact size makes it easy to store and transport, making it suitable for use across multiple physiotherapy treatment areas or for patients requiring mobility aids in various clinical environments."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "arrex-elbow-and-underarm-crutches",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Arrex Elbow and Underarm Crutch",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-elbow-and-underarm-crutch-ms230-18_06_2026-adf86de9.webp?tr=w-800,q-65,f-avif",
+            "description": "Arrex Elbow and Underarm Crutch � MS230. Supports and braces for ortho OPDs, physio clinics and retail. View specs and price on Medikabazaar.",
+            "category": "Physiotherapy",
+            "sku": "MBPGAXRAEDAWKK47875",
+            "brand": {
+              "@type": "Brand",
+              "name": "Arrex"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 506.1,
+              "availability": "https://schema.org/OutOfStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 39
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Arrex Elbow and Underarm Crutch | MS230",
+            "description": "Arrex Elbow and Underarm Crutch � MS230. Supports and braces for ortho OPDs, physio clinics and retail. View specs and price on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Crutches",
+            "item": "https://www.medikabazaar.com/physiotherapy/crutches"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Arrex Elbow and Underarm Crutch",
+            "item": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "tynor-foldable-commode-chair",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Tynor Foldable Commode Chair",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-foldable-commode-chair-universal-l-35-23_03_2026-037bc0e5.webp?tr=w-800,q-65,f-avif",
+            "description": "Tynor Foldable Commode Chair (Universal L 35) on Medikabazaar. Orthopaedic and physiotherapy supplies for clinics and retail.",
+            "category": "Physiotherapy",
+            "sku": "MBPGORNTNNDEOO13541",
+            "brand": {
+              "@type": "Brand",
+              "name": "Tynor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 2507.4,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 27
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Tynor Foldable Commode Chair - Universal L 35",
+            "description": "Tynor Foldable Commode Chair (Universal L 35) on Medikabazaar. Orthopaedic and physiotherapy supplies for clinics and retail.",
+            "url": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Commode Chair",
+            "item": "https://www.medikabazaar.com/physiotherapy/commode-chair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Tynor Foldable Commode Chair",
+            "item": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the maximum weight capacity of this commode chair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Tynor Foldable Commode Chair has a load-bearing capacity of up to 110 kg, supported by a rigid steel frame that provides structural integrity for safe and stable use across diverse patient populations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the foldable design benefit institutional procurement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The foldable design enables compact storage and easy transport between clinical areas, making it practical for facilities with space constraints or those requiring mobility between multiple treatment zones. This portability does not compromise the chair's structural stability during use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What materials are used in the seat and frame construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The commode chair features a rigid steel frame with a chrome finish and a molded polymer seat. The seat cover and armrests are designed to enhance comfort while maintaining durability and ease of cleaning in clinical environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included for sanitary containment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The commode chair is equipped with a removable sanitary container, enabling straightforward waste management and facilitating hygiene protocols in clinical and institutional settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What clinical settings is this commode chair suitable for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The universal size and portable design make this chair suitable for use in physiotherapy clinics, rehabilitation centers, home care settings, and healthcare facilities where patients require accessible toileting solutions with mobility support."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "ageasy-safesit-shower-chair",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "AGEasy Safesit Shower Chair",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/ageasy-safesit-shower-chair-23_10_2026-f05c5dca.png?tr=w-800,q-65,f-avif",
+            "description": "Get AGEasy Safesit Shower Chair at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "category": "Physiotherapy",
+            "sku": "MBPGWTRDOOOSWT69277",
+            "brand": {
+              "@type": "Brand",
+              "name": "AGEasy"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 4246.82,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "AGEasy Safesit Shower Chair",
+            "description": "Get AGEasy Safesit Shower Chair at wholesale B2B prices. India's trusted medical equipment platform for bulk hospital supplies & fast procurement. Shop now!",
+            "url": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Shower Chair",
+            "item": "https://www.medikabazaar.com/physiotherapy/shower-chair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "AGEasy Safesit Shower Chair",
+            "item": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "niscomed-oxygen-analyzer",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Niscomed Oxygen Analyzer",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/niscomed-oxygen-analyzer-16_06_2026-8a1a8066.jpg?tr=w-800,q-65,f-avif",
+            "description": "Niscomed Oxygen Analyzer on Medikabazaar. Diagnostic analyser for pathology labs, hospitals and clinics. Order online for your facility.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGSOCIORAOTA46726",
+            "brand": {
+              "@type": "Brand",
+              "name": "Niscomed"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 14731.5,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.9,
+              "bestRating": 5,
+              "ratingCount": 23
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Niscomed Oxygen Analyzer",
+            "description": "Niscomed Oxygen Analyzer on Medikabazaar. Diagnostic analyser for pathology labs, hospitals and clinics. Order online for your facility.",
+            "url": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Oxygen Analyzer",
+            "item": "https://www.medikabazaar.com/medicalequipments/oxygen-analyzer"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Niscomed Oxygen Analyzer",
+            "item": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the measurement range and accuracy of the Niscomed Oxygen Analyzer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Niscomed O2 Analyzer measures oxygen concentration from 21% to 99.9% with an accuracy of ±3%. This range covers ambient air (21% O2) through high-purity medical oxygen, making it suitable for verifying oxygen purity in clinical gas delivery systems and industrial applications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the power requirements and battery life considerations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The analyzer operates on AA batteries, providing portability without requiring wall power or charging infrastructure. It includes an automatic power-off function after 13-15 minutes of inactivity and a low battery voltage reminder, ensuring uninterrupted use and extended battery life during clinical shifts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Niscomed Oxygen Analyzer portable for use across multiple clinical areas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the device weighs only 100g with a compact, durable design, making it easily portable between clinical areas such as respiratory therapy departments, ICUs, and operating theatres. The LCD display provides clear readability in various lighting conditions without requiring external power sources."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What maximum flow rate does the analyzer support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The device supports a maximum flow rate of 8 liters per minute (Lpm), accommodating typical oxygen delivery rates used in clinical settings for patient care and equipment verification purposes."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "arrex-xenia-series-commode-wheelchair",
+    "category": "furniture",
+    "url": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Arrex Xenia Series Commode Wheelchair",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-xenia-series-commode-wheelchair-edda-04_06_2026-e7d26ef9.webp?tr=w-800,q-65,f-avif",
+            "description": "Arrex Xenia Series Commode Wheelchair (EDDA) on Medikabazaar. Orthopaedic and physiotherapy supplies for clinics and retail.",
+            "category": "Physiotherapy",
+            "sku": "MBPGAXRAEAEWEH47864",
+            "brand": {
+              "@type": "Brand",
+              "name": "Arrex"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 7142.1,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Arrex Xenia Series Commode Wheelchair - EDDA",
+            "description": "Arrex Xenia Series Commode Wheelchair (EDDA) on Medikabazaar. Orthopaedic and physiotherapy supplies for clinics and retail.",
+            "url": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Physiotherapy",
+            "item": "https://www.medikabazaar.com/physiotherapy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Wheelchair",
+            "item": "https://www.medikabazaar.com/physiotherapy/wheelchair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Arrex Xenia Series Commode Wheelchair",
+            "item": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "oxisensor-oxygen-sensor",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/oxisensor-oxygen-sensor",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Oxisensor Oxygen Sensor",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/eec6f6f551094898b_MBMUIUUELTSOIE6E8O8B.jpg?tr=w-800,q-65,f-avif",
+            "description": "Oxisensor Oxygen Sensor, Nellcor Non-Oximax (EXP100N/A). Healthcare supplies for hospitals, clinics and nursing homes. View specs and price on Medikabazaar.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGCOFEGRAOTA56799",
+            "brand": {
+              "@type": "Brand",
+              "name": "Oxisensor"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 656.08,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Oxisensor Oxygen Sensor | Nellcor Non-Oximax (EXP100N/A)",
+            "description": "Oxisensor Oxygen Sensor, Nellcor Non-Oximax (EXP100N/A). Healthcare supplies for hospitals, clinics and nursing homes. View specs and price on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/oxisensor-oxygen-sensor",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Patient Monitor Accessories",
+            "item": "https://www.medikabazaar.com/medicalequipments/patient-monitor-accessories"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Oxisensor Oxygen Sensor",
+            "item": "https://www.medikabazaar.com/products/oxisensor-oxygen-sensor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "korrida-oxygen-blender",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/korrida-oxygen-blender",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Korrida Oxygen Blender",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/korrida-oxygen-blender-km-ky01-11_03_2025-dc9d5791.jpeg?tr=w-800,q-65,f-avif",
+            "description": "Korrida Oxygen Blender — KM-KY01. Healthcare supplies for hospitals, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGARRKIRAOTA55606",
+            "brand": {
+              "@type": "Brand",
+              "name": "Korrida"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 59519.2,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Korrida Oxygen Blender - KM-KY01",
+            "description": "Korrida Oxygen Blender — KM-KY01. Healthcare supplies for hospitals, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/korrida-oxygen-blender",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Oxygen Concentrator",
+            "item": "https://www.medikabazaar.com/medicalequipments/oxygen-concentrator"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Korrida Oxygen Blender",
+            "item": "https://www.medikabazaar.com/products/korrida-oxygen-blender"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Pneoterik Hospital Indoor Air Quality Monitor with Pressure Differential",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential-iaq-gpp-15_07_2_VWk5eJj.png?tr=w-800,q-65,f-avif",
+            "description": "Pneoterik Hospital Indoor Air Quality Monitor with Pressure Differential, IAQ-GPP. Medical equipment for hospitals, clinics and home care.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGTPERICONCR67646",
+            "brand": {
+              "@type": "Brand",
+              "name": "PneoTerik"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 104225.86,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Pneoterik Hospital Indoor Air Quality Monitor",
+            "description": "Pneoterik Hospital Indoor Air Quality Monitor with Pressure Differential, IAQ-GPP. Medical equipment for hospitals, clinics and home care.",
+            "url": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IAQ Monitor",
+            "item": "https://www.medikabazaar.com/medicalequipments/iaq-monitor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Pneoterik Hospital Indoor Air Quality Monitor with Pressure Differential",
+            "item": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "pneoterik-hospital-ot-indoor-air-quality-monitor",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Pneoterik Hospital OT Indoor Air Quality Monitor",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-hospital-ot-indoor-air-quality-monitor-iaq-ot-15_07_2026-064ea4b0.png?tr=w-800,q-65,f-avif",
+            "description": "Pneoterik Hospital OT Indoor Air Quality Monitor, IAQ-OT. Medical equipment for hospitals, clinics and home care. See full details on the product page.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGTPERICONCR67647",
+            "brand": {
+              "@type": "Brand",
+              "name": "PneoTerik"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 100495.88,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Pneoterik Hospital OT Indoor Air Quality Monitor - IAQ-OT",
+            "description": "Pneoterik Hospital OT Indoor Air Quality Monitor, IAQ-OT. Medical equipment for hospitals, clinics and home care. See full details on the product page.",
+            "url": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IAQ Monitor",
+            "item": "https://www.medikabazaar.com/medicalequipments/iaq-monitor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Pneoterik Hospital OT Indoor Air Quality Monitor",
+            "item": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "PneoTerik Advanced Medical Grade Air Sterilisation System",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-advanced-medical-grade-air-sterilisation-system-sterile-360-18_08_2026-5b4ca85e.png?tr=w-800,q-65,f-avif",
+            "description": "Buy PneoTerik Advanced Medical Grade Air Sterilisation System. Sterilisation equipment and supplies for clinics, hospitals and CSSDs.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGTPERICONCR67652",
+            "brand": {
+              "@type": "Brand",
+              "name": "PneoTerik"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 590000,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "PneoTerik Advanced Medical Grade Air Sterilisation System",
+            "description": "Buy PneoTerik Advanced Medical Grade Air Sterilisation System. Sterilisation equipment and supplies for clinics, hospitals and CSSDs.",
+            "url": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Infection Control",
+            "item": "https://www.medikabazaar.com/medicalequipments/infection-control"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "PneoTerik Advanced Medical Grade Air Sterilisation System",
+            "item": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "mcp-7-stage-hepa-air-purifier",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "MCP 7 Stage HEPA Air Purifier",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/a152fa74daeb4cd18_2_MCP_7_Stage_HEPA_Air_Purifier.jpg?tr=w-800,q-65,f-avif",
+            "description": "MCP 7 Stage HEPA Air Purifier. Healthcare supplies for hospitals, clinics and nursing homes. Buy with GST invoice for your clinic.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGMTPCMERFRR19425",
+            "brand": {
+              "@type": "Brand",
+              "name": "MCP"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 9204,
+              "availability": "https://schema.org/OutOfStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "MCP 7 Stage HEPA Air Purifier",
+            "description": "MCP 7 Stage HEPA Air Purifier. Healthcare supplies for hospitals, clinics and nursing homes. Buy with GST invoice for your clinic.",
+            "url": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Air Purifier",
+            "item": "https://www.medikabazaar.com/medicalequipments/air-purifier"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "MCP 7 Stage HEPA Air Purifier",
+            "item": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "white-westinghouse-dehumidifier",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "White Westinghouse 4 in 1 Dehumidifier",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/white-westinghouse-4-in-1-dehumidifier-12-litre-awhd123l-04_05_2026-d66930a0.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy White Westinghouse 4 in 1 Dehumidifier, 20 Litre (AWHD20L). Healthcare supplies for hospitals, clinics and nursing homes.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGVKDYATATST56349",
+            "brand": {
+              "@type": "Brand",
+              "name": "White Westinghouse"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 42775,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 39
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "White Westinghouse 4 in 1 Dehumidifier 20 Litre (AWHD20L)",
+            "description": "Buy White Westinghouse 4 in 1 Dehumidifier, 20 Litre (AWHD20L). Healthcare supplies for hospitals, clinics and nursing homes.",
+            "url": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Humidifier",
+            "item": "https://www.medikabazaar.com/medicalequipments/humidifier"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "White Westinghouse 4 in 1 Dehumidifier",
+            "item": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU Pencil Non-Stick Blade",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade-plp2000-_b4cgbRa.png?tr=w-800,q-65,f-avif",
+            "description": "Buy Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU Pencil Non-Stick Blade, PLP2000. Surgical blades for incisions in OTs and procedure rooms.",
+            "category": "Consumables & Disposables",
+            "sku": "MBPGFFIOFAOOUB56767",
+            "brand": {
+              "@type": "Brand",
+              "name": "Buffalo Filter"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 3307.5,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU",
+            "description": "Buy Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU Pencil Non-Stick Blade, PLP2000. Surgical blades for incisions in OTs and procedure rooms.",
+            "url": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Consumables & Disposables",
+            "item": "https://www.medikabazaar.com/consumables"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Blades",
+            "item": "https://www.medikabazaar.com/consumables/surgical-blades"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU Pencil Non-Stick Blade",
+            "item": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
+    "category": "mgps",
+    "url": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/buffalo-filter-virosafe-virovac-smoke-evacuation-filter-vs353-14_05_2025-4c60b12b.png?tr=w-800,q-65,f-avif",
+            "description": "Buy Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter, VS353. Healthcare supplies for hospitals, clinics and nursing homes.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGFFIOFRAOTA56770",
+            "brand": {
+              "@type": "Brand",
+              "name": "Buffalo Filter"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 5491.5,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter",
+            "description": "Buy Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter, VS353. Healthcare supplies for hospitals, clinics and nursing homes.",
+            "url": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Spirometry Filter",
+            "item": "https://www.medikabazaar.com/medicalequipments/spirometry-filter"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter",
+            "item": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter"
+          }
+        ]
+      }
+    ]
+  }
+]

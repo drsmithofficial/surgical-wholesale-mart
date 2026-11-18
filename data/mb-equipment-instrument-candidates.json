@@ -1,0 +1,3597 @@
+[
+  {
+    "slug": "vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishnav Surgicals Retractor Lengan Beck",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-retractor-lengan-beck-14-04_05_2026-4199cb30.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishnav Surgicals Retractor Lengan Beck. A surgical instrument for OT, OPD and procedure-room use. Order single units or in bulk.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10593",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 236.25,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishnav Surgicals Retractor Lengan Beck",
+            "description": "Buy Vaishnav Surgicals Retractor Lengan Beck. A surgical instrument for OT, OPD and procedure-room use. Order single units or in bulk.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Instruments",
+            "item": "https://www.medikabazaar.com/medicalequipments/surgical-instruments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishnav Surgicals Retractor Lengan Beck",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-retractor-lengan-beck-14-04_05_2026-4199cb30.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-0.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-retractor-lengan-beck-14-04_05_2026-4199cb30.webp"
+  },
+  {
+    "slug": "vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishanav Surgicals Backhaus Towel Forcep",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/25e17474edf845189_1_Vaishnav_Surgicals_Towel_Forcep_Backhus.jpg?tr=w-800,q-65,f-avif",
+            "description": "Vaishanav Surgicals Backhaus Towel Forcep (6inch) on Medikabazaar. Surgical instruments stocked for hospitals, nursing homes and clinics.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10479",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 220.5,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishanav Surgicals Backhaus Towel Forcep | 6inch",
+            "description": "Vaishanav Surgicals Backhaus Towel Forcep (6inch) on Medikabazaar. Surgical instruments stocked for hospitals, nursing homes and clinics.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Forceps",
+            "item": "https://www.medikabazaar.com/medicalequipments/forceps"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishanav Surgicals Backhaus Towel Forcep",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/25e17474edf845189_1_Vaishnav_Surgicals_Towel_Forcep_Backhus.jpg"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-1.jpg",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/25e17474edf845189_1_Vaishnav_Surgicals_Towel_Forcep_Backhus.jpg"
+  },
+  {
+    "slug": "vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishnav Surgicals Ear Speculum Set",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-ear-speculam-set-of-3-goober-07_04_2026-e1af12da.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishnav Surgicals Ear Speculum Set. Healthcare supplies for hospitals, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10533",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 163.8,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishnav Surgicals Ear Speculum Set",
+            "description": "Buy Vaishnav Surgicals Ear Speculum Set. Healthcare supplies for hospitals, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Instruments",
+            "item": "https://www.medikabazaar.com/medicalequipments/surgical-instruments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishnav Surgicals Ear Speculum Set",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What material is the Ear Speculum Set made from, and why does it matter for clinical use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Ear Speculum Set is crafted from stainless steel, which provides durability and reliability in clinical settings. Stainless steel resists corrosion and maintains its integrity through repeated use, making it suitable for diagnostic procedures in otolaryngology clinics and general practice settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this ear speculum set improve visualization during ear examinations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The speculum is designed to broaden the ear canal, which enhances visualization when used in conjunction with an otoscope. This expanded view enables practitioners to perform effective cerumen control and conduct thorough diagnostic assessments of the ear canal and tympanum."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this ear speculum set suitable for both adult and pediatric patients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The set includes standard-sized specula designed for versatile application across a variety of ear procedures. The standard sizing makes it suitable for general clinical use, though practitioners should select the appropriate speculum size from the set based on individual patient anatomy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What clinical applications is this ear speculum set designed for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Ear Speculum Set is designed for secure and comfortable ear examinations, including cerumen removal, ear canal visualization, and otoscopic assessment. It serves as a vital diagnostic tool for otolaryngology clinics, diagnostic centers, and general medical practice settings requiring routine ear examination capabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is a set of 3 specula included rather than a single instrument?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The set of 3 specula provides practitioners with multiple instruments for different clinical scenarios and patient comfort preferences. Having multiple specula in one set ensures availability for different examination requirements and allows for efficient workflow in busy clinical environments."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-ear-speculam-set-of-3-goober-07_04_2026-e1af12da.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-2.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-ear-speculam-set-of-3-goober-07_04_2026-e1af12da.webp"
+  },
+  {
+    "slug": "dr-morepen-glucometer-mbpgrn1dtdoto14082",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Dr. Morepen Glucometer",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/dr-morepen-glucometer-bg-03-without-strips-23_03_2026-c6ba7fa6.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Dr Morepen Glucometer (BG-03) online in India at the best price. Accurate blood sugar machine with strips, lancets, GST invoice, COD & pan-India delivery.",
+            "category": "Lab and Diagnostics",
+            "sku": "MBPGRN1DTDOTO14082",
+            "brand": {
+              "@type": "Brand",
+              "name": "Dr. Morepen"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 94.5,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.7,
+              "bestRating": 5,
+              "ratingCount": 50
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Dr Morepen Glucometer – Buy BG-03 Blood Sugar Machine Online | Medikabazaar",
+            "description": "Buy Dr Morepen Glucometer (BG-03) online in India at the best price. Accurate blood sugar machine with strips, lancets, GST invoice, COD & pan-India delivery.",
+            "url": "https://www.medikabazaar.com/products/dr-morepen-glucometer-mbpgrn1dtdoto14082",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lab and Diagnostics",
+            "item": "https://www.medikabazaar.com/diagnostics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Glucometer",
+            "item": "https://www.medikabazaar.com/diagnostics/glucometer"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Dr. Morepen Glucometer",
+            "item": "https://www.medikabazaar.com/products/dr-morepen-glucometer-mbpgrn1dtdoto14082"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the minimum blood sample volume required for testing with the BG-03?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Dr. Morepen BG-03 requires only 0.5 microliters (µL) of blood per test, enabling quick fingertip sampling with minimal patient discomfort. This small sample size makes it suitable for frequent monitoring in both home and clinical diagnostic settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the measurement range and result display time of this glucometer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The BG-03 measures blood glucose levels between 20 and 600 mg/dL and displays results on an LCD screen within 5 seconds of sample analysis. This rapid turnaround supports efficient point-of-care testing in diagnostic labs and clinical environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many previous test results can the device store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The glucometer has an internal memory function that stores up to 300 previous test results, allowing healthcare professionals and patients to track glucose trends over time without requiring external logging systems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which test strips are compatible with the BG-03 glucometer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The BG-03 is compatible exclusively with Dr. Morepen BG-03 glucose test strips. Since this variant is sold without strips, compatible strips must be purchased separately to enable testing."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/dr-morepen-glucometer-bg-03-without-strips-23_03_2026-c6ba7fa6.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-3.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/dr-morepen-glucometer-bg-03-without-strips-23_03_2026-c6ba7fa6.webp"
+  },
+  {
+    "slug": "remi-laboratory-centrifuge-mbpgiiimmeppnm12008",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Remi Laboratory Centrifuge",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/remi-laboratory-centrifuge-led-6000-rpm-r-8c-plus-04_05_2026-ae48f768.webp?tr=w-800,q-65,f-avif",
+            "description": "Remi Laboratory Centrifuge, LED 6000 RPM (R 8C Plus). Laboratory equipment for clinical and research labs. View specs and price on Medikabazaar.",
+            "category": "Lab and Diagnostics",
+            "sku": "MBPGIIIMMEPPNM12008",
+            "brand": {
+              "@type": "Brand",
+              "name": "Remi"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 48710.4,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 32
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Remi Laboratory Centrifuge - LED 6000 RPM (R 8C Plus)",
+            "description": "Remi Laboratory Centrifuge, LED 6000 RPM (R 8C Plus). Laboratory equipment for clinical and research labs. View specs and price on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/remi-laboratory-centrifuge-mbpgiiimmeppnm12008",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lab and Diagnostics",
+            "item": "https://www.medikabazaar.com/diagnostics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Centrifuge",
+            "item": "https://www.medikabazaar.com/diagnostics/centrifuge"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Remi Laboratory Centrifuge",
+            "item": "https://www.medikabazaar.com/products/remi-laboratory-centrifuge-mbpgiiimmeppnm12008"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the maximum RCF (Relative Centrifugal Force) this centrifuge can achieve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Remi R 8C Plus achieves a maximum RCF of 5070 g at its top speed of 6000 RPM. This RCF rating is critical for determining the centrifugal force applied to samples during separation, ensuring effective pelleting of biological materials such as blood cells, serum proteins, and microbial cultures in routine diagnostic workflows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What safety features protect operators during centrifugation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The centrifuge includes automatic rotor identification, a safety lid interlock that prevents the lid from opening during operation, imbalance detection that stops centrifugation and displays an error if samples are unevenly distributed, and motor overload protection. These features work together to ensure operator safety and prevent sample spillage or equipment damage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this centrifuge perform under unstable voltage conditions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The R 8C Plus features a brushless induction motor with variable frequency drive and an inverter fault detection system with auto shutdown. This design maintains stable speed output even when laboratory power supply fluctuates, ensuring consistent and reliable sample separation across different clinical environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What rotor options and sample capacities are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The centrifuge supports a wide variety of rotors and reduction adaptors to accommodate different sample volumes and tube types. With a maximum capacity of 400 ml and automatic rotor identification, the system allows selection of appropriate rotors based on your specific sample volume requirements for hematology, biochemistry, and microbiology applications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the key performance features for routine laboratory use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The centrifuge offers a 7-segment LED display for speed monitoring, a digital countdown timer with 0-99 minute range, smooth and soft start to minimize sample temperature rise, and dynamic brake for quick deceleration. It also recalls the last set parameters, making it efficient for repetitive analyses in high-throughput diagnostic labs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this centrifuge suitable for laboratories with limited bench space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the R 8C Plus features a compact benchtop design with dimensions of 380 mm (W) × 470 mm (D) × 300 mm (H) and operates at 60 dB noise level, making it ideal for diagnostic labs, clinical facilities, and research institutions with space constraints while maintaining high-performance separation capabilities."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/remi-laboratory-centrifuge-led-6000-rpm-r-8c-plus-05_05_2026-7d0ea1bb.webp",
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/remi-laboratory-centrifuge-led-6000-rpm-r-8c-plus-04_05_2026-ae48f768.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-4.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/remi-laboratory-centrifuge-led-6000-rpm-r-8c-plus-04_05_2026-ae48f768.webp"
+  },
+  {
+    "slug": "mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "MCP Infrared Thermometer",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/mcp-infrared-thermometer-17_02_2025-28cc6d29.jpg?tr=w-800,q-65,f-avif",
+            "description": "Buy MCP Infrared Thermometer. Temperature measurement for clinics, wards and home care. Prices shown inclusive of GST.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGMTPCMTMTEE19399",
+            "brand": {
+              "@type": "Brand",
+              "name": "MCP"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 787.5,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 29
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "MCP Infrared Thermometer",
+            "description": "Buy MCP Infrared Thermometer. Temperature measurement for clinics, wards and home care. Prices shown inclusive of GST.",
+            "url": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Infrared Thermometer",
+            "item": "https://www.medikabazaar.com/medicalequipments/infrared-thermometer"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "MCP Infrared Thermometer",
+            "item": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the measurement accuracy of this infrared thermometer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The MCP Infrared Thermometer has an accuracy of ±0.2°C for body temperature measurements. This precision ensures reliable temperature readings for clinical decision-making in hospital, clinic, and diagnostic settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the optimal measurement distance and how does it affect readings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The thermometer operates effectively at distances of 1 to 15 cm, with optimal accuracy achieved within 5 cm of the forehead. This non-contact measurement prevents cross-infection and eliminates the need for surface cleaning between patients."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What temperature ranges can this device measure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The thermometer measures body temperature from 32.0°C to 43°C (90°F to 109.4°F) and ambient/object temperature from 0°C to 60°C (32°F to 140°F). It operates reliably in clinical environments with ambient temperatures between 10°C and 40°C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly does the thermometer provide temperature readings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The device delivers temperature results in approximately 1 second, enabling rapid patient screening and assessment in high-volume clinical settings. An auto-shutdown feature activates after 7 seconds of inactivity to conserve battery power."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What display and unit options are available for temperature readings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The thermometer features a digital display with backlight color indicators that vary based on body temperature, helping clinicians quickly identify fever status. Temperature readings can be displayed in both Celsius and Fahrenheit units to suit institutional preferences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the power requirements and battery life considerations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The device operates on 2 × 1.5V AAA batteries, which are included with the product. The auto-shutdown feature after 7 seconds of inactivity helps extend battery life during routine clinical use."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/mcp-infrared-thermometer-17_02_2025-28cc6d29.jpg"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-5.jpg",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/mcp-infrared-thermometer-17_02_2025-28cc6d29.jpg"
+  },
+  {
+    "slug": "doctroid-vein-finder-mbpgdoiodreeiv16919",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Doctroid Vein Finder",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-vein-finder-infant-with-charger-07_04_2026-048e47ec.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Doctroid Vein Finder, Infant With Charger. Medical equipment for hospitals, clinics and home care. Check specifications before ordering.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGDOIODREEIV16919",
+            "brand": {
+              "@type": "Brand",
+              "name": "Doctroid"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 1575,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 21
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Doctroid Vein Finder | Infant With Charger",
+            "description": "Buy Doctroid Vein Finder, Infant With Charger. Medical equipment for hospitals, clinics and home care. Check specifications before ordering.",
+            "url": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vein Finder",
+            "item": "https://www.medikabazaar.com/medicalequipments/vein-finder"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Doctroid Vein Finder",
+            "item": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-vein-finder-infant-with-charger-07_04_2026-048e47ec.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-6.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-vein-finder-infant-with-charger-07_04_2026-048e47ec.webp"
+  },
+  {
+    "slug": "omron-digital-bp-monitor",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Omron Digital BP Monitor",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/omron-digital-bp-monitor-hem-cr24-18_09_2026-617307c1.jpg?tr=w-800,q-65,f-avif",
+            "description": "Omron Digital BP Monitor, HEM-CR24. Blood pressure measurement for clinics, pharmacies and home use. Compare options and order in bulk.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGMONOM1EATM68815",
+            "brand": {
+              "@type": "Brand",
+              "name": "Omron"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 582.75,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Omron Digital BP Monitor | HEM-CR24",
+            "description": "Omron Digital BP Monitor, HEM-CR24. Blood pressure measurement for clinics, pharmacies and home use. Compare options and order in bulk.",
+            "url": "https://www.medikabazaar.com/products/omron-digital-bp-monitor",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "BP Monitor",
+            "item": "https://www.medikabazaar.com/medicalequipments/bp-monitor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Omron Digital BP Monitor",
+            "item": "https://www.medikabazaar.com/products/omron-digital-bp-monitor"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/omron-digital-bp-monitor-hem-cr24-18_09_2026-617307c1.jpg"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-7.jpg",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/omron-digital-bp-monitor-hem-cr24-18_09_2026-617307c1.jpg"
+  },
+  {
+    "slug": "accusure-stethoscope-mbpgauess1ai1l18798",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Accusure Stethoscope",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/accusure-stethoscope-st01-04_05_2026-a10a2f70.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Accusure Stethoscope, ST01. A stethoscope for clinical auscultation in OPDs, wards and practice. Check specifications before ordering.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGAUESS1AI1L18798",
+            "brand": {
+              "@type": "Brand",
+              "name": "AccuSure"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 231,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.1,
+              "bestRating": 5,
+              "ratingCount": 36
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Accusure Stethoscope - ST01",
+            "description": "Buy Accusure Stethoscope, ST01. A stethoscope for clinical auscultation in OPDs, wards and practice. Check specifications before ordering.",
+            "url": "https://www.medikabazaar.com/products/accusure-stethoscope-mbpgauess1ai1l18798",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Stethoscope",
+            "item": "https://www.medikabazaar.com/medicalequipments/stethoscope"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Accusure Stethoscope",
+            "item": "https://www.medikabazaar.com/products/accusure-stethoscope-mbpgauess1ai1l18798"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What material is the chest piece made of, and how does it affect durability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The chest piece is constructed from aluminum chrome-plated material, which provides long-lasting performance and resistance to corrosion. This construction ensures the stethoscope maintains acoustic integrity and structural durability through repeated clinical use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the acoustic design support accurate clinical auscultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The AccuSure ST01 features high acoustic sensitivity that provides clear and accurate sound transmission, enabling medical professionals to distinctly hear heartbeats, lung sounds, and other body sounds during examination. This acoustic clarity is essential for reliable diagnostic auscultation across different patient populations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this stethoscope suitable for extended clinical shifts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the ergonomic design is specifically engineered for comfort during extended use, and the lightweight construction at 180g reduces fatigue during prolonged wearing. This makes it practical for healthcare professionals who require a stethoscope throughout long hospital, clinic, or home care shifts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the primary clinical settings where this stethoscope can be used?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The AccuSure ST01 is designed for use across hospitals, clinics, and home care settings. Its compact and portable design makes it suitable for diverse clinical environments where medical professionals require reliable auscultation capabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the weight and portability of this stethoscope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The stethoscope weighs 180g, making it lightweight and easy to carry between patient encounters or clinical locations. Its compact design combined with minimal weight ensures it does not add burden to a healthcare professional's daily equipment load."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this stethoscope appropriate for medical students and training programs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the AccuSure ST01 is explicitly designed for medical students, doctors, and nurses. Its combination of high acoustic sensitivity, ergonomic comfort, and durable construction makes it suitable for both training environments and professional clinical practice."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/accusure-stethoscope-st01-04_05_2026-a10a2f70.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-8.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/accusure-stethoscope-st01-04_05_2026-a10a2f70.webp"
+  },
+  {
+    "slug": "vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishanav Surgicals Mosquito Artery Forceps Straight",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-mosquito-artery-forcep-6inch-04_05_2026-b26283c0.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishanav Surgicals Mosquito Artery Forceps Straight. Surgical instruments stocked for hospitals, nursing homes and clinics.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10471",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 203.7,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishanav Surgicals Mosquito Artery Forceps Straight",
+            "description": "Buy Vaishanav Surgicals Mosquito Artery Forceps Straight. Surgical instruments stocked for hospitals, nursing homes and clinics.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Forceps",
+            "item": "https://www.medikabazaar.com/medicalequipments/forceps"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishanav Surgicals Mosquito Artery Forceps Straight",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the primary clinical function of Mosquito Artery Forceps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mosquito Artery Forceps are specialized hemostatic instruments designed to control and occlude blood vessels during surgical procedures. The serrated tips provide a secure grip on delicate vessels, enabling precise hemostasis in general surgery and other surgical applications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the curved design important for this forceps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The curved configuration enhances accessibility and maneuverability in intricate surgical fields, allowing surgeons to reach and manipulate blood vessels in confined anatomical spaces with improved control and reduced tissue trauma."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What material are these forceps made from and why does it matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "These forceps are constructed from stainless steel, which provides durability, corrosion resistance, and compatibility with standard sterilization protocols used in surgical settings. Stainless steel ensures the instrument maintains its structural integrity and serrated grip over repeated use cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the ergonomic handle design benefit surgical performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The ergonomic handle is engineered to provide a secure locking grip, enabling surgeons to maintain precise control during delicate procedures with reduced hand fatigue. This design facilitates consistent hemostatic pressure without requiring excessive manual force."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the 5-inch length suitable for general surgical applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the 5-inch standard length offers an optimal balance of control and reach for general surgical procedures, providing adequate access to blood vessels while maintaining maneuverability in typical surgical fields."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What role do the serrated tips play in hemostasis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The serrated tips create multiple contact points that ensure a secure, non-slip grip on blood vessels, preventing vessel slippage during manipulation and enabling reliable hemostasis with minimal vessel wall trauma."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-mosquito-artery-forcep-6inch-04_05_2026-b26283c0.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-9.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-mosquito-artery-forcep-6inch-04_05_2026-b26283c0.webp"
+  },
+  {
+    "slug": "esaw-binocular-compound-microscope",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "ESAW Binocular Compound Microscope",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/esaw-binocular-compound-microscope-box-of-1-unit-bm-01-07_04_2026-f3d29823.webp?tr=w-800,q-65,f-avif",
+            "description": "ESAW Binocular Compound Microscope — box of 1 Unit (BM-01). Laboratory equipment for clinical and research labs. Bulk quotes available on Medikabazaar.",
+            "category": "Lab and Diagnostics",
+            "sku": "MBPGZSVTI1AI1L48067",
+            "brand": {
+              "@type": "Brand",
+              "name": "ESAW"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 9770.4,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.2,
+              "bestRating": 5,
+              "ratingCount": 36
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "ESAW Binocular Compound Microscope - Box of 1 Unit (BM-01)",
+            "description": "ESAW Binocular Compound Microscope — box of 1 Unit (BM-01). Laboratory equipment for clinical and research labs. Bulk quotes available on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/esaw-binocular-compound-microscope",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lab and Diagnostics",
+            "item": "https://www.medikabazaar.com/diagnostics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Microscope",
+            "item": "https://www.medikabazaar.com/diagnostics/microscope"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "ESAW Binocular Compound Microscope",
+            "item": "https://www.medikabazaar.com/products/esaw-binocular-compound-microscope"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the ESAW BM-01 suitable for veterinary clinical diagnostics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the ESAW BM-01 is designed for clinical and research applications including veterinary diagnostics. Its high-quality optics, stable mechanical stage, and binocular viewing head make it suitable for detailed sample examination in veterinary pathology and diagnostic laboratories."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/esaw-binocular-compound-microscope-box-of-1-unit-bm-01-07_04_2026-f3d29823.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-10.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/esaw-binocular-compound-microscope-box-of-1-unit-bm-01-07_04_2026-f3d29823.webp"
+  },
+  {
+    "slug": "vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishnav Surgicals Nasal Speculum Thudichum Set",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/f577e544979a4895b_1_Vaishanav_Surgical_Nasal_speculum_thudichum.jpg?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishnav Surgicals Nasal Speculum Thudichum Set. Surgical instruments stocked for hospitals, nursing homes and clinics. Order single units or in bulk.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10531",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 72.45,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.8,
+              "bestRating": 5,
+              "ratingCount": 30
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishnav Surgicals Nasal Speculum Thudichum Set",
+            "description": "Buy Vaishnav Surgicals Nasal Speculum Thudichum Set. Surgical instruments stocked for hospitals, nursing homes and clinics. Order single units or in bulk.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Instruments",
+            "item": "https://www.medikabazaar.com/medicalequipments/surgical-instruments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishnav Surgicals Nasal Speculum Thudichum Set",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the clinical application of the Thudichum nasal speculum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Thudichum nasal speculum is designed for anterior rhinoscopy and routine nasal examinations in outpatient settings. Its two-flange design enables precise insertion into the nostril for thorough diagnostic visualization of nasal passages and structures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What material is this nasal speculum made from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The speculum is crafted from stainless steel, which provides durability and compatibility with standard sterilization protocols used in clinical environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the two-flange design improve the examination procedure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The unique two-flange design allows for precise and controlled insertion into the nostril during anterior rhinoscopy, enhancing procedural efficiency while maintaining patient comfort during nasal examinations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this speculum suitable for routine outpatient nasal procedures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Thudichum nasal speculum is an essential instrument routinely used in outpatient settings for comprehensive nasal examinations. It is designed to provide both secure positioning and reliable diagnostic outcomes during anterior rhinoscopy procedures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes this speculum reliable for diagnostic procedures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The speculum is crafted with precision engineering to ensure reliable diagnostic outcomes. Its secure design and two-flange mechanism work together to provide stable visualization of nasal structures while prioritizing patient comfort during examination."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/f577e544979a4895b_1_Vaishanav_Surgical_Nasal_speculum_thudichum.jpg"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-11.jpg",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/f577e544979a4895b_1_Vaishanav_Surgical_Nasal_speculum_thudichum.jpg"
+  },
+  {
+    "slug": "mission-urine-analyzer-mbpgissssnoohc29724",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Mission Urine Analyzer",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/mission-urine-analyzer-box-of-1-unit-u120-04_05_2026-4ef9d3c6.webp?tr=w-800,q-65,f-avif",
+            "description": "Mission U120 urine analyzer, supplied as one unit. A compact urine strip reader for clinics and pathology labs; confirm compatible strips on the product page.",
+            "category": "Lab and Diagnostics",
+            "sku": "MBPGISSSSNOOHC29724",
+            "brand": {
+              "@type": "Brand",
+              "name": "Mission"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 31500,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Mission U120 Urine Analyzer | Urine Strip Reader",
+            "description": "Mission U120 urine analyzer, supplied as one unit. A compact urine strip reader for clinics and pathology labs; confirm compatible strips on the product page.",
+            "url": "https://www.medikabazaar.com/products/mission-urine-analyzer-mbpgissssnoohc29724",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lab and Diagnostics",
+            "item": "https://www.medikabazaar.com/diagnostics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Urine Analyzer",
+            "item": "https://www.medikabazaar.com/diagnostics/urine-analyzer"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Mission Urine Analyzer",
+            "item": "https://www.medikabazaar.com/products/mission-urine-analyzer-mbpgissssnoohc29724"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What parameters does the Mission U120 measure in a single urine test?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Mission U120 reads test strips with up to 14 parameters per analysis, enabling comprehensive urinalysis in a single run. This multi-parameter capability supports diagnosis and monitoring of urinary and systemic disorders without requiring multiple separate tests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the throughput capacity of the Mission U120?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Mission U120 processes up to 120 tests per hour, making it suitable for both routine laboratory testing and higher-volume diagnostic centers. This throughput supports efficient workflow in clinical pathology labs without compromising accuracy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the Mission U120 have data management and result storage capabilities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Mission U120 includes internal data management with memory capacity for 2000 results, enabling labs to maintain a comprehensive test history. An internal thermal printer is also integrated for immediate result documentation and record-keeping."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the learning curve for operating the Mission U120?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Mission U120 features a user-friendly interface with a large display screen and requires minimal operator training. Its automated sample handling and intuitive design reduce the need for extensive staff training while minimizing operator error."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Mission U120 suitable for small diagnostic labs with space constraints?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Mission U120 has a compact, space-saving design that is well-suited for small diagnostic labs and clinics. Despite its compact footprint, it delivers the throughput and multi-parameter capability needed for routine clinical pathology testing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What type of test strips does the Mission U120 use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Mission U120 is compatible with standard urine test strips that contain up to 14 parameters. The analyzer automatically reads and interprets these strips, ensuring consistent and reproducible results across all supported parameters."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/mission-urine-analyzer-box-of-1-unit-u120-04_05_2026-4ef9d3c6.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-12.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/mission-urine-analyzer-box-of-1-unit-u120-04_05_2026-4ef9d3c6.webp"
+  },
+  {
+    "slug": "doctroid-tourniquet-machine-mbpgdoiodci1ua16926",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Doctroid Tourniquet Machine",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/4ef3d51f100a456f8_dit_210.png?tr=w-800,q-65,f-avif",
+            "description": "Buy Doctroid Tourniquet Machine, With 2 Cuff Set (DIT-105). Healthcare supplies for hospitals, clinics and nursing homes. Order online for your facility.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGDOIODCI1UA16926",
+            "brand": {
+              "@type": "Brand",
+              "name": "Doctroid"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 21000,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Doctroid Tourniquet Machine - With 2 Cuff Set (DIT-105)",
+            "description": "Buy Doctroid Tourniquet Machine, With 2 Cuff Set (DIT-105). Healthcare supplies for hospitals, clinics and nursing homes. Order online for your facility.",
+            "url": "https://www.medikabazaar.com/products/doctroid-tourniquet-machine-mbpgdoiodci1ua16926",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tourniquet Machine",
+            "item": "https://www.medikabazaar.com/medicalequipments/tourniquet-machine"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Doctroid Tourniquet Machine",
+            "item": "https://www.medikabazaar.com/products/doctroid-tourniquet-machine-mbpgdoiodci1ua16926"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the maximum tourniquet time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The recommended maximum tourniquet time is generally 120 minutes, but this can vary based on patient and procedural factors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you mean by a tourniquet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A tourniquet is a device used to apply pressure to a limb, temporarily restricting blood flow."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a tourniquet painful?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Properly applied tourniquets should not cause significant pain, but patients may experience slight discomfort."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the 2 types of tourniquet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The two main types are manual tourniquets and electronic tourniquet machines like the Doctroid Tourniquet Machine."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-tourniquet-machine-dit-120-04_05_2026-5c0ef5c9.webp",
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/4ef3d51f100a456f8_dit_210.png"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-13.png",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/4ef3d51f100a456f8_dit_210.png"
+  },
+  {
+    "slug": "truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "TrueHb Hb Hemoglobin Meter",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/truehb-hb-hemoglobin-meter-pack-of-1-unit-23_03_2026-26f0abe0.webp?tr=w-800,q-65,f-avif",
+            "description": "TrueHb HB Hemoglobin Meter — pack of 1 Unit. Healthcare supplies for hospitals, clinics and nursing homes. View specs and price on Medikabazaar.",
+            "category": "Lab and Diagnostics",
+            "sku": "MBPGBRRUUTDOTO24488",
+            "brand": {
+              "@type": "Brand",
+              "name": "TrueHb"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 1706.25,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.6,
+              "bestRating": 5,
+              "ratingCount": 46
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "TrueHb HB Hemoglobin Meter - Pack of 1 Unit",
+            "description": "TrueHb HB Hemoglobin Meter — pack of 1 Unit. Healthcare supplies for hospitals, clinics and nursing homes. View specs and price on Medikabazaar.",
+            "url": "https://www.medikabazaar.com/products/truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lab and Diagnostics",
+            "item": "https://www.medikabazaar.com/diagnostics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Haemoglobin Meter",
+            "item": "https://www.medikabazaar.com/diagnostics/haemoglobin-meter"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TrueHb Hb Hemoglobin Meter",
+            "item": "https://www.medikabazaar.com/products/truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the time to result for the TrueHb Hemoglobin Meter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The TrueHb Hemoglobin Meter delivers hemoglobin results within 15 seconds from the time the blood sample is applied to the test strip. This rapid turnaround makes it suitable for point-of-care testing in clinics, hospitals, and health camps where quick assessment is critical for clinical decision-making."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What sample type and volume does the TrueHb Hemoglobin Meter require?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The device uses capillary blood samples obtained from a fingertip puncture using a lancet. It requires only a small blood sample for testing, making it minimally invasive and practical for repeated monitoring in both clinical and home health settings."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/truehb-hb-hemoglobin-meter-pack-of-1-unit-23_03_2026-26f0abe0.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-14.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/truehb-hb-hemoglobin-meter-pack-of-1-unit-23_03_2026-26f0abe0.webp"
+  },
+  {
+    "slug": "vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishnav Surgicals Larngeal Mirror with Handle",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/1a5ac2daca69440fb_image.png?tr=w-800,q-65,f-avif",
+            "description": "Vaishnav Surgicals Larngeal Mirror with Handle. Healthcare supplies for hospitals, clinics and nursing homes. Compare options and order in bulk.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10564",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 78.75,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.6,
+              "bestRating": 5,
+              "ratingCount": 25
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishnav Surgicals Larngeal Mirror with Handle",
+            "description": "Vaishnav Surgicals Larngeal Mirror with Handle. Healthcare supplies for hospitals, clinics and nursing homes. Compare options and order in bulk.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Instruments",
+            "item": "https://www.medikabazaar.com/medicalequipments/surgical-instruments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishnav Surgicals Larngeal Mirror with Handle",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What material is the Vaishanav Surgical Laryngeal Mirror constructed from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The mirror is constructed from high-quality stainless steel, which ensures durability and aseptic reliability in clinical settings. This material meets the demanding standards required for surgical instruments used in laryngeal examinations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the laryngeal mirror design improve visualization during examination?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The unique mirror design provides clear and detailed visualization of the larynx, enabling medical professionals to achieve precise examination and accurate diagnosis during laryngeal procedures. The optical design facilitates optimal light reflection for enhanced diagnostic accuracy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Vaishanav Surgical Laryngeal Mirror suitable for routine laryngeal examinations in clinical settings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, this instrument is specifically designed for laryngeal examinations and is suitable for use in hospitals, surgical centres, and diagnostic clinics. The precision engineering and stainless steel construction make it reliable for routine diagnostic procedures performed by medical professionals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the key clinical benefits of using this laryngeal mirror?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The instrument provides two primary clinical benefits: durability through stainless steel construction that withstands repeated use and sterilization, and clear visualization that ensures accurate examination and diagnosis. These features combine to enhance both the reliability and diagnostic accuracy of laryngeal procedures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can this laryngeal mirror be used across different clinical specialties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Vaishanav Surgical Laryngeal Mirror is designed for use by medical professionals in laryngeal examination procedures. It is suitable for use in ophthalmology clinics, surgical centres, and diagnostic facilities where laryngeal visualization is required."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/1a5ac2daca69440fb_image.png"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-15.png",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/1a5ac2daca69440fb_image.png"
+  },
+  {
+    "slug": "reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Reviti Metzenbaum Scissors",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/9c7a772954d948ae8_image.png?tr=w-800,q-65,f-avif",
+            "description": "Reviti Metzenbaum Scissors — 5Inch Straight. A surgical instrument for OT, OPD and procedure-room use. Order single units or in bulk.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGNOVRLR1TIM29351",
+            "brand": {
+              "@type": "Brand",
+              "name": "Reviti"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 303.45,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Reviti Metzenbaum Scissors - 5Inch Straight",
+            "description": "Reviti Metzenbaum Scissors — 5Inch Straight. A surgical instrument for OT, OPD and procedure-room use. Order single units or in bulk.",
+            "url": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Scissors",
+            "item": "https://www.medikabazaar.com/medicalequipments/scissors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Reviti Metzenbaum Scissors",
+            "item": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/abc695da4096422ea_image.png",
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/9c7a772954d948ae8_image.png"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-16.png",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/9c7a772954d948ae8_image.png"
+  },
+  {
+    "slug": "reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Reviti Mayo Scissors",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/5-x-reviti-mayo-scissors-55inch-straight-13_11_2026-b5dc5b83.png?tr=w-800,q-65,f-avif",
+            "description": "Buy Reviti Mayo Scissors, 5.5Inch Straight. A surgical instrument for OT, OPD and procedure-room use. Tiered pricing for larger orders.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGNOVRLR1TIM29348",
+            "brand": {
+              "@type": "Brand",
+              "name": "Reviti"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 303.45,
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Reviti Mayo Scissors - 5.5Inch Straight",
+            "description": "Buy Reviti Mayo Scissors, 5.5Inch Straight. A surgical instrument for OT, OPD and procedure-room use. Tiered pricing for larger orders.",
+            "url": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Scissors",
+            "item": "https://www.medikabazaar.com/medicalequipments/scissors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Reviti Mayo Scissors",
+            "item": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What material are Reviti Mayo Scissors made from, and how does it resist corrosion in surgical environments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reviti Mayo Scissors are crafted from high-quality stainless steel, which provides excellent corrosion resistance and longevity in demanding surgical environments. This premium material ensures the scissors maintain their structural integrity and performance even with frequent use and repeated sterilization cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do the serrated blades improve cutting performance during surgical procedures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The serrated blades on Reviti Mayo Scissors enhance grip and control, enabling secure and precise cutting of tough tissues. This design feature provides surgeons with added assurance of precision, particularly in procedures requiring meticulous tissue handling and control."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Reviti Mayo Scissors suitable for use across different surgical specialties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Reviti Mayo Scissors are versatile surgical instruments suitable across a spectrum of surgical disciplines, including general surgery and specialties such as orthopedics. Their adaptability makes them a reliable staple instrument in diverse surgical settings and procedures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Reviti Mayo Scissors maintain their sharpness and performance after multiple sterilization cycles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reviti Mayo Scissors feature robust construction specifically designed to withstand repeated sterilization cycles while maintaining their sharpness and structural integrity. This durability ensures consistent cutting performance and reliability over the long term, even with frequent use in high-demand surgical environments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What configuration options are available for Reviti Mayo Scissors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reviti Mayo Scissors are available in both curved and straight configurations, allowing surgeons to select the most suitable variant for their specific procedural requirements. This flexibility empowers medical professionals to choose the optimal instrument design for their surgical discipline."
+            }
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/5-x-reviti-mayo-scissors-55inch-straight-13_11_2026-b5dc5b83.png"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-17.png",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/5-x-reviti-mayo-scissors-55inch-straight-13_11_2026-b5dc5b83.png"
+  },
+  {
+    "slug": "vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishanav Surgicals Allice Tissue Forcep",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-allice-tissue-forcep-5inch-04_05_2026-873594ea.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishanav Surgicals Allice Tissue Forcep. Surgical instruments stocked for hospitals, nursing homes and clinics. Tiered pricing for larger orders.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10473",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 276.15,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 5,
+              "bestRating": 5,
+              "ratingCount": 36
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishanav Surgicals Allice Tissue Forcep",
+            "description": "Buy Vaishanav Surgicals Allice Tissue Forcep. Surgical instruments stocked for hospitals, nursing homes and clinics. Tiered pricing for larger orders.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Forceps",
+            "item": "https://www.medikabazaar.com/medicalequipments/forceps"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishanav Surgicals Allice Tissue Forcep",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-allice-tissue-forcep-5inch-04_05_2026-873594ea.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-18.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-allice-tissue-forcep-5inch-04_05_2026-873594ea.webp"
+  },
+  {
+    "slug": "vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+    "status": 200,
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Medikabazaar",
+        "alternateName": "Boston Ivy Healthcare Solutions Private Limited",
+        "url": "https://www.medikabazaar.com",
+        "logo": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "sameAs": [
+          "https://www.facebook.com/Medikabazaar",
+          "https://www.instagram.com/medikabazaar",
+          "https://www.youtube.com/c/medikabazaar",
+          "https://www.linkedin.com/company/medikabazaar",
+          "https://www.medikabazaar.com",
+          "https://twitter.com/Medikabazaar"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Medikabazaar",
+        "url": "https://www.medikabazaar.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.medikabazaar.com/products?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Medikabazaar",
+        "image": "https://d3ka6l1e5o2tqs.cloudfront.net/media/public/default_images/Mb_logo.png",
+        "@id": "https://www.medikabazaar.com/#local-business",
+        "url": "https://www.medikabazaar.com",
+        "telephone": "079-480-58625",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3rd Floor, Unit No.1, 5, 6, 7, 8, 9 and 10, Second Avenue, Atul Projects, Mahakali Caves Road, Near Seepz, Marol MIDC, Andheri East",
+          "addressLocality": "Mumbai",
+          "postalCode": "400093",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Shop Now",
+            "url": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Blog",
+            "url": "https://www.medikabazaar.com/blogs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Vaishnav Surgicals Vaginal Specullum Cusco",
+            "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-vaginal-speculum-cusco-small-04_05_2026-99477315.webp?tr=w-800,q-65,f-avif",
+            "description": "Buy Vaishnav Surgicals Vaginal Specullum Cusco. A surgical instrument for OT, OPD and procedure-room use. Prices shown inclusive of GST.",
+            "category": "Medical Device & Equipment",
+            "sku": "MBPGLCASINGNRM10523",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vaishanav Surgical"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": 256.2,
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.8,
+              "bestRating": 5,
+              "ratingCount": 33
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Vaishnav Surgicals Vaginal Specullum Cusco",
+            "description": "Buy Vaishnav Surgicals Vaginal Specullum Cusco. A surgical instrument for OT, OPD and procedure-room use. Prices shown inclusive of GST.",
+            "url": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#product-heading",
+                "#product-body"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.medikabazaar.com/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Device & Equipment",
+            "item": "https://www.medikabazaar.com/medicalequipments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Surgical Instruments",
+            "item": "https://www.medikabazaar.com/medicalequipments/surgical-instruments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Vaishnav Surgicals Vaginal Specullum Cusco",
+            "item": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523"
+          }
+        ]
+      }
+    ],
+    "imgs": [
+      "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-vaginal-speculum-cusco-small-04_05_2026-99477315.webp"
+    ],
+    "local": "assets/products/medikabazaar/equipinst-19.webp",
+    "sourceImage": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-vaginal-speculum-cusco-small-04_05_2026-99477315.webp"
+  }
+]

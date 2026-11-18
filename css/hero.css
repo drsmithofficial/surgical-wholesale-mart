@@ -713,7 +713,7 @@
   }
   .hero-copy h2 {
     max-width: 300px;
-    margin: 0 0 10px;
+    margin: 0 0 22px;
     font-size: clamp(24px, 6.3vw, 30px);
     line-height: 1.1;
     letter-spacing: -.025em;
@@ -724,17 +724,9 @@
     font-size: 13px;
     line-height: 1.45;
   }
-  .hero-copy .mobile-hero-description { display: block; }
-  .hero-copy .mobile-hero-eyebrow {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--hero-accent);
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-  }
-  .hero-actions { gap: 8px; }
+  .hero-copy .mobile-hero-description,
+  .hero-copy .mobile-hero-eyebrow { display: none; }
+  .hero-actions { gap: 8px; margin-top: 0; }
   .hero-button {
     min-height: 42px;
     padding: 9px 15px;

@@ -1,0 +1,558 @@
+[
+  {
+    "key": "primewear-bed-sheet-mb",
+    "url": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+    "product": {
+      "@type": "Product",
+      "name": "Primewear Bed Sheet",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-bed-sheet-120230cm-po966-20_06_2026-959ef616.webp?tr=w-800,q-65,f-avif",
+      "description": "Primewear Bed Sheet, 120*230cm (PO966). Hospital linen for wards, clinics and nursing homes. Request a bulk quote for institutional orders.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGPAMMMAPEPN16165",
+      "brand": {
+        "@type": "Brand",
+        "name": "Primewear"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 107.1,
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "bestRating": 5,
+        "ratingCount": 1123
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-primewear-bed-sheet-mb.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-bed-sheet-120230cm-po966-20_06_2026-959ef616.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "primewear-pillow-cover-mb",
+    "url": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+    "product": {
+      "@type": "Product",
+      "name": "Primewear pillow cover",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pillow-cover-po969-20_06_2026-b25000d0.webp?tr=w-800,q-65,f-avif",
+      "description": "Primewear pillow cover � PO969. Hospital linen for wards, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGPAMMMAPEPN16169",
+      "brand": {
+        "@type": "Brand",
+        "name": "Primewear"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 16.8,
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "ratingCount": 30
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-primewear-pillow-cover-mb.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pillow-cover-po969-20_06_2026-b25000d0.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "medivastra-unisex-reusable-patient-gown",
+    "url": "https://www.medikabazaar.com/products/medivastra-unisex-reusable-patient-gown-with-universal-size-mbpgvaaamwaewp37778",
+    "product": {
+      "@type": "Product",
+      "name": "Medivastra Unisex Reusable Patient Gown with Universal Size",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/medivastra-unisex-reusable-patient-gown-with-universal-size-sky-blue-universal-medi-028_cu4YR7C.webp?tr=w-800,q-65,f-avif",
+      "description": "Medivastra Unisex Reusable Patient Gown with Universal Size, Sky Blue Universal (MEDI-028). OT and infection-control wear for surgical and procedure rooms.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGVAAAMWAEWP37778",
+      "brand": {
+        "@type": "Brand",
+        "name": "Medivastra"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 304.5,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "ratingCount": 24
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-medivastra-unisex-reusable-patient-gown.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/medivastra-unisex-reusable-patient-gown-with-universal-size-sky-blue-universal-medi-028_cu4YR7C.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "mb-wraparound-reinforced-surgical-gown",
+    "url": "https://www.medikabazaar.com/products/mb-wraparound-reinforced-surgical-gown",
+    "product": {
+      "@type": "Product",
+      "name": "mb+ Wraparound Reinforced Surgical Gown",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/mb-wraparound-reinforced-surgical-gown-xl-pack-of-10-sgrw-101-20_06_2026-82d8b500.webp?tr=w-800,q-65,f-avif",
+      "description": "mb+ Wraparound Reinforced Surgical Gown, XL pack of 10 (SGRW-101). For sterile fields and staff protection in operating theatres.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGVLAZCNIEI150061",
+      "brand": {
+        "@type": "Brand",
+        "name": "mb+"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 1712.55,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-mb-wraparound-reinforced-surgical-gown.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/mb-wraparound-reinforced-surgical-gown-xl-pack-of-10-sgrw-101-20_06_2026-82d8b500.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "arete-scrub-suit",
+    "url": "https://www.medikabazaar.com/products/arete-scrub-suit",
+    "product": {
+      "@type": "Product",
+      "name": "Arete Scrub Suit",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/arete-scrub-suit-sky-blue-pack-of-2-30_10_2026-d7eb2e20.webp?tr=w-800,q-65,f-avif",
+      "description": "Buy Arete Scrub Suit, Sky Blue pack of 2. Healthcare supplies for hospitals, clinics and nursing homes. Tiered pricing for larger orders.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGRRTRAAPEPN49928",
+      "brand": {
+        "@type": "Brand",
+        "name": "Arete"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 618.45,
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "ratingCount": 21
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-arete-scrub-suit.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/arete-scrub-suit-sky-blue-pack-of-2-30_10_2026-d7eb2e20.webp",
+    "width": 998,
+    "height": 998
+  },
+  {
+    "key": "desco-ot-towel",
+    "url": "https://www.medikabazaar.com/products/desco-ot-towel-mbpgecocdaooub21390",
+    "product": {
+      "@type": "Product",
+      "name": "Desco OT Towel",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/90f1a377d1ad4ad78_descomedical-420_2.jpg?tr=w-800,q-65,f-avif",
+      "description": "Desco OT Towel (pack of 1) on Medikabazaar. Healthcare supplies for hospitals, clinics and nursing homes. B2B pricing for hospitals and clinics.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGECOCDAOOUB21390",
+      "brand": {
+        "@type": "Brand",
+        "name": "Desco"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 201.6,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-desco-ot-towel.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/90f1a377d1ad4ad78_descomedical-420_2.jpg",
+    "width": 640,
+    "height": 640
+  },
+  {
+    "key": "cocoon-patient-warming-blanket-size",
+    "url": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+    "product": {
+      "@type": "Product",
+      "name": "Cocoon Patient Warming Blanket Size 100 X 195cm CLM 0101",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-04_05_2026-a6727aa3.webp?tr=w-800,q-65,f-avif",
+      "description": "Shop the Cocoon Patient Warming Blanket Size 100 X 195cm CLM 0101. Hospital linen for wards, clinics and nursing homes. Bulk quotes available on Medikabazaar.",
+      "category": "Medical Device & Equipment",
+      "sku": "MBPGCONNN1EATM27747",
+      "brand": {
+        "@type": "Brand",
+        "name": "Cocoon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 758.1,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-cocoon-patient-warming-blanket-size.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-04_05_2026-a6727aa3.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "daynacare-rubber-bed-sheet",
+    "url": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+    "product": {
+      "@type": "Product",
+      "name": "Daynacare Rubber Bed Sheet",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/daynacare-rubber-bed-sheet-1mtr-21_06_2026-3d3bd16d.webp?tr=w-800,q-65,f-avif",
+      "description": "Daynacare Rubber Bed Sheet, 1Mtr. Hospital linen for wards, clinics and nursing homes. See full details on the product page.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGNDCYA11PP158401",
+      "brand": {
+        "@type": "Brand",
+        "name": "Daynacare"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 199.5,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-daynacare-rubber-bed-sheet.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/daynacare-rubber-bed-sheet-1mtr-21_06_2026-3d3bd16d.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "fine-wear-universal-drape-kit",
+    "url": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+    "product": {
+      "@type": "Product",
+      "name": "Fine Wear Universal Drape Kit",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/b1bf8d21d33c467a9_image.png?tr=w-800,q-65,f-avif",
+      "description": "Buy Fine Wear Universal Drape Kit, 44255. OT and infection-control wear for surgical and procedure rooms. Order online for your facility.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGRNFWENO1EI31770",
+      "brand": {
+        "@type": "Brand",
+        "name": "Fine Wear"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 1176,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-fine-wear-universal-drape-kit.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/b1bf8d21d33c467a9_image.png",
+    "width": 461,
+    "height": 458
+  },
+  {
+    "key": "primewear-pe-laminated-non-woven-half-gown",
+    "url": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+    "product": {
+      "@type": "Product",
+      "name": "Primewear PE Laminated Non woven Half Gown",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pe-laminated-non-woven-half-gown-po810-12_06_2026-060d8fdd.webp?tr=w-800,q-65,f-avif",
+      "description": "Shop the Primewear PE Laminated Non woven Half Gown. OT and infection-control wear for surgical and procedure rooms. Order single units or in bulk.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGPAMMMAPEPN16385",
+      "brand": {
+        "@type": "Brand",
+        "name": "Primewear"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 89.25,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-primewear-pe-laminated-non-woven-half-gown.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pe-laminated-non-woven-half-gown-po810-12_06_2026-060d8fdd.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "first-glove-nitrile",
+    "url": "https://www.medikabazaar.com/products/first-glove-nitrile-examination-gloves-powder-free-blue",
+    "product": {
+      "@type": "Product",
+      "name": "First Glove Nitrile Examination Gloves",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/first-glove-nitrile-examination-gloves-large-blue-pack-of-100-20_03_2026-2cc9764b.webp?tr=w-800,q-65,f-avif",
+      "description": "First Glove Nitrile Examination Gloves, Large Blue pack of 100. Examination and procedure gloves for clinics, hospitals and labs.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGRRQUZGOEOL46669",
+      "brand": {
+        "@type": "Brand",
+        "name": "First Glove"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 315,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-first-glove-nitrile.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/first-glove-nitrile-examination-gloves-large-blue-pack-of-100-20_03_2026-2cc9764b.webp",
+    "width": 1188,
+    "height": 880
+  },
+  {
+    "key": "hi-tech-syringe-with-needle",
+    "url": "https://www.medikabazaar.com/products/hi-tech-syringe-with-needle-mbpgc1t1caooub17865",
+    "product": {
+      "@type": "Product",
+      "name": "Hi-Tech Syringe with Needle",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/hi-tech-syringe-with-needle-2ml-x-24g-pack-of-100-20_06_2026-18bce098.webp?tr=w-800,q-65,f-avif",
+      "description": "Buy Hi-Tech Syringe with Needle, 2ml x 24G pack of 100. Syringes for injections and medication delivery in hospitals and clinics.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGC1T1CAOOUB17865",
+      "brand": {
+        "@type": "Brand",
+        "name": "Hi-Tech"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 184.8,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.2,
+        "bestRating": 5,
+        "ratingCount": 65
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-hi-tech-syringe-with-needle.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/hi-tech-syringe-with-needle-2ml-x-24g-pack-of-100-20_06_2026-18bce098.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "polymed-polyflon-iv-cannula-with-port",
+    "url": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+    "product": {
+      "@type": "Product",
+      "name": "Polymed Polyflon IV Cannula With Port and Wings",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/e9258324300d487b9_polyflon.jpg?tr=w-800,q-65,f-avif",
+      "description": "Polymed Polyflon IV Cannula With Port and Wings � 14G pack of 100. For intravenous access and infusion in wards and day-care units.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGYEDELAOOUB39830",
+      "brand": {
+        "@type": "Brand",
+        "name": "Polymed"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 1134,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-polymed-polyflon-iv-cannula-with-port.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/e9258324300d487b9_polyflon.jpg",
+    "width": 500,
+    "height": 500
+  },
+  {
+    "key": "cruzine-2-way-latex-foley",
+    "url": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+    "product": {
+      "@type": "Product",
+      "name": "Cruzine 2-Way Latex Foley Balloon Catheter",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/f67a3b4d0c664b1ab_image.png?tr=w-800,q-65,f-avif",
+      "description": "Cruzine 2-Way Latex Foley Balloon Catheter � 20Fr 30 - 50ml FC-301 pack of 50. A medical catheter for ward, ICU and urology use.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGIURIEAOOUB29857",
+      "brand": {
+        "@type": "Brand",
+        "name": "Cruzine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 1167.6,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-cruzine-2-way-latex-foley.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/f67a3b4d0c664b1ab_image.png",
+    "width": 1000,
+    "height": 682
+  },
+  {
+    "key": "ribbel-urine-collection-bag",
+    "url": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+    "product": {
+      "@type": "Product",
+      "name": "Ribbel Urine collection bag",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/178451ec4bbe452c9_mbril250.jpg?tr=w-800,q-65,f-avif",
+      "description": "Ribbel Urine collection bag (2000ml pack of 25) on Medikabazaar. Hospital consumables for wards, OTs and clinics. Order single units or in bulk.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGBRBEB1ABUG20783",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ribbel"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 1701,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-ribbel-urine-collection-bag.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/178451ec4bbe452c9_mbril250.jpg",
+    "width": 640,
+    "height": 640
+  },
+  {
+    "key": "surgipore-microporous",
+    "url": "https://www.medikabazaar.com/products/surgipore-microporous-surgical-tape-mbpgosupgggide24505",
+    "product": {
+      "@type": "Product",
+      "name": "Surgipore Microporous Surgical tape",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/cf573abdc8f04a849_image.png?tr=w-800,q-65,f-avif",
+      "description": "Surgipore Microporous Surgical tape � 1inch x 9.1meter pack of 12. For wound care and dressing changes in wards, OPDs and first-aid rooms.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGOSUPGGGIDE24505",
+      "brand": {
+        "@type": "Brand",
+        "name": "Surgipore"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 395.85,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-surgipore-microporous.png",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/cf573abdc8f04a849_image.png",
+    "width": 550,
+    "height": 550
+  },
+  {
+    "key": "mohini-absorbent-cotton",
+    "url": "https://www.medikabazaar.com/products/mohini-absorbent-cotton-roll-mbpgoihhocncon25197",
+    "product": {
+      "@type": "Product",
+      "name": "Mohini Absorbent Cotton Roll Gross",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/mohini-absorbent-cotton-roll-gross-50gm-20_06_2026-24f1f5bd.webp?tr=w-800,q-65,f-avif",
+      "description": "Buy Mohini Absorbent Cotton Roll Gross, 50gm. For wound care and dressing changes in wards, OPDs and first-aid rooms. View specs and price on Medikabazaar.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGOIHHOCNCON25197",
+      "brand": {
+        "@type": "Brand",
+        "name": "Mohini"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 34.65,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-mohini-absorbent-cotton.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/mohini-absorbent-cotton-roll-gross-50gm-20_06_2026-24f1f5bd.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "romsons-infusion-set",
+    "url": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+    "product": {
+      "@type": "Product",
+      "name": "Romsons Transflow Infusion Set",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/romsons-transflow-infusion-set-pack-of-25-ss-3063-12_06_2026-64e145ff.webp?tr=w-800,q-65,f-avif",
+      "description": "Romsons Transflow Infusion Set - Pack of 25 (SS-3063) is available for pharmacy and hospital procurement. Check prescription requirements before purchase.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGMRSMMAOOUB15893",
+      "brand": {
+        "@type": "Brand",
+        "name": "Romsons"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 471.45,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "ratingCount": 23
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-romsons-infusion-set.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/romsons-transflow-infusion-set-pack-of-25-ss-3063-12_06_2026-64e145ff.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "sterile-gauze-swab",
+    "url": "https://www.medikabazaar.com/products/agarwals-absorbent-gauze-swab-sterile-single-pack-mbpgawaarunene54899",
+    "product": {
+      "@type": "Product",
+      "name": "Agarwals Absorbent Gauze Swab Sterile Single Pack",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/agarwals-absorbent-gauze-swab-sterile-single-pack-75cm-x-75-x-12ply-pack-of-5-20_06_202_I8tZnGQ.webp?tr=w-800,q-65,f-avif",
+      "description": "Agarwals Absorbent Gauze Swab Sterile Single Pack, 7.5cm x 7.5 x 12ply pack of 5. Wound-care supplies for hospitals, clinics and nursing homes.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGAWAARUNENE54899",
+      "brand": {
+        "@type": "Brand",
+        "name": "Aggarwal"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 48.3,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-sterile-gauze-swab.webp",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/agarwals-absorbent-gauze-swab-sterile-single-pack-75cm-x-75-x-12ply-pack-of-5-20_06_202_I8tZnGQ.webp",
+    "width": 1200,
+    "height": 896
+  },
+  {
+    "key": "endotracheal-tube",
+    "url": "https://www.medikabazaar.com/products/b-positive-endotracheal-tubes-cuffed",
+    "product": {
+      "@type": "Product",
+      "name": "B Positive Endotracheal Tubes Cuffed",
+      "image": "https://ik.imagekit.io/z6mqjyyzz/media/public/b-positive-endotracheal-tubes-cuffed-25mm-et-603-20_07_2026-6fcfc5b2.jpg?tr=w-800,q-65,f-avif",
+      "description": "B Positive Endotracheal Tubes Cuffed — 2.5mm (ET-603). Airway and tube consumables for OTs, ICUs and emergency care. Tiered pricing for larger orders.",
+      "category": "Consumables & Disposables",
+      "sku": "MBPGBIOEEDOICD67724",
+      "brand": {
+        "@type": "Brand",
+        "name": "B Positive"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": 80.85,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "image": "assets/products/medikabazaar/lc-endotracheal-tube.jpg",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/b-positive-endotracheal-tubes-cuffed-25mm-et-603-20_07_2026-6fcfc5b2.jpg",
+    "width": 908,
+    "height": 769
+  }
+]

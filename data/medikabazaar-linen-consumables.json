@@ -1,0 +1,638 @@
+[
+  {
+    "id": "mb-eb50f67ae09c",
+    "name": "Hospital Bed Sheet",
+    "category": "linen",
+    "subcategory": "Bed Linen",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-primewear-bed-sheet-mb.jpg",
+    "features": [
+      "Bed-covering sheet",
+      "Reference size: 120 × 230 cm",
+      "For ward and examination beds"
+    ],
+    "description": "Bed-covering linen for hospital wards, clinics and examination settings. The reference listing specifies a 120 × 230 cm sheet. Share the mattress dimensions and required quantity so the team can confirm the fit, fabric, care instructions and supplied configuration.",
+    "source": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+    "sourceName": "Primewear Bed Sheet",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-bed-sheet-120230cm-po966-20_06_2026-959ef616.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference size",
+        "value": "120 × 230 cm"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-3b84782bf596",
+    "name": "Hospital Pillow Cover",
+    "category": "linen",
+    "subcategory": "Bed Linen",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-primewear-pillow-cover-mb.jpg",
+    "features": [
+      "Pillow-cover format",
+      "Soft fabric surface",
+      "For patient-bed linen sets"
+    ],
+    "description": "A pillow cover for hospital and clinical bedding. The reference product is supplied as a separate linen item. Confirm the pillow dimensions, closure style, material and laundering requirements before ordering.",
+    "source": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+    "sourceName": "Primewear pillow cover",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pillow-cover-po969-20_06_2026-b25000d0.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-09d53eeda22f",
+    "name": "Reusable Unisex Patient Gown",
+    "category": "linen",
+    "subcategory": "Patient Clothing",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-patient-gown.jpg",
+    "features": [
+      "Reusable gown design",
+      "Universal-size reference",
+      "Adjustable closures"
+    ],
+    "description": "A reusable patient gown intended for routine healthcare clothing requirements. The reference listing describes a unisex universal-size design with adjustable closures. Confirm garment measurements, material, fastening and laundering instructions for your facility.",
+    "source": "https://www.medikabazaar.com/products/medivastra-unisex-reusable-patient-gown-with-universal-size-mbpgvaaamwaewp37778",
+    "sourceName": "Medivastra Unisex Reusable Patient Gown with Universal Size",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.diamondathletic.com/products/patient-gown",
+    "imageOriginal": "https://www.diamondathletic.com/cdn/shop/products/PATIENT_GOWN.jpg?v=1578087381",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference fit",
+        "value": "Unisex universal size"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1968,
+    "imageHeight": 4008
+  },
+  {
+    "id": "mb-0172cdb7eabc",
+    "name": "Wraparound Reinforced Surgical Gown",
+    "category": "linen",
+    "subcategory": "Surgical Clothing",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/lc-surgical-gown.jpg",
+    "features": [
+      "Wraparound gown format",
+      "Reinforced construction",
+      "Long-sleeve surgical clothing"
+    ],
+    "description": "A wraparound reinforced gown for operating-theatre clothing requirements. The reference product is listed in an XL configuration. Confirm the supplied size, reinforcement areas, sterile-pack status and applicable documentation with the quotation. The photograph illustrates the gown type rather than the exact pack.",
+    "source": "https://www.medikabazaar.com/products/mb-wraparound-reinforced-surgical-gown",
+    "sourceName": "mb+ Wraparound Reinforced Surgical Gown",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.eb-med.com/consumables/protective-wear/surgical-gown-large",
+    "imageOriginal": "https://www.eb-med.com/images/product/source/K189.jpg?t=1729590717",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference size",
+        "value": "XL"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 1200
+  },
+  {
+    "id": "mb-088a3c9f3be8",
+    "name": "Medical Scrub Top and Trouser Set",
+    "category": "linen",
+    "subcategory": "Staff Uniforms",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/lc-scrub.webp",
+    "features": [
+      "Matching top and trousers",
+      "Pocketed uniform design",
+      "Unisex fit options"
+    ],
+    "description": "A matching scrub top and trouser set for medical staff. The reference listing describes a practical pocketed uniform with a unisex fit. Confirm the size chart, colour, fabric composition, pack contents and washing instructions for the supplied set.",
+    "source": "https://www.medikabazaar.com/products/arete-scrub-suit",
+    "sourceName": "Arete Scrub Suit",
+    "origin": "medikabazaar",
+    "imageSource": "https://genxportservices.com/",
+    "imageOriginal": "https://genxportservices.com/images/us/Medical_lab_Coat%26Scrub.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1592,
+    "imageHeight": 1592
+  },
+  {
+    "id": "mb-1077176e189f",
+    "name": "Operating Theatre Towel",
+    "category": "linen",
+    "subcategory": "Surgical Linen",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/lc-ot-towel.jpg",
+    "features": [
+      "Operating-theatre textile",
+      "Foldable towel format",
+      "Size options on quotation"
+    ],
+    "description": "An operating-theatre towel for surgical linen procurement. Request the required dimensions, weave, colour and quantity for your facility. The team can confirm the supplied material, laundering instructions and preparation requirements with the quotation.",
+    "source": "https://www.medikabazaar.com/products/desco-ot-towel-mbpgecocdaooub21390",
+    "sourceName": "Desco OT Towel",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.onlinestore.kirikan.com/products/general-345",
+    "imageOriginal": "https://www.onlinestore.kirikan.com/cdn/shop/products/item_345.jpg?v=1657277166",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 1000
+  },
+  {
+    "id": "mb-6a3d8f28c6d8",
+    "name": "Patient Warming Blanket",
+    "category": "linen",
+    "subcategory": "Patient Warming Linen",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/lc-cocoon-patient-warming-blanket-size.jpg",
+    "features": [
+      "Patient-warming blanket",
+      "Reference size: 100 × 195 cm",
+      "System compatibility to confirm"
+    ],
+    "description": "A patient-warming blanket in the 100 × 195 cm size shown in the reference listing. Confirm the intended warming system, connection requirements, patient positioning and single-use or reuse status before ordering. The source diagram illustrates the blanket layout.",
+    "source": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+    "sourceName": "Cocoon Patient Warming Blanket Size 100 X 195cm CLM 0101",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-04_05_2026-a6727aa3.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Original supplier diagram is used as a representative product-layout image.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference size",
+        "value": "100 × 195 cm"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-ad9a750b236b",
+    "name": "Rubber Protective Bed Sheet",
+    "category": "linen",
+    "subcategory": "Protective Bed Linen",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-daynacare-rubber-bed-sheet.jpg",
+    "features": [
+      "Rubber sheet material",
+      "Bed-protection format",
+      "Reference length: 1 metre"
+    ],
+    "description": "A rubber protective bed sheet for hospital and nursing-care linen requirements. The reference listing identifies a one-metre option. Confirm the width, thickness, colour, cleaning method and required length before ordering.",
+    "source": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+    "sourceName": "Daynacare Rubber Bed Sheet",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/daynacare-rubber-bed-sheet-1mtr-21_06_2026-3d3bd16d.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference length",
+        "value": "1 metre"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-519f94c242b0",
+    "name": "Universal Surgical Drape Kit",
+    "category": "linen",
+    "subcategory": "Surgical Drapes",
+    "department": "ot",
+    "image": "assets/products/medikabazaar/lc-fine-wear-universal-drape-kit.jpg",
+    "features": [
+      "Multi-piece drape kit",
+      "Universal procedure layout",
+      "Adhesive drape elements"
+    ],
+    "description": "A multi-piece surgical drape kit for procedure-room and theatre procurement. The reference listing describes a universal set with adhesive drape elements. Request the exact contents list, drape sizes, fenestration layout, packaging and sterile-status documentation with the quotation. The illustration shows a representative layout.",
+    "source": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+    "sourceName": "Fine Wear Universal Drape Kit",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/b1bf8d21d33c467a9_image.png",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Original supplier diagram is used as a representative product-layout image.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Kit type",
+        "value": "Universal drape kit"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 461,
+    "imageHeight": 458
+  },
+  {
+    "id": "mb-a7f8dffe8163",
+    "name": "PE-Laminated Nonwoven Half Gown",
+    "category": "linen",
+    "subcategory": "Protective Clothing",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-primewear-pe-laminated-non-woven-half-gown.jpg",
+    "features": [
+      "PE-laminated construction",
+      "Nonwoven textile",
+      "Half-gown format"
+    ],
+    "description": "A PE-laminated nonwoven half gown for clinical protective-clothing requirements. The reference listing identifies the laminated nonwoven material and half-gown format. Confirm the garment dimensions, closures, pack quantity and intended procedure requirements before selecting the supplied variant.",
+    "source": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+    "sourceName": "Primewear PE Laminated Non woven Half Gown",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pe-laminated-non-woven-half-gown-po810-12_06_2026-060d8fdd.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Construction",
+        "value": "PE-laminated nonwoven"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-b6d195b1966e",
+    "name": "Powder-Free Nitrile Examination Gloves",
+    "category": "consumables",
+    "subcategory": "Examination Gloves",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-nitrile.jpg",
+    "features": [
+      "Nitrile material",
+      "Powder-free finish",
+      "Blue examination-glove format"
+    ],
+    "description": "Powder-free nitrile examination gloves for clinical examination and routine healthcare handling requirements. The reference listing includes a blue large-size option. Confirm glove size, examination-use documentation, pack count and latex-related requirements before ordering.",
+    "source": "https://www.medikabazaar.com/products/first-glove-nitrile-examination-gloves-powder-free-blue",
+    "sourceName": "First Glove Nitrile Examination Gloves",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.wardsflex.co.uk/carton-of-nitrile-gloves-10-x-boxes-of-100-pairs-large/",
+    "imageOriginal": "https://cdn11.bigcommerce.com/s-h84dhzjs32/images/stencil/1280x1280/products/1375/4228/Nitrile_gloves_6__07721.1632999305.jpg?c=2",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Nitrile"
+      },
+      {
+        "label": "Finish",
+        "value": "Powder-free"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 750,
+    "imageHeight": 750
+  },
+  {
+    "id": "mb-5ad1010de0e0",
+    "name": "Disposable Syringe with Needle",
+    "category": "consumables",
+    "subcategory": "Injection Consumables",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-syringe.jpg",
+    "features": [
+      "Graduated syringe barrel",
+      "Needle included",
+      "Reference capacity: 2 ml"
+    ],
+    "description": "A syringe-and-needle consumable for healthcare procurement. The reference listing specifies a 2 ml syringe with a 24G needle. Confirm the volume, needle gauge and length, connection type, pack count and sterile packaging before ordering. The photograph is a product-type reference.",
+    "source": "https://www.medikabazaar.com/products/hi-tech-syringe-with-needle-mbpgc1t1caooub17865",
+    "sourceName": "Hi-Tech Syringe with Needle",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.vetro.ro/en/prima-luer-slip-syringes-with-blue-needle-2ml-100-pieces/",
+    "imageOriginal": "https://www.vetro.ro/pub/media/catalog/product/cache/a55131ddd0dba4f99636768543f1ef4d/0/2/0236-02ml__a_seringi_luer_slip_2ml_prima_cu_ac_albastru_100_bucati.jpg",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference syringe capacity",
+        "value": "2 ml"
+      },
+      {
+        "label": "Reference needle gauge",
+        "value": "24G"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 700,
+    "imageHeight": 700
+  },
+  {
+    "id": "mb-f470e07553ce",
+    "name": "IV Cannula with Injection Port and Wings",
+    "category": "consumables",
+    "subcategory": "Intravenous Access",
+    "department": "icu",
+    "image": "assets/products/medikabazaar/lc-polymed-polyflon-iv-cannula-with-port.jpg",
+    "features": [
+      "Integrated injection port",
+      "Fixation wings",
+      "Transparent hub"
+    ],
+    "description": "An intravenous cannula with an injection port, fixation wings and a transparent hub. The reference listing includes multiple sizes and identifies a 14G option. Confirm the intended gauge, catheter dimensions, connector arrangement and sterile packaging for the supplied configuration.",
+    "source": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+    "sourceName": "Polymed Polyflon IV Cannula With Port and Wings",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/e9258324300d487b9_polyflon.jpg",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference gauge",
+        "value": "14G"
+      },
+      {
+        "label": "Components",
+        "value": "Injection port and fixation wings"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 500,
+    "imageHeight": 500
+  },
+  {
+    "id": "mb-6166a6cbabb8",
+    "name": "Two-Way Latex Foley Balloon Catheter",
+    "category": "consumables",
+    "subcategory": "Urinary Care",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-cruzine-2-way-latex-foley.jpg",
+    "features": [
+      "Two-way catheter format",
+      "Latex construction",
+      "Retention-balloon design"
+    ],
+    "description": "A two-way latex Foley balloon catheter for urinary-care procurement. The reference listing identifies a 20Fr configuration with a stated balloon-volume range of 30–50 ml. Confirm the size, balloon specification, latex suitability and sterile-pack details with the quotation. Use requires qualified clinical selection.",
+    "source": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+    "sourceName": "Cruzine 2-Way Latex Foley Balloon Catheter",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/f67a3b4d0c664b1ab_image.png",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference size",
+        "value": "20Fr"
+      },
+      {
+        "label": "Reference balloon capacity",
+        "value": "30–50 ml"
+      },
+      {
+        "label": "Material",
+        "value": "Latex"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 682
+  },
+  {
+    "id": "mb-c915be72ba21",
+    "name": "Urine Collection Bag with Drainage Tubing",
+    "category": "consumables",
+    "subcategory": "Urinary Care",
+    "department": "ward",
+    "image": "assets/products/medikabazaar/lc-ribbel-urine-collection-bag.jpg",
+    "features": [
+      "Graduated collection bag",
+      "Drainage tubing",
+      "Reference capacity: 2000 ml"
+    ],
+    "description": "A graduated urine-collection bag with drainage tubing for ward and nursing-care requirements. The reference listing specifies a 2000 ml capacity and 90 cm tube. Confirm the connector, outlet, hanging arrangement, sterile status and pack quantity before ordering.",
+    "source": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+    "sourceName": "Ribbel Urine collection bag",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/178451ec4bbe452c9_mbril250.jpg",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference bag capacity",
+        "value": "2000 ml"
+      },
+      {
+        "label": "Reference tube length",
+        "value": "90 cm"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 640,
+    "imageHeight": 640
+  },
+  {
+    "id": "mb-4dc03b61b48c",
+    "name": "Microporous Surgical Paper Tape",
+    "category": "consumables",
+    "subcategory": "Dressing Fixation",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-tape-clean.webp",
+    "features": [
+      "Paper-tape construction",
+      "Microporous texture",
+      "Roll format"
+    ],
+    "description": "Microporous surgical paper tape for dressing-fixation requirements. The reference listing specifies a 1-inch width and 9.1-metre roll. Confirm the required width, roll length, adhesive suitability and pack count with the team. The photograph illustrates unbranded tape rolls rather than exact packaging.",
+    "source": "https://www.medikabazaar.com/products/surgipore-microporous-surgical-tape-mbpgosupgggide24505",
+    "sourceName": "Surgipore Microporous Surgical tape",
+    "origin": "medikabazaar",
+    "imageSource": "https://kr.made-in-china.com/co_ajhdmedical/product_Medical-Paper-Tape-Surgical-Mircoporous-Tape_uoggonynig.html",
+    "imageOriginal": "https://image.made-in-china.com/202f0j00pKhVuwYCfmqg/Medical-Paper-Tape-Surgical-Mircoporous-Tape.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference width",
+        "value": "1 inch"
+      },
+      {
+        "label": "Reference roll length",
+        "value": "9.1 metres"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 550,
+    "imageHeight": 490
+  },
+  {
+    "id": "mb-54892a81b0f8",
+    "name": "Absorbent Cotton Roll",
+    "category": "consumables",
+    "subcategory": "Wound Care Consumables",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-cotton.png",
+    "features": [
+      "Absorbent cotton material",
+      "Roll format",
+      "Reference pack weight: 50 g"
+    ],
+    "description": "An absorbent cotton roll for wound-care and dressing procurement. The source listing includes a 50 g option. Confirm the supplied weight, roll dimensions, sterile or non-sterile status and intended-use requirements before ordering. The photograph is a representative unwrapped cotton roll.",
+    "source": "https://www.medikabazaar.com/products/mohini-absorbent-cotton-roll-mbpgoihhocncon25197",
+    "sourceName": "Mohini Absorbent Cotton Roll Gross",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.jumbomed.com/medical-absorbent-sterile-cotton-wool-roll-product/",
+    "imageOriginal": "https://cdn.globalso.com/jumbomed/Medical-Cotton-Roll.png",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference pack weight",
+        "value": "50 g"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 1000
+  },
+  {
+    "id": "mb-5c54f2d39727",
+    "name": "Intravenous Infusion Set",
+    "category": "consumables",
+    "subcategory": "Infusion Consumables",
+    "department": "icu",
+    "image": "assets/products/medikabazaar/lc-romsons-infusion-set.jpg",
+    "features": [
+      "Drip-chamber assembly",
+      "Flexible infusion tubing",
+      "Flow-control roller clamp"
+    ],
+    "description": "An infusion set for intravenous fluid-administration procurement. The product format includes a drip chamber, flexible tubing and flow-control clamp. Confirm the connector type, tubing length, drop factor, filters, sterile status and pack contents for the supplied set.",
+    "source": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+    "sourceName": "Romsons Transflow Infusion Set",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/romsons-transflow-infusion-set-pack-of-25-ss-3063-12_06_2026-64e145ff.webp",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
+  },
+  {
+    "id": "mb-b0e05304d638",
+    "name": "Sterile Absorbent Gauze Swabs",
+    "category": "consumables",
+    "subcategory": "Wound Dressings",
+    "department": "opd",
+    "image": "assets/products/medikabazaar/lc-gauze-clean.jpg",
+    "features": [
+      "Absorbent gauze format",
+      "Reference size: 7.5 × 7.5 cm",
+      "Reference construction: 12 ply"
+    ],
+    "description": "Sterile absorbent gauze swabs for wound-care and dressing procurement. The reference listing identifies 7.5 × 7.5 cm, 12-ply swabs. Confirm the supplied dimensions, ply, sterile packaging, pack count and any X-ray-detectable element requirements with the quotation.",
+    "source": "https://www.medikabazaar.com/products/agarwals-absorbent-gauze-swab-sterile-single-pack-mbpgawaarunene54899",
+    "sourceName": "Agarwals Absorbent Gauze Swab Sterile Single Pack",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.disposablemedical-products.com/sale-35945969-hospital-sterile-medical-gauze-swab-soft-absorbent-4x4-x-ray-detectable.html",
+    "imageOriginal": "https://www.disposablemedical-products.com/photo/pl141318727-hospital_sterile_medical_gauze_swab_soft_absorbent_4x4_x_ray_detectable.jpg",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference dimensions",
+        "value": "7.5 × 7.5 cm"
+      },
+      {
+        "label": "Reference ply",
+        "value": "12 ply"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 800
+  },
+  {
+    "id": "mb-e27dbb532185",
+    "name": "Cuffed Endotracheal Tube",
+    "category": "consumables",
+    "subcategory": "Airway Consumables",
+    "department": "emergency",
+    "image": "assets/products/medikabazaar/lc-et-clean.jpg",
+    "features": [
+      "Inflatable cuff",
+      "Pilot balloon",
+      "Graduated tube markings"
+    ],
+    "description": "A cuffed endotracheal tube for professional airway-management procurement. The reference listing includes a 2.5 mm size option. Confirm the patient-appropriate size, cuff specification, connector, sterile status and packaging before ordering. The photograph shows a representative cuffed tube; qualified clinical selection is required.",
+    "source": "https://www.medikabazaar.com/products/b-positive-endotracheal-tubes-cuffed",
+    "sourceName": "B Positive Endotracheal Tubes Cuffed",
+    "origin": "medikabazaar",
+    "imageSource": "https://www.formedtech.com/standard-endotracheal-tube-cuffed.html",
+    "imageOriginal": "https://www.formedtech.com/media/57/%E5%B0%8F1_11.jpg",
+    "imageKind": "representative",
+    "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+    "imageReviewed": "2026-11-18",
+    "specifications": [
+      {
+        "label": "Reference internal diameter",
+        "value": "2.5 mm"
+      },
+      {
+        "label": "Tube type",
+        "value": "Cuffed"
+      }
+    ],
+    "sourceReviewed": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 800
+  }
+]
