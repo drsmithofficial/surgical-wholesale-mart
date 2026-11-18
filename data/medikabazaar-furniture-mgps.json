@@ -30,7 +30,9 @@
     "imageReview": "Full-size 1200px source image visually reviewed: aluminium reciprocating walking frame, black grips and plain adjustment parts on white, no visible manufacturer wordmark, logo or watermark. Original catalogue-range reference; exact sizing and mode configuration require confirmation.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-9fe5e5b20a78",
@@ -63,7 +65,9 @@
     "imageReview": "Full-size 1000px original supplier image visually reviewed: blue four-wheel rollator, hand brakes, seat/backrest and mesh storage, no manufacturer name, logo or watermark. Reference product type only, not the exact Medikabazaar brand/model.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 1000
   },
   {
     "id": "mb-e3589fa4279e",
@@ -96,7 +100,9 @@
     "imageReview": "Full-size 1200px source photo visually reviewed: plain aluminium non-wheeled folding walking frame with black grips, no visible brand/logo/watermark. The source rollator page contains this walking-frame image, so used only as an explicitly representative non-wheeled adult-frame reference; not confirmation of model.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-5d3a2bab12c9",
@@ -129,7 +135,9 @@
     "imageReview": "Full-size 1200px original paediatric source-range photograph reviewed: folding aluminium walking frame, padded grips and height-adjustable legs without visible logo, brand or watermark. Representative range image; paediatric dimensions and configuration must be confirmed.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-dcc6496e4185",
@@ -162,7 +170,9 @@
     "imageReview": "Full-size 1200px image visually inspected: four-foot aluminium support stick, plain grip and shaft, no visible manufacturer logo/name or watermark. Reference range image; sizing and handle design confirmed by quote.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-fb86f052b5cd",
@@ -195,7 +205,9 @@
     "imageReview": "Full-size 1200px original source image inspected: aluminium forearm crutch with cuff, handgrip and height adjustments, no visible manufacturer name/logo/watermark. Representative type image only; exact supplier/model and single or pair quantity unconfirmed.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-c5f1d3e62df2",
@@ -228,7 +240,9 @@
     "imageReview": "Full-size 1052px original supplier image inspected: pair of aluminium axillary crutches with underarm pads, handgrips and rubber tips, no visible logo/brand/watermark. Representative underarm type image, not exact source product/model or supplied quantity.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1052,
+    "imageHeight": 1052
   },
   {
     "id": "mb-1df88c0045da",
@@ -261,7 +275,9 @@
     "imageReview": "Full-size source photograph visually reviewed: folding green-seat commode frame and plain bucket, no manufacturer name, logo or watermark. Reference range photo; finish and fittings require confirmation.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-0e8fe28d620e",
@@ -294,7 +310,9 @@
     "imageReview": "Full-size 640px source photograph reviewed: white draining seat, backrest, arms and aluminium adjustable legs, no manufacturer name, logo or watermark. Reference range photo, user dimensions and supplied configuration to confirm.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 640,
+    "imageHeight": 640
   },
   {
     "id": "mb-e9e9ce3857b3",
@@ -327,7 +345,9 @@
     "imageReview": "Full-size 1045x1200 source image inspected: handheld analyzer with LCD and generic Oxygen Analyzer/POWER/MENU/LED functional labels only; no manufacturer name, logo or watermark. Reference source range image; calibration and accuracy specification to confirm.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1045,
+    "imageHeight": 1200
   },
   {
     "id": "mb-a62d8572016e",
@@ -360,7 +380,9 @@
     "imageReview": "Full-size 1200px source photograph inspected: plain chrome commode wheelchair with black seat/back, receptacle and wheels, no visible brand/logo/watermark. Reference range photo; wheel/brake configuration and user load capacity must be confirmed.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "id": "mb-301144ce50e6",
@@ -393,7 +415,9 @@
     "imageReview": "Full-size 1000px original supplier image inspected: single-output pneumatic air/oxygen blender with concentration dial and flowmeter. Only generic function/scale markings and model code KY-10A; no manufacturer wordmark/logo/watermark. Representative device type only, not exact source model, range or interface.",
     "origin": "medikabazaar",
     "imported": "2026-11-18",
-    "imageReviewed": "2026-11-18"
+    "imageReviewed": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 1000
   },
   {
     "id": "mb-7b2877461245",
@@ -401,7 +425,7 @@
     "category": "mgps",
     "subcategory": "Theatre Environmental Monitoring",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential.jpg",
+    "image": "assets/products/medikabazaar/root-pressure2.jpg",
     "features": [
       "Indoor air-quality monitoring",
       "Differential-pressure channel",
@@ -420,12 +444,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential-iaq-gpp-15_07_2_VWk5eJj.png",
+    "imageSource": "https://www.ato.com/micro-differential-pressure-transmitter",
+    "imageOriginal": "https://www.ato.com/content/images/thumbs/0024462_micro-differential-pressure-transmitter-with-display-wall-mountedembedded_550.jpeg",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear pressure2 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed. Reference shows the differential-pressure monitoring function, not the exact combined air-quality monitor.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 550,
+    "imageHeight": 550,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-c18a2491b15d",
@@ -433,7 +460,7 @@
     "category": "mgps",
     "subcategory": "Theatre Environmental Monitoring",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-pneoterik-hospital-ot-indoor-air-quality-monitor.jpg",
+    "image": "assets/products/medikabazaar/root-air-monitor.jpg",
     "features": [
       "Theatre environmental monitoring",
       "Room-condition display",
@@ -452,12 +479,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-hospital-ot-indoor-air-quality-monitor-iaq-ot-15_07_2026-064ea4b0.png",
+    "imageSource": "https://yakkatechnicalservices.ae/product/lifesmart-in-wall-air-quality-detector-zigbee/",
+    "imageOriginal": "https://yakkatechnicalservices.ae/wp-content/uploads/2024/01/In-wall-Air-Quality-Detector-ZigBee.png",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear air monitor supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 2560,
+    "imageHeight": 2560,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-c4f903c92e72",
@@ -465,7 +495,7 @@
     "category": "mgps",
     "subcategory": "Environmental Air Treatment",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-pneoterik-hospital-infection-controller-sterility-machine-with-uv-light.jpg",
+    "image": "assets/products/medikabazaar/root-uv.jpg",
     "features": [
       "Enclosed air-treatment unit",
       "UV-assisted treatment stage",
@@ -484,12 +514,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/pneoterik-advanced-medical-grade-air-sterilisation-system-sterile-360-18_08_2026-5b4ca85e.png",
+    "imageSource": "https://m.made-in-china.com/product/Disinfection-Air-Sterilization-UVC-Air-Purifier-Equipment-for-Medical-Sterilizer-1955214825.html",
+    "imageOriginal": "https://image.made-in-china.com/2f0j00OZWhjlTBrMbY/Disinfection-Air-Sterilization-UVC-Air-Purifier-Equipment-for-Medical-Sterilizer.webp",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear uv supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 790,
+    "imageHeight": 751,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-bbbfea384efe",
@@ -497,7 +530,7 @@
     "category": "mgps",
     "subcategory": "Environmental Air Filtration",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-mcp-7-stage-hepa-air-purifier.jpg",
+    "image": "assets/products/medikabazaar/root-purifier.jpg",
     "features": [
       "Multi-stage particulate filtration",
       "Fan-speed and sleep settings",
@@ -516,12 +549,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/a152fa74daeb4cd18_2_MCP_7_Stage_HEPA_Air_Purifier.jpg",
+    "imageSource": "https://invitop.en.made-in-china.com/product/HFpQfCdwnAVU/China-Commercial-China-OEM-Ce-RoHS-Room-House-Electric-True-HEPA-Filter-H13-Quiet-Air-Purifier.html",
+    "imageOriginal": "https://image.made-in-china.com/2f0j00ToVUNkAMCzcG/Commercial-China-OEM-Ce-RoHS-Room-House-Electric-True-HEPA-Filter-H13-Quiet-Air-Purifier.jpg",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear purifier supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-a6a1bc21c03a",
@@ -529,7 +565,7 @@
     "category": "mgps",
     "subcategory": "Environmental Humidity Control",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-white-westinghouse-dehumidifier.jpg",
+    "image": "assets/products/medikabazaar/root-dehumidifier.jpg",
     "features": [
       "Adjustable humidity control",
       "Condensate collection tank",
@@ -548,12 +584,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/white-westinghouse-4-in-1-dehumidifier-12-litre-awhd123l-04_05_2026-d66930a0.webp",
+    "imageSource": "https://www.leroymerlin.fr/produits/petit-deshumidificateur-domestique-blanc-silencieux-de-2-litres-conforme-aux-normes-europeennes-98335976.html",
+    "imageOriginal": "https://media.adeo.com/mkp/6bd072de5adc77ba947d89652d290bee/media.jpg",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear dehumidifier supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-0c3c76d978c4",
@@ -561,7 +600,7 @@
     "category": "mgps",
     "subcategory": "Theatre Smoke Management",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade.jpg",
+    "image": "assets/products/medikabazaar/root-smoke-pencil2.jpg",
     "features": [
       "Integrated smoke-extraction connection",
       "Non-stick blade design",
@@ -580,12 +619,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade-plp2000-_b4cgbRa.png",
+    "imageSource": "https://www.shouliangmed.com/disposable-electrosurgical-pencil-796",
+    "imageOriginal": "https://www.shouliangmed.com/storage/uploads/images/202411/05/1730786638_0q0vOAUn6O.jpg",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear smoke pencil2 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-656b9134c9f2",
@@ -593,7 +635,7 @@
     "category": "mgps",
     "subcategory": "Theatre Smoke Management",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-buffalo-filter-virosafe-virovac-smoke-evacuation-filter.jpg",
+    "image": "assets/products/medikabazaar/root-smoke-filter3.jpg",
     "features": [
       "Particulate prefilter and fine-filter stages",
       "Activated-carbon odour stage",
@@ -612,12 +654,15 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/buffalo-filter-virosafe-virovac-smoke-evacuation-filter-vs353-14_05_2025-4c60b12b.png",
+    "imageSource": "https://www.starkmed.com.au/products/led-surtron-evac-smoke-evacuation-ulpa-filter",
+    "imageOriginal": "https://www.starkmed.com.au/cdn/shop/files/smoke-evacuation-led-smoke-evacuator-red-ulpa-filter-for-surtron-evac-20h-1_1200x1392.png?v=1710386008",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear smoke filter3 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 1200,
+    "imageHeight": 1392,
+    "imageReviewed": "2026-11-18"
   },
   {
     "id": "mb-ea9530819930",
@@ -625,7 +670,7 @@
     "category": "mgps",
     "subcategory": "Anaesthesia Gas Circuit Filtration",
     "department": "ot",
-    "image": "assets/products/medikabazaar/fm-b-positive-breathing-filter.jpg",
+    "image": "assets/products/medikabazaar/root-hme.jpg",
     "features": [
       "Heat-and-moisture exchange",
       "Bacterial/viral filtration function",
@@ -644,11 +689,14 @@
         "value": "Confirm selected size, interfaces and supplied accessories with quotation"
       }
     ],
-    "imageSource": "https://www.medikabazaar.com/products/b-positive-breathing-filter",
-    "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/b-positive-breathing-filter-adult-pack-of-5-bf-826-20_07_2026-0fa99092.jpeg",
+    "imageSource": "https://teamstandmed.en.made-in-china.com/product/wxvrdbETZhWV/China-High-Quality-Disposable-Breathing-Circuit-Hme-Filter.html",
+    "imageOriginal": "https://image.made-in-china.com/2f0j00ZhzckBGJZtqD/High-Quality-Disposable-Breathing-Circuit-Hme-Filter.jpg",
     "imageKind": "representative",
-    "imageReview": "PENDING_VISUAL_REVIEW",
+    "imageReview": "Full-size visual inspection: clear hme supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
     "origin": "medikabazaar",
-    "imported": "2026-11-18"
+    "imported": "2026-11-18",
+    "imageWidth": 913,
+    "imageHeight": 913,
+    "imageReviewed": "2026-11-18"
   }
 ]

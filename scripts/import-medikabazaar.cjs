@@ -23,7 +23,7 @@ for(const p of additions){
  if(!catalog.departments.some(d=>d.id===p.department))throw Error('Invalid department '+p.department);
  if(!/^https:\/\/(www\.)?medikabazaar\.com\/products\//.test(p.source))throw Error('Missing primary source '+p.name);
  if(!p.sourceName||!p.description||p.description.length<70||!Array.isArray(p.features)||p.features.length<2)throw Error('Incomplete details '+p.name);
- if(!p.imageReview||!p.imageSource||!['exact','representative'].includes(p.imageKind))throw Error('Photo not reviewed '+p.name);
+ if(!p.imageReview||/PENDING/i.test(p.imageReview)||!p.imageSource||!['exact','representative'].includes(p.imageKind))throw Error('Photo not reviewed '+p.name);
  if(!p.image?.startsWith('assets/')||!fs.existsSync(path.join(root,p.image)))throw Error('Missing local image '+p.name);
  if(/medikabazaar|primewear|omron|accusure|morepen|doctroid|vaishnav|labasics|lifex|contec|polymed|romsons|smith\s*&\s*nephew/i.test(p.name))throw Error('Brand in generic name '+p.name);
  p.origin='medikabazaar';

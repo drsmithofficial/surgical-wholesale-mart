@@ -1,0 +1,496 @@
+{
+  "reviewed": "2026-11-18",
+  "baselineTotal": 558,
+  "added": 60,
+  "perCategory": {
+    "furniture": 10,
+    "equipment": 10,
+    "instruments": 10,
+    "mgps": 10,
+    "linen": 10,
+    "consumables": 10
+  },
+  "total": 618,
+  "products": [
+    {
+      "id": "mb-langenbeck-handheld-retractor",
+      "name": "Langenbeck Handheld Retractor",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593",
+      "image": "assets/products/medikabazaar/ref-langenbeck.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-backhaus-towel-clamp",
+      "name": "Backhaus Towel Clamp",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+      "image": "assets/products/medikabazaar/equipinst-1.jpg",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-reusable-ear-speculum-set",
+      "name": "Reusable Ear Speculum Set",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533",
+      "image": "assets/products/medikabazaar/ref-ear.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-digital-blood-glucose-meter",
+      "name": "Digital Blood Glucose Meter",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/dr-morepen-glucometer-mbpgrn1dtdoto14082",
+      "image": "assets/products/medikabazaar/ref-glucose-clean.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-benchtop-laboratory-centrifuge",
+      "name": "Benchtop Laboratory Centrifuge",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/remi-laboratory-centrifuge-mbpgiiimmeppnm12008",
+      "image": "assets/products/medikabazaar/ref-centrifuge-clean.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-non-contact-infrared-thermometer",
+      "name": "Non-Contact Infrared Thermometer",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+      "image": "assets/products/medikabazaar/equipinst-5.jpg",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-handheld-vein-finder",
+      "name": "Handheld Vein Finder",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+      "image": "assets/products/medikabazaar/equipinst-6.webp",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-automatic-upper-arm-blood-pressure-monitor",
+      "name": "Automatic Upper-Arm Blood Pressure Monitor",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/rossmax-automatic-bp-monitor-mbpgsarrx1eatm54864",
+      "image": "assets/products/medikabazaar/ref-bp.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-dual-head-clinical-stethoscope",
+      "name": "Dual-Head Clinical Stethoscope",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/accusure-stethoscope-mbpgauess1ai1l18798",
+      "image": "assets/products/medikabazaar/ref-stethoscope.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-straight-mosquito-artery-forceps",
+      "name": "Straight Mosquito Artery Forceps",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+      "image": "assets/products/medikabazaar/equipinst-9.webp",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-binocular-compound-microscope",
+      "name": "Binocular Compound Microscope",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/esaw-binocular-compound-microscope",
+      "image": "assets/products/medikabazaar/ref-microscope.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-thudichum-nasal-speculum",
+      "name": "Thudichum Nasal Speculum",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+      "image": "assets/products/medikabazaar/equipinst-11.jpg",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-urine-test-strip-analyzer",
+      "name": "Urine Test Strip Analyzer",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/mission-urine-analyzer-mbpgissssnoohc29724",
+      "image": "assets/products/medikabazaar/ref-urine.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-pneumatic-surgical-tourniquet-system",
+      "name": "Pneumatic Surgical Tourniquet System",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/doctroid-tourniquet-machine-mbpgdoiodci1ua16926",
+      "image": "assets/products/medikabazaar/ref-tourniquet.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-portable-hemoglobin-meter",
+      "name": "Portable Hemoglobin Meter",
+      "category": "equipment",
+      "source": "https://www.medikabazaar.com/products/truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488",
+      "image": "assets/products/medikabazaar/ref-hemoglobin-clean.png",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-laryngeal-mirror-with-handle",
+      "name": "Laryngeal Mirror with Handle",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+      "image": "assets/products/medikabazaar/equipinst-15.png",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-metzenbaum-dissecting-scissors",
+      "name": "Metzenbaum Dissecting Scissors",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+      "image": "assets/products/medikabazaar/equipinst-16.png",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-mayo-surgical-scissors",
+      "name": "Mayo Surgical Scissors",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+      "image": "assets/products/medikabazaar/equipinst-17.png",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-allis-tissue-forceps",
+      "name": "Allis Tissue Forceps",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+      "image": "assets/products/medikabazaar/equipinst-18.webp",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-cusco-vaginal-speculum",
+      "name": "Cusco Vaginal Speculum",
+      "category": "instruments",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+      "image": "assets/products/medikabazaar/equipinst-19.webp",
+      "imageKind": "exact"
+    },
+    {
+      "id": "mb-eb50f67ae09c",
+      "name": "Hospital Bed Sheet",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+      "image": "assets/products/medikabazaar/lc-primewear-bed-sheet-mb.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-3b84782bf596",
+      "name": "Hospital Pillow Cover",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+      "image": "assets/products/medikabazaar/lc-primewear-pillow-cover-mb.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-09d53eeda22f",
+      "name": "Reusable Unisex Patient Gown",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/medivastra-unisex-reusable-patient-gown-with-universal-size-mbpgvaaamwaewp37778",
+      "image": "assets/products/medikabazaar/lc-patient-gown.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-0172cdb7eabc",
+      "name": "Wraparound Reinforced Surgical Gown",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/mb-wraparound-reinforced-surgical-gown",
+      "image": "assets/products/medikabazaar/lc-surgical-gown.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-088a3c9f3be8",
+      "name": "Medical Scrub Top and Trouser Set",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/arete-scrub-suit",
+      "image": "assets/products/medikabazaar/lc-scrub.webp",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-1077176e189f",
+      "name": "Operating Theatre Towel",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/desco-ot-towel-mbpgecocdaooub21390",
+      "image": "assets/products/medikabazaar/lc-ot-towel.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-6a3d8f28c6d8",
+      "name": "Patient Warming Blanket",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+      "image": "assets/products/medikabazaar/lc-cocoon-patient-warming-blanket-size.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-ad9a750b236b",
+      "name": "Rubber Protective Bed Sheet",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+      "image": "assets/products/medikabazaar/lc-daynacare-rubber-bed-sheet.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-519f94c242b0",
+      "name": "Universal Surgical Drape Kit",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+      "image": "assets/products/medikabazaar/lc-fine-wear-universal-drape-kit.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-a7f8dffe8163",
+      "name": "PE-Laminated Nonwoven Half Gown",
+      "category": "linen",
+      "source": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+      "image": "assets/products/medikabazaar/lc-primewear-pe-laminated-non-woven-half-gown.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-b6d195b1966e",
+      "name": "Powder-Free Nitrile Examination Gloves",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/first-glove-nitrile-examination-gloves-powder-free-blue",
+      "image": "assets/products/medikabazaar/lc-nitrile.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-5ad1010de0e0",
+      "name": "Disposable Syringe with Needle",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/hi-tech-syringe-with-needle-mbpgc1t1caooub17865",
+      "image": "assets/products/medikabazaar/lc-syringe.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-f470e07553ce",
+      "name": "IV Cannula with Injection Port and Wings",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+      "image": "assets/products/medikabazaar/lc-polymed-polyflon-iv-cannula-with-port.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-6166a6cbabb8",
+      "name": "Two-Way Latex Foley Balloon Catheter",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+      "image": "assets/products/medikabazaar/lc-cruzine-2-way-latex-foley.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-c915be72ba21",
+      "name": "Urine Collection Bag with Drainage Tubing",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+      "image": "assets/products/medikabazaar/lc-ribbel-urine-collection-bag.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-4dc03b61b48c",
+      "name": "Microporous Surgical Paper Tape",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/surgipore-microporous-surgical-tape-mbpgosupgggide24505",
+      "image": "assets/products/medikabazaar/lc-tape-clean.webp",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-54892a81b0f8",
+      "name": "Absorbent Cotton Roll",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/mohini-absorbent-cotton-roll-mbpgoihhocncon25197",
+      "image": "assets/products/medikabazaar/lc-cotton.png",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-5c54f2d39727",
+      "name": "Intravenous Infusion Set",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+      "image": "assets/products/medikabazaar/lc-romsons-infusion-set.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-b0e05304d638",
+      "name": "Sterile Absorbent Gauze Swabs",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/agarwals-absorbent-gauze-swab-sterile-single-pack-mbpgawaarunene54899",
+      "image": "assets/products/medikabazaar/lc-gauze-clean.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-e27dbb532185",
+      "name": "Cuffed Endotracheal Tube",
+      "category": "consumables",
+      "source": "https://www.medikabazaar.com/products/b-positive-endotracheal-tubes-cuffed",
+      "image": "assets/products/medikabazaar/lc-et-clean.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-c371f270eb0f",
+      "name": "Reciprocating Rehabilitation Walker",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544",
+      "image": "assets/products/medikabazaar/fm-tynor-invalid-s-reciprocating-walker.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-9fe5e5b20a78",
+      "name": "Four-Wheel Rollator with Seat",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker",
+      "image": "assets/products/medikabazaar/fm-rollator-ref6.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-e3589fa4279e",
+      "name": "Foldable Adult Walking Frame",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-series-light-weight-walkers",
+      "image": "assets/products/medikabazaar/fm-arrex-marathon-series-premium-rollator-walker.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-5d3a2bab12c9",
+      "name": "Height-Adjustable Paediatric Walker",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults",
+      "image": "assets/products/medikabazaar/fm-arrex-marathon-child-series-walkers-for-kids.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-dcc6496e4185",
+      "name": "Quadripod Walking Stick",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309",
+      "image": "assets/products/medikabazaar/fm-tynor-quadripod-walking-stick.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-fb86f052b5cd",
+      "name": "Adjustable Forearm Crutch",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/bfn-build-for-nurture-elbow-crutch",
+      "image": "assets/products/medikabazaar/fm-arrex-elbow-and-underarm-crutches.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-c5f1d3e62df2",
+      "name": "Adjustable Underarm Crutch",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches",
+      "image": "assets/products/medikabazaar/fm-clean-underarm.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-1df88c0045da",
+      "name": "Folding Bedside Commode Chair",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541",
+      "image": "assets/products/medikabazaar/fm-tynor-foldable-commode-chair.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-0e8fe28d620e",
+      "name": "Height-Adjustable Shower Chair",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair",
+      "image": "assets/products/medikabazaar/fm-ageasy-safesit-shower-chair.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-e9e9ce3857b3",
+      "name": "Portable Oxygen Purity Analyzer",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer",
+      "image": "assets/products/medikabazaar/fm-niscomed-oxygen-analyzer.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-a62d8572016e",
+      "name": "Wheeled Commode Transfer Chair",
+      "category": "furniture",
+      "source": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair",
+      "image": "assets/products/medikabazaar/fm-arrex-xenia-series-commode-wheelchair.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-301144ce50e6",
+      "name": "Pneumatic Air-Oxygen Blender",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/korrida-oxygen-blender",
+      "image": "assets/products/medikabazaar/fm-blender-ref5.webp",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-7b2877461245",
+      "name": "Hospital Air and Differential Pressure Monitor",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
+      "image": "assets/products/medikabazaar/root-pressure2.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-c18a2491b15d",
+      "name": "Operating Theatre Indoor Air Quality Monitor",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor",
+      "image": "assets/products/medikabazaar/root-air-monitor.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-c4f903c92e72",
+      "name": "UV-Assisted Hospital Air Treatment Unit",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
+      "image": "assets/products/medikabazaar/root-uv.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-bbbfea384efe",
+      "name": "HEPA Room Air Purifier",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425",
+      "image": "assets/products/medikabazaar/root-purifier.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-a6a1bc21c03a",
+      "name": "Portable Room Dehumidifier",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier",
+      "image": "assets/products/medikabazaar/root-dehumidifier.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-0c3c76d978c4",
+      "name": "Smoke-Evacuating Electrosurgical Pencil",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
+      "image": "assets/products/medikabazaar/root-smoke-pencil2.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-656b9134c9f2",
+      "name": "Multi-Stage Surgical Smoke Filter",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
+      "image": "assets/products/medikabazaar/root-smoke-filter3.jpg",
+      "imageKind": "representative"
+    },
+    {
+      "id": "mb-ea9530819930",
+      "name": "Breathing Circuit Heat and Moisture Filter",
+      "category": "mgps",
+      "source": "https://www.medikabazaar.com/products/b-positive-breathing-filter",
+      "image": "assets/products/medikabazaar/root-hme.jpg",
+      "imageKind": "representative"
+    }
+  ]
+}

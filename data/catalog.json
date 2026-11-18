@@ -24879,6 +24879,1932 @@
         }
       ],
       "origin": "swm"
+    },
+    {
+      "id": "mb-langenbeck-handheld-retractor",
+      "name": "Langenbeck Handheld Retractor",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/ref-langenbeck.jpg",
+      "features": [
+        "Angled retraction blade",
+        "Hand-held loop handle",
+        "Stainless-steel reference specification"
+      ],
+      "description": "A hand-held Langenbeck retractor for holding back soft tissue and improving access to the surgical field. The angled blade and loop-style handle suit controlled retraction during general surgical procedures. Ask for the required blade dimensions and overall length. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-retractor-lengan-beck-mbpglcasingnrm10593",
+      "sourceName": "Vaishnav Surgicals Retractor Lengan Beck",
+      "imageSource": "https://www.cavashsupplies.co.ke/product/langenbeck-retractor-21-cm-30-x-16-mm-202410220856",
+      "imageOriginal": "https://ucarecdn.com/f4ed78f6-3d01-469a-a3a5-6e140adedaa5/",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Langenbeck Retractor"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless Steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1946,
+      "imageHeight": 1297
+    },
+    {
+      "id": "mb-backhaus-towel-clamp",
+      "name": "Backhaus Towel Clamp",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-1.jpg",
+      "features": [
+        "Curved pointed jaws",
+        "Ring handles with ratchet lock",
+        "Stainless-steel construction"
+      ],
+      "description": "A Backhaus-pattern towel clamp used to secure surgical towels and drapes. The ring handles and locking ratchet support a maintained grip, while curved pointed jaws engage the drape. Confirm the required length and reprocessing instructions before ordering. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+      "sourceName": "Vaishanav Surgicals Backhaus Towel Forcep",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-backhaus-towel-forcep-mbpglcasingnrm10479",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/25e17474edf845189_1_Vaishnav_Surgicals_Towel_Forcep_Backhus.jpg",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Towel Forcep"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 384,
+      "imageHeight": 384
+    },
+    {
+      "id": "mb-reusable-ear-speculum-set",
+      "name": "Reusable Ear Speculum Set",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/ref-ear.jpg",
+      "features": [
+        "Tapered ear examination profiles",
+        "Reusable stainless-steel range",
+        "Multiple size options to confirm"
+      ],
+      "description": "A reusable metal ear-speculum set for visual examination of the external ear canal. The tapered profiles provide access in different canal sizes. Specify the required sizes and compatible examination equipment when requesting a quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-ear-speculum-set-mbpglcasingnrm10533",
+      "sourceName": "Vaishnav Surgicals Ear Speculum Set",
+      "imageSource": "https://www.ubuy.co.in/product/8161VE7GO-aaprotools-set-of-4-pcs-ear-specula-speculum-stainless-steel-ent-instruments",
+      "imageOriginal": "https://image-cdn.ubuy.com/set-of-4-pcs-ear-specula-speculum/400_400_100/694b3580b032b47ebf062780.jpg",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Ear Speculam"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 400,
+      "imageHeight": 400
+    },
+    {
+      "id": "mb-digital-blood-glucose-meter",
+      "name": "Digital Blood Glucose Meter",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-glucose-clean.jpg",
+      "features": [
+        "Digital glucose-result display",
+        "Compatible test strips required",
+        "Portable handheld format"
+      ],
+      "description": "A handheld digital meter for measuring blood glucose using compatible disposable test strips. Its portable format and clear numeric display suit routine glucose checks under the device instructions. Confirm strip compatibility, sample requirements and the supplied accessories for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/dr-morepen-glucometer-mbpgrn1dtdoto14082",
+      "sourceName": "Dr. Morepen Glucometer",
+      "imageSource": "https://www.alibaba.com/product-introduction/Blood-Glucose-Meter-Manufacturing-Line-Set_1600525480626.html",
+      "imageOriginal": "https://sc04.alicdn.com/kf/Hc9e77af69a074dc7bbc407da05f4b80ay.jpg",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 800,
+      "imageHeight": 800
+    },
+    {
+      "id": "mb-benchtop-laboratory-centrifuge",
+      "name": "Benchtop Laboratory Centrifuge",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-centrifuge-clean.jpg",
+      "features": [
+        "Benchtop sample-separation equipment",
+        "Speed and timer controls by configuration",
+        "Rotor and tube capacity on quotation"
+      ],
+      "description": "A benchtop laboratory centrifuge for separating components of prepared samples by controlled spinning. The compact format places sample preparation on a laboratory worktop. Confirm rotor type, tube capacity, speed range, timer settings and balancing requirements for your intended workflow. Product image is a reference; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/remi-laboratory-centrifuge-mbpgiiimmeppnm12008",
+      "sourceName": "Remi Laboratory Centrifuge",
+      "imageSource": "https://www.walmart.com/ip/19040615186",
+      "imageOriginal": "https://i5.walmartimages.com/seo/Fast-Shipping-800-1-Centrifuge-800-1-Laboratory-Centrifuge-800-1-Lab-Centrifuge-Machine-Easy-to-Use_73a2a4cc-e1dc-4cdd-8014-85cfc4629f5b.d8fecf4e78a8982bb30449d183b439de.jpeg",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1600,
+      "imageHeight": 1600
+    },
+    {
+      "id": "mb-non-contact-infrared-thermometer",
+      "name": "Non-Contact Infrared Thermometer",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/equipinst-5.jpg",
+      "features": [
+        "Infrared temperature measurement",
+        "Digital result display",
+        "Automatic shut-off in source configuration"
+      ],
+      "description": "A non-contact infrared thermometer for temperature measurement without direct skin contact. The source listing describes a digital display and automatic shut-off. Confirm body/object modes, measurement distance, accuracy range and included batteries for the quoted configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+      "sourceName": "MCP Infrared Thermometer",
+      "imageSource": "https://www.medikabazaar.com/products/mcp-infrared-thermometer-mbpgmtpcmtmtee19399",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/mcp-infrared-thermometer-17_02_2025-28cc6d29.jpg",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Outer Material",
+          "value": "Plastic"
+        },
+        {
+          "label": "Display Type",
+          "value": "Digital"
+        },
+        {
+          "label": "Connectivity Technology",
+          "value": "Infrared"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1084,
+      "imageHeight": 2000
+    },
+    {
+      "id": "mb-handheld-vein-finder",
+      "name": "Handheld Vein Finder",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/equipinst-6.webp",
+      "features": [
+        "Portable vein-visualisation format",
+        "Infant-use configuration listed",
+        "Charger configuration to confirm"
+      ],
+      "description": "A handheld vein-visualisation device for assisting identification of superficial veins. The source range includes an infant-use version supplied with a charger. Confirm the intended patient group, illumination method, accessories and applicable operating instructions with your quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+      "sourceName": "Doctroid Vein Finder",
+      "imageSource": "https://www.medikabazaar.com/products/doctroid-vein-finder-mbpgdoiodreeiv16919",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/doctroid-vein-finder-infant-with-charger-07_04_2026-048e47ec.webp",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-automatic-upper-arm-blood-pressure-monitor",
+      "name": "Automatic Upper-Arm Blood Pressure Monitor",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-bp.jpg",
+      "features": [
+        "Automatic upper-arm measurement",
+        "Digital blood-pressure and pulse readings",
+        "Cuff size and power options to confirm"
+      ],
+      "description": "An automatic upper-arm digital monitor for blood-pressure and pulse measurements. A cuff connects to the compact display unit for routine readings in clinical or home-care settings according to the device instructions. Confirm cuff size, power options and validation documentation for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/rossmax-automatic-bp-monitor-mbpgsarrx1eatm54864",
+      "sourceName": "Rossmax Automatic BP Monitor",
+      "imageSource": "https://gzmaya.en.made-in-china.com/product/vEBYkDjdATVg/China-2021-New-Design-U81e-Smart-Digital-Arm-Blood-Pressure-Monitor-Health-Care-OEM-Service-Medical-Home-Used-Automatic-Machine.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00UGjqKEulbcoN/2021-New-Design-U81e-Smart-Digital-Arm-Blood-Pressure-Monitor-Health-Care-OEM-Service-Medical-Home-Used-Automatic-Machine.jpg",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 2266,
+      "imageHeight": 2266
+    },
+    {
+      "id": "mb-dual-head-clinical-stethoscope",
+      "name": "Dual-Head Clinical Stethoscope",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-stethoscope.jpg",
+      "features": [
+        "Clinical auscultation instrument",
+        "Dual-head reference design",
+        "Flexible tubing and ear tubes"
+      ],
+      "description": "A dual-head clinical stethoscope for listening to body sounds during examination. Flexible tubing connects the chestpiece to the ear tubes for bedside auscultation. Confirm chestpiece type, patient group, materials and supplied ear tips for the required configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/accusure-stethoscope-mbpgauess1ai1l18798",
+      "sourceName": "Accusure Stethoscope",
+      "imageSource": "https://www.ccms.ie/products/dual-head-stethoscope",
+      "imageOriginal": "https://www.ccms.ie/cdn/shop/products/ke-0505_1_520x.jpg?v=1594034159",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Chest Piece Material",
+          "value": "Aluminium Chrome Plated"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 520,
+      "imageHeight": 520
+    },
+    {
+      "id": "mb-straight-mosquito-artery-forceps",
+      "name": "Straight Mosquito Artery Forceps",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-9.webp",
+      "features": [
+        "Straight fine-jaw pattern",
+        "Ring handles with ratchet",
+        "Stainless-steel reference specification"
+      ],
+      "description": "Straight mosquito-pattern artery forceps for controlled grasping and clamping during surgical procedures. The fine jaws, finger-ring handles and ratchet allow a maintained grip. Confirm length, jaw pattern and reprocessing requirements for the supplied instrument. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+      "sourceName": "Vaishanav Surgicals Mosquito Artery Forceps Straight",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-mosquito-artery-forceps-straight-mbpglcasingnrm10471",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-mosquito-artery-forcep-6inch-04_05_2026-b26283c0.webp",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Artery Forcep"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-binocular-compound-microscope",
+      "name": "Binocular Compound Microscope",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-microscope.jpg",
+      "features": [
+        "Binocular viewing head",
+        "Selectable objective lenses",
+        "Laboratory specimen observation"
+      ],
+      "description": "A binocular compound microscope for viewing prepared specimens in laboratory and teaching settings. The two-eyepiece format supports comfortable observation through selectable objective lenses. Confirm magnification range, objectives, illumination and stage configuration for your application. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/esaw-binocular-compound-microscope",
+      "sourceName": "ESAW Binocular Compound Microscope",
+      "imageSource": "https://www.jcinstruments.com.au/products/40x-1600x-binocular-compound-microscope-professional-lab-biological-microscope",
+      "imageOriginal": "https://www.jcinstruments.com.au/cdn/shop/files/s-l1600_1_08798406-421b-4ee8-b5be-913f41b2fc09.jpg?v=1724059341&width=600",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 600,
+      "imageHeight": 600
+    },
+    {
+      "id": "mb-thudichum-nasal-speculum",
+      "name": "Thudichum Nasal Speculum",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-11.jpg",
+      "features": [
+        "ENT examination instrument",
+        "Two-blade opening profile",
+        "Stainless-steel reference specification"
+      ],
+      "description": "A Thudichum-pattern nasal speculum for access and visual examination of the nasal cavity. The spring-style handle separates the two blades during controlled examination. Specify the required blade size, material finish and reprocessing method when enquiring. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+      "sourceName": "Vaishnav Surgicals Nasal Speculum Thudichum Set",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-nasal-speculum-thudichum-set-mbpglcasingnrm10531",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/f577e544979a4895b_1_Vaishanav_Surgical_Nasal_speculum_thudichum.jpg",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Thudicgum Nasal Speculum"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 666
+    },
+    {
+      "id": "mb-urine-test-strip-analyzer",
+      "name": "Urine Test Strip Analyzer",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-urine.jpg",
+      "features": [
+        "Electronic urine-strip reading",
+        "Compact benchtop format",
+        "Compatible reagent strips to confirm"
+      ],
+      "description": "A compact urine test-strip analyzer for reading compatible reagent strips in clinical and pathology workflows. It reduces reliance on manual visual colour comparison by displaying test results electronically. Confirm the validated strip types, parameters, throughput and printer or connectivity options for the quoted unit. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/mission-urine-analyzer-mbpgissssnoohc29724",
+      "sourceName": "Mission Urine Analyzer",
+      "imageSource": "https://fr.made-in-china.com/co_soymed/product_Medical-Laboratory-Equipment-Fully-Automated-Biochemistry-Urine-Analyzer-Chemistry_uohohusnny.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00NnLiVlkGkSgd/Medical-Laboratory-Equipment-Fully-Automated-Biochemistry-Urine-Analyzer-Chemistry.jpg",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 2144,
+      "imageHeight": 2140
+    },
+    {
+      "id": "mb-pneumatic-surgical-tourniquet-system",
+      "name": "Pneumatic Surgical Tourniquet System",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-tourniquet.jpg",
+      "features": [
+        "Pneumatic cuff-control system",
+        "Two-cuff source configuration",
+        "Pressure, timer and alarm options to confirm"
+      ],
+      "description": "A pneumatic surgical tourniquet system for controlled cuff inflation during procedures by trained clinical users. The source listing includes a two-cuff configuration. Confirm channel count, cuff sizes, pressure limits, alarms and accessories against the required clinical protocol. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/doctroid-tourniquet-machine-mbpgdoiodci1ua16926",
+      "sourceName": "Doctroid Tourniquet Machine",
+      "imageSource": "https://fsconcern.en.made-in-china.com/product/hGRpzJExBXVr/China-Medical-Double-Channel-Electric-Pneumatic-Tourniquet-System-Machine-Hemostatic-Automatic-Tourniquet-System.html",
+      "imageOriginal": "https://image.made-in-china.com/203f0j00RYfensFdLKkE/Medical-Double-Channel-Electric-Pneumatic-Tourniquet-System-Machine-Hemostatic-Automatic-Tourniquet-System.webp",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 960,
+      "imageHeight": 911
+    },
+    {
+      "id": "mb-portable-hemoglobin-meter",
+      "name": "Portable Hemoglobin Meter",
+      "category": "equipment",
+      "subcategory": "Clinical & Laboratory Diagnostics",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/ref-hemoglobin-clean.png",
+      "features": [
+        "Handheld digital hemoglobin testing",
+        "Device-specific sampling consumables",
+        "One-unit source listing"
+      ],
+      "description": "A portable digital hemoglobin meter for point-of-care measurement using its specified blood-sampling consumables. The handheld format supports testing where a compact analyzer is required. Confirm sample type, measuring range, compatible consumables and quality-control procedures for the quoted model. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/truehb-hb-haemoglobin-meter-mbpgbrruutdoto24488",
+      "sourceName": "TrueHb Hb Hemoglobin Meter",
+      "imageSource": "https://www.wedocareu.com/product/Anemia-test-kit-Portable-Home-Hemoglobin-Meter-With-Strips-and-lancets",
+      "imageOriginal": "https://www.wedocareu.com/images/hemoglobin_meters/_copied_598a341b20240711164343917-Hemoglobin-Meter--a99be73c.png",
+      "imageKind": "representative",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Representative product-type photo; not confirmation of exact source model, size, contents or configuration.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 500,
+      "imageHeight": 500
+    },
+    {
+      "id": "mb-laryngeal-mirror-with-handle",
+      "name": "Laryngeal Mirror with Handle",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-15.png",
+      "features": [
+        "Mirror head with handle",
+        "ENT examination instrument",
+        "Stainless-steel source material"
+      ],
+      "description": "A laryngeal examination mirror supplied with a handle for indirect visual examination by trained users. The compact mirror head supports viewing in areas that are difficult to inspect directly. Specify mirror diameter, handle configuration and reprocessing requirements when requesting a quotation. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+      "sourceName": "Vaishnav Surgicals Larngeal Mirror with Handle",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-larngeal-mirror-with-handle-mbpglcasingnrm10564",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/1a5ac2daca69440fb_image.png",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Larngeal Mirror"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 500,
+      "imageHeight": 375
+    },
+    {
+      "id": "mb-metzenbaum-dissecting-scissors",
+      "name": "Metzenbaum Dissecting Scissors",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-16.png",
+      "features": [
+        "Slender dissecting-scissor profile",
+        "Ring-handle control",
+        "Straight and curved patterns to confirm"
+      ],
+      "description": "Metzenbaum-pattern dissecting scissors for controlled cutting and dissection of soft tissue. The slender shanks and fine blades distinguish this instrument from heavier general surgical scissors. Confirm straight or curved pattern, length and supplied material finish. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+      "sourceName": "Reviti Metzenbaum Scissors",
+      "imageSource": "https://www.medikabazaar.com/products/reviti-metzenbaum-strong-cut-scissors-cvd-mbpgnovrlr1tim29351",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/9c7a772954d948ae8_image.png",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 2560,
+      "imageHeight": 2560
+    },
+    {
+      "id": "mb-mayo-surgical-scissors",
+      "name": "Mayo Surgical Scissors",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-17.png",
+      "features": [
+        "General surgical scissor pattern",
+        "Heavier blade profile",
+        "Straight and curved options to confirm"
+      ],
+      "description": "Mayo-pattern surgical scissors for general surgical cutting tasks appropriate to the selected instrument. The heavier blade profile differs from fine dissecting scissors. Specify overall length, straight or curved pattern and reprocessing requirements for the required configuration. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+      "sourceName": "Reviti Mayo Scissors",
+      "imageSource": "https://www.medikabazaar.com/products/reviti-mayo-strong-cut-scissors-cvd-mbpgnovrlr1tim29348",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/5-x-reviti-mayo-scissors-55inch-straight-13_11_2026-b5dc5b83.png",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 645,
+      "imageHeight": 1303
+    },
+    {
+      "id": "mb-allis-tissue-forceps",
+      "name": "Allis Tissue Forceps",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-18.webp",
+      "features": [
+        "Toothed tissue-grasping jaws",
+        "Ring handles with ratchet",
+        "Stainless-steel reference specification"
+      ],
+      "description": "Allis-pattern tissue forceps for grasping tissue during surgical procedures. The toothed jaw pattern and locking ring handles provide controlled retention. Confirm jaw-tooth pattern, overall length and the intended tissue application with the supplying team. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+      "sourceName": "Vaishanav Surgicals Allice Tissue Forcep",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-allice-tissue-forcep-mbpglcasingnrm10473",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishnav-surgicals-allice-tissue-forcep-5inch-04_05_2026-873594ea.webp",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Allice Forcep"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-cusco-vaginal-speculum",
+      "name": "Cusco Vaginal Speculum",
+      "category": "instruments",
+      "subcategory": "Reusable Surgical Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/equipinst-19.webp",
+      "features": [
+        "Bivalve examination profile",
+        "Self-retaining adjustment screw",
+        "Stainless-steel source material"
+      ],
+      "description": "A Cusco-pattern bivalve vaginal speculum for gynaecological examination by trained clinical users. The self-retaining screw mechanism holds the blades at the selected opening. Specify the required size, finish and reprocessing instructions before ordering. Product image and listed range are references; final supplied configuration, accessories and specifications are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+      "sourceName": "Vaishnav Surgicals Vaginal Specullum Cusco",
+      "imageSource": "https://www.medikabazaar.com/products/vaishnav-surgicals-vaginal-specullum-cusco-mbpglcasingnrm10523",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/vaishanav-surgical-vaginal-speculum-cusco-small-04_05_2026-99477315.webp",
+      "imageKind": "exact",
+      "origin": "medikabazaar",
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Cusco Speculum"
+        },
+        {
+          "label": "Material",
+          "value": "Stainless steel"
+        }
+      ],
+      "imageReview": "Visually inspected at full size: no visible manufacturer name, logo or watermark. Original source product photo; requested size and configuration must be confirmed.",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-eb50f67ae09c",
+      "name": "Hospital Bed Sheet",
+      "category": "linen",
+      "subcategory": "Bed Linen",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-primewear-bed-sheet-mb.jpg",
+      "features": [
+        "Bed-covering sheet",
+        "Reference size: 120 × 230 cm",
+        "For ward and examination beds"
+      ],
+      "description": "Bed-covering linen for hospital wards, clinics and examination settings. The reference listing specifies a 120 × 230 cm sheet. Share the mattress dimensions and required quantity so the team can confirm the fit, fabric, care instructions and supplied configuration.",
+      "source": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+      "sourceName": "Primewear Bed Sheet",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/primewear-bed-sheet-mbpgpammmapepn16165",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-bed-sheet-120230cm-po966-20_06_2026-959ef616.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference size",
+          "value": "120 × 230 cm"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-3b84782bf596",
+      "name": "Hospital Pillow Cover",
+      "category": "linen",
+      "subcategory": "Bed Linen",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-primewear-pillow-cover-mb.jpg",
+      "features": [
+        "Pillow-cover format",
+        "Soft fabric surface",
+        "For patient-bed linen sets"
+      ],
+      "description": "A pillow cover for hospital and clinical bedding. The reference product is supplied as a separate linen item. Confirm the pillow dimensions, closure style, material and laundering requirements before ordering.",
+      "source": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+      "sourceName": "Primewear pillow cover",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/primewear-pillow-cover-mbpgpammmapepn16169",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pillow-cover-po969-20_06_2026-b25000d0.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-09d53eeda22f",
+      "name": "Reusable Unisex Patient Gown",
+      "category": "linen",
+      "subcategory": "Patient Clothing",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-patient-gown.jpg",
+      "features": [
+        "Reusable gown design",
+        "Universal-size reference",
+        "Adjustable closures"
+      ],
+      "description": "A reusable patient gown intended for routine healthcare clothing requirements. The reference listing describes a unisex universal-size design with adjustable closures. Confirm garment measurements, material, fastening and laundering instructions for your facility.",
+      "source": "https://www.medikabazaar.com/products/medivastra-unisex-reusable-patient-gown-with-universal-size-mbpgvaaamwaewp37778",
+      "sourceName": "Medivastra Unisex Reusable Patient Gown with Universal Size",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.diamondathletic.com/products/patient-gown",
+      "imageOriginal": "https://www.diamondathletic.com/cdn/shop/products/PATIENT_GOWN.jpg?v=1578087381",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference fit",
+          "value": "Unisex universal size"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1968,
+      "imageHeight": 4008
+    },
+    {
+      "id": "mb-0172cdb7eabc",
+      "name": "Wraparound Reinforced Surgical Gown",
+      "category": "linen",
+      "subcategory": "Surgical Clothing",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/lc-surgical-gown.jpg",
+      "features": [
+        "Wraparound gown format",
+        "Reinforced construction",
+        "Long-sleeve surgical clothing"
+      ],
+      "description": "A wraparound reinforced gown for operating-theatre clothing requirements. The reference product is listed in an XL configuration. Confirm the supplied size, reinforcement areas, sterile-pack status and applicable documentation with the quotation. The photograph illustrates the gown type rather than the exact pack.",
+      "source": "https://www.medikabazaar.com/products/mb-wraparound-reinforced-surgical-gown",
+      "sourceName": "mb+ Wraparound Reinforced Surgical Gown",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.eb-med.com/consumables/protective-wear/surgical-gown-large",
+      "imageOriginal": "https://www.eb-med.com/images/product/source/K189.jpg?t=1729590717",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference size",
+          "value": "XL"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 1200
+    },
+    {
+      "id": "mb-088a3c9f3be8",
+      "name": "Medical Scrub Top and Trouser Set",
+      "category": "linen",
+      "subcategory": "Staff Uniforms",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/lc-scrub.webp",
+      "features": [
+        "Matching top and trousers",
+        "Pocketed uniform design",
+        "Unisex fit options"
+      ],
+      "description": "A matching scrub top and trouser set for medical staff. The reference listing describes a practical pocketed uniform with a unisex fit. Confirm the size chart, colour, fabric composition, pack contents and washing instructions for the supplied set.",
+      "source": "https://www.medikabazaar.com/products/arete-scrub-suit",
+      "sourceName": "Arete Scrub Suit",
+      "origin": "medikabazaar",
+      "imageSource": "https://genxportservices.com/",
+      "imageOriginal": "https://genxportservices.com/images/us/Medical_lab_Coat%26Scrub.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1592,
+      "imageHeight": 1592
+    },
+    {
+      "id": "mb-1077176e189f",
+      "name": "Operating Theatre Towel",
+      "category": "linen",
+      "subcategory": "Surgical Linen",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/lc-ot-towel.jpg",
+      "features": [
+        "Operating-theatre textile",
+        "Foldable towel format",
+        "Size options on quotation"
+      ],
+      "description": "An operating-theatre towel for surgical linen procurement. Request the required dimensions, weave, colour and quantity for your facility. The team can confirm the supplied material, laundering instructions and preparation requirements with the quotation.",
+      "source": "https://www.medikabazaar.com/products/desco-ot-towel-mbpgecocdaooub21390",
+      "sourceName": "Desco OT Towel",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.onlinestore.kirikan.com/products/general-345",
+      "imageOriginal": "https://www.onlinestore.kirikan.com/cdn/shop/products/item_345.jpg?v=1657277166",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 1000
+    },
+    {
+      "id": "mb-6a3d8f28c6d8",
+      "name": "Patient Warming Blanket",
+      "category": "linen",
+      "subcategory": "Patient Warming Linen",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/lc-cocoon-patient-warming-blanket-size.jpg",
+      "features": [
+        "Patient-warming blanket",
+        "Reference size: 100 × 195 cm",
+        "System compatibility to confirm"
+      ],
+      "description": "A patient-warming blanket in the 100 × 195 cm size shown in the reference listing. Confirm the intended warming system, connection requirements, patient positioning and single-use or reuse status before ordering. The source diagram illustrates the blanket layout.",
+      "source": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+      "sourceName": "Cocoon Patient Warming Blanket Size 100 X 195cm CLM 0101",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-mbpgconnn1eatm27747",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/cocoon-patient-warming-blanket-size-100-x-195cm-clm-0101-04_05_2026-a6727aa3.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Original supplier diagram is used as a representative product-layout image.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference size",
+          "value": "100 × 195 cm"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-ad9a750b236b",
+      "name": "Rubber Protective Bed Sheet",
+      "category": "linen",
+      "subcategory": "Protective Bed Linen",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-daynacare-rubber-bed-sheet.jpg",
+      "features": [
+        "Rubber sheet material",
+        "Bed-protection format",
+        "Reference length: 1 metre"
+      ],
+      "description": "A rubber protective bed sheet for hospital and nursing-care linen requirements. The reference listing identifies a one-metre option. Confirm the width, thickness, colour, cleaning method and required length before ordering.",
+      "source": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+      "sourceName": "Daynacare Rubber Bed Sheet",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/daynacare-rubber-bed-sheet",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/daynacare-rubber-bed-sheet-1mtr-21_06_2026-3d3bd16d.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference length",
+          "value": "1 metre"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-519f94c242b0",
+      "name": "Universal Surgical Drape Kit",
+      "category": "linen",
+      "subcategory": "Surgical Drapes",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/lc-fine-wear-universal-drape-kit.jpg",
+      "features": [
+        "Multi-piece drape kit",
+        "Universal procedure layout",
+        "Adhesive drape elements"
+      ],
+      "description": "A multi-piece surgical drape kit for procedure-room and theatre procurement. The reference listing describes a universal set with adhesive drape elements. Request the exact contents list, drape sizes, fenestration layout, packaging and sterile-status documentation with the quotation. The illustration shows a representative layout.",
+      "source": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+      "sourceName": "Fine Wear Universal Drape Kit",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/fine-wear-universal-drape-kit-mbpgrnfweno1ei31770",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/b1bf8d21d33c467a9_image.png",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Original supplier diagram is used as a representative product-layout image.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Kit type",
+          "value": "Universal drape kit"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 461,
+      "imageHeight": 458
+    },
+    {
+      "id": "mb-a7f8dffe8163",
+      "name": "PE-Laminated Nonwoven Half Gown",
+      "category": "linen",
+      "subcategory": "Protective Clothing",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-primewear-pe-laminated-non-woven-half-gown.jpg",
+      "features": [
+        "PE-laminated construction",
+        "Nonwoven textile",
+        "Half-gown format"
+      ],
+      "description": "A PE-laminated nonwoven half gown for clinical protective-clothing requirements. The reference listing identifies the laminated nonwoven material and half-gown format. Confirm the garment dimensions, closures, pack quantity and intended procedure requirements before selecting the supplied variant.",
+      "source": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+      "sourceName": "Primewear PE Laminated Non woven Half Gown",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/primewear-pe-laminated-non-woven-half-gown-mbpgpammmapepn16385",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/primewear-pe-laminated-non-woven-half-gown-po810-12_06_2026-060d8fdd.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Construction",
+          "value": "PE-laminated nonwoven"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-b6d195b1966e",
+      "name": "Powder-Free Nitrile Examination Gloves",
+      "category": "consumables",
+      "subcategory": "Examination Gloves",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-nitrile.jpg",
+      "features": [
+        "Nitrile material",
+        "Powder-free finish",
+        "Blue examination-glove format"
+      ],
+      "description": "Powder-free nitrile examination gloves for clinical examination and routine healthcare handling requirements. The reference listing includes a blue large-size option. Confirm glove size, examination-use documentation, pack count and latex-related requirements before ordering.",
+      "source": "https://www.medikabazaar.com/products/first-glove-nitrile-examination-gloves-powder-free-blue",
+      "sourceName": "First Glove Nitrile Examination Gloves",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.wardsflex.co.uk/carton-of-nitrile-gloves-10-x-boxes-of-100-pairs-large/",
+      "imageOriginal": "https://cdn11.bigcommerce.com/s-h84dhzjs32/images/stencil/1280x1280/products/1375/4228/Nitrile_gloves_6__07721.1632999305.jpg?c=2",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Material",
+          "value": "Nitrile"
+        },
+        {
+          "label": "Finish",
+          "value": "Powder-free"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 750,
+      "imageHeight": 750
+    },
+    {
+      "id": "mb-5ad1010de0e0",
+      "name": "Disposable Syringe with Needle",
+      "category": "consumables",
+      "subcategory": "Injection Consumables",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-syringe.jpg",
+      "features": [
+        "Graduated syringe barrel",
+        "Needle included",
+        "Reference capacity: 2 ml"
+      ],
+      "description": "A syringe-and-needle consumable for healthcare procurement. The reference listing specifies a 2 ml syringe with a 24G needle. Confirm the volume, needle gauge and length, connection type, pack count and sterile packaging before ordering. The photograph is a product-type reference.",
+      "source": "https://www.medikabazaar.com/products/hi-tech-syringe-with-needle-mbpgc1t1caooub17865",
+      "sourceName": "Hi-Tech Syringe with Needle",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.vetro.ro/en/prima-luer-slip-syringes-with-blue-needle-2ml-100-pieces/",
+      "imageOriginal": "https://www.vetro.ro/pub/media/catalog/product/cache/a55131ddd0dba4f99636768543f1ef4d/0/2/0236-02ml__a_seringi_luer_slip_2ml_prima_cu_ac_albastru_100_bucati.jpg",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference syringe capacity",
+          "value": "2 ml"
+        },
+        {
+          "label": "Reference needle gauge",
+          "value": "24G"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 700,
+      "imageHeight": 700
+    },
+    {
+      "id": "mb-f470e07553ce",
+      "name": "IV Cannula with Injection Port and Wings",
+      "category": "consumables",
+      "subcategory": "Intravenous Access",
+      "department": "icu",
+      "image": "assets/products/medikabazaar/lc-polymed-polyflon-iv-cannula-with-port.jpg",
+      "features": [
+        "Integrated injection port",
+        "Fixation wings",
+        "Transparent hub"
+      ],
+      "description": "An intravenous cannula with an injection port, fixation wings and a transparent hub. The reference listing includes multiple sizes and identifies a 14G option. Confirm the intended gauge, catheter dimensions, connector arrangement and sterile packaging for the supplied configuration.",
+      "source": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+      "sourceName": "Polymed Polyflon IV Cannula With Port and Wings",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/polymed-polyflon-iv-cannula-with-port-and-wings-mbpgyedelaooub39830",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/e9258324300d487b9_polyflon.jpg",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference gauge",
+          "value": "14G"
+        },
+        {
+          "label": "Components",
+          "value": "Injection port and fixation wings"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 500,
+      "imageHeight": 500
+    },
+    {
+      "id": "mb-6166a6cbabb8",
+      "name": "Two-Way Latex Foley Balloon Catheter",
+      "category": "consumables",
+      "subcategory": "Urinary Care",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-cruzine-2-way-latex-foley.jpg",
+      "features": [
+        "Two-way catheter format",
+        "Latex construction",
+        "Retention-balloon design"
+      ],
+      "description": "A two-way latex Foley balloon catheter for urinary-care procurement. The reference listing identifies a 20Fr configuration with a stated balloon-volume range of 30–50 ml. Confirm the size, balloon specification, latex suitability and sterile-pack details with the quotation. Use requires qualified clinical selection.",
+      "source": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+      "sourceName": "Cruzine 2-Way Latex Foley Balloon Catheter",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/cruzine-2-way-latex-foley-balloon-catheter-mbpgiurieaooub29857",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/f67a3b4d0c664b1ab_image.png",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference size",
+          "value": "20Fr"
+        },
+        {
+          "label": "Reference balloon capacity",
+          "value": "30–50 ml"
+        },
+        {
+          "label": "Material",
+          "value": "Latex"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 682
+    },
+    {
+      "id": "mb-c915be72ba21",
+      "name": "Urine Collection Bag with Drainage Tubing",
+      "category": "consumables",
+      "subcategory": "Urinary Care",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/lc-ribbel-urine-collection-bag.jpg",
+      "features": [
+        "Graduated collection bag",
+        "Drainage tubing",
+        "Reference capacity: 2000 ml"
+      ],
+      "description": "A graduated urine-collection bag with drainage tubing for ward and nursing-care requirements. The reference listing specifies a 2000 ml capacity and 90 cm tube. Confirm the connector, outlet, hanging arrangement, sterile status and pack quantity before ordering.",
+      "source": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+      "sourceName": "Ribbel Urine collection bag",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/ribbel-urine-collection-bag-mbpgbrbeb1abug20783",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/178451ec4bbe452c9_mbril250.jpg",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference bag capacity",
+          "value": "2000 ml"
+        },
+        {
+          "label": "Reference tube length",
+          "value": "90 cm"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 640,
+      "imageHeight": 640
+    },
+    {
+      "id": "mb-4dc03b61b48c",
+      "name": "Microporous Surgical Paper Tape",
+      "category": "consumables",
+      "subcategory": "Dressing Fixation",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-tape-clean.webp",
+      "features": [
+        "Paper-tape construction",
+        "Microporous texture",
+        "Roll format"
+      ],
+      "description": "Microporous surgical paper tape for dressing-fixation requirements. The reference listing specifies a 1-inch width and 9.1-metre roll. Confirm the required width, roll length, adhesive suitability and pack count with the team. The photograph illustrates unbranded tape rolls rather than exact packaging.",
+      "source": "https://www.medikabazaar.com/products/surgipore-microporous-surgical-tape-mbpgosupgggide24505",
+      "sourceName": "Surgipore Microporous Surgical tape",
+      "origin": "medikabazaar",
+      "imageSource": "https://kr.made-in-china.com/co_ajhdmedical/product_Medical-Paper-Tape-Surgical-Mircoporous-Tape_uoggonynig.html",
+      "imageOriginal": "https://image.made-in-china.com/202f0j00pKhVuwYCfmqg/Medical-Paper-Tape-Surgical-Mircoporous-Tape.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference width",
+          "value": "1 inch"
+        },
+        {
+          "label": "Reference roll length",
+          "value": "9.1 metres"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 550,
+      "imageHeight": 490
+    },
+    {
+      "id": "mb-54892a81b0f8",
+      "name": "Absorbent Cotton Roll",
+      "category": "consumables",
+      "subcategory": "Wound Care Consumables",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-cotton.png",
+      "features": [
+        "Absorbent cotton material",
+        "Roll format",
+        "Reference pack weight: 50 g"
+      ],
+      "description": "An absorbent cotton roll for wound-care and dressing procurement. The source listing includes a 50 g option. Confirm the supplied weight, roll dimensions, sterile or non-sterile status and intended-use requirements before ordering. The photograph is a representative unwrapped cotton roll.",
+      "source": "https://www.medikabazaar.com/products/mohini-absorbent-cotton-roll-mbpgoihhocncon25197",
+      "sourceName": "Mohini Absorbent Cotton Roll Gross",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.jumbomed.com/medical-absorbent-sterile-cotton-wool-roll-product/",
+      "imageOriginal": "https://cdn.globalso.com/jumbomed/Medical-Cotton-Roll.png",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference pack weight",
+          "value": "50 g"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 1000
+    },
+    {
+      "id": "mb-5c54f2d39727",
+      "name": "Intravenous Infusion Set",
+      "category": "consumables",
+      "subcategory": "Infusion Consumables",
+      "department": "icu",
+      "image": "assets/products/medikabazaar/lc-romsons-infusion-set.jpg",
+      "features": [
+        "Drip-chamber assembly",
+        "Flexible infusion tubing",
+        "Flow-control roller clamp"
+      ],
+      "description": "An infusion set for intravenous fluid-administration procurement. The product format includes a drip chamber, flexible tubing and flow-control clamp. Confirm the connector type, tubing length, drop factor, filters, sterile status and pack contents for the supplied set.",
+      "source": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+      "sourceName": "Romsons Transflow Infusion Set",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.medikabazaar.com/products/romsons-transflow-infusion-set-mbpgmrsmmaooub15893",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/romsons-transflow-infusion-set-pack-of-25-ss-3063-12_06_2026-64e145ff.webp",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-b0e05304d638",
+      "name": "Sterile Absorbent Gauze Swabs",
+      "category": "consumables",
+      "subcategory": "Wound Dressings",
+      "department": "opd",
+      "image": "assets/products/medikabazaar/lc-gauze-clean.jpg",
+      "features": [
+        "Absorbent gauze format",
+        "Reference size: 7.5 × 7.5 cm",
+        "Reference construction: 12 ply"
+      ],
+      "description": "Sterile absorbent gauze swabs for wound-care and dressing procurement. The reference listing identifies 7.5 × 7.5 cm, 12-ply swabs. Confirm the supplied dimensions, ply, sterile packaging, pack count and any X-ray-detectable element requirements with the quotation.",
+      "source": "https://www.medikabazaar.com/products/agarwals-absorbent-gauze-swab-sterile-single-pack-mbpgawaarunene54899",
+      "sourceName": "Agarwals Absorbent Gauze Swab Sterile Single Pack",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.disposablemedical-products.com/sale-35945969-hospital-sterile-medical-gauze-swab-soft-absorbent-4x4-x-ray-detectable.html",
+      "imageOriginal": "https://www.disposablemedical-products.com/photo/pl141318727-hospital_sterile_medical_gauze_swab_soft_absorbent_4x4_x_ray_detectable.jpg",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference dimensions",
+          "value": "7.5 × 7.5 cm"
+        },
+        {
+          "label": "Reference ply",
+          "value": "12 ply"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 800,
+      "imageHeight": 800
+    },
+    {
+      "id": "mb-e27dbb532185",
+      "name": "Cuffed Endotracheal Tube",
+      "category": "consumables",
+      "subcategory": "Airway Consumables",
+      "department": "emergency",
+      "image": "assets/products/medikabazaar/lc-et-clean.jpg",
+      "features": [
+        "Inflatable cuff",
+        "Pilot balloon",
+        "Graduated tube markings"
+      ],
+      "description": "A cuffed endotracheal tube for professional airway-management procurement. The reference listing includes a 2.5 mm size option. Confirm the patient-appropriate size, cuff specification, connector, sterile status and packaging before ordering. The photograph shows a representative cuffed tube; qualified clinical selection is required.",
+      "source": "https://www.medikabazaar.com/products/b-positive-endotracheal-tubes-cuffed",
+      "sourceName": "B Positive Endotracheal Tubes Cuffed",
+      "origin": "medikabazaar",
+      "imageSource": "https://www.formedtech.com/standard-endotracheal-tube-cuffed.html",
+      "imageOriginal": "https://www.formedtech.com/media/57/%E5%B0%8F1_11.jpg",
+      "imageKind": "representative",
+      "imageReview": "Visually reviewed at full size or review sheet: no visible manufacturer wordmark, logo or watermark. Representative product-type photo; exact material, size, pack contents and configuration require confirmation.",
+      "imageReviewed": "2026-11-18",
+      "specifications": [
+        {
+          "label": "Reference internal diameter",
+          "value": "2.5 mm"
+        },
+        {
+          "label": "Tube type",
+          "value": "Cuffed"
+        }
+      ],
+      "sourceReviewed": "2026-11-18",
+      "imageWidth": 800,
+      "imageHeight": 800
+    },
+    {
+      "id": "mb-c371f270eb0f",
+      "name": "Reciprocating Rehabilitation Walker",
+      "category": "furniture",
+      "subcategory": "Walking Frames",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-tynor-invalid-s-reciprocating-walker.jpg",
+      "features": [
+        "Reciprocating or conventional walking modes",
+        "Height-adjustable support",
+        "Folding frame for storage"
+      ],
+      "description": "A rehabilitation walking frame with alternate-side reciprocating action or conventional frame movement. Adjustable height and a folding design support fitting and storage; the appropriate gait mode should be selected with the rehabilitation team.",
+      "source": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544",
+      "sourceName": "Tynor Invalid's Reciprocating Walker",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Reciprocating Rehabilitation Walker"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/tynor-invalid-s-reciprocating-walker-mbpgorntndawkk13544",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-invalids-reciprocating-walker-all-pods-al-l-20-11_06_2026-16955390.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px source image visually reviewed: aluminium reciprocating walking frame, black grips and plain adjustment parts on white, no visible manufacturer wordmark, logo or watermark. Original catalogue-range reference; exact sizing and mode configuration require confirmation.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-9fe5e5b20a78",
+      "name": "Four-Wheel Rollator with Seat",
+      "category": "furniture",
+      "subcategory": "Seated Rollators",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-rollator-ref6.jpg",
+      "features": [
+        "Padded resting seat",
+        "Height-adjustable handles",
+        "Hand-operated brakes and storage"
+      ],
+      "description": "A wheeled mobility aid with adjustable handles, a resting seat and storage provision. The source range includes ergonomic grips and user-operated brakes. Confirm the supplied wheel arrangement, braking system and load rating before selection.",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker",
+      "sourceName": "Arrex Marathon Series Premium Rollator Walker",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Four-Wheel Rollator with Seat"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://topmedi-wheelchair.en.made-in-china.com/product/yExRmYkABuca/China-Four-Wheel-Walker-Multi-Function-Lightweight-Walker-for-Adult.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00VgBcSvDlfIbe/Four-Wheel-Walker-Multi-Function-Lightweight-Walker-for-Adult.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1000px original supplier image visually reviewed: blue four-wheel rollator, hand brakes, seat/backrest and mesh storage, no manufacturer name, logo or watermark. Reference product type only, not the exact Medikabazaar brand/model.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 1000
+    },
+    {
+      "id": "mb-e3589fa4279e",
+      "name": "Foldable Adult Walking Frame",
+      "category": "furniture",
+      "subcategory": "Walking Frames",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-arrex-marathon-series-premium-rollator-walker.jpg",
+      "features": [
+        "Lightweight frame",
+        "Height-adjustable legs",
+        "Folding storage design"
+      ],
+      "description": "An adult walking frame with adjustable height, ergonomic handles and a stable base. The folding frame is intended for supervised mobility and rehabilitation support; sizing and weight capacity require confirmation for the user.",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-series-light-weight-walkers",
+      "sourceName": "Arrex Marathon Series Light Weight Walker",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Foldable Adult Walking Frame"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/arrex-marathon-series-premium-rollator-walker",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-marathon-series-premium-rollator-walker-mc50-22_06_2026-04cd0528.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px source photo visually reviewed: plain aluminium non-wheeled folding walking frame with black grips, no visible brand/logo/watermark. The source rollator page contains this walking-frame image, so used only as an explicitly representative non-wheeled adult-frame reference; not confirmation of model.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-5d3a2bab12c9",
+      "name": "Height-Adjustable Paediatric Walker",
+      "category": "furniture",
+      "subcategory": "Paediatric Mobility",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-arrex-marathon-child-series-walkers-for-kids.jpg",
+      "features": [
+        "Child-sized walking support",
+        "Adjustable leg height",
+        "Anti-slip feet and folding frame"
+      ],
+      "description": "A paediatric walking frame designed to provide support during rehabilitation and everyday mobility. The source describes a lightweight folding frame with adjustable legs and anti-slip feet. Confirm sizing and therapist-selected configuration before use.",
+      "source": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults",
+      "sourceName": "Arrex Marathon Child Series Walker",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Height-Adjustable Paediatric Walker"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/arrex-marathon-child-series-walkers-for-kids-and-young-adults",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-marathon-child-series-walker-mc50-19_06_2026-4aba7b66.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px original paediatric source-range photograph reviewed: folding aluminium walking frame, padded grips and height-adjustable legs without visible logo, brand or watermark. Representative range image; paediatric dimensions and configuration must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-dcc6496e4185",
+      "name": "Quadripod Walking Stick",
+      "category": "furniture",
+      "subcategory": "Walking Sticks",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-tynor-quadripod-walking-stick.jpg",
+      "features": [
+        "Four-point support base",
+        "Height adjustment",
+        "Anatomical hand grip"
+      ],
+      "description": "A walking stick with a broad four-point base, adjustable shaft and shaped grip. Its increased support footprint is intended for assisted ambulation; the correct height and suitability should be assessed for the individual.",
+      "source": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309",
+      "sourceName": "Tynor Quadripod Walking Stick",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Quadripod Walking Stick"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/tynor-quadripod-walking-stick-mbpgorntndawkk13309",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-quadripod-walking-stick-universal-l12-11_06_2026-bc134b0c.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px image visually inspected: four-foot aluminium support stick, plain grip and shaft, no visible manufacturer logo/name or watermark. Reference range image; sizing and handle design confirmed by quote.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-fb86f052b5cd",
+      "name": "Adjustable Forearm Crutch",
+      "category": "furniture",
+      "subcategory": "Crutches",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-arrex-elbow-and-underarm-crutches.jpg",
+      "features": [
+        "Telescopic height adjustment",
+        "Forearm cuff support",
+        "Grip handle and slip-resistant tip"
+      ],
+      "description": "A forearm crutch with an adjustable shaft, elbow cuff and hand grip. It offers a compact mobility-support option where prescribed by a rehabilitation professional. Confirm adult or paediatric size and the required single or paired configuration.",
+      "source": "https://www.medikabazaar.com/products/bfn-build-for-nurture-elbow-crutch",
+      "sourceName": "BFN Build For Nurture Elbow Crutch",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Adjustable Forearm Crutch"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-elbow-and-underarm-crutch-ms230-18_06_2026-adf86de9.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px original source image inspected: aluminium forearm crutch with cuff, handgrip and height adjustments, no visible manufacturer name/logo/watermark. Representative type image only; exact supplier/model and single or pair quantity unconfirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-c5f1d3e62df2",
+      "name": "Adjustable Underarm Crutch",
+      "category": "furniture",
+      "subcategory": "Crutches",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-clean-underarm.jpg",
+      "features": [
+        "Underarm support pad",
+        "Adjustable hand-grip height",
+        "Rubber ground-contact tip"
+      ],
+      "description": "An adjustable underarm-style crutch from a mobility-support range that includes elbow and axillary configurations. Confirm that the quotation specifies the underarm design, size, padding and pair quantity. Fitting and loading instructions require professional guidance.",
+      "source": "https://www.medikabazaar.com/products/arrex-elbow-and-underarm-crutches",
+      "sourceName": "Arrex Elbow and Underarm Crutch",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Adjustable Underarm Crutch"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medisave.co.uk/products/aluminium-underarm-crutches-adult-pair",
+      "imageOriginal": "https://www.medisave.co.uk/cdn/shop/products/10400-8.jpg?v=1680573628",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1052px original supplier image inspected: pair of aluminium axillary crutches with underarm pads, handgrips and rubber tips, no visible logo/brand/watermark. Representative underarm type image, not exact source product/model or supplied quantity.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1052,
+      "imageHeight": 1052
+    },
+    {
+      "id": "mb-1df88c0045da",
+      "name": "Folding Bedside Commode Chair",
+      "category": "furniture",
+      "subcategory": "Toileting Supports",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-tynor-foldable-commode-chair.jpg",
+      "features": [
+        "Folding frame",
+        "Removable commode receptacle",
+        "Seat cover and arm supports"
+      ],
+      "description": "A portable commode chair with a folding frame, moulded seat and receptacle for assisted bedside toileting. Arm supports and a seat cover are included in the listed range. Confirm dimensions, cleaning requirements and user weight capacity.",
+      "source": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541",
+      "sourceName": "Tynor Foldable Commode Chair",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Folding Bedside Commode Chair"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/tynor-foldable-commode-chair-mbpgorntnndeoo13541",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/tynor-foldable-commode-chair-universal-l-35-23_03_2026-037bc0e5.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size source photograph visually reviewed: folding green-seat commode frame and plain bucket, no manufacturer name, logo or watermark. Reference range photo; finish and fittings require confirmation.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-0e8fe28d620e",
+      "name": "Height-Adjustable Shower Chair",
+      "category": "furniture",
+      "subcategory": "Bathing Supports",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-ageasy-safesit-shower-chair.jpg",
+      "features": [
+        "Draining seat surface",
+        "Back and arm support",
+        "Anti-slip legs with height adjustment"
+      ],
+      "description": "A shower chair providing seated support during assisted bathing. The source describes a contoured draining seat, reinforced back support and adjustable anti-slip legs. Confirm the chair dimensions and suitability for the bathing space and user.",
+      "source": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair",
+      "sourceName": "AGEasy Safesit Shower Chair",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Height-Adjustable Shower Chair"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/ageasy-safesit-shower-chair",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/ageasy-safesit-shower-chair-23_10_2026-f05c5dca.png",
+      "imageKind": "representative",
+      "imageReview": "Full-size 640px source photograph reviewed: white draining seat, backrest, arms and aluminium adjustable legs, no manufacturer name, logo or watermark. Reference range photo, user dimensions and supplied configuration to confirm.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 640,
+      "imageHeight": 640
+    },
+    {
+      "id": "mb-e9e9ce3857b3",
+      "name": "Portable Oxygen Purity Analyzer",
+      "category": "mgps",
+      "subcategory": "Medical Gas Test Instruments",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/fm-niscomed-oxygen-analyzer.jpg",
+      "features": [
+        "Oxygen concentration measurement",
+        "LCD readout",
+        "Battery-powered portable instrument"
+      ],
+      "description": "A portable instrument for checking oxygen concentration in supplied gas, with an LCD display and battery operation. The listed range supports oxygen-purity checks; verify measurement range, calibration method, flow limit and accuracy for the intended gas system.",
+      "source": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer",
+      "sourceName": "Niscomed Oxygen Analyzer",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Portable Oxygen Purity Analyzer"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/niscomed-oxygen-analyzer",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/niscomed-oxygen-analyzer-16_06_2026-8a1a8066.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1045x1200 source image inspected: handheld analyzer with LCD and generic Oxygen Analyzer/POWER/MENU/LED functional labels only; no manufacturer name, logo or watermark. Reference source range image; calibration and accuracy specification to confirm.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1045,
+      "imageHeight": 1200
+    },
+    {
+      "id": "mb-a62d8572016e",
+      "name": "Wheeled Commode Transfer Chair",
+      "category": "furniture",
+      "subcategory": "Toileting Transfer Chairs",
+      "department": "ward",
+      "image": "assets/products/medikabazaar/fm-arrex-xenia-series-commode-wheelchair.jpg",
+      "features": [
+        "Wheeled transfer frame",
+        "Toileting seat opening",
+        "Removable waste receptacle"
+      ],
+      "description": "A mobile commode chair combining assisted short-distance transfers with a toileting seat and receptacle. The seat opening can support use as a standalone commode or over a compatible toilet. Confirm wheel brakes, aperture dimensions and transfer requirements.",
+      "source": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair",
+      "sourceName": "Arrex Xenia Series Commode Wheelchair",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Wheeled Commode Transfer Chair"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.medikabazaar.com/products/arrex-xenia-series-commode-wheelchair",
+      "imageOriginal": "https://ik.imagekit.io/z6mqjyyzz/media/public/arrex-xenia-series-commode-wheelchair-edda-04_06_2026-e7d26ef9.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1200px source photograph inspected: plain chrome commode wheelchair with black seat/back, receptacle and wheels, no visible brand/logo/watermark. Reference range photo; wheel/brake configuration and user load capacity must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 896
+    },
+    {
+      "id": "mb-301144ce50e6",
+      "name": "Pneumatic Air-Oxygen Blender",
+      "category": "mgps",
+      "subcategory": "Gas Mixing Accessories",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/fm-blender-ref5.webp",
+      "features": [
+        "Independent oxygen-concentration and flow settings",
+        "Pneumatic operation",
+        "Supply-pressure imbalance alarm"
+      ],
+      "description": "An air-oxygen mixing instrument with independently adjustable concentration and flow. The source describes pneumatic operation and a gas-supply pressure imbalance alarm. Confirm supply pressures, outlet connectors and required flow range with the clinical engineering team.",
+      "source": "https://www.medikabazaar.com/products/korrida-oxygen-blender",
+      "sourceName": "Korrida Oxygen Blender",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Pneumatic Air-Oxygen Blender"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://healicom.en.made-in-china.com/product/vSRnbYXUJkpE/China-Medical-Hospital-Portable-Infant-Neonatal-Air-Oxygen-Blender-for-Baby.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00YNuiJGvhZqoz/Medical-Hospital-Portable-Infant-Neonatal-Air-Oxygen-Blender-for-Baby.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size 1000px original supplier image inspected: single-output pneumatic air/oxygen blender with concentration dial and flowmeter. Only generic function/scale markings and model code KY-10A; no manufacturer wordmark/logo/watermark. Representative device type only, not exact source model, range or interface.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageReviewed": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 1000
+    },
+    {
+      "id": "mb-7b2877461245",
+      "name": "Hospital Air and Differential Pressure Monitor",
+      "category": "mgps",
+      "subcategory": "Theatre Environmental Monitoring",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-pressure2.jpg",
+      "features": [
+        "Indoor air-quality monitoring",
+        "Differential-pressure channel",
+        "Facility monitoring display"
+      ],
+      "description": "A hospital environmental monitoring system that combines indoor air-quality measurement with room pressure-differential monitoring. Intended for facility oversight; verify the supplied sensors, display, alarm outputs and commissioning requirements for the installation.",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-indoor-air-quality-monitor-with-pressure-differential",
+      "sourceName": "Pneoterik Hospital Indoor Air Quality Monitor with Pressure Differential",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Hospital Air and Differential Pressure Monitor"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.ato.com/micro-differential-pressure-transmitter",
+      "imageOriginal": "https://www.ato.com/content/images/thumbs/0024462_micro-differential-pressure-transmitter-with-display-wall-mountedembedded_550.jpeg",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear pressure2 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed. Reference shows the differential-pressure monitoring function, not the exact combined air-quality monitor.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 550,
+      "imageHeight": 550,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-c18a2491b15d",
+      "name": "Operating Theatre Indoor Air Quality Monitor",
+      "category": "mgps",
+      "subcategory": "Theatre Environmental Monitoring",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-air-monitor.jpg",
+      "features": [
+        "Theatre environmental monitoring",
+        "Room-condition display",
+        "Sensor configuration on quotation"
+      ],
+      "description": "An indoor environmental monitoring unit listed for operating theatres. It supports observation of room conditions; confirm the monitored parameters, sensor ranges, data outputs and site integration rather than assuming compliance with any theatre standard.",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-ot-indoor-air-quality-monitor",
+      "sourceName": "Pneoterik Hospital OT Indoor Air Quality Monitor",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Operating Theatre Indoor Air Quality Monitor"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://yakkatechnicalservices.ae/product/lifesmart-in-wall-air-quality-detector-zigbee/",
+      "imageOriginal": "https://yakkatechnicalservices.ae/wp-content/uploads/2024/01/In-wall-Air-Quality-Detector-ZigBee.png",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear air monitor supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 2560,
+      "imageHeight": 2560,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-c4f903c92e72",
+      "name": "UV-Assisted Hospital Air Treatment Unit",
+      "category": "mgps",
+      "subcategory": "Environmental Air Treatment",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-uv.jpg",
+      "features": [
+        "Enclosed air-treatment unit",
+        "UV-assisted treatment stage",
+        "Mobile floor-standing format"
+      ],
+      "description": "A floor-standing hospital air-treatment unit from a UV-assisted range. Confirm the supplied filtration stages, enclosed UV arrangement, room coverage and service requirements. Air treatment is an environmental support measure and does not replace the facility infection-control plan.",
+      "source": "https://www.medikabazaar.com/products/pneoterik-hospital-infection-controller-sterility-machine-with-uv-light",
+      "sourceName": "PneoTerik Advanced Medical Grade Air Sterilisation System",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "UV-Assisted Hospital Air Treatment Unit"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://m.made-in-china.com/product/Disinfection-Air-Sterilization-UVC-Air-Purifier-Equipment-for-Medical-Sterilizer-1955214825.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00OZWhjlTBrMbY/Disinfection-Air-Sterilization-UVC-Air-Purifier-Equipment-for-Medical-Sterilizer.webp",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear uv supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 790,
+      "imageHeight": 751,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-bbbfea384efe",
+      "name": "HEPA Room Air Purifier",
+      "category": "mgps",
+      "subcategory": "Environmental Air Filtration",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-purifier.jpg",
+      "features": [
+        "Multi-stage particulate filtration",
+        "Fan-speed and sleep settings",
+        "Filter-service reminder"
+      ],
+      "description": "A room air purifier with multi-stage filtration and selectable operating modes. The source lists a HEPA stage, air-quality indication and filter reminders. Confirm filter specifications, service life and room coverage; this listing does not certify suitability for an operating theatre ventilation system.",
+      "source": "https://www.medikabazaar.com/products/mcp-7-stage-hepa-air-purifier-mbpgmtpcmerfrr19425",
+      "sourceName": "MCP 7 Stage HEPA Air Purifier",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "HEPA Room Air Purifier"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://invitop.en.made-in-china.com/product/HFpQfCdwnAVU/China-Commercial-China-OEM-Ce-RoHS-Room-House-Electric-True-HEPA-Filter-H13-Quiet-Air-Purifier.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00ToVUNkAMCzcG/Commercial-China-OEM-Ce-RoHS-Room-House-Electric-True-HEPA-Filter-H13-Quiet-Air-Purifier.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear purifier supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 1000,
+      "imageHeight": 1000,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-a6a1bc21c03a",
+      "name": "Portable Room Dehumidifier",
+      "category": "mgps",
+      "subcategory": "Environmental Humidity Control",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-dehumidifier.jpg",
+      "features": [
+        "Adjustable humidity control",
+        "Condensate collection tank",
+        "Full-tank shutoff and drainage provision"
+      ],
+      "description": "A portable room dehumidifier for environmental humidity management, with collection-tank and drainage options in the listed range. Confirm the extraction capacity at stated test conditions, operating temperature and drainage arrangements. It is not a substitute for engineered theatre HVAC control.",
+      "source": "https://www.medikabazaar.com/products/white-westinghouse-dehumidifier",
+      "sourceName": "White Westinghouse 4 in 1 Dehumidifier",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Portable Room Dehumidifier"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.leroymerlin.fr/produits/petit-deshumidificateur-domestique-blanc-silencieux-de-2-litres-conforme-aux-normes-europeennes-98335976.html",
+      "imageOriginal": "https://media.adeo.com/mkp/6bd072de5adc77ba947d89652d290bee/media.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear dehumidifier supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-0c3c76d978c4",
+      "name": "Smoke-Evacuating Electrosurgical Pencil",
+      "category": "mgps",
+      "subcategory": "Theatre Smoke Management",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-smoke-pencil2.jpg",
+      "features": [
+        "Integrated smoke-extraction connection",
+        "Non-stick blade design",
+        "Single-use pencil assembly"
+      ],
+      "description": "An electrosurgical pencil with an integrated connection for source smoke extraction and a non-stick blade. Confirm generator compatibility, suction tubing and required evacuation-system connection. The exact supplied pencil and accessories are confirmed with the quotation.",
+      "source": "https://www.medikabazaar.com/products/buffalo-filter-plumepen-tm-surgical-smoke-evacuation-esu-pencil-non-stick-blade",
+      "sourceName": "Buffalo Filter PlumePen TM Surgical Smoke Evacuation ESU Pencil Non-Stick Blade",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Smoke-Evacuating Electrosurgical Pencil"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.shouliangmed.com/disposable-electrosurgical-pencil-796",
+      "imageOriginal": "https://www.shouliangmed.com/storage/uploads/images/202411/05/1730786638_0q0vOAUn6O.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear smoke pencil2 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-656b9134c9f2",
+      "name": "Multi-Stage Surgical Smoke Filter",
+      "category": "mgps",
+      "subcategory": "Theatre Smoke Management",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-smoke-filter3.jpg",
+      "features": [
+        "Particulate prefilter and fine-filter stages",
+        "Activated-carbon odour stage",
+        "Multiple tubing-port sizes"
+      ],
+      "description": "A replacement filter assembly for a compatible surgical smoke-evacuation system. The source describes prefiltration, fine-particle filtration, activated carbon and a postfilter. Confirm exact system compatibility, port sizes and replacement interval; filter cartridges are not universally interchangeable.",
+      "source": "https://www.medikabazaar.com/products/buffalo-filter-virosafe-virovac-smoke-evacuation-filter",
+      "sourceName": "Buffalo Filter ViroSafe ViroVac Smoke Evacuation Filter",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Multi-Stage Surgical Smoke Filter"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://www.starkmed.com.au/products/led-surtron-evac-smoke-evacuation-ulpa-filter",
+      "imageOriginal": "https://www.starkmed.com.au/cdn/shop/files/smoke-evacuation-led-smoke-evacuator-red-ulpa-filter-for-surtron-evac-20h-1_1200x1392.png?v=1710386008",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear smoke filter3 supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 1200,
+      "imageHeight": 1392,
+      "imageReviewed": "2026-11-18"
+    },
+    {
+      "id": "mb-ea9530819930",
+      "name": "Breathing Circuit Heat and Moisture Filter",
+      "category": "mgps",
+      "subcategory": "Anaesthesia Gas Circuit Filtration",
+      "department": "ot",
+      "image": "assets/products/medikabazaar/root-hme.jpg",
+      "features": [
+        "Heat-and-moisture exchange",
+        "Bacterial/viral filtration function",
+        "Adult and paediatric configurations"
+      ],
+      "description": "A breathing-circuit filter combining heat-and-moisture exchange with bacterial/viral filtration. The source lists adult and paediatric configurations with standard connectors. Confirm dead space, resistance, filtration specification and patient-size compatibility before selection.",
+      "source": "https://www.medikabazaar.com/products/b-positive-breathing-filter",
+      "sourceName": "B Positive Breathing Filter",
+      "specifications": [
+        {
+          "label": "Product type",
+          "value": "Breathing Circuit Heat and Moisture Filter"
+        },
+        {
+          "label": "Configuration",
+          "value": "Confirm selected size, interfaces and supplied accessories with quotation"
+        }
+      ],
+      "imageSource": "https://teamstandmed.en.made-in-china.com/product/wxvrdbETZhWV/China-High-Quality-Disposable-Breathing-Circuit-Hme-Filter.html",
+      "imageOriginal": "https://image.made-in-china.com/2f0j00ZhzckBGJZtqD/High-Quality-Disposable-Breathing-Circuit-Hme-Filter.jpg",
+      "imageKind": "representative",
+      "imageReview": "Full-size visual inspection: clear hme supplier product reference with no visible manufacturer name, logo or watermark. Representative range visual; exact configuration, performance and compatibility must be confirmed.",
+      "origin": "medikabazaar",
+      "imported": "2026-11-18",
+      "imageWidth": 913,
+      "imageHeight": 913,
+      "imageReviewed": "2026-11-18"
     }
   ],
   "departments": [
