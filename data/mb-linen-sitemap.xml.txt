@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/static.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/products.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/brands.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/generic-names.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/blogs.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/blogs-categories.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/specialities.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/categories.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/business-categories-brands.xml</loc>
+      </sitemap>
+      
+      <sitemap>
+        <loc>https://www.medikabazaar.com/sitemap/refurbished.xml</loc>
+      </sitemap>
+      
+   </sitemapindex>
+ 
