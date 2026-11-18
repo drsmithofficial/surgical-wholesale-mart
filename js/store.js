@@ -977,29 +977,14 @@
     popover.className = 'header-products-popover';
     popover.hidden = true;
     popover.setAttribute('role', 'region');
-    popover.setAttribute('aria-label', 'All product categories and products');
-    const firstCat = categories[0]?.id || 'furniture';
-    const renderProductsList = (catId, query = '') => {
-      const q = query.trim().toLowerCase();
-      const list = products.filter(p => (catId === 'all' || p.category === catId) && (!q || `${p.name} ${p.subcategory} ${(p.features || []).join(' ')}`.toLowerCase().includes(q)));
-      const catObj = categories.find(c => c.id === catId);
-      const heading = catId === 'all' ? `All Products (${list.length})` : `${catObj ? catObj.name : 'Category'} (${list.length})`;
-      const desc = catObj?.description || 'Browse complete specifications and add items directly to your quote basket.';
-      return `<div class="hpp-main-head"><div><strong>${e(heading)}</strong><span>${e(desc)}</span></div><a class="hpp-view-cat" href="${catId === 'all' ? 'products.html' : 'products.html?category=' + encodeURIComponent(catId)}">Open in catalogue →</a></div><div class="hpp-product-list">${list.length ? list.map(p => `<a class="hpp-product-row" href="${link(p)}"><div class="hpp-prod-main"><strong>${e(p.name)}</strong><small>${e(p.subcategory)} · ${e((p.features || []).slice(0, 3).join(' · ') || 'Clinical specification available')}</small></div><span class="hpp-prod-meta">View details →</span></a>`).join('') : '<p class="muted" style="padding:12px 0;margin:0">No matching products in this view.</p>'}</div>`;
-    };
-    popover.innerHTML = `<div class="hpp-shell"><aside class="hpp-cats"><div class="hpp-cats-title">PRODUCT CATEGORIES</div>${categories.map((c, idx) => {
+    popover.setAttribute('aria-label', 'Product categories');
+    popover.innerHTML = `<div class="hpp-clean-head"><div><span class="hpp-cats-title">EXPLORE BY CATEGORY</span><strong>Select a product category</strong></div><a class="hpp-view-all-btn" href="products.html">View all ${products.length} products →</a></div><div class="hpp-cat-cards">${categories.map(c => {
       const count = products.filter(p => p.category === c.id).length;
-      return `<a href="products.html?category=${encodeURIComponent(c.id)}" class="hpp-cat-btn ${idx === 0 ? 'is-active' : ''}" data-hpp-cat="${e(c.id)}"><div><strong>${e(c.name)}</strong><small>${e(c.description)}</small></div><b>${count}</b></a>`;
-    }).join('')}<a href="products.html" class="hpp-cat-btn" data-hpp-cat="all"><div><strong>All Catalogue Items</strong><small>Complete range across all ${categories.length} families</small></div><b>${products.length}</b></a></aside><div class="hpp-main"><div class="hpp-search-row"><input type="search" class="hpp-search-input" placeholder="Filter products by name, subcategory or specification…" aria-label="Filter products in menu"></div><div class="hpp-main-content">${renderProductsList(firstCat)}</div></div></div>`;
+      return `<a class="hpp-cat-card" href="products.html?category=${encodeURIComponent(c.id)}"><div class="hpp-cat-thumb"><img src="${e(c.image)}" alt="${e(c.name)}" loading="lazy" width="140" height="105"></div><div class="hpp-cat-info"><strong>${e(c.name)}</strong><small>${count} products</small><span class="hpp-cat-cta">View products →</span></div></a>`;
+    }).join('')}</div>`;
     const headerEl = $('.store-header') || document.body;
     headerEl.appendChild(popover);
-    let activeCat = firstCat;
     let hideTimer = 0;
-    const searchInput = popover.querySelector('.hpp-search-input');
-    const contentBox = popover.querySelector('.hpp-main-content');
-    const updateView = () => {
-      contentBox.innerHTML = renderProductsList(activeCat, searchInput.value);
-    };
     const showPopover = () => {
       if (window.matchMedia('(max-width: 767px)').matches) return;
       clearTimeout(hideTimer);
@@ -1018,16 +1003,6 @@
     productsLink.addEventListener('mouseleave', scheduleHide);
     popover.addEventListener('mouseenter', () => clearTimeout(hideTimer));
     popover.addEventListener('mouseleave', scheduleHide);
-    popover.querySelectorAll('[data-hpp-cat]').forEach(btn => {
-      const activate = () => {
-        activeCat = btn.dataset.hppCat;
-        popover.querySelectorAll('[data-hpp-cat]').forEach(b => b.classList.toggle('is-active', b === btn));
-        updateView();
-      };
-      btn.addEventListener('mouseenter', activate);
-      btn.addEventListener('focus', activate);
-    });
-    searchInput.addEventListener('input', updateView);
     document.addEventListener('click', ev => {
       if (!popover.hidden && !popover.contains(ev.target) && !productsLink.contains(ev.target)) {
         popover.hidden = true;

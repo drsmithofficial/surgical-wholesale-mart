@@ -17,7 +17,7 @@
 
 /* The homepage header follows the current banner's background color. */
 .home-page .custom-navbar {
-  background-color: var(--hero-header-background, #3b5d50) !important;
+  background-color: var(--hero-header-background, #3b575d) !important;
   transition: background-color 0.6s ease-in-out;
 }
 
@@ -165,7 +165,7 @@
   .hero-artwork, .hero-mosaic-tile, .hero-curtain { animation: none; }
 }
 
-/* Editable hero: equipment artwork is isolated in a cropped image window;
+/* Editable hero: equipment artwork is isolated in its own image layer;
    all headings, buttons, backgrounds, and decorative elements are HTML/CSS. */
 .home-page { --hero-header-background: #ffffff !important; }
 .home-page .store-header,
@@ -177,8 +177,8 @@
 .home-page .all-categories,
 .home-page .nav-categories a {
   background: #ffffff !important;
-  color: #183534 !important;
-  border-color: #dfe7e2 !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
   transition: none !important;
 }
 .home-page .store-header a,
@@ -191,17 +191,17 @@
 .home-page .header-actions span,
 .home-page .mobile-menu,
 .home-page .header-actions b {
-  color: #183534 !important;
+  color: var(--ink) !important;
 }
 .home-page .brand-divider,
 .home-page .store-header .brand-divider {
-  background: #183534 !important;
+  background: var(--ink) !important;
 }
 .home-page .header-search input,
 .home-page .header-search button,
 .home-page .header-search svg,
 .home-page .header-search .icon {
-  color: #183534 !important;
+  color: var(--ink) !important;
 }
 .home-page .store-header,
 .home-page .store-header * {
@@ -212,7 +212,7 @@
 }
 .hero-banners {
   --hero-surface: #102b36;
-  --hero-accent: #53dfc4;
+  --hero-accent: #53c8df;
   --hero-ink: #f6fbfc;
   --hero-muted: #c6d9df;
   container-type: inline-size;
@@ -288,7 +288,7 @@
 }
 .hero-button-primary { background: var(--hero-accent); color: #102b36; }
 .hero-button-secondary { border-color: #b5cbd3; color: var(--hero-ink); background: transparent; }
-.hero-button-primary:hover { background: #8fead8; color: #102b36; transform: translateY(-2px); }
+.hero-button-primary:hover { background: #8fdbea; color: #102b36; transform: translateY(-2px); }
 .hero-button-secondary:hover { background: #ffffff14; color: #fff; transform: translateY(-2px); }
 .hero-button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 .hero-equipment {
@@ -352,17 +352,17 @@
 }
 
 .hero-theme-ocean {
-  --hero-surface: #00383b;
+  --hero-surface: #003744;
   --hero-accent: #00c4c8;
   --hero-hover: #28d8db;
   --hero-button-ink: #003236;
 }
 
 .hero-theme-sandstone {
-  --hero-surface: #003b2e;
-  --hero-accent: #82efbd;
-  --hero-hover: #a5f7d2;
-  --hero-button-ink: #003b2e;
+  --hero-surface: #00313b;
+  --hero-accent: #82ddef;
+  --hero-hover: #a5e9f7;
+  --hero-button-ink: #00313b;
 }
 
 .hero-theme-forest {
@@ -399,17 +399,17 @@
 .hero-button-secondary { border-color: var(--hero-muted); }
 /* Preserve the equipment artwork's original colors. */
 .hero-equipment { filter: none; mix-blend-mode: normal; }
-.home-page { --hero-header-background: #00383b; }
+.home-page { --hero-header-background: #00c4ef; }
 
 
 /* Reconstruct the original artwork composition with live text and CSS scenery. */
 .hero-theme-ocean {
-  --hero-surface: #00383b; --hero-end: #00686a; --hero-glow: #00c4c8;
+  --hero-surface: #003744; --hero-end: #00686a; --hero-glow: #00c4c8;
   --hero-line: #05ffff; --hero-light: #007e82;
 }
 .hero-theme-sandstone {
-  --hero-surface: #003b2e; --hero-end: #00664d; --hero-glow: #00be88;
-  --hero-line: #83ffce; --hero-light: #00896a;
+  --hero-surface: #00313b; --hero-end: #005566; --hero-glow: #009ebe;
+  --hero-line: #83eaff; --hero-light: #007289;
 }
 .hero-theme-forest {
   --hero-surface: #202020; --hero-end: #2d2822; --hero-glow: #9c641b;
@@ -433,26 +433,6 @@
   isolation: isolate;
   background: radial-gradient(ellipse at 48% 82%, var(--hero-glow) 0%, transparent 38%),
     linear-gradient(115deg, var(--hero-surface) 10%, var(--hero-end) 100%);
-}
-/* A lit diagonal horizon continues the equipment image's original light trail. */
-.hero-scene::before {
-  display: block;
-  position: absolute;
-  z-index: 0;
-  content: '';
-  left: -5%;
-  top: auto;
-  bottom: 15%;
-  width: 67%;
-  height: 2px;
-  aspect-ratio: auto;
-  border: 0;
-  border-radius: 50%;
-  background: var(--hero-line);
-  box-shadow: 0 0 8px 2px var(--hero-glow), 0 0 26px 8px var(--hero-glow);
-  transform: rotate(-9deg);
-  opacity: .85;
-  pointer-events: none;
 }
 .hero-scene::after {
   content: '';
@@ -519,7 +499,6 @@
   .hero-actions { gap: 12px; }
   .hero-button { min-height: 46px; padding: 11px 22px; font-size: 14px; }
   .hero-equipment { -webkit-mask-image: linear-gradient(to bottom, transparent, #000 15%); mask-image: linear-gradient(to bottom, transparent, #000 15%); }
-  .hero-scene::before { bottom: 43%; width: 110%; }
 }
 
 
@@ -570,14 +549,6 @@
   max-width: none;
   object-fit: cover;
   object-position: center center;
-  /* Exclude only the artwork's baked-in copy, leaving equipment beyond the old edge. */
-  clip-path: polygon(43% 0,100% 0,100% 100%,0 100%,0 90%,32% 80%,43% 63%);
-}
-.hero-theme-sandstone .hero-equipment img {
-  clip-path: polygon(37% 0,100% 0,100% 100%,0 100%,0 90%,30% 82%,37% 63%);
-}
-.hero-theme-copper .hero-equipment img {
-  clip-path: polygon(44% 0,100% 0,100% 100%,0 100%,0 90%,31% 80%,37% 63%,44% 52%);
 }
 @media (min-width:768px) and (max-width:1079.98px) {
   .hero-banners {
@@ -660,15 +631,8 @@
     max-width: none;
     object-fit: cover;
     object-position: right center;
-    clip-path: polygon(43% 0,100% 0,100% 100%,0 100%,0 90%,32% 80%,43% 63%);
     -webkit-mask-image: linear-gradient(to bottom,#000 90%,transparent 100%);
     mask-image: linear-gradient(to bottom,#000 90%,transparent 100%);
-  }
-  .hero-theme-sandstone .hero-equipment img {
-    clip-path: polygon(37% 0,100% 0,100% 100%,0 100%,0 90%,30% 82%,37% 63%);
-  }
-  .hero-theme-copper .hero-equipment img {
-    clip-path: polygon(44% 0,100% 0,100% 100%,0 100%,0 90%,31% 80%,37% 63%,44% 52%);
   }
 }
 
@@ -765,9 +729,9 @@
   .home-page .store-header,
   .home-page .store-header .header-main,
   .home-page .store-header .store-nav {
-    background: #063b3c !important;
-    color: #fff !important;
-    border-color: #ffffff2b !important;
+    background: var(--teal) !important;
+    color: var(--teal-ink) !important;
+    border-color: #0037442b !important;
   }
   .home-page .store-header .brand,
   .home-page .store-header .brand strong,
@@ -775,8 +739,81 @@
   .home-page .store-header .primary-links>a:not([aria-current=page]),
   .home-page .store-header .mobile-contact,
   .home-page .store-header .mobile-menu {
-    color: #fff !important;
+    color: var(--teal-ink) !important;
   }
-  .home-page .store-header .brand-divider { background: #fff !important; }
-  .home-page .store-header .primary-links>a[aria-current=page] { color: #ff9a45 !important; }
+  .home-page .store-header .brand-divider { background: var(--teal-ink) !important; }
+  .home-page .store-header .primary-links>a[aria-current=page] { color: var(--teal-ink) !important; }
+}
+
+@media (max-width:767.98px) {
+  .home-page .hero-scene {
+    height: clamp(180px, 55vw, 230px);
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+  .home-page .hero-scene::after { display: none; }
+  .home-page .hero-copy {
+    top: 50%;
+    left: 5%;
+    width: 52%;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+  .home-page .hero-copy h2 {
+    max-width: 100%;
+    margin-bottom: 16px;
+    font-size: clamp(18px, 5vw, 22px);
+    line-height: 1.08;
+    letter-spacing: -.035em;
+  }
+  .home-page .hero-copy .mobile-hero-description,
+  .home-page .hero-copy .mobile-hero-eyebrow { display: none; }
+  .home-page .hero-actions {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .home-page .hero-button {
+    min-height: 42px;
+    padding: 7px 6px;
+    font-size: clamp(10px, 2.8vw, 12px);
+    white-space: nowrap;
+  }
+  .home-page .hero-equipment {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .home-page .hero-banners .hero-equipment img {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    opacity: 1;
+  }
+}
+
+.hero-banners .hero-scene .hero-equipment img {
+  clip-path: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 40%, #000 50%);
+  mask-image: linear-gradient(to right, transparent 0%, transparent 40%, #000 50%);
+}
+
+@media (max-width:767.98px) {
+  .home-page .hero-banners .hero-scene .hero-equipment img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 54%, #000 66%);
+    mask-image: linear-gradient(to right, transparent 0%, transparent 54%, #000 66%);
+  }
+}
+
+.home-page .hero-scene {
+  --hero-accent: #00c4ef;
+  --hero-hover: #42d4f1;
+  --hero-button-ink: #003744;
 }
