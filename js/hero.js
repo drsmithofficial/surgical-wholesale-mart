@@ -16,6 +16,23 @@
 	var timer;
 	var activeTransition = null;
 	var dragStart = null;
+	var wasSwiped = false;
+
+	bannerSlides.forEach(function (slide) {
+		var scene = slide.querySelector('.hero-scene');
+		if (scene) scene.style.cursor = 'pointer';
+	});
+
+	heroBanners.addEventListener('click', function (event) {
+		if (wasSwiped) {
+			wasSwiped = false;
+			return;
+		}
+		if (event.target.closest && event.target.closest('a, button')) return;
+		var slide = (event.target.closest && event.target.closest('.carousel-item')) || currentBanner;
+		var primaryLink = slide && slide.querySelector('.hero-button-primary');
+		window.location.href = (primaryLink && primaryLink.getAttribute('href')) || 'products.html';
+	});
 
 	function setActiveSlide(slide) {
 		bannerSlides.forEach(function (item) {
@@ -137,6 +154,7 @@
 		var deltaY = event.clientY - dragStart.y;
 		dragStart = null;
 		if (Math.abs(deltaX) > 42 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
+			wasSwiped = true;
 			if (event.cancelable) event.preventDefault();
 			advanceBanner(deltaX < 0 ? 1 : -1);
 		} else {
