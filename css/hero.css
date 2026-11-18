@@ -203,8 +203,8 @@
 .home-page .header-search .icon {
   color: #183534 !important;
 }
-.home-page,
-.home-page * {
+.home-page .store-header,
+.home-page .store-header * {
   box-shadow: none !important;
   text-shadow: none !important;
   transition: none !important;
@@ -268,7 +268,7 @@
   line-height: 1.55;
   margin: 0 0 clamp(22px, 2cqw, 40px);
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: clamp(8px, 1cqw, 14px); }
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -577,24 +577,34 @@
 .hero-theme-copper .hero-equipment img {
   clip-path: polygon(44% 0,100% 0,100% 100%,0 100%,0 90%,31% 80%,37% 63%,44% 52%);
 }
-@media (max-width:767.98px) {
-  .hero-equipment {
-    top: auto;
-    bottom: 0;
-    left: -44.92754%;
-    right: auto;
-    width: 144.92754%;
-    height: 220px;
+@media (min-width:768px) and (max-width:1079.98px) {
+  .hero-banners {
+    width: calc(100% - 32px);
+    margin: 14px auto 0;
+    border-radius: 20px;
   }
+  .hero-scene {
+    aspect-ratio: 11 / 5;
+    min-height: 340px;
+  }
+  .hero-copy { left: 3.5%; width: 41%; }
+  .hero-copy h2 { font-size: clamp(22px, 3vw, 34px); margin-bottom: 10px; }
+  .hero-copy p { font-size: clamp(12px, 1.35vw, 15px); line-height: 1.45; margin-bottom: 14px; }
+  .hero-button { min-height: 40px; padding: 8px 16px; font-size: 13px; }
 }
 @media (max-width:767.98px) {
+  .hero-banners {
+    width: calc(100% - 24px);
+    margin: 12px auto 0;
+    border-radius: 16px;
+  }
   .hero-scene {
     display: flex;
     flex-direction: column;
     height: auto;
     min-height: 0;
     aspect-ratio: auto;
-    padding-bottom: 16px;
+    padding-bottom: 22px;
   }
   .hero-scene::before,
   .hero-scene::after { display: none; }
@@ -603,9 +613,28 @@
     top: auto;
     left: auto;
     width: 100%;
-    margin-top: 12px;
-    padding: 0 6%;
+    margin-top: 14px;
+    padding: 0 5.5%;
     transform: none;
+  }
+  .hero-copy h2 {
+    font-size: clamp(22px, 5.8vw, 34px);
+    line-height: 1.12;
+    margin-bottom: 10px;
+  }
+  .hero-copy p {
+    font-size: clamp(13px, 3.5vw, 15px);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+  .hero-button {
+    min-height: 42px;
+    padding: 9px 18px;
+    font-size: 13px;
   }
   .hero-equipment {
     position: relative;
@@ -615,19 +644,28 @@
     bottom: auto;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 12 / 7;
     overflow: hidden;
   }
   .hero-banners .hero-equipment img {
-    object-position: 100% center;
-    clip-path: none;
-    -webkit-mask-image: linear-gradient(to bottom,#000 94%,transparent 100%);
-    mask-image: linear-gradient(to bottom,#000 94%,transparent 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 175.4%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: right center;
+    clip-path: polygon(43% 0,100% 0,100% 100%,0 100%,0 90%,32% 80%,43% 63%);
+    -webkit-mask-image: linear-gradient(to bottom,#000 90%,transparent 100%);
+    mask-image: linear-gradient(to bottom,#000 90%,transparent 100%);
   }
-}
-@media (min-width:768px) and (max-width:991.98px) {
-  .hero-copy { left: 4%; width: 38%; }
-  .hero-copy h2 { font-size: clamp(26px,3.8vw,32px); margin-bottom: 10px; }
-  .hero-copy p { font-size: 13px; line-height: 1.4; margin-bottom: 14px; }
-  .hero-button { padding: 8px 14px; font-size: 13px; }
+  .hero-theme-sandstone .hero-equipment img {
+    clip-path: polygon(37% 0,100% 0,100% 100%,0 100%,0 90%,30% 82%,37% 63%);
+  }
+  .hero-theme-copper .hero-equipment img {
+    clip-path: polygon(44% 0,100% 0,100% 100%,0 100%,0 90%,31% 80%,37% 63%,44% 52%);
+  }
 }

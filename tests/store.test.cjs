@@ -22,6 +22,30 @@ test('search includes source model names and category descriptions',()=>{
  assert(selectProducts(products,{query:'CMS',category:'all'}).some(p=>p.name.includes('CMS')));
  assert(selectProducts(products,{query:'surgical',category:'instruments'}).length>0);
 });
+test('search includes imported descriptions and specifications',()=>{
+ const specificationProduct=products.find(p=>{
+  const otherFields=[p.name,p.sourceName,p.subcategory,...p.features].join(' ').toLowerCase();
+  return Array.isArray(p.specifications)&&p.specifications.some(spec=>{
+   const term=String(spec.value).match(/\b\d{4,}\b/);
+   return term&&!otherFields.includes(term[0].toLowerCase());
+  });
+ });
+ assert(specificationProduct);
+ const otherFields=[specificationProduct.name,specificationProduct.sourceName,specificationProduct.subcategory,...specificationProduct.features].join(' ').toLowerCase();
+ const specification=specificationProduct.specifications.find(spec=>{
+  const term=String(spec.value).match(/\b\d{4,}\b/);
+  return term&&!otherFields.includes(term[0].toLowerCase());
+ });
+ const specificationTerm=String(specification.value).match(/\b\d{4,}\b/)[0];
+ assert(selectProducts(products,{category:specificationProduct.category,query:specificationTerm}).some(p=>p.id===specificationProduct.id));
+ const descriptionProduct=products.find(p=>{
+  const otherText=[p.name,p.sourceName,p.subcategory,...p.features,...(Array.isArray(p.specifications)?p.specifications.flatMap(spec=>[spec.label,spec.value]):[])].join(' ').toLowerCase();
+  return (String(p.description||'').match(/\b[a-z]{7,}\b/gi)||[]).some(word=>!otherText.includes(word.toLowerCase()));
+ });
+ assert(descriptionProduct);
+ const descriptionTerm=String(descriptionProduct.description||'').match(/\b[a-z]{7,}\b/gi).find(word=>![descriptionProduct.name,descriptionProduct.sourceName,descriptionProduct.subcategory,...descriptionProduct.features,...(Array.isArray(descriptionProduct.specifications)?descriptionProduct.specifications.flatMap(spec=>[spec.label,spec.value]):[])].join(' ').toLowerCase().includes(word.toLowerCase()));
+ assert(selectProducts(products,{category:descriptionProduct.category,query:descriptionTerm}).some(p=>p.id===descriptionProduct.id));
+});
 test('sorting never mutates the source catalog',()=>{
  const ids=products.map(p=>p.id);
  const sorted=selectProducts(products,{sort:'az'});

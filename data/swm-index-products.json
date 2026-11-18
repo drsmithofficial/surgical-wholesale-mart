@@ -1,678 +1,1338 @@
 [
-  {
-    "sourceCategory": "Hospital Bed And Mattress",
-    "name": "Hospital Semi Fowler Electrical Bed"
-  },
-  {
-    "sourceCategory": "Hospital Bed And Mattress",
-    "name": "Super Deluxe Semi Fowler Bed"
-  },
-  {
-    "sourceCategory": "Hospital Bed And Mattress",
-    "name": "PLAIN BED SUPER DELUXE"
-  },
-  {
-    "sourceCategory": "Medical Equipment",
-    "name": "Suction Machines Ms"
-  },
-  {
-    "sourceCategory": "Medical Equipment",
-    "name": "ANESTHESIA WORKSTATION GOLD"
-  },
-  {
-    "sourceCategory": "Medical Equipment",
-    "name": "ANESTHESIA WORKSTATION DIAMOND"
-  },
-  {
-    "sourceCategory": "OT Light",
-    "name": "Single Dome LED OT Light"
-  },
-  {
-    "sourceCategory": "OT Light",
-    "name": "LED OT Light"
-  },
-  {
-    "sourceCategory": "OT Light",
-    "name": "Mobile OT Light"
-  },
-  {
-    "sourceCategory": "Hospital Trolleys",
-    "name": "ABS Anesthetic Cart"
-  },
-  {
-    "sourceCategory": "Hospital Trolleys",
-    "name": "Emergency Patient Trolley"
-  },
-  {
-    "sourceCategory": "Hospital Trolleys",
-    "name": "Deluxe Stretcher Trolley"
-  },
-  {
-    "sourceCategory": "Hospital Bed",
-    "name": "Attendant Bed Cum Chair"
-  },
-  {
-    "sourceCategory": "Hospital Bed",
-    "name": "FOWLER BED DELUXE A"
-  },
-  {
-    "sourceCategory": "Hospital Bed",
-    "name": "Super Deluxe Hospital Fowler Bed"
-  },
-  {
-    "sourceCategory": "ICU Beds",
-    "name": "ICU Beds SEMI ELECTRIC"
-  },
-  {
-    "sourceCategory": "ICU Beds",
-    "name": "ICU Beds FIVE FUNCTIONAL ELECTRIC"
-  },
-  {
-    "sourceCategory": "ICU Beds",
-    "name": "ICU Beds FIVE FUNCTIONAL ELECTRIC (ECO MODEL)"
-  },
-  {
-    "sourceCategory": "Surgical Instruments",
-    "name": "Medical Surgical Instrument"
-  },
-  {
-    "sourceCategory": "Surgical Instruments",
-    "name": "General Surgical Goods"
-  },
-  {
-    "sourceCategory": "Surgical Instruments",
-    "name": "Hernia Surgical Instrument Set"
-  },
-  {
-    "sourceCategory": "Cardiac & Multi Parameter Patient Monitor",
-    "name": "Five Para Monitor"
-  },
-  {
-    "sourceCategory": "Cardiac & Multi Parameter Patient Monitor",
-    "name": "CMS-7000 Patient Monitor"
-  },
-  {
-    "sourceCategory": "Cardiac & Multi Parameter Patient Monitor",
-    "name": "Contec CMS 5100 3 Para Monitor"
-  },
-  {
-    "sourceCategory": "ICU & Ward Accesories",
-    "name": "Hospital Electric Fowler Bed"
-  },
-  {
-    "sourceCategory": "ICU & Ward Accesories",
-    "name": "Crash Cart With ABS Drawers"
-  },
-  {
-    "sourceCategory": "ICU & Ward Accesories",
-    "name": "SS Crash Cart"
-  },
-  {
-    "sourceCategory": "ECG Machine",
-    "name": "Three Channel Ecg Machine"
-  },
-  {
-    "sourceCategory": "ECG Machine",
-    "name": "CMS-5100 Patient Monitor"
-  },
-  {
-    "sourceCategory": "ECG Machine",
-    "name": "Dr. Smith -121 Patient Monitor"
-  },
-  {
-    "sourceCategory": "Anaesthesia Machine",
-    "name": "Anaesthesia Machine Diamond Economy"
-  },
-  {
-    "sourceCategory": "Anaesthesia Machine",
-    "name": "ANAESTHESIA MACHINE GOLD"
-  },
-  {
-    "sourceCategory": "Anaesthesia Machine",
-    "name": "ANESTHESIA WORKSTATION SILVER"
-  },
-  {
-    "sourceCategory": "Delivery And Operation Table",
-    "name": "Electric Cum Manual C Arm Operation Table"
-  },
-  {
-    "sourceCategory": "Delivery And Operation Table",
-    "name": "C Arm Operation Table"
-  },
-  {
-    "sourceCategory": "Delivery And Operation Table",
-    "name": "Delivery Table Hydraulic Deluxe"
-  },
-  {
-    "sourceCategory": "ICU Ventilator",
-    "name": "Dr. Smith Xeron I-Vent Plus ICU Ventilator"
-  },
-  {
-    "sourceCategory": "ICU Ventilator",
-    "name": "Xeron I-Vent Mini Plus ICU Ventilator"
-  },
-  {
-    "sourceCategory": "ICU Ventilator",
-    "name": "VG70 Aeonmed Ventilator"
-  },
-  {
-    "sourceCategory": "Ot Table",
-    "name": "O.T TABLE C-ARM ELECTRIC + MANUAL"
-  },
-  {
-    "sourceCategory": "Ot Table",
-    "name": "ELECTRIC C-ARM TABLE WITHOUT TOP SLIDE"
-  },
-  {
-    "sourceCategory": "Ot Table",
-    "name": "Electric Manual C Arm OT Table"
-  },
-  {
-    "sourceCategory": "Medical Mannequin",
-    "name": "Mannequins For Medical"
-  },
-  {
-    "sourceCategory": "Medical Mannequin",
-    "name": "Adult Cpr Training Manikin"
-  },
-  {
-    "sourceCategory": "Medical Mannequin",
-    "name": "Female Nursing Manikin, Human Shape"
-  },
-  {
-    "sourceCategory": "Modular Operation Theatre",
-    "name": "Modular Operation Theater"
-  },
-  {
-    "sourceCategory": "Modular Operation Theatre",
-    "name": "Modular Operation Theater"
-  },
-  {
-    "sourceCategory": "Modular Operation Theatre",
-    "name": "Modular Operation Theater"
-  },
-  {
-    "sourceCategory": "Horizontal Autoclave",
-    "name": "Autoclave Pressure Cooker"
-  },
-  {
-    "sourceCategory": "Horizontal Autoclave",
-    "name": "Vertical Cylindrical Autoclave"
-  },
-  {
-    "sourceCategory": "Horizontal Autoclave",
-    "name": "Semi Automatic Laboratory Autoclave"
-  },
-  {
-    "sourceCategory": "Patient Monitor",
-    "name": "Surgi HUB-124 Patient Monitor"
-  },
-  {
-    "sourceCategory": "Patient Monitor",
-    "name": "Three Para Monitor"
-  },
-  {
-    "sourceCategory": "Patient Monitor",
-    "name": "CMS-9200 Patient Monitor"
-  },
-  {
-    "sourceCategory": "Medical Gas Pipeline",
-    "name": "Bubble Humidifier Bottle"
-  },
-  {
-    "sourceCategory": "Medical Gas Pipeline",
-    "name": "Modular OT Medical Gas Pipeline"
-  },
-  {
-    "sourceCategory": "Medical Gas Pipeline",
-    "name": "Medical Oxygen Pipeline"
-  },
-  {
-    "sourceCategory": "Bed Side Locker",
-    "name": "ABS Bed Side Locker"
-  },
-  {
-    "sourceCategory": "Bed Side Locker",
-    "name": "SS Bedside Locker"
-  },
-  {
-    "sourceCategory": "Bed Side Locker",
-    "name": "Hospital Bed Side Locker"
-  },
-  {
-    "sourceCategory": "Surgical Instrument Set",
-    "name": "Breast Reduction Surgical Instrument Set"
-  },
-  {
-    "sourceCategory": "Surgical Instrument Set",
-    "name": "Blepharoplasty Surgical Instrument Set"
-  },
-  {
-    "sourceCategory": "Surgical Instrument Set",
-    "name": "Cesarean Section Surgical Instrument Set"
-  },
-  {
-    "sourceCategory": "Surgical Face Mask And Bipap Mask",
-    "name": "Surgical Disposable Face Mask"
-  },
-  {
-    "sourceCategory": "Surgical Face Mask And Bipap Mask",
-    "name": "Surgical Face Mask"
-  },
-  {
-    "sourceCategory": "Surgical Face Mask And Bipap Mask",
-    "name": "Bipap Face Mask"
-  },
-  {
-    "sourceCategory": "Cautery Machine",
-    "name": "400 W Surgical Cautery Machine"
-  },
-  {
-    "sourceCategory": "Cautery Machine",
-    "name": "300W Cautery Machine"
-  },
-  {
-    "sourceCategory": "Cautery Machine",
-    "name": "Analog Cautery Machine"
-  },
-  {
-    "sourceCategory": "Oxygen Concentrator",
-    "name": "Portable Oxygen Concentrator"
-  },
-  {
-    "sourceCategory": "Oxygen Concentrator",
-    "name": "Oxygen Concentrator Machine"
-  },
-  {
-    "sourceCategory": "Oxygen Concentrator",
-    "name": "Jay-10 Daul Flow Oxygen Concentrator"
-  },
-  {
-    "sourceCategory": "Pulse Oximeter",
-    "name": "CMS-50D Fingertrip Pulse Oximeter"
-  },
-  {
-    "sourceCategory": "Pulse Oximeter",
-    "name": "CMS-60C Hand Held Pulse Oximeter"
-  },
-  {
-    "sourceCategory": "Pulse Oximeter",
-    "name": "Simple manikin Set"
-  },
-  {
-    "sourceCategory": "Anesthesia Machine",
-    "name": "ANAESTHESIA MACHINE DIAMOND DELUXE"
-  },
-  {
-    "sourceCategory": "Anesthesia Machine",
-    "name": "Anesthesia Machine"
-  },
-  {
-    "sourceCategory": "Anesthesia Machine",
-    "name": "Surgihub Skin color Anesthesiology Lab Kit"
-  },
-  {
-    "sourceCategory": "Ultrasound Machine",
-    "name": "Mindray Anesthesia Machine"
-  },
-  {
-    "sourceCategory": "Ultrasound Machine",
-    "name": "Diagnostic Ultrasound Scanners"
-  },
-  {
-    "sourceCategory": "Ultrasound Machine",
-    "name": "Dr. Smith F31 Aloka Ultrasound Machine"
-  },
-  {
-    "sourceCategory": "Hospital Furniture",
-    "name": "Medical Hospital Furniture"
-  },
-  {
-    "sourceCategory": "Hospital Furniture",
-    "name": "Ortho Neuro Attachments"
-  },
-  {
-    "sourceCategory": "Hospital Furniture",
-    "name": "Stretcher Trolley Cum Chair"
-  },
-  {
-    "sourceCategory": "Operation Table",
-    "name": "MICROPROCESSOR CONTROLLED OPERATING TABLE"
-  },
-  {
-    "sourceCategory": "Operation Table",
-    "name": "ELECTRIC ANIMAL OPERATING TABLE"
-  },
-  {
-    "sourceCategory": "Operation Table",
-    "name": "ELECTRO MECHANICAL OPERATION TABLE"
-  },
-  {
-    "sourceCategory": "Hydraulic Operation Table",
-    "name": "O.T TABLE C-ARM HYDRAULIC"
-  },
-  {
-    "sourceCategory": "Hydraulic Operation Table",
-    "name": "Hydraulic Ot Table"
-  },
-  {
-    "sourceCategory": "Hydraulic Operation Table",
-    "name": "O.T TABLE HYDRAULIC"
-  },
-  {
-    "sourceCategory": "Examination Couch",
-    "name": "Plain Examination Couch Table"
-  },
-  {
-    "sourceCategory": "Examination Couch",
-    "name": "Deluxe Examination Couch"
-  },
-  {
-    "sourceCategory": "Examination Couch",
-    "name": "MANUAL DELIVERY TABLE 3 SECTION"
-  },
-  {
-    "sourceCategory": "Hospital Stretcher",
-    "name": "Four Fold Stretcher"
-  },
-  {
-    "sourceCategory": "Hospital Stretcher",
-    "name": "Two Fold Stretcher"
-  },
-  {
-    "sourceCategory": "Hospital Stretcher",
-    "name": "Plastic Scoop Stretcher"
-  },
-  {
-    "sourceCategory": "Baby Incubator",
-    "name": "Infra Red Radiant Baby Warmer"
-  },
-  {
-    "sourceCategory": "Baby Incubator",
-    "name": "Baby Incubator Machine"
-  },
-  {
-    "sourceCategory": "Baby Incubator",
-    "name": "Medical Baby Incubator"
-  },
-  {
-    "sourceCategory": "Bubble CPAP",
-    "name": "Bubble Cpap Machine"
-  },
-  {
-    "sourceCategory": "Bubble CPAP",
-    "name": "Bubble C Pap"
-  },
-  {
-    "sourceCategory": "Bubble CPAP",
-    "name": "G-II Auto C-Pap"
-  },
-  {
-    "sourceCategory": "Flow Meter",
-    "name": "Bed Head Pendants Flow Meters"
-  },
-  {
-    "sourceCategory": "Flow Meter",
-    "name": "FA Valve With Flow Meter"
-  },
-  {
-    "sourceCategory": "Flow Meter",
-    "name": "MOX Regulator With Flow Meter"
-  },
-  {
-    "sourceCategory": "Three Seater Waiting Chair",
-    "name": "Three Seater Hospital Chair"
-  },
-  {
-    "sourceCategory": "Three Seater Waiting Chair",
-    "name": "Three Seater Waiting Chair"
-  },
-  {
-    "sourceCategory": "Nursing Manikins",
-    "name": "Newborn Baby Intubation Models"
-  },
-  {
-    "sourceCategory": "Nursing Manikins",
-    "name": "Gallbladder Manikins Set"
-  },
-  {
-    "sourceCategory": "Dental Chair",
-    "name": "Electrical Dental Chair"
-  },
-  {
-    "sourceCategory": "Dental Chair",
-    "name": "Blood Donating Chair"
-  },
-  {
-    "sourceCategory": "Fetal Doppler",
-    "name": "Dr. Smith Fetal Doppler"
-  },
-  {
-    "sourceCategory": "Fetal Doppler",
-    "name": "Digital Fetal Doppler"
-  },
-  {
-    "sourceCategory": "Modular Operation Theater",
-    "name": "Modular Operation Theater"
-  },
-  {
-    "sourceCategory": "Modular Operation Theater",
-    "name": "Modular Ot Operation Theater"
-  },
-  {
-    "sourceCategory": "Delivery Bed",
-    "name": "Hospital Delivery Bed"
-  },
-  {
-    "sourceCategory": "Delivery Bed",
-    "name": "Delivery Bed Hydraulic"
-  },
-  {
-    "sourceCategory": "Full Face Masks",
-    "name": "Forehead Frame Nasal Mask"
-  },
-  {
-    "sourceCategory": "Full Face Masks",
-    "name": "Full Face Mask"
-  },
-  {
-    "sourceCategory": "Dental X Ray Machine",
-    "name": "Dental X Ray Machine"
-  },
-  {
-    "sourceCategory": "Dental X Ray Machine",
-    "name": "DS-1O2 MOBILE HF X RAY"
-  },
-  {
-    "sourceCategory": "SS Revolving Stool",
-    "name": "SS Revolving Stool"
-  },
-  {
-    "sourceCategory": "SS Revolving Stool",
-    "name": "Deluxe Revolving Stool"
-  },
-  {
-    "sourceCategory": "Oxygen Concentrator Machine",
-    "name": "Jay-5 Single Flow Oxygen Concentrator"
-  },
-  {
-    "sourceCategory": "Oxygen Concentrator Machine",
-    "name": "Oxygen Concentrator"
-  },
-  {
-    "sourceCategory": "X Ray Film and View Box",
-    "name": "X Ray Film"
-  },
-  {
-    "sourceCategory": "X Ray Film and View Box",
-    "name": "LED X Ray View Box"
-  },
-  {
-    "sourceCategory": "Compressed Flow Meter",
-    "name": "Neonatal Compressed Flow Meter"
-  },
-  {
-    "sourceCategory": "Compressed Flow Meter",
-    "name": "Back Pressure Compressed Flow Meter"
-  },
-  {
-    "sourceCategory": "Hospital Ventilator",
-    "name": "Maquet Servo Ventilator"
-  },
-  {
-    "sourceCategory": "Hospital Ventilator",
-    "name": "Hamilton Medical Ventilators"
-  },
-  {
-    "sourceCategory": "Hospital Bed ABS Panel",
-    "name": "Hospital Bed ABS Panel"
-  },
-  {
-    "sourceCategory": "Hospital Wheel Chair",
-    "name": "Manual Wheel Chair"
-  },
-  {
-    "sourceCategory": "Electric Dental Chair",
-    "name": "Hydraulic Dental Chair"
-  },
-  {
-    "sourceCategory": "Syringe Pump",
-    "name": "Surgi HUB-128 Syringe Pump"
-  },
-  {
-    "sourceCategory": "Suction Unit",
-    "name": "Aspiret Niscomed Portable Suction"
-  },
-  {
-    "sourceCategory": "Operation Theatre Table",
-    "name": "SEMI ELECTRIC OT TABLE GENERAL"
-  },
-  {
-    "sourceCategory": "Vertical Autoclave",
-    "name": "SS Vertical Autoclave"
-  },
-  {
-    "sourceCategory": "Delivery Table",
-    "name": "Electric Delivery Table"
-  },
-  {
-    "sourceCategory": "Hospital Bed Head Panel",
-    "name": "Bed Headed Panels"
-  },
-  {
-    "sourceCategory": "C Arm Machine",
-    "name": "C Arm Machines"
-  },
-  {
-    "sourceCategory": "Operation Theater Door",
-    "name": "Gray Slide Modular Ot Doors For Hospital"
-  },
-  {
-    "sourceCategory": "Cpr Training Manikin",
-    "name": "Full Functional Child CPR Material - PVC, Rubber"
-  },
-  {
-    "sourceCategory": "Oxygen Flow Meter",
-    "name": "Oxygen Flow Meter"
-  },
-  {
-    "sourceCategory": "Medical Models",
-    "name": "Newborn Baby Advanced Care Manikin"
-  },
-  {
-    "sourceCategory": "Mri Machine",
-    "name": "Siemens MRI Scan Machines"
-  },
-  {
-    "sourceCategory": "Blood Gas Analyzer",
-    "name": "Arterial Blood Gas Machine"
-  },
-  {
-    "sourceCategory": "Ct Scan Machine",
-    "name": "C T Scan Machines"
-  },
-  {
-    "sourceCategory": "Ct Scan Machine",
-    "name": "Resmed Astral 150 Ventilator"
-  },
-  {
-    "sourceCategory": "Ct Scan Machine",
-    "name": "Refurbished Ventilator"
-  },
-  {
-    "sourceCategory": "Folding Manual Wheelchair",
-    "name": "Folding Manual Wheelchair"
-  },
-  {
-    "sourceCategory": "Endoscopy Camera",
-    "name": "Endoscopy Camera"
-  },
-  {
-    "sourceCategory": "Needle Destroyer",
-    "name": "Manual Needle Destroyer"
-  },
-  {
-    "sourceCategory": "Nursing Models",
-    "name": "Cricotracheotomy Trainer Set"
-  },
-  {
-    "sourceCategory": "Bipap Machine",
-    "name": "Bi Pap C Pap Machines"
-  },
-  {
-    "sourceCategory": "Laboratory Equipment",
-    "name": "Aluminum Laboratory Rectangular Hot Plate"
-  },
-  {
-    "sourceCategory": "Tabletop Pulse Oximeter",
-    "name": "CMS-70A Table Top Pulse Oximeter"
-  },
-  {
-    "sourceCategory": "Digital CO2 Insufflator",
-    "name": "30L Digital CO2 Insufflator"
-  },
-  {
-    "sourceCategory": "Instrument Cabinet",
-    "name": "Hospital Instrument Cabinet"
-  },
-  {
-    "sourceCategory": "Spine Board",
-    "name": "Spine Board Stretcher"
-  },
-  {
-    "sourceCategory": "Autoclave Sterilizer",
-    "name": "Gas Cum Electric Autoclaves"
-  },
-  {
-    "sourceCategory": "Horizontal Cylindrical Autoclave",
-    "name": "Horizontal Cylindrical Autoclave"
-  },
-  {
-    "sourceCategory": "Portable Autoclave",
-    "name": "Portable Autoclave Single Drum"
-  },
-  {
-    "sourceCategory": "Hematology Analyzer",
-    "name": "Hematology Analyser"
-  },
-  {
-    "sourceCategory": "Dispoable PPE Kit",
-    "name": "Dispoable PPE Kit"
-  },
-  {
-    "sourceCategory": "Medical Gas Alarm",
-    "name": "Digital Gas Alarm System"
-  },
-  {
-    "sourceCategory": "Obstetrical Manikins & Birthing Simulators",
-    "name": "Intro to Obstetrics Manikins"
-  },
-  {
-    "sourceCategory": "Obstetrical Manikins & Birthing Simulators",
-    "name": "Industrial Oxygen Cylinder"
-  },
-  {
-    "sourceCategory": "New Items",
-    "name": "Oil Free Air Compressor"
-  }
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "12 Channel ECG Machine"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "3 Channel ECG Machine"
+    },
+    {
+        "sourceCategory":  "Cautery Machine",
+        "name":  "300W Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Digital CO2 Insufflator",
+        "name":  "30L Digital CO2 Insufflator"
+    },
+    {
+        "sourceCategory":  "Cautery Machine",
+        "name":  "400 W Surgical Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Cautery Machine",
+        "name":  "400 Watt Digital Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "A.v. Fistula Instrument Set"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Abdominal Hysterectomy Instrument Set"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Abdominoplasty Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "ABS Anesthetic Cart"
+    },
+    {
+        "sourceCategory":  "Bed Side Locker",
+        "name":  "ABS Bed Side Locker"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Abs Panel Hospital Semi Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Adjustable Hospital Beds"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "Adult Cpr Training Manikin"
+    },
+    {
+        "sourceCategory":  "Bed Side Locker",
+        "name":  "AGFA CR-10-X CR Machine"
+    },
+    {
+        "sourceCategory":  "Anesthesia Machine",
+        "name":  "Allied Medical Anaesthesia Machine"
+    },
+    {
+        "sourceCategory":  "Hospital Stretcher",
+        "name":  "Aluminum Folding Stretcher"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Ambulance Stretcher"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "Anaesthesia Machine"
+    },
+    {
+        "sourceCategory":  "Anesthesia Machine",
+        "name":  "ANAESTHESIA MACHINE DIAMOND DELUXE"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "Anaesthesia Machine Diamond Economy"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "ANAESTHESIA MACHINE DIAMOND STANDARD"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "ANAESTHESIA MACHINE GOLD"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "ANAESTHESIA MACHINE SILVER"
+    },
+    {
+        "sourceCategory":  "Cautery Machine",
+        "name":  "Analog Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Anesthesia Machine",
+        "name":  "Anesthesia Machine"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Anesthesia Workstation and Trolleys"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "ANESTHESIA WORKSTATION DIAMOND"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "ANESTHESIA WORKSTATION GOLD"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "ANESTHESIA WORKSTATION SILVER"
+    },
+    {
+        "sourceCategory":  "Blood Gas Analyzer",
+        "name":  "Arterial Blood Gas Machine"
+    },
+    {
+        "sourceCategory":  "Suction Unit",
+        "name":  "Aspiret Niscomed Portable Suction"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Attendant Bed Cum Chair"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Autoclave Pressure Cooker"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Autoloader Collapsible Stretcher"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Automatic External Defibrillator"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Automatic Five Functional Electric ICU Beds"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Automatic Obstetric Electric Bed"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Baby Cradle And Bassinet"
+    },
+    {
+        "sourceCategory":  "Baby Incubator",
+        "name":  "Baby Incubator Machine"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Baby Radiant Warmer"
+    },
+    {
+        "sourceCategory":  "Flow Meter",
+        "name":  "Bed Head Pendants Flow Meters"
+    },
+    {
+        "sourceCategory":  "Hospital Bed Head Panel",
+        "name":  "Bed Headed Panels"
+    },
+    {
+        "sourceCategory":  "Bed Side Locker",
+        "name":  "Bed Side Locker"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Bedside Cardiac Monitor YK-8000CS"
+    },
+    {
+        "sourceCategory":  "Bipap Machine",
+        "name":  "Bi Pap C Pap Machines"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Bio Medical Waste Trolley"
+    },
+    {
+        "sourceCategory":  "Surgical Face Mask And Bipap Mask",
+        "name":  "Bipap Face Mask"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Birthright Delivery Bed"
+    },
+    {
+        "sourceCategory":  "Surgical Instrument Set",
+        "name":  "Bladder Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Blepharoplasty Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Dental Chair",
+        "name":  "Blood Donating Chair"
+    },
+    {
+        "sourceCategory":  "Bipap Machine",
+        "name":  "Bmc Bipap Machine"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Box Type Instrument Trolley"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "BPL ECG Machine"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "BPL Magna 3 Para Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator",
+        "name":  "BPL Oxy 5 Neo Dual Oxygen Concentrator"
+    },
+    {
+        "sourceCategory":  "Surgical Instrument Set",
+        "name":  "Breast Reduction Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "BT-350 Bistos Fetal Monitor"
+    },
+    {
+        "sourceCategory":  "Bubble CPAP",
+        "name":  "Bubble C Pap"
+    },
+    {
+        "sourceCategory":  "Bubble CPAP",
+        "name":  "Bubble Cpap Machine"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "C Arm Hydraulic OT Table"
+    },
+    {
+        "sourceCategory":  "C Arm Machine",
+        "name":  "C Arm Machines"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "C Arm Operation Table"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "C R Systems"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Cardiac Monitor Machine"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Cardiac Overbed Table"
+    },
+    {
+        "sourceCategory":  "Cautery Machine",
+        "name":  "Cautery Machine Electrosurgical Unit"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Ceiling Mounted O. T Light Single Dome Halogen For Operation Theater"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Ceiling Mounted Single Dome Ot Light For Operation Theater"
+    },
+    {
+        "sourceCategory":  "Surgical Instrument Set",
+        "name":  "Cesarean Section Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Chalazion Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Pulse Oximeter",
+        "name":  "CMS-50D Fingertrip Pulse Oximeter"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "CMS-5100 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Pulse Oximeter",
+        "name":  "CMS-60C Hand Held Pulse Oximeter"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "CMS-7000 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Tabletop Pulse Oximeter",
+        "name":  "CMS-70A Table Top Pulse Oximeter"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "CMS-9200 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Colposcopy Surgical Set"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Contec CMS 5100 3 Para Monitor"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Contec Multipara Monitor CMS8000"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "CPR CHEST Manikin MALE"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Craniotomy Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Crash Cart With ABS Drawers"
+    },
+    {
+        "sourceCategory":  "Delivery Bed",
+        "name":  "Delivery Bed Hydraulic"
+    },
+    {
+        "sourceCategory":  "Surgical Instrument Set",
+        "name":  "Delivery Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Delivery Table Hydraulic Deluxe"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Deluxe Bed Side Locker"
+    },
+    {
+        "sourceCategory":  "Examination Couch",
+        "name":  "Deluxe Examination Couch"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Deluxe Plain Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Deluxe Plain Hospital Bed"
+    },
+    {
+        "sourceCategory":  "SS Revolving Stool",
+        "name":  "Deluxe Revolving Stool"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Deluxe Semi Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Deluxe Stretcher Trolley"
+    },
+    {
+        "sourceCategory":  "Dental X Ray Machine",
+        "name":  "Dental X Ray Machine"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Digital Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Fetal Doppler",
+        "name":  "Digital Fetal Doppler"
+    },
+    {
+        "sourceCategory":  "Medical Gas Alarm",
+        "name":  "Digital Gas Alarm System"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Double Dome Ceiling Ot Light, For Operation Theater"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Double Surface Photo Therapy Machine"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "Dr. Smith -121 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Fetal Doppler",
+        "name":  "Dr. Smith Fetal Doppler"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "Dr. Smith Fetal Monitor"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Dr. Smith Semi Automatic Defibrillator"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Dr. Smith Xeron I-Vent Plus ICU Ventilator"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "Dr. Smith-123 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Drager Evita Xl ICU Ventilator"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Dressing Drum Stainless Steel"
+    },
+    {
+        "sourceCategory":  "Dental X Ray Machine",
+        "name":  "DS-1O2 MOBILE HF X RAY"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "E4 Portable Vital Sign Monitors"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Ear Microsurgery Mastoidectomy Set"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "ECG Machine Trolley"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "ECG-100G Single Channel ECG Machine"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "ECG-1200G Twelve Channel ECG Machine"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Electical With Centre Locking ICU Beds"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "ELECTRIC C-ARM TABLE WITHOUT TOP SLIDE"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Electric Cum Manual C Arm Operation Table"
+    },
+    {
+        "sourceCategory":  "Delivery Table",
+        "name":  "Electric Delivery Table"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "Electric Manual C Arm OT Table"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "Electric OT Table"
+    },
+    {
+        "sourceCategory":  "Dental Chair",
+        "name":  "Electrical Dental Chair"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "ELECTRO HYDRAULIC OT TABLE"
+    },
+    {
+        "sourceCategory":  "Operation Table",
+        "name":  "ELECTRO MECHANICAL OPERATION TABLE"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Electrosurgical Cautery Machine 400 w"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Emergency Patient Trolley"
+    },
+    {
+        "sourceCategory":  "Endoscopy Camera",
+        "name":  "Endoscopy Camera"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Endoscopy Laparoscopy Camera"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "ENT And Neuro Microscopes"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "ENT Surgical Instruments"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "ETO Sterilizer"
+    },
+    {
+        "sourceCategory":  "Flow Meter",
+        "name":  "FA Valve With Flow Meter"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "Female Nursing Manikin, Human Shape"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Fetal Monitor CTG Machine"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Five Function Manual ICU Beds"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Five Functional Electrical ICU Beds"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Five Functional Manual ICU Beds"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Five Para Monitor"
+    },
+    {
+        "sourceCategory":  "Folding Manual Wheelchair",
+        "name":  "Folding Manual Wheelchair"
+    },
+    {
+        "sourceCategory":  "Full Face Masks",
+        "name":  "Forehead Frame Nasal Mask"
+    },
+    {
+        "sourceCategory":  "Hospital Stretcher",
+        "name":  "Four Fold Stretcher"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Fowler Bed Delux"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "FOWLER BED DELUXE A"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Fowler Bed Eco"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "FOWLER BED ELECTRICAL"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "FOWLER BED SUPER DELUXE"
+    },
+    {
+        "sourceCategory":  "Full Face Masks",
+        "name":  "Full Face Mask"
+    },
+    {
+        "sourceCategory":  "Cpr Training Manikin",
+        "name":  "Full Functional Child CPR Material - PVC, Rubber"
+    },
+    {
+        "sourceCategory":  "Autoclave Sterilizer",
+        "name":  "Gas Cum Electric Autoclaves"
+    },
+    {
+        "sourceCategory":  "Bubble CPAP",
+        "name":  "G-II Auto C-Pap"
+    },
+    {
+        "sourceCategory":  "Operation Theater Door",
+        "name":  "Gray Slide Modular Ot Doors For Hospital"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Halogen Ceiling OT Light"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "HALOGEN MOBILE OT LIGHT SINGLE DOME 4 REFLECTOR"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Halogen OT Light"
+    },
+    {
+        "sourceCategory":  "Hospital Ventilator",
+        "name":  "Hamilton Medical Ventilators"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Hernia Surgical Instrument Set"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Horizontal Autoclave"
+    },
+    {
+        "sourceCategory":  "Horizontal Cylindrical Autoclave",
+        "name":  "Horizontal Cylindrical Autoclave"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Horizontal Cylindrical Double Door Autoclave"
+    },
+    {
+        "sourceCategory":  "Hospital Bed ABS Panel",
+        "name":  "Hospital Bed ABS Panel"
+    },
+    {
+        "sourceCategory":  "Bed Side Locker",
+        "name":  "Hospital Bed Side Locker"
+    },
+    {
+        "sourceCategory":  "Delivery Bed",
+        "name":  "Hospital Delivery Bed"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Hospital Delivery Table"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Hospital Electric Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Hospital Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Instrument Cabinet",
+        "name":  "Hospital Instrument Cabinet"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Hospital Instrument Sterilizer"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Hospital Kick Bucket"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Hospital Semi Fowler Electrical Bed"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Hospital Three Fold Screen"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Hydraulic Delivery Table"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Hydraulic Operation Table"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "Hydraulic OT Table"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "HYDRAULIC OT TABLE WITH SIDE END CONTROL"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "I V Stand"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds ELECTRIC ABS PANELS \u0026 ABS RAILINGS"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds ELECTRIC SS PANELS \u0026 COLLAPSIBLE RAILINGS"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds ELECTRIC WITH ABS TOP"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds FIVE FUNCTIONAL ELECTRIC"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds FIVE FUNCTIONAL ELECTRIC (ECO MODEL)"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds FIVE FUNCTIONAL MANUAL(ECO MODEL)"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds MECHANICAL ABS PANELS \u0026 COLLAPSIBLE RAILINGS"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "ICU Beds SEMI ELECTRIC"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Icu Ventilator Machine"
+    },
+    {
+        "sourceCategory":  "Baby Incubator",
+        "name":  "Infra Red Radiant Baby Warmer"
+    },
+    {
+        "sourceCategory":  "Obstetrical Manikins \u0026 Birthing Simulators",
+        "name":  "Intro to Obstetrics Manikins"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator",
+        "name":  "Jay-10 Daul Flow Oxygen Concentrator"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator Machine",
+        "name":  "Jay-5 Single Flow Oxygen Concentrator"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Kidney Tray Ss"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Knee Surgery Instrument Set"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Laparoscopic Trolley"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Led O.t Twin Light, For Operation Theater"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "LED OT Light"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "LED White OT EXAMINATION LIGHT CHROME BASE"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Led White Ot Halogen Examination Light Wall Mounted, For Hospital"
+    },
+    {
+        "sourceCategory":  "X Ray Film and View Box",
+        "name":  "LED X Ray View Box"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Light Ceiling Halogen Twin For Operation Theater"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "Mannequins For Medical"
+    },
+    {
+        "sourceCategory":  "Examination Couch",
+        "name":  "MANUAL DELIVERY TABLE 3 SECTION"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Manual Fowler Hospital Bed"
+    },
+    {
+        "sourceCategory":  "Needle Destroyer",
+        "name":  "Manual Needle Destroyer"
+    },
+    {
+        "sourceCategory":  "Hospital Wheel Chair",
+        "name":  "Manual Wheel Chair"
+    },
+    {
+        "sourceCategory":  "Hospital Ventilator",
+        "name":  "Maquet Servo Ventilator"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Mayo Trolley"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "MDK Patient Multi-para Monitor"
+    },
+    {
+        "sourceCategory":  "Baby Incubator",
+        "name":  "Medical Baby Incubator"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Medical Equipments"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Medical Fogger Machine"
+    },
+    {
+        "sourceCategory":  "Medical Gas Pipeline",
+        "name":  "Medical Gas Pipeline"
+    },
+    {
+        "sourceCategory":  "Medical Gas Pipeline",
+        "name":  "Medical Gas Pipeline System"
+    },
+    {
+        "sourceCategory":  "Hospital Furniture",
+        "name":  "Medical Hospital Furniture"
+    },
+    {
+        "sourceCategory":  "Medical Gas Pipeline",
+        "name":  "Medical Oxygen Pipeline"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Medical Surgical Instrument"
+    },
+    {
+        "sourceCategory":  "Operation Table",
+        "name":  "MICROPROCESSOR CONTROLLED OPERATING TABLE"
+    },
+    {
+        "sourceCategory":  "Ultrasound Machine",
+        "name":  "Mindray Anesthesia Machine"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Mindray Icu Ventilator"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Minor Micro Surgery Instrument Set"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Mobile Led Ot Light For Hospital"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Mobile OT Light"
+    },
+    {
+        "sourceCategory":  "Modular Operation Theater",
+        "name":  "Modular Operation Theater"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Modular Operation Theater Modular Ot"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Modular Operation Theatre Modular Ot"
+    },
+    {
+        "sourceCategory":  "Medical Gas Pipeline",
+        "name":  "Modular OT Medical Gas Pipeline"
+    },
+    {
+        "sourceCategory":  "Modular Operation Theater",
+        "name":  "Modular Ot Operation Theater"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Modular Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Motorized Birthing DeliveryBed"
+    },
+    {
+        "sourceCategory":  "Flow Meter",
+        "name":  "MOX Regulator With Flow Meter"
+    },
+    {
+        "sourceCategory":  "Anaesthesia Machine",
+        "name":  "Mri Compatible Anaesthesia Machines"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "MS Delivery Bed"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "Multi Functional Patient Care Nursing Manikin (Female)"
+    },
+    {
+        "sourceCategory":  "Pulse Oximeter",
+        "name":  "Natural Medical Mannequin Set"
+    },
+    {
+        "sourceCategory":  "Medical Models",
+        "name":  "Newborn Baby Advanced Care Manikin"
+    },
+    {
+        "sourceCategory":  "Nursing Manikins",
+        "name":  "Newborn Baby Intubation Models"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "O.T Light Halogen Single Dome"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "O.T TABLE C-ARM ELECTRIC + MANUAL"
+    },
+    {
+        "sourceCategory":  "Hydraulic Operation Table",
+        "name":  "O.T TABLE C-ARM HYDRAULIC"
+    },
+    {
+        "sourceCategory":  "Hydraulic Operation Table",
+        "name":  "O.T TABLE HYDRAULIC"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "OPTHALMIC OT TABLE MANUAL"
+    },
+    {
+        "sourceCategory":  "Hospital Furniture",
+        "name":  "Ortho Neuro Attachments"
+    },
+    {
+        "sourceCategory":  "Ot Table",
+        "name":  "ORTHOPEDIC OT TABLE ELECTRIC"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Ot Halogen Examination Light Wall mounted"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "OT Light Mobile, For Operation Theater, LED"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "OT Twin Light Halogen"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator Machine",
+        "name":  "Oxygen Concentrator"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator",
+        "name":  "Oxygen Concentrator Machine"
+    },
+    {
+        "sourceCategory":  "Oxygen Flow Meter",
+        "name":  "Oxygen Flow Meter"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Patient Multipara Monitor"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Patient Stretcher Trolley"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Pediatric Bed"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "PEDIATRIC ELECTRIC WITH RAILINGS ICU Beds"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "Philips Patient Monitor"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Physiotherapy Electrotherapy Machine"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "PLAIN BED DELUXE"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "PLAIN BED ECO MODEL"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "PLAIN BED SUPER DELUXE"
+    },
+    {
+        "sourceCategory":  "Examination Couch",
+        "name":  "Plain Examination Couch Table"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Plain Hospital Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Stretcher",
+        "name":  "Plastic Scoop Stretcher"
+    },
+    {
+        "sourceCategory":  "Portable Autoclave",
+        "name":  "Portable Autoclave Single Drum"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Portable Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Medical Mannequin",
+        "name":  "PVC Medical Mannequin"
+    },
+    {
+        "sourceCategory":  "Medical Ventilator",
+        "name":  "Refurbished Ventilator"
+    },
+    {
+        "sourceCategory":  "Medical Ventilator",
+        "name":  "Resmed Astral 150 Ventilator"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Semi Automatic Laboratory Autoclave"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Semi Automatic Portable Autoclave"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Semi Deluxe Bed Side Locker"
+    },
+    {
+        "sourceCategory":  "Operation Theatre Table",
+        "name":  "SEMI ELECTRIC OT TABLE GENERAL"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED ABS PANELS WITH WHEELS"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED ELECTRIC"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED ELECTRIC ABS TOP"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "SEMI FOWLER BED SS PANELS WITH WHEELS"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED STANDARD WITH WHEELS"
+    },
+    {
+        "sourceCategory":  "ICU Beds",
+        "name":  "SEMI FOWLER BED SUPER DELUXE"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED WIRE MESH TOP WITH WHEELS"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "SEMI FOWLER BED WITH RATCHET \u0026 WHEELS"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Semi Fowler Hospital Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Semi-Electric Delivery Beds"
+    },
+    {
+        "sourceCategory":  "Pulse Oximeter",
+        "name":  "Simple manikin Set"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Single Dome LED OT Light"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Sinnor 6 Parameter Semi Modular Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Sinnor Snp9000n Cardiac Monitor"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "Six Channel Ecg Machines"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Soiled Linen Trolley"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "SP-10 Electronic Handheld Spirometer"
+    },
+    {
+        "sourceCategory":  "Spine Board",
+        "name":  "Spine Board Stretcher"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "SR-DP01 DVT Pump"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Ss And Ms Hospital Bench"
+    },
+    {
+        "sourceCategory":  "Bed Side Locker",
+        "name":  "SS Bedside Locker"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "SS Crash Cart"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "SS Cylinder Trolley"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "SS Hospital Dressing Trolley"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "SS Instrument Trolley"
+    },
+    {
+        "sourceCategory":  "SS Revolving Stool",
+        "name":  "SS Revolving Stool"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "SS Surgical Instrument Trolley"
+    },
+    {
+        "sourceCategory":  "Vertical Autoclave",
+        "name":  "SS Vertical Autoclave"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Stainless Steel D C Instruments Set"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Stainless Steel Horizontal Front Loading Flash Sterilizers, 22 L"
+    },
+    {
+        "sourceCategory":  "Hospital Furniture",
+        "name":  "Stainless Steel Stool"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Stainless Steel Vertical Pressure Steam Sterilizer"
+    },
+    {
+        "sourceCategory":  "Hospital Furniture",
+        "name":  "Stretcher Trolley Cum Chair"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Suction Machines Ms"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Super Deluxe Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "Super Deluxe Hospital Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Super Deluxe Plain Hospital Bed"
+    },
+    {
+        "sourceCategory":  "Hospital Bed And Mattress",
+        "name":  "Super Deluxe Semi Fowler Bed"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "Surgi Hub-122 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "Surgi HUB-124 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "Surgi HUB-125 Patient Monitor"
+    },
+    {
+        "sourceCategory":  "Oxygen Concentrator",
+        "name":  "Surgi HUB-126 Meter"
+    },
+    {
+        "sourceCategory":  "Syringe Pump",
+        "name":  "Surgi HUB-128 Syringe Pump"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Surgi HUB-129 Infusion Pump"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Surgical Cautery Machine"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Surgical Instrument Trolley"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "Surgical Instruments Tray"
+    },
+    {
+        "sourceCategory":  "OT Light",
+        "name":  "Surgical Ot Pendants"
+    },
+    {
+        "sourceCategory":  "ICU \u0026 Ward Accesories",
+        "name":  "Surgical Scrub Sink Station"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "Syringe Pump"
+    },
+    {
+        "sourceCategory":  "Surgical Instruments",
+        "name":  "TC General Instruments"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "TELESCOPIC DELIVERY OBSTETRIC BED"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "TELESCOPIC LABOUR TABLE ADJUSTABLE HEIGHT"
+    },
+    {
+        "sourceCategory":  "Hospital Bed",
+        "name":  "TELESCOPIC LABOUR TABLE FIXED HEIGHT"
+    },
+    {
+        "sourceCategory":  "ECG Machine",
+        "name":  "Three Channel Ecg Machine"
+    },
+    {
+        "sourceCategory":  "Delivery And Operation Table",
+        "name":  "Three Fold Delivery Table"
+    },
+    {
+        "sourceCategory":  "Patient Monitor",
+        "name":  "Three Para Monitor"
+    },
+    {
+        "sourceCategory":  "Three Seater Waiting Chair",
+        "name":  "Three Seater Hospital Chair"
+    },
+    {
+        "sourceCategory":  "Three Seater Waiting Chair",
+        "name":  "Three Seater Waiting Chair"
+    },
+    {
+        "sourceCategory":  "Hospital Trolleys",
+        "name":  "Three Shelf Instrument Trolley"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "TS13 Modular Patient Monitor, Display"
+    },
+    {
+        "sourceCategory":  "Hospital Stretcher",
+        "name":  "Two Fold Stretcher"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Versamed I-VENT ICU Ventilator"
+    },
+    {
+        "sourceCategory":  "Horizontal Autoclave",
+        "name":  "Vertical Cylindrical Autoclave"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "VG70 Aeonmed Ventilator"
+    },
+    {
+        "sourceCategory":  "Medical Equipment",
+        "name":  "X Ray Machines"
+    },
+    {
+        "sourceCategory":  "ICU Ventilator",
+        "name":  "Xeron I-Vent Mini Plus ICU Ventilator"
+    },
+    {
+        "sourceCategory":  "Cardiac \u0026 Multi Parameter Patient Monitor",
+        "name":  "Yonker E15 Modular Patient Monitor Machine"
+    }
 ]
