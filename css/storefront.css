@@ -599,3 +599,17 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hpp-prod-main small{display:block;font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
 .hpp-prod-meta{flex:none;font-size:10px;font-weight:700;color:var(--teal);white-space:nowrap}
 @media(max-width:767px){.header-products-popover{display:none!important}}
+
+/* Clickable Homepage Benefit Strip with Elevated White Hover Card */
+.benefit-row>.benefit-item{display:flex;gap:14px;align-items:center;justify-content:center;border-right:1px solid var(--line);padding:10px 14px;border-radius:10px;text-decoration:none;color:var(--ink);transition:background-color .22s ease,box-shadow .22s ease,transform .22s ease}
+.benefit-row>.benefit-item:first-child{justify-content:flex-start}
+.benefit-row>.benefit-item:last-child{border-right:0}
+.benefit-row>.benefit-item:hover,.benefit-row>.benefit-item:focus-visible{background:#ffffff;color:var(--teal);box-shadow:0 8px 24px rgba(6,59,60,.1);transform:translateY(-2px);z-index:1}
+.benefit-row>.benefit-item:hover strong,.benefit-row>.benefit-item:focus-visible strong{color:var(--teal)}
+@media(max-width:991px){
+  .benefit-row>.benefit-item{justify-content:flex-start}
+  .benefit-row>.benefit-item:nth-child(2){border-right:0}
+}
+@media(max-width:640px){
+  .benefit-row>.benefit-item{gap:9px;border-right:0;padding:8px 10px}
+}
