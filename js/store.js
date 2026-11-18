@@ -802,7 +802,8 @@
     const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
     const phoneLayout=window.matchMedia('(max-width: 700px)');
     let cycleWidth=0,cardStep=0,viewportWidth=0,position=0,lastWritten=0,frame=0,previousTime=0;
-    let focused=false,pointerActive=false,visible=true,hovered=false,temporarilyPaused=false,resumeTimer,mobileTimer,autoScrollTimer,autoScrolling=false;
+    let focused=false,pointerActive=false,visible=true,temporarilyPaused=false,resumeTimer;
+    let dragStartX=0,dragStartScroll=0,didDrag=false;
 
     const modulo=(value,length)=>(value%length+length)%length;
     function writePosition(value){position=value;marquee.scrollLeft=value;lastWritten=marquee.scrollLeft;}
@@ -813,40 +814,24 @@
     }
     function syncPlayback(){
       cancelAnimationFrame(frame);
-      window.clearTimeout(mobileTimer);
       previousTime=0;
       const sectionVisible=phoneLayout.matches
         ? featuredSection.getBoundingClientRect().bottom>0&&featuredSection.getBoundingClientRect().top<window.innerHeight
         : visible;
-      if(cycleWidth&&!reducedMotion.matches&&(!hovered||phoneLayout.matches)&&!focused&&!pointerActive&&!temporarilyPaused&&sectionVisible&&!document.hidden){
+      if(cycleWidth&&!reducedMotion.matches&&!focused&&!pointerActive&&!temporarilyPaused&&sectionVisible&&!document.hidden){
         normalizePosition();
-        if(phoneLayout.matches){
-          mobileTimer=window.setTimeout(advanceMobile,2500);
-        }else{
-          frame=requestAnimationFrame(tick);
-        }
+        frame=requestAnimationFrame(tick);
       }
-    }
-    function advanceMobile(){
-      autoScrolling=true;
-      marquee.scrollBy({left:cardStep,behavior:'smooth'});
-      autoScrollTimer=window.setTimeout(()=>{
-        autoScrolling=false;
-        position=marquee.scrollLeft;
-        lastWritten=marquee.scrollLeft;
-        normalizePosition();
-        syncPlayback();
-      },700);
     }
     function tick(time){
       const elapsed=previousTime?Math.min(time-previousTime,64):0;
       previousTime=time;
-      position+=elapsed*(phoneLayout.matches?30:32)/1000;
+      position+=elapsed*(phoneLayout.matches?30:36)/1000;
       writePosition(position);
       normalizePosition();
       frame=requestAnimationFrame(tick);
     }
-    function pauseBriefly(duration=1800){
+    function pauseBriefly(duration=1200){
       temporarilyPaused=true;
       window.clearTimeout(resumeTimer);
       resumeTimer=window.setTimeout(()=>{temporarilyPaused=false;syncPlayback();},duration);
@@ -869,7 +854,7 @@
       const step=originals[0]?.getBoundingClientRect().width+gap;
       const width=marquee.clientWidth;
       if(!step||!width)return;
-      controls.hidden=false;
+      if(controls)controls.hidden=false;
       if(step===cardStep&&width===viewportWidth)return;
       const progress=cycleWidth?modulo(position-cycleWidth,cycleWidth)/cycleWidth:0;
       track.querySelectorAll('[data-carousel-copy]').forEach(copy=>copy.remove());
@@ -892,18 +877,6 @@
 
     previous?.addEventListener('click',()=>moveProducts(-1));
     next?.addEventListener('click',()=>moveProducts(1));
-    marquee.addEventListener('pointerenter',event=>{
-      if(event.pointerType==='touch')return;
-      hovered=true;
-      syncPlayback();
-    });
-    marquee.addEventListener('pointerleave',event=>{
-      if(event.pointerType==='touch')return;
-      hovered=false;
-      window.clearTimeout(resumeTimer);
-      temporarilyPaused=false;
-      syncPlayback();
-    });
     marquee.addEventListener('focusin',event=>{
       const card=event.target.closest('.product-card');
       focused=Boolean(card&&event.target.matches(':focus-visible'));
@@ -919,34 +892,53 @@
       focused=Boolean(target&&target.closest('.product-card')&&target.matches(':focus-visible'));
       syncPlayback();
     });
-    marquee.addEventListener('pointerdown',()=>{
-      if(autoScrolling){
-        window.clearTimeout(autoScrollTimer);
-        marquee.scrollTo({left:marquee.scrollLeft,behavior:'auto'});
-        autoScrolling=false;
-      }
+    marquee.addEventListener('pointerdown',event=>{
+      if(event.pointerType==='mouse'&&event.button!==0)return;
       pointerActive=true;
+      didDrag=false;
+      dragStartX=event.clientX;
+      dragStartScroll=marquee.scrollLeft;
+      marquee.classList.add('is-dragging');
+      window.clearTimeout(resumeTimer);
+      temporarilyPaused=false;
       syncPlayback();
     },{passive:true});
+    window.addEventListener('pointermove',event=>{
+      if(!pointerActive||event.pointerType!=='mouse')return;
+      const dx=event.clientX-dragStartX;
+      if(Math.abs(dx)>4)didDrag=true;
+      if(didDrag){
+        writePosition(dragStartScroll-dx);
+        normalizePosition();
+      }
+    },{passive:true});
+    marquee.addEventListener('click',event=>{
+      if(didDrag){
+        event.preventDefault();
+        event.stopPropagation();
+        didDrag=false;
+      }
+    },true);
     function releasePointer(){
       if(!pointerActive)return;
       pointerActive=false;
-      pauseBriefly();
+      marquee.classList.remove('is-dragging');
+      position=marquee.scrollLeft;
+      lastWritten=marquee.scrollLeft;
+      normalizePosition();
+      temporarilyPaused=false;
+      window.clearTimeout(resumeTimer);
+      syncPlayback();
     }
     window.addEventListener('pointerup',releasePointer,{passive:true});
     window.addEventListener('pointercancel',releasePointer,{passive:true});
-    marquee.addEventListener('wheel',()=>pauseBriefly(),{passive:true});
+    marquee.addEventListener('wheel',()=>pauseBriefly(600),{passive:true});
     marquee.addEventListener('scroll',()=>{
-      if(autoScrolling){
-        position=marquee.scrollLeft;
-        lastWritten=marquee.scrollLeft;
-        return;
-      }
       if(Math.abs(marquee.scrollLeft-lastWritten)<=1)return;
       position=marquee.scrollLeft;
       lastWritten=marquee.scrollLeft;
       normalizePosition();
-      pauseBriefly();
+      if(!pointerActive)pauseBriefly(600);
     },{passive:true});
     reducedMotion.addEventListener('change',syncPlayback);
     document.addEventListener('visibilitychange',syncPlayback);
@@ -978,7 +970,72 @@
     nav.innerHTML = `<a href="index.html" class="${page==='index'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><button type="button" data-open-megamenu="categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Categories</span></button><a href="products.html" class="${page==='products'||page==='product'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Shop</span></a><button type="button" data-open-setup-planner><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg><span>Hospital Setup</span></button><a href="cart.html" class="${page==='cart'||page==='checkout'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Quote Cart</span><b data-cart-count>${totalQty}</b></a>`;
     document.body.appendChild(nav);
   }
-  initProcurementBar();initHomeB2BHub();initMobileTabbar();initAssistant();  // A shared frontend interface keeps drawers, local profiles and native cards in sync.
+  function initHeaderProductsDropdown() {
+    const productsLink = $('.store-header .primary-links > a[href="products.html"]');
+    if (!productsLink || $('.header-products-popover')) return;
+    const popover = document.createElement('div');
+    popover.className = 'header-products-popover';
+    popover.hidden = true;
+    popover.setAttribute('role', 'region');
+    popover.setAttribute('aria-label', 'All product categories and products');
+    const firstCat = categories[0]?.id || 'furniture';
+    const renderProductsList = (catId, query = '') => {
+      const q = query.trim().toLowerCase();
+      const list = products.filter(p => (catId === 'all' || p.category === catId) && (!q || `${p.name} ${p.subcategory} ${(p.features || []).join(' ')}`.toLowerCase().includes(q)));
+      const catObj = categories.find(c => c.id === catId);
+      const heading = catId === 'all' ? `All Products (${list.length})` : `${catObj ? catObj.name : 'Category'} (${list.length})`;
+      const desc = catObj?.description || 'Browse complete specifications and add items directly to your quote basket.';
+      return `<div class="hpp-main-head"><div><strong>${e(heading)}</strong><span>${e(desc)}</span></div><a class="hpp-view-cat" href="${catId === 'all' ? 'products.html' : 'products.html?category=' + encodeURIComponent(catId)}">Open in catalogue →</a></div><div class="hpp-product-list">${list.length ? list.map(p => `<a class="hpp-product-row" href="${link(p)}"><div class="hpp-prod-main"><strong>${e(p.name)}</strong><small>${e(p.subcategory)} · ${e((p.features || []).slice(0, 3).join(' · ') || 'Clinical specification available')}</small></div><span class="hpp-prod-meta">View details →</span></a>`).join('') : '<p class="muted" style="padding:12px 0;margin:0">No matching products in this view.</p>'}</div>`;
+    };
+    popover.innerHTML = `<div class="hpp-shell"><aside class="hpp-cats"><div class="hpp-cats-title">PRODUCT CATEGORIES</div>${categories.map((c, idx) => {
+      const count = products.filter(p => p.category === c.id).length;
+      return `<a href="products.html?category=${encodeURIComponent(c.id)}" class="hpp-cat-btn ${idx === 0 ? 'is-active' : ''}" data-hpp-cat="${e(c.id)}"><div><strong>${e(c.name)}</strong><small>${e(c.description)}</small></div><b>${count}</b></a>`;
+    }).join('')}<a href="products.html" class="hpp-cat-btn" data-hpp-cat="all"><div><strong>All Catalogue Items</strong><small>Complete range across all ${categories.length} families</small></div><b>${products.length}</b></a></aside><div class="hpp-main"><div class="hpp-search-row"><input type="search" class="hpp-search-input" placeholder="Filter products by name, subcategory or specification…" aria-label="Filter products in menu"></div><div class="hpp-main-content">${renderProductsList(firstCat)}</div></div></div>`;
+    const headerEl = $('.store-header') || document.body;
+    headerEl.appendChild(popover);
+    let activeCat = firstCat;
+    let hideTimer = 0;
+    const searchInput = popover.querySelector('.hpp-search-input');
+    const contentBox = popover.querySelector('.hpp-main-content');
+    const updateView = () => {
+      contentBox.innerHTML = renderProductsList(activeCat, searchInput.value);
+    };
+    const showPopover = () => {
+      if (window.matchMedia('(max-width: 767px)').matches) return;
+      clearTimeout(hideTimer);
+      popover.hidden = false;
+      productsLink.setAttribute('aria-expanded', 'true');
+    };
+    const scheduleHide = () => {
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(() => {
+        popover.hidden = true;
+        productsLink.setAttribute('aria-expanded', 'false');
+      }, 180);
+    };
+    productsLink.addEventListener('mouseenter', showPopover);
+    productsLink.addEventListener('focus', showPopover);
+    productsLink.addEventListener('mouseleave', scheduleHide);
+    popover.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    popover.addEventListener('mouseleave', scheduleHide);
+    popover.querySelectorAll('[data-hpp-cat]').forEach(btn => {
+      const activate = () => {
+        activeCat = btn.dataset.hppCat;
+        popover.querySelectorAll('[data-hpp-cat]').forEach(b => b.classList.toggle('is-active', b === btn));
+        updateView();
+      };
+      btn.addEventListener('mouseenter', activate);
+      btn.addEventListener('focus', activate);
+    });
+    searchInput.addEventListener('input', updateView);
+    document.addEventListener('click', ev => {
+      if (!popover.hidden && !popover.contains(ev.target) && !productsLink.contains(ev.target)) {
+        popover.hidden = true;
+        productsLink.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+  initProcurementBar();initHeaderProductsDropdown();initHomeB2BHub();initMobileTabbar();initAssistant();  // A shared frontend interface keeps drawers, local profiles and native cards in sync.
   root.SWM_STORE = {
     products,categories,departments,escapeHTML,selectProducts,card,
     getBasket:()=>({...basket}), getSaved:()=>[...saved], getCompare:()=>[...compare],
