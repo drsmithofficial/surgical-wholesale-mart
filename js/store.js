@@ -34,7 +34,7 @@
   const heart='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
   const photo = (p,loading='lazy') => p.image?`<img src="${e(p.image)}" referrerpolicy="no-referrer" alt="${e(p.name)}" loading="${loading}" width="600" height="420">`:'<div class="photo-request"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="10" y="16" width="44" height="34" rx="5"/><path d="m10 40 13-12 11 10 7-6 13 12"/><circle cx="41" cy="26" r="4"/></svg><span>Product photograph<br>available on enquiry</span></div>';
   const link = p => 'product.html?id='+encodeURIComponent(p.id);
-  function card(p) { return `<article class="product-card" data-product="${p.id}"><div class="product-visual"><a href="${link(p)}" tabindex="-1" aria-hidden="true">${photo(p)}</a>${p.imageKind==='representative'?'<span class="photo-caption">Reference image</span>':''}<button type="button" class="save-button" data-save="${p.id}" aria-label="Save ${e(p.name)}" aria-pressed="${saved.includes(p.id)}">${heart}</button></div><div class="product-info"><span class="micro-label">${e(p.subcategory)}</span><h3><a href="${link(p)}">${e(p.name)}</a></h3><p>${e(p.features[0])}</p><div class="product-bottom"><span>Price on request</span><button type="button" class="add-button" data-add="${p.id}" aria-label="Add ${e(p.name)} to quote basket">+</button></div><div class="card-aux-row"><label class="compare-check"><input type="checkbox" data-compare="${p.id}" ${compare.includes(p.id)?'checked':''}> Compare</label><button type="button" class="quickview-btn" data-quickview="${p.id}">Quick view</button></div></div></article>`; }
+  function card(p) { const isSaved=saved.includes(p.id); return `<article class="product-card" data-product="${p.id}"><div class="product-visual"><a href="${link(p)}" tabindex="-1" aria-hidden="true">${photo(p)}</a>${p.imageKind==='representative'?'<span class="photo-caption">Reference image</span>':''}<button type="button" class="save-button${isSaved?' is-liked':''}" data-save="${p.id}" aria-label="Save ${e(p.name)}" aria-pressed="${isSaved}">${heart}</button></div><div class="product-info"><span class="micro-label">${e(p.subcategory)}</span><h3><a href="${link(p)}">${e(p.name)}</a></h3><p>${e(p.features[0])}</p><div class="product-bottom"><span>Price on request</span><button type="button" class="add-button" data-add="${p.id}" aria-label="Add ${e(p.name)} to quote basket">+</button></div><div class="card-aux-row"><label class="compare-check"><input type="checkbox" data-compare="${p.id}" ${compare.includes(p.id)?'checked':''}> Compare</label><button type="button" class="quickview-btn" data-quickview="${p.id}">Quick view</button></div></div></article>`; }
   function evaluatePincode(raw) {
     const val = String(raw || '').trim().toUpperCase();
     if (!val) return null;
@@ -80,6 +80,7 @@
         const categoryProducts=productsByCategory.get(grid.dataset.category)||[];
         grid.innerHTML=categoryProducts.slice(0,columns*2).map(card).join('');
       });
+      sync();
     }
     let resizeFrame;
     renderHomeProducts();
@@ -101,7 +102,14 @@
     $$('[data-cart-count]').forEach(el=>el.textContent=totalQty);
     $$('[data-saved-count]').forEach(el=>el.textContent=saved.length);
     $$('[data-compare-count]').forEach(el=>el.textContent=compare.length);
-    $$('[data-save]').forEach(el=>el.setAttribute('aria-pressed',saved.includes(el.dataset.save)));
+    $$('[data-save]').forEach(el=>{
+      const isSaved=saved.includes(el.dataset.save);
+      el.setAttribute('aria-pressed',isSaved?'true':'false');
+      el.classList.toggle('is-liked',isSaved);
+    });
+    $$('[data-compare]').forEach(el=>{
+      el.checked=compare.includes(el.dataset.compare);
+    });
     const page=document.body?.dataset?.page;
     let fab=$('#floating-basket');
     if(totalQty>0&&page!=='cart'&&page!=='checkout'){
@@ -125,8 +133,9 @@
   function empty(title,desc) {return `<div class="empty-state"><span class="empty-symbol">＋</span><h2>${title}</h2><p>${desc}</p><a class="button" href="products.html">Explore products →</a></div>`;}
   function renderBasket() {
     const host=$('#basket-page');if(!host)return;
-    if(!Object.keys(basket).length){host.innerHTML=empty('Your quote basket is empty.','Find the products for your facility and add them to your selection.')+renderRecentSection();return;}
-    host.innerHTML=`<div class="basket-tools-bar"><div class="basket-quick-add"><input id="basket-quick-input" type="search" placeholder="Quick add product by name or subcategory…"><div id="basket-quick-results" class="pbar-results" hidden></div></div><div class="basket-export-actions"><button type="button" data-open-bulk-rfq>Paste bulk list</button><button type="button" data-export-csv>Export CSV</button><button type="button" data-print-basket>Print quote sheet</button><button type="button" data-clear-basket>Clear basket</button></div></div><div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)} · ${e(p.subcategory)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price on request</span><button type="button" class="text-button remove-button" data-remove="${id}">Remove</button></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue browsing</a></div><aside class="summary-card">${basketSummary()}<a class="button button-block" href="checkout.html">Request a quote →</a><span class="form-note">No payment is required to request a quotation.</span></aside></div>${renderRecentSection()}`;
+    if(!Object.keys(basket).length){host.innerHTML=empty('Your quote basket is empty.','Find the products for your facility and add them to your selection.')+renderRecentSection();sync();return;}
+    host.innerHTML=`<div class="basket-tools-bar"><div class="basket-quick-add"><input id="basket-quick-input" type="search" placeholder="Quick add product by name or subcategory…"><div id="basket-quick-results" class="pbar-results" hidden></div></div><div class="basket-export-actions"><button type="button" data-open-bulk-rfq>Paste bulk list</button><button type="button" data-export-csv>Export CSV</button><button type="button" data-print-basket>Print quote sheet</button><button type="button" data-clear-basket>Clear basket</button></div></div><div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)} · ${e(p.subcategory)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price on request</span><div style="display:flex;gap:12px;align-items:center;margin-top:6px"><button type="button" class="save-detail" data-save="${id}" aria-pressed="${saved.includes(id)}" style="min-height:30px;padding:4px 10px;font-size:11px">${heart} Save</button><button type="button" class="text-button remove-button" data-remove="${id}" style="margin:0">Remove</button></div></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue browsing</a></div><aside class="summary-card">${basketSummary()}<a class="button button-block" href="checkout.html">Request a quote →</a><span class="form-note">No payment is required to request a quotation.</span></aside></div>${renderRecentSection()}`;
+    sync();
     const qInput=$('#basket-quick-input'),qBox=$('#basket-quick-results');
     if(qInput&&qBox){
       qInput.addEventListener('input',()=>{
@@ -168,13 +177,23 @@
   let state,limit=24;
   function renderCatalog(updateURL=true) {
     if(!$('#catalog-grid'))return;
+    const pool=products.filter(p=>(state.category==='all'||p.category===state.category)&&(state.department==='all'||p.department===state.department));
+    const subs=Array.from(new Set(pool.map(p=>p.subcategory).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    if(state.subcategory!=='all'&&!subs.includes(state.subcategory))state.subcategory='all';
     const subSelect=$('#subcategory-filter');
     if(subSelect){
-      const pool=products.filter(p=>(state.category==='all'||p.category===state.category)&&(state.department==='all'||p.department===state.department));
-      const subs=Array.from(new Set(pool.map(p=>p.subcategory).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
-      if(state.subcategory!=='all'&&!subs.includes(state.subcategory))state.subcategory='all';
       subSelect.innerHTML=`<option value="all">All subcategories (${subs.length})</option>`+subs.map(s=>`<option value="${e(s)}">${e(s)}</option>`).join('');
       subSelect.value=state.subcategory||'all';
+    }
+    let chipStrip=$('#subcat-chip-strip');
+    if(!chipStrip&&$('#active-filters')){
+      chipStrip=document.createElement('div');
+      chipStrip.id='subcat-chip-strip';
+      chipStrip.className='subcat-chip-strip';
+      $('#active-filters').after(chipStrip);
+    }
+    if(chipStrip){
+      chipStrip.innerHTML=`<button type="button" class="subcat-chip" data-subcat-chip="all" aria-pressed="${state.subcategory==='all'}">All (${pool.length})</button>`+subs.map(s=>`<button type="button" class="subcat-chip" data-subcat-chip="${e(s)}" aria-pressed="${state.subcategory===s}">${e(s)}</button>`).join('');
     }
     const list=selectProducts(products,state),cat=category(state.category);
     $('#catalog-title').textContent=state.savedOnly?'Saved products':cat?.name||'All products';
@@ -212,7 +231,7 @@
     if(searchBar&&!$('.catalog-extra-controls')){
       const extra=document.createElement('div');
       extra.className='catalog-extra-controls';
-      extra.innerHTML=`<div class="view-toggle" role="group" aria-label="Catalogue view mode"><button type="button" data-view-mode="grid" aria-pressed="true">Grid view</button><button type="button" data-view-mode="list" aria-pressed="false">B2B list view</button></div><button type="button" class="text-button" data-open-bulk-rfq>Paste hospital equipment list →</button>`;
+      extra.innerHTML=`<div class="view-toggle" role="group" aria-label="Catalogue view mode"><button type="button" data-view-mode="grid" aria-pressed="true">Grid view</button><button type="button" data-view-mode="list" aria-pressed="false">B2B list view</button></div><div style="display:flex;gap:14px;flex-wrap:wrap"><button type="button" class="text-button" data-open-setup-planner>Hospital setup planner →</button><button type="button" class="text-button" data-open-bulk-rfq>Paste hospital equipment list →</button></div>`;
       searchBar.after(extra);
     }
     $('#catalog-query').value=state.query;const siteSearch=$('#site-search');if(siteSearch)siteSearch.value=state.query;$('#sort-products').value=state.sort;
@@ -233,7 +252,7 @@
   }
   function enquiryText(details,items) {
     const productLines=items.length?['','PRODUCT SELECTION',...items.map(({id,qty})=>`${qty} × ${byId(id)?.name||id}`)]:[];
-    return ['Surgical Wholesale Mart — Product enquiry','',...Object.entries(details).filter(([,v])=>v).map(([k,v])=>`${({name:'Name',organisation:'Organisation',email:'Email',phone:'Phone',city:'City',postcode:'Postcode',notes:'Requirements',message:'Message',location:'Contact location',supportType:'Support required',product:'Product / model',reference:'Serial / order reference',siteAddress:'Equipment / site address',contactMethod:'Preferred contact method',meetingFormat:'Meeting format',meetingDate:'Preferred date',meetingTime:'Preferred time window',timezone:'Time zone'})[k]||k}: ${v}`),...productLines,'','Please confirm pricing, configuration, taxes, availability and delivery.'].join('\n');
+    return ['Surgical Wholesale Mart — Product enquiry','',...Object.entries(details).filter(([,v])=>v).map(([k,v])=>`${({name:'Name',organisation:'Organisation',gstin:'GSTIN / Institutional ID',procurementMode:'Procurement / Finance option',serviceScope:'Installation & AMC scope',email:'Email',phone:'Phone',city:'City',postcode:'Postcode',notes:'Requirements',message:'Message',location:'Contact location',supportType:'Support required',product:'Product / model',reference:'Serial / order reference',siteAddress:'Equipment / site address',contactMethod:'Preferred contact method',meetingFormat:'Meeting format',meetingDate:'Preferred date',meetingTime:'Preferred time window',timezone:'Time zone'})[k]||k}: ${v}`),...productLines,'','Please confirm pricing, configuration, taxes, availability and delivery.'].join('\n');
   }
   function sharing(text) {
     const whatsapp=text.length<6000?`<a class="button button-outline" target="_blank" rel="noopener" href="https://wa.me/919289976683?text=${encodeURIComponent(text)}">Open in WhatsApp</a>`:'';
@@ -248,14 +267,40 @@
     host.innerHTML=`<div class="review-card"><span class="eyebrow">READY FOR YOUR REVIEW</span><h1>Your enquiry draft is ready.</h1><p>Check your selection and contact details, then choose how to share it with the product team.</p><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}<a class="text-link" href="checkout.html">← Edit enquiry</a><button type="button" class="text-button" data-discard-draft>Discard contact draft</button></div>`;
   }
   function initForms() {
+    const buyerProfile=read(local,'swm-buyer-profile',{})||{};
     const quote=$('#quote-form');
     if(quote){
       const summary=$('#checkout-summary');summary.innerHTML=basketSummary()+Object.keys(basket).map(id=>`<div class="summary-product"><span>${basket[id]} × ${e(byId(id).name)}</span></div>`).join('');
       if(!Object.keys(basket).length){quote.innerHTML=empty('Add products to get started.','Your quote basket is currently empty.');return;}
+      const notesLabel=Array.from(quote.querySelectorAll('label')).find(l=>l.querySelector('textarea[name="notes"]'));
+      if(notesLabel&&!quote.elements.gstin){
+        const b2bRow=document.createElement('div');
+        b2bRow.className='form-row';
+        b2bRow.innerHTML=`<label>GSTIN / Hospital Reg. No. (optional)<input name="gstin" maxlength="40" placeholder="For B2B GST tax invoice"></label><label>Procurement &amp; financing mode<select name="procurementMode"><option>Standard institutional quotation</option><option>Equipment EMI / financing option</option><option>Hospital turnkey / rate contract</option><option>Government / tender procurement</option></select></label>`;
+        const amcLabel=document.createElement('label');
+        amcLabel.innerHTML=`Service &amp; maintenance scope<select name="serviceScope"><option>Standard warranty + on-site installation</option><option>Include 1-Year / 3-Year Comprehensive AMC quote</option><option>Include Biomedical Calibration &amp; Training</option><option>Equipment supply only</option></select>`;
+        notesLabel.before(b2bRow,amcLabel);
+      }
+      Object.entries(buyerProfile).forEach(([k,v])=>{if(v&&quote.elements[k]&&!quote.elements[k].value)quote.elements[k].value=v;});
       const draft=read(session,'swm-enquiry',null);if(draft?.details)Object.entries(draft.details).forEach(([k,v])=>{if(quote.elements[k])quote.elements[k].value=v;});
-      quote.addEventListener('submit',event=>{event.preventDefault();if(!quote.reportValidity())return;const details=Object.fromEntries(new FormData(quote));const items=Object.entries(basket).map(([id,qty])=>({id,qty}));currentEnquiry=enquiryText(details,items);if(save(session,'swm-enquiry',{details,text:currentEnquiry})){location.href='thankyou.html';}else{quote.innerHTML=`<h2>Review your enquiry</h2><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}`;}});
+      const pendingNote=read(session,'swm-pending-note','');
+      if(pendingNote&&quote.elements.notes&&!quote.elements.notes.value.includes(pendingNote)){
+        quote.elements.notes.value=(quote.elements.notes.value?quote.elements.notes.value+'\n':'')+pendingNote;
+      }
+      quote.addEventListener('submit',event=>{
+        event.preventDefault();if(!quote.reportValidity())return;
+        const details=Object.fromEntries(new FormData(quote));
+        const items=Object.entries(basket).map(([id,qty])=>({id,qty}));
+        currentEnquiry=enquiryText(details,items);
+        const refId='SWM-RFQ-'+new Date().getFullYear()+'-'+String(Date.now()).slice(-5);
+        const history=read(local,'swm-enquiry-history',[]);
+        const nextHistory=[{ref:refId,date:new Date().toISOString().slice(0,10),items,organisation:details.organisation||'',city:details.city||''},...(Array.isArray(history)?history:[])].slice(0,10);
+        save(local,'swm-enquiry-history',nextHistory);
+        if(save(session,'swm-enquiry',{details,text:currentEnquiry,ref:refId})){location.href='thankyou.html';}
+        else{quote.innerHTML=`<h2>Review your enquiry</h2><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}`;}
+      });
     }
-    const contact=$('#contact-form');if(contact){const params=new URLSearchParams(location.search);const chosenLocation=params.get('location');if(chosenLocation&&contact.elements.location){const choice=Array.from(contact.elements.location.options).find(x=>x.dataset.locationId===chosenLocation);if(choice)contact.elements.location.value=choice.value;}const subject=params.get('subject');if(subject)$('#contact-message').value='I would like to enquire about '+subject+'.\n';contact.addEventListener('submit',event=>{event.preventDefault();if(!contact.reportValidity())return;currentEnquiry=enquiryText(Object.fromEntries(new FormData(contact)),[]);$('#contact-review').innerHTML=`<h3>Review before sharing</h3><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}`;$('#contact-review').scrollIntoView({behavior:'smooth',block:'nearest'});});}
+    const contact=$('#contact-form');if(contact){Object.entries(buyerProfile).forEach(([k,v])=>{if(v&&contact.elements[k]&&!contact.elements[k].value)contact.elements[k].value=v;});const params=new URLSearchParams(location.search);const chosenLocation=params.get('location');if(chosenLocation&&contact.elements.location){const choice=Array.from(contact.elements.location.options).find(x=>x.dataset.locationId===chosenLocation);if(choice)contact.elements.location.value=choice.value;}const subject=params.get('subject');if(subject)$('#contact-message').value='I would like to enquire about '+subject+'.\n';contact.addEventListener('submit',event=>{event.preventDefault();if(!contact.reportValidity())return;currentEnquiry=enquiryText(Object.fromEntries(new FormData(contact)),[]);$('#contact-review').innerHTML=`<h3>Review before sharing</h3><pre class="enquiry-preview">${e(currentEnquiry)}</pre>${sharing(currentEnquiry)}`;$('#contact-review').scrollIntoView({behavior:'smooth',block:'nearest'});});}
   }
   function downloadSpecSheet(p) {
     const specs = Array.isArray(p.specifications) ? p.specifications.filter(s => s && s.label && s.value) : [];
@@ -321,45 +366,175 @@
     backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="${e(p.name)} quick view"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><div class="quickview-layout"><div class="quickview-visual">${photo(p, 'eager')}</div><div><span class="eyebrow">${e(category(p.category)?.name || '')} · ${e(p.subcategory)}</span><h2 style="margin-bottom:10px">${e(p.name)}</h2><p class="muted" style="font-size:13px">${e(p.description)}</p><ul class="feature-list">${p.features.map(x => `<li><span>✓</span>${e(x)}</li>`).join('')}</ul>${specs.length ? `<div class="product-specifications"><dl>${specs.map(s => `<div><dt>${e(s.label)}</dt><dd>${e(s.value)}</dd></div>`).join('')}</dl></div>` : ''}<div class="detail-qty-row" style="margin:14px 0"><label class="micro-label" for="qv-qty-input">Quantity</label><div class="quantity"><button type="button" data-qv-delta="-1">−</button><input id="qv-qty-input" type="number" min="1" max="9999" value="1"><button type="button" data-qv-delta="1">+</button></div></div><div class="detail-actions"><button type="button" class="button" data-add-qv="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save</button><button type="button" class="save-detail" data-spec-sheet="${p.id}">Spec sheet</button></div><a class="text-link" href="${link(p)}">Open full product page →</a></div></div></div>`;
     document.body.appendChild(backdrop);
   }
-  let bulkMatches = [];
-  function parseBulkLines(rawText) {
-    const lines = String(rawText || '').split(/\r?\n/).map(l => l.trim()).filter(Boolean);
-    const results = [];
-    lines.forEach(line => {
-      const m = line.match(/^(?:(\d+)\s*(?:x|×|units?|nos?|pcs?|-)?\s+)?(.+?)(?:\s*[,|-]\s*(\d+))?$/i);
-      if (!m) return;
-      const qty = Math.min(9999, Math.max(1, parseInt(m[1] || m[3] || '1', 10) || 1));
-      const term = (m[2] || line).trim().toLowerCase();
-      if (!term) return;
-      const tokens = term.split(/[^a-z0-9]+/).filter(t => t.length > 1);
-      let best = null, bestScore = 0;
-      products.forEach(p => {
-        const hay = `${p.name} ${p.subcategory} ${p.sourceName || ''} ${p.features.join(' ')}`.toLowerCase();
-        let score = hay.includes(term) ? 10 : 0;
-        tokens.forEach(tk => { if (hay.includes(tk)) score += (p.name.toLowerCase().includes(tk) ? 3 : 1); });
-        if (score > bestScore) { bestScore = score; best = p; }
-      });
-      if (best && bestScore > 0) results.push({product: best, qty, query: line});
+  const CLINICAL_SPECIALTIES = [
+    {title:'ICU & Critical Care',desc:'Electric ICU beds, multipara monitors, ventilators, syringe & infusion pumps',href:'products.html?department=icu'},
+    {title:'Operation Theatre & Surgery',desc:'C-Arm OT tables, LED surgical lights, anesthesia workstations & diathermy',href:'products.html?department=ot'},
+    {title:'Wards & Patient Rooms',desc:'Fowler & semi-Fowler beds, ABS bedside lockers, overbed tables & curtains',href:'products.html?department=ward'},
+    {title:'OPD & Examination',desc:'Examination couches, diagnostic instruments, illumination & revolving stools',href:'products.html?department=opd'},
+    {title:'Emergency & Trauma',desc:'Hydraulic stretcher trolleys, crash carts, defibrillators & suction units',href:'products.html?department=emergency'},
+    {title:'Sterilization & CSSD',desc:'Horizontal, vertical & portable autoclaves, dressing drums & sterilizers',href:'products.html?q=Autoclave'},
+    {title:'Anaesthesia & Respiratory',desc:'Anesthesia workstations, bubble CPAP, oxygen concentrators & BPC flowmeters',href:'products.html?q=Anesthesia'},
+    {title:'Neonatal & Paediatric Care',desc:'Infant radiant warmers, phototherapy units, baby bassinets & paediatric beds',href:'products.html?q=Baby'},
+    {title:'Gynaecology & Obstetrics',desc:'Labour delivery tables, telescopic obstetric beds & surgical sets',href:'products.html?q=Delivery'},
+    {title:'Radiology & Imaging Support',desc:'X-Ray machines, C-Arm compatible tables & LED X-Ray view boxes',href:'products.html?q=X-Ray'},
+    {title:'MGPS & Modular OT Infrastructure',desc:'Bedhead panels, medical gas outlets, manifolds, scrub stations & pendants',href:'products.html?category=mgps'},
+    {title:'Surgical Instruments & Sets',desc:'Stainless steel procedure sets, general surgery & specialty instruments',href:'products.html?category=instruments'}
+  ];
+  function openMegaMenu(activeTab='categories') {
+    closeModal();
+    const backdrop=document.createElement('div');
+    backdrop.id='swm-modal-backdrop';
+    backdrop.className='swm-modal-backdrop';
+    function renderTabContent(tab){
+      if(tab==='specialties'){
+        return `<div class="specialty-explorer-grid">${CLINICAL_SPECIALTIES.map(s=>`<a class="specialty-card-btn" href="${e(s.href)}"><strong>${e(s.title)}</strong><small>${e(s.desc)}</small></a>`).join('')}</div>`;
+      }
+      if(tab==='packages'){
+        return `<div class="specialty-explorer-grid"><button type="button" class="specialty-card-btn" data-launch-setup="10"><strong>10-Bed Clinic / Daycare Setup</strong><small>Essential examination couches, Fowler beds, monitors, trolleys &amp; sterilization</small></button><button type="button" class="specialty-card-btn" data-launch-setup="25"><strong>25-Bed Nursing Home Package</strong><small>Complete ward, minor OT, emergency triage &amp; ICU starter schedule</small></button><button type="button" class="specialty-card-btn" data-launch-setup="50"><strong>50-Bed Multi-Specialty Hospital</strong><small>Full ICU, modular OT, ward furniture, patient monitoring &amp; MGPS essentials</small></button><button type="button" class="specialty-card-btn" data-launch-setup="100"><strong>100-Bed Tertiary Care Hospital</strong><small>Comprehensive department-wise hospital furniture &amp; clinical equipment schedule</small></button><button type="button" class="specialty-card-btn" data-open-finance><strong>EMI &amp; Institutional Capex Financing</strong><small>Calculate monthly installments or leasing plans for your equipment package</small></button><button type="button" class="specialty-card-btn" data-open-amc><strong>AMC / CMC &amp; Biomedical Calibration</strong><small>Configure preventive &amp; comprehensive maintenance cover for your facility</small></button></div>`;
+      }
+      return `<div class="megamenu-family-grid">${categories.map(c=>{
+        const famProducts=products.filter(p=>p.category===c.id);
+        const subCounts=new Map();
+        famProducts.forEach(p=>{if(p.subcategory)subCounts.set(p.subcategory,(subCounts.get(p.subcategory)||0)+1);});
+        const subs=Array.from(subCounts.entries()).sort((a,b)=>b[1]-a[1]).slice(0,10);
+        return `<div class="megamenu-family-card"><h3><a href="products.html?category=${encodeURIComponent(c.id)}">${e(c.name)} (${famProducts.length}) →</a></h3><div class="megamenu-sub-links">${subs.map(([sub,cnt])=>`<a href="products.html?category=${encodeURIComponent(c.id)}&subcategory=${encodeURIComponent(sub)}">${e(sub)} (${cnt})</a>`).join('')}</div></div>`;
+      }).join('')}</div>`;
+    }
+    backdrop.innerHTML=`<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Categories and specialties explorer"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">COMPLETE MEDICAL DIRECTORY</span><h2>Explore by Category, Specialty or Hospital Setup</h2><div class="megamenu-tabs" role="tablist"><button type="button" class="megamenu-tab" data-mega-tab="categories" aria-selected="${activeTab==='categories'}">Product Categories &amp; Subcategories</button><button type="button" class="megamenu-tab" data-mega-tab="specialties" aria-selected="${activeTab==='specialties'}">Clinical Specialties (12)</button><button type="button" class="megamenu-tab" data-mega-tab="packages" aria-selected="${activeTab==='packages'}">Turnkey Hospital Setups &amp; Capex</button></div><div id="megamenu-body">${renderTabContent(activeTab)}</div></div>`;
+    document.body.appendChild(backdrop);
+    backdrop.addEventListener('click',ev=>{
+      const tabBtn=ev.target.closest('[data-mega-tab]');
+      if(tabBtn){
+        const t=tabBtn.dataset.megaTab;
+        $$('.megamenu-tab').forEach(b=>b.setAttribute('aria-selected',String(b===tabBtn)));
+        $('#megamenu-body').innerHTML=renderTabContent(t);
+      }
     });
-    return results;
   }
-  function openBulkModal() {
+  let setupSchedule = [];
+  function buildSetupSchedule(beds, depts) {
+    const scale = Math.max(1, Math.round(beds / 25));
+    const plan = [];
+    const addByMatch = (deptKey, keyword, qty) => {
+      if (!depts.includes(deptKey)) return;
+      const found = products.find(p => p.id === keyword || p.name.toLowerCase().includes(keyword.toLowerCase()) || p.subcategory.toLowerCase().includes(keyword.toLowerCase()));
+      if (found && !plan.some(x => x.product.id === found.id)) {
+        plan.push({product: found, qty: Math.max(1, qty)});
+      }
+    };
+    addByMatch('icu', '02bb6538d195', Math.max(2, Math.round(beds * 0.2)));
+    addByMatch('icu', '808afd3730d4', Math.max(2, Math.round(beds * 0.2)));
+    addByMatch('icu', '754d8a1e3199', Math.max(1, scale * 2));
+    addByMatch('ot', 'c42d0c599c9a', Math.max(1, scale));
+    addByMatch('ot', '2309963f11be', Math.max(1, scale));
+    addByMatch('ot', 'a19726a622b7', Math.max(1, scale));
+    addByMatch('ot', 'anesthesia', Math.max(1, scale));
+    addByMatch('ward', 'swm-3b091738406f', Math.max(5, Math.round(beds * 0.6)));
+    addByMatch('ward', '499dc31aa817', Math.max(5, Math.round(beds * 0.8)));
+    addByMatch('ward', '541685af7f1c', Math.max(4, Math.round(beds * 0.4)));
+    addByMatch('opd', '9065d7fe01a7', Math.max(2, scale * 2));
+    addByMatch('opd', '4faf3d170da3', Math.max(2, scale * 2));
+    addByMatch('emergency', 'd1d7247e1be0', Math.max(2, scale * 2));
+    addByMatch('emergency', '046172436ac2', Math.max(2, scale * 3));
+    addByMatch('emergency', 'swm-73ded3e57ed6', Math.max(1, scale));
+    return plan;
+  }
+  function openSetupPlanner(defaultBeds = 25) {
     closeModal();
     const backdrop = document.createElement('div');
     backdrop.id = 'swm-modal-backdrop';
     backdrop.className = 'swm-modal-backdrop';
-    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Bulk equipment list matcher"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">B2B BULK PROCUREMENT TOOL</span><h2 style="margin-bottom:8px">Paste or upload your hospital equipment list</h2><p class="muted" style="font-size:13px">Enter one requirement per line (e.g. <code>5 x Five-Function Electric ICU Bed</code>, <code>3 x Patient Monitor</code>, <code>10 x Wheelchair</code>) to auto-match against our 372 catalogue products.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"><button type="button" class="pbar-pill" data-bulk-sample>Load sample ICU &amp; Ward list</button><label class="pbar-pill" style="cursor:pointer">Upload .txt / .csv file<input id="bulk-file-input" type="file" accept=".txt,.csv" hidden></label></div><textarea id="bulk-list-input" rows="5" style="width:100%;font-size:13px" placeholder="5 x Five-Function Electric ICU Bed&#10;4 x Seven-Parameter Patient Monitor&#10;2 x Semi-Electric C-Arm OT Table&#10;6 x Patient Wheelchair&#10;3 x Suction Machine"></textarea><div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button type="button" class="button" data-run-bulk-match>Match products →</button><button type="button" class="button button-outline" id="bulk-add-all-btn" data-add-bulk-matches hidden>Add all matched to quote basket +</button></div><div id="bulk-match-output" class="bulk-match-list"></div></div>`;
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Turnkey hospital setup planner"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">TURNKEY HOSPITAL SETUP &amp; CAPEX CONFIGURATOR</span><h2>Plan your facility equipment by bed capacity</h2><p class="muted" style="font-size:13px">Select your facility type, bed strength, and clinical departments to generate an itemized equipment schedule from our catalogue.</p><div class="setup-planner-controls"><label class="field-label" style="margin:0">Facility type<select id="setup-facility-type" style="width:100%;margin-top:6px"><option>Multi-Specialty Hospital</option><option>Nursing Home / Medical Centre</option><option>ICU &amp; Critical Care Wing</option><option>Surgical &amp; Modular OT Complex</option><option>OPD &amp; Daycare Clinic</option></select></label><label class="field-label" style="margin:0">Planned bed capacity<select id="setup-bed-count" style="width:100%;margin-top:6px"><option value="10" ${defaultBeds===10?'selected':''}>10 Beds (Clinic / Daycare)</option><option value="25" ${defaultBeds===25?'selected':''}>25 Beds (Nursing Home)</option><option value="50" ${defaultBeds===50?'selected':''}>50 Beds (Multi-Specialty)</option><option value="100" ${defaultBeds===100?'selected':''}>100 Beds (Tertiary Hospital)</option><option value="250" ${defaultBeds===250?'selected':''}>250+ Beds (Medical College / Hospital)</option></select></label><label class="field-label" style="margin:0">Project timeline<select id="setup-timeline" style="width:100%;margin-top:6px"><option>Immediate (Within 30 days)</option><option>1 – 3 Months</option><option>3 – 6 Months (Planning / Civil stage)</option></select></label><div class="setup-dept-checks"><label><input type="checkbox" value="icu" checked> ICU &amp; Critical Care</label><label><input type="checkbox" value="ot" checked> Operation Theatre &amp; MGPS</label><label><input type="checkbox" value="ward" checked> Inpatient Wards &amp; Rooms</label><label><input type="checkbox" value="opd" checked> OPD &amp; Examination</label><label><input type="checkbox" value="emergency" checked> Emergency &amp; Patient Transfer</label></div></div><div id="setup-planner-summary" class="setup-summary-strip"></div><div id="setup-planner-list" class="bulk-match-list"></div><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px"><button type="button" class="button" data-apply-setup-plan>Add entire setup to quote basket +</button><button type="button" class="button button-outline" data-open-finance>Calculate Capex EMI / Leasing</button></div></div>`;
     document.body.appendChild(backdrop);
-    const fileInput = $('#bulk-file-input');
-    fileInput?.addEventListener('change', e => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        $('#bulk-list-input').value = String(reader.result || '');
-      };
-      reader.readAsText(file);
+    function refreshPlan() {
+      const beds = parseInt($('#setup-bed-count')?.value || '25', 10) || 25;
+      const depts = Array.from(backdrop.querySelectorAll('.setup-dept-checks input:checked')).map(i => i.value);
+      setupSchedule = buildSetupSchedule(beds, depts);
+      const totalUnits = setupSchedule.reduce((s, x) => s + x.qty, 0);
+      $('#setup-planner-summary').innerHTML = `<span>Recommended schedule: <strong>${setupSchedule.length} equipment lines</strong> · <strong>${totalUnits} total units</strong> for a ${beds}-bed facility</span>`;
+      $('#setup-planner-list').innerHTML = setupSchedule.map((item, idx) => `<div class="bulk-match-row"><div class="pbar-thumb">${photo(item.product)}</div><div class="pbar-meta"><strong><a href="${link(item.product)}">${e(item.product.name)}</a></strong><small>${e(category(item.product.category)?.name || '')} · ${e(item.product.subcategory)}</small></div><input type="number" min="1" max="9999" value="${item.qty}" data-setup-qty-idx="${idx}" style="width:76px;padding:6px 8px;font-size:12px"></div>`).join('');
+    }
+    backdrop.addEventListener('change', ev => {
+      if (ev.target.matches('#setup-bed-count, .setup-dept-checks input')) refreshPlan();
     });
+    refreshPlan();
+  }
+  function openFinanceModal() {
+    closeModal();
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="B2B Equipment EMI and Finance Calculator"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">INSTITUTIONAL CAPEX &amp; EMI CALCULATOR</span><h2>Medical Equipment Financing &amp; Leasing Estimator</h2><p class="muted" style="font-size:13px">Estimate monthly installments for hospital furniture, ICU setups, modular OT projects, or diagnostic equipment procurement.</p><div class="emi-preset-row"><button type="button" class="tier-chip" data-emi-amount="250000">₹2.5 Lakh</button><button type="button" class="tier-chip is-active" data-emi-amount="1000000">₹10 Lakh</button><button type="button" class="tier-chip" data-emi-amount="2500000">₹25 Lakh</button><button type="button" class="tier-chip" data-emi-amount="5000000">₹50 Lakh</button><button type="button" class="tier-chip" data-emi-amount="10000000">₹1 Crore</button></div><div class="emi-calc-grid"><div style="display:grid;gap:12px"><label class="field-label" style="margin:0">Estimated equipment / project value (₹)<input id="emi-principal" type="number" min="50000" step="25000" value="1000000" style="width:100%;margin-top:6px"></label><label class="field-label" style="margin:0">Repayment tenure (Months)<select id="emi-tenure" style="width:100%;margin-top:6px"><option value="6">6 Months</option><option value="12">12 Months (1 Year)</option><option value="24" selected>24 Months (2 Years)</option><option value="36">36 Months (3 Years)</option><option value="48">48 Months (4 Years)</option><option value="60">60 Months (5 Years)</option></select></label><label class="field-label" style="margin:0">Illustrative annual interest rate (% p.a.)<input id="emi-rate" type="number" min="6" max="24" step="0.5" value="10.5" style="width:100%;margin-top:6px"></label><label class="field-label" style="margin:0">Preferred financing structure<select id="emi-mode" style="width:100%;margin-top:6px"><option>Institutional Equipment Loan (EMI)</option><option>Medical Equipment Operating Lease</option><option>Milestone / Letter of Credit (LC)</option></select></label></div><div class="emi-result-card"><span class="micro-label">ESTIMATED MONTHLY INSTALLMENT</span><strong id="emi-monthly-out">₹46,376 / month</strong><div class="summary-line"><span>Principal project value</span><b id="emi-principal-out">₹10,00,000</b></div><div class="summary-line"><span>Estimated total interest</span><b id="emi-interest-out">₹1,13,025</b></div><div class="summary-line"><span>Total payable across tenure</span><b id="emi-total-out">₹11,13,025</b></div><p class="form-note" style="margin:0">Indicative calculation for hospital budgeting. Final financing terms depend on institutional eligibility and partner banking approval.</p><button type="button" class="button" data-attach-finance-note>Attach financing request to quotation →</button></div></div></div>`;
+    document.body.appendChild(backdrop);
+    function calcEmi() {
+      const P = Math.max(10000, parseFloat($('#emi-principal')?.value || '1000000') || 1000000);
+      const N = Math.max(1, parseInt($('#emi-tenure')?.value || '24', 10) || 24);
+      const R = Math.max(0.1, parseFloat($('#emi-rate')?.value || '10.5') || 10.5) / 12 / 100;
+      const emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+      const total = emi * N;
+      const fmt = n => '₹' + Math.round(n).toLocaleString('en-IN');
+      $('#emi-monthly-out').textContent = fmt(emi) + ' / month';
+      $('#emi-principal-out').textContent = fmt(P);
+      $('#emi-interest-out').textContent = fmt(total - P);
+      $('#emi-total-out').textContent = fmt(total);
+    }
+    backdrop.addEventListener('input', calcEmi);
+    backdrop.addEventListener('click', ev => {
+      const chip = ev.target.closest('[data-emi-amount]');
+      if (chip) {
+        $('#emi-principal').value = chip.dataset.emiAmount;
+        $$('[data-emi-amount]').forEach(c => c.classList.toggle('is-active', c === chip));
+        calcEmi();
+      }
+    });
+    calcEmi();
+  }
+  function openTrackerModal() {
+    closeModal();
+    const history = read(local, 'swm-enquiry-history', []) || [];
+    const activeCount = Object.values(basket).reduce((a, b) => a + b, 0);
+    const latestRef = history[0]?.ref || (activeCount ? 'SWM-DRAFT-ACTIVE' : 'SWM-RFQ-2026-1042');
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Track quotation and order status"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">ORDER, QUOTATION &amp; DISPATCH TRACKER</span><h2>Track your enquiry or shipment pipeline</h2><div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0"><input id="tracker-ref-input" type="text" value="${e(latestRef)}" placeholder="Enter Reference / Order ID (e.g. SWM-RFQ-2026-...)" style="flex:1;min-width:220px"><button type="button" class="button" data-run-tracker>Check status</button></div><div id="tracker-pipeline" class="tracker-steps"><div class="tracker-step is-done"><span class="tracker-badge">1</span><div><strong>Product Selection &amp; Enquiry Logged</strong><div class="muted" style="font-size:11px">Reference: <code id="tracker-ref-label">${e(latestRef)}</code> · ${activeCount} units currently in quote basket</div></div><span style="font-size:11px;font-weight:700;color:var(--teal)">Completed</span></div><div class="tracker-step ${activeCount||history.length?'is-done':''}"><span class="tracker-badge">2</span><div><strong>Biomedical Specification &amp; Configuration Review</strong><div class="muted" style="font-size:11px">Dr. Smith product specialists verify model configuration, accessories &amp; GST quotation</div></div><span style="font-size:11px;font-weight:700;color:var(--teal)">${history.length?'Verified':'In progress'}</span></div><div class="tracker-step"><span class="tracker-badge">3</span><div><strong>Manufacturing &amp; Pre-Dispatch Quality Inspection</strong><div class="muted" style="font-size:11px">ISO/CE quality check at Jhajjar Manufacturing Hub / New Delhi Regional Warehouse</div></div><span class="muted" style="font-size:11px">Scheduled on order confirmation</span></div><div class="tracker-step"><span class="tracker-badge">4</span><div><strong>Pan-India / International Logistics &amp; Transit</strong><div class="muted" style="font-size:11px">Tracked surface/air freight to ${e(savedPincode ? 'Pincode ' + savedPincode : 'your facility')}</div></div><span class="muted" style="font-size:11px">Pending dispatch</span></div><div class="tracker-step"><span class="tracker-badge">5</span><div><strong>On-Site Delivery, Installation &amp; Clinical Handover</strong><div class="muted" style="font-size:11px">Biomedical installation, operational training &amp; warranty activation</div></div><span class="muted" style="font-size:11px">Final stage</span></div></div>${history.length?`<div style="margin-top:16px"><strong>Recent quotation history &amp; 1-click reorder</strong><div class="bulk-match-list">${history.map((h,i)=>`<div class="bulk-match-row" style="grid-template-columns:1fr auto"><div><strong>${e(h.ref)}</strong> · ${e(h.date)}<small style="display:block;color:var(--muted)">${h.items.length} product lines ${h.organisation?'· '+e(h.organisation):''}</small></div><button type="button" class="pbar-mini-btn" data-reorder-idx="${i}">Reload into basket ↻</button></div>`).join('')}</div></div>`:''}</div>`;
+    document.body.appendChild(backdrop);
+  }
+  function openAmcModal() {
+    closeModal();
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="AMC CMC and Biomedical Services"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">LIFECYCLE BIOMEDICAL SUPPORT</span><h2>AMC / CMC, Calibration &amp; Equipment Upgrade Options</h2><p class="muted" style="font-size:13px">Select a maintenance or biomedical service package to include with your quotation or existing hospital equipment.</p><div class="amc-plan-grid"><div class="amc-plan-card"><h3>Preventive AMC</h3><ul><li>Scheduled quarterly preventive maintenance visits</li><li>Safety, electrical &amp; performance calibration</li><li>Priority breakdown attendance across 10 hubs</li><li>Spares charged separately at institutional rates</li></ul><button type="button" class="button button-outline" data-select-amc="Preventive Annual Maintenance Contract (AMC)">Include Preventive AMC →</button></div><div class="amc-plan-card"><h3>Comprehensive CMC</h3><ul><li>End-to-end preventive &amp; breakdown maintenance</li><li>Covers eligible functional spare parts &amp; assemblies</li><li>Dedicated biomedical engineer escalation</li><li>Ideal for ICU monitors, ventilators, OT tables &amp; autoclaves</li></ul><button type="button" class="button" data-select-amc="Comprehensive Maintenance Contract (CMC)">Include Comprehensive CMC →</button></div><div class="amc-plan-card"><h3>Trade-In &amp; Calibration</h3><ul><li>Upgrade legacy hospital beds or OT equipment</li><li>NABH-aligned biomedical calibration &amp; audit request</li><li>On-site staff operational training session</li><li>Custom multi-department service contract</li></ul><button type="button" class="button button-outline" data-select-amc="Equipment Trade-In / Biomedical Calibration Audit">Request Trade-In / Audit →</button></div></div></div>`;
+    document.body.appendChild(backdrop);
+  }
+  function openBuyerProfileModal() {
+    closeModal();
+    const prof = read(local, 'swm-buyer-profile', {}) || {};
+    const backdrop = document.createElement('div');
+    backdrop.id = 'swm-modal-backdrop';
+    backdrop.className = 'swm-modal-backdrop';
+    backdrop.innerHTML = `<div class="swm-modal" role="dialog" aria-modal="true" aria-label="Institutional Buyer Profile and GST Details"><button type="button" class="swm-modal-close" data-close-modal aria-label="Close modal">×</button><span class="eyebrow">INSTITUTIONAL BUYER PROFILE</span><h2>Hospital &amp; GST Procurement Profile</h2><p class="muted" style="font-size:13px">Save your hospital and GST details in your browser to automatically pre-fill quotation, support, and meeting requests.</p><form id="buyer-profile-form" style="display:grid;gap:14px;margin-top:14px"><div class="form-row"><label class="field-label" style="margin:0">Contact person name<input name="name" value="${e(prof.name||'')}" placeholder="Dr. / Procurement Officer Name" style="width:100%;margin-top:6px"></label><label class="field-label" style="margin:0">Hospital / Organisation name<input name="organisation" value="${e(prof.organisation||'')}" placeholder="Hospital, Clinic or Trust Name" style="width:100%;margin-top:6px"></label></div><div class="form-row"><label class="field-label" style="margin:0">GSTIN / Institutional Reg. No.<input name="gstin" value="${e(prof.gstin||'')}" placeholder="e.g. 07AAAAA0000A1Z5" style="width:100%;margin-top:6px"></label><label class="field-label" style="margin:0">Phone / WhatsApp<input name="phone" value="${e(prof.phone||'')}" placeholder="+91 ..." style="width:100%;margin-top:6px"></label></div><div class="form-row"><label class="field-label" style="margin:0">Official email<input name="email" type="email" value="${e(prof.email||'')}" placeholder="procurement@hospital.org" style="width:100%;margin-top:6px"></label><label class="field-label" style="margin:0">City &amp; Delivery Pincode<div style="display:flex;gap:8px;margin-top:6px"><input name="city" value="${e(prof.city||'')}" placeholder="City" style="flex:1"><input name="postcode" value="${e(prof.postcode||savedPincode||'')}" placeholder="Pincode" style="width:110px"></div></label></div><div style="display:flex;gap:12px;align-items:center"><button type="submit" class="button">Save buyer profile</button><button type="button" class="text-button" data-open-tracker>View quote history &amp; reorder →</button></div></form></div>`;
+    document.body.appendChild(backdrop);
+    $('#buyer-profile-form')?.addEventListener('submit', ev => {
+      ev.preventDefault();
+      const data = Object.fromEntries(new FormData(ev.target));
+      save(local, 'swm-buyer-profile', data);
+      if (data.postcode) { savedPincode = data.postcode; save(local, 'swm-pincode', data.postcode); }
+      closeModal();
+      initForms();
+      toast('Institutional buyer profile saved for fast checkout.');
+    });
+  }
+  function initHomeB2BHub() {
+    if ($('#home-b2b-hub')) return;
+    const target = $('#featured-products') || $('.service-grid');
+    if (!target) return;
+    const hub = document.createElement('section');
+    hub.id = 'home-b2b-hub';
+    hub.className = 'section home-b2b-hub';
+    hub.innerHTML = `<div class="section-heading"><div><span class="eyebrow">DIGITAL HEALTHCARE PROCUREMENT SUITE</span><h2>Every tool to plan, compare &amp; equip your facility.</h2></div><button type="button" class="text-link" data-open-megamenu="specialties" style="border:0;background:none;padding:0">Explore all 12 clinical specialties →</button></div><div class="b2b-hub-grid"><button type="button" class="b2b-hub-card" data-open-setup-planner><span class="eyebrow">CAPEX PLANNER</span><h3>Hospital Setup by Bed Capacity</h3><p>Generate a 10 to 250+ bed equipment schedule across ICU, OT, Wards &amp; OPD.</p><strong>Launch planner →</strong></button><button type="button" class="b2b-hub-card" data-open-bulk-rfq><span class="eyebrow">FAST SOURCING</span><h3>Bulk RFQ &amp; List Matcher</h3><p>Paste or upload your hospital requirement list to auto-match catalogue products.</p><strong>Upload / paste list →</strong></button><button type="button" class="b2b-hub-card" data-open-megamenu="specialties"><span class="eyebrow">CLINICAL DIRECTORY</span><h3>Shop by Specialty &amp; Dept</h3><p>Browse equipment curated for ICU, Modular OT, Gynaecology, Neonatal &amp; CSSD.</p><strong>Browse specialties →</strong></button><button type="button" class="b2b-hub-card" data-open-finance><span class="eyebrow">FLEXIBLE CAPEX</span><h3>EMI &amp; Equipment Financing</h3><p>Estimate monthly installments and institutional leasing options for your project.</p><strong>Calculate EMI →</strong></button><button type="button" class="b2b-hub-card" data-open-amc><span class="eyebrow">LIFECYCLE CARE</span><h3>AMC / CMC &amp; Calibration</h3><p>Include preventive maintenance, comprehensive CMC, or equipment trade-in.</p><strong>Configure AMC →</strong></button><button type="button" class="b2b-hub-card" data-open-tracker><span class="eyebrow">ORDER &amp; REORDER</span><h3>Track Enquiry &amp; 1-Click Reorder</h3><p>Check quotation pipeline stages and reload past hospital equipment lists.</p><strong>Open tracker →</strong></button></div>`;
+    target.after(hub);
   }
   function initProcurementBar() {
     const header = $('.store-header');
@@ -367,8 +542,9 @@
     const bar = document.createElement('div');
     bar.className = 'procurement-bar';
     const pinInfo = evaluatePincode(savedPincode);
-    bar.innerHTML = `<div class="pbar-search-wrap"><div class="pbar-search" role="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="global-search-input" type="search" placeholder="Search 372+ hospital equipment, instruments, beds, monitors…" aria-label="Search all products"><kbd>Ctrl K</kbd></div><div id="global-search-results" class="pbar-results" hidden></div></div><div class="pbar-tools"><div class="pbar-pincode"><input id="global-pincode-input" type="text" maxlength="12" placeholder="Delivery pincode" value="${e(savedPincode)}" aria-label="Delivery pincode"><button type="button" data-check-global-pin>Check</button></div><span id="global-pin-status" class="pbar-pin-status">${pinInfo && pinInfo.ok ? `✓ ${e(pinInfo.hub.split(' ')[0])} hub` : ''}</span><button type="button" class="pbar-pill" data-open-bulk-rfq>Bulk RFQ / Paste List</button><a class="pbar-pill" href="products.html?saved=1">Saved <b data-saved-count>${saved.length}</b></a><button type="button" class="pbar-pill" data-jump-compare>Compare <b data-compare-count>${compare.length}</b></button><a class="pbar-pill" href="cart.html">Quote Basket <b data-cart-count>${Object.values(basket).reduce((a,b)=>a+b,0)}</b></a></div>`;
-    header.after(bar);
+    bar.innerHTML = `<button type="button" class="pbar-pill pbar-mega-btn" data-open-megamenu="categories">☰ Categories &amp; Specialties</button><div class="pbar-search-wrap"><div class="pbar-search" role="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="global-search-input" type="search" placeholder="Search 372+ hospital equipment, instruments, beds, monitors…" aria-label="Search all products"><kbd>Ctrl K</kbd></div><div id="global-search-results" class="pbar-results" hidden></div></div><div class="pbar-tools"><div class="pbar-pincode"><input id="global-pincode-input" type="text" maxlength="12" placeholder="Delivery pincode" value="${e(savedPincode)}" aria-label="Delivery pincode"><button type="button" data-check-global-pin>Check</button></div><span id="global-pin-status" class="pbar-pin-status">${pinInfo && pinInfo.ok ? `✓ ${e(pinInfo.hub.split(' ')[0])} hub` : ''}</span><button type="button" class="pbar-pill" data-open-setup-planner>Hospital Setup</button><button type="button" class="pbar-pill" data-open-bulk-rfq>Bulk RFQ</button><button type="button" class="pbar-pill" data-open-finance>EMI / Finance</button><button type="button" class="pbar-pill" data-open-amc>AMC / Service</button><button type="button" class="pbar-pill" data-open-tracker>Track &amp; Reorder</button><button type="button" class="pbar-pill" data-open-buyer-profile>GST Profile</button><a class="pbar-pill" href="products.html?saved=1">Saved <b data-saved-count>${saved.length}</b></a><button type="button" class="pbar-pill" data-jump-compare>Compare <b data-compare-count>${compare.length}</b></button><a class="pbar-pill" href="cart.html">Quote Basket <b data-cart-count>${Object.values(basket).reduce((a,b)=>a+b,0)}</b></a></div>`;
+    const homeFirstFoldEnd = $('.benefit-row') || $('#home-hero-banners');
+    (homeFirstFoldEnd || header).after(bar);
     const input = $('#global-search-input'), results = $('#global-search-results');
     function updateGlobalSearch() {
       const q = input.value.trim();
@@ -419,7 +595,7 @@
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
-    panel.innerHTML = `<div class="swm-assistant-head"><span>Surgical Mart B2B Assistant</span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div><div class="swm-assistant-body"><p style="margin:0;color:var(--muted)">How can we help equip your facility today?</p><div class="swm-assistant-chips"><button type="button" data-open-bulk-rfq>Paste equipment list</button><button type="button" data-assist-dept="icu">ICU &amp; Critical Care</button><button type="button" data-assist-dept="ot">Operation Theatre</button><button type="button" data-assist-dept="ward">Wards &amp; Rooms</button><button type="button" data-assist-dept="opd">OPD &amp; Exam</button><button type="button" data-assist-dept="emergency">Emergency</button></div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" type="search" placeholder="e.g. Autoclave, OT Light, ICU Bed" style="flex:1;padding:6px 9px;font-size:11px"><button type="button" class="pbar-mini-btn" data-assist-search>Find</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="cart.html" style="font-size:11px">Quote basket →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
+    panel.innerHTML = `<div class="swm-assistant-head"><span>Surgical Mart B2B Assistant</span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div><div class="swm-assistant-body"><p style="margin:0;color:var(--muted)">Select a procurement tool or clinical department:</p><div class="swm-assistant-chips"><button type="button" data-open-setup-planner>Hospital Setup Planner</button><button type="button" data-open-bulk-rfq>Paste Equipment List</button><button type="button" data-open-finance>EMI &amp; Finance Calc</button><button type="button" data-open-amc>AMC / CMC Plans</button><button type="button" data-open-tracker>Track / Reorder</button><button type="button" data-assist-dept="icu">ICU &amp; Critical Care</button><button type="button" data-assist-dept="ot">Operation Theatre</button><button type="button" data-assist-dept="ward">Wards &amp; Rooms</button></div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" type="search" placeholder="e.g. Autoclave, OT Light, ICU Bed" style="flex:1;padding:6px 9px;font-size:11px"><button type="button" class="pbar-mini-btn" data-assist-search>Find</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="cart.html" style="font-size:11px">Quote basket →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
     document.body.append(toggle, panel);
     toggle.addEventListener('click', () => {
       const open = panel.hidden;
@@ -432,6 +608,54 @@
     const button=event.target.closest('button');if(!button)return;
     if(button.hasAttribute('data-close-modal')){closeModal();return;}
     if(button.hasAttribute('data-close-assistant')){const p=$('.swm-assistant-panel'),t=$('.swm-assistant-toggle');if(p)p.hidden=true;if(t)t.setAttribute('aria-expanded','false');return;}
+    if(button.dataset.openMegamenu){openMegaMenu(button.dataset.openMegamenu);return;}
+    if(button.hasAttribute('data-open-setup-planner')){openSetupPlanner(25);return;}
+    if(button.dataset.launchSetup){openSetupPlanner(parseInt(button.dataset.launchSetup,10)||25);return;}
+    if(button.hasAttribute('data-apply-setup-plan')){
+      $$('[data-setup-qty-idx]').forEach(inp=>{const idx=Number(inp.dataset.setupQtyIdx);if(setupSchedule[idx])setupSchedule[idx].qty=Math.min(9999,Math.max(1,parseInt(inp.value,10)||1));});
+      setupSchedule.forEach(({product,qty})=>{basket[product.id]=Math.min(9999,(basket[product.id]||0)+qty);});
+      persistBasket();renderBasket();closeModal();
+      toast(`Added ${setupSchedule.length} hospital setup equipment lines to quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      return;
+    }
+    if(button.hasAttribute('data-open-finance')){openFinanceModal();return;}
+    if(button.hasAttribute('data-attach-finance-note')){
+      const p=$('#emi-principal-out')?.textContent||'',m=$('#emi-monthly-out')?.textContent||'',t=$('#emi-tenure')?.value||'24',mode=$('#emi-mode')?.value||'Institutional Equipment Loan';
+      const note=`Financing option requested: ${mode} | Est. Project Value: ${p} | Tenure: ${t} months (${m}).`;
+      save(session,'swm-pending-note',note);
+      closeModal();
+      toast('Financing preference attached to your quotation draft.',{href:'checkout.html',label:'Proceed to quote →'});
+      return;
+    }
+    if(button.hasAttribute('data-open-tracker')){openTrackerModal();return;}
+    if(button.hasAttribute('data-run-tracker')){
+      const val=$('#tracker-ref-input')?.value.trim()||'SWM-RFQ-2026';
+      const lbl=$('#tracker-ref-label');if(lbl)lbl.textContent=val;
+      toast(`Status updated for reference ${val}.`);
+      return;
+    }
+    if(button.dataset.reorderIdx!==undefined){
+      const history=read(local,'swm-enquiry-history',[])||[];
+      const entry=history[Number(button.dataset.reorderIdx)];
+      if(entry&&Array.isArray(entry.items)){
+        entry.items.forEach(({id,qty})=>{if(byId(id))basket[id]=Math.min(9999,(basket[id]||0)+Number(qty||1));});
+        persistBasket();renderBasket();closeModal();
+        toast(`Reloaded ${entry.items.length} products from ${entry.ref} into your quote basket.`,{href:'cart.html',label:'View quote basket →'});
+      }
+      return;
+    }
+    if(button.hasAttribute('data-open-amc')){openAmcModal();return;}
+    if(button.dataset.selectAmc){
+      const plan=button.dataset.selectAmc;
+      save(session,'swm-pending-note',`Service package requested: ${plan}.`);
+      closeModal();
+      toast(`${plan} attached to your quotation preferences.`,{href:'checkout.html',label:'Request quote →'});
+      return;
+    }
+    if(button.hasAttribute('data-open-buyer-profile')){openBuyerProfileModal();return;}
+    if(button.dataset.subcatChip!==undefined&&state){
+      state.subcategory=button.dataset.subcatChip;limit=24;renderCatalog();return;
+    }
     if(button.dataset.assistDept){location.href='products.html?department='+encodeURIComponent(button.dataset.assistDept);return;}
     if(button.hasAttribute('data-assist-search')){const q=$('#assist-search-input')?.value.trim();if(q)location.href='products.html?q='+encodeURIComponent(q);return;}
     if(button.dataset.quickview){openQuickView(button.dataset.quickview);return;}
@@ -488,6 +712,8 @@
     if(button.dataset.addDetail){
       const id=button.dataset.addDetail;if(!byId(id))return;
       const qty=Math.min(9999,Math.max(1,parseInt($('#detail-qty-input')?.value||'1',10)||1));
+      const addons=$$('[data-detail-addon]:checked').map(cb=>cb.dataset.detailAddon);
+      if(addons.length)save(session,'swm-pending-note',`Selected options for ${byId(id).name}: ${addons.join(', ')}.`);
       basket[id]=Math.min(9999,(basket[id]||0)+qty);
       persistBasket();toast(`Added ${qty} × ${byId(id).name} to your quote basket.`,{href:'cart.html',label:'View quote basket →'});
       return;
@@ -681,7 +907,7 @@
     measureCarousel();
   }
   // External hosts can change or reject hotlinks; never leave a broken image icon.
-  const ZOOM_BOX_SELECTOR = '.product-visual,.detail-image,.basket-photo,.category-visual,.procurement-visual,.editorial-image,.quickview-visual,.pbar-thumb';
+  const ZOOM_BOX_SELECTOR = '.product-visual,.detail-image,.basket-photo,.category-visual,.procurement-visual,.editorial-image,.company-gallery figure,.quickview-visual,.pbar-thumb';
   function setZoomOrigin(box, event) {
     if (!event || (!event.clientX && !event.clientY)) return;
     const rect = box.getBoundingClientRect();
@@ -762,6 +988,16 @@
     fallback.innerHTML = '<span>Product photograph<br>available on enquiry</span>';
     img.replaceWith(fallback);
   }, true);
-  initProcurementBar();initAssistant();renderDetail();initCatalog();renderBasket();initForms();renderReview();sync();
+  function initMobileTabbar() {
+    if ($('.mobile-ecom-tabbar')) return;
+    const page = document.body?.dataset?.page || '';
+    const totalQty = Object.values(basket).reduce((a, b) => a + b, 0);
+    const nav = document.createElement('nav');
+    nav.className = 'mobile-ecom-tabbar';
+    nav.setAttribute('aria-label', 'Mobile e-commerce navigation');
+    nav.innerHTML = `<a href="index.html" class="${page==='index'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><button type="button" data-open-megamenu="categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Categories</span></button><a href="products.html" class="${page==='products'||page==='product'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Shop</span></a><button type="button" data-open-setup-planner><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg><span>Hospital Setup</span></button><a href="cart.html" class="${page==='cart'||page==='checkout'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Quote Cart</span><b data-cart-count>${totalQty}</b></a>`;
+    document.body.appendChild(nav);
+  }
+  initProcurementBar();initHomeB2BHub();initMobileTabbar();initAssistant();renderDetail();initCatalog();renderBasket();initForms();renderReview();sync();
   root.addEventListener('storage',event=>{if(event.key==='swm-basket'){basket=cleanBasket(read(local,'swm-basket',{}),products);sync();renderBasket();}if(event.key==='swm-saved'){const value=read(local,'swm-saved',[]);saved=Array.isArray(value)?value.filter(id=>byId(id)):[];sync();if(state){state.saved=saved;renderCatalog(false);}}});
 })(typeof window !== 'undefined' ? window : globalThis);

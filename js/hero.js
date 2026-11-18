@@ -65,6 +65,19 @@
 			return;
 		}
 
+    if (phoneLayout.matches) {
+      setActiveSlide(next);
+      var mobileArtwork = next.querySelector('.hero-equipment');
+      if (mobileArtwork) {
+        mobileArtwork.animate(
+          [{ opacity: 0.35 }, { opacity: 1 }],
+          { duration: duration, easing: easing }
+        );
+      }
+      schedule();
+      return;
+    }
+
 		var previous = currentBanner;
 		var distance = heroBanners.clientWidth;
 		next.style.visibility = 'visible';
