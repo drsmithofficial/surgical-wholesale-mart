@@ -7,7 +7,6 @@
 	var bannerSlides = Array.from(heroBanners.querySelectorAll('.carousel-item'));
 	var currentBanner = bannerSlides.find(function (slide) { return slide.classList.contains('active'); });
 	if (!currentBanner || bannerSlides.length < 2) return;
-
 	var interval = 5000;
 	var duration = 1000;
 	var easing = 'cubic-bezier(0.45, 0, 0.55, 1)';
@@ -43,6 +42,7 @@
 			item.style.removeProperty('visibility');
 		});
 		currentBanner = slide;
+		updateControls();
 	}
 
 	function completeTransition(transition) {
@@ -141,9 +141,10 @@
 	});
 
 	heroBanners.addEventListener('pointerdown', function (event) {
-		if (!phoneLayout.matches || (event.pointerType === 'mouse' && event.button !== 0)) return;
+		if (event.pointerType === 'mouse' && event.button !== 0) return;
 		if (event.target.closest && event.target.closest('a, button')) return;
 		dragStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
+		heroBanners.classList.add('is-dragging');
 		window.clearTimeout(timer);
 		settleTransition();
 		if (heroBanners.setPointerCapture) heroBanners.setPointerCapture(event.pointerId);

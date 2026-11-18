@@ -651,7 +651,7 @@ body:not([data-page="products"]) .page-intro{
   justify-content:center;
   min-height:clamp(300px,38vw,480px);
   max-width:none;
-  padding:clamp(56px,8vw,104px) max(var(--gutter),calc((100vw - 1240px)/2));
+  padding:clamp(56px,8vw,104px) clamp(22px,4vw,72px);
 }
 body:not([data-page="products"]) .page-intro .breadcrumbs{margin-bottom:24px}
 body:not([data-page="products"]) .page-intro h1{
@@ -664,9 +664,10 @@ body:not([data-page="products"]) .page-intro h1{
 body:not([data-page="products"]) .page-intro>p{max-width:740px;font-size:clamp(15px,1.25vw,18px);line-height:1.7}
 body:not([data-page="products"]) main>.section,
 body:not([data-page="products"]) main>.company-document{
-  width:min(100%,1320px);
-  margin-inline:auto;
-  padding:clamp(44px,6vw,80px) clamp(20px,4vw,48px);
+  width:100%;
+  max-width:none;
+  margin-inline:0;
+  padding:clamp(44px,6vw,80px) clamp(22px,4vw,72px);
 }
 body:not([data-page="products"]) .section-heading{align-items:flex-end;gap:24px;margin-bottom:32px}
 body:not([data-page="products"]) .section-heading h2,
@@ -684,7 +685,7 @@ body:not([data-page="products"]) .company-facts article,
 body:not([data-page="products"]) .leadership-grid article,
 body:not([data-page="products"]) .form-card,
 body:not([data-page="products"]) .summary-card{border-radius:16px}
-body:not([data-page="products"]) .company-document{max-width:1320px}
+body:not([data-page="products"]) .company-document{width:100%;max-width:none;margin-inline:0}
 body:not([data-page="products"]) .company-section{padding-block:clamp(32px,4vw,56px)}
 body:not([data-page="products"]) .company-two{gap:clamp(16px,2.5vw,32px)}
 body:not([data-page="products"]) .company-facts{gap:clamp(12px,2vw,24px)}

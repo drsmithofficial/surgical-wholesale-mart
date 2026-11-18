@@ -541,12 +541,30 @@
   }
   function initHomeB2BHub() {
     if ($('#home-b2b-hub')) return;
-    const target = $('#featured-products') || $('.service-grid');
+    const target = document.body.classList.contains('home-page') ? $('#featured-products') : null;
     if (!target) return;
     const hub = document.createElement('section');
     hub.id = 'home-b2b-hub';
     hub.className = 'section home-b2b-hub';
-    hub.innerHTML = `<div class="section-heading"><div><span class="eyebrow">DIGITAL HEALTHCARE PROCUREMENT SUITE</span><h2>Every tool to plan, compare &amp; equip your facility.</h2></div><button type="button" class="text-link" data-open-megamenu="specialties" style="border:0;background:none;padding:0">Explore all 12 clinical specialties →</button></div><div class="b2b-hub-grid"><button type="button" class="b2b-hub-card" data-open-setup-planner><span class="eyebrow">CAPEX PLANNER</span><h3>Hospital Setup by Bed Capacity</h3><p>Generate a 10 to 250+ bed equipment schedule across ICU, OT, Wards &amp; OPD.</p><strong>Launch planner →</strong></button><button type="button" class="b2b-hub-card" data-open-bulk-rfq><span class="eyebrow">FAST SOURCING</span><h3>Bulk RFQ &amp; List Matcher</h3><p>Paste or upload your hospital requirement list to auto-match catalogue products.</p><strong>Upload / paste list →</strong></button><button type="button" class="b2b-hub-card" data-open-megamenu="specialties"><span class="eyebrow">CLINICAL DIRECTORY</span><h3>Shop by Specialty &amp; Dept</h3><p>Browse equipment curated for ICU, Modular OT, Gynaecology, Neonatal &amp; CSSD.</p><strong>Browse specialties →</strong></button><button type="button" class="b2b-hub-card" data-open-finance><span class="eyebrow">FLEXIBLE CAPEX</span><h3>EMI &amp; Equipment Financing</h3><p>Estimate monthly installments and institutional leasing options for your project.</p><strong>Calculate EMI →</strong></button><button type="button" class="b2b-hub-card" data-open-amc><span class="eyebrow">LIFECYCLE CARE</span><h3>AMC / CMC &amp; Calibration</h3><p>Include preventive maintenance, comprehensive CMC, or equipment trade-in.</p><strong>Configure AMC →</strong></button><button type="button" class="b2b-hub-card" data-open-tracker><span class="eyebrow">ORDER &amp; REORDER</span><h3>Track Enquiry &amp; 1-Click Reorder</h3><p>Check quotation pipeline stages and reload past hospital equipment lists.</p><strong>Open tracker →</strong></button></div>`;
+    hub.innerHTML = `
+      <div class="b2b-hub-hero">
+        <div class="b2b-hub-hero-copy">
+          <span class="eyebrow">DIGITAL HEALTHCARE PROCUREMENT SUITE <i aria-hidden="true"></i></span>
+          <h2>Every tool to plan, compare &amp;<br>equip <em>your facility.</em></h2>
+        </div>
+        <div class="b2b-hub-art" aria-hidden="true">
+          <img class="b2b-hub-scene" src="assets/img/procurement-suite-corridor.png" alt="" loading="lazy" width="2160" height="720">
+        </div>
+        <button type="button" class="b2b-hub-explore" data-open-megamenu="specialties">Explore all 12 clinical specialties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="b2b-hub-grid">
+        <button type="button" class="b2b-hub-card tone-blue" data-open-setup-planner><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11v28M7 27h34a3 3 0 0 1 3 3v9M7 20h8a7 7 0 0 1 7 7M22 27V17h14a5 5 0 0 1 5 5v5M12 39v3m27-3v3"/></svg></span><span class="eyebrow">FACILITY PLANNING</span><h3>Hospital Setup by Bed Capacity</h3><p>Complete 10 to 250 bed hospital setups with ICU, OT, wards &amp; CSSD.</p><strong class="b2b-hub-action">Launch Planner <span aria-hidden="true">→</span></strong></button>
+        <button type="button" class="b2b-hub-card tone-orange" data-open-bulk-rfq><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6h16l9 9v27H14zM30 6v10h9M20 24h13M20 30h13M20 36h9"/></svg></span><span class="eyebrow">FAST SOURCING</span><h3>Bulk RFQ &amp; Lot Matcher</h3><p>Submit multiple requirements and get the best quotes across top brands.</p><strong class="b2b-hub-action">Upload Requirements <span aria-hidden="true">→</span></strong></button>
+        <button type="button" class="b2b-hub-card tone-teal" data-open-megamenu="specialties"><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 10h5l4 22h23l5-16H12M17 20h18M20 37h.01M34 37h.01"/><circle cx="20" cy="37" r="2.2"/><circle cx="34" cy="37" r="2.2"/></svg></span><span class="eyebrow">CENTRAL DIRECTORY</span><h3>Shop by Specialty &amp; Dept</h3><p>Browse equipment and solutions department wise from a wide selection.</p><strong class="b2b-hub-action">Browse Specialties <span aria-hidden="true">→</span></strong></button>
+        <button type="button" class="b2b-hub-card tone-purple" data-open-finance><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="20" cy="12" rx="12" ry="5"/><path d="M8 12v8c0 3 5 5 12 5 4 0 8-.8 10-2.2M8 20v8c0 3 5 5 12 5 3 0 6-.5 8-1.5M8 28v7c0 3 5 5 12 5s12-2 12-5v-3"/><path d="M33 8v12m-5-6h10"/></svg></span><span class="eyebrow">FLEXIBLE CARE</span><h3>EMI &amp; Equipment Financing</h3><p>Easier procurement with flexible EMI options for hospitals and projects.</p><strong class="b2b-hub-action">Check EMI Plans <span aria-hidden="true">→</span></strong></button>
+        <button type="button" class="b2b-hub-card tone-blue" data-open-amc><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5h8l1 5 4 2 4-2 5 7-4 4v5l4 4-5 7-5-2-4 2-1 5h-8l-1-5-4-2-4 2-5-7 4-4v-5l-4-4 5-7 5 2 4-2z"/><circle cx="24" cy="23" r="7"/><path d="m21 23 2 2 4-5"/></svg></span><span class="eyebrow">LIFECYCLE CARE</span><h3>AMC / CMC &amp; Calibration</h3><p>Annual maintenance, comprehensive coverage and accurate calibration.</p><strong class="b2b-hub-action">Configure AMC <span aria-hidden="true">→</span></strong></button>
+        <button type="button" class="b2b-hub-card tone-orange" data-open-tracker><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 42s14-13 14-24a14 14 0 1 0-28 0c0 11 14 24 14 24Z"/><circle cx="24" cy="18" r="5"/></svg></span><span class="eyebrow">ORDER &amp; TRACKING</span><h3>Track Enquiry &amp; 1-Click Reorder</h3><p>Check quotation status, track your orders and reorder key equipment.</p><strong class="b2b-hub-action">Open Tracker <span aria-hidden="true">→</span></strong></button>
+      </div>`;
     target.after(hub);
   }
   function initProcurementBar() {
@@ -800,6 +818,7 @@
     const next=featuredSection.querySelector('[data-product-carousel="next"]');
     const controls=featuredSection.querySelector('.product-carousel-controls');
     const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const autoRotate=true;
     const phoneLayout=window.matchMedia('(max-width: 700px)');
     let cycleWidth=0,cardStep=0,viewportWidth=0,position=0,lastWritten=0,frame=0,previousTime=0;
     let focused=false,pointerActive=false,visible=true,temporarilyPaused=false,resumeTimer;
@@ -818,7 +837,7 @@
       const sectionVisible=phoneLayout.matches
         ? featuredSection.getBoundingClientRect().bottom>0&&featuredSection.getBoundingClientRect().top<window.innerHeight
         : visible;
-      if(cycleWidth&&!reducedMotion.matches&&!focused&&!pointerActive&&!temporarilyPaused&&sectionVisible&&!document.hidden){
+      if(autoRotate&&cycleWidth&&!reducedMotion.matches&&!focused&&!pointerActive&&!temporarilyPaused&&sectionVisible&&!document.hidden){
         normalizePosition();
         frame=requestAnimationFrame(tick);
       }
