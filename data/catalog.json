@@ -55,7 +55,7 @@
       "name": "Medical Consumables",
       "short": "Consumables",
       "description": "Share your consumable types, sizes and quantities.",
-      "image": "assets/products/researched/category-consumables.jpg",
+      "image": "assets/products/researched/category-consumables.png",
       "icon": "box",
       "enquiryOnly": false,
       "requests": [

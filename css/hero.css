@@ -1,7 +1,7 @@
 /* Inset hero panel with the same landscape proportions as the reference site. */
 .hero-banners {
   width: 96.4%;
-  margin: clamp(14px, 1.6vw, 24px) auto 0;
+  margin: 0 auto;
   border-radius: clamp(18px, 2vw, 28px);
   background: transparent;
 }
@@ -582,7 +582,7 @@
 @media (min-width:768px) and (max-width:1079.98px) {
   .hero-banners {
     width: calc(100% - 32px);
-    margin: 14px auto 0;
+    margin: 2px auto 0;
     border-radius: 20px;
   }
   .hero-scene {
@@ -675,7 +675,7 @@
 @media (max-width:767.98px) {
   .hero-banners {
     width: calc(100% - 24px);
-    margin: 12px auto 0;
+    margin: 4px auto 0;
     border-radius: 18px;
     background: transparent;
   }
