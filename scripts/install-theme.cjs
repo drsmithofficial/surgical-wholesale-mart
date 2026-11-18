@@ -1,0 +1,3 @@
+const fs=require('fs');for(const file of fs.readdirSync('.').filter(f=>f.endsWith('.html'))){let s=fs.readFileSync(file,'utf8');if(!s.includes('css/theme.css'))s=s.replace('</head>','<link rel="stylesheet" href="css/theme.css">\n</head>');s=s.replace(/(<meta name="theme-color" content=")[^"]+("\s*\/?>)/,'$1#ffffff$2');fs.writeFileSync(file,s);}
+let py=fs.readFileSync('scripts/build-storefront.py','utf8');if(!py.includes('css/theme.css'))py=py.replace('</head>','<link rel="stylesheet" href="css/theme.css"></head>');fs.writeFileSync('scripts/build-storefront.py',py);
+console.log('Installed a white-base theme with navy accent elements across all 17 pages and the page generator.');

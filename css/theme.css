@@ -1,0 +1,242 @@
+/* White storefront with focused navy accents. Shared by every page. */
+:root{
+ --ink:#182c43;--muted:#5c6d7e;--dark:#10273f;
+ --teal:#00c4ef;--teal-text:#006d85;--teal-ink:#073442;
+ --mint:#eef5fa;--paper:#fff;--line:#dce4ed;
+ --accent-navy:#10273f;--accent-navy-hover:#1c3d5e;--accent-cyan:#65e4ff;
+}
+body.home-page,body.inner-page{background:#fff;--inner-canvas:#fff;--inner-tint:#f0f5fa;--inner-line:#dce4ed;--inner-shadow:0 8px 24px #10273f08}
+body.home-page main,body.inner-page main{background:#fff}
+/* The header stays white; the navigation itself is a dark accent. */
+body.home-page .store-header,body.inner-page .store-header,
+body.home-page .store-header .header-main,body.inner-page .store-header .header-main,
+body.home-page .store-header .store-nav,body.inner-page .store-header .store-nav{
+ background:#fff!important;color:#182c43!important;border-color:#dce4ed!important;
+}
+body .store-header{border-bottom:1px solid #dce4ed;box-shadow:0 3px 14px #10273f06}
+body.home-page .store-header .brand,body.home-page .store-header .brand strong,body.home-page .store-header .brand span,
+body.inner-page .store-header .brand,body.inner-page .store-header .brand strong,body.inner-page .store-header .brand span{color:#182c43!important}
+body .store-header .brand .brand-orange{color:#f47e20!important}
+body.home-page .store-header .brand-divider,body.inner-page .store-header .brand-divider{background:#182c43!important}
+body .store-header .primary-links{padding:7px 10px;background:#10273f;border:1px solid #10273f;border-radius:10px;gap:clamp(9px,1.05vw,18px)}
+body.home-page .store-header .primary-links>a,body.inner-page .store-header .primary-links>a{
+ color:#f5f8fc!important;background:transparent!important;border-color:transparent!important;border-radius:6px;
+}
+body.home-page .store-header .primary-links>a:hover,body.inner-page .store-header .primary-links>a:hover,
+body.home-page .store-header .primary-links>a[aria-current=page],body.inner-page .store-header .primary-links>a[aria-current=page],
+body.home-page .store-header .primary-links>a:focus-visible,body.inner-page .store-header .primary-links>a:focus-visible{
+ color:#65e4ff!important;background:transparent!important;
+}
+body .store-header .nav-quote{background:#f47e20;color:#fff!important;border-color:#f47e20}
+body .store-header .nav-catalogue{background:#10273f;color:#fff!important}
+body.home-page .store-header .mobile-menu,body.home-page .store-header .mobile-contact,
+body.inner-page .store-header .mobile-menu,body.inner-page .store-header .mobile-contact{color:#10273f!important}
+/* Dark buttons and small control surfaces, with light inputs and canvases. */
+body .button:not(.button-outline):not(.button-light){background:#10273f;border-color:#10273f;color:#fff}
+body .button:not(.button-outline):not(.button-light):hover{background:#1c3d5e;border-color:#1c3d5e;color:#fff}
+body .button-outline{color:#10273f;border-color:#10273f;background:transparent}
+body .button-outline:hover{background:#eef4fa;color:#10273f}
+body .button-light{color:#10273f;background:#fff;border-color:#fff}
+body .procurement-bar{background:#fff;border-top:1px solid #e9eef4;border-bottom:1px solid #dce4ed;box-shadow:none}
+body .pbar-search{background:#f6f8fb;border-color:#ced9e5}
+body .pbar-pill{color:#263d53;background:#fff;border-color:#d5dfeb}
+body .pbar-mega-btn,body .pbar-pill[data-shop-action=basket]{background:#10273f;border-color:#10273f;color:#fff}
+body .pbar-pill b{background:#eef5fa;color:#10273f}
+body .view-toggle [aria-pressed=true],body .tier-chip.is-active{background:#10273f;color:#fff;border-color:#10273f}
+body .add-button{background:#10273f;color:#fff;border-color:#10273f}
+body .add-button:hover{background:#1c3d5e;color:#fff}
+body input[type=checkbox],body input[type=radio]{accent-color:#10273f}
+/* White sections use dark headings, fine borders and restrained depth. */
+body .page-intro,body.inner-page .page-intro{background:#f7f9fc;border-bottom:1px solid #dce4ed}
+body.inner-page .page-intro::before{background:#10273f}
+body.inner-page .page-intro::after{background:radial-gradient(circle,#10273f09,transparent 70%)}
+body .section-heading h2,body .company-section>h2,body .home-category-heading h3{color:#10273f}
+body .home-category-heading{border-bottom:2px solid #10273f;padding-bottom:15px}
+body .home-category-meta>span{background:#10273f;color:#fff;border-radius:5px;padding:4px 9px;font-size:11px}
+body .selection-section,body .category-section,body .departments-section,body .home-b2b-hub{background:#fff}
+body .benefit-row{background:#f7f9fc;border-color:#dce4ed}
+body .benefit-row .icon{color:#10273f}
+body .category-card{background:#f5f8fc;border-color:#dce4ed;box-shadow:none}
+body .category-card:hover{border-color:#93a9c0;box-shadow:0 8px 20px #10273f0c}
+body .category-card h3{color:#10273f}
+body .category-card>span{color:#5c6d7e}
+body .department-grid>a{background:#f5f8fc;border-color:#dce4ed;color:#182c43}
+body .department-number{color:#fff;background:#10273f;border-radius:5px;padding:5px 8px;display:inline-block}
+body .product-card,body.inner-page .product-card{background:#fff;border-color:#dce4ed;box-shadow:0 4px 16px #10273f06}
+body .product-card:hover,body.inner-page .product-card:hover{border-color:#96abc0;box-shadow:0 10px 24px #10273f0e}
+body .product-visual,body.inner-page .product-visual{background:#f8fafc}
+body .photo-caption{background:#10273fed;color:#fff}
+body .product-info h3{color:#182c43}
+body .save-button[aria-pressed=true]{background:#e8f7fc;color:#00718c}
+body .b2b-hub-card,body .service-card,body .location-card,body .guide-card,body .leadership-grid article{
+ background:#fff;border-color:#dce4ed;border-top:3px solid #10273f;box-shadow:0 5px 18px #10273f06;
+}
+body .service-card>.icon,body .b2b-hub-card>.icon{color:#10273f;background:#eef4fa}
+body .simple-banner{background:#f1f5fa;border-color:#dce4ed}
+/* The catalogue toolbar is an accent panel; the product grid remains white. */
+body.inner-page .catalog-toolbar{background:#10273f;border-color:#10273f;box-shadow:none}
+body.inner-page .catalog-toolbar h2,body.inner-page .catalog-toolbar #result-count,body.inner-page .catalog-toolbar .sort-control{color:#f5f8fc}
+body.inner-page .catalog-toolbar select{background:#fff;color:#182c43;border-color:#fff}
+body.inner-page .catalog-search,body.inner-page .filter-panel{background:#fff;border-color:#dce4ed}
+body .filter-title{padding-bottom:12px;border-bottom:2px solid #10273f}
+body .filter-panel .filter-help{background:#f1f5fa;border-color:#dce4ed}
+body .active-filters>button{background:#10273f;color:#fff;border-color:#10273f}
+body .summary-card{border-color:#dce4ed;background:#f6f8fc;border-top:4px solid #10273f}
+body .form-card,body .review-card,body .contact-details{background:#fff;border-color:#dce4ed;box-shadow:0 6px 22px #10273f08}
+body.inner-page .contact-details{background:#f6f8fc;border-color:#dce4ed}
+body .company-two>article,body .company-facts article,body .company-contact-strip{background:#f1f5fa;border-color:#dce4ed}
+body .leader-monogram{background:#10273f;color:#fff}
+/* Dark footer and enquiry banner are bounded accents at the page end. */
+body .procurement-banner{background:#10273f;color:#f5f8fc;border-color:#10273f}
+body .procurement-banner h2,body .procurement-banner p,body .procurement-banner .eyebrow{color:#f5f8fc}
+body .procurement-banner .button{background:#65e4ff!important;color:#10273f!important;border-color:#65e4ff!important}
+body .help-strip,body.inner-page .help-strip{background:#eef4fa;color:#10273f;border-color:#dce4ed}
+body .help-strip h2,body .help-strip p,body .help-strip>div>.icon,body.inner-page .help-strip h2,body.inner-page .help-strip p,body.inner-page .help-strip>div>.icon{color:#10273f}
+body .help-strip .button{background:#10273f;color:#fff;border-color:#10273f}
+body .site-footer,body.inner-page .site-footer{background:#10273f;color:#eef4fa}
+body .site-footer h3,body .site-footer .brand strong{color:#fff}
+body .site-footer p,body .site-footer .footer-location{color:#c0cddd}
+body .site-footer a,body.inner-page .site-footer a{color:#e0e9f4}
+body .site-footer .brand-legal{color:#e0e9f4}
+body .site-footer .brand-orange{color:#ffae70}
+body .site-footer .brand-divider{background:#c0cddd}
+body .site-footer .footer-bottom{border-color:#ffffff24}
+body .shop-dialog,body .swm-modal{background:#fff;color:#182c43}
+body .shop-dialog-head{background:#f1f5fa;border-color:#dce4ed}
+body .shop-address,body .shop-account-summary,body .shop-checkout-address{background:#f6f8fc;border-color:#dce4ed}
+body .swm-assistant-head,body .swm-assistant-toggle,body .floating-basket{background:#10273f;color:#fff}
+body .mobile-ecom-tabbar{background:#fff;border-color:#dce4ed}
+body .mobile-ecom-tabbar .is-active{color:#10273f}
+@media(max-width:1023px){body .store-header .primary-links{padding:7px 9px;gap:8px}body .store-header .primary-links>a{padding:8px 10px}}
+@media(prefers-reduced-motion:reduce){body .product-card,body .category-card{transition:none}}
+/* Explicit states also override older mobile hero/header colour rules. */
+body.home-page .store-header .primary-links>a:not([aria-current=page]),
+body.inner-page .store-header .primary-links>a:not([aria-current=page]){color:#f5f8fc!important}
+body.home-page .store-header .primary-links>a:not([aria-current=page]):hover,
+body.inner-page .store-header .primary-links>a:not([aria-current=page]):hover{color:#65e4ff!important}
+body.home-page .store-header .brand span.brand-orange,
+body.inner-page .store-header .brand span.brand-orange{color:#f47e20!important}
+body .store-header .nav-quote{background:#c6530b;border-color:#c6530b}
+
+/* Complete component coverage: white canvases, navy edges and control states. */
+body.home-page,body.inner-page{color:var(--ink);color-scheme:light}
+body :is(.text-link,.text-button,.quickview-btn,.eyebrow,.home-category-view-all){color:#10273f}
+body :is(.text-link,.text-button,.quickview-btn,.home-category-view-all):hover{color:#006d85}
+body :is(input,select,textarea){border-color:#bbc9d9;color:#182c43}
+body :is(input,select,textarea):focus{border-color:#10273f}
+body :is(button,a,input,select,textarea,summary):focus-visible{outline:3px solid #087c98;outline-offset:3px}
+body input[type=range]{accent-color:#10273f}
+body input::file-selector-button{background:#10273f;color:#fff;border:0;border-radius:5px;padding:8px 12px;margin-right:12px;cursor:pointer}
+body :is(.header-search button,.pbar-mini-btn,.pbar-pincode button,.detail-pin-row button,.product-carousel-button,.shop-back-top){background:#10273f;color:#fff;border-color:#10273f}
+body :is(.pbar-mini-btn,.pbar-pincode button,.detail-pin-row button,.product-carousel-button,.shop-back-top):hover{background:#1c3d5e;color:#fff}
+body :is(.pbar-pill,.basket-export-actions button,.tier-chip,.subcat-chip,.megamenu-tab,.ai-prod-pill){border-color:#b6c5d5;color:#10273f}
+body :is(.pbar-pill,.basket-export-actions button,.tier-chip,.subcat-chip,.megamenu-tab,.ai-prod-pill):hover,
+body :is(.tier-chip.is-active,.subcat-chip[aria-pressed=true],.megamenu-tab[aria-selected=true]){background:#10273f;border-color:#10273f;color:#fff}
+body .pbar-pill:hover b{background:#fff;color:#10273f}
+body :is(.pbar-search,.header-search):focus-within{border-color:#10273f;box-shadow:0 0 0 3px #10273f18}
+body :is(.pbar-results,.header-products-popover){border-color:#bbc9d9;border-top:3px solid #10273f;box-shadow:0 14px 36px #10273f24}
+body .pbar-item:hover{background:#eef3f9}
+body .shop-suggestion-active{outline-color:#10273f}
+body .hpp-clean-head{border-bottom:2px solid #10273f}
+body .hpp-view-all-btn{background:#10273f;color:#fff!important}
+body .hpp-view-all-btn:hover{background:#1c3d5e}
+body :is(.hpp-cat-card,.category-card,.department-grid>a){border-top:3px solid #10273f}
+body :is(.hpp-cat-card,.specialty-card-btn):hover{background:#eef3f9;border-color:#10273f}
+body :is(.category-icon,.benefit-item>.icon){background:#10273f;color:#fff;border-color:#10273f}
+body .benefit-item>.icon{padding:6px;box-sizing:content-box;border-radius:8px}
+body .category-icon .icon{color:#fff}
+body :is(.product-info,.product-grid.is-list-view .product-info){border-top:2px solid #10273f}
+body .product-bottom{color:#10273f}
+body :is(.card-aux-row,.detail-service-addons){border-color:#bbc9d9}
+body .quantity{border-color:#10273f}
+body .quantity button{background:#10273f;color:#fff}
+body .quantity button:hover{background:#1c3d5e}
+body :is(.detail-image,.quickview-visual,.basket-photo){border-color:#bbc9d9;background:#fff}
+body :is(.detail-copy,.detail-b2b-box,.basket-tools-bar,.category-enquiry,.empty-state,.enquiry-preview){background:#f6f8fc;border:1px solid #dce4ed;border-top:3px solid #10273f;border-radius:10px}
+body .detail-copy{padding:clamp(18px,2vw,32px)}
+body :is(.detail-price,.detail-tabs h2,.product-specifications h2,.comparison-heading){color:#10273f}
+body :is(.detail-tabs,.product-specifications){border-top:2px solid #10273f;padding-top:18px}
+body .product-specifications dl>div{padding:10px 12px}
+body .product-specifications dl>div:nth-child(odd){background:#f0f4f9}
+body .product-specifications dt{color:#10273f}
+body .category-enquiry a{background:#10273f;color:#fff}
+body .active-filters>span{background:#10273f;color:#fff}
+body .comparison{background:#fff;border-color:#10273f;box-shadow:0 -5px 25px #10273f18}
+body .comparison-table th,body table thead{background:#10273f;color:#fff}
+body .comparison-table td{background:#fff;color:#182c43;border-color:#dce4ed}
+body .comparison-table tr:nth-child(even) td{background:#f1f5fa}
+body :is(.shop-dialog,.swm-modal,.swm-assistant-panel,.mobile-assistant-card){border-color:#bbc9d9;border-top:4px solid #10273f}
+body .shop-dialog-head{background:#10273f;color:#fff;border-color:#10273f}
+body :is(.shop-close,.swm-modal-close){background:#10273f;color:#fff;border-color:#50637a}
+body .shop-close{background:#fff;color:#10273f}
+body .swm-modal>h2{color:#10273f;border-bottom:2px solid #10273f;padding-bottom:14px;margin-bottom:16px}
+body :is(.megamenu-family-card,.specialty-card-btn,.amc-plan-card,.shop-address,.shop-account-summary){background:#fff;border-color:#dce4ed;border-top:3px solid #10273f}
+body :is(.megamenu-family-card h3,.amc-plan-card h3){color:#10273f}
+body .megamenu-sub-links a{background:#eef3f9;color:#10273f;border-color:#c8d4e1}
+body .megamenu-sub-links a:hover{background:#10273f;color:#fff;border-color:#10273f}
+body :is(.setup-planner-controls,.setup-summary-strip,.emi-result-card,.bulk-match-row,.shop-checkout-address){background:#f1f5fa;border-color:#c8d4e1;border-left:3px solid #10273f}
+body .emi-result-card strong{color:#10273f}
+body .setup-dept-checks label:has(input:checked){background:#10273f;border-color:#10273f;color:#fff}
+body :is(.tracker-step.is-done,.shop-address h3 small){background:#eef3f9;border-color:#10273f;color:#10273f}
+body .tracker-step.is-done .tracker-badge{background:#10273f;color:#fff}
+body :is(.swm-assistant-chips button,.company-tags>span){background:#10273f;color:#fff;border-color:#10273f}
+body .swm-assistant-chips button:hover{background:#1c3d5e;color:#fff}
+body .ai-soon-badge{background:#10273f;color:#fff;border-radius:4px;padding:3px 7px}
+body .mobile-assistant-hero{background:#f1f5fa;border-color:#c8d4e1}
+body :is(.form-card,.review-card,.company-two>article,.company-facts article,.legacy-location){border-top:3px solid #10273f}
+body :is(.form-card h2,.review-card h1,.company-two h3,.company-facts article strong,.location-card h2){color:#10273f}
+body .form-card h2{padding-bottom:16px;border-bottom:1px solid #c8d4e1}
+body .company-gallery figure{border:1px solid #dce4ed;border-bottom:3px solid #10273f}
+body .company-section>h2{border-left:4px solid #10273f;padding-left:16px}
+body .steps-grid article{border-top:3px solid #10273f}
+body .steps-grid article>span{background:#10273f;color:#fff;width:fit-content;border-radius:5px;padding:5px 10px}
+body .editorial-split{border:1px solid #dce4ed;border-top:3px solid #10273f;border-radius:14px;overflow:hidden;background:#fff}
+body :is(.location-actions,.detail-note,.catalog-note){border-color:#bbc9d9}
+body #shop-product-tools summary{background:#10273f;color:#fff;padding:10px 14px;border-radius:6px}
+body .shop-recent-searches a{color:#10273f;border-color:#c8d4e1}
+body .shop-basket-row{border-color:#c8d4e1}
+body .shop-basket-row h3{color:#10273f}
+body .hero-button-primary{background:#10273f;color:#fff;border:1px solid #10273f}
+body .hero-button-primary:hover{background:#1c3d5e;color:#fff}
+body .hero-button-secondary{background:#fff;color:#10273f;border-color:#10273f}
+body .hero-button-secondary:hover{background:#eef3f9;color:#10273f}
+body .hero-button:focus-visible{outline-color:#087c98}
+body .hero-slide-number{background:#10273f;color:#fff;border-radius:5px;padding:5px 10px}
+body .site-footer a:hover{color:#65e4ff}
+body .site-footer .footer-bottom{color:#c0cddd}
+@media(max-width:767px){body .mobile-ecom-tabbar a.is-active{color:#10273f;box-shadow:inset 0 3px #10273f}body .detail-copy{padding:18px}}
+
+/* Contrast safeguards for text and photos on accented surfaces. */
+body .site-footer .footer-grid>div>a:not(.brand){color:#e0e9f4}
+body .site-footer .footer-grid>div>a:not(.brand):hover{color:#65e4ff}
+body.home-page .store-header .brand span.brand-orange,
+body.inner-page .store-header .brand span.brand-orange{color:#b85005!important}
+body .filter-option small{color:#596b7c}
+body .save-button{color:#506174}
+body .photo-caption{background:#10273f;color:#fff}
+body .procurement-banner .procurement-visual{background:#fff;border:1px solid #dce4ed;border-radius:12px;padding:12px}
+body .procurement-banner img{mix-blend-mode:normal;background:#fff;border-radius:10px}
+body :is(.product-visual,.detail-image,.quickview-visual,.basket-photo,.pbar-thumb,.shop-basket-row) img{mix-blend-mode:normal}
+body :is(input,textarea)::placeholder{color:#617083;opacity:1}
+body .catalog-toolbar :is(.muted,.micro-label){color:#dce7f3}
+body .procurement-banner :is(.muted,.micro-label){color:#dce7f3}
+body .swm-assistant-head button:focus-visible{outline-color:#65e4ff}
+
+/* Keep foreground/background pairs together, including hover and focus. */
+body .pbar-pill{background:#fff;color:#10273f}
+body .pbar-pill:hover,body .pbar-pill:focus-visible{background:#10273f;color:#fff;border-color:#10273f}
+body .pbar-pill.pbar-mega-btn,
+body .pbar-pill.pbar-mega-btn:hover,
+body .pbar-pill.pbar-mega-btn:focus-visible,
+body .pbar-pill[data-shop-action=basket],
+body .pbar-pill[data-shop-action=basket]:hover{background:#10273f;color:#fff;border-color:#10273f}
+body .empty-symbol{color:#596b7c}
+body .comparison-table th>a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+body .comparison-table th>a:hover{color:#65e4ff}
+body .floating-basket:hover{background:#1c3d5e;color:#fff}
+body :is(.category-visual,.hpp-cat-thumb,.editorial-image){background:#fff;border-radius:8px}
+body :is(.category-visual,.hpp-cat-thumb,.editorial-image) img{mix-blend-mode:normal;filter:none;opacity:1;object-fit:contain}
+body .product-visual{background:#fff}
+body :is(.product-visual,.detail-image,.quickview-visual,.basket-photo,.pbar-thumb) img{filter:none;opacity:1;object-fit:contain}
+body .hero-button-primary{border-color:#d2e3ef}
+body .mobile-ecom-tabbar b{background:#10273f;color:#fff}
