@@ -1,0 +1,34 @@
+/* Authoritative dimensions and appearance shared by every page. */
+body .store-header,body .store-header{box-sizing:border-box!important;width:100%!important;margin-top:14px!important;opacity:1!important;filter:none!important;transform:none!important;background:transparent!important;border:0!important;box-shadow:none!important;view-transition-name:swm-site-header}
+body .store-header .header-main,body .store-header .header-main{box-sizing:border-box!important;min-width:0!important;align-items:center!important;padding:8px 0!important;border:0!important}
+body .store-header .store-nav,body .store-header .store-nav{box-sizing:border-box!important;align-items:center!important;border:0!important}
+body .store-header.is-scrolled,body .store-header.is-scrolled{background:rgba(241,248,253,.96)!important;box-shadow:0 7px 22px rgba(24,75,112,.12)!important;backdrop-filter:blur(14px) saturate(145%)!important;-webkit-backdrop-filter:blur(14px) saturate(145%)!important}
+body .store-header.is-scrolled .header-main,body .store-header.is-scrolled .store-nav,body .store-header.is-scrolled .header-main,body .store-header.is-scrolled .store-nav{background:transparent!important}
+@media(min-width:1024px){
+ body .store-header,body .store-header{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:clamp(16px,2vw,30px)!important;height:68px!important;min-height:68px!important;max-height:68px!important;padding:0 var(--gutter)!important}
+ body .store-header .header-main,body .store-header .header-main{flex:0 0 auto!important;width:auto!important;height:68px!important;min-height:68px!important;padding:8px 0!important}
+ body .store-header .store-nav,body .store-header .store-nav{flex:1 1 auto!important;width:auto!important;min-width:0!important;height:68px!important;min-height:68px!important;flex-wrap:nowrap!important;justify-content:space-between!important;gap:clamp(12px,1.6vw,28px)!important;padding:8px 0!important}
+ body .store-header .primary-links,body .store-header .primary-links{display:flex!important;align-items:center!important;gap:clamp(2px,.45vw,8px)!important;padding:6px 9px!important;border:0!important;border-radius:999px!important;background:rgba(255,255,255,.78)!important;box-shadow:0 8px 24px rgba(35,104,151,.09)!important;backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%)}
+ body .store-header .primary-links>a,body .store-header .primary-links>a{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;min-height:40px!important;padding:8px clamp(9px,.8vw,15px)!important;border:0!important;border-radius:999px!important;background:transparent!important;color:#173b5d!important;font-size:13px!important;font-weight:800!important;line-height:1.2!important;transform:none!important;transition:color .48s cubic-bezier(.2,.75,.25,1),background-color .48s cubic-bezier(.2,.75,.25,1)!important}
+ body .store-header .primary-links>a:hover,body .store-header .primary-links>a:focus-visible,body .store-header .primary-links>a[aria-current=page],body .store-header .primary-links>a:hover,body .store-header .primary-links>a:focus-visible,body .store-header .primary-links>a[aria-current=page]{background:rgba(91,190,236,.22)!important;color:#075987!important;outline:none!important}
+ body .store-header .nav-quote,body .store-header .nav-quote{min-height:42px!important;border:0!important;border-radius:999px!important;background:linear-gradient(135deg,#44b9e9,#1888c8)!important;color:#fff!important}
+ body .store-header .nav-catalogue,body .store-header .nav-catalogue{min-height:42px!important;border:0!important;border-radius:999px!important;background:#e1f3ff!important;color:#15527a!important;outline:none!important;box-shadow:none!important}
+}
+@media(min-width:768px) and (max-width:1023px){body .store-header,body .store-header{margin-top:14px!important}body .store-header .header-main,body .store-header .header-main{padding:8px var(--gutter)!important}body .store-header .store-nav,body .store-header .store-nav{padding-block:8px!important}}
+@media(max-width:767px){body .store-header,body .store-header{position:relative!important;height:auto!important;min-height:56px!important;max-height:none!important;margin-top:6px!important}body .store-header .header-main,body .store-header .header-main{height:56px!important;min-height:56px!important;padding:8px 16px!important}}
+::view-transition-group(swm-site-header){animation-duration:0ms!important}::view-transition-old(swm-site-header),::view-transition-new(swm-site-header){animation:none!important}
+
+
+/* Match the homepage header on laptop and desktop widths. */
+@media(min-width:1300px){
+ body.home-page .store-header,body.inner-page .store-header{height:84px!important;min-height:84px!important;max-height:84px!important;gap:clamp(20px,2vw,38px)!important}
+ body.home-page .store-header .header-main,body.inner-page .store-header .header-main,body.home-page .store-header .store-nav,body.inner-page .store-header .store-nav{height:84px!important;min-height:84px!important}
+ body.home-page .store-header .header-main>.brand,body.inner-page .store-header .header-main>.brand{gap:clamp(10px,.85vw,16px)!important;font-size:clamp(16px,1.18vw,22px)!important}
+ body.home-page .store-header .brand-emblem,body.inner-page .store-header .brand-emblem{width:clamp(42px,3vw,56px)!important;height:clamp(42px,3vw,56px)!important}
+ body.home-page .store-header .brand-divider,body.inner-page .store-header .brand-divider{height:clamp(40px,2.8vw,52px)!important}
+ body.home-page .store-header .primary-links,body.inner-page .store-header .primary-links{gap:clamp(2px,.5vw,10px)!important;padding:clamp(7px,.55vw,10px) clamp(8px,.64vw,12px)!important}
+ body.home-page .store-header .primary-links>a,body.inner-page .store-header .primary-links>a{min-height:44px!important;padding:10px clamp(9px,.65vw,12px)!important;font-size:clamp(13px,.81vw,15px)!important}
+ body.home-page .store-header .nav-cta>a,body.inner-page .store-header .nav-cta>a{min-height:52px!important;padding:11px clamp(13px,1.08vw,20px)!important;font-size:clamp(12px,.75vw,14px)!important}
+ body.home-page .store-header .nav-cta .icon,body.inner-page .store-header .nav-cta .icon{width:22px!important;height:22px!important}
+}
+

@@ -1,0 +1,17 @@
+2026-11-19 11:15:23.472: [INFO] CurrentProfilePath: C:\Users\surgi\Videos\surgical-wholesale-mart\.edge-check-about\Default
+2026-11-19 11:15:23.472: [INFO] Profiles total count: 1
+2026-11-19 11:15:23.472: [INFO] Profile: name=Profile 1 path=C:\Users\surgi\Videos\surgical-wholesale-mart\.edge-check-about\Default lastActive=2026-11-19T11:15:23.448Z
+2026-11-19 11:15:23.472: [INFO] LastUsedProfileDir: C:\Users\surgi\Videos\surgical-wholesale-mart\.edge-check-about\Default
+2026-11-19 11:15:23.472: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\surgi\Videos\surgical-wholesale-mart\.edge-check-about\Default lastActive=2026-11-19T11:15:23.448Z
+2026-11-19 11:15:23.472: [INFO] OnDoneLoading sync enabled: 0
+2026-11-19 11:15:23.472: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-19 11:15:23.472: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-19 11:15:23.472: [INFO] BookmarksSnapshot Startup total=5 bar=5 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-19 11:15:23.476: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-19 11:15:23.681: [INFO] VisibilityChanged: 0
+2026-11-19 11:15:25.137: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-19 11:15:25.142: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-19 11:15:25.144: [INFO] Primary account changed.
+2026-11-19 11:15:25.144: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-19 11:15:25.156: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-19 11:15:27.227: [INFO] BookmarksSnapshot Shutdown total=5 bar=5 other=0 mobile=0 showBar=0 showBarNTP=1

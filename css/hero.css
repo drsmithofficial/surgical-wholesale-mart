@@ -165,51 +165,8 @@
   .hero-artwork, .hero-mosaic-tile, .hero-curtain { animation: none; }
 }
 
-/* Editable hero: equipment artwork is isolated in its own image layer;
-   all headings, buttons, backgrounds, and decorative elements are HTML/CSS. */
-.home-page { --hero-header-background: #ffffff !important; }
-.home-page .store-header,
-.home-page .utility-bar,
-.home-page .store-nav,
-.home-page .header-main,
-.home-page .header-search,
-.home-page .header-actions b,
-.home-page .all-categories,
-.home-page .nav-categories a {
-  background: #ffffff !important;
-  color: var(--ink) !important;
-  border-color: var(--line) !important;
-  transition: none !important;
-}
-.home-page .store-header a,
-.home-page .store-header .brand,
-.home-page .store-header .brand strong,
-.home-page .store-header .brand span,
-.home-page .store-header .brand-orange,
-.home-page .store-nav a,
-.home-page .utility-bar a,
-.home-page .header-actions span,
-.home-page .mobile-menu,
-.home-page .header-actions b {
-  color: var(--ink) !important;
-}
-.home-page .brand-divider,
-.home-page .store-header .brand-divider {
-  background: var(--ink) !important;
-}
-.home-page .header-search input,
-.home-page .header-search button,
-.home-page .header-search svg,
-.home-page .header-search .icon {
-  color: var(--ink) !important;
-}
-.home-page .store-header,
-.home-page .store-header * {
-  box-shadow: none !important;
-  text-shadow: none !important;
-  transition: none !important;
-  animation: none !important;
-}
+/* Header appearance and sizing are controlled by theme.css for every page.
+   Keep this stylesheet focused on the homepage hero and its sections. */
 .hero-banners {
   --hero-surface: #102b36;
   --hero-accent: #53c8df;
@@ -485,12 +442,6 @@
 .hero-theme-ocean .hero-button-secondary { border-color: #ffffffb3; }
 
 /* Keep the shared navigation calls to action readable on the white header. */
-.home-page .store-header .nav-cta>a,
-.home-page .store-header .nav-cta>a:hover { color: #fff !important; }
-.home-page .store-header .primary-links>a:hover,
-.home-page .store-header .primary-links>a:active,
-.home-page .store-header .primary-links>a:focus-visible,
-.home-page .store-header .primary-links>a[aria-current="page"] { color: #09254b !important; }
 @media (max-width: 767.98px) {
   .hero-scene { height: 660px; aspect-ratio: auto; }
   .hero-scene .hero-copy { left: 6%; top: 32px; width: 88%; }
@@ -723,26 +674,6 @@
   .hero-theme-sandstone .hero-equipment img,
   .hero-theme-copper .hero-equipment img { clip-path: none; }
   .hero-slide-number{right:16px;bottom:12px;left:auto;z-index:2;font-size:10px}
-}
-
-@media (max-width:767.98px) {
-  .home-page .store-header,
-  .home-page .store-header .header-main,
-  .home-page .store-header .store-nav {
-    background: var(--teal) !important;
-    color: var(--teal-ink) !important;
-    border-color: #0037442b !important;
-  }
-  .home-page .store-header .brand,
-  .home-page .store-header .brand strong,
-  .home-page .store-header .brand span,
-  .home-page .store-header .primary-links>a:not([aria-current=page]),
-  .home-page .store-header .mobile-contact,
-  .home-page .store-header .mobile-menu {
-    color: var(--teal-ink) !important;
-  }
-  .home-page .store-header .brand-divider { background: var(--teal-ink) !important; }
-  .home-page .store-header .primary-links>a[aria-current=page] { color: var(--teal-ink) !important; }
 }
 
 @media (max-width:767.98px) {

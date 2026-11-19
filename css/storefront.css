@@ -750,21 +750,6 @@ body.inner-page{
 }
 body.inner-page main{background:var(--inner-canvas)}
 
-@media(min-width:768px){
-  body.inner-page .store-header{
-    background:linear-gradient(105deg,#fff 0%,#f3fbfd 62%,#e9f8fc 100%);
-    border-bottom:1px solid var(--inner-line);
-    box-shadow:0 5px 20px rgba(0,67,86,.06);
-  }
-  body.inner-page .store-nav{background:transparent}
-  body.inner-page .primary-links>a[aria-current=page]{
-    padding-inline:12px;
-    border-radius:999px;
-    background:var(--inner-tint);
-    color:var(--teal-text);
-  }
-}
-
 body.inner-page .page-intro{
   position:relative;
   isolation:isolate;
@@ -911,3 +896,4 @@ body.inner-page .site-footer a{color:#d8f1f6}
 body.inner-page .site-footer a:hover{color:#63def3}
 body.inner-page .site-footer .brand-divider{background:#d8f1f6}
 body.inner-page .site-footer .footer-bottom{border-color:#ffffff2b}
+

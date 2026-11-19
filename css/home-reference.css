@@ -177,3 +177,109 @@ body.home-page:not([data-page="products"]) main>.home-b2b-hub{width:100%;max-wid
 
 
 
+
+/* Illustrated four-card procurement benefits, matching the supplied reference. */
+.home-page .benefit-showcase{position:relative;overflow:hidden;padding:clamp(30px,4.4vw,82px) clamp(24px,5vw,110px);background:radial-gradient(ellipse at 93% -5%,#ffe4c2 0 7%,transparent 25%),radial-gradient(ellipse at 5% 110%,#d8f1ff 0 10%,transparent 30%),linear-gradient(135deg,#f9fcff 0%,#fff 48%,#f5faff 100%)}
+.home-page .benefit-showcase::before,.home-page .benefit-showcase::after{content:"";position:absolute;pointer-events:none;border-radius:50%;width:40vw;height:14vw;filter:blur(1px);opacity:.6}
+.home-page .benefit-showcase::before{right:-12vw;top:-11vw;border-top:30px solid #ffbc76;transform:rotate(10deg)}
+.home-page .benefit-showcase::after{left:-15vw;bottom:-13vw;border-top:45px solid #9bdcff;transform:rotate(12deg)}
+.home-page .benefit-showcase-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.5vw,30px);max-width:2020px;margin:0 auto}
+.home-page .benefit-showcase-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:clamp(390px,23vw,500px);padding:clamp(22px,2vw,42px) clamp(20px,2.25vw,46px);overflow:hidden;border:1px solid #e3edf7;border-radius:clamp(26px,2.6vw,52px);background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(250,253,255,.9));box-shadow:0 22px 40px rgba(29,82,132,.12);color:#092957;text-decoration:none;transition:transform .28s ease,box-shadow .28s ease}
+.home-page .benefit-showcase-card::before{content:"";position:absolute;inset:auto -8% -11% 38%;height:42%;border-radius:80% 0 0 0;border-top:2px solid rgba(26,151,226,.2);background:linear-gradient(150deg,transparent 40%,rgba(47,167,234,.14) 40% 51%,#087bd1 52% 100%);transform:skewY(-9deg);transition:inset .35s ease}
+.home-page .benefit-showcase-card:nth-child(even)::before{background:linear-gradient(150deg,transparent 40%,rgba(255,169,67,.14) 40% 51%,#ff9900 52% 100%)}
+.home-page .benefit-showcase-card:hover,.home-page .benefit-showcase-card:focus-visible{transform:translateY(-6px);box-shadow:0 28px 48px rgba(29,82,132,.18)}
+.home-page .benefit-showcase-art{position:relative;z-index:1;width:100%;height:clamp(160px,12vw,250px);margin:0 auto clamp(8px,1.1vw,22px);overflow:visible}
+.home-page .benefit-showcase-card h3{position:relative;z-index:1;margin:0;color:#092957;font-size:clamp(23px,1.85vw,39px);font-weight:800;line-height:1.08;letter-spacing:-.035em}
+.home-page .benefit-showcase-rule{position:relative;z-index:1;display:block;width:clamp(74px,4.2vw,94px);height:5px;margin:clamp(13px,1vw,20px) 0;background:linear-gradient(90deg,#ff9a00,#ffc36c 75%,transparent);border-radius:9px}
+.home-page .benefit-showcase-card p{position:relative;z-index:1;margin:0;color:#1f3e65;font-size:clamp(16px,1.25vw,25px);line-height:1.45;font-weight:500}
+@media(max-width:1100px){.home-page .benefit-showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-page .benefit-showcase-card{min-height:420px}.home-page .benefit-showcase-art{height:210px}}
+@media(max-width:600px){.home-page .benefit-showcase{padding:24px 18px 34px}.home-page .benefit-showcase-grid{grid-template-columns:1fr;gap:16px}.home-page .benefit-showcase-card{min-height:0;padding:24px 26px 28px;border-radius:28px}.home-page .benefit-showcase-art{height:185px;max-width:290px;margin-bottom:6px}.home-page .benefit-showcase-card h3{font-size:28px}.home-page .benefit-showcase-card p{font-size:17px}}
+/* Keep the hero actions a little lower, with equal placement on each slide. */
+.home-page .hero-actions{margin-top:clamp(10px,1.1vw,18px)}
+@media(max-width:767px){.home-page .hero-actions{margin-top:8px}}
+/* Simplify featured slider cards and use a clear full-width cart action. */
+.home-page .product-marquee .card-aux-row{display:none!important}
+.home-page .product-marquee .product-bottom{min-height:44px;margin-top:auto;display:block}
+.home-page .product-marquee .product-bottom>span{display:none!important}
+.home-page .product-marquee .add-to-cart-button{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;height:44px;padding:0 15px;border:0;border-radius:11px;background:#087cc2;color:#fff;font-size:14px;font-weight:750;line-height:1;box-shadow:0 4px 10px rgba(8,124,194,.16);transition:background-color .22s ease,transform .22s ease,box-shadow .22s ease}
+.home-page .product-marquee .add-to-cart-button:hover{background:#0669a7;color:#fff;transform:translateY(-1px);box-shadow:0 7px 14px rgba(8,124,194,.22)}
+.home-page .product-marquee .add-to-cart-button span{font-size:19px;font-weight:500}
+/* Let the procurement corridor artwork span the full banner instead of stopping in the center. */
+@media(min-width:701px){
+ .home-page .b2b-hub-art{inset:0;width:100%;height:auto;right:0;opacity:1;-webkit-mask-image:none;mask-image:none}
+ .home-page .b2b-hub-art .b2b-hub-scene{object-position:center 52%;-webkit-mask-image:none;mask-image:none}
+}
+
+/* Make the featured care-setting slider cards about 15% more compact. */
+.home-page .product-marquee-track>.product-card{flex-basis:calc((min(76.84vw,1428px) - 47.6px)/5);min-width:187px;max-width:289px;border-radius:23px}
+.home-page .product-marquee .product-visual>a{padding:15px 19px 8px}
+.home-page .product-marquee .product-info{padding:7px 20px 14px}
+.home-page .product-marquee .product-info h3{min-height:42px;margin:8px 0 8px;font-size:16px}
+.home-page .product-marquee .product-bottom{min-height:42px}
+@media(max-width:1100px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(204px,26.35vw,263px);min-width:0;max-width:263px}}
+@media(max-width:700px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(208px,66.3vw,272px);min-width:0;max-width:272px;border-radius:17px}.home-page .product-marquee .product-visual>a{padding:14px 16px 7px}.home-page .product-marquee .product-info{padding:7px 14px 11px}.home-page .product-marquee .product-info h3{min-height:36px;font-size:14px}.home-page .product-marquee .product-bottom{min-height:40px}}
+
+/* Second 15% reduction for the featured care-setting cards, relative to their current size. */
+.home-page .product-marquee-track>.product-card{flex-basis:calc((min(65.314vw,1213.8px) - 40.46px)/5);min-width:159px;max-width:246px;border-radius:19.5px}
+.home-page .product-marquee .product-visual>a{padding:13px 16px 7px}
+.home-page .product-marquee .product-info{padding:6px 17px 12px}
+.home-page .product-marquee .product-info h3{min-height:36px;margin:7px 0;font-size:13.6px}
+.home-page .product-marquee .product-bottom{min-height:36px}
+.home-page .product-marquee .add-to-cart-button{height:38px}
+@media(max-width:1100px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(173px,22.4vw,224px);min-width:0;max-width:224px}}
+@media(max-width:700px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(177px,56.4vw,231px);min-width:0;max-width:231px;border-radius:15px}.home-page .product-marquee .product-visual>a{padding:12px 14px 6px}.home-page .product-marquee .product-info{padding:6px 12px 9px}.home-page .product-marquee .product-info h3{min-height:31px;font-size:12px}.home-page .product-marquee .product-bottom{min-height:34px}.home-page .product-marquee .add-to-cart-button{height:36px}}
+
+/* Compact the six digital-procurement suite cards by about 30%. */
+.home-page .b2b-hub-grid{justify-items:center;gap:12px}
+.home-page .b2b-hub-card{width:70%;min-height:273px;padding:13px 14px 14px;border-width:3px;border-radius:20px}
+.home-page .b2b-hub-card .b2b-hub-icon{width:48px;height:48px;margin-bottom:11px;border-radius:14px}
+.home-page .b2b-hub-card .b2b-hub-icon svg{width:30px;height:30px}
+.home-page .b2b-hub-card .eyebrow{margin-bottom:6px;font-size:10px}
+.home-page .b2b-hub-card h3{margin-bottom:9px;font-size:clamp(14px,1vw,16px)}
+.home-page .b2b-hub-card p{margin-bottom:12px;font-size:clamp(11px,.8vw,13px);line-height:1.35}
+.home-page .b2b-hub-card .b2b-hub-action{min-height:34px;padding:7px 10px;font-size:clamp(10px,.72vw,13px)}
+.home-page .b2b-hub-card .b2b-hub-action span{font-size:18px}
+@media(max-width:1200px){.home-page .b2b-hub-grid{gap:11px}.home-page .b2b-hub-card{width:70%;min-height:231px;padding:12px}}
+@media(max-width:700px){.home-page .b2b-hub-grid{gap:10px}.home-page .b2b-hub-card{width:100%;min-height:231px;padding:10px;border-width:2px;border-radius:16px}.home-page .b2b-hub-card .b2b-hub-icon{width:42px;height:42px;margin-bottom:8px;border-radius:12px}.home-page .b2b-hub-card .b2b-hub-icon svg{width:27px;height:27px}.home-page .b2b-hub-card .eyebrow{font-size:8px;margin-bottom:5px}.home-page .b2b-hub-card h3{font-size:13px;margin-bottom:7px}.home-page .b2b-hub-card p{font-size:10px;line-height:1.3;margin-bottom:8px}.home-page .b2b-hub-card .b2b-hub-action{min-height:30px;padding:6px 8px;font-size:10px}.home-page .b2b-hub-card .b2b-hub-action span{font-size:16px}}
+@media(max-width:390px){.home-page .b2b-hub-card{min-height:186px}}
+
+/* Enlarge the featured care-setting slider cards by 10% from their current size. */
+.home-page .product-marquee-track>.product-card{flex-basis:calc((min(71.8454vw,1335.18px) - 44.506px)/5);min-width:175px;max-width:271px;border-radius:21.5px}
+.home-page .product-marquee .product-visual>a{padding:14px 18px 8px}
+.home-page .product-marquee .product-info{padding:7px 19px 13px}
+.home-page .product-marquee .product-info h3{min-height:40px;margin:8px 0;font-size:15px}
+.home-page .product-marquee .product-bottom{min-height:40px}
+.home-page .product-marquee .add-to-cart-button{height:42px}
+@media(max-width:1100px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(190px,24.64vw,246px);min-width:0;max-width:246px}}
+@media(max-width:700px){.home-page .product-marquee-track>.product-card{flex-basis:clamp(195px,62.04vw,254px);min-width:0;max-width:254px;border-radius:16.5px}.home-page .product-marquee .product-visual>a{padding:13px 15px 7px}.home-page .product-marquee .product-info{padding:7px 13px 10px}.home-page .product-marquee .product-info h3{min-height:34px;font-size:13px}.home-page .product-marquee .product-bottom{min-height:37px}.home-page .product-marquee .add-to-cart-button{height:40px}}
+
+/* Enlarge the digital-procurement suite cards 15% from their current compact size. */
+.home-page .b2b-hub-grid{gap:14px}
+.home-page .b2b-hub-card{width:80.5%;min-height:314px;padding:15px 16px 16px;border-width:3px;border-radius:23px}
+.home-page .b2b-hub-card .b2b-hub-icon{width:55px;height:55px;margin-bottom:13px;border-radius:16px}
+.home-page .b2b-hub-card .b2b-hub-icon svg{width:35px;height:35px}
+.home-page .b2b-hub-card .eyebrow{margin-bottom:7px;font-size:11.5px}
+.home-page .b2b-hub-card h3{margin-bottom:10px;font-size:clamp(16px,1.15vw,18px)}
+.home-page .b2b-hub-card p{margin-bottom:14px;font-size:clamp(12px,.92vw,15px);line-height:1.38}
+.home-page .b2b-hub-card .b2b-hub-action{min-height:39px;padding:8px 11px;font-size:clamp(11px,.83vw,15px)}
+.home-page .b2b-hub-card .b2b-hub-action span{font-size:21px}
+@media(max-width:1200px){.home-page .b2b-hub-grid{gap:13px}.home-page .b2b-hub-card{width:80.5%;min-height:266px;padding:14px}}
+@media(max-width:700px){.home-page .b2b-hub-grid{gap:12px}.home-page .b2b-hub-card{width:100%;min-height:266px;padding:12px;border-radius:18px}.home-page .b2b-hub-card .b2b-hub-icon{width:48px;height:48px;margin-bottom:9px;border-radius:14px}.home-page .b2b-hub-card .b2b-hub-icon svg{width:31px;height:31px}.home-page .b2b-hub-card .eyebrow{font-size:9px;margin-bottom:6px}.home-page .b2b-hub-card h3{font-size:15px;margin-bottom:8px}.home-page .b2b-hub-card p{font-size:11.5px;line-height:1.34;margin-bottom:9px}.home-page .b2b-hub-card .b2b-hub-action{min-height:34px;padding:7px 9px;font-size:11.5px}.home-page .b2b-hub-card .b2b-hub-action span{font-size:18px}}
+@media(max-width:390px){.home-page .b2b-hub-card{min-height:214px}}
+
+/* Increase the digital-procurement suite cards another 5% from their current size. */
+.home-page .b2b-hub-grid{gap:15px}
+.home-page .b2b-hub-card{width:84.5%;min-height:330px;padding:16px 17px 17px;border-radius:24px}
+.home-page .b2b-hub-card .b2b-hub-icon{width:58px;height:58px;margin-bottom:14px;border-radius:17px}
+.home-page .b2b-hub-card .b2b-hub-icon svg{width:37px;height:37px}
+.home-page .b2b-hub-card .eyebrow{margin-bottom:7px;font-size:12px}
+.home-page .b2b-hub-card h3{margin-bottom:11px;font-size:clamp(17px,1.2vw,19px)}
+.home-page .b2b-hub-card p{margin-bottom:15px;font-size:clamp(12.5px,.97vw,15.75px)}
+.home-page .b2b-hub-card .b2b-hub-action{min-height:41px;padding:8px 12px;font-size:clamp(11.5px,.87vw,15.75px)}
+.home-page .b2b-hub-card .b2b-hub-action span{font-size:22px}
+@media(max-width:1200px){.home-page .b2b-hub-grid{gap:14px}.home-page .b2b-hub-card{width:84.5%;min-height:279px;padding:15px}}
+@media(max-width:700px){.home-page .b2b-hub-grid{gap:13px}.home-page .b2b-hub-card{width:100%;min-height:279px;padding:13px;border-radius:19px}.home-page .b2b-hub-card .b2b-hub-icon{width:50px;height:50px;margin-bottom:10px;border-radius:15px}.home-page .b2b-hub-card .b2b-hub-icon svg{width:33px;height:33px}.home-page .b2b-hub-card .eyebrow{font-size:9.5px}.home-page .b2b-hub-card h3{font-size:15.75px;margin-bottom:8px}.home-page .b2b-hub-card p{font-size:12px;margin-bottom:10px}.home-page .b2b-hub-card .b2b-hub-action{min-height:36px;padding:7px 9px;font-size:12px}}
+@media(max-width:390px){.home-page .b2b-hub-card{min-height:225px}}
+
+/* Widen the procurement-suite cards by 10% without changing their height or contents. */
+@media(min-width:701px){.home-page .b2b-hub-card{width:93%}}

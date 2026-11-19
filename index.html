@@ -19,6 +19,7 @@
     <script defer src="js/hero.js"></script>
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/home-reference.css">
+<link rel="stylesheet" href="css/header-shared.css?v=20261119-7">
 </head>
 
 <body class="home-page" data-page="index"><a class="skip-link" href="#main">Skip to content</a>
@@ -182,31 +183,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+                    <div class="hero-slider-controls" role="group" aria-label="Hero banner controls">
+                <button class="hero-slider-control hero-slider-prev" type="button" aria-label="Previous banner">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button class="hero-slider-control hero-slider-next" type="button" aria-label="Next banner">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div></section>
         <!-- End Hero Section -->
-        <div class="benefit-row">
-            <a class="benefit-item" href="services.html"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="m12 2 9 5v10l-9 5-9-5V7Zm-9 5 9 5 9-5M12 12v10M7 4.5l9 5" />
-                </svg><span><strong>Bulk procurement</strong><small>From a single item to a facility</small></span>
-            </a>
-            <a class="benefit-item" href="products.html"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Zm-5 9 3 3 7-7" />
-                </svg><span><strong>Considered selection</strong><small>Clear product information</small></span></a>
-            <a class="benefit-item" href="contact.html"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="m6 3 4 5-3 3c2 3 3 4 6 6l3-3 5 4c-3 7-10 2-14-2S-2 6 6 3Z" />
-                </svg><span><strong>Human support</strong><small>Help with your requirements</small></span></a>
-            <a class="benefit-item" href="cart.html"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="m5 12 4 4L20 5" />
-                </svg><span><strong>Quote before you order</strong><small>Confirm every detail</small></span></a>
-        </div>
         <section class="section selection-section" id="featured-products">
             <div class="featured-look-banner">
                 <div class="featured-look-copy">
@@ -250,9 +235,7 @@
                         <div class="product-info"><span class="micro-label">Hospital beds</span>
                             <h3><a href="product.html?id=02bb6538d195">Five-Function Electric ICU Bed</a></h3>
                             <p>Electric adjustment</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="02bb6538d195"
-                                    aria-label="Add Five-Function Electric ICU Bed to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="02bb6538d195" aria-label="Add Five-Function Electric ICU Bed to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="808afd3730d4">
@@ -269,9 +252,7 @@
                         <div class="product-info"><span class="micro-label">Patient monitoring</span>
                             <h3><a href="product.html?id=808afd3730d4">Seven-Parameter Patient Monitor</a></h3>
                             <p>Seven-parameter monitor</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="808afd3730d4"
-                                    aria-label="Add Seven-Parameter Patient Monitor to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="808afd3730d4" aria-label="Add Seven-Parameter Patient Monitor to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="c42d0c599c9a">
@@ -288,9 +269,7 @@
                         <div class="product-info"><span class="micro-label">Operating tables</span>
                             <h3><a href="product.html?id=c42d0c599c9a">Semi-Electric C-Arm OT Table</a></h3>
                             <p>Semi-electric operation</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="c42d0c599c9a"
-                                    aria-label="Add Semi-Electric C-Arm OT Table to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="c42d0c599c9a" aria-label="Add Semi-Electric C-Arm OT Table to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="d1d7247e1be0">
@@ -308,9 +287,7 @@
                         <div class="product-info"><span class="micro-label">Patient transfer</span>
                             <h3><a href="product.html?id=d1d7247e1be0">Hydraulic Emergency Patient Trolley</a></h3>
                             <p>Hydraulic adjustment</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="d1d7247e1be0"
-                                    aria-label="Add Hydraulic Emergency Patient Trolley to quote basket">+</button>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="d1d7247e1be0" aria-label="Add Hydraulic Emergency Patient Trolley to quote basket">Add to cart <span aria-hidden="true">→</span></button>
                             </div>
                         </div>
                     </article>
@@ -328,9 +305,7 @@
                         <div class="product-info"><span class="micro-label">Scrub stations</span>
                             <h3><a href="product.html?id=a19726a622b7">Surgical Scrub Station</a></h3>
                             <p>Sensor &amp; manual options</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="a19726a622b7"
-                                    aria-label="Add Surgical Scrub Station to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="a19726a622b7" aria-label="Add Surgical Scrub Station to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="046172436ac2">
@@ -347,9 +322,7 @@
                         <div class="product-info"><span class="micro-label">Mobility aids</span>
                             <h3><a href="product.html?id=046172436ac2">Patient Wheelchair</a></h3>
                             <p>Patient mobility</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="046172436ac2"
-                                    aria-label="Add Patient Wheelchair to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="046172436ac2" aria-label="Add Patient Wheelchair to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="9065d7fe01a7">
@@ -366,9 +339,7 @@
                         <div class="product-info"><span class="micro-label">Examination furniture</span>
                             <h3><a href="product.html?id=9065d7fe01a7">Deluxe Examination Couch</a></h3>
                             <p>Examination couch</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="9065d7fe01a7"
-                                    aria-label="Add Deluxe Examination Couch to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="9065d7fe01a7" aria-label="Add Deluxe Examination Couch to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                     <article class="product-card" data-product="541685af7f1c">
@@ -386,12 +357,43 @@
                         <div class="product-info"><span class="micro-label">Privacy curtains</span>
                             <h3><a href="product.html?id=541685af7f1c">ICU &amp; Ward Privacy Curtaining</a></h3>
                             <p>ICU &amp; ward use</p>
-                            <div class="product-bottom"><span>Price on request</span><button class="add-button"
-                                    data-add="541685af7f1c"
-                                    aria-label="Add ICU &amp; Ward Privacy Curtaining to quote basket">+</button></div>
+                            <div class="product-bottom"><button class="add-button add-to-cart-button" data-add="541685af7f1c" aria-label="Add ICU &amp; Ward Privacy Curtaining to quote basket">Add to cart <span aria-hidden="true">→</span></button></div>
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
+        
+        <section class="benefit-showcase" aria-label="How we support your procurement">
+            <div class="benefit-showcase-grid">
+                <a class="benefit-showcase-card benefit-card-procurement" href="services.html">
+                    <svg class="benefit-showcase-art" viewBox="0 0 300 250" role="img" aria-label="Medical supply boxes ready for delivery">
+                        <defs><linearGradient id="boxTopA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd18a"/><stop offset="1" stop-color="#f59a32"/></linearGradient><linearGradient id="boxSideA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8b65c"/><stop offset="1" stop-color="#d87b1d"/></linearGradient><linearGradient id="boxBlueA"><stop stop-color="#25a9f4"/><stop offset="1" stop-color="#0874cf"/></linearGradient><filter id="boxShadowA" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="9" flood-color="#5286b2" flood-opacity=".2"/></filter></defs>
+                        <ellipse cx="150" cy="215" rx="105" ry="18" fill="#dceefb"/><g filter="url(#boxShadowA)" stroke="#c98232" stroke-width="2"><path d="m69 123 80-43 83 43-82 47z" fill="url(#boxTopA)"/><path d="m69 123 81 47v58l-81-48z" fill="#e99a3b"/><path d="m150 170 82-47v57l-82 48z" fill="url(#boxSideA)"/><path d="m101 106 38-20 40 22-39 21z" fill="#ffe0aa"/><path d="m101 106 39 23v37l-39-23z" fill="#f5b354"/><path d="m140 129 39-21v36l-39 22z" fill="#df8b2e"/><path d="m122 112 18-9 18 10-18 10z" fill="#fff0d2"/><path d="M128 151h23v22h-23z" fill="url(#boxBlueA)" stroke="none"/><path d="M139.5 155v14m-7-7h14" stroke="#fff" stroke-width="4"/></g>
+                    </svg>
+                    <h3>Bulk<br>Procurement</h3><span class="benefit-showcase-rule"></span><p>From a single item<br>to a complete facility</p>
+                </a>
+                <a class="benefit-showcase-card benefit-card-selection" href="products.html">
+                    <svg class="benefit-showcase-art" viewBox="0 0 300 250" role="img" aria-label="Product checklist under review">
+                        <defs><linearGradient id="clipBoardB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#63d6ff"/><stop offset="1" stop-color="#0873ce"/></linearGradient><linearGradient id="glassB"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#c9eaff" stop-opacity=".5"/></linearGradient><filter id="clipShadowB" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="9" flood-color="#5286b2" flood-opacity=".2"/></filter></defs>
+                        <circle cx="150" cy="125" r="101" fill="#fff1de"/><g filter="url(#clipShadowB)" transform="rotate(-4 145 128)"><rect x="77" y="34" width="132" height="178" rx="18" fill="url(#clipBoardB)"/><rect x="88" y="48" width="110" height="151" rx="10" fill="#fff"/><rect x="115" y="28" width="56" height="28" rx="9" fill="#168ae0"/><path d="M127 40h32" stroke="#dff5ff" stroke-width="6" stroke-linecap="round"/><g fill="none" stroke="#1284d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="m104 85 8 8 14-17M104 126l8 8 14-17M104 167l8 8 14-17"/></g><g fill="#c5d3e5"><rect x="139" y="79" width="43" height="9" rx="5"/><rect x="139" y="91" width="32" height="6" rx="3"/><rect x="139" y="120" width="43" height="9" rx="5"/><rect x="139" y="132" width="32" height="6" rx="3"/><rect x="139" y="161" width="43" height="9" rx="5"/><rect x="139" y="173" width="32" height="6" rx="3"/></g></g><g filter="url(#clipShadowB)" transform="rotate(-28 206 153)"><circle cx="205" cy="137" r="42" fill="url(#glassB)" stroke="#f99c21" stroke-width="11"/><path d="m235 169 35 36" stroke="#f28b13" stroke-width="15" stroke-linecap="round"/><path d="m185 137 13 13 27-31" fill="none" stroke="#0788d8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+                    </svg>
+                    <h3>Considered<br>Selection</h3><span class="benefit-showcase-rule"></span><p>Clear and reliable<br>product information</p>
+                </a>
+                <a class="benefit-showcase-card benefit-card-support" href="contact.html">
+                    <svg class="benefit-showcase-art" viewBox="0 0 300 250" role="img" aria-label="Customer support headset and message">
+                        <defs><linearGradient id="headsetC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d3268"/><stop offset="1" stop-color="#041c48"/></linearGradient><linearGradient id="chatC"><stop stop-color="#27c7ff"/><stop offset="1" stop-color="#0077d7"/></linearGradient><filter id="headShadowC" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="9" flood-color="#5286b2" flood-opacity=".2"/></filter></defs>
+                        <circle cx="150" cy="124" r="101" fill="#e6f5ff"/><g filter="url(#headShadowC)"><path d="M79 127v-17a71 71 0 0 1 142 0v17" fill="none" stroke="url(#headsetC)" stroke-width="19" stroke-linecap="round"/><rect x="70" y="113" width="33" height="63" rx="15" fill="url(#headsetC)"/><rect x="197" y="113" width="33" height="63" rx="15" fill="url(#headsetC)"/><path d="M213 169v14a24 24 0 0 1-24 24h-15" fill="none" stroke="#071f4d" stroke-width="10" stroke-linecap="round"/><rect x="154" y="200" width="31" height="15" rx="7" fill="#071f4d"/><path d="M117 103h74c17 0 29 12 29 28v22c0 16-12 28-29 28h-21l-26 21v-21h-27c-16 0-28-12-28-28v-22c0-16 12-28 28-28Z" fill="url(#chatC)" stroke="#d9f4ff" stroke-width="5"/><g fill="#fff"><circle cx="137" cy="142" r="7"/><circle cx="154" cy="142" r="7"/><circle cx="171" cy="142" r="7"/></g></g>
+                    </svg>
+                    <h3>Human<br>Support</h3><span class="benefit-showcase-rule"></span><p>Expert assistance for<br>your requirements</p>
+                </a>
+                <a class="benefit-showcase-card benefit-card-quote" href="cart.html">
+                    <svg class="benefit-showcase-art" viewBox="0 0 300 250" role="img" aria-label="Quotation document confirmed">
+                        <defs><linearGradient id="quotePaperD" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e5f5ff"/></linearGradient><filter id="quoteShadowD" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="9" flood-color="#5286b2" flood-opacity=".2"/></filter></defs>
+                        <circle cx="150" cy="125" r="101" fill="#fff0df"/><g filter="url(#quoteShadowD)" transform="rotate(-5 148 125)"><rect x="84" y="31" width="132" height="182" rx="17" fill="#37aef2"/><path d="M96 44h99a10 10 0 0 1 10 10v143a8 8 0 0 1-8 8H96a8 8 0 0 1-8-8V52a8 8 0 0 1 8-8Z" fill="url(#quotePaperD)"/><text x="144" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="800" fill="#07336f">QUOTE</text><g fill="#bdcce0"><rect x="108" y="101" width="79" height="8" rx="4"/><rect x="108" y="119" width="79" height="8" rx="4"/><rect x="108" y="137" width="62" height="8" rx="4"/><rect x="108" y="155" width="75" height="8" rx="4"/></g></g><circle cx="211" cy="173" r="40" fill="#ff9d16" stroke="#fff" stroke-width="7"/><path d="m193 173 12 12 25-28" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Quote Before<br>you Order</h3><span class="benefit-showcase-rule"></span><p>Confirm every detail<br>with confidence</p>
+                </a>
             </div>
         </section>
         <section class="section category-section">
@@ -689,3 +691,9 @@
 </body>
 
 </html>
+
+
+
+
+
+

@@ -87,8 +87,25 @@
     clearTimeout(toastTimer);
     toastTimer=setTimeout(()=>box.classList.remove('visible'),4000);
   }
+  function updateProductCardCartControl(cardEl) {
+    const id = cardEl.dataset.product;
+    const product = byId(id);
+    const bottom = cardEl.querySelector('.product-bottom');
+    if (!product || !bottom) return;
+    const quantity = basket[id] || 0;
+    if (!quantity) {
+      if (cardEl.closest('.product-marquee')) {
+        bottom.innerHTML = `<button type="button" class="add-button add-to-cart-button" data-add="${id}" aria-label="Add ${e(product.name)} to cart">Add to cart <span aria-hidden="true">→</span></button>`;
+      } else {
+        bottom.innerHTML = `<span>Price on request</span><button type="button" class="add-button" data-add="${id}" aria-label="Add ${e(product.name)} to cart">+</button>`;
+      }
+      return;
+    }
+    bottom.innerHTML = `<div class="card-cart-stepper" role="group" aria-label="${e(product.name)} quantity controls"><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="-1" aria-label="Decrease ${e(product.name)} quantity" ${quantity <= 1 ? 'disabled' : ''}>−</button><span class="card-cart-stepper__quantity" aria-live="polite" aria-label="Quantity ${quantity}">${quantity}</span><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="1" aria-label="Increase ${e(product.name)} quantity">+</button><button type="button" class="card-cart-stepper__remove" data-remove="${id}" aria-label="Remove all ${e(product.name)} from cart" title="Remove product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M5.5 7l1 14h11l1-14M9 7V4h6v3"/></svg></button></div>`;
+  }
   function sync() {
     document.dispatchEvent(new CustomEvent('swm:change'));
+    $$(".product-card[data-product]").forEach(updateProductCardCartControl);
     $$('[data-compare-count]').forEach(el=>el.textContent=compare.length);
     const totalQty=Object.values(basket).reduce((a,b)=>a+b,0);
     $$('[data-cart-count]').forEach(el=>el.textContent=totalQty);
@@ -555,7 +572,6 @@
         <div class="b2b-hub-art" aria-hidden="true">
           <img class="b2b-hub-scene" src="assets/img/procurement-suite-corridor.png" alt="" loading="lazy" width="2160" height="720">
         </div>
-        <button type="button" class="b2b-hub-explore" data-open-megamenu="specialties">Explore all 12 clinical specialties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
       </div>
       <div class="b2b-hub-grid">
         <button type="button" class="b2b-hub-card tone-blue" data-open-setup-planner><span class="b2b-hub-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11v28M7 27h34a3 3 0 0 1 3 3v9M7 20h8a7 7 0 0 1 7 7M22 27V17h14a5 5 0 0 1 5 5v5M12 39v3m27-3v3"/></svg></span><span class="eyebrow">FACILITY PLANNING</span><h3>Hospital Setup by Bed Capacity</h3><p>Complete 10 to 250 bed hospital setups with ICU, OT, wards &amp; CSSD.</p><strong class="b2b-hub-action">Launch Planner <span aria-hidden="true">→</span></strong></button>
@@ -568,6 +584,7 @@
     target.after(hub);
   }
   function initProcurementBar() {
+    if (document.body?.dataset?.page !== 'products') return;
     const header = $('.store-header');
     if (!header || $('.procurement-bar')) return;
     const bar = document.createElement('div');
@@ -821,7 +838,7 @@
     const autoRotate=true;
     const phoneLayout=window.matchMedia('(max-width: 700px)');
     let cycleWidth=0,cardStep=0,viewportWidth=0,position=0,lastWritten=0,frame=0,previousTime=0;
-    let focused=false,pointerActive=false,visible=true,temporarilyPaused=false,resumeTimer;
+    let focused=false,pointerActive=false,hovered=false,visible=true,temporarilyPaused=false,resumeTimer;
     let dragStartX=0,dragStartScroll=0,didDrag=false;
 
     const modulo=(value,length)=>(value%length+length)%length;
@@ -837,7 +854,7 @@
       const sectionVisible=phoneLayout.matches
         ? featuredSection.getBoundingClientRect().bottom>0&&featuredSection.getBoundingClientRect().top<window.innerHeight
         : visible;
-      if(autoRotate&&cycleWidth&&!reducedMotion.matches&&!focused&&!pointerActive&&!temporarilyPaused&&sectionVisible&&!document.hidden){
+      if(autoRotate&&cycleWidth&&!reducedMotion.matches&&!focused&&!pointerActive&&!hovered&&!temporarilyPaused&&sectionVisible&&!document.hidden){
         normalizePosition();
         frame=requestAnimationFrame(tick);
       }
@@ -887,7 +904,8 @@
       writePosition(cycleWidth*(1+progress));
       syncPlayback();
     }
-    function moveProducts(direction){
+    marquee.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'){hovered=true;syncPlayback();}},{passive:true});
+    marquee.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'){hovered=false;syncPlayback();}},{passive:true});    function moveProducts(direction){
       pauseBriefly(2500);
       normalizePosition();
       const count=Math.min(originals.length,Math.max(1,Math.floor(viewportWidth/cardStep)));
@@ -989,6 +1007,21 @@
     nav.innerHTML = `<a href="index.html" class="${page==='index'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><button type="button" data-open-megamenu="categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Categories</span></button><a href="products.html" class="${page==='products'||page==='product'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Shop</span></a><button type="button" data-open-setup-planner><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg><span>Hospital Setup</span></button><a href="cart.html" class="${page==='cart'||page==='checkout'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Quote Cart</span><b data-cart-count>${totalQty}</b></a>`;
     document.body.appendChild(nav);
   }
+  function initHeaderScrollState() {
+    const header = $('.store-header');
+    if (!header) return;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      header.classList.toggle('is-scrolled', window.scrollY > 16);
+    };
+    const onScroll = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, {passive:true});
+  }
   function initHeaderProductsDropdown() {
     const productsLink = $('.store-header .primary-links > a[href="products.html"]');
     if (!productsLink || $('.header-products-popover')) return;
@@ -997,11 +1030,13 @@
     popover.hidden = true;
     popover.setAttribute('role', 'region');
     popover.setAttribute('aria-label', 'Product categories');
-    popover.innerHTML = `<div class="hpp-clean-head"><div><span class="hpp-cats-title">EXPLORE BY CATEGORY</span><strong>Select a product category</strong></div><a class="hpp-view-all-btn" href="products.html">View all ${products.length} products →</a></div><div class="hpp-cat-cards">${categories.map(c => {
+    productsLink.setAttribute('aria-haspopup', 'true');
+    productsLink.setAttribute('aria-expanded', 'false');
+    popover.classList.add('hpp-reference');
+    popover.innerHTML = `<div class="hpp-clean-head"><div class="hpp-heading"><span class="hpp-heading-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="3" width="10" height="10" rx="2"/><rect x="19" y="3" width="10" height="10" rx="2"/><rect x="3" y="19" width="10" height="10" rx="2"/><rect x="19" y="19" width="10" height="10" rx="2"/></svg></span><h2>Explore by Category</h2></div><a class="hpp-view-all-btn" href="products.html"><span>View All ${products.length} Products</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></div><div class="hpp-cat-cards">${categories.map(c => {
       const count = products.filter(p => p.category === c.id).length;
-      return `<a class="hpp-cat-card" href="products.html?category=${encodeURIComponent(c.id)}"><div class="hpp-cat-thumb"><img src="${e(c.image)}" alt="${e(c.name)}" loading="lazy" width="140" height="105"></div><div class="hpp-cat-info"><strong>${e(c.name)}</strong><small>${count} products</small><span class="hpp-cat-cta">View products →</span></div></a>`;
-    }).join('')}</div>`;
-    const headerEl = $('.store-header') || document.body;
+      return `<a class="hpp-cat-card" href="products.html?category=${encodeURIComponent(c.id)}"><div class="hpp-cat-thumb"><img src="${e(c.image)}" alt="" loading="lazy" width="300" height="210"></div><div class="hpp-cat-info"><strong>${e(c.name)}</strong><small>${count} Products</small></div></a>`;
+    }).join('')}</div>`;    const headerEl = $('.store-header') || document.body;
     headerEl.appendChild(popover);
     let hideTimer = 0;
     const showPopover = () => {
@@ -1019,6 +1054,8 @@
     };
     productsLink.addEventListener('mouseenter', showPopover);
     productsLink.addEventListener('focus', showPopover);
+    productsLink.addEventListener('keydown', ev => { if(ev.key === 'Escape'){ popover.hidden = true; productsLink.setAttribute('aria-expanded', 'false'); productsLink.focus(); } });
+    popover.addEventListener('keydown', ev => { if(ev.key === 'Escape'){ popover.hidden = true; productsLink.setAttribute('aria-expanded', 'false'); productsLink.focus(); } });
     productsLink.addEventListener('mouseleave', scheduleHide);
     popover.addEventListener('mouseenter', () => clearTimeout(hideTimer));
     popover.addEventListener('mouseleave', scheduleHide);
@@ -1029,7 +1066,7 @@
       }
     });
   }
-  initProcurementBar();initHeaderProductsDropdown();initHomeB2BHub();initMobileTabbar();initAssistant();  // A shared frontend interface keeps drawers, local profiles and native cards in sync.
+  initProcurementBar();initHeaderScrollState();initHeaderProductsDropdown();initHomeB2BHub();initMobileTabbar();initAssistant();  // A shared frontend interface keeps drawers, local profiles and native cards in sync.
   root.SWM_STORE = {
     products,categories,departments,escapeHTML,selectProducts,card,
     getBasket:()=>({...basket}), getSaved:()=>[...saved], getCompare:()=>[...compare],
