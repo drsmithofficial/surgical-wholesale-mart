@@ -166,7 +166,7 @@ body .comparison{background:#fff;border-color:#10273f;box-shadow:0 -5px 25px #10
 body .comparison-table th,body table thead{background:#10273f;color:#fff}
 body .comparison-table td{background:#fff;color:#182c43;border-color:#dce4ed}
 body .comparison-table tr:nth-child(even) td{background:#f1f5fa}
-body :is(.shop-dialog,.swm-modal,.swm-assistant-panel,.mobile-assistant-card){border-color:#bbc9d9;border-top:4px solid #10273f}
+body :is(.shop-dialog,.swm-modal,.swm-assistant-panel){border-color:#bbc9d9;border-top:4px solid #10273f}
 body .shop-dialog-head{background:#10273f;color:#fff;border-color:#10273f}
 body :is(.shop-close,.swm-modal-close){background:#10273f;color:#fff;border-color:#50637a}
 body .shop-close{background:#fff;color:#10273f}
@@ -183,7 +183,6 @@ body .tracker-step.is-done .tracker-badge{background:#10273f;color:#fff}
 body :is(.swm-assistant-chips button,.company-tags>span){background:#10273f;color:#fff;border-color:#10273f}
 body .swm-assistant-chips button:hover{background:#1c3d5e;color:#fff}
 body .ai-soon-badge{background:#10273f;color:#fff;border-radius:4px;padding:3px 7px}
-body .mobile-assistant-hero{background:#f1f5fa;border-color:#c8d4e1}
 body :is(.form-card,.review-card,.company-two>article,.company-facts article,.legacy-location){border-top:3px solid #10273f}
 body :is(.form-card h2,.review-card h1,.company-two h3,.company-facts article strong,.location-card h2){color:#10273f}
 body .form-card h2{padding-bottom:16px;border-bottom:1px solid #c8d4e1}

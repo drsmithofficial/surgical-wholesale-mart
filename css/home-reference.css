@@ -55,11 +55,12 @@
 .home-page .product-marquee .product-visual img{object-fit:contain;mix-blend-mode:multiply}
 .home-page .product-marquee .save-button{top:16px;right:16px;border:0;background:#ffffffed;color:#086ab0;width:35px;height:35px}
 .home-page .product-marquee .product-info{display:flex;flex:1;flex-direction:column;padding:8px 24px 17px;border:0!important}
-.home-page .product-marquee .product-info .micro-label{align-self:flex-start;min-height:0;padding:5px 12px;border-radius:999px;background:#ddf7fc;color:#0078a5;font-size:11px;letter-spacing:0;font-weight:800}
-.home-page .product-marquee-track>.product-card[data-product="808afd3730d4"] .micro-label{background:#dcf8ed;color:#057750}
-.home-page .product-marquee-track>.product-card[data-product="c42d0c599c9a"] .micro-label{background:#eee7ff;color:#6840bd}
-.home-page .product-marquee-track>.product-card[data-product="d1d7247e1be0"] .micro-label{background:#fff0dc;color:#ba5900}
-.home-page .product-marquee-track>.product-card[data-product="a19726a622b7"] .micro-label{background:#ddf8f8;color:#007471}
+.home-page :is(.product-marquee, #phone-products) .product-card{--badge-background:#ddf7fc;--badge-color:#0078a5}
+.home-page :is(.product-marquee, #phone-products) .product-card[data-product="808afd3730d4"]{--badge-background:#dcf8ed;--badge-color:#057750}
+.home-page :is(.product-marquee, #phone-products) .product-card[data-product="c42d0c599c9a"]{--badge-background:#eee7ff;--badge-color:#6840bd}
+.home-page :is(.product-marquee, #phone-products) .product-card[data-product="d1d7247e1be0"]{--badge-background:#fff0dc;--badge-color:#ba5900}
+.home-page :is(.product-marquee, #phone-products) .product-card[data-product="a19726a622b7"]{--badge-background:#ddf8f8;--badge-color:#007471}
+.home-page .product-marquee .product-info .micro-label{align-self:flex-start;min-height:0;padding:5px 12px;border-radius:999px;background:var(--badge-background);color:var(--badge-color);font-size:11px;letter-spacing:0;font-weight:800}
 .home-page .product-marquee .product-info h3{min-height:48px;margin:9px 0 10px;color:#102849;font-size:18px;line-height:1.25;letter-spacing:-.025em}
 .home-page .product-marquee .product-info>p{display:none}
 .home-page .product-marquee .product-bottom{margin-top:auto;min-height:48px;font-size:15px;color:#597796}
@@ -283,3 +284,445 @@ body.home-page:not([data-page="products"]) main>.home-b2b-hub{width:100%;max-wid
 
 /* Widen the procurement-suite cards by 10% without changing their height or contents. */
 @media(min-width:701px){.home-page .b2b-hub-card{width:93%}}
+
+.phone-home { display: none; }
+.phone-product-page > .product-card { display: none; }
+.phone-slide-description { display: none; }
+
+@media (max-width: 767px) {
+  body[data-page="index"] .store-header {
+    margin-top: 0 !important;
+    background: #fff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  body[data-page="index"] .store-header .header-main { height: 58px !important; }
+  body[data-page="index"] .store-header .mobile-contact { display: none !important; }
+  body[data-page="index"] .store-header .mobile-menu {
+    inset-inline-end: 7px !important;
+    color: #10284f !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  body[data-page="index"] .store-header .mobile-menu-lines i { background: #10284f !important; }
+  body[data-page="index"] .store-header .brand { gap: 8px !important; }
+  body[data-page="index"] .store-header .brand-emblem { width: 26px !important; height: 26px !important; }
+  body[data-page="index"] .store-header .brand-divider { height: 24px !important; }
+  body[data-page="index"] .store-header .brand-wordmark {
+    color: #102654 !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    font-size: clamp(11px, 4.03vw, 18px) !important;
+  }
+  body[data-page="index"] .store-header .brand-legal { font-size: inherit !important; }
+  body[data-page="index"] .store-header .brand-orange { color: #e65b00 !important; }
+  body[data-page="index"] main > :is(.hero-banners, #featured-products, .benefit-row, .benefit-showcase) {
+    display: none !important;
+  }
+
+  .phone-home {
+    container-type: inline-size;
+    display: block;
+    background: #fff;
+    color: #071e50;
+  }
+  .phone-home h1, .phone-home h2, .phone-home p { margin: 0; }
+  .phone-home a { color: inherit; text-decoration: none; }
+  .phone-home :focus-visible { outline: 2px solid #008dd9; outline-offset: -2px; }
+  .phone-track {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .phone-track::-webkit-scrollbar { display: none; }
+  .phone-track > * { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; }
+  .phone-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: clamp(14px, 4.5cqw, 25px);
+    background: #003a30;
+    color: #fff;
+  }
+  .phone-slide {
+    position: relative;
+    isolation: isolate;
+    min-height: max(122px, 36.7cqw);
+    padding: 2.8cqw 6cqw 7.5cqw;
+  }
+  .phone-slide-art {
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 0 auto;
+    width: 94%;
+    height: 100%;
+    object-fit: fill;
+    mask-image: linear-gradient(90deg, transparent, #000 10%);
+  }
+  .phone-slide > span {
+    display: flex;
+    align-items: center;
+    gap: 1.8cqw;
+    font-size: clamp(7px, 2.35cqw, 16px);
+    font-weight: 750;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .phone-slide > span::before {
+    content: "";
+    width: max(3px, .85cqw);
+    height: 3.7cqw;
+    border-radius: 99px;
+    background: #83efff;
+  }
+  .phone-slide :is(h1, h2) {
+    color: #fff;
+    margin-top: 1cqw;
+    font-size: clamp(16px, 5.13cqw, 36px);
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -.035em;
+  }
+  .phone-slide :is(h1, h2)::after {
+    content: "";
+    display: block;
+    width: 13.3cqw;
+    height: max(2px, .8cqw);
+    margin-top: 1.55cqw;
+    border-radius: 99px;
+    background: #07d7ff;
+  }
+  .phone-actions { display: flex; gap: 1.4cqw; margin-top: 2.65cqw; }
+  .phone-actions a {
+    display: grid;
+    place-items: center;
+    min-height: max(20px, 5.75cqw);
+    padding-inline: 2.9cqw;
+    border: 1px solid #b0edec80;
+    border-radius: 99px;
+    color: #fff;
+    font-size: clamp(7px, 2.25cqw, 15px);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .phone-actions a:first-child { color: #081e46; background: #91edff; }
+  .phone-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1cqw;
+    color: #bcd4e4;
+  }
+  .phone-hero .phone-dots { position: absolute; inset: auto 0 0; color: #b5ceca; pointer-events: none; }
+  .phone-dots button {
+    display: grid;
+    place-items: center;
+    width: max(10px, 3.5cqw);
+    height: max(22px, 6.5cqw);
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  .phone-dots button::after {
+    content: "";
+    width: max(5px, 1.55cqw);
+    height: max(5px, 1.55cqw);
+    border-radius: 99px;
+    background: currentColor;
+  }
+  .phone-dots button[aria-current] { color: #007acf; }
+  .phone-dots button[aria-current]::after { width: max(8px, 2.3cqw); }
+  .phone-hero .phone-dots button[aria-current] { width: 5.6cqw; color: #fff; }
+  .phone-hero .phone-dots button[aria-current]::after { width: 4.2cqw; }
+
+  .phone-selection { position: relative; overflow: hidden; }
+  .phone-selection-heading {
+    position: relative;
+    isolation: isolate;
+    height: 36cqw;
+    padding: 4.6cqw 5.1cqw 0;
+  }
+  .phone-selection-heading p {
+    display: flex;
+    align-items: center;
+    gap: 3.2cqw;
+    color: #007fd4;
+    font-size: clamp(8px, 2.55cqw, 17px);
+    font-weight: 850;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+  .phone-selection-heading p::after {
+    content: "";
+    width: 7.8cqw;
+    height: max(3px, .9cqw);
+    border-radius: 99px;
+    background: #ff8100;
+  }
+  .phone-selection-heading h2 {
+    margin-top: 2.3cqw;
+    color: #081f50;
+    font-size: 6.8cqw;
+    font-weight: 850;
+    line-height: 1.02;
+    letter-spacing: -.055em;
+  }
+  .phone-selection-heading em { color: #007bcd; font-style: normal; }
+  .phone-pulse { position: absolute; top: 9.8cqw; right: 6.3cqw; width: 26.5cqw; color: #00c5f5; }
+  .phone-sweep { position: absolute; z-index: -1; inset: auto 0 0; width: 100%; height: 17.8cqw; }
+  .phone-product-slider { position: relative; padding-inline: 6.5cqw; }
+  .phone-product-slider > button {
+    position: absolute;
+    z-index: 1;
+    top: 46%;
+    translate: 0 -50%;
+    display: grid;
+    place-items: center;
+    width: max(21px, 6.1cqw);
+    aspect-ratio: 1;
+    padding: 0 0 .1em;
+    border: 0;
+    border-radius: 50%;
+    background: linear-gradient(#f8fdff, #d0efff);
+    box-shadow: 0 2px 4px #534f6926;
+    color: #0a3767;
+    font: 750 clamp(19px, 5.9cqw, 38px)/.8 Arial, sans-serif;
+    cursor: pointer;
+  }
+  .phone-product-slider > button:first-child { left: .55cqw; }
+  .phone-product-slider > button:last-child { right: .55cqw; }
+  .phone-product-page {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.35cqw;
+    padding: .4cqw .4cqw 2cqw;
+  }
+  .phone-product-page > a {
+    display: grid;
+    grid-template-rows: 16cqw 1fr;
+    min-height: 25.4cqw;
+    padding: .6cqw .5cqw .3cqw;
+    border: 1px solid #fff;
+    border-radius: 4cqw;
+    background: linear-gradient(#fcfdfe 17%, #f1f9fd 58%, #dcf1fc);
+    box-shadow: 0 .85cqw 1.7cqw #0085c932;
+  }
+  .phone-product-page > a img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+  .phone-product-page > a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1cqw;
+    text-align: center;
+    font-size: max(8px, 2.45cqw);
+    font-weight: 850;
+    letter-spacing: -.025em;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+  .phone-product-page > a svg, .phone-benefits svg {
+    flex: none;
+    width: 4.5cqw;
+    fill: none;
+    stroke: #009ef2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.6;
+  }
+  .phone-benefits {
+    display: grid;
+    grid-template-columns: .85fr .95fr 1.05fr 1.2fr;
+    align-items: center;
+    min-height: 22cqw;
+    margin: 4.4cqw 2.2cqw 0;
+    padding: 2.4cqw .7cqw;
+    border: 1px solid #fff;
+    border-radius: 6cqw;
+    background: linear-gradient(#f8fbfc, #e5f5fd);
+    box-shadow: 0 1cqw 2cqw #0085c926;
+  }
+  .phone-benefits a { position: relative; display: grid; justify-items: center; gap: .85cqw; text-align: center; }
+  .phone-benefits a + a::before { content: ""; position: absolute; inset: 1.8cqw auto .5cqw 0; width: 1px; background: #c8e0ef; }
+  .phone-benefits svg { width: 8.5cqw; stroke-width: 2; }
+  .phone-benefits text { fill: #009ef2; stroke: none; font-size: 9px; font-weight: 850; }
+  .phone-benefits span { font-size: max(8px, 2.8cqw); font-weight: 750; line-height: 1.15; letter-spacing: -.025em; }
+  .phone-finish { position: relative; height: 23.4cqw; overflow: hidden; border-radius: 0 0 3cqw 3cqw; }
+  .phone-finish svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+}
+
+@media (max-width: 700px) {
+  .phone-hero {
+    width: calc(100% - 20px);
+    height: 179.626px;
+    margin: 16px auto 0;
+    border-radius: 15px;
+    touch-action: pan-y;
+  }
+  .phone-hero .phone-track {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+  .phone-slide {
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    padding: 14px 13px;
+    background: #003a30;
+  }
+  .phone-slide:nth-child(2) { background: #00383b; }
+  .phone-slide:nth-child(3) { background: #282925; }
+  .phone-slide:nth-child(4) { background: #171a45; }
+  .phone-slide:is([data-active], [data-outgoing]),
+  .phone-track:not([data-ready]) .phone-slide:first-child { visibility: visible; }
+  .phone-slide[data-active] { z-index: 1; }
+  .phone-slide-art {
+    inset: auto -4px 21px auto;
+    width: 58%;
+    height: 57%;
+    object-fit: cover;
+    object-position: right bottom;
+    mask-image: linear-gradient(transparent, #000 26%, #000 90%, transparent),
+      linear-gradient(90deg, transparent, #000 24%);
+    mask-composite: intersect;
+  }
+  .phone-slide::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0 38% 0 0;
+    background: linear-gradient(90deg, #00141b80, transparent);
+    pointer-events: none;
+  }
+  .phone-slide > span { font-size: 9px; gap: 6px; }
+  .phone-slide > span::before { height: 11px; }
+  .phone-slide :is(h1, h2) { margin-top: 5px; font-size: clamp(20px, 5.6vw, 29px); }
+  .phone-slide :is(h1, h2)::after { margin-top: 6px; width: 38px; height: 3px; }
+  .phone-slide .phone-slide-description {
+    display: block;
+    max-width: min(48%, 210px);
+    margin-top: 6px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px #001b25;
+  }
+  .phone-actions { gap: 5px; margin-top: 7px; }
+  .phone-actions a { min-height: 29px; padding-inline: 11px; font-size: 10px; }
+  .phone-home .phone-dots, .phone-product-slider > button { display: none; }
+  .phone-product-slider { padding: 0; }
+  #phone-products { gap: 6px; padding: 3px 24px 6px; scroll-snap-type: none; }
+  .phone-product-page { display: contents; }
+  .phone-product-page > :is(a, .product-card) {
+    flex: 0 0 clamp(145px, 29.5vw, 164px);
+    grid-template-rows: minmax(0, 1fr) 24px;
+    height: 137px;
+    min-height: 0;
+    padding: 3px 5px 5px;
+    border-radius: 17px;
+    box-shadow: 0 2px 5px #0085c926;
+    translate: var(--phone-card-offset, 0px) 0;
+  }
+  .phone-product-page > a span { gap: 5px; font-size: 12px; }
+  .phone-product-page > a svg { width: 17px; }
+  .phone-product-page > a:has(+ .product-card) { display: none; }
+  #phone-products .product-card {
+    display: grid;
+    height: 185px;
+    grid-template-rows: 106px minmax(0, 1fr);
+    min-width: 0;
+    overflow: hidden;
+    padding: 3px 4px;
+    border: 1px solid #fff;
+    background: linear-gradient(#fcfeff 38%, #edf8ff);
+  }
+  #phone-products .product-visual {
+    position: relative;
+    height: 100%;
+    aspect-ratio: auto;
+    border: 0;
+    background: transparent;
+  }
+  #phone-products .product-visual > a { height: 100%; padding: 0 5px; overflow: hidden; }
+  #phone-products .product-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+  #phone-products .photo-caption { left: 0; bottom: 0; font-size: 7px; padding: 1px 3px; }
+  #phone-products .product-info {
+    display: grid;
+    grid-template-rows: 18px 24px 27px;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+  }
+  #phone-products .product-info h3 {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  #phone-products :is(.save-button, .card-aux-row, .product-info > p) { display: none; }
+  #phone-products .micro-label {
+    justify-self: start;
+    align-self: start;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: var(--badge-background);
+    color: var(--badge-color);
+    font-size: 8px;
+    font-weight: 800;
+    line-height: 10px;
+    letter-spacing: .025em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #phone-products .product-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+  }
+  #phone-products .add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-radius: 6px;
+    background: #087cc2;
+    color: #fff;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  #phone-products .add-button::after { content: none; }
+  #phone-products .card-cart-stepper {
+    width: 100%;
+    min-height: 0;
+    gap: 3px;
+    padding: 1px 3px;
+  }
+  #phone-products .card-cart-stepper button { flex: 0 0 25px; width: 25px; height: 23px; }
+  #phone-products .card-cart-stepper__quantity { min-width: 0; font-size: 11px; }
+  #phone-products .card-cart-stepper__remove svg { width: 14px; height: 14px; }
+}

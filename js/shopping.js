@@ -47,7 +47,6 @@
    tools.dataset.shopReady='1';
    const profile=tools.querySelector('[data-open-buyer-profile]');if(profile){profile.removeAttribute('data-open-buyer-profile');profile.dataset.shopAction='account';profile.textContent='My account';}
    const cart=tools.querySelector('a[href="cart.html"]');if(cart){const b=document.createElement('button');b.type='button';b.className='pbar-pill';b.dataset.shopAction='basket';b.innerHTML=cart.innerHTML;cart.replaceWith(b);}
-   tools.insertAdjacentHTML('afterbegin','<a class="pbar-pill" href="products.html?new=1&sort=newest">New products</a>');
   }
   const controls=$('.catalog-extra-controls');if(controls&&!$('#shop-new-filter'))controls.insertAdjacentHTML('beforeend','<label class="shop-check"><input id="shop-new-filter" type="checkbox"> New product additions only</label>');
   const toggle=$('#shop-new-filter');if(toggle)toggle.checked=Boolean(store.getState()?.newOnly);

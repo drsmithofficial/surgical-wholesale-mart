@@ -94,7 +94,7 @@
     if (!product || !bottom) return;
     const quantity = basket[id] || 0;
     if (!quantity) {
-      if (cardEl.closest('.product-marquee')) {
+      if (cardEl.closest('.product-marquee, #phone-products')) {
         bottom.innerHTML = `<button type="button" class="add-button add-to-cart-button" data-add="${id}" aria-label="Add ${e(product.name)} to cart">Add to cart <span aria-hidden="true">→</span></button>`;
       } else {
         bottom.innerHTML = `<span>Price on request</span><button type="button" class="add-button" data-add="${id}" aria-label="Add ${e(product.name)} to cart">+</button>`;
@@ -106,6 +106,7 @@
   function sync() {
     document.dispatchEvent(new CustomEvent('swm:change'));
     $$(".product-card[data-product]").forEach(updateProductCardCartControl);
+    $$('#phone-products [data-phone-copy] .product-bottom button').forEach(button => { button.tabIndex = -1; });
     $$('[data-compare-count]').forEach(el=>el.textContent=compare.length);
     const totalQty=Object.values(basket).reduce((a,b)=>a+b,0);
     $$('[data-cart-count]').forEach(el=>el.textContent=totalQty);
@@ -165,6 +166,16 @@
     const pinInfo=evaluatePincode(savedPincode);
     host.innerHTML=`<div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="products.html">Products</a><span>/</span><a href="products.html?category=${p.category}">${e(category(p.category).name)}</a></div><div class="detail-layout"><div class="detail-image">${photo(p,'eager')}</div><div class="detail-copy"><span class="eyebrow">${e(p.subcategory)}</span><h1>${e(p.name)}</h1><p class="detail-description">${e(p.description)}</p><ul class="feature-list">${p.features.map(x=>`<li><span>✓</span>${e(x)}</li>`).join('')}</ul><div class="detail-price">Price on request<small>Confirm the configuration and quantity for your quotation.</small></div><div class="detail-b2b-box"><div class="detail-qty-row"><label class="micro-label" for="detail-qty-input">Required quantity</label><div class="quantity"><button type="button" data-detail-delta="-1" aria-label="Decrease quantity">−</button><input id="detail-qty-input" type="number" min="1" max="9999" value="1"><button type="button" data-detail-delta="1" aria-label="Increase quantity">+</button></div><div class="detail-tier-chips"><button type="button" class="tier-chip is-active" data-tier-qty="1">1 Unit</button><button type="button" class="tier-chip" data-tier-qty="5">5 · Ward</button><button type="button" class="tier-chip" data-tier-qty="10">10 · Dept</button><button type="button" class="tier-chip" data-tier-qty="25">25+ · Project</button></div></div><div class="detail-pin-row"><input id="detail-pincode-input" type="text" maxlength="12" placeholder="Enter pincode or UAE" value="${e(savedPincode)}"><button type="button" data-check-detail-pin>Check delivery & hub</button></div><div id="detail-pin-result" class="detail-pin-result">${pinInfo?(pinInfo.ok?`Location saved · Delivery coverage: <strong>${e(pinInfo.hub)}</strong> · ${e(pinInfo.timeline)}`:e(pinInfo.message)):'Enter your hospital pincode to check dispatch hub and installation coverage.'}</div><div class="detail-service-addons"><label><input type="checkbox" data-detail-addon="On-site installation & clinical training" checked> On-site installation &amp; training</label><label><input type="checkbox" data-detail-addon="Comprehensive AMC / CMC quotation"> Include AMC / CMC quote</label><label><input type="checkbox" data-detail-addon="Institutional EMI / equipment financing"> EMI / leasing option</label><label><input type="checkbox" data-detail-addon="Experience centre live demonstration"> Request live demo</label></div></div><div class="detail-actions"><button type="button" class="button" data-add-detail="${p.id}">Add to quote basket +</button><button type="button" class="save-detail" data-save="${p.id}" aria-pressed="${saved.includes(p.id)}">${heart} Save product</button><button type="button" class="save-detail" data-spec-sheet="${p.id}">Download spec sheet</button><button type="button" class="save-detail" data-open-finance>EMI &amp; Finance</button></div><div class="detail-utility-actions"><a class="text-link" href="contact.html?subject=${encodeURIComponent(p.name)}">Ask a product question →</a><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://wa.me/919289976683?text=${encodeURIComponent('Hello Surgical Wholesale Mart, I would like a quotation and specification details for: '+p.name+' ('+p.subcategory+').')}">Enquire on WhatsApp ↗</a></div><div class="detail-note">${p.imageKind==='representative'?'This is a representative range photo, not confirmation of the exact model or configuration. ':''}Availability, specifications, included accessories, warranty and delivery are confirmed with your quotation.</div></div></div><div class="detail-tabs"><h2>Before you order</h2><details open><summary>Product configuration</summary><p>Tell us your preferred size, configuration and quantity. Request a current specification sheet and a photograph of the configuration being quoted.</p></details><details><summary>Delivery & installation</summary><p>Share your delivery city and site access requirements. Ask the team to include transport, installation and training scope in your quotation where applicable.</p></details><details><summary>Warranty & returns</summary><p>Ask for product-specific warranty coverage, service arrangements and return terms in writing before confirming your order.</p></details></div><div class="section-heading"><h2>Explore similar requirements</h2><a class="text-link" href="products.html?category=${p.category}">View category →</a></div><div class="product-grid related-grid">${products.filter(x=>x.category===p.category&&x.id!==p.id).slice(0,4).map(card).join('')}</div>${renderRecentSection(p.id)}`;
     const specifications = Array.isArray(p.specifications) ? p.specifications.filter(spec => spec && spec.label && spec.value) : [];
+    host.querySelector('.detail-actions').insertAdjacentHTML('beforeend', `<label class="save-detail phone-detail-compare"><input type="checkbox" data-compare="${p.id}"> Compare product</label>`);
+    const phoneLayout = window.matchMedia('(max-width: 700px)');
+    const options = host.querySelector('.detail-b2b-box');
+    const actions = host.querySelector('.detail-actions');
+    const placeActions = () => {
+      if (phoneLayout.matches) options.querySelector('.detail-qty-row').after(actions);
+      else options.after(actions);
+    };
+    placeActions();
+    phoneLayout.addEventListener('change', placeActions);
     if (specifications.length) {
       const details = document.createElement('section');
       details.className = 'product-specifications';
@@ -223,6 +234,32 @@
   }
   function initCatalog() {
     if(!$('#catalog-grid'))return;
+    const filters = $('#catalog-filters');
+    const toggle = $('.phone-filter-toggle');
+    if (filters && toggle) {
+      const setExpanded = expanded => {
+        toggle.setAttribute('aria-expanded', String(expanded));
+        filters.toggleAttribute('data-phone-collapsed', !expanded);
+      };
+      const phoneCatalog = window.matchMedia('(max-width: 700px)');
+      const toolbar = $('.catalog-toolbar');
+      const results = $('.catalog-results');
+      const placeFilters = () => {
+        if (phoneCatalog.matches) {
+          toolbar.after(filters);
+        } else {
+          results.before(filters);
+        }
+      };
+      placeFilters();
+      phoneCatalog.addEventListener('change', placeFilters);
+      toggle.addEventListener('click', () => setExpanded(toggle.getAttribute('aria-expanded') === 'false'));
+      filters.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || !phoneCatalog.matches) return;
+        setExpanded(false);
+        toggle.focus();
+      });
+    }
     const q=new URLSearchParams(location.search);
     state={category:category(q.get('category'))?q.get('category'):'all',department:departments.some(d=>d.id===q.get('department'))?q.get('department'):'all',subcategory:q.get('subcategory')||'all',query:q.get('q')||'',savedOnly:q.get('saved')==='1',saved,sort:['az','za','newest'].includes(q.get('sort'))?q.get('sort'):'featured',newOnly:q.get('new')==='1',view:'grid'};
     const deptSelect=$('#department-filter');
@@ -237,14 +274,6 @@
       deptSelect.after(subLabel,subSelect);
       subSelect.addEventListener('change',event=>{state.subcategory=event.target.value;limit=24;renderCatalog();});
     }
-    const searchBar=$('.catalog-search');
-    if(searchBar&&!$('.catalog-extra-controls')){
-      const extra=document.createElement('div');
-      extra.className='catalog-extra-controls';
-      extra.innerHTML=`<div class="view-toggle" role="group" aria-label="Catalogue view mode"><button type="button" data-view-mode="grid" aria-pressed="true">Grid view</button><button type="button" data-view-mode="list" aria-pressed="false">B2B list view</button></div><div style="display:flex;gap:14px;flex-wrap:wrap"><button type="button" class="text-button" data-open-setup-planner>Hospital setup planner →</button><button type="button" class="text-button" data-open-bulk-rfq>Paste hospital equipment list →</button></div>`;
-      searchBar.after(extra);
-    }
-    if(!$('#sort-products').querySelector('option[value="newest"]'))$('#sort-products').insertAdjacentHTML('beforeend','<option value="newest">Newest additions</option>');
     $('#catalog-query').value=state.query;const siteSearch=$('#site-search');if(siteSearch)siteSearch.value=state.query;$('#sort-products').value=state.sort;
     $$('input[name="category"]').forEach(x=>x.addEventListener('change',()=>{state.category=x.value;limit=24;renderCatalog();}));
     $('#department-filter').addEventListener('change',event=>{state.department=event.target.value;limit=24;renderCatalog();});
@@ -253,6 +282,72 @@
     $('#saved-filter').addEventListener('click',()=>{state.savedOnly=!state.savedOnly;limit=24;renderCatalog();});
     $('#reset-filters').addEventListener('click',()=>{state={category:'all',department:'all',subcategory:'all',query:'',savedOnly:false,saved,sort:'featured',view:state.view||'grid'};$('#catalog-query').value='';$('#sort-products').value='featured';limit=24;renderCatalog();});
     renderCatalog(false);
+  }
+  function initProductSearch() {
+    const field = $('#product-search-query');
+    if (!field) return;
+    const results = $('#product-search-results');
+    const status = $('#product-search-status');
+    const more = $('#product-search-more');
+    const normalize = root.SWM_SHOP_CORE.normalize;
+    let limit = 24;
+
+    function similarWord(query, candidate) {
+      if (candidate === query) return true;
+      if (query.length < 4) return false;
+      if (candidate.startsWith(query) || (candidate.length >= 4 && query.startsWith(candidate))) return true;
+      if (query.length < 5 || Math.abs(query.length - candidate.length) > 1) return false;
+      const first = [...query].findIndex((letter, index) => letter !== candidate[index]);
+      if (first < 0) return false;
+      if (query.length === candidate.length) {
+        return query.slice(first + 1) === candidate.slice(first + 1) ||
+          query[first] === candidate[first + 1] && query[first + 1] === candidate[first] &&
+          query.slice(first + 2) === candidate.slice(first + 2);
+      }
+      return query.length > candidate.length
+        ? query.slice(first + 1) === candidate.slice(first)
+        : query.slice(first) === candidate.slice(first + 1);
+    }
+
+    function render() {
+      const query = field.value.trim();
+      const key = normalize(query);
+      if (!query) {
+        status.hidden = more.hidden = true;
+        status.textContent = '';
+        results.replaceChildren();
+        $('#comparison')?.setAttribute('hidden', '');
+        return;
+      }
+      const matches = selectProducts(products, { query });
+      const exact = key ? products.filter(p => normalize(p.name) === key || normalize(p.sourceName) === key || normalize(p.id) === key) : [];
+      const direct = [...new Set([...exact, ...matches])];
+      const tokens = key.split(' ').filter(token => token.length >= 3 && !['and', 'for', 'the', 'with'].includes(token));
+      const related = key && !direct.length ? products.map(product => {
+        const categoryName = category(product.category)?.name || '';
+        const words = normalize(`${product.name} ${product.sourceName || ''} ${product.subcategory} ${categoryName}`).split(' ');
+        const score = tokens.reduce((count, token) => count + Number(words.some(word => similarWord(token, word))), 0);
+        return { product, score };
+      }).filter(match => match.score).sort((a, b) => b.score - a.score).map(match => match.product) : [];
+      const list = direct.length ? direct : related;
+      status.hidden = false;
+      status.textContent = direct.length
+        ? `${direct.length} ${direct.length === 1 ? 'product' : 'products'} found`
+        : related.length ? 'No exact matches. Showing related products.' : 'No matching products. Try a different name, type, or model.';
+      results.innerHTML = list.slice(0, limit).map(card).join('');
+      more.hidden = list.length <= limit;
+      sync();
+    }
+
+    function search() { limit = 24; render(); }
+    field.addEventListener('input', search);
+    field.form.addEventListener('submit', event => {
+      event.preventDefault();
+      search();
+    });
+    more.addEventListener('click', () => { limit += 24; render(); });
+    field.value = new URLSearchParams(location.search).get('q') || '';
+    if (field.value) search();
   }
   function comparison() {
     save(session,'swm-compare',compare);
@@ -585,14 +680,9 @@
   }
   function initProcurementBar() {
     if (document.body?.dataset?.page !== 'products') return;
-    const header = $('.store-header');
-    if (!header || $('.procurement-bar')) return;
-    const bar = document.createElement('div');
-    bar.className = 'procurement-bar';
-    const pinInfo = evaluatePincode(savedPincode);
-    bar.innerHTML = `<button type="button" class="pbar-pill pbar-mega-btn" data-open-megamenu="categories">☰ Categories &amp; Specialties</button><div class="pbar-search-wrap"><div class="pbar-search" role="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="global-search-input" type="search" placeholder="Search ${products.length} medical products…" aria-label="Search all products"><kbd>Ctrl K</kbd></div><div id="global-search-results" class="pbar-results" hidden></div></div><div class="pbar-tools"><div class="pbar-pincode"><input id="global-pincode-input" type="text" maxlength="12" placeholder="Delivery pincode" value="${e(savedPincode)}" aria-label="Delivery pincode"><button type="button" data-check-global-pin>Check</button></div><span id="global-pin-status" class="pbar-pin-status">${pinInfo && pinInfo.ok ? `✓ Location saved` : ''}</span><button type="button" class="pbar-pill" data-open-setup-planner>Hospital Setup</button><button type="button" class="pbar-pill" data-open-bulk-rfq>Bulk RFQ</button><button type="button" class="pbar-pill" data-open-finance>EMI / Finance</button><button type="button" class="pbar-pill" data-open-amc>AMC / Service</button><button type="button" class="pbar-pill" data-open-tracker>Track &amp; Reorder</button><button type="button" class="pbar-pill" data-open-buyer-profile>GST Profile</button><a class="pbar-pill" href="products.html?saved=1">Saved <b data-saved-count>${saved.length}</b></a><button type="button" class="pbar-pill" data-jump-compare>Compare <b data-compare-count>${compare.length}</b></button><a class="pbar-pill" href="cart.html">Quote Basket <b data-cart-count>${Object.values(basket).reduce((a,b)=>a+b,0)}</b></a></div>`;
-    const homeFirstFoldEnd = $('.benefit-row') || $('#home-hero-banners');
-    (homeFirstFoldEnd || header).after(bar);
+    if (!$('.procurement-bar')) return;
+    $('#global-pincode-input').value = savedPincode;
+    if (evaluatePincode(savedPincode)?.ok) $('#global-pin-status').textContent = '✓ Location saved';
     const input = $('#global-search-input'), results = $('#global-search-results');
     function updateGlobalSearch() {
       const q = input.value.trim();
@@ -644,9 +734,11 @@
     toggle.type = 'button';
     toggle.className = 'swm-assistant-toggle';
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'swm-assistant-panel');
     toggle.setAttribute('aria-label', 'Open AI Procurement Assistant');
     toggle.innerHTML = `<img src="assets/ai-assistant-robot.png" width="547" height="836" alt="AI Procurement Assistant">`;
     const panel = document.createElement('aside');
+    panel.id = 'swm-assistant-panel';
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
@@ -657,16 +749,6 @@
       panel.hidden = !open;
       toggle.setAttribute('aria-expanded', String(open));
     });
-    if (document.body?.dataset?.page === 'contact' && !$('.mobile-contact-assistant')) {
-      const contactTarget = $('.contact-layout') || $('#main');
-      if (contactTarget) {
-        const inlineSection = document.createElement('section');
-        inlineSection.className = 'section mobile-contact-assistant';
-        inlineSection.setAttribute('aria-label', 'AI Procurement Assistant');
-        inlineSection.innerHTML = `<div class="mobile-assistant-card"><div class="mobile-assistant-hero"><img src="assets/ai-assistant-robot.png" width="547" height="836" alt="Surgical Mart AI Procurement Robot"><div><span class="eyebrow">AI ASSISTANT · COMING SOON</span><h2>Ready-Made Product Explorer</h2><p>AI is coming soon—tap any category or product below.</p></div></div>${assistantBodyHTML.replace('id="assist-search-input"', 'id="assist-search-input-mobile"')}</div>`;
-        contactTarget.before(inlineSection);
-      }
-    }
   }
   document.addEventListener('click',event=>{
     const assistPanel=$('.swm-assistant-panel'),assistToggle=$('.swm-assistant-toggle');
@@ -825,6 +907,10 @@
   });
   const menu=$('.mobile-menu');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');$('#store-nav').classList.toggle('is-open',open);});
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeModal();const ap=$('.swm-assistant-panel'),at=$('.swm-assistant-toggle');if(ap&&!ap.hidden){ap.hidden=true;at?.setAttribute('aria-expanded','false');}if(menu){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');$('#store-nav').classList.remove('is-open');}}});
+  $$('[data-phone-product]').forEach(categoryLink => {
+    const product = byId(categoryLink.dataset.phoneProduct);
+    if (product) categoryLink.insertAdjacentHTML('afterend', card(product));
+  });
   enhanceStaticCards();
   const featuredSection=$('#featured-products');
   const marquee=featuredSection?.querySelector('.product-marquee');
@@ -1004,8 +1090,10 @@
     const nav = document.createElement('nav');
     nav.className = 'mobile-ecom-tabbar';
     nav.setAttribute('aria-label', 'Mobile e-commerce navigation');
-    nav.innerHTML = `<a href="index.html" class="${page==='index'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><button type="button" data-open-megamenu="categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Categories</span></button><a href="products.html" class="${page==='products'||page==='product'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Shop</span></a><button type="button" data-open-setup-planner><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg><span>Hospital Setup</span></button><a href="cart.html" class="${page==='cart'||page==='checkout'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Quote Cart</span><b data-cart-count>${totalQty}</b></a>`;
+    nav.innerHTML = `<a href="index.html" class="${page==='index'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><a href="products.html" class="${page==='products'||page==='product'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Products</span></a><a href="search.html" class="${page==='search'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Search</span></a><a href="cart.html" class="${page==='cart'||page==='checkout'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Quote Cart</span><b data-cart-count>${totalQty}</b></a><a href="contact.html" class="${page==='contact'?'is-active':''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span>Contact</span></a>`;
     document.body.appendChild(nav);
+    document.body.classList.add('mobile-bottom-nav-ready');
+    nav.querySelector('a.is-active')?.setAttribute('aria-current', 'page');
   }
   function initHeaderScrollState() {
     const header = $('.store-header');
@@ -1083,6 +1171,6 @@
     openProfile:openBuyerProfileModal,openHistory:openTrackerModal,
     message:toast
   };
-  renderDetail();initCatalog();renderBasket();initForms();renderReview();if(compare.length)comparison();sync();
+  renderDetail();initCatalog();initProductSearch();renderBasket();initForms();renderReview();if(compare.length&&!$('#product-search-query'))comparison();sync();
   root.addEventListener('storage',event=>{if(event.key==='swm-basket'){basket=cleanBasket(read(local,'swm-basket',{}),products);sync();renderBasket();}if(event.key==='swm-saved'){const value=read(local,'swm-saved',[]);saved=Array.isArray(value)?value.filter(id=>byId(id)):[];sync();if(state){state.saved=saved;renderCatalog(false);}}});
 })(typeof window !== 'undefined' ? window : globalThis);

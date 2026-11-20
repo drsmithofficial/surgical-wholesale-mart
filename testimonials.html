@@ -9,11 +9,80 @@
         content="Explore a considered selection of medical equipment, hospital furniture and healthcare essentials. Build your quote basket with Surgical Wholesale Mart.">
     <title>Testimonials | Surgical Wholesale Mart</title>
     <link rel="icon" href="assets/brand-logo.png">
-    <link rel="stylesheet" href="css/storefront.css"><link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/storefront.css?v=product-search"><link rel="stylesheet" href="css/shopping.css">
     <script defer src="js/catalog.js"></script>
-    <script defer src="js/shopping-core.js"></script><script defer src="js/store.js"></script><script defer src="js/shopping.js"></script>
+    <script defer src="js/shopping-core.js"></script><script defer src="js/store.js?v=product-search"></script><script defer src="js/shopping.js"></script>
 <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/header-shared.css?v=20261119-8"><link rel="stylesheet" href="css/footer-shared.css?v=20261119-1">
+<script>
+(() => {
+  const motion = matchMedia('(max-width: 767px) and (prefers-reduced-motion: no-preference)');
+  const key = 'swm-footer-navigation';
+  const root = document.documentElement;
+
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('.mobile-ecom-tabbar a[href]');
+    if (!motion.matches || !link || event.defaultPrevented || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
+        link.origin !== location.origin || link.href === location.href) return;
+
+    const tabs = [...link.parentNode.querySelectorAll('a[href]')];
+    const current = tabs.findIndex(tab => tab.classList.contains('is-active'));
+    const direction = tabs.indexOf(link) < current ? 'right' : 'left';
+    try {
+      sessionStorage.setItem(key, JSON.stringify({ from: location.href, to: link.href, direction, time: Date.now() }));
+    } catch {}
+    link.classList.add('is-navigating');
+    setTimeout(() => link.classList.remove('is-navigating'), 1200);
+  });
+
+  function animatePage(event, outgoing) {
+    if (!outgoing) delete root.dataset.footerSlide;
+    const transition = event.viewTransition;
+    let navigation;
+    try {
+      navigation = JSON.parse(sessionStorage.getItem(key));
+      if (!outgoing) sessionStorage.removeItem(key);
+    } catch {}
+
+    const destination = event.activation?.entry?.url;
+    const matches = Date.now() - navigation?.time < 10000 && (outgoing
+      ? navigation?.from === location.href && (!destination || navigation.to === destination)
+      : navigation?.to === location.href);
+    if (!motion.matches || !matches) return;
+
+    const animateArrival = () => {
+      if (!motion.matches) return;
+      root.dataset.footerArrival = navigation.direction;
+      const cleanup = event => {
+        if (event.animationName !== 'footer-arrival') return;
+        delete root.dataset.footerArrival;
+        document.removeEventListener('animationend', cleanup);
+      };
+      document.addEventListener('animationend', cleanup);
+    };
+    if (!transition) {
+      if (!outgoing) animateArrival();
+      return;
+    }
+    root.dataset.footerSlide = navigation.direction;
+    if (!outgoing) {
+      transition.ready.catch(animateArrival);
+      transition.finished.then(() => { delete root.dataset.footerSlide; });
+    }
+  }
+
+  window.addEventListener('pageswap', event => animatePage(event, true));
+  if ('onpagereveal' in window) {
+    window.addEventListener('pagereveal', event => animatePage(event, false));
+  } else {
+    animatePage({}, false);
+  }
+  window.addEventListener('pageshow', () => {
+    document.querySelector('.mobile-ecom-tabbar .is-navigating')?.classList.remove('is-navigating');
+  });
+})();
+</script>
 </head>
 
 <body class="inner-page" data-page="testimonials"><a class="skip-link" href="#main">Skip to content</a>

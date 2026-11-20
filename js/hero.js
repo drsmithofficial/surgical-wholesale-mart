@@ -212,3 +212,227 @@
 	});
 	 schedule();
 })();
+(function () {
+	'use strict';
+
+	const phoneHome = document.querySelector('.phone-home');
+	if (!phoneHome) return;
+	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+	const compact = window.matchMedia('(max-width: 700px)');
+
+	phoneHome.querySelectorAll('[data-phone-slider]').forEach(slider => {
+		const track = slider.querySelector('.phone-track');
+		const dots = Array.from(slider.querySelectorAll('[data-phone-page]'));
+		let current = 0;
+
+		function goTo(index) {
+			const page = (index + dots.length) % dots.length;
+			track.scrollTo({
+				left: page * track.clientWidth,
+				behavior: reducedMotion.matches ? 'instant' : 'smooth'
+			});
+		}
+
+		track.addEventListener('scroll', () => {
+			if (compact.matches || !track.clientWidth) return;
+			current = Math.round(track.scrollLeft / track.clientWidth);
+			dots.forEach((dot, index) => {
+				if (index === current) dot.setAttribute('aria-current', 'true');
+				else dot.removeAttribute('aria-current');
+			});
+		}, { passive: true });
+
+		track.addEventListener('keydown', event => {
+			if (compact.matches || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+			event.preventDefault();
+			goTo(current + (event.key === 'ArrowLeft' ? -1 : 1));
+		});
+		dots.forEach((dot, index) => dot.addEventListener('click', () => goTo(index)));
+		slider.querySelectorAll('[data-phone-step]').forEach(button => {
+			button.addEventListener('click', () => goTo(current + Number(button.dataset.phoneStep)));
+		});
+	});
+
+	const hero = phoneHome.querySelector('.phone-hero');
+	const bannerTrack = hero.querySelector('.phone-track');
+	const slides = Array.from(bannerTrack.children);
+	let active = 0;
+	let bannerTimer;
+	let drag;
+	let transition = [];
+
+	function settleBanner() {
+		transition.forEach(animation => animation.cancel());
+		transition = [];
+		slides.forEach(slide => slide.removeAttribute('data-outgoing'));
+	}
+
+	function scheduleBanner() {
+		clearTimeout(bannerTimer);
+		if (compact.matches && !document.hidden && !drag && !hero.matches(':focus-within')) {
+			bannerTimer = setTimeout(() => advanceBanner(1), 5000);
+		}
+	}
+
+	async function advanceBanner(direction) {
+		clearTimeout(bannerTimer);
+		settleBanner();
+		const outgoing = slides[active];
+		outgoing.removeAttribute('data-active');
+		outgoing.inert = true;
+		active = (active + direction + slides.length) % slides.length;
+		const incoming = slides[active];
+		incoming.setAttribute('data-active', '');
+		incoming.inert = false;
+		if (!reducedMotion.matches && incoming.animate) {
+			outgoing.setAttribute('data-outgoing', '');
+			const options = { duration: 1000, easing: 'cubic-bezier(0.45, 0, 0.55, 1)', fill: 'both' };
+			const animations = [
+				outgoing.animate([{ transform: 'translateX(0)' }, { transform: `translateX(${-direction * 100}%)` }], options),
+				incoming.animate([{ transform: `translateX(${direction * 100}%)` }, { transform: 'translateX(0)' }], options)
+			];
+			transition = animations;
+			await Promise.allSettled(animations.map(animation => animation.finished));
+			if (transition !== animations) return;
+			settleBanner();
+		}
+		scheduleBanner();
+	}
+
+	hero.addEventListener('pointerdown', event => {
+		if (!compact.matches || event.button !== 0 || event.target.closest('a, button')) return;
+		drag = { x: event.clientX, y: event.clientY, id: event.pointerId };
+		clearTimeout(bannerTimer);
+		settleBanner();
+		hero.setPointerCapture(event.pointerId);
+	});
+	hero.addEventListener('pointerup', event => {
+		if (drag?.id !== event.pointerId) return;
+		const x = event.clientX - drag.x;
+		const y = event.clientY - drag.y;
+		drag = null;
+		if (Math.abs(x) > 42 && Math.abs(x) > Math.abs(y) * 1.2) advanceBanner(x < 0 ? 1 : -1);
+		else scheduleBanner();
+	});
+	hero.addEventListener('pointercancel', () => {
+		drag = null;
+		scheduleBanner();
+	});
+	hero.addEventListener('focusin', scheduleBanner);
+	hero.addEventListener('focusout', () => setTimeout(scheduleBanner, 0));
+	bannerTrack.addEventListener('keydown', event => {
+		if (!compact.matches || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+		event.preventDefault();
+		advanceBanner(event.key === 'ArrowLeft' ? -1 : 1);
+	});
+
+	const products = phoneHome.querySelector('#phone-products');
+	const originals = Array.from(products.children);
+	let copies = [];
+	function copyProductGroup(group) {
+		const copy = group.cloneNode(true);
+		copy.setAttribute('data-phone-copy', '');
+		copy.setAttribute('aria-hidden', 'true');
+		copy.querySelectorAll('a, button, input').forEach(control => { control.tabIndex = -1; });
+		return copy;
+	}
+	let frame;
+	let lastTime;
+	let position = 0;
+	let lastWritten = 0;
+	let pauseUntil = 0;
+	let pointerId = null;
+	let visible = true;
+	let hovered = false;
+	let cycle = 0;
+
+	function writeProductPosition(value) {
+		position = value;
+		products.scrollLeft = value;
+		lastWritten = products.scrollLeft;
+		products.style.setProperty('--phone-card-offset', `${lastWritten - value}px`);
+	}
+
+	function measureProducts() {
+		if (!copies.length) {
+			cycle = 0;
+			return;
+		}
+		const firstCard = group => group.querySelector('.product-card') || group.firstElementChild;
+		cycle = firstCard(copies[0]).offsetLeft - firstCard(originals[0]).offsetLeft;
+	}
+
+	function moveProducts(now) {
+		const elapsed = lastTime === undefined ? 0 : Math.min(now - lastTime, 64);
+		lastTime = now;
+		if (now >= pauseUntil && pointerId === null && !hovered && !products.matches(':focus-visible, :has(:focus-visible)')) {
+			if (cycle > 0) writeProductPosition((position + elapsed * .03) % cycle);
+		}
+		frame = requestAnimationFrame(moveProducts);
+	}
+
+	function syncProducts() {
+		cancelAnimationFrame(frame);
+		lastTime = undefined;
+		if (compact.matches && visible && !document.hidden && !reducedMotion.matches) {
+			frame = requestAnimationFrame(moveProducts);
+		}
+	}
+
+	products.addEventListener('scroll', () => {
+		if (!compact.matches || products.scrollLeft === lastWritten) return;
+		const left = products.scrollLeft;
+		if (cycle > 0 && left >= cycle) writeProductPosition(left % cycle);
+		else {
+			position = lastWritten = left;
+			products.style.removeProperty('--phone-card-offset');
+		}
+		pauseUntil = performance.now() + 1800;
+	}, { passive: true });
+	products.addEventListener('pointerenter', event => { hovered = event.pointerType !== 'touch'; });
+	products.addEventListener('pointerleave', () => { hovered = false; });
+	products.addEventListener('pointerdown', event => { pointerId = event.pointerId; }, { passive: true });
+	function releaseProducts(event) {
+		if (event.pointerId !== pointerId) return;
+		pointerId = null;
+		pauseUntil = performance.now() + 1800;
+	}
+	window.addEventListener('pointerup', releaseProducts, { passive: true });
+	window.addEventListener('pointercancel', releaseProducts, { passive: true });
+	if ('IntersectionObserver' in window) {
+		new IntersectionObserver(([entry]) => {
+			visible = entry.isIntersecting;
+			syncProducts();
+		}).observe(products);
+	}
+
+	function syncLayout() {
+		settleBanner();
+		drag = null;
+		bannerTrack.toggleAttribute('data-ready', compact.matches);
+		slides.forEach((slide, index) => {
+			slide.toggleAttribute('data-active', index === active);
+			slide.inert = compact.matches && index !== active;
+		});
+		copies.forEach(copy => copy.remove());
+		copies = compact.matches ? originals.map(copyProductGroup) : [];
+		products.append(...copies);
+		measureProducts();
+		writeProductPosition(0);
+		scheduleBanner();
+		syncProducts();
+	}
+	compact.addEventListener('change', syncLayout);
+	reducedMotion.addEventListener('change', () => {
+		settleBanner();
+		scheduleBanner();
+		syncProducts();
+	});
+	document.addEventListener('visibilitychange', () => {
+		scheduleBanner();
+		syncProducts();
+	});
+	syncLayout();
+	if ('ResizeObserver' in window) new ResizeObserver(measureProducts).observe(products);
+	else window.addEventListener('resize', measureProducts);
+})();

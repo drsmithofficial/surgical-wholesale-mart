@@ -8,7 +8,7 @@ class Scan(HTMLParser):
   d=dict(a)
   if d.get('id'):self.ids.append(d['id'])
   if t=='img':assert 'alt' in d
-  if t=='script' and d.get('src'):self.scripts.append(d['src'])
+  if t=='script' and d.get('src'):self.scripts.append(urlsplit(d['src']).path)
   for k in ('href','src'):
    if d.get(k):self.refs.append(d[k])
 root=Path('.');pages=list(root.glob('*.html'));cache={}
