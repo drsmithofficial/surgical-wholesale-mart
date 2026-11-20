@@ -1,21 +1,53 @@
 <script>
 (() => {
-  const motion = matchMedia('(max-width: 767px) and (prefers-reduced-motion: no-preference)');
+  const phone = matchMedia('(max-width: 767px)');
+  const motion = matchMedia('(prefers-reduced-motion: no-preference)');
   const key = 'swm-footer-navigation';
   const root = document.documentElement;
+  let loaderTimer;
+  let loaderTimeout;
+
+  function readNavigation() {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(key));
+      if (Date.now() - saved?.time < 10000) return saved;
+    } catch {}
+  }
+
+  function clearLoader() {
+    clearTimeout(loaderTimer);
+    clearTimeout(loaderTimeout);
+    delete root.dataset.footerLoading;
+    root.style.removeProperty('--navigation-header-height');
+  }
+
+  const arrival = readNavigation();
+  if (phone.matches && arrival?.to === location.href) {
+    root.dataset.footerLoading = arrival.page;
+    document.addEventListener('DOMContentLoaded', clearLoader, { once: true });
+  }
 
   document.addEventListener('click', event => {
     const link = event.target.closest?.('.mobile-ecom-tabbar a[href]');
-    if (!motion.matches || !link || event.defaultPrevented || event.button !== 0 ||
+    if (!phone.matches || !link || event.defaultPrevented || event.button !== 0 ||
         event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
         link.origin !== location.origin || link.href === location.href) return;
 
     const tabs = [...link.parentNode.querySelectorAll('a[href]')];
     const current = tabs.findIndex(tab => tab.classList.contains('is-active'));
     const direction = tabs.indexOf(link) < current ? 'right' : 'left';
+    const page = link.pathname.split('/').pop().replace(/\.html$/, '');
     try {
-      sessionStorage.setItem(key, JSON.stringify({ from: location.href, to: link.href, direction, time: Date.now() }));
+      sessionStorage.setItem(key, JSON.stringify({ from: location.href, to: link.href, direction, page, time: Date.now() }));
     } catch {}
+    clearLoader();
+    loaderTimer = setTimeout(() => {
+      const header = document.querySelector('.store-header');
+      const headerBottom = header?.getBoundingClientRect().bottom || 0;
+      root.style.setProperty('--navigation-header-height', `${Math.max(headerBottom, 0)}px`);
+      root.dataset.footerLoading = page;
+    }, 110);
+    loaderTimeout = setTimeout(clearLoader, 10000);
     link.classList.add('is-navigating');
     setTimeout(() => link.classList.remove('is-navigating'), 1200);
   });
@@ -23,17 +55,16 @@
   function animatePage(event, outgoing) {
     if (!outgoing) delete root.dataset.footerSlide;
     const transition = event.viewTransition;
-    let navigation;
-    try {
-      navigation = JSON.parse(sessionStorage.getItem(key));
-      if (!outgoing) sessionStorage.removeItem(key);
-    } catch {}
+    const navigation = readNavigation();
+    if (!outgoing) {
+      try { sessionStorage.removeItem(key); } catch {}
+    }
 
     const destination = event.activation?.entry?.url;
-    const matches = Date.now() - navigation?.time < 10000 && (outgoing
+    const matches = outgoing
       ? navigation?.from === location.href && (!destination || navigation.to === destination)
-      : navigation?.to === location.href);
-    if (!motion.matches || !matches) return;
+      : navigation?.to === location.href;
+    if (!phone.matches || !motion.matches || !matches) return;
 
     const animateArrival = () => {
       if (!motion.matches) return;
@@ -63,6 +94,7 @@
     animatePage({}, false);
   }
   window.addEventListener('pageshow', () => {
+    clearLoader();
     document.querySelector('.mobile-ecom-tabbar .is-navigating')?.classList.remove('is-navigating');
   });
 })();
