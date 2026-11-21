@@ -798,21 +798,40 @@
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
+    const categoryArt = {
+      furniture: '<path d="M3 19V6m0 10h18v3M3 12h18v4m-16-4V9h5v3m3 0v-2h7a1 1 0 0 1 1 1v1"/>',
+      equipment: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 11h3l2-4 2 7 2-3h2m-6 6v3m-4 0h8"/>',
+      instruments: '<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="m8 15 9-12m-1 12L7 3m5 7h.01"/>',
+      mgps: '<ellipse cx="12" cy="14" rx="9" ry="5"/><path d="M12 5v4m0-5h2"/><circle cx="8" cy="14" r="1"/><circle cx="12" cy="15" r="1"/><circle cx="16" cy="14" r="1"/>',
+      linen: '<path d="M4 9l5-4h10a2 2 0 0 1 1 4l-6 4H5a2 2 0 0 1-1-4Zm0 4a2 2 0 0 0 1 4h9l6-4a2 2 0 0 0 0-3M4 17a2 2 0 0 0 1 4h9l6-4a2 2 0 0 0 0-3"/>',
+      consumables: '<path d="m7 20-3-7c-.5-1 .7-2 1.5-1l1.5 2-2-7c-.3-1 1.2-1.4 1.6-.4l2 5-1-7c-.1-1 1.5-1.2 1.7-.2l1.2 6 .3-6c.1-1 1.7-.9 1.7.2v7l2-3c.6-1 2-.2 1.5.8l-2.3 5.4c-.4 1.2-1.1 2.3-1.9 3l.3 2.2-5 .8Zm8-2 3 1 2-4 1-6c.1-1-1.3-1.1-1.5-.2l-1 3.2.2-6c0-1-1.5-1-1.6 0l-.4 4"/>'
+    };
     panel.innerHTML = `
       <div class="swm-assistant-head">
-        <span class="assistant-chat-heading"><img src="assets/ai-assistant-robot.png" width="22" height="32" alt=""><span>Product assistant</span></span>
-        <button type="button" data-close-assistant aria-label="Close assistant">×</button>
+        <div class="assistant-chat-heading"><img src="assets/ai-assistant-robot.png" width="547" height="836" alt=""><div><h2>Product Assistant</h2><p>Find products, catalogues and more</p></div></div>
+        <button type="button" data-close-assistant aria-label="Close assistant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
       </div>
       <div class="swm-assistant-body assistant-chat-log" role="log" aria-label="Conversation" tabindex="0">
-        <p class="assistant-message"><strong>Catalogue searches only</strong><br>Enter a product name, model number, or related keyword.<span class="assistant-note-last-line"><span>Specify the details you need.</span><a href="contact.html">Contact Us</a></span></p>
-        <nav class="assistant-chat-categories" aria-label="Browse product categories">
-          ${categories.map(item => `<a href="products.html?category=${encodeURIComponent(item.id)}">${e(item.name)}</a>`).join('')}
+        <div class="assistant-intro">
+          <div class="assistant-intro-copy">
+            <h3>Catalogue searches only</h3>
+            <p>Enter a product name, model number, or related keyword. Specify the details you need.</p>
+            <a href="contact.html">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 5h6v6m0-6-8 8m7 0v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+          </div>
+          <img src="assets/ai-assistant-robot.png" width="547" height="836" alt="">
+        </div>
+        <h3 class="assistant-category-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="2"/><rect x="14" y="2" width="8" height="8" rx="2"/><rect x="2" y="14" width="8" height="8" rx="2"/><rect x="14" y="14" width="8" height="8" rx="2"/></svg>Explore by Category</h3>
+        <nav class="assistant-chat-categories assistant-category-grid" aria-label="Browse product categories">
+          ${categories.map(item => `<a href="products.html?category=${encodeURIComponent(item.id)}"><span class="assistant-category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${categoryArt[item.id] || ''}</svg></span><span>${e(item.name)}</span><svg class="assistant-category-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></a>`).join('')}
         </nav>
       </div>
       <form class="assistant-chat-form">
-        <label class="sr-only" for="assistant-chat-input">Enter a product name, model number, or related keyword</label>
-        <input id="assistant-chat-input" type="text" autocomplete="off" maxlength="180" placeholder="Say hello or ask for help">
-        <button type="submit">Send</button>
+        <div class="assistant-chat-input-wrap">
+          <svg class="assistant-chat-sparkle" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.6 6.2 3.8 8.4 10 10-6.2 1.6-8.4 3.8-10 10-1.6-6.2-3.8-8.4-10-10 6.2-1.6 8.4-3.8 10-10Z"/><path d="M4 1v6M1 4h6m-3 13v6m-3-3h6" stroke="currentColor"/></svg>
+          <label class="sr-only" for="assistant-chat-input">Enter a product name, model number, or related keyword</label>
+          <input id="assistant-chat-input" type="text" autocomplete="off" maxlength="180" placeholder="Say hello or ask for help…">
+          <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7ZM11 13 22 2"/></svg></button>
+        </div>
       </form>
     `;
     document.body.append(toggle, panel);
@@ -949,7 +968,7 @@
       const offTopic = /^(?:tell me (?:a joke|a story|about yourself)|who are you|what(?: s| is) the weather|what time is it)$/.test(normalized);
       const information = /\b(price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment|details?|specs?|specifications?|features?|dimensions?|size|weight|material|warranty)\b/.exec(normalized)?.[0] ||
         (/^how much\b/.test(normalized) ? 'price' : '');
-      const productQuery = normalized.replace(/\b(show|find|looking|need|want|please|tell|about|where|can|what|how|much|does|do|is|its|it|in|on|of|i|me|you|have|a|an|for|the|some|price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment|details?|specs?|specifications?|features?|dimensions?|size|weight|material|warranty)\b/g, ' ').replace(/\s+/g, ' ').trim();
+      const productQuery = target.replace(/\b(show|find|looking|need|want|please|tell|provide|give|share|send|links?|about|where|can|what|how|much|does|do|is|its|it|in|on|of|i|me|you|have|a|an|for|the|some|price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment|details?|specs?|specifications?|features?|dimensions?|size|weight|material|warranty)\b/g, ' ').replace(/\s+/g, ' ').trim();
       const { direct, related } = productQuery ? findProductMatches(productQuery) : { direct: [], related: [] };
       const matches = direct.length ? direct : related;
       const named = productQuery && direct.find(product => [product.name, product.sourceName, product.id]
