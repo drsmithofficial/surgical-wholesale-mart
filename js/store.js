@@ -341,35 +341,48 @@
     $('#reset-filters').addEventListener('click',()=>{state={category:'all',department:'all',subcategory:'all',query:'',savedOnly:false,saved,sort:'featured',view:state.view||'grid'};$('#catalog-query').value='';$('#sort-products').value='featured';limit=24;renderCatalog();});
     renderCatalog(false);
   }
+  function similarWord(query, candidate) {
+    if (candidate === query) return true;
+    if (query.length < 4) return false;
+    if (candidate.startsWith(query) || (candidate.length >= 4 && query.startsWith(candidate))) return true;
+    if (query.length < 5 || Math.abs(query.length - candidate.length) > 1) return false;
+    const first = [...query].findIndex((letter, index) => letter !== candidate[index]);
+    if (first < 0) return false;
+    if (query.length === candidate.length) {
+      return query.slice(first + 1) === candidate.slice(first + 1) ||
+        query[first] === candidate[first + 1] && query[first + 1] === candidate[first] &&
+        query.slice(first + 2) === candidate.slice(first + 2);
+    }
+    return query.length > candidate.length
+      ? query.slice(first + 1) === candidate.slice(first)
+      : query.slice(first) === candidate.slice(first + 1);
+  }
+
+  function findProductMatches(query) {
+    const normalize = root.SWM_SHOP_CORE.normalize;
+    const key = normalize(query);
+    const matches = selectProducts(products, { query });
+    const exact = key ? products.filter(p => normalize(p.name) === key || normalize(p.sourceName) === key || normalize(p.id) === key) : [];
+    const direct = [...new Set([...exact, ...matches])];
+    const tokens = key.split(' ').filter(token => token.length >= 3 && !['and', 'for', 'the', 'with'].includes(token));
+    const related = key && !direct.length ? products.map(product => {
+      const categoryName = category(product.category)?.name || '';
+      const words = normalize(`${product.name} ${product.sourceName || ''} ${product.subcategory} ${categoryName}`).split(' ');
+      const score = tokens.reduce((count, token) => count + Number(words.some(word => similarWord(token, word))), 0);
+      return { product, score };
+    }).filter(match => match.score).sort((a, b) => b.score - a.score).map(match => match.product) : [];
+    return { direct, related };
+  }
   function initProductSearch() {
     const field = $('#product-search-query');
     if (!field) return;
     const results = $('#product-search-results');
     const status = $('#product-search-status');
     const more = $('#product-search-more');
-    const normalize = root.SWM_SHOP_CORE.normalize;
     let limit = 24;
-
-    function similarWord(query, candidate) {
-      if (candidate === query) return true;
-      if (query.length < 4) return false;
-      if (candidate.startsWith(query) || (candidate.length >= 4 && query.startsWith(candidate))) return true;
-      if (query.length < 5 || Math.abs(query.length - candidate.length) > 1) return false;
-      const first = [...query].findIndex((letter, index) => letter !== candidate[index]);
-      if (first < 0) return false;
-      if (query.length === candidate.length) {
-        return query.slice(first + 1) === candidate.slice(first + 1) ||
-          query[first] === candidate[first + 1] && query[first + 1] === candidate[first] &&
-          query.slice(first + 2) === candidate.slice(first + 2);
-      }
-      return query.length > candidate.length
-        ? query.slice(first + 1) === candidate.slice(first)
-        : query.slice(first) === candidate.slice(first + 1);
-    }
 
     function render() {
       const query = field.value.trim();
-      const key = normalize(query);
       if (!query) {
         status.hidden = more.hidden = true;
         status.textContent = '';
@@ -377,16 +390,7 @@
         $('#comparison')?.setAttribute('hidden', '');
         return;
       }
-      const matches = selectProducts(products, { query });
-      const exact = key ? products.filter(p => normalize(p.name) === key || normalize(p.sourceName) === key || normalize(p.id) === key) : [];
-      const direct = [...new Set([...exact, ...matches])];
-      const tokens = key.split(' ').filter(token => token.length >= 3 && !['and', 'for', 'the', 'with'].includes(token));
-      const related = key && !direct.length ? products.map(product => {
-        const categoryName = category(product.category)?.name || '';
-        const words = normalize(`${product.name} ${product.sourceName || ''} ${product.subcategory} ${categoryName}`).split(' ');
-        const score = tokens.reduce((count, token) => count + Number(words.some(word => similarWord(token, word))), 0);
-        return { product, score };
-      }).filter(match => match.score).sort((a, b) => b.score - a.score).map(match => match.product) : [];
+      const { direct, related } = findProductMatches(query);
       const list = direct.length ? direct : related;
       status.hidden = false;
       status.textContent = direct.length
@@ -782,12 +786,6 @@
   }
   function initAssistant() {
     if ($('.swm-assistant-toggle')) return;
-    const categoryDirectoryHTML = categories.map(c => {
-      const catProducts = products.filter(p => p.category === c.id);
-      const sampleProducts = catProducts.slice(0, 10);
-      return `<div class="ai-cat-block"><a class="ai-cat-link" href="products.html?category=${encodeURIComponent(c.id)}"><strong>${e(c.name)}</strong><span>View all ${catProducts.length} →</span></a><div class="ai-cat-product-line">${sampleProducts.map(p => `<a class="ai-prod-pill" href="${link(p)}" title="${e(p.name)}">${e(p.name)}</a>`).join('')}</div></div>`;
-    }).join('');
-    const assistantBodyHTML = `<div class="swm-assistant-body"><div class="ai-coming-soon-box"><span class="ai-soon-badge">AI ASSISTANT · COMING SOON</span><p class="ai-soon-lead">AI is coming soon. Use our ready-made links below to find what you need:</p><ul class="ai-guide-points"><li><strong>Categories:</strong> Click a category to view all items.</li><li><strong>Products:</strong> Click any product pill to open it directly.</li><li><strong>Search:</strong> Use the finder below for quick lookup.</li></ul></div><div class="ai-category-directory">${categoryDirectoryHTML}</div><div style="border-top:1px solid var(--line);padding-top:10px"><strong style="display:block;margin-bottom:6px">Quick product finder</strong><div style="display:flex;gap:6px"><input id="assist-search-input" class="assist-search-field" type="search" placeholder="Search ready-made products (e.g. ICU Bed, OT Light)…" style="flex:1;padding:7px 10px;font-size:11.5px"><button type="button" class="pbar-mini-btn" data-assist-search>Search</button></div></div><div style="border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><a class="text-link" href="products.html" style="font-size:11px">All products →</a><a class="text-link" href="cart.html" style="font-size:11px">Cart →</a><a class="text-link" href="contact.html" style="font-size:11px">Talk to specialist →</a></div></div>`;
     const toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'swm-assistant-toggle';
@@ -800,12 +798,239 @@
     panel.className = 'swm-assistant-panel';
     panel.hidden = true;
     panel.setAttribute('aria-label', 'Surgical Wholesale Mart Procurement Assistant');
-    panel.innerHTML = `<div class="swm-assistant-head"><span style="display:inline-flex;align-items:center;gap:8px"><img src="assets/ai-assistant-robot.png" width="24" height="36" alt="" style="width:24px;height:36px;object-fit:contain"><span>Surgical Mart AI Assistant</span></span><button type="button" data-close-assistant aria-label="Close assistant">×</button></div>${assistantBodyHTML}`;
+    panel.innerHTML = `
+      <div class="swm-assistant-head">
+        <span class="assistant-chat-heading"><img src="assets/ai-assistant-robot.png" width="22" height="32" alt=""><span>Product assistant</span></span>
+        <button type="button" data-close-assistant aria-label="Close assistant">×</button>
+      </div>
+      <div class="swm-assistant-body assistant-chat-log" role="log" aria-label="Conversation" tabindex="0">
+        <p class="assistant-message"><strong>Catalogue searches only</strong><br>Enter a product name, model number, or related keyword.<span class="assistant-note-last-line"><span>Specify the details you need.</span><a href="contact.html">Contact Us</a></span></p>
+        <nav class="assistant-chat-categories" aria-label="Browse product categories">
+          ${categories.map(item => `<a href="products.html?category=${encodeURIComponent(item.id)}">${e(item.name)}</a>`).join('')}
+        </nav>
+      </div>
+      <form class="assistant-chat-form">
+        <label class="sr-only" for="assistant-chat-input">Enter a product name, model number, or related keyword</label>
+        <input id="assistant-chat-input" type="text" autocomplete="off" maxlength="180" placeholder="Say hello or ask for help">
+        <button type="submit">Send</button>
+      </form>
+    `;
     document.body.append(toggle, panel);
-    toggle.addEventListener('click', () => {
+    const log = panel.querySelector('.assistant-chat-log');
+    const field = panel.querySelector('#assistant-chat-input');
+    const form = field.form;
+    let currentProduct = byId(new URLSearchParams(location.search).get('id'));
+    const replyCounts = new Map();
+    const prompts = {
+      empty: [
+        'What can I help you find? Enter a product name, model number, or a page name.',
+        'Try typing a keyword like “wheelchair” or a page name like “Contact Us”.',
+        'I’m ready when you are. Tell me what product or page you need.'
+      ],
+      unmatched: [
+        'I’m not sure which product you mean. Could you share its name, model number, or a keyword describing what you need?',
+        'That wording didn’t match the catalogue. Try a shorter product name, or tell me what type of equipment you’re looking for.',
+        'I haven’t found a suitable match yet. A model number or a category such as hospital furniture would help.'
+      ],
+      unrelated: [
+        'I’m here to help with the storefront. What product or page would you like to find?',
+        'Try asking me for a product, a category, or a page link such as Contact Us.',
+        'I can look up catalogue information or point you to a page. For example, try “patient monitor” or “locations”.'
+      ]
+    };
+    function nextPrompt(key) {
+      const count = replyCounts.get(key) || 0;
+      replyCounts.set(key, count + 1);
+      return prompts[key][count % prompts[key].length];
+    }
+    function message(content, user = false) {
+      const bubble = document.createElement('p');
+      bubble.className = user ? 'assistant-message assistant-message-user' : 'assistant-message';
+      if (user) bubble.textContent = content;
+      else {
+        const reply = content?.trim() || nextPrompt('unmatched');
+        const count = replyCounts.get(reply) || 0;
+        replyCounts.set(reply, count + 1);
+        const followUps = ['Here’s what I found for that request:', 'Checking the same information again:', 'Here’s the result for that request:'];
+        bubble.textContent = count ? `${followUps[(count - 1) % followUps.length]}\n${reply}` : reply;
+      }
+      log.appendChild(bubble);
+      return bubble;
+    }
+    const destinations = [
+      ['Home', 'index.html', /^(?:home|homepage|home page)$/],
+      ['All Products', 'products.html', /^(?:(?:all )?products|catalogue|catalog|categories|product categories)$/],
+      ['Search Products', 'search.html', /^(?:product search|search products|find products|search)$/],
+      ['Cart', 'cart.html', /^(?:(?:my |shopping )?cart|basket)$/],
+      ['Contact Us', 'contact.html', /^(?:contact(?: us| details)?|phone(?: number)?|email(?: address)?|talk to someone)$/],
+      ['About Us', 'about.html', /^(?:about(?: us)?|company|company information)$/],
+      ['Locations', 'locations.html', /^(?:locations?|address|branches|experience centres?)$/],
+      ['Turnkey Projects', 'services.html', /^(?:services|turnkey(?: projects)?|hospital projects)$/],
+      ['Support', 'support.html', /^(?:support|customer service|after sales)$/],
+      ['Warranty', 'warranty.html', /^(?:warranty|warranty policy)$/],
+      ['Book a Meeting', 'meeting.html', /^(?:meeting|book (?:a )?meeting)$/],
+      ['Testimonials', 'testimonials.html', /^(?:testimonials|reviews|customer feedback)$/],
+      ['Buying Guides', 'blog.html', /^(?:blog|buying guides?|guides)$/],
+      ['Privacy Policy', 'privacy.html', /^(?:privacy(?: policy)?)$/],
+      ['Terms and Conditions', 'terms.html', /^(?:terms(?: and conditions)?|conditions)$/],
+      ['Site Map', 'sitemap.html', /^(?:site ?map|directory)$/],
+      ['Checkout (coming soon)', 'checkout.html', /^checkout$/]
+    ];
+    function showLinks(text, links) {
+      message(text);
+      const navigation = document.createElement('nav');
+      navigation.className = 'assistant-chat-categories';
+      navigation.setAttribute('aria-label', 'Suggested pages');
+      links.forEach(([label, url]) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.textContent = label;
+        navigation.appendChild(link);
+      });
+      log.appendChild(navigation);
+      log.scrollTop = log.scrollHeight;
+    }
+    function respond(text) {
+      const query = text.trim().slice(0, 180);
+      if (!query) {
+        message(nextPrompt('empty'));
+        log.scrollTop = log.scrollHeight;
+        return;
+      }
+      message(query, true);
+      const normalized = root.SWM_SHOP_CORE.normalize(query);
+      const target = normalized
+        .replace(/^please\s+/, '')
+        .replace(/^(?:(?:where|how) (?:can|do) i (?:find|see|open|view|get to|go to)|where (?:to find|is|are)|(?:take me|go) to|open|show me|find)\s+/, '')
+        .replace(/^(?:(?:can|could|would) you )?(?:(?:give|send|provide|share)(?: me)? )?(?:(?:a|the) )?(?:links? for|links? to|links? of|links? for the|links? to the)\s+/, '')
+        .replace(/^(?:the|your) /, '')
+        .replace(/ (?:page|link)(?: please)?$/, '')
+        .replace(/ please$/, '');
+      if (/^(?:hi|hello|hey|hi there|hello there|hey there|good morning|good afternoon|good evening)$/.test(normalized)) {
+        showLinks('Hello! What are you looking for? You can browse the catalogue, search for a product, or ask me for a page link.', destinations.slice(1, 3));
+        return;
+      }
+      if (/^(?:(?:hi|hello|hey) )?how are you(?: doing)?$/.test(normalized)) {
+        showLinks('I’m ready to help! You can ask me where to find a page or tell me what product you’re looking for.', destinations.slice(1, 3));
+        return;
+      }
+      if (/^(?:thanks|thank you|thank you so much)$/.test(normalized)) {
+        message('You’re welcome. Let me know if you need another product or page link.');
+        log.scrollTop = log.scrollHeight;
+        return;
+      }
+      if (/^(?:help|what can you do|where to find things|where can i find things|(?:show me |give me )?(?:links?(?: for| to) )?(?:all )?(?:web ?pages|site pages|pages)|site ?map|directory)$/.test(normalized)) {
+        showLinks('Here are the pages you can open directly.', destinations);
+        return;
+      }
+      const destination = destinations.find(([, , keywords]) => keywords.test(target));
+      if (destination && !(normalized === 'warranty' && currentProduct)) {
+        showLinks(`Here’s the link to ${destination[0]}.`, [destination]);
+        return;
+      }
+      const mentions = destinations.flatMap(page => {
+        const [, , keywords] = page;
+        const wholeWords = new RegExp(`\\b(?:${keywords.source.slice(1, -1)})\\b`, 'g');
+        return [...normalized.matchAll(wholeWords)].flatMap(match => {
+          const end = match.index + match[0].length;
+          if (match[0] === 'about' && !/^ (?:page|section)\b/.test(normalized.slice(end))) return [];
+          if (match[0] === 'contact' && /\bnon $/.test(normalized.slice(0, match.index))) return [];
+          return [{ page, start: match.index, end }];
+        });
+      });
+      const pages = [...new Set(mentions.filter(mention =>
+        !mentions.some(other => other.start <= mention.start && other.end >= mention.end &&
+          other.end - other.start > mention.end - mention.start)
+      ).map(mention => mention.page))];
+      if (pages.length && !(normalized === 'warranty' && currentProduct)) {
+        showLinks(pages.length === 1 ? `Here’s the link to ${pages[0][0]}.` : 'Here are the pages you mentioned.', pages);
+        return;
+      }
+      const offTopic = /^(?:tell me (?:a joke|a story|about yourself)|who are you|what(?: s| is) the weather|what time is it)$/.test(normalized);
+      const information = /\b(price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment|details?|specs?|specifications?|features?|dimensions?|size|weight|material|warranty)\b/.exec(normalized)?.[0] ||
+        (/^how much\b/.test(normalized) ? 'price' : '');
+      const productQuery = normalized.replace(/\b(show|find|looking|need|want|please|tell|about|where|can|what|how|much|does|do|is|its|it|in|on|of|i|me|you|have|a|an|for|the|some|price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment|details?|specs?|specifications?|features?|dimensions?|size|weight|material|warranty)\b/g, ' ').replace(/\s+/g, ' ').trim();
+      const { direct, related } = productQuery ? findProductMatches(productQuery) : { direct: [], related: [] };
+      const matches = direct.length ? direct : related;
+      const named = productQuery && direct.find(product => [product.name, product.sourceName, product.id]
+        .some(value => root.SWM_SHOP_CORE.normalize(value) === productQuery));
+      const product = named || (matches.length === 1 ? matches[0] : !productQuery ? currentProduct : null);
+      if (offTopic) {
+        message(nextPrompt('unrelated'));
+      } else if (information && /^(price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment)$/.test(information)) {
+        if (product) currentProduct = product;
+        const subject = product ? ` for ${product.name}` : '';
+        const answer = /^(price|pricing|cost)$/.test(information)
+          ? `Online pricing${subject} isn’t available yet.`
+          : /^(stock|availability|available)$/.test(information)
+            ? `Online stock information${subject} isn’t available yet.`
+            : /^(delivery|shipping)$/.test(information)
+              ? `Online delivery details${subject} aren’t available yet.`
+              : 'Online checkout and payment aren’t available yet.';
+        const reply = message(answer);
+        const contact = document.createElement('a');
+        contact.href = 'contact.html' + (product ? '?subject=' + encodeURIComponent(product.name) : '');
+        contact.textContent = 'Contact us';
+        reply.append(' ', contact);
+      } else if (information) {
+        if (!product) {
+          message(matches.length ? 'Which product do you mean? Enter its full catalogue name for details.' : 'Which product would you like details for? Enter its name or model.');
+        } else {
+          currentProduct = product;
+          const specs = (product.specifications || []).filter(spec => spec.label && spec.value);
+          const specific = /^(dimensions?|size|weight|material|warranty)$/.test(information);
+          const requested = /^dimensions?$/.test(information) ? /dimension|size|length|width|height/i : new RegExp(information, 'i');
+          const list = specific ? specs.filter(spec => requested.test(spec.label)) : specs;
+          const lines = list.map(spec => `${spec.label}: ${spec.value}`);
+          const details = specific
+            ? lines.join('\n') || `${information[0].toUpperCase() + information.slice(1)} information isn’t listed in the catalogue.`
+            : /^(specs?|specifications?)$/.test(information)
+              ? lines.join('\n') || 'Specifications aren’t listed in the catalogue.'
+              : /^features?$/.test(information)
+                ? product.features.join('\n') || 'Features aren’t listed in the catalogue.'
+                : product.description || 'Product details aren’t listed in the catalogue.';
+          message(`${product.name}\n${details}`);
+        }
+      } else {
+        if (!matches.length) {
+          message(nextPrompt('unmatched'));
+        } else {
+          if (product) currentProduct = product;
+          message(direct.length ? 'Here are the closest catalogue matches.' : 'I didn’t find that exact product. Here are some related options.');
+          const results = document.createElement('div');
+          results.className = 'assistant-chat-results';
+          results.innerHTML = matches.slice(0, 3).map(product => `<article><a href="${link(product)}">${e(product.name)}</a><button type="button" data-assistant-add="${e(product.id)}" aria-label="Add ${e(product.name)} to cart">Add to cart</button></article>`).join('');
+          if (matches.length > 3) {
+            const viewAll = document.createElement('a');
+            viewAll.href = 'search.html?q=' + encodeURIComponent(productQuery);
+            viewAll.textContent = 'See all matching products';
+            results.appendChild(viewAll);
+          }
+          log.appendChild(results);
+        }
+      }
+      log.scrollTop = log.scrollHeight;
+    }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      respond(field.value);
+      field.value = '';
+    });
+    log.addEventListener('click', event => {
+      const add = event.target.closest('[data-assistant-add]');
+      const product = add && byId(add.dataset.assistantAdd);
+      if (!product) return;
+      basket[product.id] = Math.min(9999, (basket[product.id] || 0) + 1);
+      const stored = persistBasket();
+      renderBasket();
+      message(stored ? `Added ${product.name} to your cart.` : `Added ${product.name} for this visit. Browser storage is unavailable.`);
+      log.scrollTop = log.scrollHeight;
+    });
+    toggle.addEventListener('click', event => {
       const open = panel.hidden;
       panel.hidden = !open;
       toggle.setAttribute('aria-expanded', String(open));
+      if (open && event.detail === 0) field.focus();
     });
   }
   document.addEventListener('click',event=>{
@@ -862,7 +1087,6 @@
       state.subcategory=button.dataset.subcatChip;limit=24;renderCatalog();return;
     }
     if(button.dataset.assistDept){location.href='products.html?department='+encodeURIComponent(button.dataset.assistDept);return;}
-    if(button.hasAttribute('data-assist-search')){const q=(button.parentElement?.querySelector('.assist-search-field')?.value||$('#assist-search-input')?.value||'').trim();if(q)location.href='products.html?q='+encodeURIComponent(q);return;}
     if(button.dataset.quickview){openQuickView(button.dataset.quickview);return;}
     if(button.hasAttribute('data-open-bulk-rfq')){openBulkModal();return;}
     if(button.hasAttribute('data-bulk-sample')){const ta=$('#bulk-list-input');if(ta){ta.value='5 x Five-Function Electric ICU Bed\n4 x Seven-Parameter Patient Monitor\n2 x Semi-Electric C-Arm OT Table\n6 x Patient Wheelchair\n3 x Suction Machine';}return;}
