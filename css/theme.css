@@ -944,22 +944,26 @@ body .store-header .header-products-popover.hpp-reference .hpp-cat-info small{fo
 body .product-visual>.save-button{z-index:3;pointer-events:auto}
 /* Inline cart quantity controls for product cards. */
 .product-card .product-bottom{min-height:44px}
-.card-cart-stepper{display:flex;align-items:center;gap:5px;width:100%;min-height:44px;padding:4px;border:1px solid #c9e2f4;border-radius:11px;background:#f3f9fe;box-shadow:0 3px 9px rgba(18,83,128,.08)}
-.card-cart-stepper__button,.card-cart-stepper__remove{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;padding:0;border:0;border-radius:8px;background:#087cc2;color:#fff;font:700 19px/1 Manrope,sans-serif;cursor:pointer;transition:background-color .18s ease,color .18s ease,transform .18s ease}
+.card-cart-stepper{--stepper-button:34px;--stepper-cart:40px;--stepper-gap:5px;display:grid;grid-template-columns:var(--stepper-button) minmax(16px,1fr) var(--stepper-button) calc(var(--stepper-cart) + 3px);align-items:center;gap:var(--stepper-gap);width:100%;min-height:44px;padding:4px;border:1px solid #c9e2f4;border-radius:11px;background:#f3f9fe;box-shadow:0 3px 9px rgba(18,83,128,.08)}
+.card-cart-stepper__button,.card-cart-stepper__cart{display:grid;place-items:center;width:var(--stepper-button);height:var(--stepper-button);padding:0;border:0;border-radius:8px;background:#087cc2;color:#fff;font:700 19px/1 Manrope,sans-serif;cursor:pointer;transition:background-color .18s ease,color .18s ease,transform .18s ease}
 .card-cart-stepper__button:hover:not(:disabled){background:#0669a7;transform:translateY(-1px)}
 .card-cart-stepper__button:disabled{background:#d8e6f0;color:#8296a5;cursor:not-allowed}
-.card-cart-stepper__quantity{flex:1;min-width:24px;color:#12345a;font:750 15px/1 Manrope,sans-serif;text-align:center;font-variant-numeric:tabular-nums}
-.card-cart-stepper__remove{margin-left:auto;border:1px solid #f1c9c7;background:#fff;color:#b6403b}
-.card-cart-stepper__remove svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.card-cart-stepper__remove:hover{background:#fff0ef;color:#a82d28;transform:translateY(-1px)}
-.card-cart-stepper button:focus-visible{outline:2px solid #1a9fe0;outline-offset:2px}
+.card-cart-stepper__quantity{min-width:0;color:#12345a;font:750 15px/1 Manrope,sans-serif;text-align:center;font-variant-numeric:tabular-nums}
+.card-cart-stepper__cart{justify-self:end;width:var(--stepper-cart);border:0;background:transparent;color:#07568e}
+.card-cart-stepper__cart svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.card-cart-stepper__cart:hover{background:transparent;color:#064573;transform:translateY(-1px)}
+.card-cart-stepper :is(button, a):focus-visible{outline:2px solid #1a9fe0;outline-offset:2px}
 .home-page .product-marquee .card-cart-stepper{min-height:44px;padding:4px;border:0;border-radius:11px;background:#087cc2;box-shadow:0 4px 10px rgba(8,124,194,.16)}
 .home-page .product-marquee .card-cart-stepper__button{background:rgba(255,255,255,.18);color:#fff}
 .home-page .product-marquee .card-cart-stepper__button:hover:not(:disabled){background:rgba(255,255,255,.3)}
 .home-page .product-marquee .card-cart-stepper__button:disabled{background:rgba(255,255,255,.12);color:rgba(255,255,255,.58)}
 .home-page .product-marquee .card-cart-stepper__quantity{color:#fff}
-.home-page .product-marquee .card-cart-stepper__remove{flex-basis:34px;width:34px;height:34px;border-color:rgba(255,255,255,.36);background:rgba(255,255,255,.94);color:#b6403b}
-@media(max-width:520px){.card-cart-stepper{gap:3px}.card-cart-stepper__button,.card-cart-stepper__remove{flex-basis:32px;width:32px;height:32px}}
+.home-page .product-marquee .card-cart-stepper__cart{color:#fff}
+@media(max-width:767px){
+  .card-cart-stepper{--stepper-button:26px;--stepper-cart:33px;--stepper-gap:3px;padding:2px}
+  .card-cart-stepper__button,.card-cart-stepper__cart{font-size:16px}
+  .card-cart-stepper__cart svg{width:21px;height:21px}
+}
 
 /* Restore a clear light hospital-blue glass surface once the sticky header moves over page content. */
 body .store-header{transition:background-color .28s ease,box-shadow .28s ease,backdrop-filter .28s ease,-webkit-backdrop-filter .28s ease}

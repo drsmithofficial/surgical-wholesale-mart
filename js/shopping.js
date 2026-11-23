@@ -39,7 +39,7 @@
  }
  function basket(){
   const entries=Object.entries(store.getBasket()).filter(([id])=>byId(id));
-  open('basket','Your cart',entries.length?`<div class="shop-basket-list">${entries.map(([id,qty])=>{const p=byId(id);return `<article class="shop-basket-row"><a href="product.html?id=${encodeURIComponent(id)}"><img src="${e(p.image)}" alt="${e(p.name)}" width="100" height="90"></a><div><h3><a href="product.html?id=${encodeURIComponent(id)}">${e(p.name)}</a></h3><small>Price coming soon</small><div class="shop-inline"><button type="button" class="text-button" data-shop-remove="${e(id)}">Remove</button><button type="button" class="text-button" data-shop-save="${e(id)}">${store.getSaved().includes(id)?'Unsave':'Save for later'}</button></div></div><label class="shop-qty">Quantity<input type="number" min="1" max="9999" step="1" value="${qty}" data-shop-quantity="${e(id)}"></label></article>`;}).join('')}</div><p>${entries.length} products · ${entries.reduce((n,[,q])=>n+q,0)} total units · Online pricing coming soon</p>${removedItem?'<button class="text-button" type="button" data-shop-action="undo">Undo last removal</button>':''}<div class="shop-inline"><a class="button button-outline" href="cart.html">View cart</a></div>`:`<p>Your cart is empty.</p>${removedItem?'<button class="text-button" data-shop-action="undo">Undo last removal</button>':''}<a class="button" href="products.html">Explore products</a>`);
+  open('basket','Your cart',entries.length?`<div class="shop-basket-list">${entries.map(([id,qty])=>{const p=byId(id);return `<article class="shop-basket-row"><a href="product.html?id=${encodeURIComponent(id)}"><img src="${e(p.image)}" alt="${e(p.name)}" width="100" height="90"></a><div><h3><a href="product.html?id=${encodeURIComponent(id)}">${e(p.name)}</a></h3><small>Price coming soon</small><div class="shop-inline"><button type="button" class="text-button" data-shop-save="${e(id)}">${store.getSaved().includes(id)?'Unsave':'Save for later'}</button></div></div><div class="quantity shop-qty" role="group" aria-label="Quantity of ${e(p.name)}"><button type="button" data-shop-step="-1" data-shop-item="${e(id)}" aria-label="Decrease ${e(p.name)} quantity">&minus;</button><span>${qty}</span><button type="button" data-shop-step="1" data-shop-item="${e(id)}" aria-label="Increase ${e(p.name)} quantity">+</button></div></article>`;}).join('')}</div><p>${entries.length} products · ${entries.reduce((n,[,q])=>n+q,0)} total units · Online pricing coming soon</p>${removedItem?'<button class="text-button" type="button" data-shop-action="undo">Undo last removal</button>':''}<div class="shop-inline"><a class="button button-outline" href="cart.html">View cart</a></div>`:`<p>Your cart is empty.</p>${removedItem?'<button class="text-button" data-shop-action="undo">Undo last removal</button>':''}<a class="button" href="products.html">Explore products</a>`);
  }
  function enhance(){
   const tools=$('.pbar-tools');
@@ -69,7 +69,15 @@
   if(b.dataset.shopEdit)editAddress(b.dataset.shopEdit);
   if(b.dataset.shopUse)useAddress(b.dataset.shopUse);
   if(b.dataset.shopDelete){const entries=model.cleanAddresses(read('swm-addresses',[])).filter(a=>a.id!==b.dataset.shopDelete);if(write('swm-addresses',entries))addressBook();}
-  if(b.dataset.shopRemove){const id=b.dataset.shopRemove,qty=store.getBasket()[id];removedItem={id,qty};store.quantity(id,0);basket();}
+  if (b.dataset.shopStep) {
+   const id = b.dataset.shopItem;
+   const qty = store.getBasket()[id];
+   if (!qty) return;
+   const next = Math.min(9999, qty + Number(b.dataset.shopStep));
+   if (!next) removedItem = { id, qty };
+   store.quantity(id, next);
+   basket();
+  }
   if(b.dataset.shopSave){store.toggleSaved(b.dataset.shopSave);basket();}
   if(b.dataset.shopCompare)store.toggleCompare(b.dataset.shopCompare);
   if(b.dataset.shopShare){const p=byId(b.dataset.shopShare);if(!p)return;const url=new URL('product.html?id='+encodeURIComponent(p.id),location.href).href;try{if(navigator.share)await navigator.share({title:p.name,url});else{await navigator.clipboard.writeText(url);store.message('Product link copied.');}}catch(error){if(error.name!=='AbortError')open('share','Share product',`<label>Copy this product link<input readonly value="${e(url)}"></label>`);}}
@@ -77,7 +85,6 @@
  document.addEventListener('change',event=>{
   const input=event.target;
   if(input.id==='shop-new-filter')store.filter({newOnly:input.checked,sort:input.checked?'newest':store.getState()?.sort||'featured'});
-  if(input.dataset.shopQuantity){const qty=Number(input.value);if(!Number.isInteger(qty)||qty<1||qty>9999){input.value=store.getBasket()[input.dataset.shopQuantity]||1;store.message('Choose a whole quantity between 1 and 9999.');return;}store.quantity(input.dataset.shopQuantity,qty);basket();}
   if(input.id==='shop-address-select'&&input.value)useAddress(input.value,false);
  });
  document.addEventListener('submit',event=>{

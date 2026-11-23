@@ -328,7 +328,8 @@
 
 	const products = phoneHome.querySelector('#phone-products');
 	const originals = Array.from(products.children);
-	let copies = [];
+	let leadingCopies = [];
+	let trailingCopies = [];
 	function copyProductGroup(group) {
 		const copy = group.cloneNode(true);
 		copy.setAttribute('data-phone-copy', '');
@@ -345,6 +346,7 @@
 	let visible = true;
 	let hovered = false;
 	let cycle = 0;
+	let settleScrollTimer;
 
 	function writeProductPosition(value) {
 		position = value;
@@ -354,19 +356,25 @@
 	}
 
 	function measureProducts() {
-		if (!copies.length) {
+		if (!trailingCopies.length) {
 			cycle = 0;
 			return;
 		}
 		const firstCard = group => group.querySelector('.product-card') || group.firstElementChild;
-		cycle = firstCard(copies[0]).offsetLeft - firstCard(originals[0]).offsetLeft;
+		const previousCycle = cycle;
+		cycle = firstCard(trailingCopies[0]).offsetLeft - firstCard(originals[0]).offsetLeft;
+		if (previousCycle && cycle !== previousCycle) writeProductPosition(position + cycle - previousCycle);
+	}
+
+	function wrapProductPosition(value) {
+		return cycle + ((value % cycle) + cycle) % cycle;
 	}
 
 	function moveProducts(now) {
 		const elapsed = lastTime === undefined ? 0 : Math.min(now - lastTime, 64);
 		lastTime = now;
 		if (now >= pauseUntil && pointerId === null && !hovered && !products.matches(':focus-visible, :has(:focus-visible)')) {
-			if (cycle > 0) writeProductPosition((position + elapsed * .03) % cycle);
+			if (cycle > 0) writeProductPosition(wrapProductPosition(position + elapsed * .03));
 		}
 		frame = requestAnimationFrame(moveProducts);
 	}
@@ -381,13 +389,15 @@
 
 	products.addEventListener('scroll', () => {
 		if (!compact.matches || products.scrollLeft === lastWritten) return;
-		const left = products.scrollLeft;
-		if (cycle > 0 && left >= cycle) writeProductPosition(left % cycle);
-		else {
-			position = lastWritten = left;
-			products.style.removeProperty('--phone-card-offset');
-		}
+		position = lastWritten = products.scrollLeft;
+		products.style.removeProperty('--phone-card-offset');
 		pauseUntil = performance.now() + 1800;
+		clearTimeout(settleScrollTimer);
+		settleScrollTimer = setTimeout(() => {
+			if (cycle > 0 && pointerId === null && (position < cycle || position >= 2 * cycle)) {
+				writeProductPosition(wrapProductPosition(position));
+			}
+		}, 160);
 	}, { passive: true });
 	products.addEventListener('pointerenter', event => { hovered = event.pointerType !== 'touch'; });
 	products.addEventListener('pointerleave', () => { hovered = false; });
@@ -414,11 +424,15 @@
 			slide.toggleAttribute('data-active', index === active);
 			slide.inert = compact.matches && index !== active;
 		});
-		copies.forEach(copy => copy.remove());
-		copies = compact.matches ? originals.map(copyProductGroup) : [];
-		products.append(...copies);
+		clearTimeout(settleScrollTimer);
+		[...leadingCopies, ...trailingCopies].forEach(copy => copy.remove());
+		leadingCopies = compact.matches ? originals.map(copyProductGroup) : [];
+		trailingCopies = compact.matches ? originals.map(copyProductGroup) : [];
+		products.prepend(...leadingCopies);
+		products.append(...trailingCopies);
+		cycle = 0;
 		measureProducts();
-		writeProductPosition(0);
+		writeProductPosition(cycle);
 		scheduleBanner();
 		syncProducts();
 	}

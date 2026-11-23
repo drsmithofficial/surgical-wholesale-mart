@@ -430,7 +430,7 @@ body .swm-assistant-panel:not([hidden]) { display: grid; grid-template-rows: aut
 .assistant-intro-copy::after { content: ""; position: absolute; left: 100%; top: 40%; border: 6px solid transparent; border-left-color: #d8edfb; }
 .assistant-intro h3, .assistant-category-heading { margin: 0; color: #0b2450; font-size: clamp(13px, 3.6vw, 17px); line-height: 1.15; }
 .assistant-intro p { margin: 5px 0; font-size: 11px; line-height: 1.4; }
-.assistant-intro a { color: #005ab3; font-weight: 800; text-decoration: underline; }
+.assistant-intro a { color: #005ab3; font-weight: 800; text-decoration: none; }
 .assistant-intro a svg { width: 12px; height: 12px; vertical-align: middle; }
 .assistant-intro > img { width: 100%; max-height: 100px; object-fit: contain; }
 .assistant-category-heading { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
@@ -636,6 +636,9 @@ html[data-pointer-focus] :is(input, select, textarea):focus { box-shadow: none !
 }
 
 .mobile-ecom-tabbar{display:none}
+@media (max-width: 767px) {
+  :is(#service-support, #replacement-cover, #installation-training, #facility) { scroll-margin-top: 56px; }
+}
 .mobile-navigation-skeleton, .mobile-skeleton-layout { display: none; }
 @media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
   html[data-footer-slide] .store-header { view-transition-name: mobile-header; }
@@ -1336,13 +1339,7 @@ body[data-page="products"] .catalog-layout > :is(.catalog-results, .filter-panel
   }
   body:is([data-page="products"], [data-page="product"], [data-page="search"]) .card-cart-stepper {
     width: 100%;
-    gap: 2px;
     padding: 2px;
-  }
-  body:is([data-page="products"], [data-page="product"], [data-page="search"]) .card-cart-stepper button {
-    flex-basis: 24px;
-    width: 24px;
-    height: 28px;
   }
   body:is([data-page="products"], [data-page="product"], [data-page="search"]) .card-cart-stepper__quantity { min-width: 0; font-size: 12px; }
 

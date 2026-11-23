@@ -101,12 +101,12 @@
       }
       return;
     }
-    bottom.innerHTML = `<div class="card-cart-stepper" role="group" aria-label="${e(product.name)} quantity controls"><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="-1" aria-label="Decrease ${e(product.name)} quantity" ${quantity <= 1 ? 'disabled' : ''}>−</button><span class="card-cart-stepper__quantity" aria-live="polite" aria-label="Quantity ${quantity}">${quantity}</span><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="1" aria-label="Increase ${e(product.name)} quantity">+</button><button type="button" class="card-cart-stepper__remove" data-remove="${id}" aria-label="Remove all ${e(product.name)} from cart" title="Remove product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M5.5 7l1 14h11l1-14M9 7V4h6v3"/></svg></button></div>`;
+    bottom.innerHTML = `<div class="card-cart-stepper" role="group" aria-label="${e(product.name)} quantity controls"><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="-1" aria-label="Decrease ${e(product.name)} quantity">−</button><span class="card-cart-stepper__quantity" aria-live="polite" aria-label="Quantity ${quantity}">${quantity}</span><button type="button" class="card-cart-stepper__button" data-quantity="${id}" data-delta="1" aria-label="Increase ${e(product.name)} quantity">+</button><a class="card-cart-stepper__cart" href="cart.html" aria-label="View cart" title="View cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></a></div>`;
   }
   function sync() {
     document.dispatchEvent(new CustomEvent('swm:change'));
     $$(".product-card[data-product]").forEach(updateProductCardCartControl);
-    $$('#phone-products [data-phone-copy] .product-bottom button').forEach(button => { button.tabIndex = -1; });
+    $$('#phone-products [data-phone-copy] .product-bottom :is(button, a)').forEach(button => { button.tabIndex = -1; });
     $$('[data-compare-count]').forEach(el=>el.textContent=compare.length);
     const totalQty=Object.values(basket).reduce((a,b)=>a+b,0);
     $$('[data-cart-count]').forEach(el=>el.textContent=totalQty);
@@ -138,7 +138,7 @@
     }
   }
   function persistBasket() { const ok=save(local,'swm-basket',basket);sync();return ok; }
-  function quantityControl(p) {return `<div class="quantity"><button type="button" data-quantity="${p.id}" data-delta="-1" aria-label="Decrease quantity of ${e(p.name)}" ${basket[p.id]<=1?'disabled':''}>−</button><label class="sr-only" for="qty-${p.id}">Quantity of ${e(p.name)}</label><input id="qty-${p.id}" type="number" min="1" max="9999" step="1" value="${basket[p.id]}" data-quantity-input="${p.id}"><button type="button" data-quantity="${p.id}" data-delta="1" aria-label="Increase quantity of ${e(p.name)}">+</button></div>`;}
+  function quantityControl(p) {return `<div class="quantity"><button type="button" data-quantity="${p.id}" data-delta="-1" aria-label="Decrease quantity of ${e(p.name)}">−</button><label class="sr-only" for="qty-${p.id}">Quantity of ${e(p.name)}</label><input id="qty-${p.id}" type="number" min="1" max="9999" step="1" value="${basket[p.id]}" data-quantity-input="${p.id}"><button type="button" data-quantity="${p.id}" data-delta="1" aria-label="Increase quantity of ${e(p.name)}">+</button></div>`;}
   function basketSummary() {
     const units = Object.values(basket).reduce((total, quantity) => total + quantity, 0);
     return `<h2>Order summary</h2><div class="summary-line"><span>Items</span><strong>${units}</strong></div><div class="summary-line"><span>Subtotal</span><strong>Coming soon</strong></div><div class="summary-line"><span>Delivery</span><strong>Coming soon</strong></div>`;
@@ -147,7 +147,7 @@
   function renderBasket() {
     const host=$('#basket-page');if(!host)return;
     if(!Object.keys(basket).length){host.innerHTML=empty('Your cart is empty.','Find the products for your facility and add them to your selection.')+renderRecentSection();sync();return;}
-    host.innerHTML=`<div class="basket-tools-bar"><div class="basket-quick-add"><input id="basket-quick-input" type="search" placeholder="Quick add product by name or subcategory…"><div id="basket-quick-results" class="pbar-results" hidden></div></div><div class="basket-export-actions"><button type="button" data-open-bulk-rfq>Paste bulk list</button><button type="button" data-export-csv>Export CSV</button><button type="button" data-print-basket>Print cart</button><button type="button" data-clear-basket>Clear cart</button></div></div><div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)} · ${e(p.subcategory)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price coming soon</span><div style="display:flex;gap:12px;align-items:center;margin-top:6px"><button type="button" class="save-detail" data-save="${id}" aria-pressed="${saved.includes(id)}" style="min-height:30px;padding:4px 10px;font-size:11px">${heart} Save</button><button type="button" class="text-button remove-button" data-remove="${id}" style="margin:0">Remove</button></div></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue shopping</a></div><aside class="summary-card">${basketSummary()}<button class="button button-block" type="button" disabled aria-describedby="cart-checkout-note">Proceed to checkout</button><p class="form-note" id="cart-checkout-note">Online checkout and pricing are coming soon.</p></aside></div>${renderRecentSection()}`;
+    host.innerHTML=`<div class="basket-tools-bar"><div class="basket-quick-add"><input id="basket-quick-input" type="search" placeholder="Quick add product by name or subcategory…"><div id="basket-quick-results" class="pbar-results" hidden></div></div><div class="basket-export-actions"><button type="button" data-open-bulk-rfq>Paste bulk list</button><button type="button" data-export-csv>Export CSV</button><button type="button" data-print-basket>Print cart</button><button type="button" data-clear-basket>Clear cart</button></div></div><div class="basket-layout"><div class="basket-items">${Object.keys(basket).map(id=>{const p=byId(id);return `<article class="basket-item"><a class="basket-photo" href="${link(p)}">${photo(p)}</a><div><span class="micro-label">${e(category(p.category).name)} · ${e(p.subcategory)}</span><h2><a href="${link(p)}">${e(p.name)}</a></h2><span class="muted">Price coming soon</span><div style="display:flex;gap:12px;align-items:center;margin-top:6px"><button type="button" class="save-detail" data-save="${id}" aria-pressed="${saved.includes(id)}" style="min-height:30px;padding:4px 10px;font-size:11px">${heart} Save</button></div></div>${quantityControl(p)}</article>`;}).join('')}<a class="text-link" href="products.html">← Continue shopping</a></div><aside class="summary-card">${basketSummary()}<button class="button button-block" type="button" disabled aria-describedby="cart-checkout-note">Proceed to checkout</button><p class="form-note" id="cart-checkout-note">Online checkout and pricing are coming soon.</p></aside></div>${renderRecentSection()}`;
     sync();
     const qInput=$('#basket-quick-input'),qBox=$('#basket-quick-results');
     if(qInput&&qBox){
@@ -909,6 +909,83 @@
       log.appendChild(navigation);
       log.scrollTop = log.scrollHeight;
     }
+    function findSiteContent(query) {
+      const normalize = root.SWM_SHOP_CORE.normalize;
+      const ignored = new Set('a about am an and any are be can could do does for from get give have how i in is it link me of on or our page please provide see show site tell that the this to was what when where which who will with would you your'.split(' '));
+      const words = new Set(normalize(query).split(' ').filter(word => word.length >= 2 && !ignored.has(word)));
+      if (!words.size) return [];
+      const count = value => new Set(normalize(value).split(' ').filter(word => words.has(word))).size;
+      return (root.SWM_SITE_CONTENT || []).flatMap(([url, title, blocks]) => {
+        let best = null;
+        blocks.forEach(([heading, text]) => {
+          const hits = count(text);
+          if (!hits) return;
+          const score = hits * 6 + Number(heading) * 2 + count(title);
+          if (!best || score > best.score) best = { url, title, text, score, heading };
+        });
+        return best ? [best] : [];
+      }).sort((a, b) => b.score - a.score).slice(0, 3);
+    }
+    function showSiteContent(matches) {
+      const { title, text } = matches[0];
+      const excerpt = text.length > 280 ? text.slice(0, 280).replace(/\s+\S*$/, '') + '…' : text;
+      showLinks(`I found this on ${title}: ${excerpt}`, matches.map(page => [page.title, page.url]));
+    }
+    function answerContactRequest(query) {
+      const contacts = root.SWM_SITE_CONTACTS;
+      if (!contacts) return false;
+      const wantsWhatsApp = /\bwhats\s?app\b/.test(query);
+      const wantsPhone = /\b(?:phone|telephone|mobile|landline|call|contact number|(?:normal|regular) (?:and |or )?(?:number|whatsapp))\b/.test(query);
+      if (!wantsWhatsApp && !wantsPhone && !/\bnumber\b/.test(query)) return false;
+
+      const normalize = root.SWM_SHOP_CORE.normalize;
+      const hint = query.replace(/\b(?:whats\s?app|where|give|provide|share|send|show|find|can|could|tell|me|we|your|you|please|what|is|the|a|for|of|at|in|to|and|or|with|how|do|i|s|no|number|numbers|contact|normal|regular|direct|branch|office|location|centre|center|address|call|reach|mobile|phone|telephone|landline|link|team|store|company|business|general|main|details)\b/g, ' ').replace(/\s+/g, ' ').trim();
+      if (!wantsWhatsApp && !wantsPhone && /\b(?:model|serial|order|reference)\b/.test(hint)) return false;
+      const padded = ` ${hint} `;
+      const uniqueAddressWords = new Set(hint.split(' ').filter(word => word.length >= 5 &&
+        !/^(?:india|district|township|building|complex|street|ground|sector|village|warehouse|number)$/.test(word)));
+      const ranked = contacts.locations.map(location => {
+        const aliases = [location.id, location.name, ...location.name.split(','), location.region];
+        if (location.country === 'UAE') aliases.push('UAE', 'United Arab Emirates');
+        const aliasScore = Math.max(0, ...aliases.map(normalize).filter(alias => alias && padded.includes(` ${alias} `)).map(alias => alias.length));
+        const address = normalize(location.address);
+        const addressWords = new Set(address.split(' '));
+        const addressScore = [...uniqueAddressWords].filter(word => addressWords.has(word)).length;
+        const phraseScore = hint.includes(' ') && hint.length >= 6 && ` ${address} `.includes(padded) ? 10 : 0;
+        return { location, score: aliasScore ? 20 + aliasScore : addressScore + phraseScore };
+      }).filter(match => match.score).sort((a, b) => b.score - a.score);
+      const matches = ranked.filter(match => match.score === ranked[0]?.score);
+      const locationLinks = entries => entries.map(({ location }) => [location.name, 'locations.html#location-' + location.id]);
+      const channels = wantsWhatsApp && wantsPhone ? ['phone', 'whatsapp'] : [wantsWhatsApp ? 'whatsapp' : 'phone'];
+
+      if (matches.length > 1) {
+        showLinks('Which location do you mean? Choose a branch to see its published contact details.', locationLinks(matches));
+        return true;
+      }
+      if (hint && !matches.length) {
+        showLinks('I couldn’t identify that location. Please enter the branch name, city, or postal code.', [['View locations', 'locations.html']]);
+        return true;
+      }
+      const location = matches[0]?.location;
+      const subject = location?.name || 'our general enquiries team';
+      const links = [];
+      const lines = channels.map(channel => {
+        const isWhatsApp = channel === 'whatsapp';
+        const label = isWhatsApp ? 'WhatsApp number' : 'Phone number';
+        const value = location
+          ? (!isWhatsApp && location.contactLabel === 'Central support' ? '' : location[channel])
+          : contacts[channel];
+        const digits = String(value || '').replace(/\D/g, '');
+        if (!digits) return `No branch-specific ${isWhatsApp ? 'WhatsApp' : 'phone'} number is listed for ${subject}.`;
+        const display = (isWhatsApp ? location?.whatsappDisplay : location?.phoneDisplay) ||
+          (digits.startsWith('91') && digits.length === 12 ? `+91 ${digits.slice(2, 7)} ${digits.slice(7)}` : value);
+        links.push(isWhatsApp ? ['Open WhatsApp', 'https://wa.me/' + digits] : ['Call ' + subject, 'tel:+' + digits]);
+        return `${label} for ${subject}: ${display}`;
+      });
+      if (!links.length && location) links.push(...locationLinks(matches));
+      showLinks(lines.join('\n'), links);
+      return true;
+    }
     function respond(text) {
       const query = text.trim().slice(0, 180);
       if (!query) {
@@ -918,6 +995,7 @@
       }
       message(query, true);
       const normalized = root.SWM_SHOP_CORE.normalize(query);
+      if (answerContactRequest(normalized)) return;
       const target = normalized
         .replace(/^please\s+/, '')
         .replace(/^(?:(?:where|how) (?:can|do) i (?:find|see|open|view|get to|go to)|where (?:to find|is|are)|(?:take me|go) to|open|show me|find)\s+/, '')
@@ -974,8 +1052,11 @@
       const named = productQuery && direct.find(product => [product.name, product.sourceName, product.id]
         .some(value => root.SWM_SHOP_CORE.normalize(value) === productQuery));
       const product = named || (matches.length === 1 ? matches[0] : !productQuery ? currentProduct : null);
+      const siteMatches = direct.length ? [] : findSiteContent(query);
       if (offTopic) {
         message(nextPrompt('unrelated'));
+      } else if (productQuery && siteMatches.length && (!information || /^(details?|features?)$/.test(information))) {
+        showSiteContent(siteMatches);
       } else if (information && /^(price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment)$/.test(information)) {
         if (product) currentProduct = product;
         const subject = product ? ` for ${product.name}` : '';
@@ -1012,7 +1093,8 @@
         }
       } else {
         if (!matches.length) {
-          message(nextPrompt('unmatched'));
+          if (siteMatches.length) showSiteContent(siteMatches);
+          else message(nextPrompt('unmatched'));
         } else {
           if (product) currentProduct = product;
           message(direct.length ? 'Here are the closest catalogue matches.' : 'I didn’t find that exact product. Here are some related options.');
@@ -1200,8 +1282,16 @@
     }
     if(button.dataset.add){const id=button.dataset.add;if(!byId(id))return;basket[id]=Math.min(9999,(basket[id]||0)+1);const stored=persistBasket();toast(stored?'Added to your cart.':'Added for this visit. Browser storage is unavailable.',{href:'cart.html',label:'View cart →'});renderBasket();}
     if(button.dataset.save){const id=button.dataset.save;saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];save(local,'swm-saved',saved);sync();if(state){state.saved=saved;if(state.savedOnly)renderCatalog(false);}toast(saved.includes(id)?'Product saved.':'Product removed from saved items.',saved.includes(id)&&!$('#catalog-grid')?{href:'products.html?saved=1',label:'View saved →'}:null);}
-    if(button.dataset.remove){delete basket[button.dataset.remove];persistBasket();renderBasket();toast('Product removed from your cart.');}
-    if(button.dataset.quantity){const id=button.dataset.quantity;basket[id]=Math.max(1,Math.min(9999,basket[id]+Number(button.dataset.delta)));persistBasket();renderBasket();}
+    if (button.dataset.quantity) {
+      const id = button.dataset.quantity;
+      if (!basket[id]) return;
+      const next = Math.min(9999, basket[id] + Number(button.dataset.delta));
+      if (next > 0) basket[id] = next;
+      else delete basket[id];
+      persistBasket();
+      renderBasket();
+      if (!next) toast('Product removed from your cart.');
+    }
     if(button.hasAttribute('data-clear-compare')){compare=[];$$('[data-compare]').forEach(x=>x.checked=false);comparison();}
     if(button.hasAttribute('data-download-enquiry')){const blob=new Blob([currentEnquiry],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='surgical-wholesale-mart-enquiry.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
     if(button.hasAttribute('data-discard-draft')){try{session.removeItem('swm-enquiry');}catch{}currentEnquiry='';renderReview();}
