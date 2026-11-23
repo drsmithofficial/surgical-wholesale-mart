@@ -282,7 +282,7 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .procurement-bar{background:var(--mint);border-bottom:1px solid var(--line);padding:10px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px}
 .pbar-search-wrap{position:relative;flex:1 1 320px;max-width:540px;min-width:220px}
 .pbar-search{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #cad6d9;border-radius:8px;padding:4px 6px 4px 12px}
-.pbar-search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,196,239,.12)}
+html:not([data-pointer-focus]) .pbar-search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,196,239,.12)}
 .pbar-search .icon{width:16px;height:16px;color:var(--muted)}
 .pbar-search input{flex:1;min-width:0;border:0;background:transparent;padding:6px 4px;font-size:12px;outline:none}
 .pbar-search kbd{font-size:10px;padding:2px 6px;border:1px solid var(--line);border-radius:4px;background:#f4f6f7;color:var(--muted);font-family:inherit}
@@ -496,7 +496,11 @@ body .swm-assistant-panel:not([hidden]) { display: grid; grid-template-rows: aut
   background: #fff;
   box-shadow: 0 2px 8px #82b9dc2b;
 }
-.assistant-chat-input-wrap:focus-within { border-color: #2688c0; box-shadow: 0 0 0 2px #2688c024; }
+html:not([data-pointer-focus]) .assistant-chat-input-wrap:focus-within { border-color: #2688c0; box-shadow: 0 0 0 2px #2688c024; }
+html[data-pointer-focus] :is(input, select, textarea, button, a, summary, [tabindex]):focus {
+  outline: none !important;
+}
+html[data-pointer-focus] :is(input, select, textarea):focus { box-shadow: none !important; }
 .assistant-chat-sparkle { width: 18px; height: 18px; flex: none; color: #049ee9; }
 .assistant-chat-form input { flex: 1; min-width: 0; width: 0; padding: 5px 0; border: 0; outline: none; background: transparent; color: #10273f; font-size: 16px; }
 .assistant-chat-form input::placeholder { color: #516b82; }

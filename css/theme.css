@@ -124,7 +124,7 @@ body.home-page,body.inner-page{color:var(--ink);color-scheme:light}
 body :is(.text-link,.text-button,.quickview-btn,.eyebrow,.home-category-view-all){color:#10273f}
 body :is(.text-link,.text-button,.quickview-btn,.home-category-view-all):hover{color:#006d85}
 body :is(input,select,textarea){border-color:#bbc9d9;color:#182c43}
-body :is(input,select,textarea):focus{border-color:#10273f}
+html:not([data-pointer-focus]) body :is(input,select,textarea):focus{border-color:#10273f}
 body :is(button,a,input,select,textarea,summary):focus-visible{outline:3px solid #087c98;outline-offset:3px}
 body input[type=range]{accent-color:#10273f}
 body input::file-selector-button{background:#10273f;color:#fff;border:0;border-radius:5px;padding:8px 12px;margin-right:12px;cursor:pointer}
@@ -134,7 +134,7 @@ body :is(.pbar-pill,.basket-export-actions button,.tier-chip,.subcat-chip,.megam
 body :is(.pbar-pill,.basket-export-actions button,.tier-chip,.subcat-chip,.megamenu-tab,.ai-prod-pill):hover,
 body :is(.tier-chip.is-active,.subcat-chip[aria-pressed=true],.megamenu-tab[aria-selected=true]){background:#10273f;border-color:#10273f;color:#fff}
 body .pbar-pill:hover b{background:#fff;color:#10273f}
-body :is(.pbar-search,.header-search):focus-within{border-color:#10273f;box-shadow:0 0 0 3px #10273f18}
+html:not([data-pointer-focus]) body :is(.pbar-search,.header-search):focus-within{border-color:#10273f;box-shadow:0 0 0 3px #10273f18}
 body :is(.pbar-results,.header-products-popover){border-color:#bbc9d9;border-top:3px solid #10273f;box-shadow:0 14px 36px #10273f24}
 body .pbar-item:hover{background:#eef3f9}
 body .shop-suggestion-active{outline-color:#10273f}

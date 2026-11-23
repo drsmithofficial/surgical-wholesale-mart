@@ -4,6 +4,10 @@
   const motion = matchMedia('(prefers-reduced-motion: no-preference)');
   const key = 'swm-footer-navigation';
   const root = document.documentElement;
+  document.addEventListener('pointerdown', () => { root.dataset.pointerFocus = ''; }, true);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Tab') delete root.dataset.pointerFocus;
+  }, true);
   let loaderTimer;
   let loaderTimeout;
 
