@@ -838,7 +838,9 @@
     const log = panel.querySelector('.assistant-chat-log');
     const field = panel.querySelector('#assistant-chat-input');
     const form = field.form;
+    const chatMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let currentProduct = byId(new URLSearchParams(location.search).get('id'));
+    let finishReply;
     const replyCounts = new Map();
     const prompts = {
       empty: [
@@ -863,6 +865,7 @@
       return prompts[key][count % prompts[key].length];
     }
     function message(content, user = false) {
+      finishReply?.();
       const bubble = document.createElement('p');
       bubble.className = user ? 'assistant-message assistant-message-user' : 'assistant-message';
       if (user) bubble.textContent = content;
@@ -871,11 +874,44 @@
         const count = replyCounts.get(reply) || 0;
         replyCounts.set(reply, count + 1);
         const followUps = ['Here’s what I found for that request:', 'Checking the same information again:', 'Here’s the result for that request:'];
-        bubble.textContent = count ? `${followUps[(count - 1) % followUps.length]}\n${reply}` : reply;
+        const text = count ? `${followUps[(count - 1) % followUps.length]}\n${reply}` : reply;
+        if (chatMotion.matches) bubble.textContent = text;
+        else {
+          const characters = typeof Intl.Segmenter === 'function'
+            ? Array.from(new Intl.Segmenter().segment(text), item => item.segment)
+            : Array.from(text);
+          const interval = Math.min(26, 5400 / characters.filter(character => /\S/.test(character)).length);
+          let elapsed = 0;
+          for (const character of characters) {
+            if (!/\S/.test(character)) {
+              bubble.append(character);
+              continue;
+            }
+            const span = document.createElement('span');
+            span.className = 'assistant-reply-character';
+            span.style.setProperty('--character-delay', `${elapsed}ms`);
+            span.textContent = character;
+            bubble.append(span);
+            elapsed += interval;
+          }
+          bubble.setAttribute('data-revealing', '');
+          const complete = () => {
+            const atBottom = log.scrollHeight - log.scrollTop - log.clientHeight < 24;
+            clearTimeout(timer);
+            bubble.removeAttribute('data-revealing');
+            finishReply = null;
+            if (atBottom) log.scrollTop = log.scrollHeight;
+          };
+          const timer = setTimeout(complete, elapsed + 180);
+          finishReply = complete;
+        }
       }
       log.appendChild(bubble);
       return bubble;
     }
+    chatMotion.addEventListener('change', () => {
+      if (chatMotion.matches) finishReply?.();
+    });
     const destinations = [
       ['Home', 'index.html', /^(?:home|homepage|home page)$/],
       ['All Products', 'products.html', /^(?:(?:all )?products|catalogue|catalog|categories|product categories)$/],
@@ -917,19 +953,43 @@
       const count = value => new Set(normalize(value).split(' ').filter(word => words.has(word))).size;
       return (root.SWM_SITE_CONTENT || []).flatMap(([url, title, blocks]) => {
         let best = null;
-        blocks.forEach(([heading, text]) => {
+        blocks.forEach(([heading, text], index) => {
           const hits = count(text);
           if (!hits) return;
-          const score = hits * 6 + Number(heading) * 2 + count(title);
-          if (!best || score > best.score) best = { url, title, text, score, heading };
+          const next = blocks[index + 1];
+          const context = heading && next && !next[0] && next[1].length >= 24 ? next[1] : '';
+          const score = hits * 6 + Number(heading) * 2 + count(title) + Number(Boolean(context));
+          const sentence = (context || text).split(/(?<=[.!?])\s+/)
+            .sort((a, b) => count(b) - count(a))[0];
+          if (!best || score > best.score) best = { url, title, text: context ? `${text}\n${sentence}` : sentence, score };
         });
         return best ? [best] : [];
       }).sort((a, b) => b.score - a.score).slice(0, 3);
     }
     function showSiteContent(matches) {
-      const { title, text } = matches[0];
+      const { text } = matches[0];
       const excerpt = text.length > 280 ? text.slice(0, 280).replace(/\s+\S*$/, '') + '…' : text;
-      showLinks(`I found this on ${title}: ${excerpt}`, matches.map(page => [page.title, page.url]));
+      showLinks(excerpt, matches.map(page => [page.title, page.url]));
+    }
+    function answerLeadershipRequest(query) {
+      const leaders = root.SWM_SITE_CONTACTS?.leadership || [];
+      const roles = [
+        [/\b(?:ceo|chief executive officer)\b/, 'CEO'],
+        [/\b(?:cmo|chief marketing officer)\b/, 'CMO'],
+        [/\b(?:chairperson|chairman|chairwoman)\b/, 'Chairperson'],
+        [/\bmanaging director\b/, 'Managing Director']
+      ];
+      const role = roles.find(([pattern]) => pattern.test(query))?.[1];
+      if (!role && !/\b(?:leaders?|leadership|leadership team|executives|who (?:leads|runs) (?:the |this )?company)\b/.test(query)) return false;
+      const amounts = { one: 1, two: 2, three: 3, four: 4 };
+      const amount = /\b(\d+|one|two|three|four)\b/.exec(query)?.[1];
+      const limit = amount ? amounts[amount] || Math.max(1, Number(amount)) : leaders.length;
+      const matches = role ? leaders.filter(person => person.role === role) : leaders.slice(0, limit);
+      const reply = matches.length
+        ? matches.map(person => `${person.name} — ${person.role}`).join('\n')
+        : 'The published leadership list does not include that role.';
+      showLinks(reply, [['View leadership team', 'about.html#leadership-title']]);
+      return true;
     }
     function answerContactRequest(query) {
       const contacts = root.SWM_SITE_CONTACTS;
@@ -995,6 +1055,7 @@
       }
       message(query, true);
       const normalized = root.SWM_SHOP_CORE.normalize(query);
+      if (answerLeadershipRequest(normalized)) return;
       if (answerContactRequest(normalized)) return;
       const target = normalized
         .replace(/^please\s+/, '')
@@ -1039,7 +1100,8 @@
         !mentions.some(other => other.start <= mention.start && other.end >= mention.end &&
           other.end - other.start > mention.end - mention.start)
       ).map(mention => mention.page))];
-      if (pages.length && !(normalized === 'warranty' && currentProduct)) {
+      const asksForPage = /\b(?:link|page|open|take me to|go to|can i see|where (?:can|do|to))\b/.test(normalized);
+      if (pages.length && asksForPage && !(normalized === 'warranty' && currentProduct)) {
         showLinks(pages.length === 1 ? `Here’s the link to ${pages[0][0]}.` : 'Here are the pages you mentioned.', pages);
         return;
       }
@@ -1057,6 +1119,8 @@
         message(nextPrompt('unrelated'));
       } else if (productQuery && siteMatches.length && (!information || /^(details?|features?)$/.test(information))) {
         showSiteContent(siteMatches);
+      } else if (pages.length && !information && !direct.length) {
+        showLinks(pages.length === 1 ? `Here’s the link to ${pages[0][0]}.` : 'Here are the pages you mentioned.', pages);
       } else if (information && /^(price|pricing|cost|stock|availability|available|delivery|shipping|checkout|payment)$/.test(information)) {
         if (product) currentProduct = product;
         const subject = product ? ` for ${product.name}` : '';

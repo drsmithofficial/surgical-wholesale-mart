@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 class PageContent(HTMLParser):
-    BLOCKS = {"h1", "h2", "h3", "h4", "p", "li", "summary", "dt", "dd", "address", "figcaption"}
+    BLOCKS = {"h1", "h2", "h3", "h4", "p", "li", "summary", "dt", "dd", "address", "figcaption", "strong", "small", "td", "th"}
 
     def __init__(self):
         super().__init__()
@@ -71,12 +71,14 @@ def build_site_index(root):
         "phone": company["phone"],
         "whatsapp": company["whatsapp"],
         "locations": [{key: item[key] for key in fields if key in item} for item in company["locations"]],
+        "leadership": [{key: person[key] for key in ("name", "role")} for person in company["leadership"]],
     }
     serialize = lambda data: json.dumps(data, ensure_ascii=True, separators=(",", ":"))
     output.write_text(
         "window.SWM_SITE_CONTENT = " + serialize(index) + ";\n"
         + "window.SWM_SITE_CONTACTS = " + serialize(contacts) + ";\n",
         encoding="utf-8",
+        newline="\n",
     )
 
 
