@@ -196,7 +196,6 @@ body .home-reference-footer .home-footer-social a {
 .home-footer-social a:hover { filter: brightness(1.2); }
 .home-footer-social svg { width: 62%; height: 62%; }
 .home-footer-social span { font-size: clamp(13px, 1.35vw, 26px); }
-.home-social-linkedin { background: #0677ad; }
 .home-social-youtube { background: #ed161d; }
 .home-social-facebook { background: #096ff2; }
 .home-social-instagram { background: radial-gradient(circle at 24% 100%, #ffcf42, #f03958 45%, #902fbc 75%); }

@@ -238,17 +238,10 @@
       sentinel.setAttribute('aria-hidden', 'true');
       $('#catalog-grid').after(sentinel, more);
       if ('IntersectionObserver' in window) {
-        const phone = window.matchMedia('(max-width: 700px)');
         catalogueObserver = new IntersectionObserver(entries => {
-          if (phone.matches && entries.some(entry => entry.isIntersecting) && !more.hidden) more.click();
+          if (entries.some(entry => entry.isIntersecting) && !more.hidden) more.click();
         }, { rootMargin: '0px 0px 320px' });
-        const syncPagination = () => {
-          more.toggleAttribute('data-auto-load', phone.matches);
-          if (phone.matches && !more.hidden) catalogueObserver.observe(sentinel);
-          else catalogueObserver.unobserve(sentinel);
-        };
-        phone.addEventListener('change', syncPagination);
-        syncPagination();
+        more.setAttribute('data-auto-load', '');
       }
     }
     const updateMore = () => {
@@ -265,6 +258,7 @@
       const next = list.slice(limit, limit + 24);
       limit += 24;
       $('#catalog-grid').insertAdjacentHTML('beforeend', next.map(card).join(''));
+      catalogueObserver?.unobserve(sentinel);
       updateMore();
       sync();
     };
@@ -814,8 +808,8 @@
       <div class="swm-assistant-body assistant-chat-log" role="log" aria-label="Conversation" tabindex="0">
         <div class="assistant-intro">
           <div class="assistant-intro-copy">
-            <h3>Catalogue searches only</h3>
-            <p>Enter a product name, model number, or related keyword. Specify the details you need.</p>
+            <h3>How can we help?</h3>
+            <p>Ask about Surgical Wholesale Mart, explore our product categories, or get details about a specific product.</p>
             <a href="contact.html">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 5h6v6m0-6-8 8m7 0v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
           </div>
           <img src="assets/ai-assistant-robot.png" width="547" height="836" alt="">
