@@ -128,31 +128,42 @@ export async function POST(request) {
         } }
       }
     };
-    const url = key
-      ? `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`
-      : 'https://ai-gateway.vercel.sh/v1/chat/completions';
-    const payload = key ? {
+    const geminiPayload = candidate => ({
       systemInstruction: { parts: [{ text: instructions }] },
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       generationConfig: {
         temperature: 0, maxOutputTokens: 650, responseMimeType: 'application/json',
-        ...(model.startsWith('gemini-3') ? { thinkingConfig: { thinkingLevel: 'MINIMAL' } } : {}),
+        ...(candidate.startsWith('gemini-3') ? { thinkingConfig: { thinkingLevel: 'MINIMAL' } } : {}),
         responseJsonSchema: schema
       }
-    } : {
+    });
+    const gatewayPayload = {
       model: 'nvidia/nemotron-3.5-lightning-free',
       messages: [{ role: 'system', content: instructions }, { role: 'user', content: prompt }],
       temperature: 0, max_tokens: 650, reasoning_effort: 'none',
       response_format: { type: 'json_schema', json_schema: { name: 'site_records', strict: true, schema } }
     };
-    const response = await fetch(url, {
-      method: 'POST', signal: AbortSignal.timeout(16000),
-      headers: {
-        'Content-Type': 'application/json',
-        ...(key ? { 'x-goog-api-key': key } : { Authorization: 'Bearer ' + gatewayToken })
-      },
-      body: JSON.stringify(payload)
-    });
+    const candidates = key ? [...new Set([model, 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite'])] : [null];
+    let response;
+    for (const candidate of candidates) {
+      try {
+        const url = candidate
+          ? `https://generativelanguage.googleapis.com/v1beta/models/${candidate}:generateContent`
+          : 'https://ai-gateway.vercel.sh/v1/chat/completions';
+        response = await fetch(url, {
+          method: 'POST', signal: AbortSignal.any([request.signal, AbortSignal.timeout(7500)]),
+          headers: {
+            'Content-Type': 'application/json',
+            ...(key ? { 'x-goog-api-key': key } : { Authorization: 'Bearer ' + gatewayToken })
+          },
+          body: JSON.stringify(candidate ? geminiPayload(candidate) : gatewayPayload)
+        });
+        if (response.ok || ![408, 429, 500, 502, 503, 504].includes(response.status) || candidate === candidates.at(-1)) break;
+        await response.body?.cancel();
+      } catch (error) {
+        if (request.signal.aborted || candidate === candidates.at(-1)) throw error;
+      }
+    }
     if (!response.ok) {
       const failure = await response.json().catch(() => ({}));
       const reason = String(failure.error?.message || '');
