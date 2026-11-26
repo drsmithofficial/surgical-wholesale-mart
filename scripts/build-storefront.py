@@ -61,7 +61,7 @@ def mobile_navigation(filename):
 
 def shell(filename,title,body,home=False):
  catalogue_suffix='catalogue-first-paint' if filename=='products.html' else None
- storefront_style_version='catalogue-photo-platform' if filename=='products.html' else 'assistant-character-reveal'
+ storefront_style_version='catalogue-clean-photos' if filename=='products.html' else 'assistant-character-reveal'
  storefront_version='catalogue-auto-load' if filename=='products.html' else 'assistant-character-reveal'
  catalog_tools=(ROOT/'data/catalog-tools.html').read_text(encoding='utf-8').replace('{{product_count}}',str(len(products))) if filename=='products.html' else ''
  footer_transition=(ROOT/'data/mobile-page-transition.html').read_text(encoding='utf-8').strip()
