@@ -107,7 +107,7 @@ export async function POST(request) {
   try {
     const records = retrieve(loadRecords(), input.question, history);
     if (!records.length) return json({ matches: [] });
-    const model = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
+    const model = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
     if (!/^gemini-[a-z0-9.-]+$/.test(model)) return json({ unavailable: true }, 503);
     const prompt = JSON.stringify({
       question: input.question, history,
