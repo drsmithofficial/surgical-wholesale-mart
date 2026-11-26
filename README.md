@@ -20,6 +20,12 @@ python3 scripts/build-storefront.py
 
 This regenerates the storefront and company-information pages and `js/catalog.js`. No package installation or framework build is required. `js/store.js` handles commerce interactions; `js/hero.js` handles hero transitions.
 
+## Product Assistant
+
+The robot menu uses the same-origin `/api/product-assistant` endpoint. On Vercel the function uses AI Gateway with the deployment's `VERCEL_OIDC_TOKEN`. A server-only `AI_GATEWAY_API_KEY` can also authenticate to the gateway, or `GEMINI_API_KEY` can use Gemini directly. The default model is `gemini-3.1-flash-lite`, with an optional `GEMINI_MODEL` override. For local testing, run `node scripts/preview.cjs` with either server-side API key. If the endpoint or model is unavailable, the robot uses the local catalogue assistant.
+
+The model selects records from the published catalogue and site index. The server returns only facts and links from those records. It has no browsing tools or access to orders, carts, customer records, or private company systems. Recent questions are held in memory until the menu closes. Run the normal storefront generator when publishing catalogue or company changes. If editing published HTML directly, run `python3 scripts/build_site_content.py` to refresh the website index before publishing. There is no separate model training or data upload.
+
 ## Verify
 
 ```sh

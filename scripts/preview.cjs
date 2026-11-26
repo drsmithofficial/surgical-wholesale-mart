@@ -15,6 +15,19 @@ const server = http.createServer(async (req, res) => {
     req.on('close', () => clients.delete(res));
     return;
   }
+  if (req.url === '/api/product-assistant') {
+    if (req.method !== 'POST') {
+      res.writeHead(405, { Allow: 'POST' }).end();
+      return;
+    }
+    const { POST } = await import('../api/product-assistant.mjs');
+    const request = new Request('http://127.0.0.1:4173/api/product-assistant', {
+      method: 'POST', headers: req.headers, body: req, duplex: 'half'
+    });
+    const response = await POST(request);
+    res.writeHead(response.status, Object.fromEntries(response.headers)).end(await response.text());
+    return;
+  }
   try {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const filename = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));

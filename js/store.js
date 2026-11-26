@@ -836,6 +836,9 @@
     const pageProduct = byId(new URLSearchParams(location.search).get('id'));
     let currentProduct = pageProduct;
     let recentProducts = [];
+    const aiHistory = [];
+    let aiRequest;
+    const sendButton = form.querySelector('button[type="submit"]');
     const welcomeContent = log.childElementCount;
     let finishReply;
     const replyCounts = new Map();
@@ -1158,7 +1161,6 @@
         log.scrollTop = log.scrollHeight;
         return;
       }
-      message(query, true);
       const normalized = root.SWM_SHOP_CORE.normalize(query);
       if (answerContactRequest(normalized)) return;
       if (answerLeadershipRequest(normalized)) return;
@@ -1266,10 +1268,64 @@
       }
       log.scrollTop = log.scrollHeight;
     }
-    form.addEventListener('submit', event => {
+    form.addEventListener('submit', async event => {
       event.preventDefault();
-      respond(field.value);
+      if (aiRequest) return;
+      const question = field.value.trim().slice(0, 400);
       field.value = '';
+      if (!question) {
+        respond('');
+        return;
+      }
+      message(question, true);
+      log.scrollTop = log.scrollHeight;
+      if (/\b(?:passwords?|passcodes?|api[ -]?keys?|access tokens?|credentials?|private|confidential|internal records?|customer (?:records?|data|details)|personal (?:info(?:rmation)?|details|emails?|numbers?|addresses|contacts?)|home addresses?)\b/i.test(question)) {
+        message('I can help with public information about Surgical Wholesale Mart and its products.');
+        return;
+      }
+      const controller = new AbortController();
+      aiRequest = controller;
+      sendButton.disabled = true;
+      log.setAttribute('aria-busy', 'true');
+      try {
+        const response = await fetch('api/product-assistant', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          signal: controller.signal,
+          body: JSON.stringify({ question, history: aiHistory })
+        });
+        if (!response.ok) throw new Error('Assistant unavailable');
+        const { matches, restricted } = await response.json();
+        if (controller.signal.aborted) return;
+        if (!Array.isArray(matches)) throw new Error('Invalid assistant response');
+        if (restricted) {
+          message('I can help with public information about Surgical Wholesale Mart and its products.');
+          return;
+        }
+        if (!matches.length) {
+          showLinks('I couldn’t verify that from our published website. You can contact our team for help with Surgical Wholesale Mart or its products.', [
+            ['Contact us', 'contact.html']
+          ]);
+          return;
+        }
+        const facts = [...new Set(matches.flatMap(match => match.facts))];
+        const links = [...new Map(matches.map(match => [match.href, [match.title, match.href]])).values()];
+        if (facts.length) message(facts.join('\n'));
+        else showLinks(matches.length === 1 ? 'Here’s the page you asked for.' : 'Here are the matching pages.', links);
+        recentProducts = matches.map(match => byId(new URL(match.href, location.href).searchParams.get('id'))).filter(Boolean);
+        if (recentProducts.length === 1) currentProduct = recentProducts[0];
+        aiHistory.push(question + '\n' + matches.map(match => match.title).join(', '));
+        if (aiHistory.length > 6) aiHistory.shift();
+      } catch {
+        if (!controller.signal.aborted) respond(question);
+      } finally {
+        if (aiRequest === controller) {
+          aiRequest = null;
+          sendButton.disabled = false;
+          log.removeAttribute('aria-busy');
+          log.scrollTop = log.scrollHeight;
+        }
+      }
     });
     log.addEventListener('click', event => {
       const add = event.target.closest('[data-assistant-add]');
@@ -1282,6 +1338,11 @@
       log.scrollTop = log.scrollHeight;
     });
     function closeAssistant() {
+      aiRequest?.abort();
+      aiRequest = null;
+      aiHistory.length = 0;
+      sendButton.disabled = false;
+      log.removeAttribute('aria-busy');
       finishReply?.();
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
