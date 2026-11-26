@@ -85,7 +85,8 @@ const instructions = [
 export async function POST(request) {
   const json = (body, status = 200) => Response.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
   const key = process.env.GEMINI_API_KEY;
-  const gatewayToken = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
+  const gatewayToken = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN
+    || (process.env.VERCEL && request.headers.get('x-vercel-oidc-token'));
   if (!key && !gatewayToken) return json({ unavailable: true }, 503);
   if (request.headers.get('sec-fetch-site') === 'cross-site') return json({ error: 'Same-origin request required' }, 403);
   let input;
@@ -145,7 +146,10 @@ export async function POST(request) {
       },
       body: JSON.stringify(payload)
     });
-    if (!response.ok) return json({ unavailable: true }, 503);
+    if (!response.ok) {
+      console.warn('Product Assistant provider returned HTTP', response.status);
+      return json({ unavailable: true }, 503);
+    }
     const result = await response.json();
     const selection = JSON.parse((key
       ? result.candidates?.[0]?.content?.parts?.find(part => !part.thought && part.text)?.text
@@ -159,7 +163,8 @@ export async function POST(request) {
       return [{ title, href, facts: selected }];
     });
     return json({ matches });
-  } catch {
+  } catch (error) {
+    console.warn('Product Assistant request failed:', error.name);
     return json({ unavailable: true }, 503);
   }
 }
