@@ -61,11 +61,17 @@ function retrieve(records, question, history) {
   const current = terms(question.replace(/\be[ -]mail\b/gi, 'email'));
   const previous = terms(history.slice(-3).join(' '));
   const phrase = words(question).join(' ');
+  const weights = new Map([...current].map(term => {
+    const frequency = records.filter(record => record.titleTerms.has(term) || record.factTerms.has(term)).length;
+    return [term, 1 + Math.log((records.length + 1) / (frequency + 1))];
+  }));
   return records.map(record => {
     const title = words(record.title).join(' ');
     const phraseScore = title && (` ${phrase} `).includes(` ${title} `) ? 16 : 0;
     let score = phraseScore;
-    for (const term of current) score += (record.titleTerms.has(term) ? 6 : 0) + (record.factTerms.has(term) ? 2 : 0);
+    for (const term of current) score += weights.get(term) * (
+      (record.titleTerms.has(term) ? 6 : 0) + (record.factTerms.has(term) ? 2 : 0)
+    );
     for (const term of previous) score += record.titleTerms.has(term) ? 2 : 0;
     return { record, score };
   }).filter(entry => entry.score > 0).sort((a, b) => b.score - a.score).slice(0, 18)
