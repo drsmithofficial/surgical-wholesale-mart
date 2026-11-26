@@ -66,10 +66,11 @@ def build_site_index(root):
         index.append([page.name, "".join(parser.title).split("|", 1)[0].strip(), blocks])
     output = root / "js" / "site-content-index.js"
     company = json.loads((root / "data" / "company.json").read_text(encoding="utf-8"))
-    fields = ("id", "name", "region", "country", "address", "phone", "phoneDisplay", "contactLabel", "whatsapp", "whatsappDisplay")
+    fields = ("id", "name", "region", "country", "address", "phone", "phoneDisplay", "contactLabel", "whatsapp", "whatsappDisplay", "email")
     contacts = {
         "phone": company["phone"],
         "whatsapp": company["whatsapp"],
+        "email": company["email"],
         "locations": [{key: item[key] for key in fields if key in item} for item in company["locations"]],
         "leadership": [{key: person[key] for key in ("name", "role")} for person in company["leadership"]],
     }
