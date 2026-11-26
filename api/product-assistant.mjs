@@ -130,6 +130,7 @@ export async function POST(request) {
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       generationConfig: {
         temperature: 0, maxOutputTokens: 350, responseMimeType: 'application/json',
+        ...(model.startsWith('gemini-3') ? { thinkingConfig: { thinkingLevel: 'MINIMAL' } } : {}),
         responseJsonSchema: schema
       }
     } : {
@@ -139,7 +140,7 @@ export async function POST(request) {
       response_format: { type: 'json_schema', json_schema: { name: 'site_records', strict: true, schema } }
     };
     const response = await fetch(url, {
-      method: 'POST', signal: AbortSignal.timeout(6500),
+      method: 'POST', signal: AbortSignal.timeout(16000),
       headers: {
         'Content-Type': 'application/json',
         ...(key ? { 'x-goog-api-key': key } : { Authorization: 'Bearer ' + gatewayToken })
