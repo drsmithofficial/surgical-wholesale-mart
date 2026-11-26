@@ -809,7 +809,7 @@
         <div class="assistant-intro">
           <div class="assistant-intro-copy">
             <h3>How can we help?</h3>
-            <p>Ask about Surgical Wholesale Mart, explore our product categories, or get details about a specific product.</p>
+            <p>Ask about Surgical Wholesale Mart, explore our products, or ask a general question.</p>
             <a href="contact.html">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 5h6v6m0-6-8 8m7 0v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
           </div>
           <img src="assets/ai-assistant-robot.png" width="547" height="836" alt="">
@@ -1285,7 +1285,7 @@
       if (answerConversationPrompt(root.SWM_SHOP_CORE.normalize(question))) return;
       log.scrollTop = log.scrollHeight;
       if (/\b(?:passwords?|passcodes?|api[ -]?keys?|access tokens?|credentials?|private|confidential|internal records?|customer (?:records?|data|details)|personal (?:info(?:rmation)?|details|emails?|numbers?|addresses|contacts?)|home addresses?)\b/i.test(question)) {
-        message('I can help with public information about Surgical Wholesale Mart and its products.');
+        message('I can answer general questions and share public information about Surgical Wholesale Mart. Private information stays protected.');
         return;
       }
       const controller = new AbortController();
@@ -1300,11 +1300,17 @@
           body: JSON.stringify({ question, history: aiHistory })
         });
         if (!response.ok) throw new Error('Assistant unavailable');
-        const { matches, restricted } = await response.json();
+        const { matches, restricted, generalAnswer } = await response.json();
         if (controller.signal.aborted) return;
         if (!Array.isArray(matches)) throw new Error('Invalid assistant response');
         if (restricted) {
-          message('I can help with public information about Surgical Wholesale Mart and its products.');
+          message('I can answer general questions and share public information about Surgical Wholesale Mart. Private information stays protected.');
+          return;
+        }
+        if (generalAnswer && !matches.length) {
+          message(generalAnswer);
+          aiHistory.push(question + '\n' + generalAnswer.slice(0, 180));
+          if (aiHistory.length > 6) aiHistory.shift();
           return;
         }
         if (!matches.length) {
