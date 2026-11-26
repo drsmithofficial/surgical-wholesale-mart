@@ -6,7 +6,6 @@ const indexPath = fileURLToPath(new URL('../js/site-content-index.js', import.me
 const ignored = new Set('a an and about can could do does for from give how i in is it its me of on or please show tell that the this to was what when where which who with would you your'.split(' '));
 const words = value => String(value || '').toLowerCase().match(/[a-z0-9]+/g) || [];
 const terms = value => new Set(words(value).filter(word => word.length > 1 && !ignored.has(word)));
-const privateRequest = /\b(?:passwords?|passcodes?|api[ -]?keys?|access tokens?|credentials?|private|confidential|internal records?|customer (?:records?|data|details)|personal (?:info(?:rmation)?|details|emails?|numbers?|addresses|contacts?)|home addresses?)\b/i;
 
 function loadRecords() {
   const catalog = JSON.parse(readFileSync(catalogPath, 'utf8'));
@@ -88,7 +87,7 @@ const instructions = [
   'Do not substitute a different branch or product. If the requested facts are absent, return no selections.',
   'If the product is ambiguous, return no selections and an empty generalAnswer.',
   'For a general question unrelated to this storefront, return no selections and answer directly in generalAnswer using your general knowledge. Keep it concise and natural.',
-  'You have no live web access. Do not claim to have checked current information. Do not disclose private information or credentials.'
+  'You have no live web access or access to private systems. Do not claim to have checked current information or invent, expose, or request real credentials. Answer general questions about these topics normally.'
 ].join(' ');
 
 export async function POST(request) {
@@ -110,9 +109,8 @@ export async function POST(request) {
   if (typeof input?.question !== 'string' || !input.question.trim() || input.question.length > 400) {
     return json({ error: 'A question of up to 400 characters is required' }, 400);
   }
-  if (privateRequest.test(input.question)) return json({ matches: [], restricted: true });
   const history = Array.isArray(input.history) ? input.history.slice(-6)
-    .filter(turn => typeof turn === 'string' && !privateRequest.test(turn)).map(turn => turn.slice(0, 300)) : [];
+    .filter(turn => typeof turn === 'string').map(turn => turn.slice(0, 300)) : [];
   try {
     const records = retrieve(loadRecords(), input.question, history);
     const explicitlyAboutStore = /\b(?:surgical wholesale mart|swm|dr smith|this (?:site|website|store|company)|your (?:catalogue|catalog|products?|branches?|company|team|prices?|email|whatsapp|phone))\b/i.test(words(input.question).join(' '));

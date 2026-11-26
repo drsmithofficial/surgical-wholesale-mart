@@ -1284,10 +1284,6 @@
       message(question, true);
       if (answerConversationPrompt(root.SWM_SHOP_CORE.normalize(question))) return;
       log.scrollTop = log.scrollHeight;
-      if (/\b(?:passwords?|passcodes?|api[ -]?keys?|access tokens?|credentials?|private|confidential|internal records?|customer (?:records?|data|details)|personal (?:info(?:rmation)?|details|emails?|numbers?|addresses|contacts?)|home addresses?)\b/i.test(question)) {
-        message('I can answer general questions and share public information about Surgical Wholesale Mart. Private information stays protected.');
-        return;
-      }
       const controller = new AbortController();
       aiRequest = controller;
       sendButton.disabled = true;
@@ -1300,13 +1296,9 @@
           body: JSON.stringify({ question, history: aiHistory })
         });
         if (!response.ok) throw new Error('Assistant unavailable');
-        const { matches, restricted, generalAnswer } = await response.json();
+        const { matches, generalAnswer } = await response.json();
         if (controller.signal.aborted) return;
         if (!Array.isArray(matches)) throw new Error('Invalid assistant response');
-        if (restricted) {
-          message('I can answer general questions and share public information about Surgical Wholesale Mart. Private information stays protected.');
-          return;
-        }
         if (generalAnswer && !matches.length) {
           message(generalAnswer);
           aiHistory.push(question + '\n' + generalAnswer.slice(0, 180));
