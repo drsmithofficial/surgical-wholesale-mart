@@ -147,7 +147,13 @@ export async function POST(request) {
       body: JSON.stringify(payload)
     });
     if (!response.ok) {
-      console.warn('Product Assistant provider returned HTTP', response.status);
+      const failure = await response.json().catch(() => ({}));
+      const reason = String(failure.error?.message || '');
+      const category = /payment method|credit card|billing|credit balance/i.test(reason) ? 'billing'
+        : /free tier|free credit/i.test(reason) ? 'free-tier access'
+          : /permission|forbidden|unauthoriz|access|token/i.test(reason) ? 'authorization'
+            : 'other';
+      console.warn('Product Assistant provider returned HTTP', response.status, category);
       return json({ unavailable: true }, 503);
     }
     const result = await response.json();
