@@ -1154,6 +1154,27 @@
       return { text, hasInformation };
     }
 
+    function answerConversationPrompt(normalized) {
+      if (/^(?:(?:hi+|hello+|hey+)(?: there)?|good morning|good afternoon|good evening)$/.test(normalized)) {
+        showLinks('Hello! What are you looking for? You can browse the catalogue, search for a product, or ask me for a page link.', destinations.slice(1, 3));
+        return true;
+      }
+      if (/^(?:(?:hi|hello|hey) )?how are you(?: doing)?$/.test(normalized)) {
+        showLinks('I’m ready to help! You can ask me where to find a page or tell me what product you’re looking for.', destinations.slice(1, 3));
+        return true;
+      }
+      if (/^(?:thanks|thank you|thank you so much)$/.test(normalized)) {
+        message('You’re welcome. Let me know if you need another product or page link.');
+        log.scrollTop = log.scrollHeight;
+        return true;
+      }
+      if (/^(?:help|what can you do|where to find things|where can i find things|(?:show me |give me )?(?:links?(?: for| to) )?(?:all )?(?:web ?pages|site pages|pages)|site ?map|directory)$/.test(normalized)) {
+        showLinks('Here are the pages you can open directly.', destinations);
+        return true;
+      }
+      return false;
+    }
+
     function respond(text) {
       const query = text.trim().slice(0, 180);
       if (!query) {
@@ -1171,23 +1192,6 @@
         .replace(/^(?:the|your) /, '')
         .replace(/ (?:page|link)(?: please)?$/, '')
         .replace(/ please$/, '');
-      if (/^(?:hi|hello|hey|hi there|hello there|hey there|good morning|good afternoon|good evening)$/.test(normalized)) {
-        showLinks('Hello! What are you looking for? You can browse the catalogue, search for a product, or ask me for a page link.', destinations.slice(1, 3));
-        return;
-      }
-      if (/^(?:(?:hi|hello|hey) )?how are you(?: doing)?$/.test(normalized)) {
-        showLinks('I’m ready to help! You can ask me where to find a page or tell me what product you’re looking for.', destinations.slice(1, 3));
-        return;
-      }
-      if (/^(?:thanks|thank you|thank you so much)$/.test(normalized)) {
-        message('You’re welcome. Let me know if you need another product or page link.');
-        log.scrollTop = log.scrollHeight;
-        return;
-      }
-      if (/^(?:help|what can you do|where to find things|where can i find things|(?:show me |give me )?(?:links?(?: for| to) )?(?:all )?(?:web ?pages|site pages|pages)|site ?map|directory)$/.test(normalized)) {
-        showLinks('Here are the pages you can open directly.', destinations);
-        return;
-      }
       const destination = destinations.find(([, , keywords]) => keywords.test(target));
       if (destination && !(normalized === 'warranty' && currentProduct)) {
         showLinks(`Here’s the link to ${destination[0]}.`, [destination]);
@@ -1278,6 +1282,7 @@
         return;
       }
       message(question, true);
+      if (answerConversationPrompt(root.SWM_SHOP_CORE.normalize(question))) return;
       log.scrollTop = log.scrollHeight;
       if (/\b(?:passwords?|passcodes?|api[ -]?keys?|access tokens?|credentials?|private|confidential|internal records?|customer (?:records?|data|details)|personal (?:info(?:rmation)?|details|emails?|numbers?|addresses|contacts?)|home addresses?)\b/i.test(question)) {
         message('I can help with public information about Surgical Wholesale Mart and its products.');
