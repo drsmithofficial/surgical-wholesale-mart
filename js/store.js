@@ -834,47 +834,18 @@
     const form = field.form;
     const chatMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const pageProduct = byId(new URLSearchParams(location.search).get('id'));
-    let currentProduct = pageProduct;
-    let recentProducts = [];
     const aiHistory = [];
     let aiRequest;
     const sendButton = form.querySelector('button[type="submit"]');
     const welcomeContent = log.childElementCount;
     let finishReply;
-    const replyCounts = new Map();
-    const prompts = {
-      empty: [
-        'What can I help you find? Enter a product name, model number, or a page name.',
-        'Try typing a keyword like “wheelchair” or a page name like “Contact Us”.',
-        'I’m ready when you are. Tell me what product or page you need.'
-      ],
-      unmatched: [
-        'I’m not sure which product you mean. Could you share its name, model number, or a keyword describing what you need?',
-        'That wording didn’t match the catalogue. Try a shorter product name, or tell me what type of equipment you’re looking for.',
-        'I haven’t found a suitable match yet. A model number or a category such as hospital furniture would help.'
-      ],
-      unrelated: [
-        'I’m here to help with the storefront. What product or page would you like to find?',
-        'Try asking me for a product, a category, or a page link such as Contact Us.',
-        'I can look up catalogue information or point you to a page. For example, try “patient monitor” or “locations”.'
-      ]
-    };
-    function nextPrompt(key) {
-      const count = replyCounts.get(key) || 0;
-      replyCounts.set(key, count + 1);
-      return prompts[key][count % prompts[key].length];
-    }
-    function message(content, user = false) {
+    function message(text, user = false) {
+
       finishReply?.();
       const bubble = document.createElement('p');
       bubble.className = user ? 'assistant-message assistant-message-user' : 'assistant-message';
-      if (user) bubble.textContent = content;
+      if (user) bubble.textContent = text;
       else {
-        const reply = content?.trim() || nextPrompt('unmatched');
-        const count = replyCounts.get(reply) || 0;
-        replyCounts.set(reply, count + 1);
-        const followUps = ['Here’s what I found for that request:', 'Checking the same information again:', 'Here’s the result for that request:'];
-        const text = count ? `${followUps[(count - 1) % followUps.length]}\n${reply}` : reply;
         if (chatMotion.matches) bubble.textContent = text;
         else {
           const characters = typeof Intl.Segmenter === 'function'
@@ -912,25 +883,6 @@
     chatMotion.addEventListener('change', () => {
       if (chatMotion.matches) finishReply?.();
     });
-    const destinations = [
-      ['Home', 'index.html', /^(?:home|homepage|home page)$/],
-      ['All Products', 'products.html', /^(?:(?:all )?products|catalogue|catalog|categories|product categories)$/],
-      ['Search Products', 'search.html', /^(?:product search|search products|find products|search)$/],
-      ['Cart', 'cart.html', /^(?:(?:my |shopping )?cart|basket)$/],
-      ['Contact Us', 'contact.html', /^(?:contact(?: us| details)?|phone(?: number)?|email(?: address)?|talk to someone)$/],
-      ['About Us', 'about.html', /^(?:about(?: us)?|company|company information)$/],
-      ['Locations', 'locations.html', /^(?:locations?|address|branches|experience centres?)$/],
-      ['Turnkey Projects', 'services.html', /^(?:services|turnkey(?: projects)?|hospital projects)$/],
-      ['Support', 'support.html', /^(?:support|customer service|after sales)$/],
-      ['Warranty', 'warranty.html', /^(?:warranty|warranty policy)$/],
-      ['Book a Meeting', 'meeting.html', /^(?:meeting|book (?:a )?meeting)$/],
-      ['Testimonials', 'testimonials.html', /^(?:testimonials|reviews|customer feedback)$/],
-      ['Buying Guides', 'blog.html', /^(?:blog|buying guides?|guides)$/],
-      ['Privacy Policy', 'privacy.html', /^(?:privacy(?: policy)?)$/],
-      ['Terms and Conditions', 'terms.html', /^(?:terms(?: and conditions)?|conditions)$/],
-      ['Site Map', 'sitemap.html', /^(?:site ?map|directory)$/],
-      ['Checkout (coming soon)', 'checkout.html', /^checkout$/]
-    ];
     function showLinks(text, links) {
       message(text);
       const navigation = document.createElement('nav');
@@ -945,344 +897,13 @@
       log.appendChild(navigation);
       log.scrollTop = log.scrollHeight;
     }
-    function findSiteContent(query) {
-      const normalize = root.SWM_SHOP_CORE.normalize;
-      const ignored = new Set('a about am an and any are be can could do does for from get give have how i in is it its link me of on or our page please provide see show site tell that the this to was what when where which who will with would you your'.split(' '));
-      const words = new Set(normalize(query).split(' ').filter(word => word.length >= 2 && !ignored.has(word)));
-      if (!words.size) return [];
-      const count = value => new Set(normalize(value).split(' ').filter(word => words.has(word))).size;
-      const minimumHits = Math.ceil(words.size * .67);
-      const ranked = (root.SWM_SITE_CONTENT || []).flatMap(([url, title, blocks]) => {
-        let best = null;
-        blocks.forEach(([heading, text], index) => {
-          const next = blocks[index + 1];
-          const context = heading && next && !next[0] && next[1].length >= 24 ? next[1] : '';
-          const sentence = (context || text).split(/(?<=[.!?])\s+/)
-            .sort((a, b) => count(b) - count(a))[0];
-          const excerpt = context && count(sentence) ? `${text}\n${sentence}` : context ? text : sentence;
-          const hits = count(excerpt);
-          if (hits < minimumHits) return;
-          const score = hits * 6 + Number(heading) * 2 + count(title) + Number(Boolean(context));
-          if (!best || score > best.score) best = { url, title, text: excerpt, score, hits };
-        });
-        return best ? [best] : [];
-      }).sort((a, b) => b.score - a.score);
-      return ranked.filter(match => match.hits === ranked[0]?.hits).slice(0, 3);
-    }
-    function showSiteContent(matches) {
-      const { text } = matches[0];
-      const excerpt = text.length > 280 ? text.slice(0, 280).replace(/\s+\S*$/, '') + '…' : text;
-      showLinks(excerpt, matches.map(page => [page.title, page.url]));
-    }
-    function answerLeadershipRequest(query) {
-      const leaders = root.SWM_SITE_CONTACTS?.leadership || [];
-      const roles = [
-        [/\b(?:ceo|chief executive officer)\b/, 'CEO'],
-        [/\b(?:cmo|chief marketing officer)\b/, 'CMO'],
-        [/\b(?:chairperson|chairman|chairwoman)\b/, 'Chairperson'],
-        [/\bmanaging director\b/, 'Managing Director']
-      ];
-      const role = roles.find(([pattern]) => pattern.test(query))?.[1];
-      if (!role && !/\b(?:leaders?|leadership|leadership team|executives|who (?:leads|runs) (?:the |this )?company)\b/.test(query)) return false;
-      const amounts = { one: 1, two: 2, three: 3, four: 4 };
-      const amount = /\b(\d+|one|two|three|four)\b/.exec(query)?.[1];
-      const limit = amount ? amounts[amount] || Math.max(1, Number(amount)) : leaders.length;
-      const matches = role ? leaders.filter(person => person.role === role) : leaders.slice(0, limit);
-      const reply = matches.length
-        ? matches.map(person => `${person.name} — ${person.role}`).join('\n')
-        : 'The published leadership list does not include that role.';
-      showLinks(reply, [['View leadership team', 'about.html#leadership-title']]);
-      return true;
-    }
-    let contactLocation = null;
-    function answerContactRequest(query) {
-      const contacts = root.SWM_SITE_CONTACTS;
-      if (!contacts) return false;
-      const wantsWhatsApp = /\bwhats\s?app\b/.test(query);
-      const wantsEmail = /\be\s?mails?\b/.test(query);
-      const wantsPhone = /\b(?:phone|telephone|mobile|landline|call|contact number|(?:normal|regular) (?:and |or )?(?:number|whatsapp))\b/.test(query);
-      if (!wantsWhatsApp && !wantsPhone && !wantsEmail && !/\bnumber\b/.test(query)) return false;
-
-      const normalize = root.SWM_SHOP_CORE.normalize;
-      const wantsGeneral = /\b(?:general|central|company|main)\s+(?:enquiries|support|e\s?mails?|phone|mobile|whats\s?app|contact|number|line)\b/.test(query);
-      const hint = query.replace(/\b(?:e\s?mails?|whats\s?app|where|give|provide|share|send|show|find|can|could|tell|me|we|your|you|please|what|is|the|a|for|of|at|in|to|and|or|with|how|do|i|s|no|number|numbers|contact|normal|regular|direct|branch|office|location|centre|center|address|call|reach|mobile|phone|telephone|landline|link|team|store|company|business|general|central|enquiries|support|main|details|ok|okay|ohk|then|instead|its|their|there|same|one|about|line)\b/g, ' ').replace(/\s+/g, ' ').trim();
-      if (!wantsWhatsApp && !wantsPhone && /\b(?:model|serial|order|reference)\b/.test(hint)) return false;
-      const padded = ` ${hint} `;
-      const uniqueAddressWords = new Set(hint.split(' ').filter(word => word.length >= 5 &&
-        !/^(?:india|district|township|building|complex|street|ground|sector|village|warehouse|number)$/.test(word)));
-      const ranked = contacts.locations.map(location => {
-        const aliases = [location.id, location.name, ...location.name.split(','), location.region];
-        if (location.country === 'UAE') aliases.push('UAE', 'United Arab Emirates');
-        const aliasScore = Math.max(0, ...aliases.map(normalize).filter(alias => alias && padded.includes(` ${alias} `)).map(alias => alias.length));
-        const address = normalize(location.address);
-        const addressWords = new Set(address.split(' '));
-        const addressScore = [...uniqueAddressWords].filter(word => addressWords.has(word)).length;
-        const phraseScore = hint.includes(' ') && hint.length >= 6 && ` ${address} `.includes(padded) ? 10 : 0;
-        return { location, score: aliasScore ? 20 + aliasScore : addressScore + phraseScore };
-      }).filter(match => match.score).sort((a, b) => b.score - a.score);
-      const matches = ranked.filter(match => match.score === ranked[0]?.score);
-      const locationLinks = entries => entries.map(({ location }) => [location.name, 'locations.html#location-' + location.id]);
-      const channels = [];
-      if (wantsPhone || (!wantsWhatsApp && !wantsEmail)) channels.push('phone');
-      if (wantsWhatsApp) channels.push('whatsapp');
-      if (wantsEmail) channels.push('email');
-
-      if (matches.length > 1) {
-        contactLocation = null;
-        showLinks('Which location do you mean? Choose a branch to see its published contact details.', locationLinks(matches));
-        return true;
-      }
-      if (hint && !matches.length) {
-        contactLocation = null;
-        showLinks('I couldn’t identify that location. Please enter the branch name, city, or postal code.', [['View locations', 'locations.html']]);
-        return true;
-      }
-      const location = matches[0]?.location || (wantsGeneral ? null : contactLocation);
-      contactLocation = location || null;
-      const subject = location?.name || 'our general enquiries team';
-      const links = [];
-      const formatNumber = (value, digits) => digits.startsWith('91') && digits.length === 12
-        ? `+91 ${digits.slice(2, 7)} ${digits.slice(7)}` : value;
-      const lines = channels.map(channel => {
-        if (channel === 'email') {
-          const address = location ? location.email : contacts.email;
-          if (address && (!location || address.toLowerCase() !== contacts.email?.toLowerCase())) {
-            links.push(['Send email', 'mailto:' + address]);
-            return `Email address for ${subject}: ${address}.`;
-          }
-          if (contacts.email) {
-            links.push(['Email general enquiries', 'mailto:' + contacts.email]);
-            return `No separate email address is listed for ${subject}. You can email general enquiries at ${contacts.email}.`;
-          }
-          return `No email address is listed for ${subject}.`;
-        }
-        const isWhatsApp = channel === 'whatsapp';
-        const label = isWhatsApp ? 'WhatsApp number' : 'Phone number';
-        const value = location ? location[channel] : contacts[channel];
-        const digits = String(value || '').replace(/\D/g, '');
-        if (!digits) return `No ${location ? 'branch-specific ' : ''}${isWhatsApp ? 'WhatsApp' : 'phone'} number is listed for ${subject}.`;
-        const display = (isWhatsApp ? location?.whatsappDisplay : location?.phoneDisplay) ||
-          formatNumber(value, digits);
-        if (!isWhatsApp && location?.contactLabel === 'Central support') {
-          links.push(['Call central support', 'tel:+' + digits]);
-          return `The ${subject} location lists ${display} for central support. A direct branch phone number is not listed.`;
-        }
-        links.push(isWhatsApp ? ['Open WhatsApp', 'https://wa.me/' + digits] : ['Call ' + subject, 'tel:+' + digits]);
-        return `${label} for ${subject}: ${display}`;
-      });
-      if (!links.length && location) {
-        for (const channel of [...new Set([...channels.filter(channel => channel !== 'email'), 'phone', 'whatsapp'])]) {
-          const branchNumber = location[channel];
-          const value = branchNumber || contacts[channel];
-          const digits = String(value || '').replace(/\D/g, '');
-          if (!digits) continue;
-          const team = branchNumber && (channel === 'whatsapp' || location.contactLabel !== 'Central support')
-            ? location.name : 'central support';
-          const method = channel === 'whatsapp' ? 'WhatsApp' : 'Call';
-          lines.push(`You can reach ${team} ${channel === 'whatsapp' ? 'on WhatsApp' : 'by phone'} at ${formatNumber(value, digits)}.`);
-          links.push([`${method} ${team}`, channel === 'whatsapp' ? 'https://wa.me/' + digits : 'tel:+' + digits]);
-          break;
-        }
-      }
-      if (!links.length) {
-        lines.push('Use the contact form to reach our team.');
-        links.push(['Contact us', location ? 'contact.html?location=' + encodeURIComponent(location.id) : 'contact.html']);
-      }
-      if (location && location.contactLabel === 'Central support') links.push(...locationLinks([{ location }]));
-      showLinks(lines.join('\n'), links);
-      return true;
-    }
-    const productQuestions = [
-      ['Weight capacity', /\b(?:weight capacity|load capacity|how much weight)\b/g, /capacity|load limit|safe working load/i],
-      ['Weight', /\b(?:weight|how heavy|weighs?)\b/g, /\bweight\b(?!\s+capacity)/i],
-      ['Price', /\b(?:price|pricing|cost|how much)\b/g],
-      ['Stock', /\b(?:in stock|stock|availability|available)\b/g],
-      ['Delivery', /\b(?:delivery|shipping)\b/g],
-      ['Checkout', /\b(?:checkout|payment|pay)\b/g],
-      ['Specifications', /\b(?:specs?|specifications?)\b/g],
-      ['Features', /\bfeatures?\b/g],
-      ['Details', /\b(?:details?|description)\b/g],
-      ['Dimensions', /\b(?:dimensions?|size)\b/g, /\b(?:dimensions?|size|length|width|height|depth)\b/i],
-      ['Height', /\b(?:height|how tall)\b/g, /\bheight\b/i],
-      ['Width', /\b(?:width|how wide)\b/g, /\bwidth\b/i],
-      ['Length', /\blength\b/g, /\blength\b/i],
-      ['Material', /\b(?:materials?|made of)\b/g, /material/i],
-      ['Colour', /\bcolou?rs?\b/g, /colou?r/i],
-      ['Brand', /\b(?:brand|manufacturer|who makes)\b/g, /brand|manufacturer/i],
-      ['Model number', /\b(?:model number|model code|product code|sku)\b/g, /model|product code|sku/i],
-      ['Minimum order quantity', /\b(?:minimum order(?: quantity)?|moq)\b/g, /minimum order|moq/i],
-      ['Warranty', /\bwarranty\b/g, /warranty/i]
-    ];
-
-    function requestedProductFields(query) {
-      let subject = /\bweighs?\b/.test(query) ? query.replace(/\bhow much\b/g, ' ') : query;
-      const fields = [];
-      // Match compound fields before their shorter aliases.
-      for (const [label, pattern, specLabel] of productQuestions) {
-        const remaining = subject.replace(pattern, ' ');
-        if (remaining === subject) continue;
-        fields.push({ label, specLabel });
-        subject = remaining;
-      }
-      return { fields, subject };
-    }
-
-    function answerProductFields(product, fields) {
-      const specs = (product.specifications || []).filter(({ label, value }) => label && value);
-      let hasInformation = false;
-      const lines = fields.flatMap(({ label, specLabel }) => {
-        if (label === 'Price') return `Price for ${product.name} isn’t published in the catalogue.`;
-        if (label === 'Stock') return `Stock availability for ${product.name} isn’t published online.`;
-        if (label === 'Delivery') return `Delivery details for ${product.name} aren’t published online.`;
-        if (label === 'Checkout') return 'Online checkout and payment aren’t available yet.';
-        if (label === 'Details' && product.description) {
-          hasInformation = true;
-          return product.description;
-        }
-        if (label === 'Features' && product.features?.length) {
-          hasInformation = true;
-          return product.features;
-        }
-        if (label === 'Details' || label === 'Features') return `${label} aren’t listed in the catalogue.`;
-        const matching = specLabel ? specs.filter(spec => specLabel.test(spec.label)) : specs;
-        if (matching.length) hasInformation = true;
-        return matching.length ? matching.map(spec => `${spec.label}: ${spec.value}`) : `${label} information isn’t listed in the catalogue.`;
-      });
-      const answer = [...new Set(lines)].join('\n');
-      const text = fields.length === 1 && /^(Price|Stock|Delivery|Checkout)$/.test(fields[0].label)
-        ? answer : `${product.name}\n${answer}`;
-      return { text, hasInformation };
-    }
-
-    function answerConversationPrompt(normalized) {
-      if (/^(?:(?:hi+|hello+|hey+)(?: there)?|good morning|good afternoon|good evening)$/.test(normalized)) {
-        showLinks('Hello! What are you looking for? You can browse the catalogue, search for a product, or ask me for a page link.', destinations.slice(1, 3));
-        return true;
-      }
-      if (/^(?:(?:hi|hello|hey) )?how are you(?: doing)?$/.test(normalized)) {
-        showLinks('I’m ready to help! You can ask me where to find a page or tell me what product you’re looking for.', destinations.slice(1, 3));
-        return true;
-      }
-      if (/^(?:thanks|thank you|thank you so much)$/.test(normalized)) {
-        message('You’re welcome. Let me know if you need another product or page link.');
-        log.scrollTop = log.scrollHeight;
-        return true;
-      }
-      if (/^(?:help|what can you do|where to find things|where can i find things|(?:show me |give me )?(?:links?(?: for| to) )?(?:all )?(?:web ?pages|site pages|pages)|site ?map|directory)$/.test(normalized)) {
-        showLinks('Here are the pages you can open directly.', destinations);
-        return true;
-      }
-      return false;
-    }
-
-    function respond(text) {
-      const query = text.trim().slice(0, 180);
-      if (!query) {
-        message(nextPrompt('empty'));
-        log.scrollTop = log.scrollHeight;
-        return;
-      }
-      const normalized = root.SWM_SHOP_CORE.normalize(query);
-      if (answerContactRequest(normalized)) return;
-      if (answerLeadershipRequest(normalized)) return;
-      const target = normalized
-        .replace(/^please\s+/, '')
-        .replace(/^(?:(?:where|how) (?:can|do) i (?:find|see|open|view|get to|go to)|where (?:to find|is|are)|(?:take me|go) to|open|show me|find)\s+/, '')
-        .replace(/^(?:(?:can|could|would) you )?(?:(?:give|send|provide|share)(?: me)? )?(?:(?:a|the) )?(?:links? for|links? to|links? of|links? for the|links? to the)\s+/, '')
-        .replace(/^(?:the|your) /, '')
-        .replace(/ (?:page|link)(?: please)?$/, '')
-        .replace(/ please$/, '');
-      const destination = destinations.find(([, , keywords]) => keywords.test(target));
-      if (destination && !(normalized === 'warranty' && currentProduct)) {
-        showLinks(`Here’s the link to ${destination[0]}.`, [destination]);
-        return;
-      }
-      const mentions = destinations.flatMap(page => {
-        const [, , keywords] = page;
-        const wholeWords = new RegExp(`\\b(?:${keywords.source.slice(1, -1)})\\b`, 'g');
-        return [...normalized.matchAll(wholeWords)].flatMap(match => {
-          const end = match.index + match[0].length;
-          if (match[0] === 'about' && !/^ (?:page|section)\b/.test(normalized.slice(end))) return [];
-          if (match[0] === 'contact' && /\bnon $/.test(normalized.slice(0, match.index))) return [];
-          return [{ page, start: match.index, end }];
-        });
-      });
-      const pages = [...new Set(mentions.filter(mention =>
-        !mentions.some(other => other.start <= mention.start && other.end >= mention.end &&
-          other.end - other.start > mention.end - mention.start)
-      ).map(mention => mention.page))];
-      const asksForPage = /\b(?:link|page|open|take me to|go to|can i see|where (?:can|do|to))\b/.test(normalized);
-      if (pages.length && asksForPage && !(normalized === 'warranty' && currentProduct)) {
-        showLinks(pages.length === 1 ? `Here’s the link to ${pages[0][0]}.` : 'Here are the pages you mentioned.', pages);
-        return;
-      }
-      const offTopic = /^(?:tell me (?:a joke|a story|about yourself)|who are you|what(?: s| is) the weather|what time is it)$/.test(normalized);
-      const { fields, subject } = requestedProductFields(target);
-      const information = fields.length > 0;
-      let productQuery = subject.replace(/\b(show|find|looking|need|want|please|tell|provide|give|share|send|links?|about|where|can|could|would|what|how|much|does|do|is|its|it|s|in|on|of|i|me|you|have|a|an|for|the|some)\b/g, ' ').replace(/\s+/g, ' ').trim();
-      if (information && /^(?:(?:and|ok|okay|ohk|that|this|one|then|are|has|will|be)\s*)+$/.test(productQuery)) productQuery = '';
-      const selection = /^(?:and )?(first|second|third|1st|2nd|3rd)(?: (?:one|item|product|result))?$/.exec(productQuery);
-      const resultPositions = { first: 0, second: 1, third: 2, '1st': 0, '2nd': 1, '3rd': 2 };
-      const selectedProduct = selection && recentProducts[resultPositions[selection[1]]];
-      const { direct, related } = selectedProduct ? { direct: [selectedProduct], related: [] }
-        : productQuery ? findProductMatches(productQuery) : { direct: [], related: [] };
-      const matches = direct.length ? direct : related;
-      const named = productQuery && direct.find(product => [product.name, product.sourceName, product.id]
-        .some(value => root.SWM_SHOP_CORE.normalize(value) === productQuery));
-      const product = named || (direct.length === 1 ? direct[0] : !productQuery ? currentProduct : null);
-      const siteMatches = direct.length ? [] : findSiteContent(query);
-      if (offTopic) {
-        message(nextPrompt('unrelated'));
-      } else if (productQuery && siteMatches.length && (!information || (!matches.length && fields.every(field => field.label === 'Details')))) {
-        showSiteContent(siteMatches);
-      } else if (pages.length && !information && !direct.length) {
-        showLinks(pages.length === 1 ? `Here’s the link to ${pages[0][0]}.` : 'Here are the pages you mentioned.', pages);
-      } else if (information) {
-        if (fields.length === 1 && fields[0].label === 'Checkout') {
-          showLinks('Online checkout and payment aren’t available yet. Our team can help with ordering.', [['Contact us', 'contact.html']]);
-        } else if (!product) {
-          message('Which product do you mean? Enter its catalogue name or model number.');
-        } else {
-          currentProduct = product;
-          const answer = answerProductFields(product, fields);
-          if (answer.hasInformation) message(answer.text);
-          else showLinks(`${answer.text}\nAsk our team for this information.`, [
-            ['Ask about this product', 'contact.html?subject=' + encodeURIComponent(product.name)]
-          ]);
-        }
-      } else {
-        if (!matches.length) {
-          if (siteMatches.length) showSiteContent(siteMatches);
-          else message(nextPrompt('unmatched'));
-        } else {
-          currentProduct = product;
-          if (!selectedProduct) recentProducts = matches.slice(0, 3);
-          message(direct.length ? 'Here are the closest catalogue matches.' : 'I didn’t find that exact product. Here are some related options.');
-          const results = document.createElement('div');
-          results.className = 'assistant-chat-results';
-          results.innerHTML = matches.slice(0, 3).map(product => `<article><a href="${link(product)}">${e(product.name)}</a><button type="button" data-assistant-add="${e(product.id)}" aria-label="Add ${e(product.name)} to cart">Add to cart</button></article>`).join('');
-          if (matches.length > 3) {
-            const viewAll = document.createElement('a');
-            viewAll.href = 'search.html?q=' + encodeURIComponent(productQuery);
-            viewAll.textContent = 'See all matching products';
-            results.appendChild(viewAll);
-          }
-          log.appendChild(results);
-        }
-      }
-      log.scrollTop = log.scrollHeight;
-    }
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (aiRequest) return;
       const question = field.value.trim().slice(0, 400);
       field.value = '';
-      if (!question) {
-        respond('');
-        return;
-      }
+      if (!question) return;
       message(question, true);
-      if (answerConversationPrompt(root.SWM_SHOP_CORE.normalize(question))) return;
       log.scrollTop = log.scrollHeight;
       const controller = new AbortController();
       aiRequest = controller;
@@ -1293,34 +914,19 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           signal: controller.signal,
-          body: JSON.stringify({ question, history: aiHistory })
+          body: JSON.stringify({ question, history: pageProduct ? ['Current product: ' + pageProduct.name, ...aiHistory.slice(-5)] : aiHistory })
         });
         if (!response.ok) throw new Error('Assistant unavailable');
-        const { matches, generalAnswer } = await response.json();
+        const { matches, answer } = await response.json();
         if (controller.signal.aborted) return;
-        if (!Array.isArray(matches)) throw new Error('Invalid assistant response');
-        if (generalAnswer && !matches.length) {
-          message(generalAnswer);
-          aiHistory.push(question + '\n' + generalAnswer.slice(0, 180));
-          if (aiHistory.length > 6) aiHistory.shift();
-          return;
-        }
-        if (!matches.length) {
-          showLinks('I couldn’t verify that from our published website. You can contact our team for help with Surgical Wholesale Mart or its products.', [
-            ['Contact us', 'contact.html']
-          ]);
-          return;
-        }
-        const facts = [...new Set(matches.flatMap(match => match.facts))];
+        if (!Array.isArray(matches) || typeof answer !== 'string' || !answer.trim()) throw new Error('Invalid assistant response');
         const links = [...new Map(matches.map(match => [match.href, [match.title, match.href]])).values()];
-        if (facts.length) message(facts.join('\n'));
-        else showLinks(matches.length === 1 ? 'Here’s the page you asked for.' : 'Here are the matching pages.', links);
-        recentProducts = matches.map(match => byId(new URL(match.href, location.href).searchParams.get('id'))).filter(Boolean);
-        if (recentProducts.length === 1) currentProduct = recentProducts[0];
-        aiHistory.push(question + '\n' + matches.map(match => match.title).join(', '));
+        if (links.length) showLinks(answer, links);
+        else message(answer);
+        aiHistory.push(question + '\n' + answer.slice(0, 180));
         if (aiHistory.length > 6) aiHistory.shift();
       } catch {
-        if (!controller.signal.aborted) respond(question);
+        if (!controller.signal.aborted) message('Gemini is temporarily unavailable. Please try sending your message again.');
       } finally {
         if (aiRequest === controller) {
           aiRequest = null;
@@ -1329,16 +935,6 @@
           log.scrollTop = log.scrollHeight;
         }
       }
-    });
-    log.addEventListener('click', event => {
-      const add = event.target.closest('[data-assistant-add]');
-      const product = add && byId(add.dataset.assistantAdd);
-      if (!product) return;
-      basket[product.id] = Math.min(9999, (basket[product.id] || 0) + 1);
-      const stored = persistBasket();
-      renderBasket();
-      message(stored ? `Added ${product.name} to your cart.` : `Added ${product.name} for this visit. Browser storage is unavailable.`);
-      log.scrollTop = log.scrollHeight;
     });
     function closeAssistant() {
       aiRequest?.abort();
@@ -1349,10 +945,6 @@
       finishReply?.();
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
-      currentProduct = pageProduct;
-      recentProducts = [];
-      contactLocation = null;
-      replyCounts.clear();
       field.value = '';
       while (log.childElementCount > welcomeContent) log.lastElementChild.remove();
       log.scrollTop = 0;
