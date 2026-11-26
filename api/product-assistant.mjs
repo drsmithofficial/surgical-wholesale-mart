@@ -133,9 +133,9 @@ export async function POST(request) {
         responseJsonSchema: schema
       }
     } : {
-      model: 'google/' + model,
+      model: 'nvidia/nemotron-3.5-lightning-free',
       messages: [{ role: 'system', content: instructions }, { role: 'user', content: prompt }],
-      temperature: 0, max_tokens: 350, reasoning_effort: 'minimal',
+      temperature: 0, max_tokens: 350, reasoning_effort: 'none',
       response_format: { type: 'json_schema', json_schema: { name: 'site_records', strict: true, schema } }
     };
     const response = await fetch(url, {
