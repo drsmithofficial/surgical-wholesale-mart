@@ -22,6 +22,24 @@ This regenerates the storefront and company-information pages and `js/catalog.js
 
 ## Product Assistant
 
+Set `QWEN_API_URL` to a Qwen3.5 9B OpenAI-compatible chat completions endpoint to use Qwen first. Remote deployments require HTTPS and a server-only `QWEN_API_KEY`. Set `QWEN_MODEL` if the host uses a model name other than `swm-qwen9`. Qwen resolves the catalogue record, and the site supplies published data for specific requests such as prices, dimensions, and branch contacts. Gemini remains available when Qwen is unavailable.
+
+For a local test using the Windows installation, start llama.cpp with the installed model and run the storefront preview with the loopback URL:
+
+```powershell
+$modelDir = Join-Path $env:LOCALAPPDATA 'SWM-LocalAI'
+& (Join-Path $modelDir 'runtime/llama-server.exe') --model (Join-Path $modelDir 'Qwen3.5-9B-Q4_K_M.gguf') --host 127.0.0.1 --port 18084 --ctx-size 2048 --parallel 1 --reasoning off --alias swm-qwen9
+```
+
+In a second terminal:
+
+```powershell
+$env:QWEN_API_URL = 'http://127.0.0.1:18084/v1/chat/completions'
+node scripts/preview.cjs
+```
+
+Open `http://127.0.0.1:4173` and use the robot. Leave the local model bound to loopback. The production website needs its own reachable inference host.
+
 The robot menu sends every conversation message to the same-origin `/api/product-assistant` endpoint. Production uses Gemini Flash-Lite with the server-only `GEMINI_API_KEY` and an optional `GEMINI_MODEL` override. The endpoint can also use Nemotron Lightning Free through Vercel AI Gateway with an OIDC token or `AI_GATEWAY_API_KEY` when a Gemini key is absent. For local testing, run `node scripts/preview.cjs` with either server-side API key. If the endpoint or model is unavailable, the robot displays an error.
 
 For storefront questions, the model answers using records from the published catalogue and site index. The server validates any source links against those records. The model can also answer general questions from its knowledge. It has no live browsing tools or access to orders, carts, customer records, or private company systems. Recent conversation context is held in memory until the menu closes. Run the normal storefront generator when publishing catalogue or company changes. If editing published HTML directly, run `python3 scripts/build_site_content.py` to refresh the website index before publishing. There is no separate model training or data upload.

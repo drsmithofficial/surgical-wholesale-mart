@@ -926,7 +926,10 @@
         aiHistory.push(question + '\n' + answer.slice(0, 180));
         if (aiHistory.length > 6) aiHistory.shift();
       } catch {
-        if (!controller.signal.aborted) message('Gemini is temporarily unavailable. Please try sending your message again.');
+        if (!controller.signal.aborted) {
+          if (!field.value) field.value = question;
+          message('The assistant is temporarily unavailable. Your message is ready to resend.');
+        }
       } finally {
         if (aiRequest === controller) {
           aiRequest = null;

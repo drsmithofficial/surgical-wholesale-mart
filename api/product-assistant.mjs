@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { answerWithQwen } from '../api-support/qwen-assistant.mjs';
 
 const catalogPath = fileURLToPath(new URL('../data/catalog.json', import.meta.url));
 const indexPath = fileURLToPath(new URL('../js/site-content-index.js', import.meta.url));
@@ -94,7 +95,8 @@ export async function POST(request) {
   const key = process.env.GEMINI_API_KEY;
   const gatewayToken = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN
     || (process.env.VERCEL && request.headers.get('x-vercel-oidc-token'));
-  if (!key && !gatewayToken) return json({ unavailable: true }, 503);
+  const qwenEnabled = Boolean(process.env.QWEN_API_URL);
+  if (!key && !gatewayToken && !qwenEnabled) return json({ unavailable: true }, 503);
   if (request.headers.get('sec-fetch-site') === 'cross-site') return json({ error: 'Same-origin request required' }, 403);
   let input;
   try {
@@ -111,7 +113,16 @@ export async function POST(request) {
   const history = Array.isArray(input.history) ? input.history.slice(-6)
     .filter(turn => typeof turn === 'string').map(turn => turn.slice(0, 300)) : [];
   try {
-    const records = retrieve(loadRecords(), input.question, history);
+    const allRecords = loadRecords();
+    const records = retrieve(allRecords, input.question, history);
+    if (qwenEnabled) {
+      try {
+        return json(await answerWithQwen({ question: input.question, history, records, allRecords, signal: request.signal }));
+      } catch (error) {
+        console.warn('Product Assistant Qwen request failed:', error.name);
+        if (request.signal.aborted || (!key && !gatewayToken)) return json({ unavailable: true }, 503);
+      }
+    }
     const model = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
     if (!/^gemini-[a-z0-9.-]+$/.test(model)) return json({ unavailable: true }, 503);
     const prompt = JSON.stringify({
