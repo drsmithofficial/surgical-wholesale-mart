@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/product-assistant.mjs": {
-      "includeFiles": "{data/catalog.json,js/site-content-index.js}"
+      "includeFiles": "{data/catalog.json,data/assistant-sources.json,js/site-content-index.js}"
     }
   }
 }
