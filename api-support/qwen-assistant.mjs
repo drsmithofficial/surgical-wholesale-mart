@@ -28,6 +28,8 @@ const answerSchema = {
   properties: { answer: { type: 'string' }, record: { type: 'integer', minimum: -1 } }
 };
 
+export const isSmallTalk = question => /^(?:hi+|hello+|hey+|good (?:morning|afternoon|evening)|how are you(?: doing)?|how's it going|(?:thank you|thanks)(?: so much| a lot)?|(?:good)?bye|see you)[?!.\s]*$/i.test(question.trim());
+
 export async function answerWithQwen({ question, history, records, allRecords, signal }) {
   const endpoint = new URL(process.env.QWEN_API_URL);
   const token = process.env.QWEN_API_KEY;
@@ -39,8 +41,7 @@ export async function answerWithQwen({ question, history, records, allRecords, s
   const branchQuestion = /\b(?:branch|location|office)\b/i.test(question) ||
     records.some(record => recordType(record.href) === 'branch' &&
       question.toLowerCase().includes(record.href.split('#location-')[1].replaceAll('-', ' ')));
-  const greeting = /^(?:hi+|hello+|hey+|good (?:morning|afternoon|evening))[.!?\s]*$/i.test(question);
-  const candidates = (greeting ? [] : records).filter(record => {
+  const candidates = records.filter(record => {
     const type = recordType(record.href);
     if (field?.[0] === 'leadership') return type === 'person';
     if (branchQuestion && /^(?:email|phone|whatsapp|address)$/.test(field?.[0])) return type === 'branch';
@@ -49,14 +50,14 @@ export async function answerWithQwen({ question, history, records, allRecords, s
     other.href === record.href && other.title === record.title
   ) === index).slice(0, 4);
 
-  async function generate(system, content, schema) {
+  async function generate(system, content, schema, maxTokens = schema === recordSchema ? 64 : 150) {
     const response = await fetch(endpoint, {
       method: 'POST',
       signal: AbortSignal.any([signal, AbortSignal.timeout(schema === recordSchema ? 25000 : 35000)]),
       headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: 'Bearer ' + token } : {}) },
       body: JSON.stringify({
         model: process.env.QWEN_MODEL || 'swm-qwen9',
-        temperature: 0, stream: false, max_tokens: schema === recordSchema ? 64 : 150,
+        temperature: 0, stream: false, max_tokens: maxTokens,
         reasoning_effort: 'none', chat_template_kwargs: { enable_thinking: false },
         ...(schema ? { response_format: { type: 'json_schema', json_schema: { name: 'record', schema } } } : {}),
         messages: [{ role: 'system', content: system }, { role: 'user', content }]
@@ -66,6 +67,23 @@ export async function answerWithQwen({ question, history, records, allRecords, s
     const answer = (await response.json()).choices?.[0]?.message?.content?.trim();
     if (!answer) throw new Error('Qwen returned an empty response');
     return answer;
+  }
+
+  if (isSmallTalk(question)) {
+    const answer = await generate(
+      'You are the Surgical Wholesale Mart Product Assistant. Reply warmly in the user’s language in eight words or fewer.',
+      question, null, 24
+    );
+    return { answer, matches: [] };
+  }
+
+  const identityQuestion = /^(?:please\s+)?(?:(?:which|what)\s+(?:ai\s+|language\s+)?model\s+(?:are you|you are|do you use)|what\s+(?:ai\s+)?(?:powers you|are you))[?!.\s]*$/i;
+  if (identityQuestion.test(question.trim())) {
+    const answer = await generate(
+      'You are the Surgical Wholesale Mart Product Assistant. This deployment uses the local Qwen3.5 9B model by Alibaba. Answer the model identity question directly in one short sentence.',
+      question
+    );
+    return { answer, matches: [] };
   }
 
   if (!field || !candidates.length) {

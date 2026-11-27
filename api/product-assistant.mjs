@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { answerWithQwen } from '../api-support/qwen-assistant.mjs';
+import { answerWithQwen, isSmallTalk } from '../api-support/qwen-assistant.mjs';
 
 const catalogPath = fileURLToPath(new URL('../data/catalog.json', import.meta.url));
 const indexPath = fileURLToPath(new URL('../js/site-content-index.js', import.meta.url));
@@ -131,8 +131,9 @@ export async function POST(request) {
   const history = Array.isArray(input.history) ? input.history.slice(-6)
     .filter(turn => typeof turn === 'string').map(turn => turn.slice(0, 300)) : [];
   try {
-    const allRecords = loadRecords();
-    const records = retrieve(allRecords, input.question, history);
+    const smallTalk = isSmallTalk(input.question);
+    const allRecords = smallTalk ? [] : loadRecords();
+    const records = smallTalk ? [] : retrieve(allRecords, input.question, history);
     if (qwenEnabled) {
       try {
         return json(await answerWithQwen({ question: input.question, history, records, allRecords, signal: request.signal }));

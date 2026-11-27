@@ -851,7 +851,8 @@
           const characters = typeof Intl.Segmenter === 'function'
             ? Array.from(new Intl.Segmenter().segment(text), item => item.segment)
             : Array.from(text);
-          const interval = Math.min(26, 5400 / characters.filter(character => /\S/.test(character)).length);
+          const visibleCharacters = characters.filter(character => /\S/.test(character)).length;
+          const interval = Math.min(26, (visibleCharacters <= 100 ? 1000 : 5400) / visibleCharacters);
           let elapsed = 0;
           for (const character of characters) {
             if (!/\S/.test(character)) {
@@ -904,11 +905,25 @@
       field.value = '';
       if (!question) return;
       message(question, true);
+      const pending = document.createElement('p');
+      pending.className = 'assistant-message assistant-message-pending';
+      const status = document.createElement('span');
+      status.className = 'sr-only';
+      status.textContent = 'The assistant is preparing a reply.';
+      const dots = document.createElement('span');
+      dots.className = 'assistant-loading-dots';
+      dots.setAttribute('aria-hidden', 'true');
+      for (let index = 0; index < 4; index++) {
+        const dot = document.createElement('span');
+        dot.style.setProperty('--dot-delay', `${index * 120}ms`);
+        dots.appendChild(dot);
+      }
+      pending.append(status, dots);
+      log.appendChild(pending);
       log.scrollTop = log.scrollHeight;
       const controller = new AbortController();
       aiRequest = controller;
       sendButton.disabled = true;
-      log.setAttribute('aria-busy', 'true');
       try {
         const response = await fetch('api/product-assistant', {
           method: 'POST',
@@ -931,10 +946,10 @@
           message('The assistant is temporarily unavailable. Your message is ready to resend.');
         }
       } finally {
+        pending.remove();
         if (aiRequest === controller) {
           aiRequest = null;
           sendButton.disabled = false;
-          log.removeAttribute('aria-busy');
           log.scrollTop = log.scrollHeight;
         }
       }
@@ -944,7 +959,6 @@
       aiRequest = null;
       aiHistory.length = 0;
       sendButton.disabled = false;
-      log.removeAttribute('aria-busy');
       finishReply?.();
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
