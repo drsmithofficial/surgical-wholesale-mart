@@ -4,6 +4,7 @@ from pathlib import Path
 from html import escape as e
 from urllib.parse import urlencode
 from build_site_content import build_site_index
+from procurement_portals import AUDIENCE, homepage_tail, doctor_portal, dealer_portal, brand_directory
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/catalog.json').read_text());products=data['products'];cats=data['categories'];catmap={c['id']:c for c in cats}
 (ROOT/'js/catalog.js').write_text('window.SWM_CATALOG = '+json.dumps(data,separators=(',',':'))+';\n')
@@ -65,7 +66,10 @@ def shell(filename,title,body,home=False):
  catalog_tools=(ROOT/'data/catalog-tools.html').read_text(encoding='utf-8').replace('{{product_count}}',str(len(products))) if filename=='products.html' else ''
  footer_transition=(ROOT/'data/mobile-page-transition.html').read_text(encoding='utf-8').strip()
  html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#00c4ef"><meta name="description" content="Explore a considered selection of medical equipment, hospital furniture and healthcare essentials. Build your cart with Surgical Wholesale Mart."><title>{e(title)} | Surgical Wholesale Mart</title><link rel="icon" href="assets/brand-logo.png"><link rel="stylesheet" href="css/storefront.css?v={storefront_style_version}"><link rel="stylesheet" href="css/shopping.css">{('<link rel="stylesheet" href="css/hero.css">' if home else '')}<script defer src="js/catalog.js"></script><script defer src="js/shopping-core.js"></script><script defer src="js/site-content-index.js?v=contact-email"></script><script defer src="js/store.js?v=assistant-qwen-support"></script><script defer src="js/shopping.js?v=cart-quantity-actions"></script>{('<script defer src="js/hero.js?v=bidirectional-cards"></script>' if home else '')}<link rel="stylesheet" href="css/theme.css?v=larger-cart-icon">{('<link rel="stylesheet" href="css/home-reference.css?v=procurement-banner-taller">' if home else '')}<link rel="stylesheet" href="css/header-shared.css?v=mobile-navigation-loader"><link rel="stylesheet" href="css/footer-shared.css?v=20261119-1"><link rel="stylesheet" href="css/home-footer.css?v=reference-footer">{footer_transition}</head><body class="{'home-page' if home else 'inner-page'}" data-page="{filename.removesuffix('.html')}">{header(filename)}{catalog_tools}<main id="main">{body}</main>{footer()}<noscript><p class="noscript">Enable JavaScript to filter products and use the cart. You can still browse our selected products and contact our team.</p></noscript>{mobile_navigation(filename)}</body></html>'''
- (ROOT/filename).write_text(html+'\n')
+ if home or filename in {'doctor.html','dealer.html','brands.html'}:
+  assets='<link rel="stylesheet" href="css/procurement-portals.css"><script defer src="js/procurement-portals.js"></script>'
+  html=html.replace('</head>',assets+'</head>',1)
+ (ROOT/filename).write_text(html+'\n',encoding='utf-8')
 def sectionhead(eyebrow,title,link='products.html',label='Explore all products'):
  if eyebrow=='A CLOSER LOOK':
   return f'<div class="section-heading"><div><span class="eyebrow">{eyebrow}</span><h2>{title}</h2></div></div>'
@@ -96,7 +100,14 @@ procurement_section_end=home.index('</section>',procurement_start)+len('</sectio
 procurement_replacement=f'''<section class="section procurement-section"><div class="procurement-banner"><div class="procurement-copy"><span class="eyebrow">MORE THAN A PRODUCT LIST <i aria-hidden="true"></i></span><h2>One room or a whole hospital.<br>Start with <em>what you need.</em></h2><p>Bring your equipment list. We’ll help you discuss product options, quantities and the scope of supply.</p><div class="procurement-action-row"><a class="procurement-cta" href="services.html">Plan your Requirement {icon('arrow')}</a><span class="procurement-divider" aria-hidden="true"></span><div class="procurement-steps" aria-label="How we support your equipment order"><div class="procurement-step"><span class="procurement-step-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 10 9 5 9-5m-18 5 9 5 9-5"/></svg></span><strong>Discuss<br>Options</strong></div><div class="procurement-step"><span class="procurement-step-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h2m4 0h2m-8 4h2m4 0h2"/></svg></span><strong>Review<br>Your Cart</strong></div><div class="procurement-step"><span class="procurement-step-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></span><strong>Manage<br>Supply</strong></div></div></div></div><div class="procurement-art" aria-hidden="true"><img src="assets/img/procurement-banner-beds.png" width="1792" height="1024" alt="" loading="lazy"></div><svg class="procurement-wave" viewBox="0 0 1800 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55C230 20 390 24 560 65c160 38 262 40 405 5 142-35 254-56 410-26 160 31 275 21 425-18v84H0Z" fill="#c8efff"/><path d="M0 58c230-35 390-31 560 10 160 38 262 40 405 5 142-35 254-56 410-26 160 31 275 21 425-18" fill="none" stroke="#03a8ed" stroke-width="8"/></svg></div></section>'''
 home=home[:procurement_section_start]+procurement_replacement+home[procurement_section_end:]
 phone_home=(ROOT/'data/home-phone.html').read_text(encoding='utf-8')
-shell('index.html','Medical equipment & hospital essentials',phone_home+home,True)
+phone_home=phone_home[:phone_home.index('<nav class="phone-benefits"')]+AUDIENCE+'</div>'
+featured_start=home.index('<section class="section selection-section"')
+featured_end=home.index('</section>',featured_start)+len('</section>')
+desktop_sliders=hero+home[featured_start:featured_end]+AUDIENCE.replace('portal-audience','portal-audience portal-audience-desktop')
+shell('index.html','Medical equipment & hospital essentials',phone_home+desktop_sliders+homepage_tail(cats,data['departments']),True)
+shell('doctor.html','Doctor portal',doctor_portal(data['departments']))
+shell('dealer.html','Dealer portal',dealer_portal())
+shell('brands.html','Brand directory',brand_directory())
 filters=''.join(f'<label class="filter-option"><input type="radio" name="category" value="{c["id"]}"><span>{e(c["name"])}</span><small>{sum(p["category"]==c["id"] for p in products) or "Enquire"}</small></label>' for c in cats)
 subcategories=sorted({p['subcategory'] for p in products if p.get('subcategory')}, key=str.casefold)
 catalog_chips=''.join(f'<button type="button" class="subcat-chip" data-subcat-chip="{e(name)}" aria-pressed="false">{e(name)}</button>' for name in subcategories)

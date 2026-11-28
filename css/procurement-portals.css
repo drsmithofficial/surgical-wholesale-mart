@@ -1,0 +1,25 @@
+.portal-audience,.portal-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr)); gap:.8rem; }
+.portal-audience { grid-template-columns:repeat(2,minmax(0,1fr)); margin-block:1.5rem; }
+.portal-audience a,.portal-hero { background:linear-gradient(135deg,#0b2847,#075b77); color:#fff; border-radius:1rem; padding:clamp(1rem,3vw,2.25rem); }
+.portal-audience a:nth-child(2),.portal-hero[data-palette="trade"] { background:linear-gradient(135deg,#132a42,#184c47); }
+.portal-audience a { display:grid; gap:.35rem; text-decoration:none; }
+.portal-audience strong { font-size:clamp(1.1rem,2.4vw,1.8rem); }
+.portal-audience span,.portal-hero .eyebrow { color:#b8e9f5; }
+.portal-audience small,.portal-hero p { color:#e5f2f7; }
+.portal-hero a { color:#fff; }
+.portal-hero .button-outline { border-color:#a3dbe9; background:#fff; color:#102b46; }
+.portal-section { margin-block:1.5rem; padding:clamp(1rem,2vw,1.5rem); border:1px solid #dce9f1; border-radius:1rem; background:#f8fbfd; scroll-margin-top:7rem; }
+.portal-section h2 { margin:0 0 .7rem; }
+.portal-tile { display:block; padding:.85rem; border:1px solid #d6e6ef; border-radius:.75rem; background:#fff; color:#11364e; font-weight:650; }
+.portal-tile:hover { border-color:#0c7795; }
+.portal-brand-track { display:flex; overflow-x:auto; gap:.7rem; padding:.5rem .15rem 1rem; scroll-snap-type:x proximity; }
+.portal-brand-track a { flex:none; scroll-snap-align:start; }
+.portal-page label { display:grid; gap:.3rem; margin-block:.5rem; }
+.portal-page input,.portal-page select { width:100%; min-width:0; }
+.portal-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.75rem; margin-block:.8rem; }
+.portal-page details + details { margin-top:.65rem; }
+.portal-page [hidden] { display:none; }
+.portal-audience a:focus-visible,.portal-page :focus-visible,.portal-brand-track:focus-visible { outline:2px solid #1688b0; outline-offset:2px; }
+.phone-home .portal-audience a { color:#fff; }
+@media(max-width:390px) { .portal-audience { gap:.45rem; } .portal-audience a { padding:.7rem; } }
+@media(max-width:767px) { .portal-audience-desktop { display:none; } }

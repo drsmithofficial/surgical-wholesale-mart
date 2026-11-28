@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#00c4ef"><meta name="description" content="Explore a considered selection of medical equipment, hospital furniture and healthcare essentials. Build your cart with Surgical Wholesale Mart."><title>Dealer portal | Surgical Wholesale Mart</title><link rel="icon" href="assets/brand-logo.png"><link rel="stylesheet" href="css/storefront.css?v=assistant-character-reveal"><link rel="stylesheet" href="css/shopping.css"><script defer src="js/catalog.js"></script><script defer src="js/shopping-core.js"></script><script defer src="js/site-content-index.js?v=contact-email"></script><script defer src="js/store.js?v=assistant-qwen-support"></script><script defer src="js/shopping.js?v=cart-quantity-actions"></script><link rel="stylesheet" href="css/theme.css?v=larger-cart-icon"><link rel="stylesheet" href="css/header-shared.css?v=mobile-navigation-loader"><link rel="stylesheet" href="css/footer-shared.css?v=20261119-1"><link rel="stylesheet" href="css/home-footer.css?v=reference-footer"><script>
+(() => {
+  const phone = matchMedia('(max-width: 767px)');
+  const motion = matchMedia('(prefers-reduced-motion: no-preference)');
+  const key = 'swm-footer-navigation';
+  const root = document.documentElement;
+  document.addEventListener('pointerdown', () => { root.dataset.pointerFocus = ''; }, true);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Tab') delete root.dataset.pointerFocus;
+  }, true);
+  let loaderTimer;
+  let loaderTimeout;
+
+  function readNavigation() {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(key));
+      if (Date.now() - saved?.time < 10000) return saved;
+    } catch {}
+  }
+
+  function clearLoader() {
+    clearTimeout(loaderTimer);
+    clearTimeout(loaderTimeout);
+    delete root.dataset.footerLoading;
+    root.style.removeProperty('--navigation-header-height');
+  }
+
+  const arrival = readNavigation();
+  if (phone.matches && arrival?.to === location.href) {
+    root.dataset.footerLoading = arrival.page;
+    document.addEventListener('DOMContentLoaded', clearLoader, { once: true });
+  }
+
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('.mobile-ecom-tabbar a[href]');
+    if (!phone.matches || !link || event.defaultPrevented || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
+        link.origin !== location.origin || link.href === location.href) return;
+
+    const tabs = [...link.parentNode.querySelectorAll('a[href]')];
+    const current = tabs.findIndex(tab => tab.classList.contains('is-active'));
+    const direction = tabs.indexOf(link) < current ? 'right' : 'left';
+    const page = link.pathname.split('/').pop().replace(/\.html$/, '');
+    try {
+      sessionStorage.setItem(key, JSON.stringify({ from: location.href, to: link.href, direction, page, time: Date.now() }));
+    } catch {}
+    clearLoader();
+    loaderTimer = setTimeout(() => {
+      const header = document.querySelector('.store-header');
+      const headerBottom = header?.getBoundingClientRect().bottom || 0;
+      root.style.setProperty('--navigation-header-height', `${Math.max(headerBottom, 0)}px`);
+      root.dataset.footerLoading = page;
+    }, 110);
+    loaderTimeout = setTimeout(clearLoader, 10000);
+    link.classList.add('is-navigating');
+    setTimeout(() => link.classList.remove('is-navigating'), 1200);
+  });
+
+  function animatePage(event, outgoing) {
+    if (!outgoing) delete root.dataset.footerSlide;
+    const transition = event.viewTransition;
+    const navigation = readNavigation();
+    if (!outgoing) {
+      try { sessionStorage.removeItem(key); } catch {}
+    }
+
+    const destination = event.activation?.entry?.url;
+    const matches = outgoing
+      ? navigation?.from === location.href && (!destination || navigation.to === destination)
+      : navigation?.to === location.href;
+    if (!phone.matches || !motion.matches || !matches) return;
+
+    const animateArrival = () => {
+      if (!motion.matches) return;
+      root.dataset.footerArrival = navigation.direction;
+      const cleanup = event => {
+        if (event.animationName !== 'footer-arrival') return;
+        delete root.dataset.footerArrival;
+        document.removeEventListener('animationend', cleanup);
+      };
+      document.addEventListener('animationend', cleanup);
+    };
+    if (!transition) {
+      if (!outgoing) animateArrival();
+      return;
+    }
+    root.dataset.footerSlide = navigation.direction;
+    if (!outgoing) {
+      transition.ready.catch(animateArrival);
+      transition.finished.then(() => { delete root.dataset.footerSlide; });
+    }
+  }
+
+  window.addEventListener('pageswap', event => animatePage(event, true));
+  if ('onpagereveal' in window) {
+    window.addEventListener('pagereveal', event => animatePage(event, false));
+  } else {
+    animatePage({}, false);
+  }
+  window.addEventListener('pageshow', () => {
+    clearLoader();
+    document.querySelector('.mobile-ecom-tabbar .is-navigating')?.classList.remove('is-navigating');
+  });
+})();
+</script><link rel="stylesheet" href="css/procurement-portals.css"><script defer src="js/procurement-portals.js"></script></head><body class="inner-page" data-page="dealer"><a class="skip-link" href="#main">Skip to content</a><header class="store-header"><div class="header-main"><a class="brand" href="index.html" aria-label="Surgical Wholesale Mart Private Limited home"><span class="brand-emblem" aria-hidden="true"><img src="assets/brand-logo.png" alt="" width="795" height="746"></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><strong>Surgical <span class="brand-orange">Wholesale</span> Mart</strong> <span class="brand-legal">Pvt. Ltd.</span></span></a></div><a class="mobile-contact" href="contact.html" aria-label="Contact our team"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a><button class="mobile-menu" type="button" aria-controls="store-nav" aria-expanded="false" aria-label="Open navigation"><span class="mobile-menu-lines" aria-hidden="true"><i></i><i></i><i></i></span></button><nav class="store-nav" id="store-nav" aria-label="Main navigation"><div class="primary-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Turnkey Projects</a><a href="products.html">Products</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact Us</a></div><div class="nav-cta"><a class="nav-quote" href="cart.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>View Cart</span></a><a class="nav-catalogue" href="assets/downloads/dr-smith-catalogue.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf"><span>Download Catalogue</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg></a></div></nav></header><main id="main"><div class="section portal-page"><header class="portal-hero" data-palette="trade"><p class="eyebrow">Dealer portal</p><h1>Buy and partner with us</h1><p>Request trade access for regional offers and office inventory.</p></header>
+<section class="portal-section"><h2>Request dealer access</h2><p>Our team verifies your GST registration before granting access to trade pricing and inventory.</p>
+<form id="dealer-access-form"><div class="portal-grid"><label>GSTIN<input name="gstin" required minlength="15" maxlength="15" pattern="[0-9]{2}[A-Za-z]{5}[0-9]{4}[A-Za-z][A-Za-z0-9][Zz][A-Za-z0-9]" autocapitalize="characters" placeholder="15-character GSTIN"></label><label>Regional office<select name="office" required><option value="">Select an office</option></select></label><label>What do you need?<select name="interest"><option>Regional dealer offers</option><option>Office inventory availability</option><option>Dealer account access</option></select></label></div><div class="portal-actions"><button class="button" type="submit">Prepare access enquiry</button></div><p id="dealer-access-status" role="status"></p><a id="dealer-access-draft" hidden>Open email draft</a></form></section>
+<section class="portal-section"><h2>Business opportunities</h2><div class="portal-grid">
+<form class="portal-tile" data-partner="Dr. Smith distributorship"><h3>Dr. Smith Distributor</h3><label>Business name<input required name="business" maxlength="120"></label><label>Work email<input required name="email" type="email" maxlength="120"></label><label>City and state<input required name="region" maxlength="120"></label><button class="button" type="submit">Prepare distributor enquiry</button><a hidden>Open email draft</a></form>
+<form class="portal-tile" data-partner="Surgical Wholesale Mart franchise"><h3>Surgical Wholesale Mart Franchise Partner</h3><label>Business name<input required name="business" maxlength="120"></label><label>Work email<input required name="email" type="email" maxlength="120"></label><label>City and state<input required name="region" maxlength="120"></label><button class="button" type="submit">Prepare franchise enquiry</button><a hidden>Open email draft</a></form></div></section></div></main><footer class="site-footer home-reference-footer" aria-label="Website footer">
+  <svg class="home-footer-waves" viewBox="0 0 1983 793" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="home-footer-wave-blue"><stop stop-color="#007bca" stop-opacity=".02"/><stop offset=".55" stop-color="#168ce3" stop-opacity=".35"/><stop offset="1" stop-color="#1670c8" stop-opacity="0"/></linearGradient>
+    </defs>
+    <path fill="#123e72" opacity=".36" d="M0 0h580C415 178 201 172 0 221Z"/>
+    <path fill="url(#home-footer-wave-blue)" d="M0 551c169-19 259 62 500 119-191-20-323-86-500-84Z"/>
+    <path fill="url(#home-footer-wave-blue)" d="M1983 525c-144 34-232 94-360 151 137 6 259-83 360-103Z"/>
+  </svg>
+  <div class="home-footer-main">
+    <section class="home-footer-brand" aria-label="About Surgical Wholesale Mart">
+      <a class="home-footer-logo" href="index.html" aria-label="Surgical Wholesale Mart home">
+        <img src="assets/brand-logo.png" alt="" width="795" height="746" loading="lazy">
+        <i aria-hidden="true"></i>
+        <span><strong>Surgical <em>Wholesale</em><br>Mart</strong> Pvt. Ltd.</span>
+      </a>
+      <p class="home-footer-tagline">Complete hospital solutions for<br>a <strong>healthier tomorrow.</strong></p>
+      <img class="home-footer-hospital" src="assets/img/home-footer-hospital.webp" alt="" width="1100" height="407" loading="lazy">
+    </section>
+    <nav class="home-footer-links" aria-label="Explore Products">
+      <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 7 9-4 9 4-9 4-9-4Zm0 4 9 4 9-4M3 15l9 4 9-4"/></svg></span>Explore Products</h2>
+      <a href="products.html?category=furniture">Hospital Furniture</a>
+      <a href="products.html?department=icu">Critical Care &amp; ICU</a>
+      <a href="products.html?department=ot">OT Equipment</a>
+      <a href="products.html?category=equipment&amp;q=imaging">Diagnostic &amp; Imaging</a>
+      <a href="products.html?category=instruments">Surgical Instruments</a>
+      <a href="products.html?category=consumables">Medical Consumables</a>
+    </nav>
+    <nav class="home-footer-links" aria-label="Quick Links">
+      <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 13 4-4M8 16l-1 1a3.5 3.5 0 0 1-5-5l4-4a3.5 3.5 0 0 1 5 0m2 8a3.5 3.5 0 0 0 5 0l4-4a3.5 3.5 0 0 0-5-5l-1 1"/></svg></span>Quick Links</h2>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Our Departments</a>
+      <a href="services.html">Turnkey Projects</a>
+      <a href="blog.html">Resources</a>
+      <a href="contact.html?subject=Careers">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <nav class="home-footer-links" aria-label="Support">
+      <h2><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-3a8 8 0 0 1 16 0v3m0 3c-1 4-3 4-7 4M4 12H3v5h4v-5H4Zm16 0h1v5h-4v-5h3Z"/></svg></span>Support</h2>
+      <a href="support.html">Installation &amp; Support</a>
+      <a href="support.html?subject=Training%20and%20education">Training &amp; Education</a>
+      <a href="locations.html">Service Network</a>
+      <a href="warranty.html">Warranty &amp; AMC</a>
+      <a href="assets/downloads/dr-smith-catalogue.pdf" target="_blank" rel="noopener noreferrer">Product Catalogue</a>
+      <a href="support.html">FAQs</a>
+    </nav>
+    <section class="home-footer-contact" aria-label="Contact our team">
+      <div class="home-footer-contact-heading">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 7h.01m4 0h.01m4 0h.01"/></svg></span>
+        <div><h2>Talk to our team</h2><p>We are here to help you</p></div>
+      </div>
+      <a class="home-footer-contact-row" href="tel:+919289976683"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 3 4 5-3 3c2 3 3 4 6 6l3-3 5 4c-3 7-10 2-14-2S-2 6 6 3Z"/></svg><span>+91 9289976683</span></a>
+      <a class="home-footer-contact-row" href="mailto:info@surgicalwholesalemart.in"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 5 10 8L22 5"/></svg><span>info@<wbr>surgicalwholesalemart.in</span></a>
+      <a class="home-footer-contact-row" href="locations.html#location-kapashera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Kapashera, New Delhi</span></a>
+      <a class="home-footer-cta" href="contact.html">Get in touch <span aria-hidden="true">⟶</span></a>
+    </section>
+  </div>
+  <ul class="home-footer-benefits" aria-label="How we support your procurement">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22h20M4 22V12h4m8 0h4v10M8 22V7h8v15m-4-19v4M9 4h6m-5 8h4m-2-2v4m-1 8v-5h2v5"/></svg><span>Complete<br>Hospital Solutions</span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 2 5 3 9 3v7c0 4-3 8-9 10-6-2-9-6-9-10V5c4 0 6-1 9-3Zm-4 10 3 3 5-6"/></svg><span>Trusted<br>&amp; Reliable</span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5Zm0 10 10-5M12 12 2 7m10 5v10m4-9 3-1.5"/></svg><span>Wide Range<br>of Products</span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 2-1 3-2 1-3-1-2 4 2 2v2l-2 2 2 4 3-1 2 1 1 3h5l1-3 2-1 3 1 2-4-2-2v-2l2-2-2-4-3 1-2-1-1-3Zm0 10 2 2 4-4"/><circle cx="12" cy="12" r="5"/></svg><span>Service &amp;<br>After Sales Support</span></li>
+  </ul>
+  <div class="home-footer-bottom">
+    <p>© 2025 Surgical Wholesale Mart Pvt. Ltd. All rights reserved.</p>
+    <nav class="home-footer-social" aria-label="Social media">
+      <a class="home-social-youtube" href="https://www.youtube.com/@surgicalwholesalemart.insider" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M22 12s0-4-1-5-9-1-9-1-8 0-9 1-1 5-1 5 0 4 1 5 9 1 9 1 8 0 9-1 1-5 1-5Z"/><path fill="#ed161d" d="m10 9 5 3-5 3Z"/></svg></a>
+      <a class="home-social-facebook" href="https://www.facebook.com/drsmith.co.in/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+      <a class="home-social-instagram" href="https://www.instagram.com/surgicalwholesalemart.virtual" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+      <a class="home-social-whatsapp" href="https://wa.me/919289976683" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 18.4 3 22l3.8-1.1A9.3 9.3 0 1 0 4.2 18.4Zm4-11 2 2.6-1.2 1.2c.7 1.5 2 2.7 3.5 3.4l1.1-1.2 2.7 1.6c-.3 1.5-1.6 2.2-2.7 2-3.9-.8-6.4-3.2-7.2-7-.3-1.2.4-2.4 1.8-2.6Z"/></svg></a>
+    </nav>
+    <nav class="home-footer-legal" aria-label="Legal links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="sitemap.html">Sitemap</a></nav>
+  </div>
+</footer>
+<div class="toast" role="status" aria-live="polite"></div><noscript><p class="noscript">Enable JavaScript to filter products and use the cart. You can still browse our selected products and contact our team.</p></noscript><div class="mobile-navigation-skeleton" role="status">
+  <span class="sr-only">Loading page</span>
+  <div class="mobile-skeleton-layout" data-skeleton="index" aria-hidden="true">
+    <div class="skeleton-shape skeleton-banner"></div>
+    <div class="skeleton-shape skeleton-heading"></div>
+    <div class="skeleton-cards"><div class="skeleton-shape"></div><div class="skeleton-shape"></div></div>
+  </div>
+  <div class="mobile-skeleton-layout" data-skeleton="products" aria-hidden="true">
+    <div class="skeleton-shape skeleton-field"></div>
+    <div class="skeleton-shape skeleton-field"></div>
+    <div class="skeleton-cards"><div class="skeleton-shape"></div><div class="skeleton-shape"></div><div class="skeleton-shape"></div><div class="skeleton-shape"></div></div>
+  </div>
+  <div class="mobile-skeleton-layout" data-skeleton="search" aria-hidden="true">
+    <div class="skeleton-shape skeleton-heading"></div>
+    <div class="skeleton-shape skeleton-field"></div>
+  </div>
+  <div class="mobile-skeleton-layout" data-skeleton="cart" aria-hidden="true">
+    <div class="skeleton-shape skeleton-heading"></div>
+    <div class="skeleton-shape skeleton-row"></div>
+    <div class="skeleton-shape skeleton-row"></div>
+  </div>
+  <div class="mobile-skeleton-layout" data-skeleton="contact" aria-hidden="true">
+    <div class="skeleton-shape skeleton-banner"></div>
+    <div class="skeleton-shape skeleton-heading"></div>
+    <div class="skeleton-shape skeleton-field"></div>
+    <div class="skeleton-shape skeleton-field"></div>
+  </div>
+</div>
+<nav class="mobile-ecom-tabbar" aria-label="Mobile navigation"><a href="index.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Home</span></a><a href="products.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Products</span></a><a href="search.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Search</span></a><a href="cart.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3h2l2.6 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 2-1.5L22 7H6"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Cart</span><b data-cart-count>0</b></a><a href="contact.html" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span>Contact</span></a></nav>
+</body></html>
